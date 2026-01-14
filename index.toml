@@ -117,6 +117,11 @@ file = "docs/README.md"
 hash = "fad190ed92994bd678a9e3c46b35216fe05dadcff6def6182c74898b1ec7086c"
 
 [[files]]
+file = "iki-fps.pw.toml"
+hash = "11102c4201b379c6c9465202726e8770103f275217a44b01c8de58b272c03ca6"
+metafile = true
+
+[[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
 hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 
@@ -206,6 +211,11 @@ hash = "1047a7b018546f650c04d6999110a3b80b246fd0ab716e8375d3565c3942dcfe"
 metafile = true
 
 [[files]]
+file = "mods/amendments.pw.toml"
+hash = "a966c425617e0583ccadc2fe7f521a53833c93f4aacd9c89c24ad7cc76eca97a"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "793693a85f3c87d4e899ee0c58deabc53690bf5a70f17343f28fd5063ce8a1e1"
 metafile = true
@@ -256,6 +266,11 @@ hash = "e5ebcdd6314ddad2309c7db52a0b70f4472bf8b118c2cefe64f64193ef57af83"
 metafile = true
 
 [[files]]
+file = "mods/c2me.pw.toml"
+hash = "99bf8f34b6bff81c977ea6736c58b6df564a7e9ae684fe3ad25e3b5fc91a6c74"
+metafile = true
+
+[[files]]
 file = "mods/canary.pw.toml"
 hash = "14481081a9e233f4ba57df8a77ce028184818143eae1c73b60749ea482c912e9"
 metafile = true
@@ -283,6 +298,11 @@ metafile = true
 [[files]]
 file = "mods/chunkpregenerator.pw.toml"
 hash = "ce1ff49ed9507338b8b32d431c6f7832391a6f65c07aa8ad07b02dfec8cb7860"
+metafile = true
+
+[[files]]
+file = "mods/chunky.pw.toml"
+hash = "0e17f9758f6f67ef87aa6f8d5afc47901521a05904cd8470ef65063b48e69d73"
 metafile = true
 
 [[files]]
@@ -473,6 +493,11 @@ metafile = true
 [[files]]
 file = "mods/forestry-community-edition.pw.toml"
 hash = "507905ffd8640f209b5f251203612c6e1062cf11446e275da8015b730ab76bb6"
+metafile = true
+
+[[files]]
+file = "mods/forgified-fabric-api.pw.toml"
+hash = "62ef7e92478035b77e996189984e4749b2d876ed0a389977a2670a28f105bfd2"
 metafile = true
 
 [[files]]
@@ -926,6 +951,11 @@ hash = "b8c7497acbf4890b4609b6b20de7affdd3482fc99af975d9ff6b29c075e1d8a7"
 metafile = true
 
 [[files]]
+file = "mods/selene.pw.toml"
+hash = "8779ca727e111512e0ecbf620f85590213fe4c005a6f9daf6dee2cbab80bdd8f"
+metafile = true
+
+[[files]]
 file = "mods/servercore.pw.toml"
 hash = "874a064efc37398f5818a38666ea31263bd65ed0478b519b819f7a361bd0893e"
 metafile = true
@@ -933,6 +963,11 @@ metafile = true
 [[files]]
 file = "mods/simply-jetpacks-2.pw.toml"
 hash = "00a1e01de3ca9cccf263dc7fbd24e31df9f89ce4c7a792f66c67585dd96cd44d"
+metafile = true
+
+[[files]]
+file = "mods/sinytra-connector.pw.toml"
+hash = "6db079b4b12f1b14243980080879cc40087c3507f3ad25adf97e5f0ce9bb163b"
 metafile = true
 
 [[files]]

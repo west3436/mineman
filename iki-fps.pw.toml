@@ -1,0 +1,13 @@
+name = "Iki FPS [FORGE]"
+filename = "Iki FPS [FORGE 1.20.1].zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a33b937e742a6998358a86fdf55ce3b54fa3851"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7226506
+project-id = 1367371
