@@ -28,7 +28,7 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:plate_aluminum',
     ],
 
-    // Wires
+    // Wires (includes single-source items for tagging and future-proofing)
     'copper_wire': [
         'createaddition:copper_wire',
         'immersiveengineering:wire_copper',
@@ -57,7 +57,7 @@ const UNIFIED_ITEMS = {
         'tfmg:constantan_wire',
     ],
 
-    // Rods
+    // Rods (includes single-source items for tagging and future-proofing)
     'brass_rod': [
         'createaddition:brass_rod',
     ],
@@ -161,22 +161,22 @@ ServerEvents.recipes(event => {
 
     console.log('Recipe unification complete!');
 
-    // Add conversion recipes for wires
+    // Add conversion recipes for wires with multiple sources
+    // These allow manual conversion of existing items in player inventory
+    // (output replacement only affects recipe results, not existing items)
     console.log('Adding wire conversion recipes...');
     
-    // Copper wire conversions
+    // Copper wire conversions (3 sources: Create Additions, IE, TFMG)
     event.shapeless('createaddition:copper_wire', ['immersiveengineering:wire_copper']);
     event.shapeless('createaddition:copper_wire', ['tfmg:copper_wire']);
     event.shapeless('immersiveengineering:wire_copper', ['createaddition:copper_wire']);
     event.shapeless('tfmg:copper_wire', ['createaddition:copper_wire']);
     
-    // Electrum wire conversion
+    // Electrum wire conversion (2 sources: Create Additions, IE)
     event.shapeless('createaddition:electrum_wire', ['immersiveengineering:wire_electrum']);
     event.shapeless('immersiveengineering:wire_electrum', ['createaddition:electrum_wire']);
     
     console.log('Wire conversion recipes complete!');
-    
-    // Note: Rods don't need conversion recipes as they're already unified through output replacement
 });
 
 ServerEvents.tags('item', event => {
