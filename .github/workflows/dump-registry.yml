@@ -1,16 +1,27 @@
 ---
 name: Dump Registry
 
+# Security Note: This workflow executes code from pull requests. To mitigate risk:
+# 1. Only repository collaborators, members, and owners can trigger this workflow
+# 2. Checkout uses commit SHA (not branch ref) to prevent TOCTOU attacks
+# 3. The workflow has minimal permissions (read contents, write PR comments only)
+
 on:
   issue_comment:
     types: [created]
 
 jobs:
   dump-registry:
-    # Only run on PR comments with the /dump_registry command
+    # Only run on PR comments with the /dump_registry command from collaborators
+    # This restricts the workflow to trusted users only
     if: >
       github.event.issue.pull_request &&
-      contains(github.event.comment.body, '/dump_registry')
+      contains(github.event.comment.body, '/dump_registry') &&
+      (
+        github.event.comment.author_association == 'OWNER' ||
+        github.event.comment.author_association == 'MEMBER' ||
+        github.event.comment.author_association == 'COLLABORATOR'
+      )
     runs-on: ubuntu-latest
     timeout-minutes: 45
     permissions:
@@ -45,20 +56,20 @@ jobs:
               repo: context.repo.repo,
               pull_number: context.issue.number
             });
-            core.setOutput('head_ref', pr.data.head.ref);
-            core.setOutput('base_ref', pr.data.base.ref);
             core.setOutput('head_sha', pr.data.head.sha);
+            core.setOutput('base_sha', pr.data.base.sha);
+            core.setOutput('base_ref', pr.data.base.ref);
 
       - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ steps.pr.outputs.head_ref }}
+          ref: ${{ steps.pr.outputs.head_sha }}
           path: pr
 
       - name: Checkout base branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ steps.pr.outputs.base_ref }}
+          ref: ${{ steps.pr.outputs.base_sha }}
           path: base
 
       - name: Set up Java 17
