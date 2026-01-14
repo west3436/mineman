@@ -17,6 +17,26 @@ file = ".github/workflows/packwiz-refresh.yml"
 hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
 [[files]]
+file = "config/create.toml"
+hash = "94c2c2162ce3bfbe2e7f38343b63740a3b46ddbc7784f1bedbdf7cd02d5ad011"
+
+[[files]]
+file = "config/createaddition-common.toml"
+hash = "69bf252c4c7efc2f9f5fdf35348a4ba36a15b45cb1200560d410dba5eb248983"
+
+[[files]]
+file = "config/embeddium.json"
+hash = "42f2d1dfb95b25199b3ac4897fdd8f81eeb0842aa55cd84a3c84adee44cba14a"
+
+[[files]]
+file = "config/ferritecore.toml"
+hash = "561756b365a721fcbf5d7481ad92d604e59df87f867b3a8def74141afd7ded6e"
+
+[[files]]
+file = "config/ftbquests-client.toml"
+hash = "914abbf98ec58bc45c63abcac0ad666c73f23ce38255f99fd180def5677025ee"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "308b1438a36739b35e70679e16050eac198c96789bb8d2a98954b63e2e864507"
 
@@ -50,19 +70,47 @@ hash = "5411707089602c8c0828f8b2a86ce03d81aa147c1e418086dc0cf547cb7d0ddd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
-hash = "ee3ebfa9ed4cff81a58ae4e8f6fc3e1318ac72917a7e497def264df46f8283f9"
+hash = "02472e1fb64b1c0ac0e5b9aa5a6946692153e9bae2759206b23bc649e2a37798"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_building.snbt"
-hash = "13701fed59c1a3939b10f6157033f9f60143518c21fa6fe8d2c7c594cb3d42ad"
+hash = "e8c5278bfb514de7bcca3c2c916af24108372a6eca77f1301d6c7501e1820503"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_exploration.snbt"
-hash = "eafd7c6d9626703530c784d717eabec9e05563470c86560c2ad7496ce4a50e6e"
+hash = "069c1bf13023da40bf868f76bfebdda314d8203fab7948d6cc56a375d6b12fbd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_railways.snbt"
-hash = "0209f028aa68fe42a28bc8bdd6e32ab140b31904179835831754f6cde4cb7dc1"
+hash = "6dc140d3a0d18171ba1353bbf1dafbc7c1002beb1dc86306242b30fde88aee08"
+
+[[files]]
+file = "config/immersiveengineering-server.toml"
+hash = "3f3c8a8998afddd613b997e22d275acb43b309e14f53db0b2f5056a21b16da1e"
+
+[[files]]
+file = "config/mekanism-server.toml"
+hash = "4b71e9d6f542fb1ab25d76cce731f1f23e3e7b5138fd5781ea7b6f944f1b9819"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "38edbd889029c4c95f95387f2be32110aa4b6f74a399dd3a046aab96bd9c4c5e"
+
+[[files]]
+file = "config/oculus.properties"
+hash = "e47fb0ae6ecfae75894917958c1c9133d0fa69e3d84cef8a2fb4902e1b3f3c8f"
+
+[[files]]
+file = "config/pneumaticcraft-common.toml"
+hash = "8d5b31197e7c96b9a346cd89162a4b50b8f20be5d6caba4b85e3088370e3b182"
+
+[[files]]
+file = "config/tfmg-common.toml"
+hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
+
+[[files]]
+file = "docs/README.md"
+hash = "fad190ed92994bd678a9e3c46b35216fe05dadcff6def6182c74898b1ec7086c"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
@@ -83,6 +131,10 @@ hash = "fb32e5b64383217f2f83a5b33be696193b2db43393924dfc9be9f034c87c94ef"
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic.js"
 hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tier3_plastic_multiblock.js"
+hash = "f009f0785c3b609a5f734c69608d7e1519a3ea8447bbb317fee13027fd72ed42"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
