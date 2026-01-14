@@ -1,0 +1,278 @@
+# PneumaticCraft: Repressurized Common Configuration
+# Balanced for cross-mod compatibility with Create, IE, and Mekanism
+
+# This mod bridges the tech gap between mechanical (Create) and electronic systems
+# Pressure system provides an alternative to FE/stress while producing plastics
+
+# General Settings
+[general]
+    # Enable recipe integrations with other mods
+    enableCrossModRecipes = true
+    
+    # Allow Create stress to power compressors (via Create Addition)
+    enableCreateIntegration = true
+    
+    # Use IE refined fuels for compressors
+    enableIEFuelSupport = true
+
+# Pressure Configuration
+# Pressure units are bar (1 bar = ~14.7 psi)
+# Target: 5 bar machines = mid game, 10+ bar = late game
+
+[pressure]
+    # General pressure settings
+    
+    # Default danger pressure (bar)
+    # Machines explode above this (with some buffer)
+    dangerPressure = 5.0
+    
+    # Critical pressure (actual explosion threshold)
+    # 10% above danger for safety margin
+    criticalPressure = 5.5
+    
+    # Pressure loss per tick in tubes (per block distance)
+    # Low loss for reasonable factory layouts
+    pressureLossPerBlock = 0.0001
+    
+    # Maximum pressure in advanced tubes
+    advancedTubePressure = 20.0
+    
+    # Advanced tube danger pressure
+    advancedDangerPressure = 20.0
+    advancedCriticalPressure = 22.0
+
+# Compressor Configuration
+[compressors]
+    # Air compressor settings
+    # These convert items/fluids/energy to pressure
+    
+    # Air Compressor (solid fuel)
+    [compressors.air]
+        # Air produced per fuel burn time unit
+        # Balanced for early game progression
+        airPerFuelTick = 1.0
+        
+        # Maximum pressure output
+        maxPressure = 5.0
+    
+    # Liquid Compressor
+    [compressors.liquid]
+        # Air per mB of fuel
+        # Diesel/Biodiesel from IE supported
+        airPerMB = 10.0
+        
+        # Fuel consumption rate (mB/tick)
+        fuelConsumption = 1
+        
+        maxPressure = 10.0
+    
+    # Advanced Liquid Compressor
+    [compressors.advancedLiquid]
+        airPerMB = 25.0
+        fuelConsumption = 2
+        maxPressure = 25.0
+    
+    # Electric Compressor (FE powered)
+    # Bridges IE/Mekanism power to pressure system
+    [compressors.electric]
+        # FE per air unit produced
+        # Balanced: 1000 FE = ~1 bar in standard volume
+        fePerAir = 10
+        
+        # Air production rate
+        airPerTick = 10.0
+        
+        # Maximum pressure output
+        maxPressure = 20.0
+    
+    # Thermal Compressor (heat powered)
+    [compressors.thermal]
+        # Air per temperature differential
+        airPerHeatUnit = 2.0
+        maxPressure = 10.0
+
+# Machine Configuration
+[machines]
+    # Processing machine pressure requirements
+    # Balanced for progression gates
+    
+    # Pressure Chamber
+    [machines.pressureChamber]
+        # Minimum pressure to operate
+        minPressure = 4.0
+        
+        # Air consumption per recipe
+        airPerOperation = 1000
+        
+        # Recipe time multiplier (1.0 = default)
+        speedMultiplier = 1.0
+    
+    # Assembly System
+    [machines.assembly]
+        # Assembly machines for PCB production
+        # This is a key gate for Tier 5
+        
+        # Base air consumption per operation
+        airPerOperation = 200
+        
+        # Minimum pressure to operate
+        minPressure = 4.0
+        
+        # Laser power consumption (air per tick when active)
+        laserAirUsage = 20
+        
+        # Drill speed multiplier
+        drillSpeedMultiplier = 1.0
+    
+    # UV Light Box
+    [machines.uvLightBox]
+        # PCB etching station
+        minPressure = 1.0
+        airPerTick = 2.0
+        
+        # Processing time (ticks)
+        # Balanced with PCB complexity
+        processTime = 600
+    
+    # Etching Tank
+    [machines.etchingTank]
+        # PCB acid etching
+        processTime = 400
+        
+        # Acid consumption per PCB
+        acidPerPCB = 100
+    
+    # Thermopneumatic Processing Plant
+    [machines.thermopneumatic]
+        # Heat + pressure processing
+        minPressure = 2.0
+        airPerOperation = 500
+        
+        # Temperature requirements
+        minTemperature = 373
+    
+    # Refinery
+    [machines.refinery]
+        # Oil processing
+        # Works with IE crude oil
+        minPressure = 0.0
+        minTemperature = 373
+        
+        # Processing rate (mB/tick)
+        processRate = 10
+    
+    # Plastic Mixer
+    [machines.plasticMixer]
+        # Plastic sheet production
+        minPressure = 2.0
+        airPerOperation = 100
+        
+        # Dye mixing supported
+        enableDyeMixing = true
+    
+    # Aerial Interface
+    [machines.aerialInterface]
+        # Player-machine interface
+        minPressure = 10.0
+        airPerTick = 5.0
+
+# PCB Production (Critical for Tier 5)
+[pcb]
+    # Printed Circuit Board production settings
+    # This is the primary gate for electronics tier
+    
+    # UV exposure time (ticks)
+    uvExposureTime = 600
+    
+    # Etching time (ticks)
+    etchingTime = 400
+    
+    # Components required per PCB
+    # Requires: capacitors, transistors, empty PCB
+    
+    # Success rate for PCB production (%)
+    # Higher with better pressure control
+    baseSuccessRate = 90
+    
+    # Bonus success rate per bar above minimum
+    pressureBonus = 2
+
+# Drone Configuration
+[drones]
+    # Programmable drone settings
+    # Advanced automation tier
+    
+    # Base air tank size
+    baseTankSize = 12000
+    
+    # Air consumption per action
+    [drones.airUsage]
+        # Movement (per block)
+        movement = 1.0
+        
+        # Item pickup/drop
+        inventory = 10.0
+        
+        # Block interaction
+        interact = 20.0
+        
+        # Entity interaction
+        entity = 50.0
+
+# Fluid Configuration
+[fluids]
+    # Fluid processing and storage
+    
+    # Oil processing (integrates with IE petroleum)
+    [fluids.oil]
+        # Products per bucket of crude oil
+        # Aligned with IE refinery outputs
+        lpgPerBucket = 750
+        dieselPerBucket = 250
+        kerosenPerBucket = 250
+        gasolinePerBucket = 250
+        
+    # Plastic fluid
+    [fluids.plastic]
+        # Molten plastic per sheet
+        plasticPerSheet = 1000
+        
+        # Solidification temperature
+        solidificationTemp = 313
+    
+    # Acid
+    [fluids.acid]
+        # Etching acid production
+        acidPerCraft = 1000
+        
+        # Consumption per PCB etch
+        acidPerEtch = 100
+
+# Heat Management
+[heat]
+    # Temperature and heat settings
+    
+    # Ambient temperature (K)
+    ambientTemperature = 300
+    
+    # Heat per furnace fuel tick
+    heatPerFuelTick = 0.5
+    
+    # Vortex tube cooling rate
+    vortexCoolingRate = 2.0
+    
+    # Heat frame cooking temperature
+    cookingTemperature = 373
+
+# Integration with other mods
+[integration]
+    # Recipe outputs aligned with pack progression
+    
+    # Use TFMG plastic for early plastic needs
+    useTFMGPlastic = true
+    
+    # Defer PCB to PneumaticCraft only
+    pcbExclusive = true
+    
+    # Allow Mekanism gases in pneumatic systems
+    mekanismGasSupport = true
