@@ -86,11 +86,11 @@ hash = "6dc140d3a0d18171ba1353bbf1dafbc7c1002beb1dc86306242b30fde88aee08"
 
 [[files]]
 file = "config/immersiveengineering-server.toml"
-hash = "3f3c8a8998afddd613b997e22d275acb43b309e14f53db0b2f5056a21b16da1e"
+hash = "4a928596582a5088e5b9a437ba07abb338b37dfc4032d57633e837290e2d4892"
 
 [[files]]
 file = "config/mekanism-server.toml"
-hash = "4b71e9d6f542fb1ab25d76cce731f1f23e3e7b5138fd5781ea7b6f944f1b9819"
+hash = "44a96554d2b49f00215b97579f15f5209f5ff79d9313820887fe59933a953126"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -159,6 +159,11 @@ hash = "29462d9c80f3a0b29e205e6aea44c6cc0fde614d27974fc8e776b5e64fd5fbe3"
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"
 hash = "0012eaca1bfc44d55296abb3be14d7430394aa628280366f2cf53d9be77a1c73"
+
+[[files]]
+file = "mods/acedium.pw.toml"
+hash = "f61f5f74db41ea4cb279bcbe9e2e30b29a9dfad526536bdeffa1c7d46a97a2a0"
+metafile = true
 
 [[files]]
 file = "mods/advancedae.pw.toml"
