@@ -163,3 +163,25 @@ ServerEvents.tags('item', event => {
 
     console.log('Item tag unification complete!');
 });
+
+ServerEvents.tags('fluid', event => {
+    console.log('Applying fluid tag unification...');
+
+    // Create unified tags for cross-mod fluid compatibility
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
+        const primary = PRIMARY_FLUIDS[key];
+        if (!primary) return;
+        
+        const tagName = `forge:${key}`; // e.g., forge:diesel
+        
+        // Add primary fluid to tag
+        event.add(tagName, primary);
+        
+        // Add all variants to tag for compatibility
+        variants.forEach(variant => {
+            event.add(tagName, variant);
+        });
+    });
+
+    console.log('Fluid tag unification complete!');
+});
