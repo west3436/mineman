@@ -158,7 +158,7 @@ hash = "29462d9c80f3a0b29e205e6aea44c6cc0fde614d27974fc8e776b5e64fd5fbe3"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"
-hash = "0012eaca1bfc44d55296abb3be14d7430394aa628280366f2cf53d9be77a1c73"
+hash = "7b5c5c822e474b0618ff5095693a0d72505038214c6d181cafe1d603874b2c6b"
 
 [[files]]
 file = "mods/acedium.pw.toml"
@@ -256,8 +256,8 @@ hash = "d439aaf90eb75c1e5cd3131450919f3ceedc7e0ddf66551e6b89872549b028dd"
 metafile = true
 
 [[files]]
-file = "mods/building-wands.pw.toml"
-hash = "e5ebcdd6314ddad2309c7db52a0b70f4472bf8b118c2cefe64f64193ef57af83"
+file = "mods/building-gadgets.pw.toml"
+hash = "528a5c2d50126e1b2906b47449b40a996fce3b4a50b9a0460533f2b7b74f5c99"
 metafile = true
 
 [[files]]
