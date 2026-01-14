@@ -107,14 +107,10 @@ const PRIMARY_OUTPUTS = {
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
 };
 
-// Primary fluid for each category
-const PRIMARY_FLUID_OUTPUTS = {
-    'hydrogen_bucket': 'mekanism:hydrogen_bucket',
-    'oxygen_bucket': 'mekanism:oxygen_bucket',
-    'sulfuric_acid_bucket': 'mekanism:sulfuric_acid_bucket',
-    'chlorine_bucket': 'mekanism:chlorine_bucket',
-    'creosote_bucket': 'immersiveengineering:creosote_bucket',
-};
+// Primary fluid for each category (derived from first item in each UNIFIED_FLUIDS array)
+const PRIMARY_FLUID_OUTPUTS = Object.fromEntries(
+    Object.entries(UNIFIED_FLUIDS).map(([key, variants]) => [key, variants[0]])
+);
 
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
