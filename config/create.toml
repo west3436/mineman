@@ -1,0 +1,86 @@
+# Create mod configuration
+# Balanced for cross-mod compatibility with IE, Mekanism, and PneumaticCraft
+
+# Stress values are balanced to integrate with Create Crafts & Additions power system
+# FE conversion: 256 FE = 1 stress unit base
+
+[server]
+    # Kinetics Configuration
+    [server.kinetics]
+        # Maximum stress a network can handle before overloading
+        # Increased to allow larger factories
+        maxStressPerNetwork = 65536
+        
+        # Stress impact multipliers for machines
+        # Slightly reduced to balance with power-hungry IE machines
+        stressValues = {
+            # Processing machines
+            "create:millstone" = 4,
+            "create:crushing_wheel" = 8,
+            "create:mechanical_press" = 8,
+            "create:mechanical_mixer" = 4,
+            "create:deployer" = 4,
+            "create:mechanical_saw" = 4,
+            "create:mechanical_drill" = 4,
+            "create:mechanical_harvester" = 2,
+            "create:mechanical_plough" = 2,
+            
+            # Create Crafts & Additions machines (FE generators/consumers)
+            "createaddition:rolling_mill" = 8,
+            "createaddition:tesla_coil" = 8,
+            "createaddition:alternator" = 8,
+            "createaddition:electric_motor" = 0,
+            
+            # Create TFMG machines
+            "tfmg:industrial_pipe" = 0,
+            "tfmg:distillation_tank" = 8
+        }
+        
+    [server.kinetics.waterWheel]
+        # Water wheel stress capacity
+        # Balanced as early game power source
+        stress = 128
+        
+    [server.kinetics.windmill]
+        # Windmill stress capacity per sail
+        stress = 512
+        
+    [server.kinetics.steam]
+        # Steam engine stress capacity
+        # This is the primary mid-game power bridge to IE
+        stress = 1024
+
+    # Recipe Configuration
+    [server.recipes]
+        # Bulk processing settings for ore multiplication
+        # Aligned with IE/Mekanism ore processing ratios
+        bulkWashing = true
+        bulkPressing = true
+        bulkMilling = true
+        
+        # Processing output multipliers
+        # Slightly lower than Mekanism for balance
+        crushedOreMultiplier = 1.5
+        washedOreMultiplier = 1.25
+
+# Client-side settings
+[client]
+    # Render distance for contraptions
+    maxContraptionRenderDistance = 128
+    
+    # Show stress meter in GUI
+    enableStressMeter = true
+    
+    # Goggle overlay settings
+    [client.goggleOverlay]
+        # Display network stress in goggle overlay
+        showNetworkStress = true
+        # Display item processing rates
+        showProcessingRates = true
+
+# Note: Create Crafts & Additions settings are in config/createaddition-common.toml
+# Note: Create TFMG settings are in config/tfmg-common.toml
+# The values configured in those files are designed to integrate with this config:
+# - FE to stress conversion: 256 FE per stress unit
+# - Steel production balanced with IE arc furnace
+# - Distillation outputs aligned with IE refinery

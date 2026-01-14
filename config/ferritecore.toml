@@ -1,0 +1,49 @@
+# FerriteCore Configuration
+# Memory optimization settings for the modpack
+
+# FerriteCore reduces memory usage by deduplicating BlockState properties
+# and optimizing various Minecraft memory structures
+
+[general]
+    # Enable all memory optimizations
+    # This is the primary function of FerriteCore
+    enabled = true
+    
+    # Log memory savings on startup
+    logMemorySavings = true
+
+[optimizations]
+    # BlockState deduplication
+    # Reduces memory by sharing identical BlockState property instances
+    deduplicateBlockStates = true
+    
+    # Model deduplication
+    # Shares identical model data between blocks
+    deduplicateModels = true
+    
+    # Property map optimization
+    # Uses more efficient data structures for block properties
+    optimizePropertyMaps = true
+    
+    # Ingredient optimization
+    # Optimizes recipe ingredient matching
+    optimizeIngredients = true
+    
+    # Multipart state optimization
+    multipartOptimization = true
+    
+    # NBT optimization
+    # More efficient NBT storage
+    optimizeNBT = true
+
+[compatibility]
+    # Compatibility settings for other mods
+    
+    # Create mod support
+    supportCreate = true
+    
+    # Mekanism support
+    supportMekanism = true
+    
+    # PneumaticCraft support  
+    supportPneumaticCraft = true

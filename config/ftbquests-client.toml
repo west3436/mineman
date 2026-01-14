@@ -1,0 +1,132 @@
+# FTB Quests Client Configuration
+# UI and reward settings for the Tech Progression modpack
+
+# General UI Settings
+[general]
+    # Default chapter when opening quest book
+    defaultChapter = "welcome"
+    
+    # Auto-pin new quests
+    autoPinQuests = true
+    
+    # Maximum pinned quests
+    maxPinnedQuests = 5
+    
+    # Show quest completion popup
+    showCompletionPopup = true
+    
+    # Popup duration (ticks)
+    popupDuration = 100
+
+# Quest Book UI
+[questbook]
+    # Background opacity (0.0 - 1.0)
+    backgroundOpacity = 0.9
+    
+    # Quest icon size in chapter view
+    iconSize = 24
+    
+    # Connection line width
+    lineWidth = 2
+    
+    # Show dependency lines
+    showDependencies = true
+    
+    # Chapter tab position
+    # Options: LEFT, RIGHT, TOP, BOTTOM
+    tabPosition = "LEFT"
+    
+    # Enable chapter search
+    enableSearch = true
+    
+    # Show completed quests differently
+    fadeCompletedQuests = true
+    completedQuestOpacity = 0.5
+
+# Quest Progression Display
+[progression]
+    # Show progress bar on chapter icons
+    showChapterProgress = true
+    
+    # Progress bar style
+    # Options: BAR, PERCENTAGE, FRACTION
+    progressStyle = "BAR"
+    
+    # Show locked quest indicators
+    showLockedIndicator = true
+    
+    # Locked quest opacity
+    lockedQuestOpacity = 0.3
+
+# Reward Configuration
+[rewards]
+    # Auto-claim rewards when quest completes
+    autoClaimRewards = false
+    
+    # Notification for claimable rewards
+    notifyRewards = true
+    
+    # Reward claim sound
+    enableClaimSound = true
+    
+    # XP orb animation on claim
+    showXPAnimation = true
+    
+    # Reward popup timeout (ticks, 0 = manual dismiss)
+    rewardPopupTimeout = 0
+    
+    # Stack rewards in inventory if possible
+    stackRewards = true
+    
+    # Drop rewards on ground if inventory full
+    dropOnFullInventory = true
+
+# Notifications
+[notifications]
+    # Toast notifications for quest events
+    enableToasts = true
+    
+    # Toast position
+    # Options: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+    toastPosition = "TOP_RIGHT"
+    
+    # Toast duration (ticks)
+    toastDuration = 100
+    
+    # Types of notifications to show
+    [notifications.types]
+        questUnlocked = true
+        questCompleted = true
+        chapterCompleted = true
+        rewardReady = true
+        teamProgress = true
+
+# Team Features
+[team]
+    # Share quest progress with team
+    shareProgress = true
+    
+    # Show team member quest progress
+    showTeamProgress = true
+    
+    # Team completion celebrations
+    teamCelebrations = true
+
+# Keybinds (display only, actual binds in Minecraft settings)
+[keybinds]
+    # Key to open quest book
+    openQuestBook = "KEY_J"
+    
+    # Key to pin/unpin quests
+    pinQuest = "KEY_P"
+
+# Performance
+[performance]
+    # Cache quest textures
+    cacheTextures = true
+    
+    # Render update interval (ticks)
+    renderUpdateInterval = 20
+    
+    # Maximum visible quests in overview
+    maxVisibleQuests = 100

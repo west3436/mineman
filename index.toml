@@ -22,7 +22,7 @@ hash = "308b1438a36739b35e70679e16050eac198c96789bb8d2a98954b63e2e864507"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0_welcome.snbt"
-hash = "9edef8609bac922873dc111623b274f46902ba17f3757e5bc65c9cb563eb59e2"
+hash = "fe615465400e80fa8dad1a67e231da77edc3a5b93dd2704360b007a8c06beb92"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_basic_processing.snbt"
@@ -30,23 +30,23 @@ hash = "122d2aa08f7f770e6d52d4344f9abf3bed3a634158f299838789a35d3ab528ee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2_steel_electricity.snbt"
-hash = "3aee77df29c313450aebd94bf7eaf5718839ad30f4fc12960810817103df1a9d"
+hash = "c6e6654c6ba3dda173e3923cc5d9d81ba3a096f259de799a01764acacd75af62"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3_oil_plastic.snbt"
-hash = "39d1d8ae42339cc0e2757b578990dc7b83bfe19e2e78c13732b368ec5a13ea5d"
+hash = "41ca22f169c21e2bf81af5a3d9dd2e92515bd085b546e9841d42b36adcc2b2bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4_chemistry.snbt"
-hash = "757fbd45f07782debf8049514e4dded4179f1d960a5b0f2e9844e74afae9af54"
+hash = "856fa30865c86a4dec26f6b801b35bf7a6df1b891c16efb72d8a41978824769c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5_electronics.snbt"
-hash = "77bd249a7539e0411f3bb6a47d7c55909f5c5748f30dd27cfe1bec5e1d9fcba4"
+hash = "7fda28c6337e977e0460fe055859607156c3d5d1da21eff89d5bd322a83578f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_future_tech.snbt"
-hash = "8e34b1e41c517e9194328d6ab688449488d4fbe627af07e4581d607476dcd1bb"
+hash = "5411707089602c8c0828f8b2a86ce03d81aa147c1e418086dc0cf547cb7d0ddd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
@@ -90,7 +90,7 @@ hash = "1096db8a70d8f652650b26f5d683d1d30c765716c2968899673e173fc9c9f261"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"
-hash = "bdf3038882efcaba22f9eb24eb9f324bec3ff3d8b07e91372e4ee82c273a5e05"
+hash = "0c84af435a66beee4ec317eacd069b3176dfab1029232cf93fea307d5c0ecc14"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier6_future.js"
