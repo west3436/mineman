@@ -274,7 +274,8 @@
 				{
 					id: "4000000000000032"
 					type: "item"
-					item: "mekanism:ultimate_chemical_tank"
+					item: "mekanism:advanced_chemical_tank"
+					count: 2
 				}
 			]
 			rewards: [

@@ -341,25 +341,23 @@
 				{
 					id: "5000000000000037"
 					type: "item"
-					title: "Turtle Tool"
+					title: "Turtle Upgrade"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
 						tag: {
 							items: [
 								{
-									id: "computercraft:turtle_advanced"
+									id: "computercraft:wireless_modem_advanced"
 									Count: 1b
-									tag: {
-										RightUpgrade: "computercraft:wireless_modem_advanced"
-									}
 								}
 								{
-									id: "computercraft:turtle_advanced"
+									id: "minecraft:diamond_pickaxe"
 									Count: 1b
-									tag: {
-										LeftUpgrade: "minecraft:diamond_pickaxe"
-									}
+								}
+								{
+									id: "minecraft:diamond_shovel"
+									Count: 1b
 								}
 							]
 						}
