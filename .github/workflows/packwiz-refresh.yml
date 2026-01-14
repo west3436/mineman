@@ -28,7 +28,7 @@ jobs:
 
       - name: Install Packwiz
         run: |
-          wget https://github.com/packwiz/packwiz/releases/latest/download/packwiz-linux-amd64 \
+          wget https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86 \
             -O packwiz
           chmod +x ./packwiz
 
