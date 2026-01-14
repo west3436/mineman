@@ -13,6 +13,10 @@ file = ".github/workflows/kubejs-validation.yml"
 hash = "91371a296a9c35b5555aefd0e766c63057048aa3ba0096e64f1b8f5a5369b27c"
 
 [[files]]
+file = ".github/workflows/minecraft-launch-test.yml"
+hash = "9038972c0ab9bae67b343afcec05c179e2436e03011ecbbdf5d83a7982c6298e"
+
+[[files]]
 file = ".github/workflows/packwiz-refresh.yml"
 hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
@@ -122,11 +126,11 @@ hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "b4d2726c4180d749cf11c2657a38433e30e8d467ef91f1dd178887c22982c124"
+hash = "ef22434e4434b1b4f02fee75e9390a72b84739079780ad8d18571ec19ee24c20"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
-hash = "35fffc1412a0f757bfcf7d354be1ebcd1fdcce8c3fa56ac2f9c8427384bb7cd0"
+hash = "7ef70c1fbcf8dc5582cebb2b3d956c6697d633a6bdc993413228845e9de81999"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
@@ -154,7 +158,7 @@ hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
-hash = "29462d9c80f3a0b29e205e6aea44c6cc0fde614d27974fc8e776b5e64fd5fbe3"
+hash = "60ee9e572d3579e041635465d15f7a852038da37d8b919e187cba29117f2d05d"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"
@@ -1069,6 +1073,10 @@ metafile = true
 file = "resourcepacks/asyasas-legacy-copper.pw.toml"
 hash = "9995fc0f9650e6edfb2fc94c76a036cdb30a680b356fd36be0b5237984b13ae9"
 metafile = true
+
+[[files]]
+file = "scripts/check_minecraft_logs.py"
+hash = "7f2791a3c7c8663ea72e642f9370ff125483ccd239fd92388af8bcc9e0a6d256"
 
 [[files]]
 file = "scripts/package-lock.json"

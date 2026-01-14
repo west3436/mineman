@@ -52,3 +52,13 @@ const TIER_GATES = {
         'ae2:controller',
     ],
 };
+
+// Primary fluid outputs for unification (Immersive Petroleum as primary)
+const PRIMARY_FLUIDS = {
+    'diesel': 'immersivepetroleum:diesel',
+    'gasoline': 'immersivepetroleum:gasoline',
+    'kerosene': 'immersivepetroleum:kerosene',
+    'lubricant': 'immersivepetroleum:lubricant',
+    'naphtha': 'immersivepetroleum:naphtha',
+    'crude_oil': 'immersivepetroleum:crudeoil',
+};
