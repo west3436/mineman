@@ -19,11 +19,11 @@ except ImportError:
 
 
 def check_formatting_codes(file_path: Path) -> Tuple[bool, List[str]]:
-    """
+    r"""
     Check for unescaped formatting codes followed by whitespace.
     
     In FTBQuests, formatting codes like &r, &f, &a etc. followed by a space
-    must be escaped as \\\\&r, \\\\&f, \\\\&a to avoid in-game errors.
+    must be escaped as \&r, \&f, \&a to avoid in-game errors.
     
     Args:
         file_path: Path to the SNBT file to check
@@ -36,9 +36,9 @@ def check_formatting_codes(file_path: Path) -> Tuple[bool, List[str]]:
     with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
             # Find unescaped & followed by Minecraft formatting code and space
-            # Pattern: & not preceded by \ followed by valid Minecraft code (0-9, a-f, k-o, r) and then space
-            # Valid codes: 0-9 (colors), a-f (colors), k-o (formats), r (reset)
-            matches = re.finditer(r'(?<!\\)(&[0-9a-fk-or])( )', line)
+            # Pattern: & not preceded by \ followed by valid Minecraft code and then space
+            # Valid codes: 0-9, a-f (colors), k-o (formats), r (reset)
+            matches = re.finditer(r'(?<!\\)(&(?:[0-9a-f]|[k-o]|r))( )', line)
             for match in matches:
                 errors.append(
                     f"Line {line_num}: Unescaped formatting code '{match.group(1)}' "
@@ -122,10 +122,7 @@ def main():
             if not syntax_ok:
                 print(f"  Syntax error: {syntax_error}")
             
-            all_errors = formatting_errors if not formatting_ok else []
-            if not syntax_ok:
-                all_errors.append(syntax_error)
-            
+            all_errors = formatting_errors + ([syntax_error] if not syntax_ok else [])
             failed_files.append((relative_path, all_errors))
     
     print()
