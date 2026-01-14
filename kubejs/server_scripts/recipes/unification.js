@@ -1,5 +1,5 @@
 // kubejs/server_scripts/recipes/unification.js
-// Cross-mod item unification - ensures equivalent items from different mods work together
+// Cross-mod item and fluid unification - ensures equivalent items/fluids from different mods work together
 
 // Unified item mappings - all variants map to primary
 const UNIFIED_ITEMS = {
@@ -53,6 +53,38 @@ const UNIFIED_ITEMS = {
     ],
 };
 
+// Unified fluid mappings - all variants map to primary (Immersive Petroleum)
+const UNIFIED_FLUIDS = {
+    // Diesel (3 sources)
+    'diesel': [
+        'pneumaticcraft:diesel',
+        'tfmg:diesel',
+    ],
+    // Gasoline (3 sources)
+    'gasoline': [
+        'pneumaticcraft:gasoline',
+        'tfmg:gasoline',
+    ],
+    // Kerosene (3 sources)
+    'kerosene': [
+        'pneumaticcraft:kerosene',
+        'tfmg:kerosene',
+    ],
+    // Lubricant (2 sources)
+    'lubricant': [
+        'pneumaticcraft:lubricant',
+    ],
+    // Naphtha (2 sources)
+    'naphtha': [
+        'tfmg:naphtha',
+    ],
+    // Crude Oil (3 sources)
+    'crude_oil': [
+        'tfmg:crude_oil',
+        'pneumaticcraft:oil',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -67,10 +99,20 @@ const PRIMARY_OUTPUTS = {
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
 };
 
+// Primary fluid for each category (Immersive Petroleum as primary)
+const PRIMARY_FLUIDS = {
+    'diesel': 'immersivepetroleum:diesel',
+    'gasoline': 'immersivepetroleum:gasoline',
+    'kerosene': 'immersivepetroleum:kerosene',
+    'lubricant': 'immersivepetroleum:lubricant',
+    'naphtha': 'immersivepetroleum:naphtha',
+    'crude_oil': 'immersivepetroleum:crudeoil',
+};
+
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
 
-    // Replace all outputs with primary
+    // Replace all item outputs with primary
     Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
         const primary = PRIMARY_OUTPUTS[key];
         if (!primary) {
@@ -82,6 +124,25 @@ ServerEvents.recipes(event => {
             if (variant !== primary) {
                 event.replaceOutput({}, variant, primary);
                 console.log(`Unified ${variant} -> ${primary}`);
+            }
+        });
+    });
+
+    // Replace all fluid inputs and outputs with primary
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
+        const primary = PRIMARY_FLUIDS[key];
+        if (!primary) {
+            console.warn(`No primary fluid defined for ${key}`);
+            return;
+        }
+
+        variants.forEach(variant => {
+            if (variant !== primary) {
+                // Replace fluid inputs in all recipes (KubeJS handles fluids as strings)
+                event.replaceInput({}, Fluid.of(variant, 1), Fluid.of(primary, 1));
+                // Replace fluid outputs in all recipes
+                event.replaceOutput({}, Fluid.of(variant, 1), Fluid.of(primary, 1));
+                console.log(`Unified fluid ${variant} -> ${primary}`);
             }
         });
     });
