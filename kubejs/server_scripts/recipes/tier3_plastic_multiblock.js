@@ -1,79 +1,101 @@
 // kubejs/server_scripts/recipes/tier3_plastic_multiblock.js
-// Alternative Plastic Production for IE Path Players
-// Provides oil-to-plastic conversion without TFMG distillation tower
+// IE-Only Plastic Production for IE Path Players
+// Uses Immersive Engineering mechanics exclusively - no Create required
 
 ServerEvents.recipes(event => {
-    console.log('Adding alternative plastic production recipes for IE path...');
+    console.log('Adding IE-based plastic production recipes...');
 
-    // === OIL TO PLASTIC CONVERSION ===
-    // Alternative to TFMG's distillation tower for IE-focused players
+    // === INTERMEDIATE ITEM: UNPROCESSED PLASTIC ===
+    // Create an unprocessed plastic item that IE players can make
+    // This will be pressed into plastic sheets using IE Metal Press
     
-    // Method 1: Create Heated Mixing - Oil + Coal → Plastic Sheets
-    // Primary recipe for IE path players (250mb oil + 1 coal → 2 plastic sheets)
-    // Uses Create's Heated Mixing for oil processing
-    event.recipes.create.mixing('2x tfmg:plastic_sheet', [
-        Fluid.of('immersivepetroleum:oil', 250),
-        'minecraft:coal'
-    ]).heated();
+    // Define unprocessed plastic if not already defined by another mod
+    // Using IE's treated wood bucket as a template for custom item pattern
+    const UNPROCESSED_PLASTIC = 'kubejs:unprocessed_plastic';
+    
+    // === STEP 1: REFINE OIL TO PLASTIC MIXTURE ===
+    // Use IE Refinery multiblock to process oil into plastic mixture
+    // Immersive Petroleum oil + coal coke → unprocessed plastic (fluid intermediate)
+    event.recipes.immersiveengineering.refinery(
+        Fluid.of('kubejs:plastic_mixture', 100),  // Output: 100mb plastic mixture
+        Fluid.of('immersivepetroleum:oil', 250),   // Input: 250mb crude oil
+        Fluid.of('minecraft:empty', 0),            // No second fluid input
+        512                                        // Energy: 512 RF
+    );
 
-    // Method 2: Bulk Processing - Industrial Plastic Production
-    // Higher efficiency batch processing for mid-game (4x efficiency with sulfur catalyst)
-    // 1000mb oil + 4 coal + sulfur → 8 plastic sheets
-    // Note: Sulfur dust is provided by Mekanism (#forge:dusts/sulfur)
-    // Alternative: Use Create's sulfur or other sulfur sources if available
-    event.recipes.create.mixing('8x tfmg:plastic_sheet', [
-        Fluid.of('immersivepetroleum:oil', 1000),
-        '4x minecraft:coal',
-        '#forge:dusts/sulfur'
-    ]).superheated();
+    // === STEP 2: BOTTLING - PLASTIC MIXTURE TO UNPROCESSED PLASTIC ===
+    // Use IE Bottling Machine to fill coal coke with plastic mixture
+    // This creates a semi-solid unprocessed plastic item
+    event.recipes.immersiveengineering.bottling(
+        UNPROCESSED_PLASTIC,                       // Output: unprocessed plastic item
+        '#forge:coal_coke',                        // Input: coal coke (catalyst/binder)
+        Fluid.of('kubejs:plastic_mixture', 100)    // Input: plastic mixture fluid
+    );
 
-    // Method 3: Alternative with IE Crude Oil
-    // Uses IE's Crude Oil for cross-mod compatibility (300mb crude oil + 1 coal → 2 plastic sheets)
-    event.recipes.create.mixing('2x tfmg:plastic_sheet', [
-        Fluid.of('immersiveengineering:crude_oil', 300),
-        'minecraft:coal'
-    ]).heated();
+    // === STEP 3: METAL PRESS - STAMP INTO PLASTIC SHEETS ===
+    // Use IE Metal Press to stamp unprocessed plastic into plastic sheets
+    // This is the final step that produces usable plastic sheets
+    event.recipes.immersiveengineering.metal_press(
+        '2x tfmg:plastic_sheet',                   // Output: 2 plastic sheets
+        UNPROCESSED_PLASTIC,                       // Input: unprocessed plastic
+        'immersiveengineering:mold_plate',         // Mold: plate mold
+        2400,                                      // Energy: 2400 RF
+        1                                          // Input size: 1
+    );
 
-    // Method 4: Charcoal Alternative
-    // Allows using charcoal as catalyst (250mb oil + 1 charcoal → 2 plastic sheets)
-    event.recipes.create.mixing('2x tfmg:plastic_sheet', [
-        Fluid.of('immersivepetroleum:oil', 250),
-        'minecraft:charcoal'
-    ]).heated();
+    // === ALTERNATIVE: DIRECT REFINERY RECIPE (Less Efficient) ===
+    // For early game before having full IE automation
+    // Higher oil cost but simpler single-machine process
+    event.recipes.immersiveengineering.refinery(
+        Fluid.of('kubejs:molten_plastic', 125),    // Output: molten plastic (can be cast)
+        Fluid.of('immersivepetroleum:oil', 500),   // Input: 500mb crude oil (2x cost)
+        Fluid.of('minecraft:lava', 100),           // Input: 100mb lava (heat source)
+        1024                                       // Energy: 1024 RF (2x cost)
+    );
 
-    console.log('Alternative plastic production recipes added!');
+    // Cast molten plastic directly into sheets (emergency recipe)
+    event.recipes.immersiveengineering.bottling(
+        'tfmg:plastic_sheet',                      // Output: 1 plastic sheet
+        'minecraft:bucket',                        // Input: bucket (returns empty)
+        Fluid.of('kubejs:molten_plastic', 125)     // Input: molten plastic
+    );
+
+    console.log('IE-based plastic production recipes complete!');
 });
 
-// === MULTIBLOCK STRUCTURE DOCUMENTATION ===
-// This file provides recipes for IE path players to produce plastic
-// without requiring TFMG's distillation tower.
+// === IE MULTIBLOCK STRUCTURE DOCUMENTATION ===
+// This system uses ONLY Immersive Engineering blocks and machines
+// NO Create components required - fully IE-compatible
 //
-// Recommended Multiblock Design (to be built in-game with Multiblocked2):
+// REQUIRED IE MULTIBLOCKS:
+// 1. Refinery (3x5x3) - Processes oil into plastic mixture
+// 2. Metal Press (1x1x1) - Stamps unprocessed plastic into sheets
+// 3. Optional: Arc Furnace for coal coke production
+//
+// PLASTIC PRODUCTION MULTIBLOCK (Custom Multiblocked2 Structure)
+// Size: 3x3x3 compact IE-style multiblock
 // 
-// PLASTIC REFINERY MULTIBLOCK (3x3x4 structure)
 // Materials needed:
-// - 18x Steel Plates (casing blocks)
-// - 4x Brass Casing (for processors)
-// - 2x Mechanical Mixer
-// - 2x Fluid Tank (for oil input)
-// - 1x Item Vault (for coal input)
-// - 1x Item Vault (for plastic output)
-// - 1x Create Motor (for power)
-// - Various pipes and connections
+// - 18x Heavy Engineering Block (IE multiblock casing)
+// - 6x Redstone Engineering Block (control/power)
+// - 3x Steel Fluid Pipes (IE fluid handling)
+// - 2x Capacitor (IE power storage)
+// - 1x Multiblock Controller (Multiblocked2)
 //
-// Recipe: 250mb Oil + 1 Coal → 2 Plastic (1 minute processing)
-// Power: 256 RF/t (equivalent to ~128 SU in Create terms)
-// Tier: 3 (requires steel + electricity)
+// Structure Layout (IE-themed):
+// Layer 1 (Base):    [Heavy][Heavy][Heavy]
+//                    [Heavy][Redstone][Heavy]
+//                    [Heavy][Heavy][Heavy]
 //
-// Structure Layout:
-// Layer 1 (Base):    [Tank][Steel][Tank]
-//                    [Steel][Motor][Steel]
-//                    [Vault][Steel][Vault]
+// Layer 2 (Core):    [Heavy][Redstone][Heavy]
+//                    [Pipe][Controller][Pipe]
+//                    [Heavy][Redstone][Heavy]
 //
-// Layer 2-3:         [Steel][Brass][Steel]
-//                    [Brass][Mixer][Brass]
-//                    [Steel][Brass][Steel]
+// Layer 3 (Top):     [Heavy][Heavy][Heavy]
+//                    [Heavy][Capacitor][Heavy]
+//                    [Heavy][Heavy][Heavy]
 //
-// Layer 4 (Top):     [Steel][Steel][Steel]
-//                    [Steel][Output][Steel]
-//                    [Steel][Steel][Steel]
+// Recipe: 250mb Oil + Coal Coke → Unprocessed Plastic → 2 Plastic Sheets
+// Power: 512 RF/t (IE standard power)
+// Processing: 3-step process (Refinery → Bottling → Press)
+// Tier: 3 (requires steel and IE electricity)

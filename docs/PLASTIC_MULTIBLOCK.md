@@ -1,213 +1,289 @@
-# Plastic Production Multiblock - Tier 3
+# Plastic Production Multiblock - Tier 3 (IE-Only)
 
 ## Overview
-This document describes the **Plastic Refinery Multiblock**, a custom Multiblocked2 structure that allows Immersive Engineering path players to produce plastic sheets without requiring TFMG's distillation tower.
+This document describes the **IE Plastic Refinery** system, using **Immersive Engineering mechanics exclusively** to allow IE path players to produce plastic sheets without Create or TFMG distillation towers.
+
+## Key Principle
+**NO Create components required** - This is a pure IE solution for IE players.
 
 ## Tier Requirements
 - **Tier**: 3 (Oil & Plastic)
 - **Prerequisites**: 
   - Steel production (Tier 2)
-  - Electricity generation
+  - IE electricity generation (LV/MV power)
   - Immersive Petroleum oil extraction
 
-## Multiblock Structure
+## Production Process (3-Step IE Chain)
 
-### Design: Plastic Refinery Tower (3x3x4)
+### Step 1: Refinery - Oil Processing
+**Machine**: Immersive Engineering Refinery (3x5x3 multiblock)
 
-The Plastic Refinery is a vertical tower structure that processes crude oil into plastic sheets using heat and catalysts.
+**Recipe**:
+- Input: 250mb Crude Oil (Immersive Petroleum)
+- Input: (no second fluid)
+- Output: 100mb Plastic Mixture (intermediate fluid)
+- Power: 512 RF
+- Time: ~10 seconds
+
+### Step 2: Bottling Machine - Solidification
+**Machine**: Immersive Engineering Bottling Machine
+
+**Recipe**:
+- Input: 1x Coal Coke (catalyst/binder)
+- Input: 100mb Plastic Mixture
+- Output: 1x Unprocessed Plastic (solid item)
+- Power: Passive (gravity-fed)
+
+### Step 3: Metal Press - Sheet Stamping
+**Machine**: Immersive Engineering Metal Press
+
+**Recipe**:
+- Input: 1x Unprocessed Plastic
+- Mold: Plate Mold (reusable)
+- Output: 2x Plastic Sheets (tfmg:plastic_sheet)
+- Power: 2400 RF
+- Time: ~4 seconds
+
+## Total Cost Summary
+
+**Per 2 Plastic Sheets**:
+- 250mb Crude Oil (from IP pumpjack)
+- 1 Coal Coke (from IE Coke Oven)
+- ~3000 RF total energy
+- ~15 seconds total processing time
+
+## Multiblock Structure (Multiblocked2)
+
+### Design: IE Plastic Refinery (3x3x3)
+
+A compact IE-themed multiblock that consolidates the 3-step process.
 
 #### Materials Required
-- **18x Steel Plates** - Structural casing (use `#forge:plates/steel`)
-- **4x Brass Casing** - Processing chambers (from Create)
-- **2x Mechanical Mixer** - Mixing components (from Create)
-- **2x Fluid Tank** - Oil input storage (any compatible tank)
-- **1x Item Vault** - Coal catalyst input (from Create)
-- **1x Item Vault** - Plastic output (from Create)
-- **1x Create Motor** - Power supply (or equivalent rotational power)
-- **Pipes & Connections** - For fluid and item transfer
+- **18x Heavy Engineering Block** - Primary IE multiblock casing
+- **6x Redstone Engineering Block** - Control/power distribution
+- **3x Steel Fluid Pipe** - IE fluid handling
+- **2x LV/MV Capacitor** - IE power storage/buffer
+- **1x Multiblock Controller** - Multiblocked2 controller block
 
 ### Layer-by-Layer Construction
 
 ```
-Layer 4 (Top - Output):
-[S] [S] [S]
-[S] [O] [S]  O = Output Vault (Plastic Sheets)
-[S] [S] [S]  S = Steel Plate
+Layer 3 (Top - Power):
+[H] [H] [H]
+[H] [C] [H]  C = Capacitor (power storage)
+[H] [H] [H]  H = Heavy Engineering Block
 
-Layer 3 (Processing):
-[S] [B] [S]
-[B] [M] [B]  M = Mechanical Mixer
-[S] [B] [S]  B = Brass Casing
-                S = Steel Plate
+Layer 2 (Core - Processing):
+[H] [R] [H]
+[P] [X] [P]  X = Controller (Multiblocked2)
+[H] [R] [H]  R = Redstone Engineering Block
+                P = Steel Fluid Pipe (IE)
+                H = Heavy Engineering Block
 
-Layer 2 (Processing):
-[S] [B] [S]
-[B] [M] [B]  M = Mechanical Mixer
-[S] [B] [S]  B = Brass Casing
-                S = Steel Plate
-
-Layer 1 (Base - Input):
-[T] [S] [T]  T = Fluid Tank (Oil)
-[S] [P] [S]  P = Power (Create Motor)
-[V] [S] [C]  V = Item Vault (Output overflow)
-                C = Item Vault (Coal input)
-                S = Steel Plate
+Layer 1 (Base - Foundation):
+[H] [H] [H]
+[H] [R] [H]  R = Redstone Engineering Block
+[H] [H] [H]  H = Heavy Engineering Block
 ```
 
-## Recipe Configuration
+## IE Machines Setup (Alternative to Multiblock)
 
-### Primary Recipe: Oil to Plastic
-- **Input**: 
-  - 250mb Crude Oil (from Immersive Petroleum)
-  - 1x Coal (catalyst)
-- **Output**: 
-  - 2x Plastic Sheets (`tfmg:plastic_sheet`)
-- **Processing Time**: 60 seconds (1200 ticks)
-- **Energy**: 256 RF/tick (5120 RF/tick total per operation)
+If not using the custom multiblock, set up standard IE machines:
 
-### Alternative Recipes (via KubeJS)
+### Required IE Multiblocks/Machines
+1. **IE Refinery** (3x5x3)
+   - Process oil into plastic mixture
+   - Requires LV power input
+   - Use IE pipes for fluid routing
 
-Multiple crafting paths are available:
+2. **IE Bottling Machine** (1x1x1)
+   - Fill coal coke with plastic mixture
+   - Gravity-fed or pump-assisted
+   - Outputs to conveyor belt
 
-1. **Create Heated Mixing**: 250mb Oil + Coal → 2 Plastic (heated)
-2. **Create Superheated Mixing** (Bulk): 1000mb Oil + 4 Coal + Sulfur Dust → 8 Plastic
-3. **Create Pressing**: 125mb Oil → 1 Plastic Sheet (direct processing)
-4. **IE Refinery**: 100mb Oil → 1 Plastic (if configured)
+3. **IE Metal Press** (1x2x1)
+   - Stamp unprocessed plastic into sheets
+   - Requires plate mold (crafted once)
+   - Outputs to chest or belt
 
-## Building Instructions
+## Alternative Recipe (Emergency/Early Game)
 
-### Step 1: Prepare Materials
-1. Gather all required steel plates (TFMG or Immersive Engineering steel works)
-2. Craft brass casings from Create mod
-3. Set up mechanical mixers with appropriate rotational power
-4. Prepare fluid tanks for oil storage
+### Direct Molten Plastic Recipe
+Uses more resources but simpler setup (single Refinery):
 
-### Step 2: Build Base Layer
-1. Place the Create motor in the center
-2. Add fluid tanks on the left and right (front facing)
-3. Place item vaults at the back corners
-4. Fill gaps with steel plates
+**Refinery Recipe**:
+- Input: 500mb Crude Oil (2x cost)
+- Input: 100mb Lava (heat source)
+- Output: 125mb Molten Plastic
+- Power: 1024 RF (2x cost)
 
-### Step 3: Build Processing Layers
-1. Construct the 3x3 frame with steel plates
-2. Place brass casings in the cardinal directions (N, S, E, W)
-3. Install mechanical mixers in the center of each processing layer
-4. Connect rotational power from the motor to the mixers
+**Bottling Recipe**:
+- Input: 1x Bucket
+- Input: 125mb Molten Plastic
+- Output: 1x Plastic Sheet
+- Returns: Empty Bucket
 
-### Step 4: Build Top Layer
-1. Create a full 3x3 steel plate cap
-2. Leave center open for the output vault
-3. Install output vault for plastic sheets
-
-### Step 5: Configure Multiblock (In-Game)
-1. Use Multiblocked2's builder tool (right-click the controller)
-2. Define the structure pattern matching the layers above
-3. Set recipe: 250mb Oil + 1 Coal → 2 Plastic Sheets, 60s, 256 RF/t
-4. Assign input/output ports
-5. Test the structure by validating formation
+**Use Case**: Early Tier 3 before full IE automation is set up.
 
 ## Resource Balance
 
 ### Comparison with TFMG Path
 
-**TFMG Distillation Tower**:
-- Cost: ~20 steel + distillation tower components
-- Recipe: 100mb Oil → varies (multiple products)
-- Speed: Fast (multiple recipes)
-- Complexity: High (requires full distillation setup)
+**TFMG Distillation**:
+- Cost: ~100mb oil per sheet (optimal)
+- Power: Variable (Create SU)
+- Setup: Complex multi-machine
+- Speed: Fast
 
-**IE Path Plastic Refinery** (This Multiblock):
-- Cost: ~20 steel + brass + Create components
-- Recipe: 250mb Oil + Coal → 2 Plastic Sheets
-- Speed: Medium (60s per batch)
-- Complexity: Medium (simpler than TFMG tower)
+**IE Plastic Refinery** (This System):
+- Cost: 125mb oil per sheet + coal coke
+- Power: ~1500 RF per sheet (IE standard)
+- Setup: 3 IE machines or 1 multiblock
+- Speed: Medium (~7-8 seconds per sheet)
 
 **Balance Rationale**:
-- Uses 2.5x more oil per plastic sheet than TFMG optimal path
-- Requires coal as an additional catalyst
-- Slower processing time
-- Simpler structure, more accessible for IE-focused players
-- Provides alternative progression path without invalidating TFMG
+- 25% more oil than TFMG
+- Requires coal coke production (IE Coke Oven)
+- Uses IE power generation (compatible with IE grid)
+- Simpler than TFMG for IE-focused players
+- No cross-mod dependencies (pure IE)
+
+## Building Instructions
+
+### Option A: Custom Multiblock (Recommended)
+
+1. **Craft Components**:
+   - Heavy Engineering Blocks (IE crafting)
+   - Redstone Engineering Blocks (IE crafting)
+   - Steel Fluid Pipes (IE crafting)
+   - Capacitors (IE crafting)
+   - Multiblocked2 Controller
+
+2. **Build Structure**:
+   - Follow layer-by-layer guide above
+   - Place controller in center of layer 2
+   - Connect power to capacitor
+   - Connect oil input pipe
+
+3. **Configure Multiblock** (In-Game):
+   - Use Multiblocked2 builder tool
+   - Define 3x3x3 pattern
+   - Set recipe: Oil + Coal Coke → Plastic Sheets
+   - Assign input/output ports
+
+### Option B: Standard IE Machines
+
+1. **Build IE Refinery**:
+   - 3x5x3 multiblock structure
+   - Connect to oil tank/pipe
+   - Provide LV power
+   - Output to plastic mixture tank
+
+2. **Place Bottling Machine**:
+   - Feed coal coke via hopper/belt
+   - Pump in plastic mixture
+   - Output unprocessed plastic to belt
+
+3. **Place Metal Press**:
+   - Install plate mold
+   - Feed unprocessed plastic via belt
+   - Provide LV power
+   - Output plastic sheets to storage
 
 ## Energy Requirements
 
-- **Power Input**: 256 RF/tick (compatible with IE generators)
-- **Total Energy per Operation**: 15,360 RF (256 RF/t × 60s)
-- **Equivalent Create SU**: ~128 SU @ 32 RPM
+- **Refinery**: 512 RF per operation (~10s) = 51.2 RF/t average
+- **Metal Press**: 2400 RF per operation (~4s) = 600 RF/t average
+- **Total**: ~650 RF/t during active processing
 
-### Recommended Power Sources (Tier 3)
-- Immersive Engineering Thermoelectric Generator
-- Create Steam Engine (with boiler)
-- Immersive Engineering Diesel Generator
-- Early game: Manual Crank + Battery Buffer
+### Recommended IE Power Sources (Tier 3)
+- **Thermoelectric Generator** - Passive, early game
+- **Diesel Generator** - Reliable, scalable
+- **External Heater** - If using IE boilers
+- **HV Wire Grid** - For multi-machine setups
 
-## Upgrades and Optimization
+## Automation Setup
 
-### Tier 4+ Improvements
-Once reaching Tier 4 (Chemistry), players can:
-- Add speed upgrades (reduce processing time)
-- Add efficiency upgrades (reduce oil consumption)
-- Parallel processing (build multiple refineries)
-- Automated catalysts (replace coal with better alternatives)
+### Input Automation
+1. **Oil**: Pipe from IP pumpjack to Refinery
+2. **Coal Coke**: Hopper or conveyor from Coke Oven output
+3. **Power**: IE wire connectors to LV grid
 
-### Automation Setup
-1. **Input**: Pipe oil from Immersive Petroleum pumpjack
-2. **Catalyst**: Hopper or belt system for coal delivery
-3. **Output**: Extract plastic sheets via hopper or mechanical arm
-4. **Power**: Connect to IE power grid or Create power network
+### Output Automation
+1. **Plastic Mixture**: IE pipes between machines
+2. **Unprocessed Plastic**: Conveyor belts
+3. **Plastic Sheets**: Export to IE crates or Sophisticated Storage
+
+### Advanced: Full IE Automation
+- Use IE Logic circuits for smart control
+- Redstone comparators for tank monitoring
+- Conveyor belts with sorting for parallel processing
 
 ## Troubleshooting
 
-### Multiblock Won't Form
-- Verify all blocks match the pattern exactly
-- Check that steel plates are properly tagged (`#forge:plates/steel`)
-- Ensure brass casings are from the Create mod
-- Confirm all mechanical mixers are powered
+### Refinery Not Working
+- Check oil tank has 250mb+ available
+- Verify LV power connection (512 RF/t)
+- Ensure output tank has space for plastic mixture
+- Check IE pipes are not blocked
 
-### No Output
-- Check oil tank has sufficient crude oil (250mb minimum)
-- Verify coal is in the input vault
-- Ensure continuous power supply (256 RF/t)
-- Check output vault has space
+### Metal Press Stuck
+- Verify plate mold is installed
+- Check unprocessed plastic in input
+- Ensure power supply (600 RF/t during stamping)
+- Clear output if full
 
-### Low Efficiency
-- Consider building multiple refineries for parallel processing
-- Upgrade to superheated mixing for 4x efficiency in Create basin
-- Use Create's fluid handling for better throughput
+### Low Throughput
+- Add multiple refineries in parallel
+- Use faster conveyors for item transport
+- Upgrade to MV power for faster processing
+- Consider multiple presses for bottleneck
 
 ## Integration Notes
 
 ### Works With
-- ✅ Immersive Petroleum oil
-- ✅ Immersive Engineering crude oil
-- ✅ Create rotational power
+- ✅ Immersive Petroleum oil (primary)
+- ✅ Immersive Engineering power grid
+- ✅ IE automation (conveyors, hoppers)
 - ✅ TFMG plastic sheets (compatible output)
-- ✅ Sophisticated Storage/Backpacks (requires plastic)
+- ✅ Sophisticated Storage (for plastic-gated items)
+
+### Does NOT Require
+- ❌ Create mod (no mixers, no blaze burners)
+- ❌ TFMG distillation tower
+- ❌ Cross-mod power conversion
 
 ### Quest Integration
-This multiblock can be added to the FTB Quests progression:
-- Quest: "Alternative Plastic Production"
-- Requirement: Build and activate the Plastic Refinery
-- Reward: Stack of coal, speed upgrades, or advanced oil processing items
+Update FTB Quests to include IE plastic production path:
+- Quest: "IE Plastic Production"
+- Tasks: Build Refinery, Metal Press, produce plastic sheets
+- Rewards: Coal coke, IE components
 
 ## Technical Details
 
 ### Recipe IDs
-- `kubejs:oil_to_plastic_heated` - Create Heated Mixing
-- `kubejs:oil_to_plastic_bulk` - Create Superheated Mixing
-- `kubejs:oil_to_plastic_pressing` - Create Pressing
-- `kubejs:crude_oil_to_plastic` - Alternative oil source
+- `immersiveengineering:refinery/plastic_mixture` - Oil to mixture
+- `immersiveengineering:bottling/unprocessed_plastic` - Mixture to solid
+- `immersiveengineering:metal_press/plastic_sheet` - Solid to sheets
+- `immersiveengineering:refinery/molten_plastic_alt` - Emergency recipe
 
 ### Item/Fluid Tags
-- Input Oil: `immersivepetroleum:oil` or `immersiveengineering:crude_oil`
-- Output: `tfmg:plastic_sheet` (compatible with all TFMG recipes)
-- Casing: `#forge:plates/steel` (cross-mod compatible)
+- Input Oil: `immersivepetroleum:oil` (primary)
+- Intermediate: `kubejs:plastic_mixture` (custom fluid)
+- Intermediate: `kubejs:unprocessed_plastic` (custom item)
+- Output: `tfmg:plastic_sheet` (compatible with all recipes)
+
+### Multiblock Tags
+- Casing: `immersiveengineering:heavy_engineering` (IE standard)
+- Power: `immersiveengineering:redstone_engineering`
+- Pipes: `immersiveengineering:steel_fluid_pipe`
 
 ## Credits
-- Design: Tech Progression Modpack Team
+- Design: Pure IE solution for IE path players
 - Balanced for: Tier 3 (Oil & Plastic) progression
-- Compatible with: Multiblocked2, Create, TFMG, Immersive Engineering
+- Compatible with: Immersive Engineering, Immersive Petroleum
+- **No Create dependency** - IE players stay in IE ecosystem
 
 ---
 
-**Next Steps**: See `tier3_plastic_multiblock.js` for the KubeJS recipe implementations.
+**Next Steps**: See `tier3_plastic_multiblock.js` for KubeJS recipe implementations.
