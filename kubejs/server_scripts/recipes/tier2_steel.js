@@ -121,9 +121,9 @@ ServerEvents.recipes(event => {
     });
 
     // === STORAGE DRAWERS GATING ===
-    // Require steel or industrial components for Storage Drawers
+    // Only gate controllers behind steel, not the drawer blocks themselves
     
-    // Remove original Storage Drawers recipes
+    // Remove original Storage Drawers controller recipes
     event.remove({ output: 'storagedrawers:controller' });
     event.remove({ output: 'storagedrawers:controller_slave' });
     
@@ -150,63 +150,19 @@ ServerEvents.recipes(event => {
         C: 'minecraft:comparator',
         R: 'minecraft:stone'
     });
-    
-    // Gate basic drawer blocks with steel
-    const drawerTypes = ['1', '2', '4'];
-    const woodTypes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'crimson', 'warped', 'mangrove', 'cherry'];
-    
-    woodTypes.forEach(wood => {
-        drawerTypes.forEach(type => {
-            const drawerId = `storagedrawers:${wood}_full_drawers_${type}`;
-            event.remove({ output: drawerId });
-            
-            if (type === '1') {
-                event.shaped(drawerId, [
-                    'SSS',
-                    ' C ',
-                    'SSS'
-                ], {
-                    S: `minecraft:${wood}_planks`,
-                    C: '#forge:plates/steel'
-                });
-            } else if (type === '2') {
-                event.shaped(drawerId, [
-                    'SCS',
-                    'S S',
-                    'SCS'
-                ], {
-                    S: `minecraft:${wood}_planks`,
-                    C: '#forge:plates/steel'
-                });
-            } else if (type === '4') {
-                event.shaped(drawerId, [
-                    'CSC',
-                    'S S',
-                    'CSC'
-                ], {
-                    S: `minecraft:${wood}_planks`,
-                    C: '#forge:plates/steel'
-                });
-            }
-        });
-    });
 
     // === TINKER'S CONSTRUCT GATING ===
-    // Modify Smeltery controller to require steel
+    // Do not gate TC behind steel, but prevent TC from making steel
     
-    // Remove original Smeltery Controller recipe
-    event.remove({ output: 'tconstruct:smeltery_controller' });
-    
-    // Add new Smeltery Controller recipe requiring steel ingots
-    event.shaped('tconstruct:smeltery_controller', [
-        'SBS',
-        'BCB',
-        'SBS'
-    ], {
-        S: '#forge:ingots/steel',  // Accept both TFMG and IE steel ingots
-        B: 'tconstruct:seared_bricks',
-        C: 'minecraft:redstone'
-    });
+    // Remove any Tinker's Construct recipes that output steel
+    event.remove({ output: '#forge:ingots/steel', mod: 'tconstruct' });
+    event.remove({ output: '#forge:plates/steel', mod: 'tconstruct' });
+    event.remove({ output: 'tfmg:steel_ingot', mod: 'tconstruct' });
+    event.remove({ output: 'tfmg:steel_sheet', mod: 'tconstruct' });
+    event.remove({ output: 'immersiveengineering:ingot_steel', mod: 'tconstruct' });
+    event.remove({ output: 'immersiveengineering:plate_steel', mod: 'tconstruct' });
+    event.remove({ output: 'mekanism:ingot_steel', mod: 'tconstruct' });
+    event.remove({ output: 'mekanism:plate_steel', mod: 'tconstruct' });
 
     // === CROSS-PATH STEEL RECIPES ===
     // Ensure both Create (TFMG) and IE can produce steel
