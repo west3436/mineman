@@ -56,3 +56,6 @@ __pycache__/
 
 # Exclude exported Modrinth modpacks
 *.mrpack
+
+# ProbeJS
+.probejs/
