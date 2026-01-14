@@ -225,9 +225,56 @@
 			]
 		}
 		{
-			title: "Plastic Production"
+			title: "Plastic Production - Direct Processing"
+			icon: "tfmg:plastic_sheet"
+			x: -2.0d
+			y: 5.0d
+			description: [
+				"Create plastic sheets directly from oil using Create's heated mixing!"
+				""
+				"Mix crude oil with coal in a heated basin to produce plastic sheets."
+				""
+				"This IE-friendly path doesn't require complex distillation towers."
+			]
+			dependencies: ["3000000000000010"]
+			id: "3000000000000045"
+			tasks: [
+				{
+					id: "3000000000000046"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "3000000000000047"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "3000000000000048"
+					type: "item"
+					item: "tfmg:plastic_sheet"
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "3000000000000049"
+					type: "item"
+					item: "minecraft:coal"
+					count: 32
+				}
+				{
+					id: "3000000000000050"
+					type: "item"
+					item: "create:basin"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Plastic Production - Advanced"
 			icon: "pneumaticcraft:plastic"
-			x: 0.0d
+			x: 2.0d
 			y: 5.0d
 			description: [
 				"Convert oil products into plastic using PneumaticCraft!"
@@ -282,7 +329,11 @@
 				""
 				"Great for expanding your base and building large structures."
 			]
-			dependencies: ["3000000000000025"]
+			dependencies: [
+				"3000000000000025"
+				"3000000000000045"
+			]
+			dependency_requirement: "one_completed"
 			id: "3000000000000030"
 			tasks: [
 				{
@@ -323,7 +374,11 @@
 				""
 				"Build a modular storage system that grows with your needs."
 			]
-			dependencies: ["3000000000000025"]
+			dependencies: [
+				"3000000000000025"
+				"3000000000000045"
+			]
+			dependency_requirement: "one_completed"
 			id: "3000000000000035"
 			tasks: [
 				{
