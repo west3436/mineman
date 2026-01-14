@@ -286,6 +286,31 @@ const UNIFIED_FLUIDS = {
     ],
 };
 
+// Unified fluid mappings - all variants map to primary
+const UNIFIED_FLUIDS = {
+    // Ethanol/Bio-ethanol
+    'ethanol': [
+        'immersiveengineering:ethanol',
+        'createaddition:bioethanol',
+        'forestry:bio_ethanol',
+        'mekanismgenerators:bioethanol',
+        'pneumaticcraft:ethanol',
+        'chemlib:ethanol',
+    ],
+    
+    // Biodiesel
+    'biodiesel': [
+        'immersiveengineering:biodiesel',
+        'pneumaticcraft:biodiesel',
+    ],
+    
+    // Seed Oil
+    'seed_oil': [
+        'createaddition:seed_oil',
+        'forestry:seed_oil',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -357,6 +382,13 @@ const PRIMARY_FLUID_OUTPUTS = {
     'lpg': 'tfmg:lpg',
     'propane': 'tfmg:propane',
     'butane': 'tfmg:butane',
+};
+
+// Primary fluid for each category
+const PRIMARY_FLUID_OUTPUTS = {
+    'ethanol': 'immersiveengineering:ethanol',
+    'biodiesel': 'immersiveengineering:biodiesel',
+    'seed_oil': 'createaddition:seed_oil',
 };
 
 ServerEvents.recipes(event => {

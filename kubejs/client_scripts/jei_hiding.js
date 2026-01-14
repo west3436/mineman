@@ -130,8 +130,21 @@ JEIEvents.hideItems(event => {
 JEIEvents.hideFluids(event => {
     console.log('Hiding duplicate unified fluids in JEI...');
 
-    // Hide duplicate fluids (keeping TFMG as primary for oil refinery chain)
+    // Hide duplicate fluids (keeping primary variants visible)
     const HIDDEN_FLUID_DUPLICATES = [
+        // Ethanol/Bio-ethanol (keeping IE ethanol as primary)
+        'createaddition:bioethanol',
+        'forestry:bio_ethanol',
+        'mekanismgenerators:bioethanol',
+        'pneumaticcraft:ethanol',
+        'chemlib:ethanol',
+
+        // Biodiesel (keeping IE biodiesel as primary)
+        'pneumaticcraft:biodiesel',
+
+        // Seed Oil (keeping Create Addition seed_oil as primary)
+        'forestry:seed_oil',
+
         // PneumaticCraft LPG (TFMG is primary)
         'pneumaticcraft:lpg',
 
