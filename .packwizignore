@@ -1,0 +1,30 @@
+# Packwiz ignore file
+# Files and folders listed here will be ignored by packwiz when refreshing the index
+
+# Claude Code folder
+.claude/
+
+# Git files
+.git/
+.gitignore
+
+# Documentation (already in .claude)
+*.md
+!README.md
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and caches
+logs/
+crash-reports/
+.packwizcache/
+
+# World saves
+saves/

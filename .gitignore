@@ -1,21 +1,9 @@
-# Claude Code folder
-.claude/
-
 # Packwiz cache
 .packwizcache/
 
 # Downloaded mod files (we track .pw.toml files, not the actual JARs)
 mods/*.jar
 mods/*.zip
-
-# Resource packs (if downloaded)
-resourcepacks/*.zip
-
-# Shader packs (if downloaded)
-shaderpacks/*.zip
-
-# World saves
-saves/
 
 # Minecraft client/server files
 *.jar
@@ -32,7 +20,7 @@ usernamecache.json
 logs/
 crash-reports/
 
-# Local configs (these are generated on first run)
+# Local configs
 options.txt
 servers.dat
 realms_persistence.json
@@ -52,5 +40,8 @@ desktop.ini
 *.tmp
 *~
 
-# Packwiz lock files (optional - uncomment if you don't want to track)
-# packwiz.lock
+# Exclude exported CurseForge zip files
+*.zip
+
+# Exclude exported Modrinth modpacks
+*.mrpack
