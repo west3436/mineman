@@ -113,6 +113,10 @@ file = "config/tfmg-common.toml"
 hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
 
 [[files]]
+file = "crash-2026-01-14_13.27.23-server.txt"
+hash = "e3b6ba34b48e4c453383ccc550392490a77fdf68b8a94860f847e2c1941c2c76"
+
+[[files]]
 file = "docs/README.md"
 hash = "fad190ed92994bd678a9e3c46b35216fe05dadcff6def6182c74898b1ec7086c"
 
@@ -848,11 +852,6 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "045d582e2c534c5bb96d7336b4ae2cd12692c6de29b19ae5f1dbfd8759c03b03"
-metafile = true
-
-[[files]]
-file = "mods/pluto.pw.toml"
-hash = "7ee07265d7a47134869e4d274e086647e12ba7fad927719871a944935cb89f5a"
 metafile = true
 
 [[files]]
