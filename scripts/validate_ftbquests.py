@@ -23,7 +23,7 @@ def check_formatting_codes(file_path: Path) -> Tuple[bool, List[str]]:
     Check for unescaped formatting codes followed by whitespace.
     
     In FTBQuests, formatting codes like &r, &f, &a etc. followed by a space
-    must be escaped as \\&r, \\&f, \\&a to avoid in-game errors.
+    must be escaped as \\\\&r, \\\\&f, \\\\&a to avoid in-game errors.
     
     Args:
         file_path: Path to the SNBT file to check
@@ -35,9 +35,10 @@ def check_formatting_codes(file_path: Path) -> Tuple[bool, List[str]]:
     
     with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
-            # Find unescaped & followed by formatting code and space
-            # Pattern: & not preceded by \ followed by letter/number and then space
-            matches = re.finditer(r'(?<!\\)(&[a-zA-Z0-9])( )', line)
+            # Find unescaped & followed by Minecraft formatting code and space
+            # Pattern: & not preceded by \ followed by valid Minecraft code (0-9, a-f, k-o, r) and then space
+            # Valid codes: 0-9 (colors), a-f (colors), k-o (formats), r (reset)
+            matches = re.finditer(r'(?<!\\)(&[0-9a-fk-or])( )', line)
             for match in matches:
                 errors.append(
                     f"Line {line_num}: Unescaped formatting code '{match.group(1)}' "
