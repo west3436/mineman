@@ -13,6 +13,7 @@
 			icon: "minecraft:iron_ingot"
 			x: 0.0d
 			y: 0.0d
+			shape: "hexagon"
 			description: [
 				"Welcome to Tier 1! It's time to move beyond basic vanilla crafting."
 				""
@@ -52,6 +53,7 @@
 			}
 			x: 0.0d
 			y: 2.0d
+			shape: "rsquare"
 			description: [
 				"Time to choose your processing path!"
 				""
@@ -59,9 +61,10 @@
 				""
 				"&cImmersive Engineering&r - Focus on multiblock structures, electricity, and industrial systems"
 				""
-				"Choose one path to continue (OR task)."
+				"Choose ONE path to continue. You only need to complete one of these tasks."
 			]
 			dependencies: ["1000000000000002"]
+			min_required_tasks: 1
 			id: "1000000000000006"
 			tasks: [
 				{
@@ -457,6 +460,8 @@
 			icon: "minecraft:diamond"
 			x: 0.0d
 			y: 8.5d
+			shape: "hexagon"
+			size: 1.5d
 			description: [
 				"Congratulations! You've completed Tier 1 Basic Processing!"
 				""
