@@ -15,6 +15,11 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'lead_ingot': 'tfmg:lead_ingot',
+    'lead_plate': 'tfmg:lead_sheet',
+    'lead_dust': 'mekanism:dust_lead',
+    'lead_block': 'tfmg:lead_block',
+    'raw_lead_block': 'tfmg:raw_lead_block',
 };
 
 // Unified tag mappings for cross-mod compatibility
@@ -48,4 +53,14 @@ const TIER_GATES = {
     6: [ // Future Tech
         'ae2:controller',
     ],
+};
+
+// Primary fluid outputs for unification (Immersive Petroleum as primary)
+const PRIMARY_FLUIDS = {
+    'diesel': 'immersivepetroleum:diesel',
+    'gasoline': 'immersivepetroleum:gasoline',
+    'kerosene': 'immersivepetroleum:kerosene',
+    'lubricant': 'immersivepetroleum:lubricant',
+    'naphtha': 'immersivepetroleum:naphtha',
+    'crude_oil': 'immersivepetroleum:crudeoil',
 };

@@ -1,0 +1,308 @@
+---
+name: Dump Registry
+
+# Security Note: This workflow executes code from pull requests. To mitigate risk:
+# 1. Only repository collaborators, members, and owners can trigger this workflow
+# 2. Checkout uses commit SHA (not branch ref) to prevent TOCTOU attacks
+# 3. The workflow has minimal permissions (read contents, write PR comments only)
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  dump-registry:
+    # Only run on PR comments with the /dump_registry command from collaborators
+    # This restricts the workflow to trusted users only
+    if: >
+      github.event.issue.pull_request &&
+      contains(github.event.comment.body, '/dump_registry') &&
+      (
+        github.event.comment.author_association == 'OWNER' ||
+        github.event.comment.author_association == 'MEMBER' ||
+        github.event.comment.author_association == 'COLLABORATOR'
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      pull-requests: write
+
+    env:
+      SERVER_MAX_MEMORY: 4G
+      SERVER_MIN_MEMORY: 2G
+      DUMP_REGISTRY: "true"
+      SERVER_TIMEOUT: 300
+
+    steps:
+      - name: Add reaction to comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'eyes'
+            });
+
+      - name: Get PR details
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number
+            });
+            core.setOutput('head_sha', pr.data.head.sha);
+            core.setOutput('base_sha', pr.data.base.sha);
+            core.setOutput('base_ref', pr.data.base.ref);
+
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.pr.outputs.head_sha }}
+          path: pr
+
+      - name: Checkout base branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.pr.outputs.base_sha }}
+          path: base
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Packwiz
+        run: |
+          wget -q https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86.zip \
+            -O packwiz.zip
+          unzip -o packwiz.zip
+          chmod +x ./packwiz
+
+      - name: Download packwiz-installer-bootstrap
+        run: |
+          wget -q https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+
+      # ====== Build and run PR branch ======
+      - name: Create PR server directory
+        run: mkdir -p pr-server
+
+      - name: Install mods for PR branch
+        run: |
+          cd pr
+          ../packwiz serve --port 8080 &
+          PACKWIZ_PID=$!
+          trap "kill $PACKWIZ_PID 2>/dev/null || true" EXIT
+          
+          for i in {1..10}; do
+            if curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/pack.toml | grep -q "200"; then
+              echo "Packwiz server is ready"
+              break
+            fi
+            if [ $i -eq 10 ]; then
+              echo "ERROR: Packwiz server failed to start"
+              exit 1
+            fi
+            echo "Waiting for packwiz server... (attempt $i/10)"
+            sleep 2
+          done
+          
+          cd ../pr-server
+          java -jar ../packwiz-installer-bootstrap.jar -g -s server http://localhost:8080/pack.toml
+
+      - name: Install Forge for PR branch
+        run: |
+          cd pr-server
+          MINECRAFT_VERSION=$(grep -oP 'minecraft = "\K[^"]+' ../pr/pack.toml)
+          FORGE_VERSION=$(grep -oP 'forge = "\K[^"]+' ../pr/pack.toml)
+          FULL_VERSION="${MINECRAFT_VERSION}-${FORGE_VERSION}"
+          echo "Downloading Forge ${FULL_VERSION}"
+          wget -q "https://maven.minecraftforge.net/net/minecraftforge/forge/${FULL_VERSION}/forge-${FULL_VERSION}-installer.jar" \
+            -O forge-installer.jar
+          java -jar forge-installer.jar --installServer
+          rm -f forge-installer.jar forge-installer.jar.log
+
+      - name: Configure PR server
+        run: |
+          echo "eula=true" > pr-server/eula.txt
+          cat > pr-server/server.properties << 'EOF'
+          server-port=25565
+          online-mode=false
+          max-players=1
+          level-type=flat
+          spawn-npcs=false
+          spawn-animals=false
+          spawn-monsters=false
+          generate-structures=false
+          EOF
+
+      - name: Launch PR server and dump registry
+        run: |
+          cd pr-server
+          if [ -f "run.sh" ]; then
+            chmod +x run.sh
+            timeout ${{ env.SERVER_TIMEOUT }} ./run.sh nogui 2>&1 | tee ../pr-minecraft.log || true
+          else
+            FORGE_JAR=$(ls -1 forge-*-shim.jar 2>/dev/null | head -n1 || ls -1 forge-*.jar 2>/dev/null | grep -v installer | head -n1)
+            if [ -n "$FORGE_JAR" ]; then
+              timeout ${{ env.SERVER_TIMEOUT }} java -Xmx${{ env.SERVER_MAX_MEMORY }} -Xms${{ env.SERVER_MIN_MEMORY }} -jar "$FORGE_JAR" nogui 2>&1 | tee ../pr-minecraft.log || true
+            else
+              echo "ERROR: Could not find Forge server jar"
+              exit 1
+            fi
+          fi
+
+      - name: Copy PR registry dump
+        run: |
+          if [ -f "pr-server/registry_dump.txt" ]; then
+            cp pr-server/registry_dump.txt pr-registry.txt
+          else
+            echo "WARNING: No registry dump found for PR branch"
+            touch pr-registry.txt
+          fi
+
+      # ====== Build and run base branch ======
+      - name: Create base server directory
+        run: mkdir -p base-server
+
+      - name: Install mods for base branch
+        run: |
+          cd base
+          ../packwiz serve --port 8081 &
+          PACKWIZ_PID=$!
+          trap "kill $PACKWIZ_PID 2>/dev/null || true" EXIT
+          
+          for i in {1..10}; do
+            if curl -s -o /dev/null -w "%{http_code}" http://localhost:8081/pack.toml | grep -q "200"; then
+              echo "Packwiz server is ready"
+              break
+            fi
+            if [ $i -eq 10 ]; then
+              echo "ERROR: Packwiz server failed to start"
+              exit 1
+            fi
+            echo "Waiting for packwiz server... (attempt $i/10)"
+            sleep 2
+          done
+          
+          cd ../base-server
+          java -jar ../packwiz-installer-bootstrap.jar -g -s server http://localhost:8081/pack.toml
+
+      - name: Install Forge for base branch
+        run: |
+          cd base-server
+          MINECRAFT_VERSION=$(grep -oP 'minecraft = "\K[^"]+' ../base/pack.toml)
+          FORGE_VERSION=$(grep -oP 'forge = "\K[^"]+' ../base/pack.toml)
+          FULL_VERSION="${MINECRAFT_VERSION}-${FORGE_VERSION}"
+          echo "Downloading Forge ${FULL_VERSION}"
+          wget -q "https://maven.minecraftforge.net/net/minecraftforge/forge/${FULL_VERSION}/forge-${FULL_VERSION}-installer.jar" \
+            -O forge-installer.jar
+          java -jar forge-installer.jar --installServer
+          rm -f forge-installer.jar forge-installer.jar.log
+
+      - name: Configure base server
+        run: |
+          echo "eula=true" > base-server/eula.txt
+          cat > base-server/server.properties << 'EOF'
+          server-port=25566
+          online-mode=false
+          max-players=1
+          level-type=flat
+          spawn-npcs=false
+          spawn-animals=false
+          spawn-monsters=false
+          generate-structures=false
+          EOF
+
+      - name: Launch base server and dump registry
+        run: |
+          cd base-server
+          if [ -f "run.sh" ]; then
+            chmod +x run.sh
+            timeout ${{ env.SERVER_TIMEOUT }} ./run.sh nogui 2>&1 | tee ../base-minecraft.log || true
+          else
+            FORGE_JAR=$(ls -1 forge-*-shim.jar 2>/dev/null | head -n1 || ls -1 forge-*.jar 2>/dev/null | grep -v installer | head -n1)
+            if [ -n "$FORGE_JAR" ]; then
+              timeout ${{ env.SERVER_TIMEOUT }} java -Xmx${{ env.SERVER_MAX_MEMORY }} -Xms${{ env.SERVER_MIN_MEMORY }} -jar "$FORGE_JAR" nogui 2>&1 | tee ../base-minecraft.log || true
+            else
+              echo "ERROR: Could not find Forge server jar"
+              exit 1
+            fi
+          fi
+
+      - name: Copy base registry dump
+        run: |
+          if [ -f "base-server/registry_dump.txt" ]; then
+            cp base-server/registry_dump.txt base-registry.txt
+          else
+            echo "WARNING: No registry dump found for base branch"
+            touch base-registry.txt
+          fi
+
+      # ====== Compare and comment ======
+      - name: Compare registries
+        id: compare
+        run: |
+          python pr/scripts/compare_registries.py base-registry.txt pr-registry.txt comment.md
+
+      - name: Copy registry dump to PR directory
+        run: |
+          cp pr-registry.txt pr/registry_dump.txt
+
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const comment = fs.readFileSync('comment.md', 'utf8');
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment
+            });
+
+      - name: Add success reaction
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'rocket'
+            });
+
+      - name: Upload registry dumps
+        uses: actions/upload-artifact@v4
+        with:
+          name: registry-dumps
+          path: |
+            pr-registry.txt
+            base-registry.txt
+            comment.md
+          retention-days: 7
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: minecraft-logs
+          path: |
+            pr-minecraft.log
+            base-minecraft.log
+            pr-server/logs/
+            base-server/logs/
+          retention-days: 7
