@@ -1,0 +1,126 @@
+{
+	id: "9000000000000001"
+	group: "0000000000000002"
+	order_index: 2
+	filename: "side_exploration"
+	title: "Side: Exploration"
+	icon: "minecraft:map"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Journey Begins"
+			icon: "minecraft:compass"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Welcome to the Exploration side quest!"
+				""
+				"Venture out to discover new biomes, structures, and dimensions."
+				""
+				"Gather rare resources and unlock new areas."
+			]
+			id: "9000000000000002"
+			tasks: [{
+				id: "9000000000000003"
+				type: "checkmark"
+				title: "Start Exploring"
+			}]
+			rewards: [{
+				id: "9000000000000004"
+				type: "item"
+				item: "minecraft:compass"
+				count: 4
+			}]
+		}
+		{
+			title: "Biome Discovery"
+			icon: "minecraft:map"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Explore different biomes in the overworld."
+				""
+				"Visit deserts, jungles, ice plains, and more."
+				""
+				"Each biome has unique resources and challenges."
+			]
+			dependencies: ["9000000000000002"]
+			id: "9000000000000005"
+			tasks: [
+				{
+					id: "9000000000000006"
+					type: "checkmark"
+					title: "Visit 5 Different Biomes"
+				}
+				{
+					id: "9000000000000007"
+					type: "item"
+					item: "minecraft:map"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "9000000000000008"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 16
+				}
+				{
+					id: "9000000000000009"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Dimensional Travel"
+			icon: "minecraft:ender_eye"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Venture into other dimensions!"
+				""
+				"Visit the Nether and the End."
+				""
+				"Gather unique dimensional resources."
+			]
+			dependencies: ["9000000000000005"]
+			id: "9000000000000010"
+			tasks: [
+				{
+					id: "9000000000000011"
+					type: "dimension"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "9000000000000012"
+					type: "dimension"
+					dimension: "minecraft:the_end"
+				}
+			]
+			rewards: [
+				{
+					id: "9000000000000013"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 8
+				}
+				{
+					id: "9000000000000014"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 16
+				}
+				{
+					id: "9000000000000015"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}
