@@ -139,28 +139,6 @@ ServerEvents.recipes(event => {
         });
     });
 
-    // Add fluid conversion recipes using Create Mixing (1:1 conversion)
-    // This allows players to convert duplicate fluids in a Create mixer
-    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
-        const primary = PRIMARY_FLUID_OUTPUTS[key];
-        if (!primary) return;
-
-        variants.forEach(variant => {
-            if (variant !== primary) {
-                // Add mixing conversion recipe: variant -> primary (1:1 ratio)
-                // Extract just mod and fluid names for cleaner IDs
-                const variantName = variant.split(':')[1];
-                const primaryName = primary.split(':')[1];
-                event.recipes.create.mixing(
-                    Fluid.of(primary, 1000),
-                    Fluid.of(variant, 1000)
-                ).id(`kubejs:fluid_unification/${key}/${variantName}_to_${primaryName}`);
-                
-                console.log(`Added conversion recipe: ${variant} -> ${primary}`);
-            }
-        });
-    });
-
     console.log('Recipe unification complete!');
 });
 
