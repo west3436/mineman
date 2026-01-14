@@ -27,6 +27,18 @@ JEIEvents.hideItems(event => {
         // Duplicate steel ingots (keeping TFMG as primary)
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
+        'createnuclear:steel_ingot',
+
+        // Duplicate steel blocks (keeping TFMG as primary)
+        'immersiveengineering:storage_steel',
+        'mekanism:block_steel',
+        'tconstruct:steel_block',
+        'createnuclear:steel_block',
+
+        // Duplicate steel nuggets (keeping TFMG as primary)
+        'immersiveengineering:nugget_steel',
+        'mekanism:nugget_steel',
+        'createnuclear:steel_nugget',
 
         // Add more duplicates as needed during testing
     ];

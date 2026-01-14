@@ -8,6 +8,8 @@ const PRIMARY_OUTPUTS = {
     'gold_plate': 'create:golden_sheet',
     'steel_plate': 'tfmg:steel_sheet',
     'steel_ingot': 'tfmg:steel_ingot',
+    'steel_block': 'tfmg:steel_block',
+    'steel_nugget': 'tfmg:steel_nugget',
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
