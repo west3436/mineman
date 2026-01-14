@@ -53,6 +53,23 @@ const UNIFIED_ITEMS = {
     ],
 };
 
+// Unified fluid mappings - all variants map to primary (TFMG for oil refinery chain)
+const UNIFIED_FLUIDS = {
+    // Hydrocarbon gases from oil refining
+    'lpg': [
+        'pneumaticcraft:lpg',
+        'tfmg:lpg',
+    ],
+    'propane': [
+        'chemlib:propane',
+        'tfmg:propane',
+    ],
+    'butane': [
+        'chemlib:butane',
+        'tfmg:butane',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -65,6 +82,13 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+};
+
+// Primary fluid for each category (TFMG for oil refinery chain consistency)
+const PRIMARY_FLUID_OUTPUTS = {
+    'lpg': 'tfmg:lpg',
+    'propane': 'tfmg:propane',
+    'butane': 'tfmg:butane',
 };
 
 ServerEvents.recipes(event => {
@@ -86,6 +110,25 @@ ServerEvents.recipes(event => {
         });
     });
 
+    // Replace all fluid inputs and outputs with primary
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
+        const primary = PRIMARY_FLUID_OUTPUTS[key];
+        if (!primary) {
+            console.warn(`No primary fluid output defined for ${key}`);
+            return;
+        }
+
+        variants.forEach(variant => {
+            if (variant !== primary) {
+                // Replace fluid inputs
+                event.replaceInput({}, Fluid.of(variant), Fluid.of(primary));
+                // Replace fluid outputs
+                event.replaceOutput({}, Fluid.of(variant), Fluid.of(primary));
+                console.log(`Unified fluid ${variant} -> ${primary}`);
+            }
+        });
+    });
+
     console.log('Recipe unification complete!');
 });
 
@@ -101,4 +144,18 @@ ServerEvents.tags('item', event => {
     });
 
     console.log('Item tag unification complete!');
+});
+
+ServerEvents.tags('fluid', event => {
+    console.log('Applying fluid tag unification...');
+
+    // Create unified tags for cross-mod fluid compatibility
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
+        const tagName = `forge:${key}`; // e.g., forge:lpg
+        variants.forEach(variant => {
+            event.add(tagName, variant);
+        });
+    });
+
+    console.log('Fluid tag unification complete!');
 });
