@@ -28,6 +28,13 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:plate_aluminum',
     ],
 
+    // Plastic Items
+    'plastic': [
+        'tfmg:plastic_sheet',
+        'pneumaticcraft:plastic',
+        'industrialforegoing:plastic',
+    ],
+
     // Dusts
     'iron_dust': [
         'mekanism:dust_iron',
@@ -65,6 +72,7 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'plastic': 'tfmg:plastic_sheet',
 };
 
 ServerEvents.recipes(event => {
@@ -86,6 +94,18 @@ ServerEvents.recipes(event => {
         });
     });
 
+    // === PLASTIC CONVERSION RECIPES ===
+    // Allow conversion between different plastic forms for cross-mod compatibility
+    
+    // PneumaticCraft plastic <-> TFMG plastic_sheet (1:1 conversion)
+    event.shapeless('tfmg:plastic_sheet', ['pneumaticcraft:plastic']);
+    event.shapeless('pneumaticcraft:plastic', ['tfmg:plastic_sheet']);
+    
+    // Industrial Foregoing plastic <-> TFMG plastic_sheet (1:1 conversion)
+    event.shapeless('tfmg:plastic_sheet', ['industrialforegoing:plastic']);
+    event.shapeless('industrialforegoing:plastic', ['tfmg:plastic_sheet']);
+    
+    console.log('Plastic conversion recipes added!');
     console.log('Recipe unification complete!');
 });
 
@@ -99,6 +119,14 @@ ServerEvents.tags('item', event => {
             event.add(tagName, variant);
         });
     });
+
+    // Special tag for plastic (singular, not "plastics")
+    const plasticVariants = UNIFIED_ITEMS['plastic'];
+    if (plasticVariants) {
+        plasticVariants.forEach(variant => {
+            event.add('forge:plastic', variant);
+        });
+    }
 
     console.log('Item tag unification complete!');
 });

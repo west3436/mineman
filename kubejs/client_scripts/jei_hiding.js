@@ -28,6 +28,10 @@ JEIEvents.hideItems(event => {
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
 
+        // Duplicate plastic items (keeping TFMG plastic_sheet as primary)
+        'pneumaticcraft:plastic',
+        'industrialforegoing:plastic',
+
         // Add more duplicates as needed during testing
     ];
 
