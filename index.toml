@@ -42,11 +42,11 @@ hash = "308b1438a36739b35e70679e16050eac198c96789bb8d2a98954b63e2e864507"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0_welcome.snbt"
-hash = "fe615465400e80fa8dad1a67e231da77edc3a5b93dd2704360b007a8c06beb92"
+hash = "f301aef0dea0f560630ede931527bd05dfcbfb78175c6e4e78ba9f7994437437"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_basic_processing.snbt"
-hash = "122d2aa08f7f770e6d52d4344f9abf3bed3a634158f299838789a35d3ab528ee"
+hash = "66803b40a2e66684ca66a838bac3358f1d274a8f7476f9364c14acb0060eea1d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2_steel_electricity.snbt"
@@ -70,19 +70,19 @@ hash = "5411707089602c8c0828f8b2a86ce03d81aa147c1e418086dc0cf547cb7d0ddd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
-hash = "02472e1fb64b1c0ac0e5b9aa5a6946692153e9bae2759206b23bc649e2a37798"
+hash = "5cdb04600f46cbdd0057623f99cb01ad5779da69f5141627bf3c02f6d2b4ea05"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_building.snbt"
-hash = "e8c5278bfb514de7bcca3c2c916af24108372a6eca77f1301d6c7501e1820503"
+hash = "acb04bdcfa9a83b3b20c2e7690aa999576c9d983cabe4c638a1b0cbaeaf39599"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_exploration.snbt"
-hash = "069c1bf13023da40bf868f76bfebdda314d8203fab7948d6cc56a375d6b12fbd"
+hash = "6c8d074b44c71b7786966022eb0ae0316ef7c3ade9e9f6735ed69f3330fa8690"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_railways.snbt"
-hash = "6dc140d3a0d18171ba1353bbf1dafbc7c1002beb1dc86306242b30fde88aee08"
+hash = "24452a18e47d8967c4df12a2dc2a146aac16debbc8ba5560b598f211227d4b32"
 
 [[files]]
 file = "config/immersiveengineering-server.toml"
@@ -138,7 +138,7 @@ hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic_multiblock.js"
-hash = "f009f0785c3b609a5f734c69608d7e1519a3ea8447bbb317fee13027fd72ed42"
+hash = "c201cf7a382b297f35475af1b53bd629a6058cb7bef6e2b158aa8265f6fcd1fb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
@@ -1084,7 +1084,7 @@ hash = "c7bf376576614480e7927953a8b94c8d4083e2de64c5b0b5266057fe0aab968c"
 
 [[files]]
 file = "scripts/validate_ftbquests.py"
-hash = "793561de3d825adcdd2d87c9e6451d2a4e75c8ac22b230fa5bc7277267e35e30"
+hash = "1af1f86818b441c7f3da011dcb6272edf0a93c24d26875824b1188e861a0a6bf"
 
 [[files]]
 file = "scripts/validate_kubejs.js"
