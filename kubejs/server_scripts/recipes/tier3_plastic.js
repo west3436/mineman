@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
         'PSP'
     ], {
         P: 'tfmg:plastic_sheet',
-        S: '#forge:rods/wooden'
+        S: 'minecraft:stick'
     });
     
     // Basic Chest - requires plastic sheets
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         'PSP'
     ], {
         P: 'tfmg:plastic_sheet',
-        S: '#forge:rods/wooden',
+        S: 'minecraft:stick',
         C: '#forge:chests/wooden'
     });
     
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         'PSP'
     ], {
         P: 'tfmg:plastic_sheet',
-        S: '#forge:rods/wooden',
+        S: 'minecraft:stick',
         W: '#minecraft:planks'
     });
     
