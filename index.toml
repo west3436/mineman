@@ -5,6 +5,10 @@ file = ".github/workflows/datapack-validation.yml"
 hash = "549c46ed02d97055d54bfbebcaaedb920cd2d45543c1f4a67f12154633ea9302"
 
 [[files]]
+file = ".github/workflows/dump-registry.yml"
+hash = "55f173fcbdda4565502fcf8a98a05c0820fcc15de4ec0ade76aa080a88145e29"
+
+[[files]]
 file = ".github/workflows/ftbquests-format-check.yml"
 hash = "9d0cd62a0e7007a09d5da00fb0484a39dc2c0cb0f3811aa39ca2856158471043"
 
@@ -127,6 +131,10 @@ hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
 hash = "1cf57d3945f3cf6f86a9e04ddf9529b50b0bae99256f858002fedadbe4a9236b"
+
+[[files]]
+file = "kubejs/server_scripts/dump_registry.js"
+hash = "c73e96a21322bb43c2ebf314bcfeb97d54b6962adb5968f89f1e8000bf39f657"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
@@ -1077,6 +1085,10 @@ metafile = true
 [[files]]
 file = "scripts/check_minecraft_logs.py"
 hash = "7f2791a3c7c8663ea72e642f9370ff125483ccd239fd92388af8bcc9e0a6d256"
+
+[[files]]
+file = "scripts/compare_registries.py"
+hash = "504560e855b0cf95579926c79f38e069daea518c5df76e76fce913e5b4542ad5"
 
 [[files]]
 file = "scripts/package-lock.json"
