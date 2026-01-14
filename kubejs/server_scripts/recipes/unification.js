@@ -112,6 +112,9 @@ const PRIMARY_FLUID_OUTPUTS = Object.fromEntries(
     Object.entries(UNIFIED_FLUIDS).map(([key, variants]) => [key, variants[0]])
 );
 
+// Constants for fluid tag generation
+const BUCKET_SUFFIX = '_bucket';
+
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
 
@@ -181,24 +184,24 @@ ServerEvents.tags('fluid', event => {
     // Fluid IDs are derived from bucket IDs by removing '_bucket' suffix
     Object.entries(UNIFIED_FLUIDS).forEach(([key, bucketVariants]) => {
         // Validate that the key ends with '_bucket'
-        if (!key.endsWith('_bucket')) {
-            console.warn(`Skipping fluid tag creation for ${key}: key must end with '_bucket'`);
+        if (!key.endsWith(BUCKET_SUFFIX)) {
+            console.warn(`Skipping fluid tag creation for ${key}: key must end with '${BUCKET_SUFFIX}'`);
             return;
         }
         
         // Convert bucket category to fluid tag name (e.g., 'hydrogen_bucket' -> 'forge:hydrogen')
-        const fluidName = key.slice(0, -7); // Remove '_bucket' suffix (7 characters)
+        const fluidName = key.slice(0, -BUCKET_SUFFIX.length);
         const tagName = `forge:${fluidName}`;
         
         // Convert bucket item IDs to fluid IDs (e.g., 'mekanism:hydrogen_bucket' -> 'mekanism:hydrogen')
         bucketVariants.forEach(bucketItem => {
             // Validate that the bucket item ID ends with '_bucket'
-            if (!bucketItem.endsWith('_bucket')) {
-                console.warn(`Skipping ${bucketItem}: expected bucket item to end with '_bucket'`);
+            if (!bucketItem.endsWith(BUCKET_SUFFIX)) {
+                console.warn(`Skipping ${bucketItem}: expected bucket item to end with '${BUCKET_SUFFIX}'`);
                 return;
             }
             
-            const fluidId = bucketItem.slice(0, -7); // Remove '_bucket' suffix
+            const fluidId = bucketItem.slice(0, -BUCKET_SUFFIX.length);
             try {
                 event.add(tagName, fluidId);
                 console.log(`Added ${fluidId} to ${tagName}`);
