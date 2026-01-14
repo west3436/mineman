@@ -13,6 +13,13 @@ const PRIMARY_OUTPUTS = {
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
+    // Gears - Use Industrial Foregoing for common materials, Forestry for unique alloys
+    'iron_gear': 'industrialforegoing:iron_gear',
+    'gold_gear': 'industrialforegoing:gold_gear',
+    'diamond_gear': 'industrialforegoing:diamond_gear',
+    'copper_gear': 'forestry:gear_copper',
+    'bronze_gear': 'forestry:gear_bronze',
+    'tin_gear': 'forestry:gear_tin',
     'aluminum_ingot': 'tfmg:aluminum_ingot',
     'aluminum_plate': 'tfmg:aluminum_sheet',
     'constantan_ingot': 'tfmg:constantan_ingot',
@@ -24,11 +31,6 @@ const PRIMARY_OUTPUTS = {
     'raw_lead_block': 'tfmg:raw_lead_block',
 };
 
-// Primary fluid outputs for unification
-const PRIMARY_FLUID_OUTPUTS = {
-    'honey': 'create:honey',
-};
-
 // Unified tag mappings for cross-mod compatibility
 const UNIFIED_TAGS = {
     'iron_plate': 'forge:plates/iron',
@@ -37,6 +39,11 @@ const UNIFIED_TAGS = {
     'steel_plate': 'forge:plates/steel',
     'aluminum_plate': 'forge:plates/aluminum',
     'iron_gear': 'forge:gears/iron',
+    'gold_gear': 'forge:gears/gold',
+    'diamond_gear': 'forge:gears/diamond',
+    'copper_gear': 'forge:gears/copper',
+    'bronze_gear': 'forge:gears/bronze',
+    'tin_gear': 'forge:gears/tin',
     'steel_gear': 'forge:gears/steel',
 };
 
@@ -62,7 +69,7 @@ const TIER_GATES = {
     ],
 };
 
-// Primary fluid outputs for unification (Immersive Petroleum as primary)
+// Primary fluid outputs for unification
 const PRIMARY_FLUIDS = {
     'diesel': 'immersivepetroleum:diesel',
     'gasoline': 'immersivepetroleum:gasoline',
@@ -70,4 +77,5 @@ const PRIMARY_FLUIDS = {
     'lubricant': 'immersivepetroleum:lubricant',
     'naphtha': 'immersivepetroleum:naphtha',
     'crude_oil': 'immersivepetroleum:crudeoil',
+    'honey': 'create:honey',
 };

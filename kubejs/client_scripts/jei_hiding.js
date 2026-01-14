@@ -105,6 +105,13 @@ JEIEvents.hideItems(event => {
         // Single-source wires (aluminum, lead, steel, constantan) remain visible as primaries
         // Create Additions wires (gold, iron, electrum) are kept as primary
 
+        // Gears - Currently no duplicates detected, each mod provides unique materials
+        // Industrial Foregoing: iron/gold/diamond gears
+        // Forestry: copper/bronze/tin gears  
+        // PneumaticCraft: compressed_iron_gear (unique material, not included in unification)
+        // If future mods add duplicate gears, hide them here
+        // Example: 'some_other_mod:iron_gear', // if another mod adds iron gear
+
         // Add more duplicates as needed during testing
     ];
 

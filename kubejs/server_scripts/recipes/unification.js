@@ -164,6 +164,28 @@ const UNIFIED_ITEMS = {
         'tfmg:aluminum_ingot',
         'immersiveengineering:ingot_aluminum',
     ],
+    // Gears - Single source currently, but registered to tags for cross-mod compatibility
+    // Industrial Foregoing provides common material gears
+    'iron_gear': [
+        'industrialforegoing:iron_gear',
+    ],
+    'gold_gear': [
+        'industrialforegoing:gold_gear',
+    ],
+    'diamond_gear': [
+        'industrialforegoing:diamond_gear',
+    ],
+    
+    // Forestry provides unique alloy gears
+    'copper_gear': [
+        'forestry:gear_copper',
+    ],
+    'bronze_gear': [
+        'forestry:gear_bronze',
+    ],
+    'tin_gear': [
+        'forestry:gear_tin',
+    ],
     'constantan_ingot': [
         'tfmg:constantan_ingot',
         'immersiveengineering:ingot_constantan',
@@ -239,11 +261,6 @@ const UNIFIED_FLUIDS = {
     'molten_steel': [
         'tfmg:molten_steel',
     ],
-};
-
-// Unified fluid mappings - all variants map to primary
-// Note: Primary fluid is included in the array for tag unification
-const UNIFIED_FLUIDS = {
     'honey': [
         'create:honey',
         'forestry:honey',
@@ -264,6 +281,13 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    // Gears
+    'iron_gear': 'industrialforegoing:iron_gear',
+    'gold_gear': 'industrialforegoing:gold_gear',
+    'diamond_gear': 'industrialforegoing:diamond_gear',
+    'copper_gear': 'forestry:gear_copper',
+    'bronze_gear': 'forestry:gear_bronze',
+    'tin_gear': 'forestry:gear_tin',
     // Wires - Create Additions as primary for cross-mod compatibility
     'copper_wire': 'createaddition:copper_wire',
     'gold_wire': 'createaddition:gold_wire',
@@ -308,10 +332,6 @@ const PRIMARY_FLUIDS = {
     'lubricant': 'immersivepetroleum:lubricant',
     'naphtha': 'immersivepetroleum:naphtha',
     'crude_oil': 'immersivepetroleum:crudeoil',
-};
-
-// Primary fluid for each category
-const PRIMARY_FLUID_OUTPUTS = {
     'honey': 'create:honey',
 };
 
@@ -362,6 +382,7 @@ ServerEvents.tags('item', event => {
     // Create unified tags for cross-mod compatibility
     // Item tags use forge:type/materials format (e.g., forge:plates/iron)
     Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
+
         let tagName;
         
         // Determine the correct tag format based on item type
@@ -385,6 +406,9 @@ ServerEvents.tags('item', event => {
             // nuggets: steel_nugget -> forge:nuggets/steel
             const material = key.replace('_nugget', '');
             tagName = `forge:nuggets/${material}`;
+        } else if (key.endsWith('_gear')) {
+            const material = key.replace('_gear', '');
+            tagName = `forge:gears/${material}`; // e.g., forge:gears/iron
         } else {
             // fallback: use original logic
             tagName = `forge:${key.replace('_', '/')}s`;
