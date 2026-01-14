@@ -152,11 +152,6 @@ hash = "882da059a6d7439b9cdf746813c61ce1e8e73c00a88e4e0cbe4412d4c312702a"
 metafile = true
 
 [[files]]
-file = "mods/chisels-bits-for-tfc.pw.toml"
-hash = "064405ede918eb7351a0d0b71f0e75d9b14548b7cecc34f7cf8cc95ce6c3ff8a"
-metafile = true
-
-[[files]]
 file = "mods/chunkpregenerator.pw.toml"
 hash = "ce1ff49ed9507338b8b32d431c6f7832391a6f65c07aa8ad07b02dfec8cb7860"
 metafile = true
@@ -483,7 +478,7 @@ metafile = true
 
 [[files]]
 file = "mods/item-filters.pw.toml"
-hash = "6f92d6a906fe5d960b53dc83e0060edfb2604f8deb4b38d25f7f66525966f7ad"
+hash = "ff92eddb2bf6f1afe9fa7fc73d63ea9419e0cff77fbd4fd2936b51525fe9340c"
 metafile = true
 
 [[files]]

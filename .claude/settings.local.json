@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(packwiz --version:*)",
+      "Bash(./packwiz:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
