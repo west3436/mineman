@@ -38,6 +38,9 @@ desktop.ini
 .idea/
 *.iml
 
+# Node.js dependencies
+node_modules/
+
 # Backup files
 *.bak
 *.tmp
