@@ -28,6 +28,61 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:plate_aluminum',
     ],
 
+    // Wires
+    'copper_wire': [
+        'createaddition:copper_wire',
+        'immersiveengineering:wire_copper',
+        'tfmg:copper_wire',
+    ],
+    'gold_wire': [
+        'createaddition:gold_wire',
+    ],
+    'iron_wire': [
+        'createaddition:iron_wire',
+    ],
+    'electrum_wire': [
+        'createaddition:electrum_wire',
+        'immersiveengineering:wire_electrum',
+    ],
+    'aluminum_wire': [
+        'immersiveengineering:wire_aluminum',
+    ],
+    'lead_wire': [
+        'immersiveengineering:wire_lead',
+    ],
+    'steel_wire': [
+        'immersiveengineering:wire_steel',
+    ],
+    'constantan_wire': [
+        'tfmg:constantan_wire',
+    ],
+
+    // Rods
+    'brass_rod': [
+        'createaddition:brass_rod',
+    ],
+    'copper_rod': [
+        'createaddition:copper_rod',
+    ],
+    'gold_rod': [
+        'createaddition:gold_rod',
+    ],
+    'iron_rod': [
+        'createaddition:iron_rod',
+    ],
+    'electrum_rod': [
+        'createaddition:electrum_rod',
+    ],
+    'graphite_rod': [
+        'createnuclear:graphite_rod',
+    ],
+    'uranium_rod': [
+        'createnuclear:uranium_rod',
+    ],
+    'hdpe_rod': [
+        'mekanism:hdpe_rod',
+    ],
+
     // Dusts
     'iron_dust': [
         'mekanism:dust_iron',
@@ -65,6 +120,24 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    // Wires - Create Additions as primary for cross-mod compatibility
+    'copper_wire': 'createaddition:copper_wire',
+    'gold_wire': 'createaddition:gold_wire',
+    'iron_wire': 'createaddition:iron_wire',
+    'electrum_wire': 'createaddition:electrum_wire',
+    'aluminum_wire': 'immersiveengineering:wire_aluminum',
+    'lead_wire': 'immersiveengineering:wire_lead',
+    'steel_wire': 'immersiveengineering:wire_steel',
+    'constantan_wire': 'tfmg:constantan_wire',
+    // Rods - Create Additions as primary for cross-mod compatibility
+    'brass_rod': 'createaddition:brass_rod',
+    'copper_rod': 'createaddition:copper_rod',
+    'gold_rod': 'createaddition:gold_rod',
+    'iron_rod': 'createaddition:iron_rod',
+    'electrum_rod': 'createaddition:electrum_rod',
+    'graphite_rod': 'createnuclear:graphite_rod',
+    'uranium_rod': 'createnuclear:uranium_rod',
+    'hdpe_rod': 'mekanism:hdpe_rod',
 };
 
 ServerEvents.recipes(event => {
@@ -87,6 +160,23 @@ ServerEvents.recipes(event => {
     });
 
     console.log('Recipe unification complete!');
+
+    // Add conversion recipes for wires
+    console.log('Adding wire conversion recipes...');
+    
+    // Copper wire conversions
+    event.shapeless('createaddition:copper_wire', ['immersiveengineering:wire_copper']);
+    event.shapeless('createaddition:copper_wire', ['tfmg:copper_wire']);
+    event.shapeless('immersiveengineering:wire_copper', ['createaddition:copper_wire']);
+    event.shapeless('tfmg:copper_wire', ['createaddition:copper_wire']);
+    
+    // Electrum wire conversion
+    event.shapeless('createaddition:electrum_wire', ['immersiveengineering:wire_electrum']);
+    event.shapeless('immersiveengineering:wire_electrum', ['createaddition:electrum_wire']);
+    
+    console.log('Wire conversion recipes complete!');
+    
+    // Note: Rods don't need conversion recipes as they're already unified through output replacement
 });
 
 ServerEvents.tags('item', event => {

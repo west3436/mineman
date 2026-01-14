@@ -28,6 +28,13 @@ JEIEvents.hideItems(event => {
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
 
+        // Duplicate wires (keeping Create Additions as primary for most)
+        'immersiveengineering:wire_copper',
+        'tfmg:copper_wire',
+        'immersiveengineering:wire_electrum',
+        // Note: IE-specific wires (aluminum, lead, steel) are kept visible
+        // Note: Create Additions wires (gold, iron) are kept as primary
+
         // Add more duplicates as needed during testing
     ];
 
