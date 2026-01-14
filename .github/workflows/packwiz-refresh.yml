@@ -1,6 +1,7 @@
+---
 name: Packwiz Refresh
 
-on:
+"on":
   pull_request:
     branches:
       - main
@@ -17,27 +18,28 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Install Packwiz
         run: |
-          wget https://github.com/packwiz/packwiz/releases/latest/download/packwiz-linux-amd64 -O packwiz
+          wget https://github.com/packwiz/packwiz/releases/latest/download/packwiz-linux-amd64 \
+            -O packwiz
           chmod +x ./packwiz
-      
+
       - name: Run Packwiz Refresh
         run: ./packwiz refresh
-      
+
       - name: Check for changes
         id: git-check
         run: |
           git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
-      
+
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
