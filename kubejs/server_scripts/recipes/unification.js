@@ -128,11 +128,10 @@ ServerEvents.recipes(event => {
 
         variants.forEach(variant => {
             if (variant !== primary) {
-                // Replace fluid inputs
-                event.replaceInput({ type: 'minecraft:crafting_shaped' }, Fluid.of(variant), Fluid.of(primary));
-                event.replaceInput({ type: 'minecraft:crafting_shapeless' }, Fluid.of(variant), Fluid.of(primary));
+                // Replace fluid inputs in all recipe types
+                event.replaceInput({}, Fluid.of(variant), Fluid.of(primary));
                 
-                // Replace fluid outputs
+                // Replace fluid outputs in all recipe types
                 event.replaceOutput({}, Fluid.of(variant), Fluid.of(primary));
                 
                 console.log(`Unified fluid ${variant} -> ${primary}`);
@@ -149,10 +148,13 @@ ServerEvents.recipes(event => {
         variants.forEach(variant => {
             if (variant !== primary) {
                 // Add mixing conversion recipe: variant -> primary (1:1 ratio)
+                // Extract just mod and fluid names for cleaner IDs
+                const variantName = variant.split(':')[1];
+                const primaryName = primary.split(':')[1];
                 event.recipes.create.mixing(
                     Fluid.of(primary, 1000),
                     Fluid.of(variant, 1000)
-                ).id(`kubejs:fluid_unification/${key}/${variant.replace(':', '_')}_to_${primary.replace(':', '_')}`);
+                ).id(`kubejs:fluid_unification/${key}/${variantName}_to_${primaryName}`);
                 
                 console.log(`Added conversion recipe: ${variant} -> ${primary}`);
             }
