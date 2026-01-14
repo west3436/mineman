@@ -1,0 +1,30 @@
+---
+name: Datapack Validation
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'datapacks/**'
+      - '.github/workflows/datapack-validation.yml'
+      - 'scripts/validate_datapacks.py'
+
+jobs:
+  validate-datapacks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run datapack validation
+        run: |
+          python scripts/validate_datapacks.py
