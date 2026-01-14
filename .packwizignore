@@ -28,3 +28,6 @@ crash-reports/
 
 # World saves
 saves/
+
+# ProbeJS
+.probejs/
