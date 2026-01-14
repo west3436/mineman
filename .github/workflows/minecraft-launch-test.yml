@@ -1,0 +1,148 @@
+---
+name: Minecraft Launch Test
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'mods/**'
+      - 'config/**'
+      - 'pack.toml'
+      - 'index.toml'
+      - '.github/workflows/minecraft-launch-test.yml'
+      - 'scripts/check_minecraft_logs.py'
+  workflow_dispatch:
+
+# Server memory configuration for modded Minecraft
+# Adjust these values based on the number of mods in the pack
+env:
+  SERVER_MAX_MEMORY: 4G
+  SERVER_MIN_MEMORY: 2G
+
+jobs:
+  launch-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Packwiz
+        run: |
+          wget -q https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86.zip \
+            -O packwiz.zip
+          unzip -o packwiz.zip
+          chmod +x ./packwiz
+
+      - name: Download packwiz-installer-bootstrap
+        run: |
+          wget -q https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+
+      - name: Create server directory
+        run: mkdir -p server
+
+      - name: Start packwiz server and install mods
+        run: |
+          # Start packwiz serve in the background
+          ./packwiz serve --port 8080 &
+          PACKWIZ_PID=$!
+          
+          # Set up trap to clean up packwiz serve on exit
+          trap "kill $PACKWIZ_PID 2>/dev/null || true; wait $PACKWIZ_PID 2>/dev/null || true" EXIT
+          
+          # Wait for server to be ready with retry logic
+          for i in {1..10}; do
+            if curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/pack.toml | grep -q "200"; then
+              echo "Packwiz server is ready"
+              break
+            fi
+            if [ $i -eq 10 ]; then
+              echo "ERROR: Packwiz server failed to start"
+              exit 1
+            fi
+            echo "Waiting for packwiz server... (attempt $i/10)"
+            sleep 2
+          done
+          
+          # Install mods using packwiz-installer-bootstrap
+          cd server
+          java -jar ../packwiz-installer-bootstrap.jar -g -s server http://localhost:8080/pack.toml
+
+      - name: Download Forge installer
+        run: |
+          cd server
+          # Extract Forge version from pack.toml
+          MINECRAFT_VERSION=$(grep -oP 'minecraft = "\K[^"]+' ../pack.toml)
+          FORGE_VERSION=$(grep -oP 'forge = "\K[^"]+' ../pack.toml)
+          FULL_VERSION="${MINECRAFT_VERSION}-${FORGE_VERSION}"
+          echo "Downloading Forge ${FULL_VERSION}"
+          wget -q "https://maven.minecraftforge.net/net/minecraftforge/forge/${FULL_VERSION}/forge-${FULL_VERSION}-installer.jar" \
+            -O forge-installer.jar
+
+      - name: Install Forge server
+        run: |
+          cd server
+          java -jar forge-installer.jar --installServer
+          rm -f forge-installer.jar forge-installer.jar.log
+
+      - name: Accept EULA
+        run: echo "eula=true" > server/eula.txt
+
+      - name: Configure server properties
+        run: |
+          cat > server/server.properties << 'EOF'
+          server-port=25565
+          online-mode=false
+          max-players=1
+          level-type=flat
+          spawn-npcs=false
+          spawn-animals=false
+          spawn-monsters=false
+          generate-structures=false
+          EOF
+
+      - name: Launch Minecraft server
+        run: |
+          cd server
+          # Find the run script or jar
+          if [ -f "run.sh" ]; then
+            chmod +x run.sh
+            timeout 300 ./run.sh nogui 2>&1 | tee ../minecraft.log || true
+          else
+            # Fallback: find forge server jar
+            FORGE_JAR=$(ls -1 forge-*-shim.jar 2>/dev/null | head -n1 || ls -1 forge-*.jar 2>/dev/null | grep -v installer | head -n1)
+            if [ -n "$FORGE_JAR" ]; then
+              timeout 300 java -Xmx${{ env.SERVER_MAX_MEMORY }} -Xms${{ env.SERVER_MIN_MEMORY }} -jar "$FORGE_JAR" nogui 2>&1 | tee ../minecraft.log || true
+            else
+              echo "ERROR: Could not find Forge server jar"
+              exit 1
+            fi
+          fi
+
+      - name: Check server logs for issues
+        run: python scripts/check_minecraft_logs.py minecraft.log
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: minecraft-logs
+          path: |
+            minecraft.log
+            server/logs/
+          retention-days: 7
