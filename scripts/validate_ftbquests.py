@@ -18,6 +18,11 @@ except ImportError:
     sys.exit(1)
 
 
+# Regex pattern to match unescaped Minecraft formatting codes followed by space
+# Valid codes: 0-9, a-f (colors), k-o (formats), r (reset)
+FORMATTING_CODE_PATTERN = r'(?<!\\)(&(?:[0-9a-f]|[k-o]|r))( )'
+
+
 def check_formatting_codes(file_path: Path) -> Tuple[bool, List[str]]:
     r"""
     Check for unescaped formatting codes followed by whitespace.
@@ -36,9 +41,7 @@ def check_formatting_codes(file_path: Path) -> Tuple[bool, List[str]]:
     with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
             # Find unescaped & followed by Minecraft formatting code and space
-            # Pattern: & not preceded by \ followed by valid Minecraft code and then space
-            # Valid codes: 0-9, a-f (colors), k-o (formats), r (reset)
-            matches = re.finditer(r'(?<!\\)(&(?:[0-9a-f]|[k-o]|r))( )', line)
+            matches = re.finditer(FORMATTING_CODE_PATTERN, line)
             for match in matches:
                 errors.append(
                     f"Line {line_num}: Unescaped formatting code '{match.group(1)}' "
@@ -122,7 +125,10 @@ def main():
             if not syntax_ok:
                 print(f"  Syntax error: {syntax_error}")
             
-            all_errors = formatting_errors + ([syntax_error] if not syntax_ok else [])
+            all_errors = formatting_errors.copy()
+            if not syntax_ok:
+                all_errors.append(syntax_error)
+            
             failed_files.append((relative_path, all_errors))
     
     print()
