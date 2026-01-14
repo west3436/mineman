@@ -65,6 +65,10 @@ JEIEvents.hideItems(event => {
         // Duplicate nickel ingots (keeping TFMG as primary)
         'immersiveengineering:ingot_nickel',
 
+        // Duplicate plastic items (keeping TFMG plastic_sheet as primary)
+        'pneumaticcraft:plastic',
+        'industrialforegoing:plastic',
+
         // Add more duplicates as needed during testing
     ];
 

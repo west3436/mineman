@@ -126,11 +126,11 @@ hash = "fad190ed92994bd678a9e3c46b35216fe05dadcff6def6182c74898b1ec7086c"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
-hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
+hash = "e829ac285d39d6a386ec94114ce448164fc7f7c105fac9daed1d83827a345af0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "9458901b93677b965a97b7871b33af714dd3a48fb3844b3981e97fa7e6f0bc29"
+hash = "f4ede65b76ce6faadd4777320aa6eaf49c7c02d3769c81990ed8e18d8e0efba2"
 
 [[files]]
 file = "kubejs/server_scripts/dump_registry.js"
@@ -154,7 +154,7 @@ hash = "c201cf7a382b297f35475af1b53bd629a6058cb7bef6e2b158aa8265f6fcd1fb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
-hash = "1096db8a70d8f652650b26f5d683d1d30c765716c2968899673e173fc9c9f261"
+hash = "7b5d22e289b8ffad443ce81643f598a49aab2bc7c838586035ba96f1d2636d51"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"
@@ -166,7 +166,7 @@ hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
-hash = "9de2d7d1857033e2058a70b963f9ad7658b97d9c947b5f8af7c718ab8b4e5aac"
+hash = "7de598525cd2cd18c80fdec42e5562858b12ec973a3c669ecc0118a0b744c42d"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"

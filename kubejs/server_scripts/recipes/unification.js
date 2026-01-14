@@ -33,6 +33,13 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:plate_lead',
     ],
 
+    // Plastic Items
+    'plastic': [
+        'tfmg:plastic_sheet',
+        'pneumaticcraft:plastic',
+        'industrialforegoing:plastic',
+    ],
+
     // Dusts
     'iron_dust': [
         'mekanism:dust_iron',
@@ -149,6 +156,7 @@ const PRIMARY_OUTPUTS = {
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
+    'plastic': 'tfmg:plastic_sheet',
     'aluminum_ingot': 'tfmg:aluminum_ingot',
     'aluminum_plate': 'tfmg:aluminum_sheet',
     'constantan_ingot': 'tfmg:constantan_ingot',
@@ -168,7 +176,6 @@ const PRIMARY_FLUIDS = {
     'lubricant': 'immersivepetroleum:lubricant',
     'naphtha': 'immersivepetroleum:naphtha',
     'crude_oil': 'immersivepetroleum:crudeoil',
-    'molten_steel': 'tconstruct:molten_steel',
 };
 
 ServerEvents.recipes(event => {
@@ -250,6 +257,14 @@ ServerEvents.tags('item', event => {
             event.add(tagName, variant);
         });
     });
+
+    // Special tag for plastic (singular, not "plastics")
+    const plasticVariants = UNIFIED_ITEMS['plastic'];
+    if (plasticVariants) {
+        plasticVariants.forEach(variant => {
+            event.add('forge:plastic', variant);
+        });
+    }
 
     console.log('Item tag unification complete!');
 });
