@@ -28,6 +28,21 @@ JEIEvents.hideItems(event => {
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
 
+        // Duplicate lead ingots (keeping TFMG as primary)
+        'immersiveengineering:ingot_lead',
+        'mekanism:ingot_lead',
+        'createnuclear:lead_ingot',
+
+        // Duplicate lead blocks (keeping TFMG as primary)
+        'createnuclear:lead_block',
+        'createnuclear:raw_lead_block',
+
+        // Duplicate lead plates (keeping TFMG as primary)
+        'immersiveengineering:plate_lead',
+
+        // Duplicate lead dusts (keeping Mekanism as primary)
+        'immersiveengineering:dust_lead',
+
         // Add more duplicates as needed during testing
     ];
 
@@ -41,6 +56,38 @@ JEIEvents.hideItems(event => {
     });
 
     console.log('JEI hiding complete!');
+});
+
+JEIEvents.hideFluids(event => {
+    console.log('Hiding duplicate unified fluids in JEI...');
+
+    // Hide duplicate fluids (keeping Immersive Petroleum as primary)
+    const HIDDEN_FLUID_DUPLICATES = [
+        // PneumaticCraft fluids (Immersive Petroleum is primary)
+        'pneumaticcraft:diesel',
+        'pneumaticcraft:gasoline',
+        'pneumaticcraft:kerosene',
+        'pneumaticcraft:lubricant',
+        'pneumaticcraft:oil', // crude oil
+
+        // TFMG fluids (Immersive Petroleum is primary)
+        'tfmg:diesel',
+        'tfmg:gasoline',
+        'tfmg:kerosene',
+        'tfmg:naphtha',
+        'tfmg:crude_oil',
+    ];
+
+    HIDDEN_FLUID_DUPLICATES.forEach(fluid => {
+        try {
+            event.hide(fluid);
+            console.log(`Hidden fluid: ${fluid}`);
+        } catch (e) {
+            console.warn(`Could not hide fluid ${fluid}: ${e}`);
+        }
+    });
+
+    console.log('Fluid hiding complete!');
 });
 
 JEIEvents.hideCustom(event => {
