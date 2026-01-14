@@ -4,7 +4,7 @@
 	order_index: 2
 	filename: "side_exploration"
 	title: "Side: Exploration"
-	icon: "minecraft:map"
+	icon: "explorerscompass:explorers_compass"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -15,11 +15,18 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"Welcome to the Exploration side quest!"
+				"&l&9Welcome to Exploration!&r"
 				""
-				"Venture out to discover new biomes, structures, and dimensions."
+				"Venture out to discover structures, creatures, and treasures!"
 				""
-				"Gather rare resources and unlock new areas."
+				"This chapter covers:"
+				"• &6YUNG's Better Structures&r"
+				"• &aMoog's Voyager Structures&r"
+				"• &eDungeons and Taverns&r"
+				"• &bCompass Mods&r"
+				"• &dUntamed Wilds&r creatures"
+				""
+				"&eNo progression requirements - explore anytime!&r"
 			]
 			id: "9000000000000002"
 			tasks: [{
@@ -35,41 +42,152 @@
 			}]
 		}
 		{
-			title: "Biome Discovery"
-			icon: "minecraft:map"
-			x: 0.0d
+			title: "Explorer's Compass"
+			icon: "explorerscompass:explorers_compass"
+			x: -3.0d
 			y: 2.0d
+			shape: "rsquare"
 			description: [
-				"Explore different biomes in the overworld."
+				"&l&bExplorer's Compass&r"
 				""
-				"Visit deserts, jungles, ice plains, and more."
+				"Find structures with the Explorer's Compass!"
 				""
-				"Each biome has unique resources and challenges."
+				"• &fRight-click&r to open the structure list"
+				"• Select a structure to search for"
+				"• Follow the compass to find it!"
+				""
+				"&eNever get lost looking for that village again!&r"
 			]
 			dependencies: ["9000000000000002"]
 			id: "9000000000000005"
-			tasks: [
-				{
-					id: "9000000000000006"
-					type: "checkmark"
-					title: "Visit 5 Different Biomes"
-				}
+			tasks: [{
+				id: "9000000000000006"
+				type: "item"
+				item: "explorerscompass:explorers_compass"
+				count: 1
+			}]
+			rewards: [
 				{
 					id: "9000000000000007"
 					type: "item"
-					item: "minecraft:map"
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "9000000000000008"
-					type: "item"
-					item: "minecraft:ender_pearl"
+					item: "minecraft:emerald"
 					count: 16
 				}
 				{
-					id: "9000000000000009"
+					id: "9000000000000008"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Nature's Compass"
+			icon: "naturescompass:naturescompass"
+			x: 3.0d
+			y: 2.0d
+			description: [
+				"&l&2Nature's Compass&r"
+				""
+				"Find biomes with the Nature's Compass!"
+				""
+				"• &fRight-click&r to open the biome list"
+				"• Select a biome to search for"
+				"• Follow the compass to find it!"
+				""
+				"&ePerfect for finding specific resources!&r"
+			]
+			dependencies: ["9000000000000002"]
+			id: "9000000000000009"
+			tasks: [{
+				id: "9000000000000010"
+				type: "item"
+				item: "naturescompass:naturescompass"
+				count: 1
+			}]
+			rewards: [
+				{
+					id: "9000000000000011"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 8
+				}
+				{
+					id: "9000000000000012"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "YUNG's Better Dungeons"
+			icon: "minecraft:spawner"
+			x: -4.0d
+			y: 4.0d
+			description: [
+				"&l&6YUNG's Better Dungeons&r"
+				""
+				"Explore enhanced dungeon structures!"
+				""
+				"• &fCatacombs&r - Underground labyrinths"
+				"• &fFortresses&r - Massive structures"
+				"• &fSpider Dens&r - Creepy caves"
+				""
+				"&eMore loot, more challenge, more fun!&r"
+			]
+			dependencies: ["9000000000000005"]
+			id: "9000000000000013"
+			tasks: [{
+				id: "9000000000000014"
+				type: "checkmark"
+				title: "Explore a YUNG's Dungeon"
+			}]
+			rewards: [
+				{
+					id: "9000000000000015"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "9000000000000016"
+					type: "item"
+					item: "minecraft:golden_apple"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "YUNG's Better Mineshafts"
+			icon: "minecraft:rail"
+			x: -2.0d
+			y: 4.0d
+			description: [
+				"&l&8YUNG's Better Mineshafts&r"
+				""
+				"Discover improved mineshafts!"
+				""
+				"• &fMore variety&r - Different mineshaft types"
+				"• &fBetter loot&r - Enhanced chest spawns"
+				"• &fUnique rooms&r - Special areas to explore"
+				""
+				"&eMining just got more interesting!&r"
+			]
+			dependencies: ["9000000000000005"]
+			id: "9000000000000017"
+			tasks: [{
+				id: "9000000000000018"
+				type: "checkmark"
+				title: "Explore a YUNG's Mineshaft"
+			}]
+			rewards: [
+				{
+					id: "9000000000000019"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 32
+				}
+				{
+					id: "9000000000000020"
 					type: "item"
 					item: "minecraft:gold_ingot"
 					count: 16
@@ -77,48 +195,331 @@
 			]
 		}
 		{
-			title: "Dimensional Travel"
-			icon: "minecraft:ender_eye"
+			title: "YUNG's Better Strongholds"
+			icon: "minecraft:end_portal_frame"
+			x: -3.0d
+			y: 6.0d
+			description: [
+				"&l&5YUNG's Better Strongholds&r"
+				""
+				"The stronghold is now a massive fortress!"
+				""
+				"• &fExpanded layout&r - Huge interconnected rooms"
+				"• &fNew rooms&r - Libraries, armories, prisons"
+				"• &fBetter loot&r - More valuable treasures"
+				""
+				"&ePrepare well before entering!&r"
+			]
+			dependencies: ["9000000000000013", "9000000000000017"]
+			id: "9000000000000021"
+			tasks: [{
+				id: "9000000000000022"
+				type: "checkmark"
+				title: "Explore a YUNG's Stronghold"
+			}]
+			rewards: [
+				{
+					id: "9000000000000023"
+					type: "item"
+					item: "minecraft:ender_eye"
+					count: 12
+				}
+				{
+					id: "9000000000000024"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Moog's Voyager Structures"
+			icon: "minecraft:cartography_table"
 			x: 0.0d
 			y: 4.0d
 			description: [
-				"Venture into other dimensions!"
+				"&l&aMoog's Voyager Structures&r"
 				""
-				"Visit the Nether and the End."
+				"Discover unique explorer structures!"
 				""
-				"Gather unique dimensional resources."
+				"• &fRuins&r - Ancient civilizations"
+				"• &fCamps&r - Abandoned explorer sites"
+				"• &fTowers&r - Mysterious monuments"
+				""
+				"&eEach structure tells a story!&r"
 			]
-			dependencies: ["9000000000000005"]
-			id: "9000000000000010"
+			dependencies: ["9000000000000005", "9000000000000009"]
+			dependency_requirement: "one_completed"
+			id: "9000000000000025"
+			tasks: [{
+				id: "9000000000000026"
+				type: "checkmark"
+				title: "Find a Moog's Structure"
+			}]
+			rewards: [
+				{
+					id: "9000000000000027"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 16
+				}
+				{
+					id: "9000000000000028"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			title: "Dungeons and Taverns"
+			icon: "minecraft:barrel"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"&l&eDungeons and Taverns&r"
+				""
+				"Find taverns and dungeons across the world!"
+				""
+				"• &fTaverns&r - Rest stops with villagers"
+				"• &fDungeons&r - Dangerous loot-filled areas"
+				"• &fOutposts&r - Scattered settlements"
+				""
+				"&eGreat for roleplay and loot hunting!&r"
+			]
+			dependencies: ["9000000000000009"]
+			id: "9000000000000029"
+			tasks: [{
+				id: "9000000000000030"
+				type: "checkmark"
+				title: "Find a Tavern or Dungeon"
+			}]
+			rewards: [
+				{
+					id: "9000000000000031"
+					type: "item"
+					item: "minecraft:bread"
+					count: 32
+				}
+				{
+					id: "9000000000000032"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Dungeon Delver"
+			icon: "minecraft:chest"
+			x: 4.0d
+			y: 4.0d
+			description: [
+				"&l&6Dungeon Exploration&r"
+				""
+				"Clear multiple dungeons for great rewards!"
+				""
+				"• Find and loot &f5 different dungeon chests&r"
+				"• Defeat dungeon guardians"
+				"• Collect unique dungeon loot"
+				""
+				"&eDungeons contain rare treasures!&r"
+			]
+			dependencies: ["9000000000000029"]
+			id: "9000000000000033"
+			tasks: [{
+				id: "9000000000000034"
+				type: "checkmark"
+				title: "Loot 5 Dungeon Chests"
+			}]
+			rewards: [
+				{
+					id: "9000000000000035"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 8
+				}
+				{
+					id: "9000000000000036"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+					count: 1
+				}
+			]
+		}
+		{
+			title: "Untamed Wilds: Creature Discovery"
+			icon: "minecraft:egg"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"&l&dUntamed Wilds&r"
+				""
+				"Discover new creatures added by Untamed Wilds!"
+				""
+				"• &fNew animals&r - Bears, big cats, and more"
+				"• &fAquatic life&r - Fish, crabs, jellyfish"
+				"• &fReptiles&r - Snakes, lizards, tortoises"
+				""
+				"&eExplore different biomes to find them all!&r"
+			]
+			dependencies: ["9000000000000025"]
+			id: "9000000000000037"
+			tasks: [{
+				id: "9000000000000038"
+				type: "checkmark"
+				title: "Discover 5 Untamed Wilds Creatures"
+			}]
+			rewards: [
+				{
+					id: "9000000000000039"
+					type: "item"
+					item: "minecraft:name_tag"
+					count: 4
+				}
+				{
+					id: "9000000000000040"
+					type: "item"
+					item: "minecraft:lead"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Wildlife Photographer"
+			icon: "minecraft:spyglass"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"&l&bWildlife Expert&r"
+				""
+				"Become a wildlife expert!"
+				""
+				"• Find and observe &f10 different creatures&r"
+				"• Explore different biomes"
+				"• Document your discoveries"
+				""
+				"&eUse a spyglass to observe from a distance!&r"
+			]
+			dependencies: ["9000000000000037"]
+			id: "9000000000000041"
 			tasks: [
 				{
-					id: "9000000000000011"
+					id: "9000000000000042"
+					type: "item"
+					item: "minecraft:spyglass"
+					count: 1
+				}
+				{
+					id: "9000000000000043"
+					type: "checkmark"
+					title: "Observe 10 Different Creatures"
+				}
+			]
+			rewards: [
+				{
+					id: "9000000000000044"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 32
+				}
+				{
+					id: "9000000000000045"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Dimensional Explorer"
+			icon: "minecraft:ender_eye"
+			x: 3.0d
+			y: 6.0d
+			description: [
+				"&l&5Dimensional Travel&r"
+				""
+				"Visit other dimensions!"
+				""
+				"• &cThe Nether&r - Dangerous hellscape"
+				"• &dThe End&r - Void dimension"
+				""
+				"&eBoth dimensions have unique resources and structures!&r"
+			]
+			dependencies: ["9000000000000021", "9000000000000033"]
+			dependency_requirement: "one_completed"
+			id: "9000000000000046"
+			tasks: [
+				{
+					id: "9000000000000047"
 					type: "dimension"
 					dimension: "minecraft:the_nether"
 				}
 				{
-					id: "9000000000000012"
+					id: "9000000000000048"
 					type: "dimension"
 					dimension: "minecraft:the_end"
 				}
 			]
 			rewards: [
 				{
-					id: "9000000000000013"
+					id: "9000000000000049"
 					type: "item"
-					item: "minecraft:diamond"
-					count: 8
+					item: "minecraft:netherite_scrap"
+					count: 4
 				}
 				{
-					id: "9000000000000014"
+					id: "9000000000000050"
 					type: "item"
 					item: "minecraft:ender_pearl"
 					count: 16
 				}
+			]
+		}
+		{
+			title: "Master Explorer"
+			icon: "minecraft:filled_map"
+			x: 0.0d
+			y: 10.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"&l&9&nMaster Explorer!&r"
+				""
+				"Congratulations! You've mastered exploration!"
+				""
+				"You've discovered:"
+				"• YUNG's enhanced structures"
+				"• Moog's unique landmarks"
+				"• Dungeons and Taverns"
+				"• Untamed Wilds creatures"
+				"• Other dimensions"
+				""
+				"&6The world is yours to explore!&r"
+			]
+			dependencies: ["9000000000000021", "9000000000000041", "9000000000000046"]
+			dependency_requirement: "one_completed"
+			id: "9000000000000051"
+			tasks: [{
+				id: "9000000000000052"
+				type: "checkmark"
+				title: "Master Explorer!"
+			}]
+			rewards: [
 				{
-					id: "9000000000000015"
+					id: "9000000000000053"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 2
+				}
+				{
+					id: "9000000000000054"
+					type: "item"
+					item: "minecraft:elytra"
+					count: 1
+				}
+				{
+					id: "9000000000000055"
 					type: "xp_levels"
-					xp_levels: 15
+					xp_levels: 25
 				}
 			]
 		}
