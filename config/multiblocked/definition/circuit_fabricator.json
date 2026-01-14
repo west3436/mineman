@@ -1,0 +1,68 @@
+{
+  "location": "mineman:circuit_fabricator",
+  "recipeMap": "circuit_fabrication",
+  "status": "idle",
+  "baseRenderer": {
+    "type": "builtin",
+    "block": "multiblocked:block_component"
+  },
+  "blockProperties": {
+    "toolRequired": true,
+    "harvestLevel": 2,
+    "destroyTime": 5.0,
+    "explosionResistance": 6.0,
+    "soundType": "metal"
+  },
+  "definition": {
+    "patterns": [
+      {
+        "name": "circuit_fabricator_pattern",
+        "structure": [
+          [
+            ["ICI", "CSC", "ICI"],
+            ["CSC", "C@C", "CSC"],
+            ["ICI", "CGC", "ICI"]
+          ]
+        ],
+        "symbolMap": {
+          "I": {
+            "type": "block",
+            "block": "minecraft:iron_block"
+          },
+          "C": {
+            "type": "block",
+            "block": "mekanism:steel_casing"
+          },
+          "S": {
+            "type": "block",
+            "block": "pneumaticcraft:plastic"
+          },
+          "G": {
+            "type": "block",
+            "block": "minecraft:glass"
+          },
+          "@": {
+            "type": "controller"
+          }
+        }
+      }
+    ]
+  },
+  "traits": [
+    {
+      "type": "item_input",
+      "slotLimit": 4,
+      "io": "in"
+    },
+    {
+      "type": "item_output",
+      "slotLimit": 1,
+      "io": "out"
+    },
+    {
+      "type": "energy",
+      "capacity": 100000,
+      "io": "in"
+    }
+  ]
+}
