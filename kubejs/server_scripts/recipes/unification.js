@@ -59,35 +59,35 @@ const UNIFIED_ITEMS = {
 // ChemLib adds chemical compounds (may be items or fluids)
 // These conversions work for bucket items where they exist
 const UNIFIED_FLUIDS = {
-    // Hydrogen (primary: mekanism, if buckets exist)
+    // Hydrogen - Primary: mekanism:hydrogen_bucket
     'hydrogen_bucket': [
-        'mekanism:hydrogen_bucket',
+        'mekanism:hydrogen_bucket',    // Primary
         'tfmg:hydrogen_bucket',
         'chemlib:hydrogen_bucket',
     ],
     
-    // Oxygen (primary: mekanism, if buckets exist)
+    // Oxygen - Primary: mekanism:oxygen_bucket
     'oxygen_bucket': [
-        'mekanism:oxygen_bucket',
+        'mekanism:oxygen_bucket',      // Primary
         'chemlib:oxygen_bucket',
     ],
     
-    // Sulfuric Acid (primary: mekanism, if buckets exist)
+    // Sulfuric Acid - Primary: mekanism:sulfuric_acid_bucket
     'sulfuric_acid_bucket': [
-        'mekanism:sulfuric_acid_bucket',
+        'mekanism:sulfuric_acid_bucket',  // Primary
         'tfmg:sulfuric_acid_bucket',
         'chemlib:sulfuric_acid_bucket',
     ],
     
-    // Chlorine (primary: mekanism, if buckets exist)
+    // Chlorine - Primary: mekanism:chlorine_bucket
     'chlorine_bucket': [
-        'mekanism:chlorine_bucket',
+        'mekanism:chlorine_bucket',    // Primary
         'chemlib:chlorine_bucket',
     ],
     
-    // Creosote (primary: immersiveengineering)
+    // Creosote - Primary: immersiveengineering:creosote_bucket
     'creosote_bucket': [
-        'immersiveengineering:creosote_bucket',
+        'immersiveengineering:creosote_bucket',  // Primary
         'tfmg:creosote_bucket',
     ],
 };
@@ -179,6 +179,8 @@ ServerEvents.tags('fluid', event => {
 
     // Create unified fluid tags for cross-mod compatibility
     // This ensures recipes can accept fluids from different mods
+    // Note: These reference the fluid itself (e.g., 'mekanism:hydrogen'),
+    // not the bucket item (e.g., 'mekanism:hydrogen_bucket')
     const FLUID_TAGS = {
         'forge:hydrogen': ['mekanism:hydrogen', 'tfmg:hydrogen', 'chemlib:hydrogen'],
         'forge:oxygen': ['mekanism:oxygen', 'chemlib:oxygen'],
