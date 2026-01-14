@@ -5,12 +5,20 @@ file = ".github/workflows/datapack-validation.yml"
 hash = "549c46ed02d97055d54bfbebcaaedb920cd2d45543c1f4a67f12154633ea9302"
 
 [[files]]
+file = ".github/workflows/dump-registry.yml"
+hash = "55f173fcbdda4565502fcf8a98a05c0820fcc15de4ec0ade76aa080a88145e29"
+
+[[files]]
 file = ".github/workflows/ftbquests-format-check.yml"
 hash = "9d0cd62a0e7007a09d5da00fb0484a39dc2c0cb0f3811aa39ca2856158471043"
 
 [[files]]
 file = ".github/workflows/kubejs-validation.yml"
 hash = "91371a296a9c35b5555aefd0e766c63057048aa3ba0096e64f1b8f5a5369b27c"
+
+[[files]]
+file = ".github/workflows/minecraft-launch-test.yml"
+hash = "9038972c0ab9bae67b343afcec05c179e2436e03011ecbbdf5d83a7982c6298e"
 
 [[files]]
 file = ".github/workflows/packwiz-refresh.yml"
@@ -122,11 +130,15 @@ hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "b4d2726c4180d749cf11c2657a38433e30e8d467ef91f1dd178887c22982c124"
+hash = "9458901b93677b965a97b7871b33af714dd3a48fb3844b3981e97fa7e6f0bc29"
+
+[[files]]
+file = "kubejs/server_scripts/dump_registry.js"
+hash = "c73e96a21322bb43c2ebf314bcfeb97d54b6962adb5968f89f1e8000bf39f657"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
-hash = "35fffc1412a0f757bfcf7d354be1ebcd1fdcce8c3fa56ac2f9c8427384bb7cd0"
+hash = "6142c28f07a24b91356e676971274f060e040ac7bdacf14b30db4035f371d00b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
@@ -154,7 +166,7 @@ hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
-hash = "29462d9c80f3a0b29e205e6aea44c6cc0fde614d27974fc8e776b5e64fd5fbe3"
+hash = "9de2d7d1857033e2058a70b963f9ad7658b97d9c947b5f8af7c718ab8b4e5aac"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"
@@ -1069,6 +1081,14 @@ metafile = true
 file = "resourcepacks/asyasas-legacy-copper.pw.toml"
 hash = "9995fc0f9650e6edfb2fc94c76a036cdb30a680b356fd36be0b5237984b13ae9"
 metafile = true
+
+[[files]]
+file = "scripts/check_minecraft_logs.py"
+hash = "7f2791a3c7c8663ea72e642f9370ff125483ccd239fd92388af8bcc9e0a6d256"
+
+[[files]]
+file = "scripts/compare_registries.py"
+hash = "504560e855b0cf95579926c79f38e069daea518c5df76e76fce913e5b4542ad5"
 
 [[files]]
 file = "scripts/package-lock.json"
