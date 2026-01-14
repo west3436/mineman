@@ -10,7 +10,7 @@ hash = "91371a296a9c35b5555aefd0e766c63057048aa3ba0096e64f1b8f5a5369b27c"
 
 [[files]]
 file = ".github/workflows/packwiz-refresh.yml"
-hash = "7be8002810dcdddfe8c6f9dbe0f6c4a27a0ea77cd5a720ed1d1e45fffeffc626"
+hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_basic_processing.snbt"
@@ -34,7 +34,7 @@ hash = "fb32e5b64383217f2f83a5b33be696193b2db43393924dfc9be9f034c87c94ef"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic.js"
-hash = "d1a84a9545856d1399d539ab442087249d4fc5dbd5a323999edba4d2fa1c8c20"
+hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
