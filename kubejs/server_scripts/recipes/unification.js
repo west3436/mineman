@@ -80,6 +80,61 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:wire_silver',
     ],
 
+    // Wires (single-source items included to ensure consistent tagging for cross-mod compatibility)
+    'copper_wire': [
+        'createaddition:copper_wire',
+        'immersiveengineering:wire_copper',
+        'tfmg:copper_wire',
+    ],
+    'gold_wire': [
+        'createaddition:gold_wire',
+    ],
+    'iron_wire': [
+        'createaddition:iron_wire',
+    ],
+    'electrum_wire': [
+        'createaddition:electrum_wire',
+        'immersiveengineering:wire_electrum',
+    ],
+    'aluminum_wire': [
+        'immersiveengineering:wire_aluminum',
+    ],
+    'lead_wire': [
+        'immersiveengineering:wire_lead',
+    ],
+    'steel_wire': [
+        'immersiveengineering:wire_steel',
+    ],
+    'constantan_wire': [
+        'tfmg:constantan_wire',
+    ],
+
+    // Rods (single-source items included to ensure consistent tagging for cross-mod compatibility)
+    'brass_rod': [
+        'createaddition:brass_rod',
+    ],
+    'copper_rod': [
+        'createaddition:copper_rod',
+    ],
+    'gold_rod': [
+        'createaddition:gold_rod',
+    ],
+    'iron_rod': [
+        'createaddition:iron_rod',
+    ],
+    'electrum_rod': [
+        'createaddition:electrum_rod',
+    ],
+    'graphite_rod': [
+        'createnuclear:graphite_rod',
+    ],
+    'uranium_rod': [
+        'createnuclear:uranium_rod',
+    ],
+    'hdpe_rod': [
+        'mekanism:hdpe_rod',
+    ],
+
     // Dusts
     'iron_dust': [
         'mekanism:dust_iron',
@@ -198,10 +253,26 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    // Wires - Create Additions as primary for cross-mod compatibility
+    'copper_wire': 'createaddition:copper_wire',
+    'gold_wire': 'createaddition:gold_wire',
+    'iron_wire': 'createaddition:iron_wire',
+    'aluminum_wire': 'immersiveengineering:wire_aluminum',
+    'lead_wire': 'immersiveengineering:wire_lead',
+    'steel_wire': 'immersiveengineering:wire_steel',
+    'constantan_wire': 'tfmg:constantan_wire',
+    // Rods - Create Additions as primary for cross-mod compatibility
+    'brass_rod': 'createaddition:brass_rod',
+    'copper_rod': 'createaddition:copper_rod',
+    'gold_rod': 'createaddition:gold_rod',
+    'iron_rod': 'createaddition:iron_rod',
+    'electrum_rod': 'createaddition:electrum_rod',
+    'graphite_rod': 'createnuclear:graphite_rod',
+    'uranium_rod': 'createnuclear:uranium_rod',
+    'hdpe_rod': 'mekanism:hdpe_rod',
     'electrum_ingot': 'immersiveengineering:ingot_electrum',
     'electrum_plate': 'immersiveengineering:plate_electrum',
     'electrum_nugget': 'createaddition:electrum_nugget',
-    'electrum_rod': 'createaddition:electrum_rod',
     'electrum_wire': 'immersiveengineering:wire_electrum',
     'silver_ingot': 'immersiveengineering:ingot_silver',
     'silver_plate': 'immersiveengineering:plate_silver',

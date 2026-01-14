@@ -98,6 +98,13 @@ JEIEvents.hideItems(event => {
         'chemlib:silver_plate',
         'chemlib:silver_dust',
 
+        // Duplicate wires (keeping Create Additions as primary for most)
+        'immersiveengineering:wire_copper',
+        'tfmg:copper_wire',
+        'immersiveengineering:wire_electrum',
+        // Single-source wires (aluminum, lead, steel, constantan) remain visible as primaries
+        // Create Additions wires (gold, iron, electrum) are kept as primary
+
         // Add more duplicates as needed during testing
     ];
 
