@@ -191,5 +191,117 @@ ServerEvents.recipes(event => {
         C: 'minecraft:ender_pearl'
     });
 
+    // === FLUX NETWORKS GATING ===
+    // Advanced energy network requires Tier 6 circuits
+    
+    // Remove original Flux Networks recipes
+    event.remove({ output: 'fluxnetworks:flux_controller' });
+    event.remove({ output: 'fluxnetworks:flux_point' });
+    event.remove({ output: 'fluxnetworks:flux_plug' });
+    event.remove({ output: 'fluxnetworks:flux_core' });
+    
+    // Flux Core - base component requires advanced circuits
+    event.shaped('fluxnetworks:flux_core', [
+        'IAI',
+        'AEA',
+        'IAI'
+    ], {
+        I: 'mekanism:alloy_infused',
+        A: 'mineman:advanced_circuit',
+        E: 'minecraft:ender_pearl'
+    });
+    
+    // Flux Controller - requires flux core and advanced circuits
+    event.shaped('fluxnetworks:flux_controller', [
+        'DAD',
+        'FCF',
+        'DAD'
+    ], {
+        D: 'minecraft:diamond',
+        A: 'mineman:advanced_circuit',
+        F: 'fluxnetworks:flux_core',
+        C: 'minecraft:redstone_block'
+    });
+    
+    // Flux Point - extracts energy from networks (uses energy acceptor pattern)
+    event.shaped('fluxnetworks:flux_point', [
+        'IAI',
+        'RFR',
+        'IEI'
+    ], {
+        I: 'mekanism:alloy_infused',
+        A: 'mineman:advanced_circuit',
+        R: 'minecraft:redstone',
+        F: 'fluxnetworks:flux_core',
+        E: 'minecraft:ender_pearl'
+    });
+    
+    // Flux Plug - provides energy to networks (uses energy provider pattern)
+    event.shaped('fluxnetworks:flux_plug', [
+        'IAI',
+        'RFR',
+        'IGI'
+    ], {
+        I: 'mekanism:alloy_infused',
+        A: 'mineman:advanced_circuit',
+        R: 'minecraft:redstone_block',
+        F: 'fluxnetworks:flux_core',
+        G: 'minecraft:gold_ingot'
+    });
+
+    // === CREATE: NUCLEAR GATING ===
+    // Nuclear technology requires endgame components
+    
+    // Remove original Create: Nuclear recipes
+    event.remove({ output: 'createnuclear:reactor_casing' });
+    event.remove({ output: 'createnuclear:control_rod' });
+    event.remove({ output: 'createnuclear:uranium_fuel_rod' });
+    event.remove({ output: 'createnuclear:reactor_glass' });
+    
+    // Reactor Casing - requires advanced circuits and steel
+    event.shaped('4x createnuclear:reactor_casing', [
+        'SAS',
+        'ACA',
+        'SAS'
+    ], {
+        S: '#forge:plates/steel',
+        A: 'mineman:advanced_circuit',
+        C: 'minecraft:iron_block'
+    });
+    
+    // Control Rod - requires advanced circuits and diamond
+    event.shaped('createnuclear:control_rod', [
+        'DAD',
+        'ACA',
+        'DAD'
+    ], {
+        D: 'minecraft:diamond',
+        A: 'mineman:advanced_circuit',
+        C: 'minecraft:redstone_block'
+    });
+    
+    // Uranium Fuel Rod - requires advanced circuits and uranium
+    event.shaped('createnuclear:uranium_fuel_rod', [
+        'IAI',
+        'UCU',
+        'IAI'
+    ], {
+        I: 'minecraft:iron_ingot',
+        A: 'mineman:advanced_circuit',
+        U: 'mekanism:uranium_fuel',
+        C: '#forge:plates/steel'
+    });
+    
+    // Reactor Glass - requires advanced circuits and tempered glass
+    event.shaped('4x createnuclear:reactor_glass', [
+        'GAG',
+        'ACA',
+        'GAG'
+    ], {
+        G: '#forge:glass',
+        A: 'mineman:advanced_circuit',
+        C: 'minecraft:diamond'
+    });
+
     console.log('Tier 6 recipe changes complete!');
 });

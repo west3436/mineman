@@ -150,7 +150,7 @@ hash = "16d2ff3657dc37ca264aca18e0c7ebc374c9f00241a9623579212161b6f4107a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier6_future.js"
-hash = "3b48b04714b707c67aeb933ef2bafc191139f3b26b20fe18b21ce5398b5330cb"
+hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
