@@ -27,6 +27,10 @@ const UNIFIED_ITEMS = {
     'aluminum_plate': [
         'immersiveengineering:plate_aluminum',
     ],
+    'lead_plate': [
+        'tfmg:lead_sheet',
+        'immersiveengineering:plate_lead',
+    ],
 
     // Dusts
     'iron_dust': [
@@ -41,6 +45,10 @@ const UNIFIED_ITEMS = {
         'mekanism:dust_gold',
         'immersiveengineering:dust_gold',
     ],
+    'lead_dust': [
+        'mekanism:dust_lead',
+        'immersiveengineering:dust_lead',
+    ],
 
     // Ingots
     'steel_ingot': [
@@ -50,6 +58,22 @@ const UNIFIED_ITEMS = {
     ],
     'aluminum_ingot': [
         'immersiveengineering:ingot_aluminum',
+    ],
+    'lead_ingot': [
+        'tfmg:lead_ingot',
+        'immersiveengineering:ingot_lead',
+        'mekanism:ingot_lead',
+        'createnuclear:lead_ingot',
+    ],
+
+    // Blocks
+    'lead_block': [
+        'tfmg:lead_block',
+        'createnuclear:lead_block',
+    ],
+    'raw_lead_block': [
+        'tfmg:raw_lead_block',
+        'createnuclear:raw_lead_block',
     ],
 };
 
@@ -97,6 +121,11 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'lead_ingot': 'tfmg:lead_ingot',
+    'lead_plate': 'tfmg:lead_sheet',
+    'lead_dust': 'mekanism:dust_lead',
+    'lead_block': 'tfmg:lead_block',
+    'raw_lead_block': 'tfmg:raw_lead_block',
 };
 
 // Primary fluid for each category (Immersive Petroleum as primary)
