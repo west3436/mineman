@@ -57,9 +57,9 @@
 			description: [
 				"Time to choose your processing path!"
 				""
-				"&6Create&r - Focus on kinetic energy, mechanical systems, and elegant automation"
+				"&6Create\&r - Focus on kinetic energy, mechanical systems, and elegant automation"
 				""
-				"&cImmersive Engineering&r - Focus on multiblock structures, electricity, and industrial systems"
+				"&cImmersive Engineering\&r - Focus on multiblock structures, electricity, and industrial systems"
 				""
 				"Choose ONE path to continue. You only need to complete one of these tasks."
 			]
