@@ -28,12 +28,12 @@ JEIEvents.hideItems(event => {
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
 
-        // Gears - Currently no duplicates detected
-        // Industrial Foregoing provides iron/gold/diamond gears (primary)
-        // Forestry provides copper/bronze/tin gears (unique alloys)
-        // PneumaticCraft provides compressed_iron_gear (unique material)
-        // If other mods add duplicate gears, hide them here
-        // Example: 'forestry:gear_iron', // if Forestry also has iron gear
+        // Gears - Currently no duplicates detected, each mod provides unique materials
+        // Industrial Foregoing: iron/gold/diamond gears
+        // Forestry: copper/bronze/tin gears  
+        // PneumaticCraft: compressed_iron_gear (unique material, not included in unification)
+        // If future mods add duplicate gears, hide them here
+        // Example: 'some_other_mod:iron_gear', // if another mod adds iron gear
 
         // Add more duplicates as needed during testing
     ];

@@ -52,7 +52,8 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:ingot_aluminum',
     ],
 
-    // Gears - Industrial Foregoing variants (primary for common materials)
+    // Gears - Single source currently, but registered to tags for cross-mod compatibility
+    // Industrial Foregoing provides common material gears
     'iron_gear': [
         'industrialforegoing:iron_gear',
     ],
@@ -63,7 +64,7 @@ const UNIFIED_ITEMS = {
         'industrialforegoing:diamond_gear',
     ],
     
-    // Gears - Forestry variants (unique alloy materials)
+    // Forestry provides unique alloy gears
     'copper_gear': [
         'forestry:gear_copper',
     ],
