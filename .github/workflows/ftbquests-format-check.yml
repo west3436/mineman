@@ -1,0 +1,34 @@
+---
+name: FTBQuests Format Check
+
+"on":
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'config/ftbquests/**'
+      - '.github/workflows/ftbquests-format-check.yml'
+      - 'scripts/validate_ftbquests.py'
+
+jobs:
+  validate-snbt:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install SNBT validation tools
+        run: |
+          pip install ftb-snbt-lib
+
+      - name: Run SNBT validation
+        run: |
+          python scripts/validate_ftbquests.py
