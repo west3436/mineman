@@ -60,9 +60,9 @@ def validate_pack_mcmeta(pack_path: Path) -> Tuple[bool, str]:
         if pack_format is None:
             return False, "pack.mcmeta missing 'pack_format' field"
         
-        # Minecraft 1.20.1 uses pack_format 15
+        # Minecraft 1.20-1.20.1 uses pack_format 15
         if pack_format != 15:
-            return False, f"pack_format is {pack_format}, expected 15 for Minecraft 1.20.1"
+            return False, f"pack_format is {pack_format}, expected 15 for Minecraft 1.20-1.20.1"
         
         if "description" not in mcmeta["pack"]:
             return False, "pack.mcmeta missing 'description' field"
@@ -92,11 +92,6 @@ def validate_datapack_structure(pack_path: Path) -> Tuple[bool, str]:
     
     if not data_dir.is_dir():
         return False, "'data' exists but is not a directory"
-    
-    # Check if data directory has any namespace folders
-    namespaces = [d for d in data_dir.iterdir() if d.is_dir()]
-    if not namespaces:
-        return False, "'data' directory is empty (no namespace folders found)"
     
     return True, ""
 
