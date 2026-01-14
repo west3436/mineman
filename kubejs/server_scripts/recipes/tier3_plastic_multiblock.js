@@ -13,22 +13,22 @@ ServerEvents.recipes(event => {
     // Using IE's treated wood bucket as a template for custom item pattern
     const UNPROCESSED_PLASTIC = 'kubejs:unprocessed_plastic';
     
-    // === STEP 1: REFINE OIL TO PLASTIC MIXTURE ===
-    // Use IE Refinery multiblock to process oil into plastic mixture
-    // Immersive Petroleum oil + coal coke → unprocessed plastic (fluid intermediate)
+    // === STEP 1: REFINE OIL TO NAPHTHA ===
+    // Use IE Refinery multiblock to process oil into naphtha (using TFMG fluid)
+    // Immersive Petroleum oil → naphtha (fluid intermediate for plastic)
     event.recipes.immersiveengineering.refinery(
-        Fluid.of('kubejs:plastic_mixture', 100),  // Output: 100mb plastic mixture
+        Fluid.of('tfmg:naphtha', 100),             // Output: 100mb naphtha (TFMG fluid)
         Fluid.of('immersivepetroleum:oil', 250),   // Input: 250mb crude oil
         Fluid.of('minecraft:empty', 0),            // No second fluid input
         512                                        // Energy: 512 RF
     );
 
-    // === STEP 2: PLASTIC SOLIDIFIER MULTIBLOCK - PLASTIC MIXTURE TO UNPROCESSED PLASTIC ===
+    // === STEP 2: PLASTIC SOLIDIFIER MULTIBLOCK - NAPHTHA TO UNPROCESSED PLASTIC ===
     // Use custom Multiblocked2 multiblock built with IE blocks
     // This creates a semi-solid unprocessed plastic item
     // Multiblock ID: 'plastic_solidifier' - must be defined in-game using Multiblocked2
     event.recipes.multiblocked.multiblock('plastic_solidifier')
-        .inputFluids(Fluid.of('kubejs:plastic_mixture', 100))  // Input: plastic mixture
+        .inputFluids(Fluid.of('tfmg:naphtha', 100))             // Input: naphtha (TFMG fluid)
         .inputItems('#forge:coal_coke')                        // Input: coal coke (catalyst)
         .outputItems(UNPROCESSED_PLASTIC)                      // Output: unprocessed plastic
         .duration(100)                                         // Duration: 100 ticks (5 seconds)
@@ -48,18 +48,19 @@ ServerEvents.recipes(event => {
     // === ALTERNATIVE: DIRECT REFINERY RECIPE (Less Efficient) ===
     // For early game before having full IE automation
     // Higher oil cost but simpler single-machine process
+    // Uses TFMG heavy_oil as intermediate (can be further processed)
     event.recipes.immersiveengineering.refinery(
-        Fluid.of('kubejs:molten_plastic', 125),    // Output: molten plastic (can be cast)
+        Fluid.of('tfmg:heavy_oil', 125),           // Output: heavy oil (TFMG fluid, can be cast)
         Fluid.of('immersivepetroleum:oil', 500),   // Input: 500mb crude oil (2x cost)
         Fluid.of('minecraft:lava', 100),           // Input: 100mb lava (heat source)
         1024                                       // Energy: 1024 RF (2x cost)
     );
 
-    // Cast molten plastic directly into sheets (emergency recipe)
+    // Cast heavy oil directly into sheets (emergency recipe)
     event.recipes.immersiveengineering.bottling(
         'tfmg:plastic_sheet',                      // Output: 1 plastic sheet
         'minecraft:bucket',                        // Input: bucket (returns empty)
-        Fluid.of('kubejs:molten_plastic', 125)     // Input: molten plastic
+        Fluid.of('tfmg:heavy_oil', 125)            // Input: heavy oil (TFMG fluid)
     );
 
     console.log('IE-based plastic production recipes complete!');
@@ -70,7 +71,7 @@ ServerEvents.recipes(event => {
 // NO Create components required - fully IE-compatible
 //
 // REQUIRED MACHINES:
-// 1. IE Refinery (3x5x3) - Processes oil into plastic mixture
+// 1. IE Refinery (3x5x3) - Processes oil into naphtha
 // 2. Plastic Solidifier Multiblock (3x3x3 - Multiblocked2) - Creates unprocessed plastic
 // 3. IE Metal Press (1x1x1) - Stamps unprocessed plastic into sheets
 //
@@ -99,7 +100,7 @@ ServerEvents.recipes(event => {
 //                    [Heavy][Heavy][Heavy]
 //
 // Multiblock Recipe:
-// - Input: 100mb Plastic Mixture (from IE Refinery)
+// - Input: 100mb Naphtha (from IE Refinery, using TFMG fluid)
 // - Input: 1x Coal Coke (catalyst)
 // - Output: 1x Unprocessed Plastic (solid item)
 // - Energy: 256 RF/t for 5 seconds (1280 RF total)
@@ -113,6 +114,6 @@ ServerEvents.recipes(event => {
 // 1. Construct the 3x3x3 structure using IE blocks as shown above
 // 2. Use Multiblocked2's builder tool on the controller
 // 3. Define the structure pattern and save as 'plastic_solidifier'
-// 4. Configure the recipe: 100mb mixture + coal coke → unprocessed plastic
+// 4. Configure the recipe: 100mb naphtha + coal coke → unprocessed plastic
 // 5. Set energy requirement: 256 RF/t, duration: 100 ticks
 // 6. Assign input ports (fluid + item) and output port (item)

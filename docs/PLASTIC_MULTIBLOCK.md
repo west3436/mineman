@@ -21,7 +21,7 @@ This document describes the **IE Plastic Refinery** system, using **Immersive En
 **Recipe**:
 - Input: 250mb Crude Oil (Immersive Petroleum)
 - Input: (no second fluid)
-- Output: 100mb Plastic Mixture (intermediate fluid)
+- Output: 100mb Naphtha (TFMG fluid, intermediate for plastic)
 - Power: 512 RF
 - Time: ~10 seconds
 
@@ -29,7 +29,7 @@ This document describes the **IE Plastic Refinery** system, using **Immersive En
 **Machine**: Custom Multiblocked2 Multiblock (3x3x3 built with IE blocks)
 
 **Recipe**:
-- Input: 100mb Plastic Mixture
+- Input: 100mb Naphtha (TFMG fluid)
 - Input: 1x Coal Coke (catalyst/binder)
 - Output: 1x Unprocessed Plastic (solid item)
 - Power: 256 RF/t (1280 RF total)
@@ -64,7 +64,7 @@ This document describes the **IE Plastic Refinery** system, using **Immersive En
 
 ### Design: Plastic Solidifier (3x3x3)
 
-A compact IE-themed multiblock that processes plastic mixture into solid unprocessed plastic.
+A compact IE-themed multiblock that processes naphtha into solid unprocessed plastic.
 
 #### Materials Required (IE Blocks Only)
 - **18x Heavy Engineering Block** - Primary IE multiblock casing (immersiveengineering:heavy_engineering)
@@ -100,7 +100,7 @@ Layer 1 (Base - Foundation):
 2. **Use Multiblocked2 Builder Tool**: Right-click the controller with the builder tool
 3. **Define Pattern**: Select all blocks and save the pattern as 'plastic_solidifier'
 4. **Configure Recipe**:
-   - Input: 100mb Plastic Mixture (fluid)
+   - Input: 100mb Naphtha (TFMG fluid)
    - Input: 1x Coal Coke (item)
    - Output: 1x Unprocessed Plastic (item)
    - Energy: 256 RF/t
@@ -116,13 +116,13 @@ Layer 1 (Base - Foundation):
 ### Required Machines
 
 1. **IE Refinery** (3x5x3 multiblock)
-   - Process oil into plastic mixture
+   - Process oil into naphtha
    - Requires LV power input
    - Use IE pipes for fluid routing
 
 2. **Plastic Solidifier Multiblock** (3x3x3 - Multiblocked2)
    - Built with IE Heavy Engineering Blocks
-   - Processes plastic mixture + coal coke → unprocessed plastic
+   - Processes naphtha + coal coke → unprocessed plastic
    - Requires LV power (256 RF/t)
    - Must be constructed and configured in-game
 
@@ -133,18 +133,18 @@ Layer 1 (Base - Foundation):
 
 ## Alternative Recipe (Emergency/Early Game)
 
-### Direct Molten Plastic Recipe
+### Direct Heavy Oil Recipe
 Uses more resources but simpler setup (single Refinery):
 
 **Refinery Recipe**:
 - Input: 500mb Crude Oil (2x cost)
 - Input: 100mb Lava (heat source)
-- Output: 125mb Molten Plastic
+- Output: 125mb Heavy Oil (TFMG fluid)
 - Power: 1024 RF (2x cost)
 
 **Bottling Recipe**:
 - Input: 1x Bucket
-- Input: 125mb Molten Plastic
+- Input: 125mb Heavy Oil (TFMG fluid)
 - Output: 1x Plastic Sheet
 - Returns: Empty Bucket
 
@@ -202,7 +202,7 @@ Uses more resources but simpler setup (single Refinery):
    - 3x5x3 multiblock structure
    - Connect to oil tank/pipe
    - Provide LV power
-   - Output to plastic mixture tank
+   - Output to naphtha tank
 
 2. **Build Plastic Solidifier Multiblock**:
    - Construct 3x3x3 with IE blocks (see structure above)
@@ -238,7 +238,7 @@ Uses more resources but simpler setup (single Refinery):
 3. **Power**: IE wire connectors to LV grid
 
 ### Output Automation
-1. **Plastic Mixture**: IE pipes between machines
+1. **Naphtha**: IE pipes between machines
 2. **Unprocessed Plastic**: Conveyor belts
 3. **Plastic Sheets**: Export to IE crates or Sophisticated Storage
 
@@ -252,7 +252,7 @@ Uses more resources but simpler setup (single Refinery):
 ### Refinery Not Working
 - Check oil tank has 250mb+ available
 - Verify LV power connection (512 RF/t)
-- Ensure output tank has space for plastic mixture
+- Ensure output tank has space for naphtha
 - Check IE pipes are not blocked
 
 ### Metal Press Stuck
@@ -290,14 +290,15 @@ Update FTB Quests to include IE plastic production path:
 ## Technical Details
 
 ### Recipe IDs
-- `immersiveengineering:refinery/plastic_mixture` - Oil to mixture
-- `immersiveengineering:bottling/unprocessed_plastic` - Mixture to solid
+- `immersiveengineering:refinery/naphtha` - Oil to naphtha
+- `immersiveengineering:bottling/unprocessed_plastic` - Naphtha to solid
 - `immersiveengineering:metal_press/plastic_sheet` - Solid to sheets
-- `immersiveengineering:refinery/molten_plastic_alt` - Emergency recipe
+- `immersiveengineering:refinery/heavy_oil_alt` - Emergency recipe
 
 ### Item/Fluid Tags
 - Input Oil: `immersivepetroleum:oil` (primary)
-- Intermediate: `kubejs:plastic_mixture` (custom fluid)
+- Intermediate: `tfmg:naphtha` (TFMG fluid for plastic production)
+- Alternative: `tfmg:heavy_oil` (TFMG fluid for emergency recipe)
 - Intermediate: `kubejs:unprocessed_plastic` (custom item)
 - Output: `tfmg:plastic_sheet` (compatible with all recipes)
 
@@ -309,8 +310,8 @@ Update FTB Quests to include IE plastic production path:
 ## Credits
 - Design: Pure IE solution for IE path players
 - Balanced for: Tier 3 (Oil & Plastic) progression
-- Compatible with: Immersive Engineering, Immersive Petroleum
-- **No Create dependency** - IE players stay in IE ecosystem
+- Compatible with: Immersive Engineering, Immersive Petroleum, TFMG
+- **Uses TFMG fluids** - No custom fluid registration required
 
 ---
 
