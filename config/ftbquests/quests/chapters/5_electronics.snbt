@@ -1,0 +1,129 @@
+{
+	id: "5000000000000001"
+	group: "0000000000000001"
+	order_index: 5
+	filename: "5_electronics"
+	title: "Tier 5: Electronics"
+	icon: "minecraft:redstone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Tier 5"
+			icon: "minecraft:redstone_block"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Tier 5 focuses on electronics and advanced circuits."
+				""
+				"Build sophisticated electronic systems and automation."
+				""
+				"Electronics enable the highest levels of technological advancement."
+			]
+			id: "5000000000000002"
+			tasks: [{
+				id: "5000000000000003"
+				type: "checkmark"
+				title: "Begin Tier 5"
+			}]
+			rewards: [{
+				id: "5000000000000004"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 64
+			}]
+		}
+		{
+			title: "Basic Circuits"
+			icon: "minecraft:comparator"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Craft your first electronic circuits."
+				""
+				"Circuits are the foundation of advanced electronics."
+				""
+				"They control complex systems and automation."
+			]
+			dependencies: ["5000000000000002"]
+			id: "5000000000000005"
+			tasks: [{
+				id: "5000000000000006"
+				type: "checkmark"
+				title: "Create Basic Circuits"
+			}]
+			rewards: [{
+				id: "5000000000000007"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Advanced Electronics"
+			icon: "minecraft:repeater"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Build advanced electronic systems."
+				""
+				"These systems enable unprecedented control and automation."
+				""
+				"Master electronics to reach the cutting edge of technology."
+			]
+			dependencies: ["5000000000000005"]
+			id: "5000000000000008"
+			tasks: [{
+				id: "5000000000000009"
+				type: "checkmark"
+				title: "Build Advanced Systems"
+			}]
+			rewards: [
+				{
+					id: "5000000000000010"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 8
+				}
+				{
+					id: "5000000000000011"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Ready for Tier 6"
+			icon: "minecraft:nether_star"
+			x: 0.0d
+			y: 6.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Electronics mastered! You're at the pinnacle of technology."
+				""
+				"Final tier: Future Tech awaits!"
+			]
+			dependencies: ["5000000000000008"]
+			id: "5000000000000012"
+			tasks: [{
+				id: "5000000000000013"
+				type: "checkmark"
+				title: "Continue to Tier 6"
+			}]
+			rewards: [
+				{
+					id: "5000000000000014"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 1
+				}
+				{
+					id: "5000000000000015"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+	]
+}

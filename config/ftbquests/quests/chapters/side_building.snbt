@@ -1,0 +1,146 @@
+{
+	id: "A000000000000001"
+	group: "0000000000000002"
+	order_index: 3
+	filename: "side_building"
+	title: "Side: Building & Decoration"
+	icon: "minecraft:bricks"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Master Builder"
+			icon: "minecraft:bricks"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Welcome to the Building side quest!"
+				""
+				"Create beautiful structures and decorative builds."
+				""
+				"Master various building materials and architectural styles."
+			]
+			id: "A000000000000002"
+			tasks: [{
+				id: "A000000000000003"
+				type: "checkmark"
+				title: "Start Building"
+			}]
+			rewards: [{
+				id: "A000000000000004"
+				type: "item"
+				item: "minecraft:oak_planks"
+				count: 64
+			}]
+		}
+		{
+			title: "Building Materials"
+			icon: "minecraft:stone_bricks"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Gather and craft various building materials."
+				""
+				"Create bricks, stone variants, and decorative blocks."
+				""
+				"Stock up on materials for your projects."
+			]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000005"
+			tasks: [
+				{
+					id: "A000000000000006"
+					type: "item"
+					item: "minecraft:bricks"
+					count: 64
+				}
+				{
+					id: "A000000000000007"
+					type: "item"
+					item: "minecraft:stone_bricks"
+					count: 64
+				}
+				{
+					id: "A000000000000008"
+					type: "item"
+					title: "Decorative Blocks"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:glass"
+									Count: 1b
+								}
+								{
+									id: "minecraft:stained_glass"
+									Count: 1b
+								}
+								{
+									id: "minecraft:quartz_block"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000009"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 64
+				}
+				{
+					id: "A000000000000010"
+					type: "item"
+					item: "minecraft:terracotta"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "Grand Structure"
+			icon: "minecraft:beacon"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Build a grand structure!"
+				""
+				"Create an impressive building showcasing your skills."
+				""
+				"Use multiple materials and architectural techniques."
+			]
+			dependencies: ["A000000000000005"]
+			id: "A000000000000011"
+			tasks: [{
+				id: "A000000000000012"
+				type: "checkmark"
+				title: "Complete Grand Structure"
+			}]
+			rewards: [
+				{
+					id: "A000000000000013"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 8
+				}
+				{
+					id: "A000000000000014"
+					type: "item"
+					item: "minecraft:beacon"
+					count: 1
+				}
+				{
+					id: "A000000000000015"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+}

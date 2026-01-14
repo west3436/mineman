@@ -1,0 +1,128 @@
+{
+	id: "8000000000000001"
+	group: "0000000000000002"
+	order_index: 1
+	filename: "side_agriculture"
+	title: "Side: Agriculture & Farming"
+	icon: "minecraft:wheat"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Growing Your Farm"
+			icon: "minecraft:wheat"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Welcome to the Agriculture side quest!"
+				""
+				"Build efficient farms to produce food and resources."
+				""
+				"Master crop growing and animal husbandry."
+			]
+			id: "8000000000000002"
+			tasks: [{
+				id: "8000000000000003"
+				type: "checkmark"
+				title: "Start Farming"
+			}]
+			rewards: [{
+				id: "8000000000000004"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+				count: 64
+			}]
+		}
+		{
+			title: "Basic Crops"
+			icon: "minecraft:golden_carrot"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Grow basic crops for food and resources."
+				""
+				"Plant wheat, carrots, potatoes, and other crops."
+				""
+				"Set up irrigation and efficient farming layouts."
+			]
+			dependencies: ["8000000000000002"]
+			id: "8000000000000005"
+			tasks: [
+				{
+					id: "8000000000000006"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 64
+				}
+				{
+					id: "8000000000000007"
+					type: "item"
+					item: "minecraft:carrot"
+					count: 32
+				}
+				{
+					id: "8000000000000008"
+					type: "item"
+					item: "minecraft:potato"
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000009"
+					type: "item"
+					item: "minecraft:bone_meal"
+					count: 64
+				}
+				{
+					id: "8000000000000010"
+					type: "item"
+					item: "minecraft:golden_carrot"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Automated Farming"
+			icon: "minecraft:hopper"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Automate your farming with advanced systems."
+				""
+				"Use hoppers, water streams, and mechanical harvesters."
+				""
+				"Create fully automated crop production."
+			]
+			dependencies: ["8000000000000005"]
+			id: "8000000000000011"
+			tasks: [
+				{
+					id: "8000000000000012"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 16
+				}
+				{
+					id: "8000000000000013"
+					type: "checkmark"
+					title: "Automated Farm Built"
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000014"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "8000000000000015"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

@@ -1,6 +1,6 @@
 {
 	id: "1000000000000001"
-	group: ""
+	group: "0000000000000001"
 	order_index: 1
 	filename: "1_basic_processing"
 	title: "Tier 1: Basic Processing"
