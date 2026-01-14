@@ -66,7 +66,7 @@ hash = "0209f028aa68fe42a28bc8bdd6e32ab140b31904179835831754f6cde4cb7dc1"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
-hash = "1114583362cd0ab7307d987563d587851d2e8b644ba750982de4fc4de2a29350"
+hash = "cb0337956b42ff60b778bbdfd72f65b99e4c559365cf59f05c81bfe7612c9dec"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
@@ -86,7 +86,7 @@ hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
-hash = "1af428679d47b6ac43a199ee9a241c44b9a72ba3848958bebe663ac949b54d3e"
+hash = "1096db8a70d8f652650b26f5d683d1d30c765716c2968899673e173fc9c9f261"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"

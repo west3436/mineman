@@ -24,6 +24,11 @@ ItemEvents.tooltip(event => {
             'mekanism:alloy_infused',
             'mekanism:basic_chemical_tank',
             'rftoolsbase:machine_frame',
+            'rftoolsbuilder:builder',
+            'alchemistry:dissolver',
+            'alchemistry:combiner',
+            'modularrouters:modular_router',
+            'compactmachines:machine_tiny',
         ],
         5: [ // Electronics
             'pneumaticcraft:printed_circuit_board',
