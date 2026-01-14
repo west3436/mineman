@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'minecraft:iron_ingot',
         P: 'pneumaticcraft:printed_circuit_board',
-        E: 'minecraft:player_head',
+        E: 'minecraft:skeleton_skull',
         C: 'pneumaticcraft:plastic',
         R: 'minecraft:redstone'
     });
