@@ -69,6 +69,25 @@ JEIEvents.hideItems(event => {
         'pneumaticcraft:plastic',
         'industrialforegoing:plastic',
 
+        // ChemLib duplicate dusts (keeping other mod variants as primary)
+        // ChemLib vs IE duplicates
+        'chemlib:aluminum_dust',
+        'chemlib:copper_dust',
+        'chemlib:gold_dust',
+        'chemlib:iron_dust',
+        'chemlib:lead_dust',
+        'chemlib:nickel_dust',
+        'chemlib:silver_dust',
+        'chemlib:sulfur_dust',
+
+        // ChemLib vs Mekanism duplicates
+        'chemlib:coal_dust',
+        'chemlib:diamond_dust',
+        'chemlib:emerald_dust',
+        'chemlib:tin_dust',
+        'chemlib:uranium_dust',
+        // Note: copper, gold, iron, lead, sulfur already listed in the "ChemLib vs IE duplicates" section above
+
         // Add more duplicates as needed during testing
     ];
 
