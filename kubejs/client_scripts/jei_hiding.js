@@ -28,6 +28,16 @@ JEIEvents.hideItems(event => {
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
 
+        // Electrum duplicates (keeping IE as primary)
+        'createaddition:electrum_ingot',
+        'createaddition:electrum_sheet',
+        'createaddition:electrum_wire',
+
+        // Silver duplicates (keeping IE as primary)
+        'chemlib:silver_ingot',
+        'chemlib:silver_plate',
+        'chemlib:silver_dust',
+
         // Add more duplicates as needed during testing
     ];
 
