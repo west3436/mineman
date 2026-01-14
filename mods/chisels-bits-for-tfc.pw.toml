@@ -1,0 +1,13 @@
+name = "Chisels & Bits for TFC // 1.18.2 // 1.20.1 //"
+filename = "ChiselsBitsTFC-1.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6AJNcGU2/versions/ekJO4GUI/ChiselsBitsTFC-1.0.0-forge-1.20.1.jar"
+hash-format = "sha512"
+hash = "60981bfbb70444225eba169b0c7ee1bbf41fac26ca856ae2db1ed2aac45595e8657414805ec76ac684cee78318b3427386220df8edce6f91775c93a6c8694d0c"
+
+[update]
+[update.modrinth]
+mod-id = "6AJNcGU2"
+version = "ekJO4GUI"

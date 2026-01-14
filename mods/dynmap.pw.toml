@@ -1,0 +1,13 @@
+name = "Dynmap®"
+filename = "Dynmap-3.7-beta-6-forge-1.20.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fRQREgAc/versions/RtI5TFAi/Dynmap-3.7-beta-6-forge-1.20.jar"
+hash-format = "sha512"
+hash = "e08e993976d51417737267f3478b7a8a7aa73883249dcf5308b441a9aff458682515dc393de5d6be09aeb81ffdee26ed628a210766d9b2df3d1aee509f7206fd"
+
+[update]
+[update.modrinth]
+mod-id = "fRQREgAc"
+version = "RtI5TFAi"

@@ -1,0 +1,13 @@
+name = "Paintings+"
+filename = "more_paintings-1.0.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/RuXZFAfX/versions/23mcw7jj/more_paintings-1.0.2-forge-1.20.1.jar"
+hash-format = "sha512"
+hash = "ad52230161fde17392875d4c5240ae9162f04bc1131cfc2b47f9ae2196843f64a64067a78446ea5173ba75f711bdc25ae621f5a1ac3e31a3259047abcab5411b"
+
+[update]
+[update.modrinth]
+mod-id = "RuXZFAfX"
+version = "23mcw7jj"
