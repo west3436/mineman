@@ -130,7 +130,7 @@ hash = "e829ac285d39d6a386ec94114ce448164fc7f7c105fac9daed1d83827a345af0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "9e520c84d64f18854ac91269eab9dd10063569b350f32c8bb00896e44d68009e"
+hash = "945ae6a59d3758bb2dd105a3f806d440b85c85ec19560a6ccdc1a69e6d78c641"
 
 [[files]]
 file = "kubejs/server_scripts/dump_registry.js"
@@ -166,7 +166,7 @@ hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
-hash = "4a1dd2925523987785ad0cc9616e478234d4dd7571111c3e48969bc3bbab0933"
+hash = "d434533ec03f1267967f84341fb92d51349af37e72acaf0dd2a3251ed40cb7ba"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"

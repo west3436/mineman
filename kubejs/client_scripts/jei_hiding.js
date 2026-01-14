@@ -130,8 +130,15 @@ JEIEvents.hideItems(event => {
 JEIEvents.hideFluids(event => {
     console.log('Hiding duplicate unified fluids in JEI...');
 
-    // Hide duplicate honey fluids
+    // Hide duplicate fluids (keeping TFMG as primary for oil refinery chain)
     const HIDDEN_FLUID_DUPLICATES = [
+        // PneumaticCraft LPG (TFMG is primary)
+        'pneumaticcraft:lpg',
+
+        // ChemLib gases (TFMG is primary for refinery chain)
+        'chemlib:propane',
+        'chemlib:butane',
+
         'forestry:honey',
         'growthcraft_apiary:honey_fluid_source',
         'tconstruct:honey',

@@ -269,6 +269,23 @@ const UNIFIED_FLUIDS = {
     ],
 };
 
+// Unified fluid mappings - all variants map to primary (TFMG for oil refinery chain)
+const UNIFIED_FLUIDS = {
+    // Hydrocarbon gases from oil refining
+    'lpg': [
+        'pneumaticcraft:lpg',
+        'tfmg:lpg',
+    ],
+    'propane': [
+        'chemlib:propane',
+        'tfmg:propane',
+    ],
+    'butane': [
+        'chemlib:butane',
+        'tfmg:butane',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -333,6 +350,13 @@ const PRIMARY_FLUIDS = {
     'naphtha': 'immersivepetroleum:naphtha',
     'crude_oil': 'immersivepetroleum:crudeoil',
     'honey': 'create:honey',
+};
+
+// Primary fluid for each category (TFMG for oil refinery chain consistency)
+const PRIMARY_FLUID_OUTPUTS = {
+    'lpg': 'tfmg:lpg',
+    'propane': 'tfmg:propane',
+    'butane': 'tfmg:butane',
 };
 
 ServerEvents.recipes(event => {
