@@ -4,7 +4,7 @@ name: KubeJS Validation
 on:
   pull_request:
     branches:
-      - main
+      - master
     paths:
       - 'kubejs/**'
       - '.github/workflows/kubejs-validation.yml'
