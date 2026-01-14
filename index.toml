@@ -121,10 +121,6 @@ file = "config/tfmg-common.toml"
 hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
 
 [[files]]
-file = "docs/README.md"
-hash = "fad190ed92994bd678a9e3c46b35216fe05dadcff6def6182c74898b1ec7086c"
-
-[[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
 hash = "e829ac285d39d6a386ec94114ce448164fc7f7c105fac9daed1d83827a345af0"
 
