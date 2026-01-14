@@ -1,0 +1,52 @@
+---
+name: Packwiz Refresh
+
+"on":
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'mods/**'
+      - 'resourcepacks/**'
+      - 'kubejs/**'
+      - 'pack.toml'
+      - 'index.toml'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Packwiz
+        run: |
+          wget https://github.com/packwiz/packwiz/releases/latest/download/packwiz-linux-amd64 \
+            -O packwiz
+          chmod +x ./packwiz
+
+      - name: Run Packwiz Refresh
+        run: ./packwiz refresh
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          if ! git diff --quiet; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: update packwiz hashes"
+          git push
