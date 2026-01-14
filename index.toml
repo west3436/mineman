@@ -1081,31 +1081,3 @@ metafile = true
 file = "resourcepacks/asyasas-legacy-copper.pw.toml"
 hash = "9995fc0f9650e6edfb2fc94c76a036cdb30a680b356fd36be0b5237984b13ae9"
 metafile = true
-
-[[files]]
-file = "scripts/check_minecraft_logs.py"
-hash = "7f2791a3c7c8663ea72e642f9370ff125483ccd239fd92388af8bcc9e0a6d256"
-
-[[files]]
-file = "scripts/compare_registries.py"
-hash = "504560e855b0cf95579926c79f38e069daea518c5df76e76fce913e5b4542ad5"
-
-[[files]]
-file = "scripts/package-lock.json"
-hash = "198060a082fe5217b370ec4e54b1c0f8a25eeb0a4dca512b6a81e9c9cd0c2b14"
-
-[[files]]
-file = "scripts/package.json"
-hash = "25749096827b4e454bf0f723178fdfe6fbc24ce98858a5fcd54ff2966b0174ff"
-
-[[files]]
-file = "scripts/validate_datapacks.py"
-hash = "c7bf376576614480e7927953a8b94c8d4083e2de64c5b0b5266057fe0aab968c"
-
-[[files]]
-file = "scripts/validate_ftbquests.py"
-hash = "5be909664c953d2372bccd06a22ac4faf5d5ee904a88c324023ee114264cefab"
-
-[[files]]
-file = "scripts/validate_kubejs.js"
-hash = "1613fed38b8a47594f34fc241dec8b13baf61215d08331bc4e349ed0a14fa661"
