@@ -1,5 +1,6 @@
 // kubejs/server_scripts/recipes/unification.js
-// Cross-mod item and fluid unification - ensures equivalent items from different mods work together
+// Cross-mod item and chemical gas/fluid unification
+// Ensures equivalent items and chemical gases from different mods work together
 
 // Unified item mappings - all variants map to primary
 const UNIFIED_ITEMS = {
@@ -183,19 +184,30 @@ ServerEvents.tags('fluid', event => {
     // not the bucket item (e.g., 'mekanism:hydrogen_bucket')
     // Fluid IDs are derived from bucket IDs by removing '_bucket' suffix
     Object.entries(UNIFIED_FLUIDS).forEach(([key, bucketVariants]) => {
+        // Validate that the key ends with '_bucket'
+        if (!key.endsWith('_bucket')) {
+            console.warn(`Skipping fluid tag creation for ${key}: key must end with '_bucket'`);
+            return;
+        }
+        
         // Convert bucket category to fluid tag name (e.g., 'hydrogen_bucket' -> 'forge:hydrogen')
-        const fluidName = key.replace('_bucket', '');
+        const fluidName = key.slice(0, -7); // Remove '_bucket' suffix (7 characters)
         const tagName = `forge:${fluidName}`;
         
         // Convert bucket item IDs to fluid IDs (e.g., 'mekanism:hydrogen_bucket' -> 'mekanism:hydrogen')
-        const fluidVariants = bucketVariants.map(bucket => bucket.replace('_bucket', ''));
-        
-        fluidVariants.forEach(fluid => {
+        bucketVariants.forEach(bucketItem => {
+            // Validate that the bucket item ID ends with '_bucket'
+            if (!bucketItem.endsWith('_bucket')) {
+                console.warn(`Skipping ${bucketItem}: expected bucket item to end with '_bucket'`);
+                return;
+            }
+            
+            const fluidId = bucketItem.slice(0, -7); // Remove '_bucket' suffix
             try {
-                event.add(tagName, fluid);
-                console.log(`Added ${fluid} to ${tagName}`);
+                event.add(tagName, fluidId);
+                console.log(`Added ${fluidId} to ${tagName}`);
             } catch (e) {
-                console.warn(`Could not add ${fluid} to ${tagName}: ${e.message || e}`);
+                console.warn(`Could not add ${fluidId} to ${tagName}: ${e.message || e}`);
             }
         });
     });
