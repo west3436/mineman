@@ -55,9 +55,27 @@ const UNIFIED_ITEMS = {
         'tfmg:steel_ingot',
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
+        'createnuclear:steel_ingot',
     ],
     'aluminum_ingot': [
         'immersiveengineering:ingot_aluminum',
+    ],
+
+    // Blocks
+    'steel_block': [
+        'tfmg:steel_block',
+        'immersiveengineering:storage_steel',
+        'mekanism:block_steel',
+        'tconstruct:steel_block',
+        'createnuclear:steel_block',
+    ],
+
+    // Nuggets
+    'steel_nugget': [
+        'tfmg:steel_nugget',
+        'immersiveengineering:nugget_steel',
+        'mekanism:nugget_steel',
+        'createnuclear:steel_nugget',
     ],
     'lead_ingot': [
         'tfmg:lead_ingot',
@@ -138,6 +156,8 @@ const PRIMARY_FLUIDS = {
     'crude_oil': 'immersivepetroleum:crudeoil',
 };
 
+// Note: PRIMARY_OUTPUTS is defined in _constants.js and loaded before this file
+
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
 
@@ -184,7 +204,34 @@ ServerEvents.tags('item', event => {
 
     // Create unified tags for cross-mod compatibility
     Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
-        const tagName = `forge:${key.replace('_', '/')}s`; // e.g., forge:plates/iron
+        let tagName;
+        
+        // Determine the correct tag format based on item type
+        if (key.endsWith('_plate')) {
+            // plates: steel_plate -> forge:plates/steel
+            const material = key.replace('_plate', '');
+            tagName = `forge:plates/${material}`;
+        } else if (key.endsWith('_dust')) {
+            // dusts: iron_dust -> forge:dusts/iron
+            const material = key.replace('_dust', '');
+            tagName = `forge:dusts/${material}`;
+        } else if (key.endsWith('_ingot')) {
+            // ingots: steel_ingot -> forge:ingots/steel
+            const material = key.replace('_ingot', '');
+            tagName = `forge:ingots/${material}`;
+        } else if (key.endsWith('_block')) {
+            // blocks: steel_block -> forge:storage_blocks/steel
+            const material = key.replace('_block', '');
+            tagName = `forge:storage_blocks/${material}`;
+        } else if (key.endsWith('_nugget')) {
+            // nuggets: steel_nugget -> forge:nuggets/steel
+            const material = key.replace('_nugget', '');
+            tagName = `forge:nuggets/${material}`;
+        } else {
+            // fallback: use original logic
+            tagName = `forge:${key.replace('_', '/')}s`;
+        }
+        
         variants.forEach(variant => {
             event.add(tagName, variant);
         });
