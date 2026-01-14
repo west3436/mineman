@@ -138,7 +138,7 @@ hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic_multiblock.js"
-hash = "f009f0785c3b609a5f734c69608d7e1519a3ea8447bbb317fee13027fd72ed42"
+hash = "32912e1e405e2da4244211bf105b446f20c815827870081d81d0f02faa46d620"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
