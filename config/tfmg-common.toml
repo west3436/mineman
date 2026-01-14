@@ -1,0 +1,82 @@
+# Create: The Factory Must Grow (TFMG) Configuration
+# Industrial expansion for Create mod
+
+[common]
+    # Steel Production
+    [common.steel]
+        # Blast furnace processing time (ticks)
+        # Longer than IE arc furnace to encourage progression
+        blastFurnaceTime = 1200
+        
+        # Coal/charcoal per steel operation
+        fuelPerOperation = 1
+        
+        # Steel output per iron input
+        steelPerIron = 1
+        
+        # Allow coke as fuel (integrates with IE coke production)
+        allowCokeFuel = true
+        
+        # Coke efficiency multiplier
+        cokeEfficiency = 1.5
+    
+    # Distillation
+    [common.distillation]
+        # Distillation tower settings
+        
+        # Processing time (ticks) per batch
+        distillationTime = 400
+        
+        # Products per crude oil bucket (mB)
+        # Aligned with IE refinery ratios
+        dieselPerBucket = 400
+        gasolinePerBucket = 200
+        lpgPerBucket = 150
+        naphthaSPerBucket = 100
+        lubricantPerBucket = 100
+        asphaltPerBucket = 50
+        
+        # Temperature requirement (degrees C)
+        minTemperature = 200
+    
+    # Industrial Pipe
+    [common.pipe]
+        # Fluid transfer rate (mB/tick)
+        transferRate = 1000
+        
+        # Maximum pressure (bar)
+        maxPressure = 5.0
+    
+    # Casting
+    [common.casting]
+        # Casting basin settings
+        
+        # Cooling time (ticks)
+        coolingTime = 100
+        
+        # Metal per ingot (mB)
+        metalPerIngot = 144
+    
+    # Plastic Production
+    [common.plastic]
+        # TFMG plastic sheet production
+        # This is the early plastic source before PneumaticCraft
+        
+        # Processing time (ticks)
+        processingTime = 200
+        
+        # Plastic per oil products (mB)
+        plasticPerNaphtha = 100
+
+[compatibility]
+    # Cross-mod compatibility
+    
+    # Use IE coke ovens for coal production
+    ieCokeCompatibility = true
+    
+    # Steel ingot unification (use TFMG as primary)
+    # See kubejs/server_scripts/recipes/unification.js
+    unifiedSteelOutput = true
+    
+    # Allow PneumaticCraft compressed iron in recipes
+    pncCompressedIronCompat = true

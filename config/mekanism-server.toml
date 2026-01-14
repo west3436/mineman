@@ -12,8 +12,9 @@
     # FE/RF to Joules conversion (1 FE = 0.4 J)
     FROM_FORGE = 0.4
     
-    # Joules to FE/RF conversion (1 J = 2.5 FE)
-    TO_FORGE = 2.5
+    # Joules to FE/RF conversion (1 J = 2.4 FE)
+    # Slightly less than perfect conversion to prevent energy loops
+    TO_FORGE = 2.4
     
     # Maximum energy buffer for machines (in Joules)
     # Scaled to match IE capacitor tiers

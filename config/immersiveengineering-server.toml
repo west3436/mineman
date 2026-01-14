@@ -102,8 +102,8 @@
         energyUsage = 24
         processingTime = 60
         
-        # Output same items as Create for consistency
-        plateOutput = "create:iron_sheet"
+        # Note: Recipe outputs are unified via KubeJS in kubejs/server_scripts/recipes/unification.js
+        # This ensures metal press outputs match Create sheet items
 
 # Multiblock Configuration
 [multiblocks]

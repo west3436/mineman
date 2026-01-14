@@ -78,42 +78,9 @@
         # Display item processing rates
         showProcessingRates = true
 
-# Create Crafts & Additions specific settings
-# These bridge Create stress with FE power systems (IE, Mekanism, RFTools)
-[createaddition]
-    # FE to stress conversion rate
-    # 1 stress unit = 256 FE (aligns with IE power costs)
-    feToStressRatio = 256
-    
-    # Maximum FE transfer rate per alternator
-    # Balanced for early-mid game power gen
-    alternatorMaxFE = 4096
-    
-    # Electric motor settings
-    [createaddition.electricMotor]
-        # FE consumption per stress unit generated
-        fePerStress = 8
-        # Maximum stress output
-        maxStress = 512
-        # Efficiency at max speed (%)
-        efficiency = 85
-
-# Create: The Factory Must Grow (TFMG) settings
-[tfmg]
-    # Steel production balance
-    [tfmg.steel]
-        # Blast furnace processing time (ticks)
-        # Longer than IE to encourage using IE infrastructure
-        blastFurnaceTime = 1200
-        
-        # Steel per iron ratio
-        steelPerIron = 1
-        
-    # Distillation settings
-    [tfmg.distillation]
-        # Products per distillation cycle
-        # Balanced with IE refinery outputs
-        outputMultiplier = 1.0
-        
-        # Processing time (ticks)
-        distillationTime = 400
+# Note: Create Crafts & Additions settings are in config/createaddition-common.toml
+# Note: Create TFMG settings are in config/tfmg-common.toml
+# The values configured in those files are designed to integrate with this config:
+# - FE to stress conversion: 256 FE per stress unit
+# - Steel production balanced with IE arc furnace
+# - Distillation outputs aligned with IE refinery
