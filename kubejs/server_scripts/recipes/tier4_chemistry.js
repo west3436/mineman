@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         'AGA',
         'PIP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
         G: '#forge:gears/iron'
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         'RFR',
         'PIP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         C: 'minecraft:diamond_pickaxe',
         R: 'minecraft:redstone',
         F: 'rftoolsbase:machine_frame',
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         'PEP',
         'PPP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         E: 'minecraft:ender_pearl'
     });
     
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic'
+        P: '#forge:plastic'
     });
 
     // === RFTOOLS CONTROL GATING ===
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         'IFI',
         'PAP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         R: 'minecraft:redstone_block',
         I: 'mekanism:alloy_infused',
         F: 'rftoolsbase:machine_frame',
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
         'IWI',
         'PPP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         C: 'minecraft:crafting_table',
         I: 'mekanism:alloy_infused',
         W: 'rftoolscontrol:processor'
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
         'IAI'
     ], {
         I: 'mekanism:alloy_infused',
-        A: 'pneumaticcraft:plastic',
+        A: '#forge:plastic',
         R: 'minecraft:redstone_block'
     });
 
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
         'IAI'
     ], {
         I: 'mekanism:alloy_infused',
-        A: 'pneumaticcraft:plastic',
+        A: '#forge:plastic',
         R: 'minecraft:redstone',
         F: 'rftoolsbase:machine_frame'
     });
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
         'ECE',
         'PIP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         I: 'mekanism:alloy_infused',
         E: 'minecraft:ender_pearl',
         C: 'rftoolspower:power_core1'
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
         'IAI',
         'PCP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         C: '#forge:chests/wooden',
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel'
@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
         'IFI',
         'PAP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         A: 'mekanism:alloy_infused',
         I: '#forge:plates/steel',
         F: 'rftoolsbase:machine_frame'
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         'IFI',
         'PAP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         C: 'minecraft:crafting_table',
         I: 'mekanism:alloy_infused',
         F: 'rftoolsbase:machine_frame',
@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
         'IGI',
         'PAP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         A: 'mekanism:alloy_infused',
         I: '#forge:plates/steel',
         G: '#forge:glass'
@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
         'IFI',
         'PAP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         E: 'minecraft:ender_pearl',
         I: 'mekanism:alloy_infused',
         F: 'rftoolsbase:machine_frame',
@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         F: 'minecraft:furnace',
         C: 'mekanism:basic_chemical_tank'
     });
@@ -298,7 +298,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         C: 'minecraft:crafting_table',
         B: 'mekanism:basic_chemical_tank'
     });
@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
         'IFI',
         'PCP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         A: 'mekanism:alloy_infused',
         I: '#forge:plates/steel',
         F: 'minecraft:piston',
@@ -324,7 +324,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         F: 'minecraft:bucket',
         C: 'mekanism:basic_chemical_tank'
     });
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         B: 'minecraft:bucket',
         F: 'minecraft:furnace'
     });
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'mekanism:alloy_infused',
         I: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         C: 'mekanism:basic_chemical_tank'
     });
     
@@ -362,7 +362,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'mekanism:alloy_infused',
         I: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         D: 'minecraft:diamond'
     });
 
@@ -386,7 +386,7 @@ ServerEvents.recipes(event => {
         'ICI',
         'PRP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         A: 'mekanism:alloy_infused',
         I: '#forge:plates/steel',
         C: 'minecraft:chest',
@@ -399,7 +399,7 @@ ServerEvents.recipes(event => {
         'IAI',
         'PIP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel'
     });
@@ -412,7 +412,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic'
+        P: '#forge:plastic'
     });
 
     // === COMPACT MACHINES GATING ===
@@ -442,7 +442,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'mekanism:alloy_infused',
         A: '#forge:plates/steel',
-        P: 'pneumaticcraft:plastic'
+        P: '#forge:plastic'
     });
     
     // Solid Wall - requires chemistry materials
@@ -451,7 +451,7 @@ ServerEvents.recipes(event => {
         'AIA',
         'PAP'
     ], {
-        P: 'pneumaticcraft:plastic',
+        P: '#forge:plastic',
         A: '#forge:plates/steel',
         I: 'mekanism:alloy_infused'
     });
@@ -463,7 +463,7 @@ ServerEvents.recipes(event => {
         'WWW'
     ], {
         W: 'compactmachines:wall',
-        P: 'pneumaticcraft:plastic'
+        P: '#forge:plastic'
     });
     
     // Small Compact Machine - requires chemistry tier
@@ -518,16 +518,8 @@ ServerEvents.recipes(event => {
 
     // === PNEUMATICCRAFT PROGRESSION ===
     // Ensure PNC unlocks at Tier 4 start (plastic requirement)
-    // PneumaticCraft plastic is gated behind TFMG plastic sheets in its own recipes
-    
-    // Remove original PneumaticCraft plastic recipe
-    event.remove({ output: 'pneumaticcraft:plastic' });
-    
-    // PneumaticCraft Plastic - requires TFMG plastic sheets (Tier 3)
-    event.shapeless('pneumaticcraft:plastic', [
-        'tfmg:plastic_sheet',
-        'tfmg:plastic_sheet'
-    ]);
+    // PneumaticCraft plastic is unified with TFMG plastic sheets (handled in unification.js)
+    // All plastic variants accept each other via #forge:plastic tag and conversion recipes
 
     // === MEKANISM PROGRESSION ===
     // Ensure Mekanism unlocks at Tier 4 start
