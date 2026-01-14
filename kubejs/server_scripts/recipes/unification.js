@@ -61,21 +61,6 @@ const UNIFIED_ITEMS = {
         'tfmg:nickel_ingot',
         'immersiveengineering:ingot_nickel',
     ],
-
-    // Blocks
-    'aluminum_block': [
-        'tfmg:aluminum_block',
-    ],
-
-    // Wires
-    'constantan_wire': [
-        'tfmg:constantan_wire',
-    ],
-
-    // Sheets (additional)
-    'nickel_sheet': [
-        'tfmg:nickel_sheet',
-    ],
 };
 
 // Primary item for each category (from _constants.js)
@@ -92,9 +77,6 @@ const PRIMARY_OUTPUTS = {
     'aluminum_plate': 'tfmg:aluminum_sheet',
     'constantan_ingot': 'tfmg:constantan_ingot',
     'nickel_ingot': 'tfmg:nickel_ingot',
-    'aluminum_block': 'tfmg:aluminum_block',
-    'constantan_wire': 'tfmg:constantan_wire',
-    'nickel_sheet': 'tfmg:nickel_sheet',
 };
 
 ServerEvents.recipes(event => {
