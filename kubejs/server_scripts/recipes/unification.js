@@ -55,30 +55,30 @@ const UNIFIED_ITEMS = {
 
 // Unified fluid mappings - all variants map to primary (Immersive Petroleum)
 const UNIFIED_FLUIDS = {
-    // Diesel (3 sources)
+    // Diesel (2 variants + 1 primary = 3 total sources)
     'diesel': [
         'pneumaticcraft:diesel',
         'tfmg:diesel',
     ],
-    // Gasoline (3 sources)
+    // Gasoline (2 variants + 1 primary = 3 total sources)
     'gasoline': [
         'pneumaticcraft:gasoline',
         'tfmg:gasoline',
     ],
-    // Kerosene (3 sources)
+    // Kerosene (2 variants + 1 primary = 3 total sources)
     'kerosene': [
         'pneumaticcraft:kerosene',
         'tfmg:kerosene',
     ],
-    // Lubricant (2 sources)
+    // Lubricant (1 variant + 1 primary = 2 total sources)
     'lubricant': [
         'pneumaticcraft:lubricant',
     ],
-    // Naphtha (2 sources)
+    // Naphtha (1 variant + 1 primary = 2 total sources)
     'naphtha': [
         'tfmg:naphtha',
     ],
-    // Crude Oil (3 sources)
+    // Crude Oil (2 variants + 1 primary = 3 total sources)
     'crude_oil': [
         'tfmg:crude_oil',
         'pneumaticcraft:oil',
