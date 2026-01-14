@@ -1,28 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".claude/settings.local.json"
-hash = "7a13611cc226c956bb62f336b0663d19c0af41128dd12fce23280819de486f1d"
-
-[[files]]
-file = "ADDITIONAL_MODS_ADDED.md"
-hash = "202ffd4486ffb74cef8c04fae7ee794fec53409ad654edccf16f8eee1aa89f5a"
-
-[[files]]
-file = "MODPACK_DEV_GUIDE.md"
-hash = "26ab48f907b8d92217ef310ef890df667fa360c857338576bfbd10f6866bbdee"
-
-[[files]]
-file = "SETUP_SUMMARY.md"
-hash = "b6bee85b88ddd186d80f0caac6e663dfde9b0c20619aca7f2356b368eb82d965"
-
-[[files]]
-file = "SUGGESTED_MODS.md"
-hash = "dbfdaec59bd6cecb6d5307df75decd72669cfe50b8173ffa3897cda7fba05f6a"
-
-[[files]]
-file = "SUGGESTED_MODS_ADDED.md"
-hash = "8837d18c689b1ffcbb1181cfca6fea36cbfb3021db2e9685d5ce01f0805228f3"
+file = "README.md"
+hash = "31af730aba82f21c7be1cc55675ebba2130508cac3d069dd57990c2d39046bab"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"

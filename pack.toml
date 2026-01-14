@@ -1,12 +1,12 @@
 name = "Tech Progression"
-author = "tsear"
+author = "west3436"
 version = "1.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "84ccbb012df9facc467ef73c01e29e7539e4f3a67039eaeb11d6a2f830f22b6c"
+hash = "98d355659818a960477f9443f496efddaaffcdc0109bf5d5f4f338dc6be995dc"
 
 [versions]
 forge = "47.4.13"
