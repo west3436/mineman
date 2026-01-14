@@ -19,7 +19,7 @@ def parse_registry_dump(file_path: str) -> dict[str, set[str]]:
     if not path.exists():
         return registries
     
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
             if not line:
@@ -147,7 +147,7 @@ def main():
     comment = format_markdown_comment(added, removed)
     
     if output_file:
-        with open(output_file, 'w') as f:
+        with open(output_file, 'w', encoding='utf-8') as f:
             f.write(comment)
         print(f"Output written to: {output_file}")
     else:
