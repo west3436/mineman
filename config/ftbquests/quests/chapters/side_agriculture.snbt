@@ -4,7 +4,7 @@
 	order_index: 1
 	filename: "side_agriculture"
 	title: "Side: Agriculture & Farming"
-	icon: "minecraft:wheat"
+	icon: "farmersdelight:cooking_pot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -15,11 +15,17 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"Welcome to the Agriculture side quest!"
+				"&l&2Welcome to Agriculture!&r"
 				""
-				"Build efficient farms to produce food and resources."
+				"This chapter covers farming, cooking, and brewing from multiple mods!"
 				""
-				"Master crop growing and animal husbandry."
+				"• &6Farmer's Delight&r - Cooking and food"
+				"• &aAgricraft&r - Crop breeding"
+				"• &eFarming for Blockheads&r - Farm market"
+				"• &9Growthcraft&r - Brewing"
+				"• &cImmersive Cooking&r - Industrial food"
+				""
+				"&eNo progression requirements - start farming anytime!&r"
 			]
 			id: "8000000000000002"
 			tasks: [{
@@ -35,16 +41,21 @@
 			}]
 		}
 		{
-			title: "Basic Crops"
-			icon: "minecraft:golden_carrot"
-			x: 0.0d
+			title: "Farmer's Delight: Kitchen Setup"
+			icon: "farmersdelight:cooking_pot"
+			x: -4.0d
 			y: 2.0d
+			shape: "rsquare"
 			description: [
-				"Grow basic crops for food and resources."
+				"&l&6Farmer's Delight Basics&r"
 				""
-				"Plant wheat, carrots, potatoes, and other crops."
+				"Set up your kitchen with Farmer's Delight!"
 				""
-				"Set up irrigation and efficient farming layouts."
+				"• &fCooking Pot&r - Cook soups and stews"
+				"• &fCutting Board&r - Slice ingredients"
+				"• &fStove&r - Heat your pots"
+				""
+				"&eCooking makes food more filling and adds buffs!&r"
 			]
 			dependencies: ["8000000000000002"]
 			id: "8000000000000005"
@@ -52,48 +63,52 @@
 				{
 					id: "8000000000000006"
 					type: "item"
-					item: "minecraft:wheat"
-					count: 64
+					item: "farmersdelight:cooking_pot"
+					count: 1
 				}
 				{
 					id: "8000000000000007"
 					type: "item"
-					item: "minecraft:carrot"
-					count: 32
+					item: "farmersdelight:cutting_board"
+					count: 1
 				}
 				{
 					id: "8000000000000008"
 					type: "item"
-					item: "minecraft:potato"
-					count: 32
+					item: "farmersdelight:stove"
+					count: 1
 				}
 			]
 			rewards: [
 				{
 					id: "8000000000000009"
 					type: "item"
-					item: "minecraft:bone_meal"
-					count: 64
+					item: "farmersdelight:canvas"
+					count: 8
 				}
 				{
 					id: "8000000000000010"
 					type: "item"
-					item: "minecraft:golden_carrot"
+					item: "farmersdelight:rope"
 					count: 16
 				}
 			]
 		}
 		{
-			title: "Automated Farming"
-			icon: "minecraft:hopper"
-			x: 0.0d
+			title: "Farmer's Delight: Cooking Recipes"
+			icon: "farmersdelight:vegetable_soup"
+			x: -4.0d
 			y: 4.0d
 			description: [
-				"Automate your farming with advanced systems."
+				"&l&aCook Delicious Meals&r"
 				""
-				"Use hoppers, water streams, and mechanical harvesters."
+				"Make some hearty meals!"
 				""
-				"Create fully automated crop production."
+				"• &fVegetable Soup&r - Basic but effective"
+				"• &fNoodle Soup&r - Filling noodle dish"
+				"• &fSteak and Potatoes&r - Classic combo"
+				""
+				"&eBetter food means better survival!&r"
 			]
 			dependencies: ["8000000000000005"]
 			id: "8000000000000011"
@@ -101,26 +116,488 @@
 				{
 					id: "8000000000000012"
 					type: "item"
-					item: "minecraft:hopper"
-					count: 16
-				}
-				{
-					id: "8000000000000013"
-					type: "checkmark"
-					title: "Automated Farm Built"
+					title: "Any Farmer's Delight Meal"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "farmersdelight:vegetable_soup"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:noodle_soup"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:beef_stew"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:chicken_soup"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 8
 				}
 			]
 			rewards: [
 				{
+					id: "8000000000000013"
+					type: "item"
+					item: "farmersdelight:steak_and_potatoes"
+					count: 8
+				}
+				{
 					id: "8000000000000014"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Farmer's Delight: Feast Master"
+			icon: "farmersdelight:roast_chicken_block"
+			x: -4.0d
+			y: 6.0d
+			description: [
+				"&l&dCook a Feast!&r"
+				""
+				"Prepare a grand feast for your friends!"
+				""
+				"• &fRoast Chicken&r - Serves multiple players"
+				"• &fStuffed Pumpkin&r - Autumn harvest"
+				"• &fHoney Glazed Ham&r - Delicious centerpiece"
+				""
+				"&eFeasts are placeable blocks that feed multiple people!&r"
+			]
+			dependencies: ["8000000000000011"]
+			id: "8000000000000015"
+			tasks: [
+				{
+					id: "8000000000000016"
+					type: "item"
+					title: "Any Feast Block"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "farmersdelight:roast_chicken_block"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:stuffed_pumpkin_block"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:honey_glazed_ham_block"
+									Count: 1b
+								}
+								{
+									id: "farmersdelight:shepherds_pie_block"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000017"
 					type: "item"
 					item: "minecraft:diamond"
 					count: 4
 				}
 				{
-					id: "8000000000000015"
+					id: "8000000000000018"
+					type: "item"
+					item: "farmersdelight:golden_knife"
+					count: 1
+				}
+			]
+		}
+		{
+			title: "Agricraft: Crop Sticks"
+			icon: "agricraft:wood_crop_sticks"
+			x: -1.5d
+			y: 2.0d
+			description: [
+				"&l&aAgricraft Basics&r"
+				""
+				"Start breeding better crops with Agricraft!"
+				""
+				"• &fCrop Sticks&r - Plant seeds in these"
+				"• &fSeed Analyzer&r - Check seed stats"
+				"• &fJournal&r - Track your discoveries"
+				""
+				"&eBreed crops for higher yield and growth speed!&r"
+			]
+			dependencies: ["8000000000000002"]
+			id: "8000000000000019"
+			tasks: [
+				{
+					id: "8000000000000020"
+					type: "item"
+					item: "agricraft:wood_crop_sticks"
+					count: 16
+				}
+				{
+					id: "8000000000000021"
+					type: "item"
+					item: "agricraft:seed_analyzer"
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000022"
+					type: "item"
+					item: "agricraft:wood_crop_sticks"
+					count: 32
+				}
+				{
+					id: "8000000000000023"
+					type: "item"
+					item: "minecraft:bone_meal"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "Agricraft: Crop Breeding"
+			icon: "agricraft:seed_analyzer"
+			x: -1.5d
+			y: 4.0d
+			description: [
+				"&l&eCrop Crossbreeding&r"
+				""
+				"Breed crops to improve their genetics!"
+				""
+				"• Place two mature crops next to empty crop sticks"
+				"• Wait for the crops to cross-pollinate"
+				"• Analyze new seeds to check their stats"
+				""
+				"&eStats: Growth (speed), Gain (yield), Strength (survival)&r"
+			]
+			dependencies: ["8000000000000019"]
+			id: "8000000000000024"
+			tasks: [
+				{
+					id: "8000000000000025"
+					type: "item"
+					item: "agricraft:journal"
+					count: 1
+				}
+				{
+					id: "8000000000000026"
+					type: "checkmark"
+					title: "Breed a 10/10/10 Crop"
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000027"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 16
+				}
+				{
+					id: "8000000000000028"
 					type: "xp_levels"
 					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Farming for Blockheads: Market"
+			icon: "farmingforblockheads:market"
+			x: 1.5d
+			y: 2.0d
+			description: [
+				"&l&6Farming for Blockheads&r"
+				""
+				"Set up a farm market!"
+				""
+				"• &fMarket&r - Buy seeds and animals"
+				"• &fFeeding Trough&r - Auto-feed animals"
+				"• &fFertilized Farmland&r - Better crops"
+				""
+				"&eThe market lets you buy any seed you might be missing!&r"
+			]
+			dependencies: ["8000000000000002"]
+			id: "8000000000000029"
+			tasks: [
+				{
+					id: "8000000000000030"
+					type: "item"
+					item: "farmingforblockheads:market"
+					count: 1
+				}
+				{
+					id: "8000000000000031"
+					type: "item"
+					item: "farmingforblockheads:feeding_trough"
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000032"
+					type: "item"
+					item: "farmingforblockheads:fertilizer"
+					count: 32
+				}
+				{
+					id: "8000000000000033"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Farming for Blockheads: Automation"
+			icon: "farmingforblockheads:chicken_nest"
+			x: 1.5d
+			y: 4.0d
+			description: [
+				"&l&eFarm Automation&r"
+				""
+				"Automate your animal farms!"
+				""
+				"• &fChicken Nest&r - Collect eggs automatically"
+				"• &fFeeding Trough&r - Keep animals fed"
+				"• &fFertilized Soil&r - Boost crop growth"
+				""
+				"&eHappy animals produce more resources!&r"
+			]
+			dependencies: ["8000000000000029"]
+			id: "8000000000000034"
+			tasks: [
+				{
+					id: "8000000000000035"
+					type: "item"
+					item: "farmingforblockheads:chicken_nest"
+					count: 4
+				}
+				{
+					id: "8000000000000036"
+					type: "item"
+					item: "farmingforblockheads:fertilized_farmland"
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000037"
+					type: "item"
+					item: "minecraft:golden_apple"
+					count: 4
+				}
+				{
+					id: "8000000000000038"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			title: "Growthcraft: Brewing Basics"
+			icon: "growthcraft_rice:brewing_barrel_oak"
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"&l&9Growthcraft Brewing&r"
+				""
+				"Start brewing with Growthcraft!"
+				""
+				"• &fBrewing Barrel&r - Ferment beverages"
+				"• &fFruit Press&r - Extract juices"
+				"• &fHops&r - Essential for beer"
+				""
+				"&eBrew drinks for buffs and trading!&r"
+			]
+			dependencies: ["8000000000000002"]
+			id: "8000000000000039"
+			tasks: [
+				{
+					id: "8000000000000040"
+					type: "item"
+					item: "growthcraft_rice:brewing_barrel_oak"
+					count: 1
+				}
+				{
+					id: "8000000000000041"
+					type: "item"
+					item: "growthcraft_apples:apple_tree_fruit"
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000042"
+					type: "item"
+					item: "minecraft:glass_bottle"
+					count: 32
+				}
+				{
+					id: "8000000000000043"
+					type: "item"
+					item: "minecraft:sugar"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Growthcraft: Advanced Brewing"
+			icon: "growthcraft_rice:bottle_sake"
+			x: 4.0d
+			y: 4.0d
+			description: [
+				"&l&bAdvanced Beverages&r"
+				""
+				"Brew advanced drinks!"
+				""
+				"• &fSake&r - Rice wine"
+				"• &fCider&r - Apple-based"
+				"• &fMead&r - Honey wine"
+				""
+				"&eAdvanced drinks give better buffs!&r"
+			]
+			dependencies: ["8000000000000039"]
+			id: "8000000000000044"
+			tasks: [
+				{
+					id: "8000000000000045"
+					type: "item"
+					title: "Any Growthcraft Beverage"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "growthcraft_rice:bottle_sake"
+									Count: 1b
+								}
+								{
+									id: "growthcraft_apples:bottle_apple_cider"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000046"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 8
+				}
+				{
+					id: "8000000000000047"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Immersive Cooking: Industrial Kitchen"
+			icon: "immersivecooking:oven"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"&l&cImmersive Cooking&r"
+				""
+				"Scale up with industrial cooking!"
+				""
+				"• &fIndustrial Oven&r - Cook in bulk"
+				"• &fMixer&r - Combine ingredients"
+				"• &fConveyors&r - Move food automatically"
+				""
+				"&ePerfect for feeding a whole server!&r"
+			]
+			dependencies: ["8000000000000011", "8000000000000034"]
+			dependency_requirement: "one_completed"
+			id: "8000000000000048"
+			tasks: [
+				{
+					id: "8000000000000049"
+					type: "item"
+					item: "immersivecooking:oven"
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8000000000000050"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "8000000000000051"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Master Farmer"
+			icon: "farmersdelight:golden_knife"
+			x: 0.0d
+			y: 8.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"&l&2&nMaster Farmer!&r"
+				""
+				"Congratulations! You've mastered agriculture!"
+				""
+				"You've learned:"
+				"• Cooking with Farmer's Delight"
+				"• Crop breeding with Agricraft"
+				"• Farm markets and automation"
+				"• Brewing with Growthcraft"
+				"• Industrial cooking"
+				""
+				"&6Enjoy your bountiful harvests!&r"
+			]
+			dependencies: ["8000000000000015", "8000000000000024", "8000000000000044", "8000000000000048"]
+			dependency_requirement: "one_completed"
+			id: "8000000000000052"
+			tasks: [{
+				id: "8000000000000053"
+				type: "checkmark"
+				title: "Master Farmer!"
+			}]
+			rewards: [
+				{
+					id: "8000000000000054"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 2
+				}
+				{
+					id: "8000000000000055"
+					type: "item"
+					item: "farmersdelight:roast_chicken_block"
+					count: 4
+				}
+				{
+					id: "8000000000000056"
+					type: "xp_levels"
+					xp_levels: 25
 				}
 			]
 		}

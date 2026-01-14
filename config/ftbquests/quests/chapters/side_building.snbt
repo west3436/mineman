@@ -4,7 +4,7 @@
 	order_index: 3
 	filename: "side_building"
 	title: "Side: Building & Decoration"
-	icon: "minecraft:bricks"
+	icon: "handcrafted:cushion_white"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -15,11 +15,17 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"Welcome to the Building side quest!"
+				"&l&6Welcome to Building & Decoration!&r"
 				""
-				"Create beautiful structures and decorative builds."
+				"Create beautiful structures with decorative mods!"
 				""
-				"Master various building materials and architectural styles."
+				"This chapter covers:"
+				"• &aMacaw's&r - Windows, doors, bridges, furniture"
+				"• &bSupplementaries&r - Decorative items"
+				"• &dFramedBlocks&r - Custom block shapes"
+				"• &eHandcrafted&r - Cozy furniture"
+				""
+				"&eNo progression requirements - build anytime!&r"
 			]
 			id: "A000000000000002"
 			tasks: [{
@@ -35,16 +41,21 @@
 			}]
 		}
 		{
-			title: "Building Materials"
-			icon: "minecraft:stone_bricks"
-			x: 0.0d
+			title: "Macaw's Windows"
+			icon: "mcwwindows:oak_window"
+			x: -4.0d
 			y: 2.0d
+			shape: "rsquare"
 			description: [
-				"Gather and craft various building materials."
+				"&l&fMacaw's Windows&r"
 				""
-				"Create bricks, stone variants, and decorative blocks."
+				"Add beautiful windows to your builds!"
 				""
-				"Stock up on materials for your projects."
+				"• &fGothic Windows&r - Medieval style"
+				"• &fModern Windows&r - Clean designs"
+				"• &fShutters&r - Add depth and detail"
+				""
+				"&eWindows make every build look better!&r"
 			]
 			dependencies: ["A000000000000002"]
 			id: "A000000000000005"
@@ -52,93 +63,762 @@
 				{
 					id: "A000000000000006"
 					type: "item"
-					item: "minecraft:bricks"
-					count: 64
-				}
-				{
-					id: "A000000000000007"
-					type: "item"
-					item: "minecraft:stone_bricks"
-					count: 64
-				}
-				{
-					id: "A000000000000008"
-					type: "item"
-					title: "Decorative Blocks"
+					title: "Any Macaw's Window"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
 						tag: {
 							items: [
 								{
-									id: "minecraft:glass"
+									id: "mcwwindows:oak_window"
 									Count: 1b
 								}
 								{
-									id: "minecraft:stained_glass"
+									id: "mcwwindows:spruce_window"
 									Count: 1b
 								}
 								{
-									id: "minecraft:quartz_block"
+									id: "mcwwindows:birch_window"
+									Count: 1b
+								}
+								{
+									id: "mcwwindows:dark_oak_window"
 									Count: 1b
 								}
 							]
 						}
 					}
-					count: 32
+					count: 8
 				}
 			]
 			rewards: [
 				{
-					id: "A000000000000009"
+					id: "A000000000000007"
 					type: "item"
-					item: "minecraft:quartz"
-					count: 64
+					item: "mcwwindows:oak_gothic_window"
+					count: 8
 				}
+				{
+					id: "A000000000000008"
+					type: "item"
+					item: "minecraft:glass"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Macaw's Doors"
+			icon: "mcwdoors:oak_stable_door"
+			x: -2.0d
+			y: 2.0d
+			description: [
+				"&l&6Macaw's Doors&r"
+				""
+				"Upgrade your doorways!"
+				""
+				"• &fStable Doors&r - Classic barn style"
+				"• &fJapanese Doors&r - Eastern design"
+				"• &fModern Doors&r - Sleek and simple"
+				""
+				"&eEvery build deserves the perfect door!&r"
+			]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000009"
+			tasks: [
 				{
 					id: "A000000000000010"
 					type: "item"
-					item: "minecraft:terracotta"
+					title: "Any Macaw's Door"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mcwdoors:oak_stable_door"
+									Count: 1b
+								}
+								{
+									id: "mcwdoors:spruce_stable_door"
+									Count: 1b
+								}
+								{
+									id: "mcwdoors:oak_japanese_door"
+									Count: 1b
+								}
+								{
+									id: "mcwdoors:oak_modern_door"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000011"
+					type: "item"
+					item: "mcwdoors:oak_japanese_door"
+					count: 4
+				}
+				{
+					id: "A000000000000012"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Macaw's Bridges"
+			icon: "mcwbridges:oak_log_bridge_middle"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"&l&eMacaw's Bridges&r"
+				""
+				"Build beautiful bridges!"
+				""
+				"• &fLog Bridges&r - Rustic crossings"
+				"• &fRope Bridges&r - Adventure style"
+				"• &fStone Bridges&r - Durable and elegant"
+				""
+				"&eCross any gap in style!&r"
+			]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000013"
+			tasks: [
+				{
+					id: "A000000000000014"
+					type: "item"
+					title: "Any Macaw's Bridge"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mcwbridges:oak_log_bridge_middle"
+									Count: 1b
+								}
+								{
+									id: "mcwbridges:rope_bridge"
+									Count: 1b
+								}
+								{
+									id: "mcwbridges:stone_bridge"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000015"
+					type: "item"
+					item: "mcwbridges:rope_bridge"
+					count: 16
+				}
+				{
+					id: "A000000000000016"
+					type: "item"
+					item: "minecraft:oak_planks"
 					count: 64
 				}
 			]
 		}
 		{
-			title: "Grand Structure"
-			icon: "minecraft:beacon"
+			title: "Macaw's Fences & Walls"
+			icon: "mcwfences:oak_picket_fence"
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"&l&aMacaw's Fences & Walls&r"
+				""
+				"Define your property with style!"
+				""
+				"• &fPicket Fences&r - Suburban charm"
+				"• &fHighrise Fences&r - Modern security"
+				"• &fWalls&r - Solid boundaries"
+				""
+				"&eGood fences make good neighbors!&r"
+			]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000017"
+			tasks: [
+				{
+					id: "A000000000000018"
+					type: "item"
+					title: "Any Macaw's Fence"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mcwfences:oak_picket_fence"
+									Count: 1b
+								}
+								{
+									id: "mcwfences:oak_wired_fence"
+									Count: 1b
+								}
+								{
+									id: "mcwfences:oak_hedge"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000019"
+					type: "item"
+					item: "mcwfences:oak_picket_fence"
+					count: 32
+				}
+				{
+					id: "A000000000000020"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Macaw's Furniture"
+			icon: "mcwfurnitures:oak_chair"
+			x: -4.0d
+			y: 4.0d
+			description: [
+				"&l&dMacaw's Furniture&r"
+				""
+				"Furnish your home!"
+				""
+				"• &fChairs&r - Sit in style"
+				"• &fTables&r - For dining and work"
+				"• &fDrawers&r - Decorative storage"
+				""
+				"&eTurn your house into a home!&r"
+			]
+			dependencies: ["A000000000000005", "A000000000000009"]
+			dependency_requirement: "one_completed"
+			id: "A000000000000021"
+			tasks: [
+				{
+					id: "A000000000000022"
+					type: "item"
+					title: "Chair"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mcwfurnitures:oak_chair"
+									Count: 1b
+								}
+								{
+									id: "mcwfurnitures:spruce_chair"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+				{
+					id: "A000000000000023"
+					type: "item"
+					title: "Table"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mcwfurnitures:oak_table"
+									Count: 1b
+								}
+								{
+									id: "mcwfurnitures:spruce_table"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000024"
+					type: "item"
+					item: "mcwfurnitures:oak_drawer"
+					count: 2
+				}
+				{
+					id: "A000000000000025"
+					type: "item"
+					item: "mcwfurnitures:oak_bookshelf"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Supplementaries: Signs & Decorations"
+			icon: "supplementaries:sign_post_oak"
 			x: 0.0d
 			y: 4.0d
 			description: [
-				"Build a grand structure!"
+				"&l&bSupplementaries Basics&r"
 				""
-				"Create an impressive building showcasing your skills."
+				"Add details with Supplementaries!"
 				""
-				"Use multiple materials and architectural techniques."
+				"• &fSign Posts&r - Point the way"
+				"• &fHanging Signs&r - Label your areas"
+				"• &fPedestals&r - Display items"
+				""
+				"&eThe little details make the difference!&r"
 			]
-			dependencies: ["A000000000000005"]
-			id: "A000000000000011"
-			tasks: [{
-				id: "A000000000000012"
-				type: "checkmark"
-				title: "Complete Grand Structure"
-			}]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000026"
+			tasks: [
+				{
+					id: "A000000000000027"
+					type: "item"
+					title: "Sign Post"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "supplementaries:sign_post_oak"
+									Count: 1b
+								}
+								{
+									id: "supplementaries:sign_post_spruce"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+				{
+					id: "A000000000000028"
+					type: "item"
+					item: "supplementaries:pedestal"
+					count: 2
+				}
+			]
 			rewards: [
 				{
-					id: "A000000000000013"
+					id: "A000000000000029"
 					type: "item"
-					item: "minecraft:diamond"
+					item: "supplementaries:flag_white"
+					count: 4
+				}
+				{
+					id: "A000000000000030"
+					type: "item"
+					item: "supplementaries:rope"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Supplementaries: Lighting & Ambiance"
+			icon: "supplementaries:sconce"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"&l&eAmbient Lighting&r"
+				""
+				"Light up your builds with style!"
+				""
+				"• &fSconces&r - Wall-mounted lights"
+				"• &fCandle Holders&r - Elegant lighting"
+				"• &fCages&r - Display items with flair"
+				""
+				"&eGood lighting transforms any space!&r"
+			]
+			dependencies: ["A000000000000026"]
+			id: "A000000000000031"
+			tasks: [
+				{
+					id: "A000000000000032"
+					type: "item"
+					item: "supplementaries:sconce"
 					count: 8
 				}
 				{
-					id: "A000000000000014"
+					id: "A000000000000033"
+					type: "item"
+					item: "supplementaries:candle_holder"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000034"
+					type: "item"
+					item: "supplementaries:globe"
+					count: 1
+				}
+				{
+					id: "A000000000000035"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			title: "FramedBlocks: Custom Shapes"
+			icon: "framedblocks:framed_cube"
+			x: 4.0d
+			y: 4.0d
+			description: [
+				"&l&5FramedBlocks Basics&r"
+				""
+				"Create custom block shapes!"
+				""
+				"• &fFramed Cube&r - Base for any texture"
+				"• &fFramed Slope&r - Smooth transitions"
+				"• &fFramed Slab&r - Half blocks"
+				""
+				"&eHide cables and create seamless builds!&r"
+			]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000036"
+			tasks: [
+				{
+					id: "A000000000000037"
+					type: "item"
+					item: "framedblocks:framed_cube"
+					count: 16
+				}
+				{
+					id: "A000000000000038"
+					type: "item"
+					item: "framedblocks:framed_slope"
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000039"
+					type: "item"
+					item: "framedblocks:framed_cube"
+					count: 32
+				}
+				{
+					id: "A000000000000040"
+					type: "item"
+					item: "framedblocks:framed_slab"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "FramedBlocks: Cable Hiding"
+			icon: "framedblocks:framed_panel"
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"&l&8Hide Those Cables!&r"
+				""
+				"Use FramedBlocks to hide ugly cables!"
+				""
+				"• &fFramed Panels&r - Thin coverings"
+				"• &fFramed Covers&r - Surface-mount"
+				"• Apply any texture to blend in"
+				""
+				"&eClean builds look professional!&r"
+			]
+			dependencies: ["A000000000000036"]
+			id: "A000000000000041"
+			tasks: [
+				{
+					id: "A000000000000042"
+					type: "item"
+					item: "framedblocks:framed_panel"
+					count: 16
+				}
+				{
+					id: "A000000000000043"
+					type: "checkmark"
+					title: "Hide Some Cables"
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000044"
+					type: "item"
+					item: "framedblocks:framed_panel"
+					count: 32
+				}
+				{
+					id: "A000000000000045"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Handcrafted: Cozy Furniture"
+			icon: "handcrafted:cushion_white"
+			x: -2.0d
+			y: 4.0d
+			description: [
+				"&l&cHandcrafted Furniture&r"
+				""
+				"Add cozy furniture to your home!"
+				""
+				"• &fCushions&r - Comfy seating"
+				"• &fSofas&r - Living room essentials"
+				"• &fShelves&r - Display your treasures"
+				""
+				"&eCreate inviting spaces!&r"
+			]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000046"
+			tasks: [
+				{
+					id: "A000000000000047"
+					type: "item"
+					title: "Cushion"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "handcrafted:cushion_white"
+									Count: 1b
+								}
+								{
+									id: "handcrafted:cushion_red"
+									Count: 1b
+								}
+								{
+									id: "handcrafted:cushion_blue"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+				{
+					id: "A000000000000048"
+					type: "item"
+					title: "Shelf"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "handcrafted:oak_shelf"
+									Count: 1b
+								}
+								{
+									id: "handcrafted:spruce_shelf"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000049"
+					type: "item"
+					item: "handcrafted:terracotta_pot"
+					count: 4
+				}
+				{
+					id: "A000000000000050"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Handcrafted: Living Room"
+			icon: "handcrafted:oak_couch"
+			x: -2.0d
+			y: 6.0d
+			description: [
+				"&l&aComplete Living Room&r"
+				""
+				"Furnish a complete living room!"
+				""
+				"• &fCouch&r - For relaxing"
+				"• &fTable&r - Coffee table"
+				"• &fDecor&r - Pots and items"
+				""
+				"&eA cozy place to rest after adventuring!&r"
+			]
+			dependencies: ["A000000000000046"]
+			id: "A000000000000051"
+			tasks: [
+				{
+					id: "A000000000000052"
+					type: "item"
+					title: "Couch"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "handcrafted:oak_couch"
+									Count: 1b
+								}
+								{
+									id: "handcrafted:spruce_couch"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 1
+				}
+				{
+					id: "A000000000000053"
+					type: "item"
+					title: "Side Table"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "handcrafted:oak_side_table"
+									Count: 1b
+								}
+								{
+									id: "handcrafted:spruce_side_table"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000054"
+					type: "item"
+					item: "handcrafted:oak_fancy_bed"
+					count: 1
+				}
+				{
+					id: "A000000000000055"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Decorated Home"
+			icon: "supplementaries:globe"
+			x: -4.0d
+			y: 6.0d
+			description: [
+				"&l&dDecorated Home Challenge&r"
+				""
+				"Build a fully decorated home using multiple decoration mods!"
+				""
+				"Include:"
+				"• Windows and doors"
+				"• Furniture and seating"
+				"• Lighting and ambiance"
+				"• Personal touches"
+				""
+				"&eShow off your building skills!&r"
+			]
+			dependencies: ["A000000000000021", "A000000000000031", "A000000000000051"]
+			dependency_requirement: "one_completed"
+			id: "A000000000000056"
+			tasks: [{
+				id: "A000000000000057"
+				type: "checkmark"
+				title: "Build a Decorated Home"
+			}]
+			rewards: [
+				{
+					id: "A000000000000058"
+					type: "item"
+					item: "minecraft:emerald_block"
+					count: 2
+				}
+				{
+					id: "A000000000000059"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Master Builder"
+			icon: "minecraft:structure_block"
+			x: 0.0d
+			y: 8.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"&l&6&nMaster Builder!&r"
+				""
+				"Congratulations! You've mastered building and decoration!"
+				""
+				"You've learned:"
+				"• Macaw's decorative blocks"
+				"• Supplementaries detailing"
+				"• FramedBlocks custom shapes"
+				"• Handcrafted cozy furniture"
+				""
+				"&6Now go create something beautiful!&r"
+			]
+			dependencies: ["A000000000000041", "A000000000000056"]
+			dependency_requirement: "one_completed"
+			id: "A000000000000060"
+			tasks: [{
+				id: "A000000000000061"
+				type: "checkmark"
+				title: "Master Builder!"
+			}]
+			rewards: [
+				{
+					id: "A000000000000062"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 2
+				}
+				{
+					id: "A000000000000063"
 					type: "item"
 					item: "minecraft:beacon"
 					count: 1
 				}
 				{
-					id: "A000000000000015"
+					id: "A000000000000064"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 25
 				}
 			]
 		}
