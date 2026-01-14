@@ -111,35 +111,9 @@ ServerEvents.recipes(event => {
 
         variants.forEach(variant => {
             if (variant !== primary) {
-                // Replace fluid outputs in recipes
-                event.replaceOutput({ type: 'minecraft:crafting_shaped' }, Fluid.of(variant), Fluid.of(primary), false);
-                event.replaceOutput({ type: 'minecraft:crafting_shapeless' }, Fluid.of(variant), Fluid.of(primary), false);
+                // Replace fluid outputs in all recipes (not just crafting)
+                event.replaceOutput({}, Fluid.of(variant), Fluid.of(primary));
                 console.log(`Unified fluid ${variant} -> ${primary}`);
-            }
-        });
-    });
-
-    // Add fluid conversion recipes (bucket to bucket)
-    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
-        const primary = PRIMARY_FLUID_OUTPUTS[key];
-        if (!primary) return;
-
-        variants.forEach(variant => {
-            if (variant !== primary) {
-                // Create conversion recipe using Create's emptying and filling
-                // Emptying: variant bucket -> empty bucket + primary fluid
-                event.recipes.create.emptying(
-                    [Fluid.of(primary, 1000), 'minecraft:bucket'],
-                    `${variant}_bucket`
-                ).id(`mineman:unification/${variant.replace(':', '_')}_to_${primary.replace(':', '_')}_emptying`);
-
-                // Filling: empty bucket + variant fluid -> primary bucket
-                event.recipes.create.filling(
-                    `${primary}_bucket`,
-                    [Fluid.of(variant, 1000), 'minecraft:bucket']
-                ).id(`mineman:unification/${variant.replace(':', '_')}_to_${primary.replace(':', '_')}_filling`);
-
-                console.log(`Added conversion recipes for ${variant} <-> ${primary}`);
             }
         });
     });
@@ -167,6 +141,7 @@ ServerEvents.tags('fluid', event => {
     // Create unified tags for cross-mod fluid compatibility
     Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
         const tagName = `forge:${key}`; // e.g., forge:honey
+        // Add all variants to the tag (including primary for completeness)
         variants.forEach(variant => {
             event.add(tagName, variant);
         });
