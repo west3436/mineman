@@ -1,6 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/ftbquests-format-check.yml"
+hash = "9d0cd62a0e7007a09d5da00fb0484a39dc2c0cb0f3811aa39ca2856158471043"
+
+[[files]]
+file = ".github/workflows/kubejs-validation.yml"
+hash = "91371a296a9c35b5555aefd0e766c63057048aa3ba0096e64f1b8f5a5369b27c"
+
+[[files]]
+file = ".github/workflows/packwiz-refresh.yml"
+hash = "7be8002810dcdddfe8c6f9dbe0f6c4a27a0ea77cd5a720ed1d1e45fffeffc626"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/1_basic_processing.snbt"
+hash = "ed3013d74a150a68eeae4de43c88862503324d85f19857eb02c1cddeeb768f80"
+
+[[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
 hash = "1114583362cd0ab7307d987563d587851d2e8b644ba750982de4fc4de2a29350"
 
@@ -14,7 +30,7 @@ hash = "22a626bb9ba03eea161cd3f509cd17bc216c02933d3f26a5116111cddc09b39e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
-hash = "3f438cb9ab58408cd922ce9d73c7c1cbd8ff05f4f6f4fc35739535f17bbd41f4"
+hash = "fb32e5b64383217f2f83a5b33be696193b2db43393924dfc9be9f034c87c94ef"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic.js"
@@ -920,3 +936,19 @@ metafile = true
 file = "resourcepacks/asyasas-legacy-copper.pw.toml"
 hash = "9995fc0f9650e6edfb2fc94c76a036cdb30a680b356fd36be0b5237984b13ae9"
 metafile = true
+
+[[files]]
+file = "scripts/package-lock.json"
+hash = "198060a082fe5217b370ec4e54b1c0f8a25eeb0a4dca512b6a81e9c9cd0c2b14"
+
+[[files]]
+file = "scripts/package.json"
+hash = "25749096827b4e454bf0f723178fdfe6fbc24ce98858a5fcd54ff2966b0174ff"
+
+[[files]]
+file = "scripts/validate_ftbquests.py"
+hash = "793561de3d825adcdd2d87c9e6451d2a4e75c8ac22b230fa5bc7277267e35e30"
+
+[[files]]
+file = "scripts/validate_kubejs.js"
+hash = "1613fed38b8a47594f34fc241dec8b13baf61215d08331bc4e349ed0a14fa661"
