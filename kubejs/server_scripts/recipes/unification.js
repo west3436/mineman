@@ -349,82 +349,8 @@ const UNIFIED_BUCKET_ITEMS = {
 };
 
 // =============================================================================
-// PRIMARY OUTPUTS - The canonical item for each unified category
-// =============================================================================
-
-const PRIMARY_OUTPUTS = {
-    // Ingots
-    'steel_ingot': 'tfmg:steel_ingot',
-    'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
-    'constantan_ingot': 'tfmg:constantan_ingot',
-    'nickel_ingot': 'tfmg:nickel_ingot',
-    'lead_ingot': 'tfmg:lead_ingot',
-    'electrum_ingot': 'immersiveengineering:ingot_electrum',
-    'silver_ingot': 'immersiveengineering:ingot_silver',
-
-    // Plates
-    'iron_plate': 'create:iron_sheet',
-    'copper_plate': 'create:copper_sheet',
-    'gold_plate': 'create:golden_sheet',
-    'steel_plate': 'tfmg:steel_sheet',
-    'aluminum_plate': 'immersiveengineering:plate_aluminum',
-    'lead_plate': 'tfmg:lead_sheet',
-    'electrum_plate': 'immersiveengineering:plate_electrum',
-    'silver_plate': 'immersiveengineering:plate_silver',
-
-    // Dusts
-    'iron_dust': 'mekanism:dust_iron',
-    'copper_dust': 'mekanism:dust_copper',
-    'gold_dust': 'mekanism:dust_gold',
-    'lead_dust': 'mekanism:dust_lead',
-    'silver_dust': 'immersiveengineering:dust_silver',
-
-    // Nuggets
-    'steel_nugget': 'tfmg:steel_nugget',
-    'electrum_nugget': 'createaddition:electrum_nugget',
-    'silver_nugget': 'chemlib:silver_nugget',
-
-    // Storage Blocks
-    'steel_block': 'tfmg:steel_block',
-    'lead_block': 'tfmg:lead_block',
-    'raw_lead_block': 'tfmg:raw_lead_block',
-
-    // Gears
-    'iron_gear': 'industrialforegoing:iron_gear',
-    'gold_gear': 'industrialforegoing:gold_gear',
-    'diamond_gear': 'industrialforegoing:diamond_gear',
-    'copper_gear': 'forestry:gear_copper',
-    'bronze_gear': 'forestry:gear_bronze',
-    'tin_gear': 'forestry:gear_tin',
-
-    // Wires
-    'copper_wire': 'createaddition:copper_wire',
-    'gold_wire': 'createaddition:gold_wire',
-    'iron_wire': 'createaddition:iron_wire',
-    'electrum_wire': 'immersiveengineering:wire_electrum',
-    'silver_wire': 'immersiveengineering:wire_silver',
-    'aluminum_wire': 'immersiveengineering:wire_aluminum',
-    'lead_wire': 'immersiveengineering:wire_lead',
-    'steel_wire': 'immersiveengineering:wire_steel',
-    'constantan_wire': 'tfmg:constantan_wire',
-
-    // Rods
-    'brass_rod': 'createaddition:brass_rod',
-    'copper_rod': 'createaddition:copper_rod',
-    'gold_rod': 'createaddition:gold_rod',
-    'iron_rod': 'createaddition:iron_rod',
-    'electrum_rod': 'createaddition:electrum_rod',
-    'graphite_rod': 'createnuclear:graphite_rod',
-    'uranium_rod': 'createnuclear:uranium_rod',
-    'hdpe_rod': 'mekanism:hdpe_rod',
-
-    // Miscellaneous
-    'plastic': 'tfmg:plastic_sheet',
-};
-
-// =============================================================================
 // RECIPE UNIFICATION - Replace all variant outputs with primary items/fluids
-// (PRIMARY_FLUIDS and PRIMARY_BUCKET_ITEMS are defined in _constants.js)
+// (PRIMARY_OUTPUTS, PRIMARY_FLUIDS, and PRIMARY_BUCKET_ITEMS are defined in _constants.js)
 // =============================================================================
 
 ServerEvents.recipes(event => {
