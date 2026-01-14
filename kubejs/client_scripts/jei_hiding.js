@@ -45,7 +45,7 @@ JEIEvents.hideItems(event => {
         'chemlib:emerald_dust',
         'chemlib:tin_dust',
         'chemlib:uranium_dust',
-        // Note: copper, gold, iron, lead, sulfur already listed above
+        // Note: copper, gold, iron, lead, sulfur already listed in the "ChemLib vs IE duplicates" section above
 
         // Add more duplicates as needed during testing
     ];
