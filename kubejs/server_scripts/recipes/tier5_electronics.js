@@ -4,6 +4,46 @@
 ServerEvents.recipes(event => {
     console.log('Applying Tier 5 (Electronics) recipe changes...');
 
+    // === CIRCUIT FABRICATION MULTIBLOCK ===
+    // Custom multiblock recipes for advanced circuit production
+    
+    // Advanced Circuit Recipe - requires PNC PCBs and Mekanism alloys
+    // Produced in Circuit Fabrication Multiblock (Multiblocked2)
+    event.recipes.multiblocked.multiblock('circuit_fabrication')
+        .inputItems([
+            '4x pneumaticcraft:printed_circuit_board',
+            '8x mekanism:alloy_infused',
+            '4x mekanism:alloy_reinforced',
+            '2x minecraft:redstone_block'
+        ])
+        .outputItems('2x mineman:advanced_circuit')
+        .inputFE(50000)
+        .duration(400); // 20 seconds
+
+    // Alternative recipe with more PCBs, less alloys
+    event.recipes.multiblocked.multiblock('circuit_fabrication')
+        .inputItems([
+            '6x pneumaticcraft:printed_circuit_board',
+            '4x mekanism:alloy_infused',
+            '2x mekanism:alloy_reinforced',
+            '4x minecraft:redstone'
+        ])
+        .outputItems('2x mineman:advanced_circuit')
+        .inputFE(40000)
+        .duration(300); // 15 seconds
+
+    // Cheaper early-game recipe with lower yield
+    event.recipes.multiblocked.multiblock('circuit_fabrication')
+        .inputItems([
+            '2x pneumaticcraft:printed_circuit_board',
+            '4x mekanism:alloy_infused',
+            '8x tfmg:steel_sheet',
+            '1x minecraft:diamond'
+        ])
+        .outputItems('1x mineman:advanced_circuit')
+        .inputFE(30000)
+        .duration(200); // 10 seconds
+
     // === INDUSTRIAL FOREGOING GATING ===
     // Require advanced circuits/PCBs from PneumaticCraft
     

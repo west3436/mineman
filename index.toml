@@ -97,6 +97,10 @@ file = "config/modernfix-mixins.properties"
 hash = "38edbd889029c4c95f95387f2be32110aa4b6f74a399dd3a046aab96bd9c4c5e"
 
 [[files]]
+file = "config/multiblocked/definition/circuit_fabricator.json"
+hash = "17e8c1ac0a1a71a8d33528c2669c7c67d22f8079ebb0b12cf46fa215f0ece125"
+
+[[files]]
 file = "config/oculus.properties"
 hash = "e47fb0ae6ecfae75894917958c1c9133d0fa69e3d84cef8a2fb4902e1b3f3c8f"
 
@@ -114,7 +118,7 @@ hash = "fad190ed92994bd678a9e3c46b35216fe05dadcff6def6182c74898b1ec7086c"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
-hash = "cb0337956b42ff60b778bbdfd72f65b99e4c559365cf59f05c81bfe7612c9dec"
+hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
@@ -122,7 +126,7 @@ hash = "b4d2726c4180d749cf11c2657a38433e30e8d467ef91f1dd178887c22982c124"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
-hash = "22a626bb9ba03eea161cd3f509cd17bc216c02933d3f26a5116111cddc09b39e"
+hash = "35fffc1412a0f757bfcf7d354be1ebcd1fdcce8c3fa56ac2f9c8427384bb7cd0"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
@@ -142,15 +146,19 @@ hash = "1096db8a70d8f652650b26f5d683d1d30c765716c2968899673e173fc9c9f261"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"
-hash = "0c84af435a66beee4ec317eacd069b3176dfab1029232cf93fea307d5c0ecc14"
+hash = "16d2ff3657dc37ca264aca18e0c7ebc374c9f00241a9623579212161b6f4107a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier6_future.js"
-hash = "67e49c9c6b100648e30015db931366e6f2abc3e0eddb2877c8bd92f9a7221d18"
+hash = "3b48b04714b707c67aeb933ef2bafc191139f3b26b20fe18b21ce5398b5330cb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
 hash = "29462d9c80f3a0b29e205e6aea44c6cc0fde614d27974fc8e776b5e64fd5fbe3"
+
+[[files]]
+file = "kubejs/startup_scripts/custom_items.js"
+hash = "0012eaca1bfc44d55296abb3be14d7430394aa628280366f2cf53d9be77a1c73"
 
 [[files]]
 file = "mods/advancedae.pw.toml"

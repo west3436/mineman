@@ -32,6 +32,7 @@ ItemEvents.tooltip(event => {
         ],
         5: [ // Electronics
             'pneumaticcraft:printed_circuit_board',
+            'mineman:advanced_circuit',
             'industrialforegoing:machine_frame_pity',
             'computercraft:computer_normal',
             'hostilenetworks:sim_chamber',

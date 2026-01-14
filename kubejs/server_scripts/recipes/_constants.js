@@ -41,6 +41,7 @@ const TIER_GATES = {
     ],
     5: [ // Electronics
         'pneumaticcraft:printed_circuit_board',
+        'mineman:advanced_circuit',
     ],
     6: [ // Future Tech
         'ae2:controller',
