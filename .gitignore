@@ -1,3 +1,6 @@
+# Claude Code folder (local only)
+.claude/
+
 # Packwiz cache
 .packwizcache/
 
