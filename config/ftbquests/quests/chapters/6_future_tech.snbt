@@ -1,0 +1,113 @@
+{
+	id: "6000000000000001"
+	group: "0000000000000001"
+	order_index: 6
+	filename: "6_future_tech"
+	title: "Tier 6: Future Tech"
+	icon: "minecraft:beacon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Tier 6"
+			icon: "minecraft:beacon"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Welcome to the final tier: Future Tech!"
+				""
+				"Push the boundaries of technology with advanced systems."
+				""
+				"Master the most sophisticated machines and automation."
+			]
+			id: "6000000000000002"
+			tasks: [{
+				id: "6000000000000003"
+				type: "checkmark"
+				title: "Begin Tier 6"
+			}]
+			rewards: [{
+				id: "6000000000000004"
+				type: "item"
+				item: "minecraft:nether_star"
+				count: 2
+			}]
+		}
+		{
+			title: "Cutting-Edge Systems"
+			icon: "minecraft:end_crystal"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Build the most advanced technological systems."
+				""
+				"These represent the pinnacle of engineering achievement."
+				""
+				"Few have reached this level of mastery."
+			]
+			dependencies: ["6000000000000002"]
+			id: "6000000000000005"
+			tasks: [{
+				id: "6000000000000006"
+				type: "checkmark"
+				title: "Build Future Tech Systems"
+			}]
+			rewards: [
+				{
+					id: "6000000000000007"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 2
+				}
+				{
+					id: "6000000000000008"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			title: "Master of Technology"
+			icon: "minecraft:dragon_egg"
+			x: 0.0d
+			y: 4.0d
+			shape: "hexagon"
+			size: 2.0d
+			description: [
+				"Congratulations! You've completed the main progression!"
+				""
+				"You've mastered all 6 tiers from basic processing to future tech."
+				""
+				"Continue with side quests or build your ultimate factory!"
+			]
+			dependencies: ["6000000000000005"]
+			id: "6000000000000009"
+			tasks: [{
+				id: "6000000000000010"
+				type: "checkmark"
+				title: "Complete the Journey"
+			}]
+			rewards: [
+				{
+					id: "6000000000000011"
+					type: "item"
+					item: "minecraft:beacon"
+					count: 1
+				}
+				{
+					id: "6000000000000012"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 4
+				}
+				{
+					id: "6000000000000013"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+		}
+	]
+}

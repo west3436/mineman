@@ -1,0 +1,129 @@
+{
+	id: "7000000000000001"
+	group: "0000000000000002"
+	order_index: 0
+	filename: "side_railways"
+	title: "Side: Railways & Trains"
+	icon: "minecraft:rail"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting on Track"
+			icon: "minecraft:rail"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Welcome to the Railways side quest!"
+				""
+				"Build efficient train systems to transport resources and items."
+				""
+				"Master rail networks and locomotive systems."
+			]
+			id: "7000000000000002"
+			tasks: [{
+				id: "7000000000000003"
+				type: "checkmark"
+				title: "Start Railways"
+			}]
+			rewards: [{
+				id: "7000000000000004"
+				type: "item"
+				item: "minecraft:rail"
+				count: 64
+			}]
+		}
+		{
+			title: "Basic Rail System"
+			icon: "minecraft:powered_rail"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Set up your first rail network."
+				""
+				"Craft rails, powered rails, and minecarts."
+				""
+				"Connect your bases with efficient transportation."
+			]
+			dependencies: ["7000000000000002"]
+			id: "7000000000000005"
+			tasks: [
+				{
+					id: "7000000000000006"
+					type: "item"
+					item: "minecraft:rail"
+					count: 64
+				}
+				{
+					id: "7000000000000007"
+					type: "item"
+					item: "minecraft:powered_rail"
+					count: 32
+				}
+				{
+					id: "7000000000000008"
+					type: "item"
+					item: "minecraft:minecart"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "7000000000000009"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 32
+				}
+				{
+					id: "7000000000000010"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Advanced Train Systems"
+			icon: "minecraft:detector_rail"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Build advanced train systems with automation."
+				""
+				"Use detector rails, activator rails, and complex networks."
+				""
+				"Create fully automated item transport systems."
+			]
+			dependencies: ["7000000000000005"]
+			id: "7000000000000011"
+			tasks: [
+				{
+					id: "7000000000000012"
+					type: "item"
+					item: "minecraft:detector_rail"
+					count: 16
+				}
+				{
+					id: "7000000000000013"
+					type: "item"
+					item: "minecraft:chest_minecart"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "7000000000000014"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "7000000000000015"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

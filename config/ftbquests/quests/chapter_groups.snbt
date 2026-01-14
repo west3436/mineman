@@ -1,0 +1,16 @@
+[
+	{
+		id: "0000000000000001"
+		title: "Main Progression"
+		icon: "minecraft:nether_star"
+		default_quest_shape: ""
+		order_index: 0
+	}
+	{
+		id: "0000000000000002"
+		title: "Side Content"
+		icon: "minecraft:compass"
+		default_quest_shape: ""
+		order_index: 1
+	}
+]

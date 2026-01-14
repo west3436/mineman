@@ -1,0 +1,123 @@
+{
+	id: "0000000000000100"
+	group: "0000000000000001"
+	order_index: 0
+	filename: "0_welcome"
+	title: "Welcome to Mineman"
+	icon: "minecraft:book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Mineman!"
+			icon: "minecraft:crafting_table"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Welcome to Mineman! This modpack features a progressive tech journey."
+				""
+				"Follow the main quest line through 6 tiers of technological advancement,"
+				"from basic processing to future tech."
+				""
+				"Side quests offer additional content for trains, farming, exploration, and building."
+			]
+			id: "0000000000000101"
+			tasks: [{
+				id: "0000000000000102"
+				type: "checkmark"
+				title: "Start Your Journey"
+			}]
+			rewards: [{
+				id: "0000000000000103"
+				type: "item"
+				item: "minecraft:bread"
+				count: 16
+			}]
+		}
+		{
+			title: "Getting Started"
+			icon: "minecraft:wooden_pickaxe"
+			x: 0.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"Before you dive into technology, gather the basics."
+				""
+				"Collect wood, stone, and basic resources to get started."
+				""
+				"You'll need a full set of tools and a basic shelter."
+			]
+			dependencies: ["0000000000000101"]
+			id: "0000000000000104"
+			tasks: [
+				{
+					id: "0000000000000105"
+					type: "item"
+					title: "Basic Tools"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:stone_pickaxe"
+									Count: 1b
+								}
+								{
+									id: "minecraft:iron_pickaxe"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "0000000000000106"
+					type: "item"
+					title: "Furnace"
+					item: "minecraft:furnace"
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000107"
+					type: "item"
+					item: "minecraft:coal"
+					count: 16
+				}
+				{
+					id: "0000000000000108"
+					type: "item"
+					item: "minecraft:torch"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Ready for Technology"
+			icon: "minecraft:iron_block"
+			x: 0.0d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"Now you're ready to begin your technological journey!"
+				""
+				"Head to Tier 1: Basic Processing to start automating your systems."
+			]
+			dependencies: ["0000000000000104"]
+			id: "0000000000000109"
+			tasks: [{
+				id: "0000000000000110"
+				type: "checkmark"
+				title: "Continue to Tier 1"
+			}]
+			rewards: [{
+				id: "0000000000000111"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+	]
+}
