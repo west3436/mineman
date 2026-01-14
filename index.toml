@@ -17,6 +17,26 @@ file = ".github/workflows/packwiz-refresh.yml"
 hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
 [[files]]
+file = "config/create.toml"
+hash = "94c2c2162ce3bfbe2e7f38343b63740a3b46ddbc7784f1bedbdf7cd02d5ad011"
+
+[[files]]
+file = "config/createaddition-common.toml"
+hash = "69bf252c4c7efc2f9f5fdf35348a4ba36a15b45cb1200560d410dba5eb248983"
+
+[[files]]
+file = "config/embeddium.json"
+hash = "42f2d1dfb95b25199b3ac4897fdd8f81eeb0842aa55cd84a3c84adee44cba14a"
+
+[[files]]
+file = "config/ferritecore.toml"
+hash = "561756b365a721fcbf5d7481ad92d604e59df87f867b3a8def74141afd7ded6e"
+
+[[files]]
+file = "config/ftbquests-client.toml"
+hash = "914abbf98ec58bc45c63abcac0ad666c73f23ce38255f99fd180def5677025ee"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "308b1438a36739b35e70679e16050eac198c96789bb8d2a98954b63e2e864507"
 
@@ -50,23 +70,51 @@ hash = "5411707089602c8c0828f8b2a86ce03d81aa147c1e418086dc0cf547cb7d0ddd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
-hash = "ee3ebfa9ed4cff81a58ae4e8f6fc3e1318ac72917a7e497def264df46f8283f9"
+hash = "02472e1fb64b1c0ac0e5b9aa5a6946692153e9bae2759206b23bc649e2a37798"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_building.snbt"
-hash = "13701fed59c1a3939b10f6157033f9f60143518c21fa6fe8d2c7c594cb3d42ad"
+hash = "e8c5278bfb514de7bcca3c2c916af24108372a6eca77f1301d6c7501e1820503"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_exploration.snbt"
-hash = "eafd7c6d9626703530c784d717eabec9e05563470c86560c2ad7496ce4a50e6e"
+hash = "069c1bf13023da40bf868f76bfebdda314d8203fab7948d6cc56a375d6b12fbd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_railways.snbt"
-hash = "0209f028aa68fe42a28bc8bdd6e32ab140b31904179835831754f6cde4cb7dc1"
+hash = "6dc140d3a0d18171ba1353bbf1dafbc7c1002beb1dc86306242b30fde88aee08"
+
+[[files]]
+file = "config/immersiveengineering-server.toml"
+hash = "3f3c8a8998afddd613b997e22d275acb43b309e14f53db0b2f5056a21b16da1e"
+
+[[files]]
+file = "config/mekanism-server.toml"
+hash = "4b71e9d6f542fb1ab25d76cce731f1f23e3e7b5138fd5781ea7b6f944f1b9819"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "38edbd889029c4c95f95387f2be32110aa4b6f74a399dd3a046aab96bd9c4c5e"
+
+[[files]]
+file = "config/multiblocked/definition/circuit_fabricator.json"
+hash = "17e8c1ac0a1a71a8d33528c2669c7c67d22f8079ebb0b12cf46fa215f0ece125"
+
+[[files]]
+file = "config/oculus.properties"
+hash = "e47fb0ae6ecfae75894917958c1c9133d0fa69e3d84cef8a2fb4902e1b3f3c8f"
+
+[[files]]
+file = "config/pneumaticcraft-common.toml"
+hash = "8d5b31197e7c96b9a346cd89162a4b50b8f20be5d6caba4b85e3088370e3b182"
+
+[[files]]
+file = "config/tfmg-common.toml"
+hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
-hash = "cb0337956b42ff60b778bbdfd72f65b99e4c559365cf59f05c81bfe7612c9dec"
+hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
@@ -74,7 +122,7 @@ hash = "b4d2726c4180d749cf11c2657a38433e30e8d467ef91f1dd178887c22982c124"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
-hash = "22a626bb9ba03eea161cd3f509cd17bc216c02933d3f26a5116111cddc09b39e"
+hash = "35fffc1412a0f757bfcf7d354be1ebcd1fdcce8c3fa56ac2f9c8427384bb7cd0"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
@@ -90,15 +138,19 @@ hash = "1096db8a70d8f652650b26f5d683d1d30c765716c2968899673e173fc9c9f261"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"
-hash = "0c84af435a66beee4ec317eacd069b3176dfab1029232cf93fea307d5c0ecc14"
+hash = "16d2ff3657dc37ca264aca18e0c7ebc374c9f00241a9623579212161b6f4107a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier6_future.js"
-hash = "67e49c9c6b100648e30015db931366e6f2abc3e0eddb2877c8bd92f9a7221d18"
+hash = "3b48b04714b707c67aeb933ef2bafc191139f3b26b20fe18b21ce5398b5330cb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
 hash = "29462d9c80f3a0b29e205e6aea44c6cc0fde614d27974fc8e776b5e64fd5fbe3"
+
+[[files]]
+file = "kubejs/startup_scripts/custom_items.js"
+hash = "0012eaca1bfc44d55296abb3be14d7430394aa628280366f2cf53d9be77a1c73"
 
 [[files]]
 file = "mods/advancedae.pw.toml"
