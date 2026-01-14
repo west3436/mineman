@@ -28,6 +28,21 @@ JEIEvents.hideItems(event => {
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
 
+        // Duplicate lead ingots (keeping TFMG as primary)
+        'immersiveengineering:ingot_lead',
+        'mekanism:ingot_lead',
+        'createnuclear:lead_ingot',
+
+        // Duplicate lead blocks (keeping TFMG as primary)
+        'createnuclear:lead_block',
+        'createnuclear:raw_lead_block',
+
+        // Duplicate lead plates (keeping TFMG as primary)
+        'immersiveengineering:plate_lead',
+
+        // Duplicate lead dusts (keeping Mekanism as primary)
+        'immersiveengineering:dust_lead',
+
         // Add more duplicates as needed during testing
     ];
 

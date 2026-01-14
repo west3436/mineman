@@ -13,6 +13,11 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'lead_ingot': 'tfmg:lead_ingot',
+    'lead_plate': 'tfmg:lead_sheet',
+    'lead_dust': 'mekanism:dust_lead',
+    'lead_block': 'tfmg:lead_block',
+    'raw_lead_block': 'tfmg:raw_lead_block',
 };
 
 // Unified tag mappings for cross-mod compatibility
