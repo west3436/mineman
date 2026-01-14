@@ -53,6 +53,31 @@ const UNIFIED_ITEMS = {
     ],
 };
 
+// Unified fluid mappings - all variants map to primary
+const UNIFIED_FLUIDS = {
+    // Ethanol/Bio-ethanol
+    'ethanol': [
+        'immersiveengineering:ethanol',
+        'createaddition:bioethanol',
+        'forestry:bio_ethanol',
+        'mekanismgenerators:bioethanol',
+        'pneumaticcraft:ethanol',
+        'chemlib:ethanol',
+    ],
+    
+    // Biodiesel
+    'biodiesel': [
+        'immersiveengineering:biodiesel',
+        'pneumaticcraft:biodiesel',
+    ],
+    
+    // Seed Oil
+    'seed_oil': [
+        'createaddition:seed_oil',
+        'forestry:seed_oil',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -65,6 +90,13 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+};
+
+// Primary fluid for each category
+const PRIMARY_FLUID_OUTPUTS = {
+    'ethanol': 'immersiveengineering:ethanol',
+    'biodiesel': 'immersiveengineering:biodiesel',
+    'seed_oil': 'createaddition:seed_oil',
 };
 
 ServerEvents.recipes(event => {
@@ -86,6 +118,52 @@ ServerEvents.recipes(event => {
         });
     });
 
+    // Replace all fluid inputs and outputs with primary
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
+        const primary = PRIMARY_FLUID_OUTPUTS[key];
+        if (!primary) {
+            console.warn(`No primary fluid output defined for ${key}`);
+            return;
+        }
+
+        variants.forEach(variant => {
+            if (variant !== primary) {
+                // Replace fluid inputs
+                event.replaceInput({ type: 'minecraft:crafting_shaped' }, Fluid.of(variant), Fluid.of(primary));
+                event.replaceInput({ type: 'minecraft:crafting_shapeless' }, Fluid.of(variant), Fluid.of(primary));
+                
+                // Replace fluid outputs
+                event.replaceOutput({}, Fluid.of(variant), Fluid.of(primary));
+                
+                console.log(`Unified fluid ${variant} -> ${primary}`);
+            }
+        });
+    });
+
+    // Add fluid conversion recipes using Create Spout (1:1 conversion)
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
+        const primary = PRIMARY_FLUID_OUTPUTS[key];
+        if (!primary) return;
+
+        variants.forEach(variant => {
+            if (variant !== primary) {
+                // Add conversion recipe: variant -> primary (1:1 ratio)
+                event.custom({
+                    type: 'create:filling',
+                    ingredients: [
+                        { item: 'minecraft:bucket' },
+                        { fluid: variant, amount: 1000 }
+                    ],
+                    results: [
+                        { fluid: primary, amount: 1000 }
+                    ]
+                }).id(`kubejs:fluid_unification/${key}/${variant.replace(':', '_')}_to_${primary.replace(':', '_')}`);
+                
+                console.log(`Added conversion recipe: ${variant} -> ${primary}`);
+            }
+        });
+    });
+
     console.log('Recipe unification complete!');
 });
 
@@ -101,4 +179,19 @@ ServerEvents.tags('item', event => {
     });
 
     console.log('Item tag unification complete!');
+});
+
+ServerEvents.tags('fluid', event => {
+    console.log('Applying fluid tag unification...');
+
+    // Create unified tags for cross-mod fluid compatibility
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
+        const tagName = `forge:${key}`; // e.g., forge:ethanol
+        variants.forEach(variant => {
+            event.add(tagName, variant);
+        });
+        console.log(`Created fluid tag ${tagName} with ${variants.length} variants`);
+    });
+
+    console.log('Fluid tag unification complete!');
 });
