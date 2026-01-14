@@ -266,11 +266,6 @@ hash = "99bf8f34b6bff81c977ea6736c58b6df564a7e9ae684fe3ad25e3b5fc91a6c74"
 metafile = true
 
 [[files]]
-file = "mods/canary.pw.toml"
-hash = "14481081a9e233f4ba57df8a77ce028184818143eae1c73b60749ea482c912e9"
-metafile = true
-
-[[files]]
 file = "mods/carbon-config.pw.toml"
 hash = "7638ac7547e815651a1c3b883d25c88511b84e0faae9283f9204bfc13239d452"
 metafile = true
