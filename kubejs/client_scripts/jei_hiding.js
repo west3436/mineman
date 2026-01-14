@@ -43,6 +43,30 @@ JEIEvents.hideItems(event => {
     console.log('JEI hiding complete!');
 });
 
+JEIEvents.hideFluids(event => {
+    console.log('Hiding duplicate unified fluids in JEI...');
+
+    // Hide duplicate molten metals (keeping TConstruct as primary for smeltery integration)
+    const HIDDEN_FLUID_DUPLICATES = [
+        // TFMG molten steel (TConstruct is primary)
+        'tfmg:molten_steel',
+        
+        // Note: Other molten metals (copper, iron, lead, gold, aluminum) only exist in TConstruct
+        // TFMG only provides molten_steel, so no other duplicates to hide
+    ];
+
+    HIDDEN_FLUID_DUPLICATES.forEach(fluid => {
+        try {
+            event.hide(fluid);
+            console.log(`Hidden fluid: ${fluid}`);
+        } catch (e) {
+            console.warn(`Could not hide fluid ${fluid}: ${e}`);
+        }
+    });
+
+    console.log('Fluid hiding complete!');
+});
+
 JEIEvents.hideCustom(event => {
     // Hide items based on NBT or other criteria if needed
     // Example: event.hide('item', item => item.hasTag('hidden'))
