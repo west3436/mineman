@@ -1,0 +1,36 @@
+---
+name: KubeJS Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'kubejs/**'
+      - '.github/workflows/kubejs-validation.yml'
+      - 'scripts/validate_kubejs.js'
+      - 'scripts/package.json'
+
+jobs:
+  validate-kubejs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install validation dependencies
+        run: |
+          cd scripts
+          npm install
+
+      - name: Run KubeJS validation
+        run: |
+          node scripts/validate_kubejs.js

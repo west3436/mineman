@@ -1,0 +1,12 @@
+{
+  "name": "mineman-validation-scripts",
+  "version": "1.0.0",
+  "description": "Validation scripts for mineman modpack",
+  "private": true,
+  "scripts": {
+    "validate-kubejs": "node validate_kubejs.js"
+  },
+  "dependencies": {
+    "acorn": "^8.11.3"
+  }
+}
