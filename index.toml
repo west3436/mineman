@@ -146,7 +146,7 @@ hash = "1096db8a70d8f652650b26f5d683d1d30c765716c2968899673e173fc9c9f261"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"
-hash = "0c84af435a66beee4ec317eacd069b3176dfab1029232cf93fea307d5c0ecc14"
+hash = "16d2ff3657dc37ca264aca18e0c7ebc374c9f00241a9623579212161b6f4107a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier6_future.js"
