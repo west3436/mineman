@@ -28,7 +28,7 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:plate_aluminum',
     ],
 
-    // Wires (includes single-source items for tagging and future-proofing)
+    // Wires (single-source items included to ensure consistent tagging for cross-mod compatibility)
     'copper_wire': [
         'createaddition:copper_wire',
         'immersiveengineering:wire_copper',
@@ -57,7 +57,7 @@ const UNIFIED_ITEMS = {
         'tfmg:constantan_wire',
     ],
 
-    // Rods (includes single-source items for tagging and future-proofing)
+    // Rods (single-source items included to ensure consistent tagging for cross-mod compatibility)
     'brass_rod': [
         'createaddition:brass_rod',
     ],
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
 
     // Add conversion recipes for wires with multiple sources
     // These allow manual conversion of existing items in player inventory
-    // (output replacement only affects recipe results, not existing items)
+    // (the recipe output replacement above only affects newly crafted items, not existing ones)
     console.log('Adding wire conversion recipes...');
     
     // Copper wire conversions (3 sources: Create Additions, IE, TFMG)

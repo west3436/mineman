@@ -32,8 +32,8 @@ JEIEvents.hideItems(event => {
         'immersiveengineering:wire_copper',
         'tfmg:copper_wire',
         'immersiveengineering:wire_electrum',
-        // Note: IE-specific wires (aluminum, lead, steel) are kept visible
-        // Note: Create Additions wires (gold, iron) are kept as primary
+        // Single-source wires (aluminum, lead, steel, constantan) remain visible as primaries
+        // Create Additions wires (gold, iron, electrum) are kept as primary
 
         // Add more duplicates as needed during testing
     ];
