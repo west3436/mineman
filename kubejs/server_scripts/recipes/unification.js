@@ -71,21 +71,7 @@ const UNIFIED_ITEMS = {
     ],
 };
 
-// Primary item for each category (from _constants.js)
-const PRIMARY_OUTPUTS = {
-    'iron_plate': 'create:iron_sheet',
-    'copper_plate': 'create:copper_sheet',
-    'gold_plate': 'create:golden_sheet',
-    'steel_plate': 'tfmg:steel_sheet',
-    'steel_ingot': 'tfmg:steel_ingot',
-    'steel_block': 'tfmg:steel_block',
-    'steel_nugget': 'tfmg:steel_nugget',
-    'iron_dust': 'mekanism:dust_iron',
-    'copper_dust': 'mekanism:dust_copper',
-    'gold_dust': 'mekanism:dust_gold',
-    'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
-    'aluminum_plate': 'immersiveengineering:plate_aluminum',
-};
+// Note: PRIMARY_OUTPUTS is defined in _constants.js and loaded before this file
 
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
