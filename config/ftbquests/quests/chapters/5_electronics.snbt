@@ -4,91 +4,492 @@
 	order_index: 5
 	filename: "5_electronics"
 	title: "Tier 5: Electronics"
-	icon: "minecraft:redstone"
+	icon: "pneumaticcraft:printed_circuit_board"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Welcome to Tier 5"
-			icon: "minecraft:redstone_block"
+			icon: "pneumaticcraft:printed_circuit_board"
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"Tier 5 focuses on electronics and advanced circuits."
+				"Tier 5 focuses on electronics and advanced circuits!"
 				""
 				"Build sophisticated electronic systems and automation."
 				""
 				"Electronics enable the highest levels of technological advancement."
 			]
+			dependencies: ["4000000000000047"]
 			id: "5000000000000002"
 			tasks: [{
 				id: "5000000000000003"
 				type: "checkmark"
 				title: "Begin Tier 5"
 			}]
-			rewards: [{
-				id: "5000000000000004"
-				type: "item"
-				item: "minecraft:redstone"
-				count: 64
-			}]
+			rewards: [
+				{
+					id: "5000000000000004"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 64
+				}
+				{
+					id: "5000000000000005"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 32
+				}
+			]
 		}
 		{
-			title: "Basic Circuits"
-			icon: "minecraft:comparator"
-			x: 0.0d
+			title: "Circuit Fabrication - PneumaticCraft"
+			icon: "pneumaticcraft:pcb_blueprint"
+			x: -3.0d
 			y: 2.0d
 			description: [
-				"Craft your first electronic circuits."
+				"PneumaticCraft offers UV Light Box circuit fabrication!"
 				""
-				"Circuits are the foundation of advanced electronics."
+				"Etch PCBs using the UV Light Box with blueprints."
 				""
-				"They control complex systems and automation."
+				"Assembly system creates complex circuit boards."
 			]
 			dependencies: ["5000000000000002"]
-			id: "5000000000000005"
-			tasks: [{
-				id: "5000000000000006"
-				type: "checkmark"
-				title: "Create Basic Circuits"
-			}]
-			rewards: [{
-				id: "5000000000000007"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-		}
-		{
-			title: "Advanced Electronics"
-			icon: "minecraft:repeater"
-			x: 0.0d
-			y: 4.0d
-			description: [
-				"Build advanced electronic systems."
-				""
-				"These systems enable unprecedented control and automation."
-				""
-				"Master electronics to reach the cutting edge of technology."
+			id: "5000000000000006"
+			tasks: [
+				{
+					id: "5000000000000007"
+					type: "item"
+					item: "pneumaticcraft:uv_light_box"
+				}
+				{
+					id: "5000000000000008"
+					type: "item"
+					item: "pneumaticcraft:pcb_blueprint"
+				}
+				{
+					id: "5000000000000009"
+					type: "item"
+					item: "pneumaticcraft:printed_circuit_board"
+					count: 16
+				}
 			]
-			dependencies: ["5000000000000005"]
-			id: "5000000000000008"
-			tasks: [{
-				id: "5000000000000009"
-				type: "checkmark"
-				title: "Build Advanced Systems"
-			}]
 			rewards: [
 				{
 					id: "5000000000000010"
 					type: "item"
-					item: "minecraft:diamond"
-					count: 8
+					item: "pneumaticcraft:empty_pcb"
+					count: 32
 				}
 				{
 					id: "5000000000000011"
+					type: "item"
+					item: "pneumaticcraft:etching_acid_bucket"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Assembly System"
+			icon: "pneumaticcraft:assembly_controller"
+			x: -3.0d
+			y: 3.5d
+			description: [
+				"The Assembly System automates circuit board production!"
+				""
+				"Build Assembly Platforms and program them with Assembly Programs."
+				""
+				"Automate drilling, laser cutting, and component placement."
+			]
+			dependencies: ["5000000000000006"]
+			id: "5000000000000012"
+			tasks: [
+				{
+					id: "5000000000000013"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+				{
+					id: "5000000000000014"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+					count: 2
+				}
+				{
+					id: "5000000000000015"
+					type: "item"
+					title: "Assembly Unit"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "pneumaticcraft:assembly_drill"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:assembly_laser"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:assembly_io_unit_import"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5000000000000016"
+					type: "item"
+					item: "pneumaticcraft:transistor"
+					count: 32
+				}
+				{
+					id: "5000000000000017"
+					type: "item"
+					item: "pneumaticcraft:capacitor"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Circuit Fabrication - Mekanism"
+			icon: "mekanism:basic_control_circuit"
+			x: 3.0d
+			y: 2.0d
+			description: [
+				"Mekanism's control circuits power advanced machines!"
+				""
+				"Craft Basic, Advanced, Elite, and Ultimate control circuits."
+				""
+				"These circuits unlock higher tier Mekanism machines."
+			]
+			dependencies: ["5000000000000002"]
+			id: "5000000000000018"
+			tasks: [
+				{
+					id: "5000000000000019"
+					type: "item"
+					item: "mekanism:basic_control_circuit"
+					count: 8
+				}
+				{
+					id: "5000000000000020"
+					type: "item"
+					item: "mekanism:advanced_control_circuit"
+					count: 4
+				}
+				{
+					id: "5000000000000021"
+					type: "item"
+					item: "mekanism:elite_control_circuit"
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "5000000000000022"
+					type: "item"
+					item: "mekanism:alloy_atomic"
+					count: 16
+				}
+				{
+					id: "5000000000000023"
+					type: "item"
+					item: "mekanism:elite_control_circuit"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Ultimate Circuits"
+			icon: "mekanism:ultimate_control_circuit"
+			x: 3.0d
+			y: 3.5d
+			description: [
+				"The Ultimate Control Circuit is the pinnacle of Mekanism tech!"
+				""
+				"Required for the most powerful machines."
+				""
+				"Master the entire circuit production chain."
+			]
+			dependencies: ["5000000000000018"]
+			id: "5000000000000024"
+			tasks: [
+				{
+					id: "5000000000000025"
+					type: "item"
+					item: "mekanism:ultimate_control_circuit"
+					count: 4
+				}
+				{
+					id: "5000000000000026"
+					type: "item"
+					title: "Ultimate Tier Machine"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:ultimate_energy_cube"
+									Count: 1b
+								}
+								{
+									id: "mekanism:ultimate_fluid_tank"
+									Count: 1b
+								}
+								{
+									id: "mekanism:ultimate_chemical_tank"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5000000000000027"
+					type: "item"
+					item: "mekanism:ultimate_control_circuit"
+					count: 4
+				}
+				{
+					id: "5000000000000028"
 					type: "xp_levels"
-					xp_levels: 15
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			title: "ComputerCraft Basics"
+			icon: "computercraft:computer_advanced"
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"ComputerCraft adds programmable computers and turtles!"
+				""
+				"Write Lua programs to automate complex tasks."
+				""
+				"Computers can control and monitor your entire factory."
+			]
+			dependencies: [
+				"5000000000000012"
+				"5000000000000024"
+			]
+			dependency_requirement: "one_completed"
+			id: "5000000000000029"
+			tasks: [
+				{
+					id: "5000000000000030"
+					type: "item"
+					item: "computercraft:computer_advanced"
+				}
+				{
+					id: "5000000000000031"
+					type: "item"
+					item: "computercraft:disk_drive"
+				}
+				{
+					id: "5000000000000032"
+					type: "item"
+					item: "computercraft:wired_modem"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "5000000000000033"
+					type: "item"
+					item: "computercraft:disk"
+					count: 8
+				}
+				{
+					id: "5000000000000034"
+					type: "item"
+					item: "computercraft:wireless_modem_advanced"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Turtle Automation"
+			icon: "computercraft:turtle_advanced"
+			x: 0.0d
+			y: 6.5d
+			description: [
+				"Turtles are mobile, programmable robots!"
+				""
+				"Write programs to make turtles mine, build, farm, and more."
+				""
+				"The ultimate flexible automation tool."
+			]
+			dependencies: ["5000000000000029"]
+			id: "5000000000000035"
+			tasks: [
+				{
+					id: "5000000000000036"
+					type: "item"
+					item: "computercraft:turtle_advanced"
+				}
+				{
+					id: "5000000000000037"
+					type: "item"
+					title: "Turtle Tool"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:turtle_advanced"
+									Count: 1b
+									tag: {
+										RightUpgrade: "computercraft:wireless_modem_advanced"
+									}
+								}
+								{
+									id: "computercraft:turtle_advanced"
+									Count: 1b
+									tag: {
+										LeftUpgrade: "minecraft:diamond_pickaxe"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5000000000000038"
+					type: "item"
+					item: "minecraft:diamond_pickaxe"
+				}
+				{
+					id: "5000000000000039"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Unlock: Industrial Foregoing"
+			icon: "industrialforegoing:machine_frame_pity"
+			x: -4.0d
+			y: 8.0d
+			description: [
+				"Industrial Foregoing adds high-tech automation machines!"
+				""
+				"From mob processing to resource generation."
+				""
+				"Build compact, efficient production systems."
+			]
+			dependencies: ["5000000000000035"]
+			id: "5000000000000040"
+			tasks: [
+				{
+					id: "5000000000000041"
+					type: "item"
+					item: "industrialforegoing:machine_frame_pity"
+				}
+				{
+					id: "5000000000000042"
+					type: "item"
+					title: "Any IF Machine"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:plant_gatherer"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:material_stonework_factory"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:sludge_refiner"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5000000000000043"
+					type: "item"
+					item: "industrialforegoing:plastic"
+					count: 64
+				}
+				{
+					id: "5000000000000044"
+					type: "item"
+					item: "industrialforegoing:machine_frame_simple"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Unlock: Hostile Neural Networks"
+			icon: "hostilenetworks:deep_learner"
+			x: 4.0d
+			y: 8.0d
+			description: [
+				"Hostile Neural Networks lets you simulate mob drops!"
+				""
+				"Train a Deep Learner by killing mobs."
+				""
+				"Use the Simulation Chamber to generate mob drops without combat."
+			]
+			dependencies: ["5000000000000035"]
+			id: "5000000000000045"
+			tasks: [
+				{
+					id: "5000000000000046"
+					type: "item"
+					item: "hostilenetworks:deep_learner"
+				}
+				{
+					id: "5000000000000047"
+					type: "item"
+					item: "hostilenetworks:sim_chamber"
+				}
+				{
+					id: "5000000000000048"
+					type: "item"
+					title: "Any Data Model"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "hostilenetworks:data_models"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5000000000000049"
+					type: "item"
+					item: "hostilenetworks:prediction_matrix"
+					count: 64
+				}
+				{
+					id: "5000000000000050"
+					type: "item"
+					item: "minecraft:nether_star"
 				}
 			]
 		}
@@ -96,32 +497,43 @@
 			title: "Ready for Tier 6"
 			icon: "minecraft:nether_star"
 			x: 0.0d
-			y: 6.0d
+			y: 9.5d
 			shape: "hexagon"
 			size: 1.5d
 			description: [
 				"Electronics mastered! You're at the pinnacle of technology."
 				""
-				"Final tier: Future Tech awaits!"
+				"Advanced automation and mob simulation unlocked!"
+				""
+				"Final tier: Future Tech - Digital storage, nuclear power, and energy networks!"
 			]
-			dependencies: ["5000000000000008"]
-			id: "5000000000000012"
+			dependencies: [
+				"5000000000000040"
+				"5000000000000045"
+			]
+			id: "5000000000000051"
 			tasks: [{
-				id: "5000000000000013"
+				id: "5000000000000052"
 				type: "checkmark"
 				title: "Continue to Tier 6"
 			}]
 			rewards: [
 				{
-					id: "5000000000000014"
+					id: "5000000000000053"
 					type: "item"
 					item: "minecraft:nether_star"
-					count: 1
+					count: 2
 				}
 				{
-					id: "5000000000000015"
+					id: "5000000000000054"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 4
+				}
+				{
+					id: "5000000000000055"
 					type: "xp_levels"
-					xp_levels: 25
+					xp_levels: 30
 				}
 			]
 		}

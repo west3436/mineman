@@ -4,91 +4,390 @@
 	order_index: 4
 	filename: "4_chemistry"
 	title: "Tier 4: Chemistry"
-	icon: "minecraft:potion"
+	icon: "mekanism:chemical_tank"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Welcome to Tier 4"
-			icon: "minecraft:brewing_stand"
+			icon: "mekanism:chemical_tank"
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"Tier 4 introduces advanced chemistry and chemical processing."
+				"Tier 4 introduces advanced chemistry and chemical processing!"
 				""
-				"Master chemical reactions and complex production chains."
+				"Master complex chemical reactions with PneumaticCraft and Mekanism."
 				""
 				"Chemistry is the foundation for electronics and future tech."
 			]
+			dependencies: ["3000000000000040"]
 			id: "4000000000000002"
 			tasks: [{
 				id: "4000000000000003"
 				type: "checkmark"
 				title: "Begin Tier 4"
 			}]
-			rewards: [{
-				id: "4000000000000004"
-				type: "item"
-				item: "minecraft:glass_bottle"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "4000000000000004"
+					type: "item"
+					item: "pneumaticcraft:air_compressor"
+				}
+				{
+					id: "4000000000000005"
+					type: "item"
+					item: "mekanism:basic_chemical_tank"
+				}
+			]
 		}
 		{
-			title: "Chemical Processing"
-			icon: "minecraft:potion"
-			x: 0.0d
+			title: "PneumaticCraft: Air Compression"
+			icon: "pneumaticcraft:pressure_tube"
+			x: -3.0d
 			y: 2.0d
 			description: [
-				"Set up chemical processing systems."
+				"PneumaticCraft is built around pressurized air systems!"
 				""
-				"Process raw materials into advanced chemical compounds."
+				"Build an Air Compressor and set up a pressure network."
 				""
-				"These chemicals are essential for high-tech production."
+				"Pressurized air powers many advanced machines."
 			]
 			dependencies: ["4000000000000002"]
-			id: "4000000000000005"
-			tasks: [{
-				id: "4000000000000006"
-				type: "checkmark"
-				title: "Process Chemicals"
-			}]
-			rewards: [{
-				id: "4000000000000007"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-		}
-		{
-			title: "Advanced Compounds"
-			icon: "minecraft:nether_star"
-			x: 0.0d
-			y: 4.0d
-			description: [
-				"Create advanced chemical compounds."
-				""
-				"These materials enable cutting-edge technology."
-				""
-				"Maintain careful control of your chemical processes."
+			id: "4000000000000006"
+			tasks: [
+				{
+					id: "4000000000000007"
+					type: "item"
+					item: "pneumaticcraft:air_compressor"
+				}
+				{
+					id: "4000000000000008"
+					type: "item"
+					item: "pneumaticcraft:pressure_tube"
+					count: 16
+				}
+				{
+					id: "4000000000000009"
+					type: "item"
+					item: "pneumaticcraft:pressure_gauge"
+				}
 			]
-			dependencies: ["4000000000000005"]
-			id: "4000000000000008"
-			tasks: [{
-				id: "4000000000000009"
-				type: "checkmark"
-				title: "Produce Advanced Compounds"
-			}]
 			rewards: [
 				{
 					id: "4000000000000010"
 					type: "item"
-					item: "minecraft:diamond"
-					count: 4
+					item: "pneumaticcraft:compressed_iron_ingot"
+					count: 32
 				}
 				{
 					id: "4000000000000011"
+					type: "item"
+					item: "pneumaticcraft:safety_tube_module"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "PneumaticCraft: Advanced Processing"
+			icon: "pneumaticcraft:refinery"
+			x: -3.0d
+			y: 3.5d
+			description: [
+				"Use pressurized systems for advanced material processing!"
+				""
+				"The Refinery can process oil into multiple products."
+				""
+				"The Pressure Chamber compresses materials into advanced forms."
+			]
+			dependencies: ["4000000000000006"]
+			id: "4000000000000012"
+			tasks: [
+				{
+					id: "4000000000000013"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+				{
+					id: "4000000000000014"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 16
+				}
+				{
+					id: "4000000000000015"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+			]
+			rewards: [
+				{
+					id: "4000000000000016"
+					type: "item"
+					item: "pneumaticcraft:lpg_bucket"
+					count: 4
+				}
+				{
+					id: "4000000000000017"
+					type: "item"
+					item: "pneumaticcraft:printed_circuit_board"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Mekanism: Basic Machinery"
+			icon: "mekanism:metallurgic_infuser"
+			x: 3.0d
+			y: 2.0d
+			description: [
+				"Mekanism offers powerful chemical processing!"
+				""
+				"Start with the Metallurgic Infuser to create infused alloys."
+				""
+				"Build an Enrichment Chamber for enhanced ore processing."
+			]
+			dependencies: ["4000000000000002"]
+			id: "4000000000000018"
+			tasks: [
+				{
+					id: "4000000000000019"
+					type: "item"
+					item: "mekanism:metallurgic_infuser"
+				}
+				{
+					id: "4000000000000020"
+					type: "item"
+					item: "mekanism:enrichment_chamber"
+				}
+				{
+					id: "4000000000000021"
+					type: "item"
+					item: "mekanism:steel_casing"
+				}
+			]
+			rewards: [
+				{
+					id: "4000000000000022"
+					type: "item"
+					item: "mekanism:ingot_steel"
+					count: 32
+				}
+				{
+					id: "4000000000000023"
+					type: "item"
+					item: "mekanism:alloy_infused"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Mekanism: Gas Processing"
+			icon: "mekanism:electrolytic_separator"
+			x: 3.0d
+			y: 3.5d
+			description: [
+				"Process gases with Mekanism's chemical systems!"
+				""
+				"The Electrolytic Separator splits water into hydrogen and oxygen."
+				""
+				"Chemical Infusers combine gases for advanced chemistry."
+			]
+			dependencies: ["4000000000000018"]
+			id: "4000000000000024"
+			tasks: [
+				{
+					id: "4000000000000025"
+					type: "item"
+					item: "mekanism:electrolytic_separator"
+				}
+				{
+					id: "4000000000000026"
+					type: "item"
+					item: "mekanism:chemical_infuser"
+				}
+				{
+					id: "4000000000000027"
+					type: "item"
+					item: "mekanism:basic_chemical_tank"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "4000000000000028"
+					type: "item"
+					item: "mekanism:basic_chemical_tank"
+					count: 4
+				}
+				{
+					id: "4000000000000029"
+					type: "item"
+					item: "mekanism:alloy_reinforced"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Advanced Chemical Production"
+			icon: "mekanism:chemical_oxidizer"
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"Set up advanced chemical production lines!"
+				""
+				"Use Chemical Oxidizers, Dissolution Chambers, and more."
+				""
+				"These systems enable the most complex material processing."
+			]
+			dependencies: [
+				"4000000000000012"
+				"4000000000000024"
+			]
+			id: "4000000000000030"
+			tasks: [
+				{
+					id: "4000000000000031"
+					type: "item"
+					title: "Advanced Chemical Machine"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:chemical_oxidizer"
+									Count: 1b
+								}
+								{
+									id: "mekanism:chemical_dissolution_chamber"
+									Count: 1b
+								}
+								{
+									id: "mekanism:chemical_crystallizer"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "4000000000000032"
+					type: "item"
+					item: "mekanism:ultimate_chemical_tank"
+				}
+			]
+			rewards: [
+				{
+					id: "4000000000000033"
+					type: "item"
+					item: "mekanism:alloy_atomic"
+					count: 8
+				}
+				{
+					id: "4000000000000034"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Unlock: RFTools"
+			icon: "rftoolsbase:machine_frame"
+			x: -4.0d
+			y: 6.5d
+			description: [
+				"RFTools adds powerful utility machines and automation!"
+				""
+				"The Crafter enables complex autocrafting setups."
+				""
+				"Build modular machines for your specific needs."
+			]
+			dependencies: ["4000000000000030"]
+			id: "4000000000000035"
+			tasks: [
+				{
+					id: "4000000000000036"
+					type: "item"
+					item: "rftoolsbase:machine_frame"
+				}
+				{
+					id: "4000000000000037"
+					type: "item"
+					item: "rftoolsutility:crafter1"
+				}
+				{
+					id: "4000000000000038"
+					type: "item"
+					item: "rftoolsbase:infused_diamond"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "4000000000000039"
+					type: "item"
+					item: "rftoolsbase:dimensionalshard"
+					count: 16
+				}
+				{
+					id: "4000000000000040"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Unlock: Alchemistry"
+			icon: "alchemistry:atomizer"
+			x: 4.0d
+			y: 6.5d
+			description: [
+				"Alchemistry lets you break down and reconstruct matter!"
+				""
+				"The Atomizer converts items into their chemical elements."
+				""
+				"Transmute materials at the atomic level!"
+			]
+			dependencies: ["4000000000000030"]
+			id: "4000000000000041"
+			tasks: [
+				{
+					id: "4000000000000042"
+					type: "item"
+					item: "alchemistry:atomizer"
+				}
+				{
+					id: "4000000000000043"
+					type: "item"
+					item: "alchemistry:combiner"
+				}
+				{
+					id: "4000000000000044"
+					type: "item"
+					title: "Any Element"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "alchemistry:elements"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "4000000000000045"
+					type: "item"
+					item: "alchemistry:element_carbon"
+					count: 32
+				}
+				{
+					id: "4000000000000046"
+					type: "item"
+					item: "alchemistry:element_iron"
+					count: 16
 				}
 			]
 		}
@@ -96,32 +395,43 @@
 			title: "Ready for Tier 5"
 			icon: "minecraft:diamond_block"
 			x: 0.0d
-			y: 6.0d
+			y: 8.5d
 			shape: "hexagon"
 			size: 1.5d
 			description: [
-				"Chemistry mastered! Your production capabilities are impressive."
+				"Chemistry mastered! Your chemical processing is at an elite level."
 				""
-				"Next: Electronics and advanced circuits!"
+				"Advanced automation tools are now available!"
+				""
+				"Next: Electronics, circuits, and computational automation!"
 			]
-			dependencies: ["4000000000000008"]
-			id: "4000000000000012"
+			dependencies: [
+				"4000000000000035"
+				"4000000000000041"
+			]
+			id: "4000000000000047"
 			tasks: [{
-				id: "4000000000000013"
+				id: "4000000000000048"
 				type: "checkmark"
 				title: "Continue to Tier 5"
 			}]
 			rewards: [
 				{
-					id: "4000000000000014"
+					id: "4000000000000049"
 					type: "item"
 					item: "minecraft:diamond_block"
-					count: 1
+					count: 2
 				}
 				{
-					id: "4000000000000015"
+					id: "4000000000000050"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 2
+				}
+				{
+					id: "4000000000000051"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 25
 				}
 			]
 		}

@@ -4,13 +4,13 @@
 	order_index: 6
 	filename: "6_future_tech"
 	title: "Tier 6: Future Tech"
-	icon: "minecraft:beacon"
+	icon: "ae2:controller"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Welcome to Tier 6"
-			icon: "minecraft:beacon"
+			icon: "ae2:controller"
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
@@ -18,94 +18,577 @@
 			description: [
 				"Welcome to the final tier: Future Tech!"
 				""
-				"Push the boundaries of technology with advanced systems."
+				"Push the boundaries of technology with the most advanced systems."
 				""
-				"Master the most sophisticated machines and automation."
+				"Master digital storage, nuclear power, and energy networks!"
 			]
+			dependencies: ["5000000000000051"]
 			id: "6000000000000002"
 			tasks: [{
 				id: "6000000000000003"
 				type: "checkmark"
 				title: "Begin Tier 6"
 			}]
-			rewards: [{
-				id: "6000000000000004"
-				type: "item"
-				item: "minecraft:nether_star"
-				count: 2
-			}]
+			rewards: [
+				{
+					id: "6000000000000004"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 4
+				}
+				{
+					id: "6000000000000005"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 4
+				}
+			]
 		}
 		{
-			title: "Cutting-Edge Systems"
-			icon: "minecraft:end_crystal"
-			x: 0.0d
+			title: "AE2: Energy & Inscriber"
+			icon: "ae2:energy_acceptor"
+			x: -4.0d
 			y: 2.0d
 			description: [
-				"Build the most advanced technological systems."
+				"Applied Energistics 2 begins with energy infrastructure!"
 				""
-				"These represent the pinnacle of engineering achievement."
+				"Build an Energy Acceptor to power your ME system."
 				""
-				"Few have reached this level of mastery."
+				"Use the Inscriber to create processor circuits."
 			]
 			dependencies: ["6000000000000002"]
-			id: "6000000000000005"
-			tasks: [{
-				id: "6000000000000006"
-				type: "checkmark"
-				title: "Build Future Tech Systems"
-			}]
-			rewards: [
+			id: "6000000000000006"
+			tasks: [
 				{
 					id: "6000000000000007"
 					type: "item"
-					item: "minecraft:diamond_block"
-					count: 2
+					item: "ae2:energy_acceptor"
 				}
 				{
 					id: "6000000000000008"
+					type: "item"
+					item: "ae2:inscriber"
+				}
+				{
+					id: "6000000000000009"
+					type: "item"
+					item: "ae2:fluix_crystal"
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000010"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+					count: 32
+				}
+				{
+					id: "6000000000000011"
+					type: "item"
+					item: "ae2:charged_certus_quartz_crystal"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "AE2: Processors"
+			icon: "ae2:logic_processor"
+			x: -4.0d
+			y: 3.5d
+			description: [
+				"Processors are the heart of AE2 components!"
+				""
+				"Inscribe silicon with printed circuits to create processors."
+				""
+				"Logic, Calculation, and Engineering processors have different uses."
+			]
+			dependencies: ["6000000000000006"]
+			id: "6000000000000012"
+			tasks: [
+				{
+					id: "6000000000000013"
+					type: "item"
+					item: "ae2:logic_processor"
+					count: 16
+				}
+				{
+					id: "6000000000000014"
+					type: "item"
+					item: "ae2:calculation_processor"
+					count: 16
+				}
+				{
+					id: "6000000000000015"
+					type: "item"
+					item: "ae2:engineering_processor"
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000016"
+					type: "item"
+					item: "ae2:silicon"
+					count: 64
+				}
+				{
+					id: "6000000000000017"
+					type: "item"
+					item: "ae2:logic_processor"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "AE2: ME Controller"
+			icon: "ae2:controller"
+			x: -4.0d
+			y: 5.0d
+			description: [
+				"The ME Controller is the brain of your storage network!"
+				""
+				"Build a multiblock controller for maximum channels."
+				""
+				"Each face provides 32 channels to ME devices."
+			]
+			dependencies: ["6000000000000012"]
+			id: "6000000000000018"
+			tasks: [
+				{
+					id: "6000000000000019"
+					type: "item"
+					item: "ae2:controller"
+					count: 7
+				}
+				{
+					id: "6000000000000020"
+					type: "item"
+					item: "ae2:dense_energy_cell"
+				}
+				{
+					id: "6000000000000021"
+					type: "item"
+					item: "ae2:energy_cell"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000022"
+					type: "item"
+					item: "ae2:controller"
+					count: 2
+				}
+				{
+					id: "6000000000000023"
+					type: "item"
+					item: "ae2:fluix_smart_cable"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "AE2: Storage System"
+			icon: "ae2:drive"
+			x: -4.0d
+			y: 6.5d
+			description: [
+				"Set up your digital storage system!"
+				""
+				"ME Drives hold storage cells containing your items."
+				""
+				"Access everything from a single ME Terminal!"
+			]
+			dependencies: ["6000000000000018"]
+			id: "6000000000000024"
+			tasks: [
+				{
+					id: "6000000000000025"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "6000000000000026"
+					type: "item"
+					title: "Storage Cell"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "ae2:item_storage_cell_1k"
+									Count: 1b
+								}
+								{
+									id: "ae2:item_storage_cell_4k"
+									Count: 1b
+								}
+								{
+									id: "ae2:item_storage_cell_16k"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+				{
+					id: "6000000000000027"
+					type: "item"
+					item: "ae2:terminal"
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000028"
+					type: "item"
+					item: "ae2:item_storage_cell_64k"
+					count: 2
+				}
+				{
+					id: "6000000000000029"
+					type: "item"
+					item: "ae2:crafting_terminal"
+				}
+			]
+		}
+		{
+			title: "Create: Nuclear Basics"
+			icon: "createnuclear:reactor_casing"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Create: Nuclear adds nuclear power generation!"
+				""
+				"Start by building reactor components."
+				""
+				"Nuclear power provides massive energy output."
+			]
+			dependencies: ["6000000000000002"]
+			id: "6000000000000030"
+			tasks: [
+				{
+					id: "6000000000000031"
+					type: "item"
+					item: "createnuclear:reactor_casing"
+					count: 16
+				}
+				{
+					id: "6000000000000032"
+					type: "item"
+					item: "createnuclear:reactor_glass"
+					count: 8
+				}
+				{
+					id: "6000000000000033"
+					type: "item"
+					item: "createnuclear:enriched_uranium"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000034"
+					type: "item"
+					item: "createnuclear:enriched_uranium"
+					count: 8
+				}
+				{
+					id: "6000000000000035"
+					type: "item"
+					item: "minecraft:iron_block"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Nuclear Reactor"
+			icon: "createnuclear:reactor_core"
+			x: 0.0d
+			y: 3.5d
+			description: [
+				"Build your first nuclear reactor!"
+				""
+				"The reactor core generates heat from uranium fuel."
+				""
+				"Use coolant systems to extract energy safely."
+			]
+			dependencies: ["6000000000000030"]
+			id: "6000000000000036"
+			tasks: [
+				{
+					id: "6000000000000037"
+					type: "item"
+					item: "createnuclear:reactor_core"
+				}
+				{
+					id: "6000000000000038"
+					type: "item"
+					item: "createnuclear:fuel_rod"
+					count: 8
+				}
+				{
+					id: "6000000000000039"
+					type: "item"
+					item: "createnuclear:control_rod"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000040"
+					type: "item"
+					item: "createnuclear:fuel_rod"
+					count: 8
+				}
+				{
+					id: "6000000000000041"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			title: "Master of Technology"
-			icon: "minecraft:dragon_egg"
+			title: "Power Generation"
+			icon: "createnuclear:steam_turbine"
 			x: 0.0d
-			y: 4.0d
+			y: 5.0d
+			description: [
+				"Convert reactor heat into usable power!"
+				""
+				"Use Steam Turbines to generate electricity from superheated steam."
+				""
+				"This is clean, efficient, high-output power."
+			]
+			dependencies: ["6000000000000036"]
+			id: "6000000000000042"
+			tasks: [
+				{
+					id: "6000000000000043"
+					type: "item"
+					item: "createnuclear:steam_turbine"
+				}
+				{
+					id: "6000000000000044"
+					type: "item"
+					item: "createnuclear:heat_exchanger"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000045"
+					type: "item"
+					item: "minecraft:emerald_block"
+					count: 4
+				}
+				{
+					id: "6000000000000046"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			title: "Flux Networks: Point"
+			icon: "fluxnetworks:flux_point"
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"Flux Networks enable wireless energy transfer!"
+				""
+				"Place Flux Points to extract energy from generators."
+				""
+				"Create a network to share power across vast distances."
+			]
+			dependencies: ["6000000000000002"]
+			id: "6000000000000047"
+			tasks: [
+				{
+					id: "6000000000000048"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+					count: 4
+				}
+				{
+					id: "6000000000000049"
+					type: "item"
+					item: "fluxnetworks:flux_core"
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000050"
+					type: "item"
+					item: "fluxnetworks:flux_dust"
+					count: 64
+				}
+				{
+					id: "6000000000000051"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Flux Networks: Plug"
+			icon: "fluxnetworks:flux_plug"
+			x: 4.0d
+			y: 3.5d
+			description: [
+				"Flux Plugs inject energy into machines!"
+				""
+				"Connect plugs to your machines to receive wireless power."
+				""
+				"No more messy cables across your base!"
+			]
+			dependencies: ["6000000000000047"]
+			id: "6000000000000052"
+			tasks: [
+				{
+					id: "6000000000000053"
+					type: "item"
+					item: "fluxnetworks:flux_plug"
+					count: 4
+				}
+				{
+					id: "6000000000000054"
+					type: "item"
+					item: "fluxnetworks:flux_controller"
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000055"
+					type: "item"
+					item: "fluxnetworks:flux_plug"
+					count: 4
+				}
+				{
+					id: "6000000000000056"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Wireless Energy Network"
+			icon: "fluxnetworks:flux_configurator"
+			x: 4.0d
+			y: 5.0d
+			description: [
+				"Master wireless energy distribution!"
+				""
+				"Use the Flux Configurator to manage your networks."
+				""
+				"Set priorities and limits for optimal power flow."
+			]
+			dependencies: ["6000000000000052"]
+			id: "6000000000000057"
+			tasks: [
+				{
+					id: "6000000000000058"
+					type: "item"
+					item: "fluxnetworks:flux_configurator"
+				}
+				{
+					id: "6000000000000059"
+					type: "item"
+					title: "Wireless Energy Storage"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "fluxnetworks:basic_flux_storage"
+									Count: 1b
+								}
+								{
+									id: "fluxnetworks:herculean_flux_storage"
+									Count: 1b
+								}
+								{
+									id: "fluxnetworks:gargantuan_flux_storage"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "6000000000000060"
+					type: "item"
+					item: "fluxnetworks:gargantuan_flux_storage"
+				}
+				{
+					id: "6000000000000061"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			title: "Master of Technology"
+			icon: "minecraft:beacon"
+			x: 0.0d
+			y: 8.0d
 			shape: "hexagon"
 			size: 2.0d
 			description: [
-				"Congratulations! You've completed the main progression!"
+				"&6&lCONGRATULATIONS!&r"
 				""
-				"You've mastered all 6 tiers from basic processing to future tech."
+				"You've completed all 6 tiers of technological progression!"
 				""
-				"Continue with side quests or build your ultimate factory!"
+				"From basic processing to digital storage, nuclear power, and wireless energy!"
+				""
+				"You've mastered both Create and Immersive Engineering paths."
+				""
+				"Your factory represents the pinnacle of industrial achievement."
+				""
+				"Continue with side quests or build your ultimate mega-factory!"
 			]
-			dependencies: ["6000000000000005"]
-			id: "6000000000000009"
+			dependencies: [
+				"6000000000000024"
+				"6000000000000042"
+				"6000000000000057"
+			]
+			id: "6000000000000062"
 			tasks: [{
-				id: "6000000000000010"
+				id: "6000000000000063"
 				type: "checkmark"
 				title: "Complete the Journey"
 			}]
 			rewards: [
 				{
-					id: "6000000000000011"
+					id: "6000000000000064"
 					type: "item"
 					item: "minecraft:beacon"
-					count: 1
+					count: 2
 				}
 				{
-					id: "6000000000000012"
+					id: "6000000000000065"
 					type: "item"
 					item: "minecraft:nether_star"
+					count: 8
+				}
+				{
+					id: "6000000000000066"
+					type: "item"
+					item: "minecraft:netherite_block"
 					count: 4
 				}
 				{
-					id: "6000000000000013"
+					id: "6000000000000067"
 					type: "xp_levels"
-					xp_levels: 50
+					xp_levels: 100
 				}
 			]
 		}

@@ -21,6 +21,7 @@
 				""
 				"Electricity will power your growing industrial infrastructure."
 			]
+			dependencies: ["1000000000000041"]
 			id: "2000000000000002"
 			tasks: [{
 				id: "2000000000000003"
@@ -35,90 +36,405 @@
 			}]
 		}
 		{
-			title: "Produce Steel"
-			icon: "immersiveengineering:ingot_steel"
-			x: 0.0d
+			title: "Steel Production - TFMG Path"
+			icon: "tfmg:steel_ingot"
+			x: -3.0d
 			y: 2.0d
 			description: [
-				"Steel is made by processing iron with carbon."
+				"Create: The Foundry & Metallurgy adds a Create-based steel production line."
 				""
-				"You can use a Blast Furnace or other steel-making methods."
+				"Build a Blast Furnace using Create components to produce steel."
 				""
-				"Steel is essential for advanced machines and structures."
+				"This path integrates seamlessly with your existing Create systems."
 			]
 			dependencies: ["2000000000000002"]
 			id: "2000000000000005"
-			tasks: [{
-				id: "2000000000000006"
-				type: "item"
-				item: "immersiveengineering:ingot_steel"
-				count: 16
-			}]
-			rewards: [
+			tasks: [
+				{
+					id: "2000000000000006"
+					type: "item"
+					item: "tfmg:blast_furnace_output"
+				}
 				{
 					id: "2000000000000007"
 					type: "item"
-					item: "minecraft:coal_block"
-					count: 8
+					item: "tfmg:steel_ingot"
+					count: 32
 				}
+			]
+			rewards: [
 				{
 					id: "2000000000000008"
 					type: "item"
+					item: "minecraft:coal_block"
+					count: 16
+				}
+				{
+					id: "2000000000000009"
+					type: "item"
+					item: "tfmg:steel_ingot"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Steel Production - IE Path"
+			icon: "immersiveengineering:ingot_steel"
+			x: 3.0d
+			y: 2.0d
+			description: [
+				"Immersive Engineering's Blast Furnace is the classic steel production method."
+				""
+				"Build the multiblock Blast Furnace and feed it iron and coal."
+				""
+				"This produces high-quality steel for industrial applications."
+			]
+			dependencies: ["2000000000000002"]
+			id: "2000000000000010"
+			tasks: [
+				{
+					id: "2000000000000011"
+					type: "item"
+					item: "immersiveengineering:blast_furnace"
+				}
+				{
+					id: "2000000000000012"
+					type: "item"
 					item: "immersiveengineering:ingot_steel"
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000013"
+					type: "item"
+					item: "minecraft:coal_block"
+					count: 16
+				}
+				{
+					id: "2000000000000014"
+					type: "item"
+					item: "immersiveengineering:ingot_steel"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "First Automation - Create"
+			icon: "create:deployer"
+			x: -3.0d
+			y: 3.5d
+			description: [
+				"Use Create's Deployers and Encased Fans for automated processing."
+				""
+				"Set up a production line that processes materials automatically."
+				""
+				"Bulk washing and smelting will increase your output significantly."
+			]
+			dependencies: ["2000000000000005"]
+			id: "2000000000000015"
+			tasks: [
+				{
+					id: "2000000000000016"
+					type: "item"
+					item: "create:deployer"
+					count: 2
+				}
+				{
+					id: "2000000000000017"
+					type: "item"
+					item: "create:encased_fan"
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000018"
+					type: "item"
+					item: "create:shaft"
+					count: 16
+				}
+				{
+					id: "2000000000000019"
+					type: "item"
+					item: "create:brass_ingot"
 					count: 8
 				}
 			]
 		}
 		{
-			title: "Generate Electricity"
-			icon: "immersiveengineering:dynamo"
-			x: 0.0d
-			y: 4.0d
+			title: "First Automation - IE"
+			icon: "immersiveengineering:conveyor_basic"
+			x: 3.0d
+			y: 3.5d
 			description: [
-				"Set up your first electrical power generation."
+				"Build conveyor belts and automated processing lines."
 				""
-				"Options include watermills, windmills, or dynamos."
+				"Use IE's conveyors and machines to move and process items automatically."
 				""
-				"Electricity is required for advanced processing."
+				"Set up your first automated ore processing system."
 			]
-			dependencies: ["2000000000000005"]
-			id: "2000000000000009"
-			tasks: [{
-				id: "2000000000000010"
-				type: "item"
-				title: "Power Generator"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "immersiveengineering:dynamo"
-								Count: 1b
-							}
-							{
-								id: "immersiveengineering:watermill"
-								Count: 1b
-							}
-							{
-								id: "immersiveengineering:windmill"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [
+			dependencies: ["2000000000000010"]
+			id: "2000000000000020"
+			tasks: [
 				{
-					id: "2000000000000011"
+					id: "2000000000000021"
 					type: "item"
-					item: "immersiveengineering:wirecoil_copper"
+					item: "immersiveengineering:conveyor_basic"
 					count: 8
 				}
 				{
-					id: "2000000000000012"
+					id: "2000000000000022"
 					type: "item"
-					item: "immersiveengineering:connector_lv"
+					item: "immersiveengineering:conveyor_dropper"
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000023"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 16
+				}
+				{
+					id: "2000000000000024"
+					type: "item"
+					item: "immersiveengineering:component_steel"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Advanced Power - Create Addition"
+			icon: "createaddition:alternator"
+			x: -3.0d
+			y: 5.0d
+			description: [
+				"Create Addition allows you to generate electricity from rotation!"
+				""
+				"Build an Alternator to convert kinetic energy into FE power."
+				""
+				"This bridges Create with other tech mods."
+			]
+			dependencies: ["2000000000000015"]
+			id: "2000000000000025"
+			tasks: [
+				{
+					id: "2000000000000026"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "2000000000000027"
+					type: "item"
+					item: "createaddition:connector"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000028"
+					type: "item"
+					item: "createaddition:copper_spool"
+					count: 8
+				}
+				{
+					id: "2000000000000029"
+					type: "item"
+					item: "createaddition:gold_spool"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Advanced Power - IE Generators"
+			icon: "immersiveengineering:generator"
+			x: 3.0d
+			y: 5.0d
+			description: [
+				"Build more powerful generators for your expanding factory."
+				""
+				"The Thermoelectric Generator uses heat differentials for power."
+				""
+				"The External Heater can automate fuel-powered processes."
+			]
+			dependencies: ["2000000000000020"]
+			id: "2000000000000030"
+			tasks: [
+				{
+					id: "2000000000000031"
+					type: "item"
+					title: "Advanced Generator"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:generator"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:thermoelectric_generator"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "2000000000000032"
+					type: "item"
+					item: "immersiveengineering:furnace_heater"
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000033"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+					count: 8
+				}
+				{
+					id: "2000000000000034"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Unlock: Forestry"
+			icon: "forestry:carpenter"
+			x: -5.0d
+			y: 6.5d
+			description: [
+				"Forestry adds automated tree farms and beekeeping!"
+				""
+				"The Carpenter allows for advanced wood and liquid-based recipes."
+				""
+				"Start your journey into sustainable resource production."
+			]
+			dependencies: [
+				"2000000000000025"
+				"2000000000000030"
+			]
+			dependency_requirement: "one_completed"
+			id: "2000000000000035"
+			tasks: [
+				{
+					id: "2000000000000036"
+					type: "item"
+					item: "forestry:carpenter"
+				}
+				{
+					id: "2000000000000037"
+					type: "item"
+					item: "forestry:frame_impregnated"
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000038"
+					type: "item"
+					item: "forestry:bee_house"
+					count: 2
+				}
+				{
+					id: "2000000000000039"
+					type: "item"
+					item: "forestry:oak_stick"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Unlock: Storage Drawers"
+			icon: "storagedrawers:oak_full_drawers_4"
+			x: 0.0d
+			y: 6.5d
+			description: [
+				"Storage Drawers provide efficient item storage with visual access!"
+				""
+				"Build drawer controllers for easy mass storage management."
+				""
+				"Perfect for organizing your growing resource stockpile."
+			]
+			dependencies: [
+				"2000000000000025"
+				"2000000000000030"
+			]
+			dependency_requirement: "one_completed"
+			id: "2000000000000040"
+			tasks: [
+				{
+					id: "2000000000000041"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_4"
+					count: 4
+				}
+				{
+					id: "2000000000000042"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000043"
+					type: "item"
+					item: "storagedrawers:upgrade_template"
+					count: 4
+				}
+				{
+					id: "2000000000000044"
+					type: "item"
+					item: "storagedrawers:drawer_key"
+				}
+			]
+		}
+		{
+			title: "Unlock: Tinker's Construct"
+			icon: "tconstruct:smeltery_controller"
+			x: 5.0d
+			y: 6.5d
+			description: [
+				"Tinker's Construct allows you to create customizable tools!"
+				""
+				"Build a Smeltery to melt down metals and cast tools."
+				""
+				"Craft powerful, upgradeable equipment for your adventures."
+			]
+			dependencies: [
+				"2000000000000025"
+				"2000000000000030"
+			]
+			dependency_requirement: "one_completed"
+			id: "2000000000000045"
+			tasks: [
+				{
+					id: "2000000000000046"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "2000000000000047"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+			]
+			rewards: [
+				{
+					id: "2000000000000048"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 32
+				}
+				{
+					id: "2000000000000049"
+					type: "item"
+					item: "tconstruct:grout"
 					count: 16
 				}
 			]
@@ -127,32 +443,44 @@
 			title: "Ready for Tier 3"
 			icon: "minecraft:emerald"
 			x: 0.0d
-			y: 6.0d
+			y: 8.5d
 			shape: "hexagon"
 			size: 1.5d
 			description: [
-				"Excellent work! You've mastered steel and electricity."
+				"Excellent work! You've mastered steel production and automation."
+				""
+				"Your infrastructure is growing, and new mods are unlocked."
 				""
 				"Next up: Oil processing and plastic production!"
 			]
-			dependencies: ["2000000000000009"]
-			id: "2000000000000013"
+			dependencies: [
+				"2000000000000035"
+				"2000000000000040"
+				"2000000000000045"
+			]
+			id: "2000000000000050"
 			tasks: [{
-				id: "2000000000000014"
+				id: "2000000000000051"
 				type: "checkmark"
 				title: "Continue to Tier 3"
 			}]
 			rewards: [
 				{
-					id: "2000000000000015"
+					id: "2000000000000052"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 2
+					count: 4
 				}
 				{
-					id: "2000000000000016"
+					id: "2000000000000053"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 8
+				}
+				{
+					id: "2000000000000054"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 15
 				}
 			]
 		}
