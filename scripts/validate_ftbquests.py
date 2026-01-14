@@ -18,36 +18,40 @@ except ImportError:
     sys.exit(1)
 
 
-# Regex pattern to match unescaped Minecraft formatting codes followed by space
-# Valid codes: 0-9, a-f (colors), k-o (formats), r (reset)
-FORMATTING_CODE_PATTERN = r'(?<!\\)(&(?:[0-9a-f]|[k-o]|r))( )'
+# Regex pattern to match unescaped ampersand followed by space
+# FTBQuests requires & followed by whitespace to be escaped as \&
+AMPERSAND_SPACE_PATTERN = r'(?<!\\)& '
 
 
-def check_formatting_codes(file_path: Path) -> Tuple[bool, List[str]]:
+def check_ampersand_space(file_path: Path) -> Tuple[bool, List[str]]:
     r"""
-    Check for unescaped formatting codes followed by whitespace.
-    
-    In FTBQuests, formatting codes like &r, &f, &a etc. followed by a space
-    must be escaped as \&r, \&f, \&a to avoid in-game errors.
-    
+    Check for unescaped ampersand followed by whitespace.
+
+    In FTBQuests, any & followed by a space must be escaped as \& to avoid
+    in-game errors like "Invalid formatting! You must escape whitespace after & with \&!"
+
     Args:
         file_path: Path to the SNBT file to check
-        
+
     Returns:
         Tuple of (success: bool, list of error messages)
     """
     errors = []
-    
+
     with open(file_path, 'r', encoding='utf-8') as f:
         for line_num, line in enumerate(f, 1):
-            # Find unescaped & followed by Minecraft formatting code and space
-            matches = re.finditer(FORMATTING_CODE_PATTERN, line)
+            # Find unescaped & followed by space
+            matches = list(re.finditer(AMPERSAND_SPACE_PATTERN, line))
             for match in matches:
+                # Get some context around the match
+                start = max(0, match.start() - 10)
+                end = min(len(line), match.end() + 10)
+                context = line[start:end].strip()
                 errors.append(
-                    f"Line {line_num}: Unescaped formatting code '{match.group(1)}' "
-                    f"followed by space. Use '\\{match.group(1)}' instead."
+                    f"Line {line_num}: Unescaped '& ' found. Use '\\& ' instead. "
+                    f"Context: ...{context}..."
                 )
-    
+
     return len(errors) == 0, errors
 
 
@@ -95,7 +99,7 @@ def main():
     snbt_files = find_snbt_files(repo_root)
     
     if not snbt_files:
-        print("✓ No SNBT files found to validate. Skipping check.")
+        print("[OK] No SNBT files found to validate. Skipping check.")
         return 0
     
     print(f"Found {len(snbt_files)} SNBT file(s) to validate...")
@@ -106,16 +110,16 @@ def main():
     for snbt_file in sorted(snbt_files):
         relative_path = snbt_file.relative_to(repo_root)
         
-        # Check for unescaped formatting codes
-        formatting_ok, formatting_errors = check_formatting_codes(snbt_file)
+        # Check for unescaped & followed by space
+        formatting_ok, formatting_errors = check_ampersand_space(snbt_file)
         
         # Validate SNBT syntax
         syntax_ok, syntax_error = validate_snbt_file(snbt_file)
         
         if formatting_ok and syntax_ok:
-            print(f"✓ {relative_path}")
+            print(f"[OK] {relative_path}")
         else:
-            print(f"✗ {relative_path}")
+            print(f"[FAIL] {relative_path}")
             
             if not formatting_ok:
                 print(f"  Formatting errors:")
@@ -134,7 +138,7 @@ def main():
     print()
     
     if failed_files:
-        print(f"❌ Validation failed for {len(failed_files)} file(s):")
+        print(f"[ERROR] Validation failed for {len(failed_files)} file(s):")
         for path, errors in failed_files:
             print(f"  - {path}:")
             for error in errors:
@@ -142,11 +146,11 @@ def main():
         print()
         print("Please fix the formatting issues in the above files.")
         print()
-        print("Tip: Formatting codes like &r, &f, &a followed by a space must be escaped.")
-        print("     Example: '&r Hello' should be '\\&r Hello'")
+        print("Tip: Any '&' followed by a space must be escaped with backslash.")
+        print("     Example: 'Oil & Plastic' should be 'Oil \\& Plastic'")
         return 1
     else:
-        print(f"✅ All {len(snbt_files)} SNBT file(s) are properly formatted!")
+        print(f"[SUCCESS] All {len(snbt_files)} SNBT file(s) are properly formatted!")
         return 0
 
 

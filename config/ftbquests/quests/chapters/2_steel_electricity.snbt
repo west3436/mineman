@@ -3,7 +3,7 @@
 	group: "0000000000000001"
 	order_index: 2
 	filename: "2_steel_electricity"
-	title: "Tier 2: Steel & Electricity"
+	title: "Tier 2: Steel \& Electricity"
 	icon: "immersiveengineering:ingot_steel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -41,7 +41,7 @@
 			x: -3.0d
 			y: 2.0d
 			description: [
-				"Create: The Foundry & Metallurgy adds a Create-based steel production line."
+				"Create: The Foundry \& Metallurgy adds a Create-based steel production line."
 				""
 				"Build a Blast Furnace using Create components to produce steel."
 				""

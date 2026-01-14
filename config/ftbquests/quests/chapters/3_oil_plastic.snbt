@@ -3,7 +3,7 @@
 	group: "0000000000000001"
 	order_index: 3
 	filename: "3_oil_plastic"
-	title: "Tier 3: Oil & Plastic"
+	title: "Tier 3: Oil \& Plastic"
 	icon: "pneumaticcraft:plastic"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

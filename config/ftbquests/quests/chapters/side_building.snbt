@@ -3,7 +3,7 @@
 	group: "0000000000000002"
 	order_index: 3
 	filename: "side_building"
-	title: "Side: Building & Decoration"
+	title: "Side: Building \& Decoration"
 	icon: "handcrafted:cushion_white"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -15,7 +15,7 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"&l&6Welcome to Building & Decoration!&r"
+				"&l&6Welcome to Building \& Decoration!&r"
 				""
 				"Create beautiful structures with decorative mods!"
 				""
@@ -232,12 +232,12 @@
 			]
 		}
 		{
-			title: "Macaw's Fences & Walls"
+			title: "Macaw's Fences \& Walls"
 			icon: "mcwfences:oak_picket_fence"
 			x: 4.0d
 			y: 2.0d
 			description: [
-				"&l&aMacaw's Fences & Walls&r"
+				"&l&aMacaw's Fences \& Walls&r"
 				""
 				"Define your property with style!"
 				""
@@ -372,7 +372,7 @@
 			]
 		}
 		{
-			title: "Supplementaries: Signs & Decorations"
+			title: "Supplementaries: Signs \& Decorations"
 			icon: "supplementaries:sign_post_oak"
 			x: 0.0d
 			y: 4.0d
@@ -435,7 +435,7 @@
 			]
 		}
 		{
-			title: "Supplementaries: Lighting & Ambiance"
+			title: "Supplementaries: Lighting \& Ambiance"
 			icon: "supplementaries:sconce"
 			x: 0.0d
 			y: 6.0d

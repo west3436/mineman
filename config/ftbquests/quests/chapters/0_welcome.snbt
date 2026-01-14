@@ -117,22 +117,22 @@
 				"• Learn basic automation"
 				"• Process your first ores"
 				""
-				"&fTier 2:\&r Steel & Electricity"
+				"&fTier 2:\&r Steel \& Electricity"
 				"• Advanced power generation"
 				"• Steel production"
 				"• More complex automation"
 				""
-				"&bTier 3:\&r Plastic & Oil"
+				"&bTier 3:\&r Plastic \& Oil"
 				"• Oil processing"
 				"• Plastic manufacturing"
 				"• Chemical engineering"
 				""
-				"&dTier 4:\&r Chemistry & Advanced Materials"
+				"&dTier 4:\&r Chemistry \& Advanced Materials"
 				"• Complex chemical processes"
 				"• Advanced alloys"
 				"• Specialized machinery"
 				""
-				"&6Tier 5:\&r Electronics & Computing"
+				"&6Tier 5:\&r Electronics \& Computing"
 				"• Circuit production"
 				"• Computer systems"
 				"• Advanced automation"
@@ -156,7 +156,7 @@
 			}]
 		}
 		{
-			title: "Side Content & Exploration"
+			title: "Side Content \& Exploration"
 			icon: "minecraft:compass"
 			x: 0.0d
 			y: 5.0d

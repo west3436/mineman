@@ -3,7 +3,7 @@
 	group: "0000000000000002"
 	order_index: 1
 	filename: "side_agriculture"
-	title: "Side: Agriculture & Farming"
+	title: "Side: Agriculture \& Farming"
 	icon: "farmersdelight:cooking_pot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
