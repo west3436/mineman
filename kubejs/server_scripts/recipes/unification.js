@@ -54,30 +54,32 @@ const UNIFIED_ITEMS = {
 };
 
 // Unified fluid/gas mappings - all variants map to primary
-// Note: Mekanism uses a chemical/gas system, TFMG and IE use fluids
-// For cross-mod compatibility, we'll use bucket conversion recipes
+// Note: Mekanism uses a chemical/gas system (gases don't have buckets)
+// TFMG and IE use regular fluids (which can have buckets)
+// ChemLib adds chemical compounds (may be items or fluids)
+// These conversions work for bucket items where they exist
 const UNIFIED_FLUIDS = {
-    // Hydrogen (primary: mekanism)
+    // Hydrogen (primary: mekanism, if buckets exist)
     'hydrogen_bucket': [
         'mekanism:hydrogen_bucket',
         'tfmg:hydrogen_bucket',
         'chemlib:hydrogen_bucket',
     ],
     
-    // Oxygen (primary: mekanism)
+    // Oxygen (primary: mekanism, if buckets exist)
     'oxygen_bucket': [
         'mekanism:oxygen_bucket',
         'chemlib:oxygen_bucket',
     ],
     
-    // Sulfuric Acid (primary: mekanism)
+    // Sulfuric Acid (primary: mekanism, if buckets exist)
     'sulfuric_acid_bucket': [
         'mekanism:sulfuric_acid_bucket',
         'tfmg:sulfuric_acid_bucket',
         'chemlib:sulfuric_acid_bucket',
     ],
     
-    // Chlorine (primary: mekanism)
+    // Chlorine (primary: mekanism, if buckets exist)
     'chlorine_bucket': [
         'mekanism:chlorine_bucket',
         'chemlib:chlorine_bucket',
@@ -134,6 +136,7 @@ ServerEvents.recipes(event => {
 
     // Add fluid bucket conversion recipes
     // These allow converting between equivalent fluid buckets from different mods
+    // Note: Recipes are only added if the items exist in the pack
     Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
         const primary = PRIMARY_FLUID_OUTPUTS[key];
         if (!primary) {
@@ -143,9 +146,13 @@ ServerEvents.recipes(event => {
 
         variants.forEach(variant => {
             if (variant !== primary) {
-                // Add shapeless conversion recipe: variant bucket -> primary bucket
-                event.shapeless(primary, [variant]);
-                console.log(`Added fluid conversion: ${variant} -> ${primary}`);
+                try {
+                    // Add shapeless conversion recipe: variant bucket -> primary bucket
+                    event.shapeless(primary, [variant]);
+                    console.log(`Added fluid conversion: ${variant} -> ${primary}`);
+                } catch (e) {
+                    console.warn(`Could not add fluid conversion for ${variant}: ${e.message || e}`);
+                }
             }
         });
     });
@@ -165,4 +172,31 @@ ServerEvents.tags('item', event => {
     });
 
     console.log('Item tag unification complete!');
+});
+
+ServerEvents.tags('fluid', event => {
+    console.log('Applying fluid tag unification...');
+
+    // Create unified fluid tags for cross-mod compatibility
+    // This ensures recipes can accept fluids from different mods
+    const FLUID_TAGS = {
+        'forge:hydrogen': ['mekanism:hydrogen', 'tfmg:hydrogen', 'chemlib:hydrogen'],
+        'forge:oxygen': ['mekanism:oxygen', 'chemlib:oxygen'],
+        'forge:sulfuric_acid': ['mekanism:sulfuric_acid', 'tfmg:sulfuric_acid', 'chemlib:sulfuric_acid'],
+        'forge:chlorine': ['mekanism:chlorine', 'chemlib:chlorine'],
+        'forge:creosote': ['immersiveengineering:creosote', 'tfmg:creosote'],
+    };
+
+    Object.entries(FLUID_TAGS).forEach(([tag, fluids]) => {
+        fluids.forEach(fluid => {
+            try {
+                event.add(tag, fluid);
+                console.log(`Added ${fluid} to ${tag}`);
+            } catch (e) {
+                console.warn(`Could not add ${fluid} to ${tag}: ${e.message || e}`);
+            }
+        });
+    });
+
+    console.log('Fluid tag unification complete!');
 });
