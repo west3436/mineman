@@ -223,28 +223,30 @@ ServerEvents.recipes(event => {
         C: 'minecraft:redstone_block'
     });
     
-    // Flux Point - requires flux core and advanced circuits
+    // Flux Point - extracts energy from networks (uses energy acceptor pattern)
     event.shaped('fluxnetworks:flux_point', [
         'IAI',
         'RFR',
-        'IAI'
+        'IEI'
     ], {
         I: 'mekanism:alloy_infused',
         A: 'mineman:advanced_circuit',
         R: 'minecraft:redstone',
-        F: 'fluxnetworks:flux_core'
+        F: 'fluxnetworks:flux_core',
+        E: 'minecraft:ender_pearl'
     });
     
-    // Flux Plug - requires flux core and advanced circuits
+    // Flux Plug - provides energy to networks (uses energy provider pattern)
     event.shaped('fluxnetworks:flux_plug', [
         'IAI',
         'RFR',
-        'IAI'
+        'IGI'
     ], {
         I: 'mekanism:alloy_infused',
         A: 'mineman:advanced_circuit',
-        R: 'minecraft:redstone',
-        F: 'fluxnetworks:flux_core'
+        R: 'minecraft:redstone_block',
+        F: 'fluxnetworks:flux_core',
+        G: 'minecraft:gold_ingot'
     });
 
     // === CREATE: NUCLEAR GATING ===
