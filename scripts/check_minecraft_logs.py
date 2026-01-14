@@ -28,9 +28,9 @@ CRITICAL_PATTERNS = [
     (r"\[FATAL\]", "Fatal log message"),
 ]
 
-# Error patterns that should fail CI unless they're known benign errors
+# Error patterns that should fail CI
 ERROR_PATTERNS = [
-    (r"\[ERROR\](?!.*(Unable to resolve|annotation|Optional|deprecated))", "Error message"),
+    (r"\[ERROR\]", "Error message"),
     (r"Exception caught during firing event", "Event handler exception"),
     (r"Failed to load config", "Config load failure"),
     (r"Error during pre-loading", "Pre-loading error"),
@@ -58,6 +58,10 @@ IGNORE_PATTERNS = [
     r"SLF4J:",
     r"OpenAL initialized",
     r"Unable to instantiate org.fusesource.jansi",
+    r"\[ERROR\].*Unable to resolve",
+    r"\[ERROR\].*annotation",
+    r"\[ERROR\].*Optional",
+    r"\[ERROR\].*deprecated",
 ]
 
 
@@ -85,31 +89,32 @@ def check_logs(log_path: str) -> tuple[list[tuple[int, str, str]], bool]:
         print(f"ERROR: Log file not found: {log_path}")
         sys.exit(1)
     
-    content = log_file.read_text(errors="replace")
-    lines = content.split("\n")
-    
-    # Check for successful startup
-    for pattern in SUCCESS_PATTERNS:
-        if re.search(pattern, content):
-            server_started = True
-            break
-    
-    # Check each line for issues
-    for line_num, line in enumerate(lines, start=1):
-        if should_ignore(line):
-            continue
-        
-        # Check critical patterns first
-        for pattern, issue_type in CRITICAL_PATTERNS:
-            if re.search(pattern, line, re.IGNORECASE):
-                issues.append((line_num, f"CRITICAL: {issue_type}", line.strip()))
-                break
-        else:
-            # Check error patterns
-            for pattern, issue_type in ERROR_PATTERNS:
+    # Process file line by line to handle large log files efficiently
+    with open(log_file, "r", errors="replace") as f:
+        for line_num, line in enumerate(f, start=1):
+            line = line.rstrip("\n")
+            
+            # Check for successful startup
+            if not server_started:
+                for pattern in SUCCESS_PATTERNS:
+                    if re.search(pattern, line):
+                        server_started = True
+                        break
+            
+            if should_ignore(line):
+                continue
+            
+            # Check critical patterns first
+            for pattern, issue_type in CRITICAL_PATTERNS:
                 if re.search(pattern, line, re.IGNORECASE):
-                    issues.append((line_num, f"ERROR: {issue_type}", line.strip()))
+                    issues.append((line_num, f"CRITICAL: {issue_type}", line.strip()))
                     break
+            else:
+                # Check error patterns
+                for pattern, issue_type in ERROR_PATTERNS:
+                    if re.search(pattern, line, re.IGNORECASE):
+                        issues.append((line_num, f"ERROR: {issue_type}", line.strip()))
+                        break
     
     return issues, server_started
 

@@ -15,6 +15,12 @@ on:
       - 'scripts/check_minecraft_logs.py'
   workflow_dispatch:
 
+# Server memory configuration for modded Minecraft
+# Adjust these values based on the number of mods in the pack
+env:
+  SERVER_MAX_MEMORY: 4G
+  SERVER_MIN_MEMORY: 2G
+
 jobs:
   launch-test:
     runs-on: ubuntu-latest
@@ -55,8 +61,12 @@ jobs:
       - name: Download Forge installer
         run: |
           cd server
-          FORGE_VERSION="1.20.1-47.4.13"
-          wget -q "https://maven.minecraftforge.net/net/minecraftforge/forge/${FORGE_VERSION}/forge-${FORGE_VERSION}-installer.jar" \
+          # Extract Forge version from pack.toml
+          MINECRAFT_VERSION=$(grep -oP 'minecraft = "\K[^"]+' ../pack.toml)
+          FORGE_VERSION=$(grep -oP 'forge = "\K[^"]+' ../pack.toml)
+          FULL_VERSION="${MINECRAFT_VERSION}-${FORGE_VERSION}"
+          echo "Downloading Forge ${FULL_VERSION}"
+          wget -q "https://maven.minecraftforge.net/net/minecraftforge/forge/${FULL_VERSION}/forge-${FULL_VERSION}-installer.jar" \
             -O forge-installer.jar
 
       - name: Install Forge server
@@ -92,7 +102,7 @@ jobs:
             # Fallback: find forge server jar
             FORGE_JAR=$(ls -1 forge-*-shim.jar 2>/dev/null | head -n1 || ls -1 forge-*.jar 2>/dev/null | grep -v installer | head -n1)
             if [ -n "$FORGE_JAR" ]; then
-              timeout 300 java -Xmx4G -Xms2G -jar "$FORGE_JAR" nogui 2>&1 | tee ../minecraft.log || true
+              timeout 300 java -Xmx${{ env.SERVER_MAX_MEMORY }} -Xms${{ env.SERVER_MIN_MEMORY }} -jar "$FORGE_JAR" nogui 2>&1 | tee ../minecraft.log || true
             else
               echo "ERROR: Could not find Forge server jar"
               exit 1
