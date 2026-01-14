@@ -50,13 +50,39 @@ jobs:
           unzip -o packwiz.zip
           chmod +x ./packwiz
 
+      - name: Download packwiz-installer-bootstrap
+        run: |
+          wget -q https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+
       - name: Create server directory
         run: mkdir -p server
 
-      - name: Export modpack to server
+      - name: Start packwiz server and install mods
         run: |
+          # Start packwiz serve in the background
+          ./packwiz serve --port 8080 &
+          PACKWIZ_PID=$!
+          
+          # Set up trap to clean up packwiz serve on exit
+          trap "kill $PACKWIZ_PID 2>/dev/null || true; wait $PACKWIZ_PID 2>/dev/null || true" EXIT
+          
+          # Wait for server to be ready with retry logic
+          for i in {1..10}; do
+            if curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/pack.toml | grep -q "200"; then
+              echo "Packwiz server is ready"
+              break
+            fi
+            if [ $i -eq 10 ]; then
+              echo "ERROR: Packwiz server failed to start"
+              exit 1
+            fi
+            echo "Waiting for packwiz server... (attempt $i/10)"
+            sleep 2
+          done
+          
+          # Install mods using packwiz-installer-bootstrap
           cd server
-          ../packwiz server install --pack-file ../pack.toml -y
+          java -jar ../packwiz-installer-bootstrap.jar -g -s server http://localhost:8080/pack.toml
 
       - name: Download Forge installer
         run: |
