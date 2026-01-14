@@ -1,7 +1,7 @@
 ---
 name: FTBQuests Format Check
 
-on:
+"on":
   pull_request:
     branches:
       - main
