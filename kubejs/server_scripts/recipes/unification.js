@@ -56,6 +56,7 @@ const UNIFIED_ITEMS = {
 // Unified fluid mappings - all variants map to primary
 // TConstruct is primary for molten metals (smeltery integration)
 // Note: Only molten_steel has duplicates; TFMG doesn't provide other molten metals
+// Structure maintains consistency with UNIFIED_ITEMS pattern for easy expansion
 const UNIFIED_FLUIDS = {
     'molten_steel': [
         'tfmg:molten_steel',
@@ -124,6 +125,7 @@ ServerEvents.tags('item', event => {
     console.log('Applying item tag unification...');
 
     // Create unified tags for cross-mod compatibility
+    // Item tags use forge:type/materials format (e.g., forge:plates/iron)
     Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
         const tagName = `forge:${key.replace('_', '/')}s`; // e.g., forge:plates/iron
         variants.forEach(variant => {
@@ -138,6 +140,7 @@ ServerEvents.tags('fluid', event => {
     console.log('Applying fluid tag unification...');
 
     // Create unified tags for cross-mod fluid compatibility
+    // Fluid tags use forge:fluid_name format (e.g., forge:molten_steel)
     Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
         const primary = PRIMARY_FLUIDS[key];
         if (!primary) {
