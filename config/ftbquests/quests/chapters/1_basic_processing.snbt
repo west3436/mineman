@@ -1,0 +1,499 @@
+{
+	id: "1000000000000001"
+	group: ""
+	order_index: 1
+	filename: "1_basic_processing"
+	title: "Tier 1: Basic Processing"
+	icon: "create:mechanical_press"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Basic Processing"
+			icon: "minecraft:iron_ingot"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Welcome to Tier 1! It's time to move beyond basic vanilla crafting."
+				""
+				"In this tier, you'll set up your first automated processing system."
+				""
+				"You have a choice between two powerful mods: Create or Immersive Engineering."
+			]
+			id: "1000000000000002"
+			tasks: [{
+				id: "1000000000000003"
+				type: "checkmark"
+				title: "Click to start"
+			}]
+			rewards: [
+				{
+					id: "1000000000000004"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 16
+				}
+				{
+					id: "1000000000000005"
+					type: "item"
+					item: "minecraft:copper_ingot"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Choose Your Path"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbquests:textures/gui/quest_types.png"
+				}
+			}
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Time to choose your processing path!"
+				""
+				"&6Create&r - Focus on kinetic energy, mechanical systems, and elegant automation"
+				""
+				"&cImmersive Engineering&r - Focus on multiblock structures, electricity, and industrial systems"
+				""
+				"Choose one path to continue (OR task)."
+			]
+			dependencies: ["1000000000000002"]
+			id: "1000000000000006"
+			tasks: [
+				{
+					id: "1000000000000007"
+					type: "item"
+					title: "Choose Create"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "1000000000000008"
+					type: "item"
+					title: "Choose Immersive Engineering"
+					item: "immersiveengineering:component_iron"
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000009"
+					type: "item"
+					item: "minecraft:coal"
+					count: 32
+				}
+				{
+					id: "1000000000000010"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Build a Mechanical Press"
+			icon: "create:mechanical_press"
+			x: -3.0d
+			y: 4.0d
+			description: [
+				"The Mechanical Press is essential for Create automation."
+				""
+				"It can press ingots into sheets, crush items, and compact materials."
+				""
+				"You'll need to power it with a source of rotational force like a Water Wheel or Windmill."
+			]
+			dependencies: ["1000000000000006"]
+			dependency_requirement: "one_completed"
+			id: "1000000000000011"
+			tasks: [
+				{
+					id: "1000000000000012"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "1000000000000013"
+					type: "item"
+					title: "Power Source"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:water_wheel"
+									Count: 1b
+								}
+								{
+									id: "create:windmill_bearing"
+									Count: 1b
+								}
+								{
+									id: "create:hand_crank"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000014"
+					type: "item"
+					item: "create:shaft"
+					count: 8
+				}
+				{
+					id: "1000000000000015"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Process Your First Ores"
+			icon: "create:crushed_raw_iron"
+			x: -3.0d
+			y: 5.5d
+			description: [
+				"Use the Mechanical Press to process raw ores!"
+				""
+				"Crushing raw ores gives you crushed ores, which can be smelted for extra output."
+				""
+				"This is your first step into efficient ore processing."
+			]
+			dependencies: ["1000000000000011"]
+			id: "1000000000000016"
+			tasks: [
+				{
+					id: "1000000000000017"
+					type: "item"
+					title: "Any Crushed Ore"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:crushed_raw_iron"
+									Count: 1b
+								}
+								{
+									id: "create:crushed_raw_copper"
+									Count: 1b
+								}
+								{
+									id: "create:crushed_raw_gold"
+									Count: 1b
+								}
+								{
+									id: "create:crushed_raw_zinc"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000018"
+					type: "item"
+					item: "minecraft:raw_iron"
+					count: 32
+				}
+				{
+					id: "1000000000000019"
+					type: "item"
+					item: "minecraft:raw_copper"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Automate Basic Crafting"
+			icon: "create:mechanical_crafter"
+			x: -3.0d
+			y: 7.0d
+			description: [
+				"Mechanical Crafters let you automate crafting recipes!"
+				""
+				"Arrange them in the shape of the recipe you want to automate."
+				""
+				"This is the foundation of Create automation."
+			]
+			dependencies: ["1000000000000016"]
+			id: "1000000000000020"
+			tasks: [
+				{
+					id: "1000000000000021"
+					type: "item"
+					item: "create:mechanical_crafter"
+					count: 3L
+				}
+				{
+					id: "1000000000000022"
+					type: "item"
+					title: "Automated Item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:andesite_casing"
+									Count: 1b
+								}
+								{
+									id: "create:copper_casing"
+									Count: 1b
+								}
+								{
+									id: "create:brass_casing"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000023"
+					type: "item"
+					item: "create:brass_ingot"
+					count: 16
+				}
+				{
+					id: "1000000000000024"
+					type: "item"
+					item: "create:electron_tube"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Build Engineer's Workbench"
+			icon: "immersiveengineering:workbench"
+			x: 3.0d
+			y: 4.0d
+			description: [
+				"The Engineer's Workbench is your gateway to Immersive Engineering."
+				""
+				"Place it and interact to access IE's crafting interface."
+				""
+				"You'll need it to craft all IE components and tools."
+			]
+			dependencies: ["1000000000000006"]
+			dependency_requirement: "one_completed"
+			id: "1000000000000025"
+			tasks: [
+				{
+					id: "1000000000000026"
+					type: "item"
+					item: "immersiveengineering:workbench"
+				}
+				{
+					id: "1000000000000027"
+					type: "item"
+					item: "immersiveengineering:blueprint"
+					title: "Any Blueprint"
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000028"
+					type: "item"
+					item: "immersiveengineering:component_iron"
+					count: 8
+				}
+				{
+					id: "1000000000000029"
+					type: "item"
+					item: "immersiveengineering:component_steel"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Create a Crusher"
+			icon: "immersiveengineering:crusher"
+			x: 3.0d
+			y: 5.5d
+			description: [
+				"The Crusher is IE's ore processing multiblock."
+				""
+				"Build it following the blueprint, then power it to crush ores for double output."
+				""
+				"This is your first multiblock structure!"
+			]
+			dependencies: ["1000000000000025"]
+			id: "1000000000000030"
+			tasks: [
+				{
+					id: "1000000000000031"
+					type: "item"
+					item: "immersiveengineering:crusher"
+				}
+				{
+					id: "1000000000000032"
+					type: "item"
+					title: "Crushed Ore"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:dust_iron"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:dust_copper"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:dust_gold"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000033"
+					type: "item"
+					item: "minecraft:raw_iron"
+					count: 32
+				}
+				{
+					id: "1000000000000034"
+					type: "item"
+					item: "minecraft:raw_copper"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Basic Wire Production"
+			icon: "immersiveengineering:wirecoil_copper"
+			x: 3.0d
+			y: 7.0d
+			description: [
+				"Wires are essential for IE power distribution."
+				""
+				"Craft wire coils and use them to connect power sources to machines."
+				""
+				"You'll also need connectors to attach wires to blocks."
+			]
+			dependencies: ["1000000000000030"]
+			id: "1000000000000035"
+			tasks: [
+				{
+					id: "1000000000000036"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+					count: 4L
+				}
+				{
+					id: "1000000000000037"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+					count: 8L
+				}
+				{
+					id: "1000000000000038"
+					type: "item"
+					title: "Power Source"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "immersiveengineering:dynamo"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:watermill"
+									Count: 1b
+								}
+								{
+									id: "immersiveengineering:windmill"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000039"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+					count: 2
+				}
+				{
+					id: "1000000000000040"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Ready for Tier 2"
+			icon: "minecraft:diamond"
+			x: 0.0d
+			y: 8.5d
+			description: [
+				"Congratulations! You've completed Tier 1 Basic Processing!"
+				""
+				"You've mastered either Create's mechanical systems or IE's industrial infrastructure."
+				""
+				"Now you're ready to move on to Tier 2: Advanced Processing and Power Generation."
+			]
+			dependencies: [
+				"1000000000000020"
+				"1000000000000035"
+			]
+			dependency_requirement: "one_completed"
+			id: "1000000000000041"
+			tasks: [{
+				id: "1000000000000042"
+				type: "checkmark"
+				title: "Ready for Tier 2"
+			}]
+			rewards: [
+				{
+					id: "1000000000000043"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "1000000000000044"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 8
+				}
+				{
+					id: "1000000000000045"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}
