@@ -54,10 +54,10 @@ const UNIFIED_ITEMS = {
 };
 
 // Unified fluid/gas mappings - all variants map to primary
-// Note: Mekanism uses a chemical/gas system (gases don't have buckets)
-// TFMG and IE use regular fluids (which can have buckets)
-// ChemLib adds chemical compounds (may be items or fluids)
-// These conversions work for bucket items where they exist
+// Note: These are BUCKET ITEMS that contain the fluids/gases
+// Mekanism gases (hydrogen, oxygen, chlorine) may have bucket representations for fluid transfer
+// TFMG and IE use regular fluids (which have bucket items)
+// ChemLib adds chemical compounds as items/fluids with bucket forms
 const UNIFIED_FLUIDS = {
     // Hydrogen - Primary: mekanism:hydrogen_bucket
     'hydrogen_bucket': [
@@ -181,21 +181,21 @@ ServerEvents.tags('fluid', event => {
     // This ensures recipes can accept fluids from different mods
     // Note: These reference the fluid itself (e.g., 'mekanism:hydrogen'),
     // not the bucket item (e.g., 'mekanism:hydrogen_bucket')
-    const FLUID_TAGS = {
-        'forge:hydrogen': ['mekanism:hydrogen', 'tfmg:hydrogen', 'chemlib:hydrogen'],
-        'forge:oxygen': ['mekanism:oxygen', 'chemlib:oxygen'],
-        'forge:sulfuric_acid': ['mekanism:sulfuric_acid', 'tfmg:sulfuric_acid', 'chemlib:sulfuric_acid'],
-        'forge:chlorine': ['mekanism:chlorine', 'chemlib:chlorine'],
-        'forge:creosote': ['immersiveengineering:creosote', 'tfmg:creosote'],
-    };
-
-    Object.entries(FLUID_TAGS).forEach(([tag, fluids]) => {
-        fluids.forEach(fluid => {
+    // Fluid IDs are derived from bucket IDs by removing '_bucket' suffix
+    Object.entries(UNIFIED_FLUIDS).forEach(([key, bucketVariants]) => {
+        // Convert bucket category to fluid tag name (e.g., 'hydrogen_bucket' -> 'forge:hydrogen')
+        const fluidName = key.replace('_bucket', '');
+        const tagName = `forge:${fluidName}`;
+        
+        // Convert bucket item IDs to fluid IDs (e.g., 'mekanism:hydrogen_bucket' -> 'mekanism:hydrogen')
+        const fluidVariants = bucketVariants.map(bucket => bucket.replace('_bucket', ''));
+        
+        fluidVariants.forEach(fluid => {
             try {
-                event.add(tag, fluid);
-                console.log(`Added ${fluid} to ${tag}`);
+                event.add(tagName, fluid);
+                console.log(`Added ${fluid} to ${tagName}`);
             } catch (e) {
-                console.warn(`Could not add ${fluid} to ${tag}: ${e.message || e}`);
+                console.warn(`Could not add ${fluid} to ${tagName}: ${e.message || e}`);
             }
         });
     });
