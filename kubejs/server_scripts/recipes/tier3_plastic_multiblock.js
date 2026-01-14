@@ -23,14 +23,16 @@ ServerEvents.recipes(event => {
         512                                        // Energy: 512 RF
     );
 
-    // === STEP 2: BOTTLING - PLASTIC MIXTURE TO UNPROCESSED PLASTIC ===
-    // Use IE Bottling Machine to fill coal coke with plastic mixture
+    // === STEP 2: PLASTIC SOLIDIFIER MULTIBLOCK - PLASTIC MIXTURE TO UNPROCESSED PLASTIC ===
+    // Use custom Multiblocked2 multiblock built with IE blocks
     // This creates a semi-solid unprocessed plastic item
-    event.recipes.immersiveengineering.bottling(
-        UNPROCESSED_PLASTIC,                       // Output: unprocessed plastic item
-        '#forge:coal_coke',                        // Input: coal coke (catalyst/binder)
-        Fluid.of('kubejs:plastic_mixture', 100)    // Input: plastic mixture fluid
-    );
+    // Multiblock ID: 'plastic_solidifier' - must be defined in-game using Multiblocked2
+    event.recipes.multiblocked.multiblock('plastic_solidifier')
+        .inputFluids(Fluid.of('kubejs:plastic_mixture', 100))  // Input: plastic mixture
+        .inputItems('#forge:coal_coke')                        // Input: coal coke (catalyst)
+        .outputItems(UNPROCESSED_PLASTIC)                      // Output: unprocessed plastic
+        .duration(100)                                         // Duration: 100 ticks (5 seconds)
+        .perTick(builder => builder.energy(256));              // Energy: 256 RF/t (1280 RF total)
 
     // === STEP 3: METAL PRESS - STAMP INTO PLASTIC SHEETS ===
     // Use IE Metal Press to stamp unprocessed plastic into plastic sheets
@@ -67,20 +69,21 @@ ServerEvents.recipes(event => {
 // This system uses ONLY Immersive Engineering blocks and machines
 // NO Create components required - fully IE-compatible
 //
-// REQUIRED IE MULTIBLOCKS:
-// 1. Refinery (3x5x3) - Processes oil into plastic mixture
-// 2. Metal Press (1x1x1) - Stamps unprocessed plastic into sheets
-// 3. Optional: Arc Furnace for coal coke production
+// REQUIRED MACHINES:
+// 1. IE Refinery (3x5x3) - Processes oil into plastic mixture
+// 2. Plastic Solidifier Multiblock (3x3x3 - Multiblocked2) - Creates unprocessed plastic
+// 3. IE Metal Press (1x1x1) - Stamps unprocessed plastic into sheets
 //
-// PLASTIC PRODUCTION MULTIBLOCK (Custom Multiblocked2 Structure)
+// PLASTIC SOLIDIFIER MULTIBLOCK (Custom Multiblocked2 Structure)
+// ID: 'plastic_solidifier'
 // Size: 3x3x3 compact IE-style multiblock
 // 
-// Materials needed:
-// - 18x Heavy Engineering Block (IE multiblock casing)
-// - 6x Redstone Engineering Block (control/power)
-// - 3x Steel Fluid Pipes (IE fluid handling)
-// - 2x Capacitor (IE power storage)
-// - 1x Multiblock Controller (Multiblocked2)
+// Materials needed (IE blocks only):
+// - 18x Heavy Engineering Block (immersiveengineering:heavy_engineering)
+// - 6x Redstone Engineering Block (immersiveengineering:rs_engineering)
+// - 2x Steel Fluid Pipe (immersiveengineering:fluid_pipe)
+// - 1x LV Capacitor (immersiveengineering:capacitor_lv)
+// - 1x Multiblock Controller (multiblocked2:controller)
 //
 // Structure Layout (IE-themed):
 // Layer 1 (Base):    [Heavy][Heavy][Heavy]
@@ -95,7 +98,21 @@ ServerEvents.recipes(event => {
 //                    [Heavy][Capacitor][Heavy]
 //                    [Heavy][Heavy][Heavy]
 //
-// Recipe: 250mb Oil + Coal Coke → Unprocessed Plastic → 2 Plastic Sheets
-// Power: 512 RF/t (IE standard power)
-// Processing: 3-step process (Refinery → Bottling → Press)
+// Multiblock Recipe:
+// - Input: 100mb Plastic Mixture (from IE Refinery)
+// - Input: 1x Coal Coke (catalyst)
+// - Output: 1x Unprocessed Plastic (solid item)
+// - Energy: 256 RF/t for 5 seconds (1280 RF total)
+//
+// Full Process: 250mb Oil + Coal Coke → Unprocessed Plastic → 2 Plastic Sheets
+// Total Power: 512 RF (refinery) + 1280 RF (solidifier) + 2400 RF (press) = 4192 RF
+// Total Time: ~10s (refinery) + 5s (solidifier) + 4s (press) = ~19 seconds per 2 sheets
 // Tier: 3 (requires steel and IE electricity)
+//
+// TO BUILD IN-GAME:
+// 1. Construct the 3x3x3 structure using IE blocks as shown above
+// 2. Use Multiblocked2's builder tool on the controller
+// 3. Define the structure pattern and save as 'plastic_solidifier'
+// 4. Configure the recipe: 100mb mixture + coal coke → unprocessed plastic
+// 5. Set energy requirement: 256 RF/t, duration: 100 ticks
+// 6. Assign input ports (fluid + item) and output port (item)

@@ -15,7 +15,7 @@ This document describes the **IE Plastic Refinery** system, using **Immersive En
 
 ## Production Process (3-Step IE Chain)
 
-### Step 1: Refinery - Oil Processing
+### Step 1: IE Refinery - Oil Processing
 **Machine**: Immersive Engineering Refinery (3x5x3 multiblock)
 
 **Recipe**:
@@ -25,16 +25,24 @@ This document describes the **IE Plastic Refinery** system, using **Immersive En
 - Power: 512 RF
 - Time: ~10 seconds
 
-### Step 2: Bottling Machine - Solidification
-**Machine**: Immersive Engineering Bottling Machine
+### Step 2: Plastic Solidifier Multiblock - Solidification
+**Machine**: Custom Multiblocked2 Multiblock (3x3x3 built with IE blocks)
 
 **Recipe**:
-- Input: 1x Coal Coke (catalyst/binder)
 - Input: 100mb Plastic Mixture
+- Input: 1x Coal Coke (catalyst/binder)
 - Output: 1x Unprocessed Plastic (solid item)
-- Power: Passive (gravity-fed)
+- Power: 256 RF/t (1280 RF total)
+- Time: 5 seconds (100 ticks)
 
-### Step 3: Metal Press - Sheet Stamping
+**Multiblock Structure**:
+- 18x Heavy Engineering Block (IE)
+- 6x Redstone Engineering Block (IE)
+- 2x Steel Fluid Pipe (IE)
+- 1x LV Capacitor (IE)
+- 1x Multiblock Controller (Multiblocked2)
+
+### Step 3: IE Metal Press - Sheet Stamping
 **Machine**: Immersive Engineering Metal Press
 
 **Recipe**:
@@ -49,20 +57,20 @@ This document describes the **IE Plastic Refinery** system, using **Immersive En
 **Per 2 Plastic Sheets**:
 - 250mb Crude Oil (from IP pumpjack)
 - 1 Coal Coke (from IE Coke Oven)
-- ~3000 RF total energy
-- ~15 seconds total processing time
+- ~4200 RF total energy (512 + 1280 + 2400)
+- ~19 seconds total processing time
 
 ## Multiblock Structure (Multiblocked2)
 
-### Design: IE Plastic Refinery (3x3x3)
+### Design: Plastic Solidifier (3x3x3)
 
-A compact IE-themed multiblock that consolidates the 3-step process.
+A compact IE-themed multiblock that processes plastic mixture into solid unprocessed plastic.
 
-#### Materials Required
-- **18x Heavy Engineering Block** - Primary IE multiblock casing
-- **6x Redstone Engineering Block** - Control/power distribution
-- **3x Steel Fluid Pipe** - IE fluid handling
-- **2x LV/MV Capacitor** - IE power storage/buffer
+#### Materials Required (IE Blocks Only)
+- **18x Heavy Engineering Block** - Primary IE multiblock casing (immersiveengineering:heavy_engineering)
+- **6x Redstone Engineering Block** - Control/power distribution (immersiveengineering:rs_engineering)
+- **2x Steel Fluid Pipe** - IE fluid input handling (immersiveengineering:fluid_pipe)
+- **1x LV Capacitor** - IE power storage/buffer (immersiveengineering:capacitor_lv)
 - **1x Multiblock Controller** - Multiblocked2 controller block
 
 ### Layer-by-Layer Construction
@@ -70,7 +78,7 @@ A compact IE-themed multiblock that consolidates the 3-step process.
 ```
 Layer 3 (Top - Power):
 [H] [H] [H]
-[H] [C] [H]  C = Capacitor (power storage)
+[H] [C] [H]  C = LV Capacitor (power storage)
 [H] [H] [H]  H = Heavy Engineering Block
 
 Layer 2 (Core - Processing):
@@ -86,20 +94,37 @@ Layer 1 (Base - Foundation):
 [H] [H] [H]  H = Heavy Engineering Block
 ```
 
-## IE Machines Setup (Alternative to Multiblock)
+### In-Game Setup Instructions
 
-If not using the custom multiblock, set up standard IE machines:
+1. **Build the Structure**: Place blocks according to the layer pattern above
+2. **Use Multiblocked2 Builder Tool**: Right-click the controller with the builder tool
+3. **Define Pattern**: Select all blocks and save the pattern as 'plastic_solidifier'
+4. **Configure Recipe**:
+   - Input: 100mb Plastic Mixture (fluid)
+   - Input: 1x Coal Coke (item)
+   - Output: 1x Unprocessed Plastic (item)
+   - Energy: 256 RF/t
+   - Duration: 100 ticks (5 seconds)
+5. **Assign Ports**:
+   - Fluid Input: Connect to Steel Fluid Pipes
+   - Item Input: Connect to one port
+   - Item Output: Connect to another port
+   - Energy Input: Connect to LV Capacitor
 
-### Required IE Multiblocks/Machines
-1. **IE Refinery** (3x5x3)
+## IE Machines Setup
+
+### Required Machines
+
+1. **IE Refinery** (3x5x3 multiblock)
    - Process oil into plastic mixture
    - Requires LV power input
    - Use IE pipes for fluid routing
 
-2. **IE Bottling Machine** (1x1x1)
-   - Fill coal coke with plastic mixture
-   - Gravity-fed or pump-assisted
-   - Outputs to conveyor belt
+2. **Plastic Solidifier Multiblock** (3x3x3 - Multiblocked2)
+   - Built with IE Heavy Engineering Blocks
+   - Processes plastic mixture + coal coke → unprocessed plastic
+   - Requires LV power (256 RF/t)
+   - Must be constructed and configured in-game
 
 3. **IE Metal Press** (1x2x1)
    - Stamp unprocessed plastic into sheets
@@ -171,7 +196,7 @@ Uses more resources but simpler setup (single Refinery):
    - Set recipe: Oil + Coal Coke → Plastic Sheets
    - Assign input/output ports
 
-### Option B: Standard IE Machines
+### Option B: Standard IE Setup
 
 1. **Build IE Refinery**:
    - 3x5x3 multiblock structure
@@ -179,9 +204,11 @@ Uses more resources but simpler setup (single Refinery):
    - Provide LV power
    - Output to plastic mixture tank
 
-2. **Place Bottling Machine**:
+2. **Build Plastic Solidifier Multiblock**:
+   - Construct 3x3x3 with IE blocks (see structure above)
+   - Configure with Multiblocked2 builder tool
+   - Connect fluid input from refinery
    - Feed coal coke via hopper/belt
-   - Pump in plastic mixture
    - Output unprocessed plastic to belt
 
 3. **Place Metal Press**:
@@ -193,8 +220,9 @@ Uses more resources but simpler setup (single Refinery):
 ## Energy Requirements
 
 - **Refinery**: 512 RF per operation (~10s) = 51.2 RF/t average
+- **Plastic Solidifier**: 256 RF/t for 5s = 1280 RF total
 - **Metal Press**: 2400 RF per operation (~4s) = 600 RF/t average
-- **Total**: ~650 RF/t during active processing
+- **Total**: ~4200 RF per 2 plastic sheets
 
 ### Recommended IE Power Sources (Tier 3)
 - **Thermoelectric Generator** - Passive, early game
