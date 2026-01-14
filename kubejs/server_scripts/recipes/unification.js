@@ -338,23 +338,6 @@ ServerEvents.recipes(event => {
     });
 
     console.log('Recipe unification complete!');
-
-    // Add conversion recipes for wires with multiple sources
-    // These allow manual conversion of existing items in player inventory
-    // (the recipe output replacement above only affects newly crafted items, not existing ones)
-    console.log('Adding wire conversion recipes...');
-    
-    // Copper wire conversions (3 sources: Create Additions, IE, TFMG)
-    event.shapeless('createaddition:copper_wire', ['immersiveengineering:wire_copper']);
-    event.shapeless('createaddition:copper_wire', ['tfmg:copper_wire']);
-    event.shapeless('immersiveengineering:wire_copper', ['createaddition:copper_wire']);
-    event.shapeless('tfmg:copper_wire', ['createaddition:copper_wire']);
-    
-    // Electrum wire conversion (2 sources: Create Additions, IE)
-    event.shapeless('createaddition:electrum_wire', ['immersiveengineering:wire_electrum']);
-    event.shapeless('immersiveengineering:wire_electrum', ['createaddition:electrum_wire']);
-    
-    console.log('Wire conversion recipes complete!');
 });
 
 ServerEvents.tags('item', event => {
