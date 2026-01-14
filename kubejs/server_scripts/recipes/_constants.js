@@ -71,11 +71,34 @@ const TIER_GATES = {
 
 // Primary fluid outputs for unification
 const PRIMARY_FLUIDS = {
+    // Oil Products (Immersive Petroleum)
+    'crude_oil': 'immersivepetroleum:crudeoil',
     'diesel': 'immersivepetroleum:diesel',
     'gasoline': 'immersivepetroleum:gasoline',
     'kerosene': 'immersivepetroleum:kerosene',
     'lubricant': 'immersivepetroleum:lubricant',
     'naphtha': 'immersivepetroleum:naphtha',
-    'crude_oil': 'immersivepetroleum:crudeoil',
+
+    // Hydrocarbon Gases (TFMG)
+    'lpg': 'tfmg:lpg',
+    'propane': 'tfmg:propane',
+    'butane': 'tfmg:butane',
+
+    // Biofuels
+    'ethanol': 'immersiveengineering:ethanol',
+    'biodiesel': 'immersiveengineering:biodiesel',
+    'seed_oil': 'createaddition:seed_oil',
+
+    // Miscellaneous
+    'molten_steel': 'tconstruct:molten_steel',
     'honey': 'create:honey',
+};
+
+// Primary bucket items for chemical gases
+const PRIMARY_BUCKET_ITEMS = {
+    'hydrogen_bucket': 'mekanism:hydrogen_bucket',
+    'oxygen_bucket': 'mekanism:oxygen_bucket',
+    'chlorine_bucket': 'mekanism:chlorine_bucket',
+    'sulfuric_acid_bucket': 'mekanism:sulfuric_acid_bucket',
+    'creosote_bucket': 'immersiveengineering:creosote_bucket',
 };

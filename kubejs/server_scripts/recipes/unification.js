@@ -423,47 +423,8 @@ const PRIMARY_OUTPUTS = {
 };
 
 // =============================================================================
-// PRIMARY FLUIDS - The canonical fluid for each unified category
-// =============================================================================
-
-const PRIMARY_FLUIDS = {
-    // Oil Products (Immersive Petroleum)
-    'crude_oil': 'immersivepetroleum:crudeoil',
-    'diesel': 'immersivepetroleum:diesel',
-    'gasoline': 'immersivepetroleum:gasoline',
-    'kerosene': 'immersivepetroleum:kerosene',
-    'lubricant': 'immersivepetroleum:lubricant',
-    'naphtha': 'immersivepetroleum:naphtha',
-
-    // Hydrocarbon Gases (TFMG)
-    'lpg': 'tfmg:lpg',
-    'propane': 'tfmg:propane',
-    'butane': 'tfmg:butane',
-
-    // Biofuels
-    'ethanol': 'immersiveengineering:ethanol',
-    'biodiesel': 'immersiveengineering:biodiesel',
-    'seed_oil': 'createaddition:seed_oil',
-
-    // Miscellaneous
-    'molten_steel': 'tconstruct:molten_steel',
-    'honey': 'create:honey',
-};
-
-// =============================================================================
-// PRIMARY BUCKET ITEMS - The canonical bucket for each chemical gas
-// =============================================================================
-
-const PRIMARY_BUCKET_ITEMS = {
-    'hydrogen_bucket': 'mekanism:hydrogen_bucket',
-    'oxygen_bucket': 'mekanism:oxygen_bucket',
-    'chlorine_bucket': 'mekanism:chlorine_bucket',
-    'sulfuric_acid_bucket': 'mekanism:sulfuric_acid_bucket',
-    'creosote_bucket': 'immersiveengineering:creosote_bucket',
-};
-
-// =============================================================================
 // RECIPE UNIFICATION - Replace all variant outputs with primary items/fluids
+// (PRIMARY_FLUIDS and PRIMARY_BUCKET_ITEMS are defined in _constants.js)
 // =============================================================================
 
 ServerEvents.recipes(event => {
