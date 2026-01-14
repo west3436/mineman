@@ -130,7 +130,7 @@ hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "1cf57d3945f3cf6f86a9e04ddf9529b50b0bae99256f858002fedadbe4a9236b"
+hash = "284ae91b8d53cdbb28aca3c6a30d4f880df62060bcc3f989f5a15f4d6f025928"
 
 [[files]]
 file = "kubejs/server_scripts/dump_registry.js"
@@ -138,7 +138,7 @@ hash = "c73e96a21322bb43c2ebf314bcfeb97d54b6962adb5968f89f1e8000bf39f657"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
-hash = "a08ff1613e38f2dc6e10fdccf710d60554dfc237f019ede6670737bac5f933cf"
+hash = "5d09389c0d99a81de8b10d2d5e3cb07f14b67ecfeba4c1db0b463d8dfa32e4e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
@@ -166,7 +166,7 @@ hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
-hash = "03ae4e43ec3a05ff91bad3b571765b945b8094d4fb584e2aa0ca94a37ee4dff9"
+hash = "45dfe35a6a66ce3e607b386733d6022b8a0bad0ca9f2641d3b75d9be4c367976"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"
