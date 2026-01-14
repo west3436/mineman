@@ -13,6 +13,13 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    // Gears - Use Industrial Foregoing for common materials, Forestry for unique alloys
+    'iron_gear': 'industrialforegoing:iron_gear',
+    'gold_gear': 'industrialforegoing:gold_gear',
+    'diamond_gear': 'industrialforegoing:diamond_gear',
+    'copper_gear': 'forestry:gear_copper',
+    'bronze_gear': 'forestry:gear_bronze',
+    'tin_gear': 'forestry:gear_tin',
 };
 
 // Unified tag mappings for cross-mod compatibility
@@ -23,6 +30,11 @@ const UNIFIED_TAGS = {
     'steel_plate': 'forge:plates/steel',
     'aluminum_plate': 'forge:plates/aluminum',
     'iron_gear': 'forge:gears/iron',
+    'gold_gear': 'forge:gears/gold',
+    'diamond_gear': 'forge:gears/diamond',
+    'copper_gear': 'forge:gears/copper',
+    'bronze_gear': 'forge:gears/bronze',
+    'tin_gear': 'forge:gears/tin',
     'steel_gear': 'forge:gears/steel',
 };
 
