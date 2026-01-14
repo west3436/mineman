@@ -122,19 +122,22 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.hideFluids(event => {
     console.log('Hiding duplicate unified fluids in JEI...');
- 
-    // Hide duplicate molten metals
+
+    // Hide duplicate honey fluids
     const HIDDEN_FLUID_DUPLICATES = [
-        // TFMG molten steel (TConstruct is primary)
+        'forestry:honey',
+        'growthcraft_apiary:honey_fluid_source',
+        'tconstruct:honey',
+        // TFMG molten steel
         'tfmg:molten_steel',
-        // PneumaticCraft fluids (Immersive Petroleum is primary)
+        // PneumaticCraft fluids
         'pneumaticcraft:diesel',
         'pneumaticcraft:gasoline',
         'pneumaticcraft:kerosene',
         'pneumaticcraft:lubricant',
         'pneumaticcraft:oil', // crude oil
 
-        // TFMG fluids (Immersive Petroleum is primary)
+        // TFMG fluids
         'tfmg:diesel',
         'tfmg:gasoline',
         'tfmg:kerosene',

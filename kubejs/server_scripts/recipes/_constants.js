@@ -24,6 +24,11 @@ const PRIMARY_OUTPUTS = {
     'raw_lead_block': 'tfmg:raw_lead_block',
 };
 
+// Primary fluid outputs for unification
+const PRIMARY_FLUID_OUTPUTS = {
+    'honey': 'create:honey',
+};
+
 // Unified tag mappings for cross-mod compatibility
 const UNIFIED_TAGS = {
     'iron_plate': 'forge:plates/iron',

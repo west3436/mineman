@@ -241,6 +241,17 @@ const UNIFIED_FLUIDS = {
     ],
 };
 
+// Unified fluid mappings - all variants map to primary
+// Note: Primary fluid is included in the array for tag unification
+const UNIFIED_FLUIDS = {
+    'honey': [
+        'create:honey',
+        'forestry:honey',
+        'growthcraft_apiary:honey_fluid_source',
+        'tconstruct:honey',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -297,6 +308,11 @@ const PRIMARY_FLUIDS = {
     'lubricant': 'immersivepetroleum:lubricant',
     'naphtha': 'immersivepetroleum:naphtha',
     'crude_oil': 'immersivepetroleum:crudeoil',
+};
+
+// Primary fluid for each category
+const PRIMARY_FLUID_OUTPUTS = {
+    'honey': 'create:honey',
 };
 
 ServerEvents.recipes(event => {
