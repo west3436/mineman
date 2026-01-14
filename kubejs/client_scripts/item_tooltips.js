@@ -64,6 +64,7 @@ ItemEvents.tooltip(event => {
         'create:copper_sheet',
         'create:golden_sheet',
         'tfmg:steel_sheet',
+        'tfmg:plastic_sheet',
     ];
 
     UNIFIED_TOOLTIP_ITEMS.forEach(item => {
