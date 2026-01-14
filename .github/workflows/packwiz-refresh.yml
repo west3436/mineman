@@ -30,7 +30,7 @@ jobs:
         run: |
           wget https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86.zip \
             -O packwiz.zip
-          unzip -0 packwiz.zip
+          unzip -o packwiz.zip
           chmod +x ./packwiz
 
       - name: Run Packwiz Refresh
