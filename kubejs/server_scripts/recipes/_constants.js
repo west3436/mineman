@@ -8,11 +8,11 @@ const PRIMARY_OUTPUTS = {
     'gold_plate': 'create:golden_sheet',
     'steel_plate': 'tfmg:steel_sheet',
     'steel_ingot': 'tfmg:steel_ingot',
+    'steel_block': 'tfmg:steel_block',
+    'steel_nugget': 'tfmg:steel_nugget',
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
-    'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
-    'aluminum_plate': 'immersiveengineering:plate_aluminum',
     // Gears - Use Industrial Foregoing for common materials, Forestry for unique alloys
     'iron_gear': 'industrialforegoing:iron_gear',
     'gold_gear': 'industrialforegoing:gold_gear',
@@ -20,6 +20,15 @@ const PRIMARY_OUTPUTS = {
     'copper_gear': 'forestry:gear_copper',
     'bronze_gear': 'forestry:gear_bronze',
     'tin_gear': 'forestry:gear_tin',
+    'aluminum_ingot': 'tfmg:aluminum_ingot',
+    'aluminum_plate': 'tfmg:aluminum_sheet',
+    'constantan_ingot': 'tfmg:constantan_ingot',
+    'nickel_ingot': 'tfmg:nickel_ingot',
+    'lead_ingot': 'tfmg:lead_ingot',
+    'lead_plate': 'tfmg:lead_sheet',
+    'lead_dust': 'mekanism:dust_lead',
+    'lead_block': 'tfmg:lead_block',
+    'raw_lead_block': 'tfmg:raw_lead_block',
 };
 
 // Unified tag mappings for cross-mod compatibility
@@ -58,4 +67,15 @@ const TIER_GATES = {
     6: [ // Future Tech
         'ae2:controller',
     ],
+};
+
+// Primary fluid outputs for unification
+const PRIMARY_FLUIDS = {
+    'diesel': 'immersivepetroleum:diesel',
+    'gasoline': 'immersivepetroleum:gasoline',
+    'kerosene': 'immersivepetroleum:kerosene',
+    'lubricant': 'immersivepetroleum:lubricant',
+    'naphtha': 'immersivepetroleum:naphtha',
+    'crude_oil': 'immersivepetroleum:crudeoil',
+    'honey': 'create:honey',
 };
