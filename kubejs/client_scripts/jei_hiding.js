@@ -112,6 +112,20 @@ JEIEvents.hideItems(event => {
         // If future mods add duplicate gears, hide them here
         // Example: 'some_other_mod:iron_gear', // if another mod adds iron gear
 
+        // === FLUID BUCKET DUPLICATES ===
+        // Hide ChemLib fluid buckets (Mekanism is primary for gases)
+        'chemlib:hydrogen_bucket',
+        'chemlib:oxygen_bucket',
+        'chemlib:sulfuric_acid_bucket',
+        'chemlib:chlorine_bucket',
+
+        // Hide TFMG fluid buckets where Mekanism is primary
+        'tfmg:hydrogen_bucket',
+        'tfmg:sulfuric_acid_bucket',
+
+        // Hide TFMG creosote bucket (ImmersiveEngineering is primary)
+        'tfmg:creosote_bucket',
+
         // Add more duplicates as needed during testing
     ];
 

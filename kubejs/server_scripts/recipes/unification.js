@@ -311,6 +311,45 @@ const UNIFIED_FLUIDS = {
     ],
 };
 
+// Unified fluid/gas mappings - all variants map to primary
+// Note: These are BUCKET ITEMS that contain the fluids/gases
+// Mekanism gases (hydrogen, oxygen, chlorine) may have bucket representations for fluid transfer
+// TFMG and IE use regular fluids (which have bucket items)
+// ChemLib adds chemical compounds as items/fluids with bucket forms
+const UNIFIED_FLUIDS = {
+    // Hydrogen - Primary: mekanism:hydrogen_bucket
+    'hydrogen_bucket': [
+        'mekanism:hydrogen_bucket',    // Primary
+        'tfmg:hydrogen_bucket',
+        'chemlib:hydrogen_bucket',
+    ],
+    
+    // Oxygen - Primary: mekanism:oxygen_bucket
+    'oxygen_bucket': [
+        'mekanism:oxygen_bucket',      // Primary
+        'chemlib:oxygen_bucket',
+    ],
+    
+    // Sulfuric Acid - Primary: mekanism:sulfuric_acid_bucket
+    'sulfuric_acid_bucket': [
+        'mekanism:sulfuric_acid_bucket',  // Primary
+        'tfmg:sulfuric_acid_bucket',
+        'chemlib:sulfuric_acid_bucket',
+    ],
+    
+    // Chlorine - Primary: mekanism:chlorine_bucket
+    'chlorine_bucket': [
+        'mekanism:chlorine_bucket',    // Primary
+        'chemlib:chlorine_bucket',
+    ],
+    
+    // Creosote - Primary: immersiveengineering:creosote_bucket
+    'creosote_bucket': [
+        'immersiveengineering:creosote_bucket',  // Primary
+        'tfmg:creosote_bucket',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -390,6 +429,15 @@ const PRIMARY_FLUID_OUTPUTS = {
     'biodiesel': 'immersiveengineering:biodiesel',
     'seed_oil': 'createaddition:seed_oil',
 };
+
+// Primary fluid for each category (derived from first/primary item in each UNIFIED_FLUIDS array)
+// The first item in each array is marked with '// Primary' comment and represents the preferred source
+const PRIMARY_FLUID_OUTPUTS = Object.fromEntries(
+    Object.entries(UNIFIED_FLUIDS).map(([key, variants]) => [key, variants[0]])
+);
+
+// Constants for fluid tag generation
+const BUCKET_SUFFIX = '_bucket';
 
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
