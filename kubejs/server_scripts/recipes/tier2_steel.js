@@ -155,14 +155,9 @@ ServerEvents.recipes(event => {
     // Do not gate TC behind steel, but prevent TC from making steel
     
     // Remove any Tinker's Construct recipes that output steel
+    // Using forge tags handles all steel variants (TFMG, IE, Mekanism)
     event.remove({ output: '#forge:ingots/steel', mod: 'tconstruct' });
     event.remove({ output: '#forge:plates/steel', mod: 'tconstruct' });
-    event.remove({ output: 'tfmg:steel_ingot', mod: 'tconstruct' });
-    event.remove({ output: 'tfmg:steel_sheet', mod: 'tconstruct' });
-    event.remove({ output: 'immersiveengineering:ingot_steel', mod: 'tconstruct' });
-    event.remove({ output: 'immersiveengineering:plate_steel', mod: 'tconstruct' });
-    event.remove({ output: 'mekanism:ingot_steel', mod: 'tconstruct' });
-    event.remove({ output: 'mekanism:plate_steel', mod: 'tconstruct' });
 
     // === CROSS-PATH STEEL RECIPES ===
     // Ensure both Create (TFMG) and IE can produce steel
