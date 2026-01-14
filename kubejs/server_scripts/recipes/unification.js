@@ -106,6 +106,21 @@ ServerEvents.recipes(event => {
         });
     });
 
+    // Add explicit 1:1 shapeless conversion recipes for items players may already have
+    console.log('Adding conversion recipes...');
+    Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
+        const primary = PRIMARY_OUTPUTS[key];
+        if (!primary) return;
+
+        variants.forEach(variant => {
+            if (variant !== primary) {
+                // Add shapeless recipe to convert non-primary to primary
+                event.shapeless(primary, [variant]);
+                console.log(`Added conversion: ${variant} -> ${primary}`);
+            }
+        });
+    });
+
     console.log('Recipe unification complete!');
 });
 
