@@ -140,24 +140,19 @@ ServerEvents.recipes(event => {
         });
     });
 
-    // Add fluid conversion recipes using Create Spout (1:1 conversion)
+    // Add fluid conversion recipes using Create Mixing (1:1 conversion)
+    // This allows players to convert duplicate fluids in a Create mixer
     Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
         const primary = PRIMARY_FLUID_OUTPUTS[key];
         if (!primary) return;
 
         variants.forEach(variant => {
             if (variant !== primary) {
-                // Add conversion recipe: variant -> primary (1:1 ratio)
-                event.custom({
-                    type: 'create:filling',
-                    ingredients: [
-                        { item: 'minecraft:bucket' },
-                        { fluid: variant, amount: 1000 }
-                    ],
-                    results: [
-                        { fluid: primary, amount: 1000 }
-                    ]
-                }).id(`kubejs:fluid_unification/${key}/${variant.replace(':', '_')}_to_${primary.replace(':', '_')}`);
+                // Add mixing conversion recipe: variant -> primary (1:1 ratio)
+                event.recipes.create.mixing(
+                    Fluid.of(primary, 1000),
+                    Fluid.of(variant, 1000)
+                ).id(`kubejs:fluid_unification/${key}/${variant.replace(':', '_')}_to_${primary.replace(':', '_')}`);
                 
                 console.log(`Added conversion recipe: ${variant} -> ${primary}`);
             }
