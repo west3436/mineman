@@ -1,0 +1,160 @@
+{
+	id: "2000000000000001"
+	group: "0000000000000001"
+	order_index: 2
+	filename: "2_steel_electricity"
+	title: "Tier 2: Steel & Electricity"
+	icon: "immersiveengineering:ingot_steel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Tier 2"
+			icon: "immersiveengineering:ingot_steel"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Tier 2 introduces steel production and electricity!"
+				""
+				"Steel is a crucial material for advanced machinery."
+				""
+				"Electricity will power your growing industrial infrastructure."
+			]
+			id: "2000000000000002"
+			tasks: [{
+				id: "2000000000000003"
+				type: "checkmark"
+				title: "Begin Tier 2"
+			}]
+			rewards: [{
+				id: "2000000000000004"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 32
+			}]
+		}
+		{
+			title: "Produce Steel"
+			icon: "immersiveengineering:ingot_steel"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Steel is made by processing iron with carbon."
+				""
+				"You can use a Blast Furnace or other steel-making methods."
+				""
+				"Steel is essential for advanced machines and structures."
+			]
+			dependencies: ["2000000000000002"]
+			id: "2000000000000005"
+			tasks: [{
+				id: "2000000000000006"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 16
+			}]
+			rewards: [
+				{
+					id: "2000000000000007"
+					type: "item"
+					item: "minecraft:coal_block"
+					count: 8
+				}
+				{
+					id: "2000000000000008"
+					type: "item"
+					item: "immersiveengineering:ingot_steel"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Generate Electricity"
+			icon: "immersiveengineering:dynamo"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Set up your first electrical power generation."
+				""
+				"Options include watermills, windmills, or dynamos."
+				""
+				"Electricity is required for advanced processing."
+			]
+			dependencies: ["2000000000000005"]
+			id: "2000000000000009"
+			tasks: [{
+				id: "2000000000000010"
+				type: "item"
+				title: "Power Generator"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "immersiveengineering:dynamo"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:watermill"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:windmill"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2000000000000011"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+					count: 8
+				}
+				{
+					id: "2000000000000012"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Ready for Tier 3"
+			icon: "minecraft:emerald"
+			x: 0.0d
+			y: 6.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Excellent work! You've mastered steel and electricity."
+				""
+				"Next up: Oil processing and plastic production!"
+			]
+			dependencies: ["2000000000000009"]
+			id: "2000000000000013"
+			tasks: [{
+				id: "2000000000000014"
+				type: "checkmark"
+				title: "Continue to Tier 3"
+			}]
+			rewards: [
+				{
+					id: "2000000000000015"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 2
+				}
+				{
+					id: "2000000000000016"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

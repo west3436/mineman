@@ -41,6 +41,11 @@ desktop.ini
 # Node.js dependencies
 node_modules/
 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
 # Backup files
 *.bak
 *.tmp

@@ -1,554 +1,123 @@
 {
-	id: "0000000000000001"
-	group: ""
+	id: "0000000000000100"
+	group: "0000000000000001"
 	order_index: 0
 	filename: "0_welcome"
-	title: "Welcome to Tech Progression"
-	icon: "minecraft:nether_star"
+	title: "Welcome to Mineman"
+	icon: "minecraft:book"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Welcome to Tech Progression!"
-			icon: "minecraft:nether_star"
+			title: "Welcome to Mineman!"
+			icon: "minecraft:crafting_table"
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"
-			size: 2.0d
-			description: [
-				"&l&9Welcome to Tech Progression!&r"
-				""
-				"This modpack offers a unique tiered progression system that lets you choose your own path through technology."
-				""
-				"&6Pack Goals:&r"
-				"• Progress through 6 distinct technology tiers"
-				"• Choose between Create OR Immersive Engineering paths"
-				"• Master automation and complex systems"
-				"• Explore side content at your own pace"
-				""
-				"&eThis is your journey. Take it at your own speed!&r"
-			]
-			id: "0000000000000002"
-			tasks: [{
-				id: "0000000000000003"
-				type: "checkmark"
-				title: "I'm ready to begin!"
-			}]
-			rewards: [
-				{
-					id: "0000000000000004"
-					type: "item"
-					item: "minecraft:bread"
-					count: 16
-				}
-				{
-					id: "0000000000000005"
-					type: "item"
-					item: "minecraft:apple"
-					count: 8
-				}
-				{
-					id: "0000000000000006"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-			]
-		}
-		{
-			title: "Understanding the Dual-Path System"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "ftbquests:textures/gui/quest_types.png"
-				}
-			}
-			x: -3.0d
-			y: 2.5d
-			shape: "rsquare"
 			size: 1.5d
 			description: [
-				"&l&6The Choice is Yours!&r"
+				"Welcome to Mineman! This modpack features a progressive tech journey."
 				""
-				"This pack features a unique dual-path progression system. You can choose to focus on either:"
+				"Follow the main quest line through 6 tiers of technological advancement,"
+				"from basic processing to future tech."
 				""
-				"&6Create:&r"
-				"• Kinetic energy and rotational power"
-				"• Elegant mechanical contraptions"
-				"• Stress-based systems"
-				"• Visual and interactive automation"
-				""
-				"&cImmersive Engineering:&r"
-				"• Electrical power and multiblocks"
-				"• Industrial infrastructure"
-				"• Realistic machinery"
-				"• Complex factory systems"
-				""
-				"&l&eImportant:&r You only need to complete ONE path to progress through each tier. You can mix and match, but you're not required to do both!"
-				""
-				"&7Choose the mod that matches your playstyle!&r"
+				"Side quests offer additional content for trains, farming, exploration, and building."
 			]
-			dependencies: ["0000000000000002"]
-			id: "0000000000000007"
+			id: "0000000000000101"
 			tasks: [{
-				id: "0000000000000008"
+				id: "0000000000000102"
 				type: "checkmark"
-				title: "I understand the dual-path system"
+				title: "Start Your Journey"
 			}]
 			rewards: [{
-				id: "0000000000000009"
+				id: "0000000000000103"
 				type: "item"
-				item: "minecraft:book"
-				count: 3
+				item: "minecraft:bread"
+				count: 16
 			}]
 		}
 		{
-			title: "The Six Tier Progression System"
-			icon: "minecraft:ladder"
-			x: 3.0d
-			y: 2.5d
-			shape: "diamond"
-			size: 1.5d
-			description: [
-				"&l&aThe Tier System&r"
-				""
-				"Technology in this pack is divided into 6 progressive tiers:"
-				""
-				"&7Tier 1:&r Basic Processing"
-				"• Get started with Create or IE"
-				"• Learn basic automation"
-				"• Process your first ores"
-				""
-				"&fTier 2:&r Steel & Electricity"
-				"• Advanced power generation"
-				"• Steel production"
-				"• More complex automation"
-				""
-				"&bTier 3:&r Plastic & Oil"
-				"• Oil processing"
-				"• Plastic manufacturing"
-				"• Chemical engineering"
-				""
-				"&dTier 4:&r Chemistry & Advanced Materials"
-				"• Complex chemical processes"
-				"• Advanced alloys"
-				"• Specialized machinery"
-				""
-				"&6Tier 5:&r Electronics & Computing"
-				"• Circuit production"
-				"• Computer systems"
-				"• Advanced automation"
-				""
-				"&5Tier 6:&r Future Technology"
-				"• Cutting-edge systems"
-				"• Ultimate automation"
-				"• End-game content"
-				""
-				"&eEach tier builds upon the previous one, introducing new materials and technologies!&r"
-			]
-			dependencies: ["0000000000000002"]
-			id: "0000000000000010"
-			tasks: [{
-				id: "0000000000000011"
-				type: "checkmark"
-				title: "I understand the tier system"
-			}]
-			rewards: [{
-				id: "0000000000000012"
-				type: "xp_levels"
-				xp_levels: 3
-			}]
-		}
-		{
-			title: "Side Content & Exploration"
-			icon: "minecraft:compass"
-			x: 0.0d
-			y: 5.0d
-			shape: "circle"
-			size: 1.5d
-			description: [
-				"&l&eNot Everything is Gated!&r"
-				""
-				"While the main progression follows the tier system, many mods and features are available for you to explore at any time:"
-				""
-				"&9Available Anytime:&r"
-				"• Storage mods (Iron Chests, Storage Drawers)"
-				"• Utility mods (Building Wands, Carry On)"
-				"• Quality of life improvements"
-				"• Decorative blocks"
-				"• Farming and food mods"
-				"• Botany Pots for passive resources"
-				"• Applied Energistics 2 (when you're ready)"
-				""
-				"&aGated by Tier:&r"
-				"• Main progression machines"
-				"• Advanced processing systems"
-				"• High-tier materials"
-				""
-				"&7Feel free to explore and use side content to enhance your base and gameplay experience!&r"
-			]
-			dependencies: ["0000000000000002"]
-			id: "0000000000000013"
-			tasks: [{
-				id: "0000000000000014"
-				type: "checkmark"
-				title: "I understand side content"
-			}]
-			rewards: [
-				{
-					id: "0000000000000015"
-					type: "item"
-					item: "storagedrawers:oak_full_drawers_1"
-					count: 2
-				}
-				{
-					id: "0000000000000016"
-					type: "item"
-					item: "minecraft:chest"
-					count: 4
-				}
-			]
-		}
-		{
-			title: "Item Unification Explained"
-			icon: "create:iron_sheet"
-			x: -3.0d
-			y: 5.0d
-			shape: "square"
-			description: [
-				"&l&6Understanding Unification&r"
-				""
-				"Many mods add similar items (like iron plates or copper sheets). To prevent confusion and inventory clutter, this pack uses &lunification&r."
-				""
-				"&eWhat This Means:&r"
-				"• All similar items are automatically converted to one 'primary' version"
-				"• Recipes accept any variant but output the primary"
-				"• No more duplicate items cluttering your inventory!"
-				""
-				"&9Unified Items:&r"
-				"• &fPlates/Sheets&r - Create sheets are primary"
-				"• &fSteel&r - TFMG steel is primary"
-				"• &fDusts&r - Mekanism dusts are primary"
-				"• &fAluminum&r - IE aluminum is primary"
-				""
-				"&aTips:&r"
-				"• Don't worry about which mod's item you have"
-				"• All variants work in recipes"
-				"• Use JEI to see which item is the primary output"
-				""
-				"&7This system makes multi-mod progression smooth and hassle-free!&r"
-			]
-			dependencies: ["0000000000000002"]
-			id: "0000000000000017"
-			tasks: [{
-				id: "0000000000000018"
-				type: "checkmark"
-				title: "I understand unification"
-			}]
-			rewards: [
-				{
-					id: "0000000000000019"
-					type: "item"
-					item: "create:iron_sheet"
-					count: 8
-				}
-				{
-					id: "0000000000000020"
-					type: "item"
-					item: "create:copper_sheet"
-					count: 8
-				}
-			]
-		}
-		{
-			title: "Getting Started - Your First Steps"
+			title: "Getting Started"
 			icon: "minecraft:wooden_pickaxe"
-			x: 3.0d
-			y: 5.0d
+			x: 0.0d
+			y: 2.0d
 			shape: "square"
 			description: [
-				"&l&2Ready to Begin?&r"
+				"Before you dive into technology, gather the basics."
 				""
-				"Here's what you should do first:"
+				"Collect wood, stone, and basic resources to get started."
 				""
-				"&61. Gather Basic Resources&r"
-				"• Mine wood, stone, iron, and copper"
-				"• Set up a basic shelter"
-				"• Craft basic vanilla tools"
-				""
-				"&62. Choose Your Path&r"
-				"• Look at Create and Immersive Engineering in JEI"
-				"• Decide which mod appeals to you"
-				"• You can switch or do both later!"
-				""
-				"&63. Start Tier 1&r"
-				"• Check the 'Tier 1: Basic Processing' chapter"
-				"• Follow the quest line for your chosen mod"
-				"• Complete quests to earn rewards"
-				""
-				"&64. Explore and Expand&r"
-				"• Use side content mods freely"
-				"• Build a nice base"
-				"• Experiment with automation"
-				""
-				"&eTip: Use JEI (Just Enough Items) to look up recipes. Press 'R' on an item to see its recipe!&r"
+				"You'll need a full set of tools and a basic shelter."
 			]
-			dependencies: [
-				"0000000000000007"
-				"0000000000000010"
-				"0000000000000013"
-				"0000000000000017"
-			]
-			id: "0000000000000021"
+			dependencies: ["0000000000000101"]
+			id: "0000000000000104"
 			tasks: [
 				{
-					id: "0000000000000022"
+					id: "0000000000000105"
 					type: "item"
-					title: "Gather Wood"
+					title: "Basic Tools"
 					item: {
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							value: "minecraft:logs"
+							items: [
+								{
+									id: "minecraft:stone_pickaxe"
+									Count: 1b
+								}
+								{
+									id: "minecraft:iron_pickaxe"
+									Count: 1b
+								}
+							]
 						}
 					}
-					count: 32
 				}
 				{
-					id: "0000000000000023"
+					id: "0000000000000106"
 					type: "item"
-					title: "Mine Stone"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:cobblestone"
-						}
-					}
-					count: 64
-				}
-				{
-					id: "0000000000000024"
-					type: "item"
-					title: "Find Iron"
-					item: "minecraft:raw_iron"
-					count: 16
-				}
-				{
-					id: "0000000000000025"
-					type: "item"
-					title: "Find Copper"
-					item: "minecraft:raw_copper"
-					count: 16
+					title: "Furnace"
+					item: "minecraft:furnace"
 				}
 			]
 			rewards: [
 				{
-					id: "0000000000000026"
+					id: "0000000000000107"
 					type: "item"
-					item: "minecraft:iron_pickaxe"
+					item: "minecraft:coal"
+					count: 16
 				}
 				{
-					id: "0000000000000027"
-					type: "item"
-					item: "minecraft:iron_axe"
-				}
-				{
-					id: "0000000000000028"
-					type: "item"
-					item: "minecraft:iron_shovel"
-				}
-				{
-					id: "0000000000000029"
+					id: "0000000000000108"
 					type: "item"
 					item: "minecraft:torch"
 					count: 32
 				}
-				{
-					id: "0000000000000030"
-					type: "xp_levels"
-					xp_levels: 5
-				}
 			]
 		}
 		{
-			title: "Tutorial: Using the Quest Book"
-			icon: "ftbquests:book"
+			title: "Ready for Technology"
+			icon: "minecraft:iron_block"
 			x: 0.0d
-			y: 7.5d
-			shape: "octagon"
+			y: 4.0d
+			shape: "hexagon"
 			description: [
-				"&l&bHow to Use This Quest Book&r"
+				"Now you're ready to begin your technological journey!"
 				""
-				"&eBasics:&r"
-				"• Click quests to view details and tasks"
-				"• Complete tasks to earn rewards"
-				"• Green checkmark = completed"
-				"• Gray = not yet available"
-				"• Yellow highlight = available now"
-				""
-				"&eQuest Shapes:&r"
-				"• &9Hexagon&r = Major milestone quest"
-				"• &6Square&r = Regular quest"
-				"• &cCircle&r = Optional/side quest"
-				"• &5Diamond&r = Important information"
-				""
-				"&eDependencies:&r"
-				"• Lines connect quests to show order"
-				"• Complete prerequisite quests first"
-				"• Some quests require only ONE of multiple prerequisites"
-				""
-				"&eTasks:&r"
-				"• &aCheckmark&r - Just click to complete"
-				"• &aItem&r - Submit the required item(s)"
-				"• Some quests let you choose between multiple tasks"
-				""
-				"&aRewards:&r"
-				"• Claim rewards after completing all tasks"
-				"• Rewards help you progress faster"
-				"• Some rewards are random loot tables"
+				"Head to Tier 1: Basic Processing to start automating your systems."
 			]
-			dependencies: ["0000000000000021"]
-			id: "0000000000000031"
+			dependencies: ["0000000000000104"]
+			id: "0000000000000109"
 			tasks: [{
-				id: "0000000000000032"
+				id: "0000000000000110"
 				type: "checkmark"
-				title: "I know how to use the quest book"
-			}]
-			rewards: [
-				{
-					id: "0000000000000033"
-					type: "item"
-					item: "minecraft:gold_ingot"
-					count: 4
-				}
-				{
-					id: "0000000000000034"
-					type: "item"
-					item: "minecraft:diamond"
-					count: 2
-				}
-			]
-		}
-		{
-			title: "Tutorial: Using JEI"
-			icon: "minecraft:crafting_table"
-			x: -2.0d
-			y: 7.5d
-			shape: "octagon"
-			description: [
-				"&l&6Just Enough Items (JEI) Guide&r"
-				""
-				"JEI is your best friend for learning recipes!"
-				""
-				"&eBasic Usage:&r"
-				"• Press 'E' to open inventory + JEI"
-				"• Search for items in the search bar"
-				"• Click the search bar or press CTRL+F to focus it"
-				""
-				"&eRecipe Lookups:&r"
-				"• &9Press 'R'&r on an item to see its recipe"
-				"• &9Press 'U'&r on an item to see its uses"
-				"• Click the arrows to cycle through multiple recipes"
-				""
-				"&eBookmarks:&r"
-				"• &aPress 'A'&r to bookmark an item"
-				"• Bookmarked items appear in left panel"
-				"• Great for tracking important materials!"
-				""
-				"&eFiltering:&r"
-				"• Type '@modname' to see all items from a mod"
-				"• Type '#tag' to see items in a specific tag"
-				"• Type '$tooltip' to search in tooltips"
-				""
-				"&7JEI shows recipes from ALL mods, including machines and processing!&r"
-			]
-			dependencies: ["0000000000000021"]
-			id: "0000000000000035"
-			tasks: [{
-				id: "0000000000000036"
-				type: "checkmark"
-				title: "I know how to use JEI"
+				title: "Continue to Tier 1"
 			}]
 			rewards: [{
-				id: "0000000000000037"
-				type: "item"
-				item: "minecraft:crafting_table"
-				count: 4
+				id: "0000000000000111"
+				type: "xp_levels"
+				xp_levels: 3
 			}]
-		}
-		{
-			title: "Ready for Tier 1!"
-			icon: "create:andesite_alloy"
-			x: 0.0d
-			y: 10.0d
-			shape: "hexagon"
-			size: 2.0d
-			description: [
-				"&l&a&nYou're Ready to Start!&r"
-				""
-				"Congratulations! You've completed the welcome tutorial."
-				""
-				"&6Next Steps:&r"
-				"• Open the '&9Tier 1: Basic Processing&r' chapter"
-				"• Choose between Create or Immersive Engineering"
-				"• Start your technological journey!"
-				""
-				"&eRemember:&r"
-				"• Take your time and enjoy the journey"
-				"• You only need to complete ONE path per tier"
-				"• Side content is always available"
-				"• Ask questions in Discord if you need help!"
-				""
-				"&l&6Good luck, and have fun!&r"
-			]
-			dependencies: [
-				"0000000000000031"
-				"0000000000000035"
-			]
-			id: "0000000000000038"
-			tasks: [{
-				id: "0000000000000039"
-				type: "checkmark"
-				title: "I'm ready for Tier 1!"
-			}]
-			rewards: [
-				{
-					id: "0000000000000040"
-					type: "item"
-					item: "create:andesite_alloy"
-					count: 16
-				}
-				{
-					id: "0000000000000041"
-					type: "item"
-					item: "immersiveengineering:component_iron"
-					count: 16
-				}
-				{
-					id: "0000000000000042"
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 32
-				}
-				{
-					id: "0000000000000043"
-					type: "item"
-					item: "minecraft:copper_ingot"
-					count: 32
-				}
-				{
-					id: "0000000000000044"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-				{
-					id: "0000000000000045"
-					type: "item"
-					item: "minecraft:golden_apple"
-					count: 2
-				}
-			]
 		}
 	]
 }

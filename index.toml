@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/datapack-validation.yml"
+hash = "549c46ed02d97055d54bfbebcaaedb920cd2d45543c1f4a67f12154633ea9302"
+
+[[files]]
 file = ".github/workflows/ftbquests-format-check.yml"
 hash = "9d0cd62a0e7007a09d5da00fb0484a39dc2c0cb0f3811aa39ca2856158471043"
 
@@ -10,11 +14,55 @@ hash = "91371a296a9c35b5555aefd0e766c63057048aa3ba0096e64f1b8f5a5369b27c"
 
 [[files]]
 file = ".github/workflows/packwiz-refresh.yml"
-hash = "7be8002810dcdddfe8c6f9dbe0f6c4a27a0ea77cd5a720ed1d1e45fffeffc626"
+hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "308b1438a36739b35e70679e16050eac198c96789bb8d2a98954b63e2e864507"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/0_welcome.snbt"
+hash = "9edef8609bac922873dc111623b274f46902ba17f3757e5bc65c9cb563eb59e2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_basic_processing.snbt"
-hash = "ed3013d74a150a68eeae4de43c88862503324d85f19857eb02c1cddeeb768f80"
+hash = "122d2aa08f7f770e6d52d4344f9abf3bed3a634158f299838789a35d3ab528ee"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/2_steel_electricity.snbt"
+hash = "3aee77df29c313450aebd94bf7eaf5718839ad30f4fc12960810817103df1a9d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/3_oil_plastic.snbt"
+hash = "39d1d8ae42339cc0e2757b578990dc7b83bfe19e2e78c13732b368ec5a13ea5d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/4_chemistry.snbt"
+hash = "757fbd45f07782debf8049514e4dded4179f1d960a5b0f2e9844e74afae9af54"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/5_electronics.snbt"
+hash = "77bd249a7539e0411f3bb6a47d7c55909f5c5748f30dd27cfe1bec5e1d9fcba4"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/6_future_tech.snbt"
+hash = "8e34b1e41c517e9194328d6ab688449488d4fbe627af07e4581d607476dcd1bb"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
+hash = "ee3ebfa9ed4cff81a58ae4e8f6fc3e1318ac72917a7e497def264df46f8283f9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_building.snbt"
+hash = "13701fed59c1a3939b10f6157033f9f60143518c21fa6fe8d2c7c594cb3d42ad"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_exploration.snbt"
+hash = "eafd7c6d9626703530c784d717eabec9e05563470c86560c2ad7496ce4a50e6e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_railways.snbt"
+hash = "0209f028aa68fe42a28bc8bdd6e32ab140b31904179835831754f6cde4cb7dc1"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
@@ -34,7 +82,7 @@ hash = "fb32e5b64383217f2f83a5b33be696193b2db43393924dfc9be9f034c87c94ef"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic.js"
-hash = "d1a84a9545856d1399d539ab442087249d4fc5dbd5a323999edba4d2fa1c8c20"
+hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
@@ -944,6 +992,10 @@ hash = "198060a082fe5217b370ec4e54b1c0f8a25eeb0a4dca512b6a81e9c9cd0c2b14"
 [[files]]
 file = "scripts/package.json"
 hash = "25749096827b4e454bf0f723178fdfe6fbc24ce98858a5fcd54ff2966b0174ff"
+
+[[files]]
+file = "scripts/validate_datapacks.py"
+hash = "c7bf376576614480e7927953a8b94c8d4083e2de64c5b0b5266057fe0aab968c"
 
 [[files]]
 file = "scripts/validate_ftbquests.py"

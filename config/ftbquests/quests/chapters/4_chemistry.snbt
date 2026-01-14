@@ -1,0 +1,129 @@
+{
+	id: "4000000000000001"
+	group: "0000000000000001"
+	order_index: 4
+	filename: "4_chemistry"
+	title: "Tier 4: Chemistry"
+	icon: "minecraft:potion"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Tier 4"
+			icon: "minecraft:brewing_stand"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Tier 4 introduces advanced chemistry and chemical processing."
+				""
+				"Master chemical reactions and complex production chains."
+				""
+				"Chemistry is the foundation for electronics and future tech."
+			]
+			id: "4000000000000002"
+			tasks: [{
+				id: "4000000000000003"
+				type: "checkmark"
+				title: "Begin Tier 4"
+			}]
+			rewards: [{
+				id: "4000000000000004"
+				type: "item"
+				item: "minecraft:glass_bottle"
+				count: 16
+			}]
+		}
+		{
+			title: "Chemical Processing"
+			icon: "minecraft:potion"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Set up chemical processing systems."
+				""
+				"Process raw materials into advanced chemical compounds."
+				""
+				"These chemicals are essential for high-tech production."
+			]
+			dependencies: ["4000000000000002"]
+			id: "4000000000000005"
+			tasks: [{
+				id: "4000000000000006"
+				type: "checkmark"
+				title: "Process Chemicals"
+			}]
+			rewards: [{
+				id: "4000000000000007"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Advanced Compounds"
+			icon: "minecraft:nether_star"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Create advanced chemical compounds."
+				""
+				"These materials enable cutting-edge technology."
+				""
+				"Maintain careful control of your chemical processes."
+			]
+			dependencies: ["4000000000000005"]
+			id: "4000000000000008"
+			tasks: [{
+				id: "4000000000000009"
+				type: "checkmark"
+				title: "Produce Advanced Compounds"
+			}]
+			rewards: [
+				{
+					id: "4000000000000010"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "4000000000000011"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Ready for Tier 5"
+			icon: "minecraft:diamond_block"
+			x: 0.0d
+			y: 6.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Chemistry mastered! Your production capabilities are impressive."
+				""
+				"Next: Electronics and advanced circuits!"
+			]
+			dependencies: ["4000000000000008"]
+			id: "4000000000000012"
+			tasks: [{
+				id: "4000000000000013"
+				type: "checkmark"
+				title: "Continue to Tier 5"
+			}]
+			rewards: [
+				{
+					id: "4000000000000014"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 1
+				}
+				{
+					id: "4000000000000015"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+}
