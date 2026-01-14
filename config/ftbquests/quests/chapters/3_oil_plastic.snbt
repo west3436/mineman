@@ -329,6 +329,7 @@
 				""
 				"Great for expanding your base and building large structures."
 			]
+			// Dependencies: Either Advanced Plastic (3000000000000025) or Direct Processing (3000000000000045)
 			dependencies: [
 				"3000000000000025"
 				"3000000000000045"
@@ -374,6 +375,7 @@
 				""
 				"Build a modular storage system that grows with your needs."
 			]
+			// Dependencies: Either Advanced Plastic (3000000000000025) or Direct Processing (3000000000000045)
 			dependencies: [
 				"3000000000000025"
 				"3000000000000045"

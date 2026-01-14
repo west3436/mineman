@@ -19,6 +19,8 @@ ServerEvents.recipes(event => {
     // Method 2: Bulk Processing - Industrial Plastic Production
     // Higher efficiency batch processing for mid-game (4x efficiency with sulfur catalyst)
     // 1000mb oil + 4 coal + sulfur → 8 plastic sheets
+    // Note: Sulfur dust is provided by Mekanism (#forge:dusts/sulfur)
+    // Alternative: Use Create's sulfur or other sulfur sources if available
     event.recipes.create.mixing('8x tfmg:plastic_sheet', [
         Fluid.of('immersivepetroleum:oil', 1000),
         '4x minecraft:coal',
