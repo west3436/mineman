@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
         P: 'pneumaticcraft:plastic',
         C: 'pneumaticcraft:printed_circuit_board',
         I: 'mekanism:alloy_infused',
-        A: 'minecraft:player_head',
+        A: 'minecraft:skeleton_skull',
         R: 'minecraft:redstone'
     });
 

@@ -15,11 +15,11 @@ I C I
 
 ### Layer 1 (Middle)
 ```
-C   C
-  @  
-C   C
+C S C
+S @ S
+C S C
 ```
-Where @ is the Controller block (center position)
+Where @ is the Controller block (center position), and S = Plastic blocks surrounding it
 
 ### Layer 2 (Top)
 ```
@@ -44,8 +44,8 @@ I C I
 ## Requirements
 To build this multiblock, you need:
 - 4x Iron Blocks (Tier 2+)
-- 14x Mekanism Steel Casing (Tier 4 - Chemistry)
-- 1x PneumaticCraft Plastic Block (Tier 4 - Chemistry)
+- 8x Mekanism Steel Casing (Tier 4 - Chemistry)
+- 8x PneumaticCraft Plastic Blocks (Tier 4 - Chemistry)
 - 1x Glass Block
 - 1x Circuit Fabrication Controller (from Multiblocked2)
 

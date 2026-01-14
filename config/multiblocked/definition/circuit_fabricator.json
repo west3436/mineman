@@ -4,49 +4,43 @@
   "status": "idle",
   "baseRenderer": {
     "type": "builtin",
-    "block": "multiblocked:block_component"
+    "block": "minecraft:iron_block"
   },
   "blockProperties": {
+    "material": "METAL",
     "toolRequired": true,
     "harvestLevel": 2,
     "destroyTime": 5.0,
     "explosionResistance": 6.0,
-    "soundType": "metal"
+    "soundType": "METAL"
   },
-  "definition": {
-    "patterns": [
-      {
-        "name": "circuit_fabricator_pattern",
-        "structure": [
-          [
-            ["ICI", "CSC", "ICI"],
-            ["CSC", "C@C", "CSC"],
-            ["ICI", "CGC", "ICI"]
-          ]
-        ],
-        "symbolMap": {
-          "I": {
-            "type": "block",
-            "block": "minecraft:iron_block"
-          },
-          "C": {
-            "type": "block",
-            "block": "mekanism:steel_casing"
-          },
-          "S": {
-            "type": "block",
-            "block": "pneumaticcraft:plastic"
-          },
-          "G": {
-            "type": "block",
-            "block": "minecraft:glass"
-          },
-          "@": {
-            "type": "controller"
-          }
-        }
-      }
+  "definition": [
+    [
+      ["ICI", "CSC", "ICI"],
+      ["CSC", "C@C", "CSC"],
+      ["ICI", "CGC", "ICI"]
     ]
+  ],
+  "symbolMap": {
+    "I": {
+      "type": "block",
+      "block": "minecraft:iron_block"
+    },
+    "C": {
+      "type": "block",
+      "block": "mekanism:steel_casing"
+    },
+    "S": {
+      "type": "block",
+      "block": "pneumaticcraft:plastic"
+    },
+    "G": {
+      "type": "block",
+      "block": "minecraft:glass"
+    },
+    "@": {
+      "type": "controller"
+    }
   },
   "traits": [
     {
@@ -62,6 +56,7 @@
     {
       "type": "energy",
       "capacity": 100000,
+      "maxReceive": 10000,
       "io": "in"
     }
   ]
