@@ -28,8 +28,9 @@ jobs:
 
       - name: Install Packwiz
         run: |
-          wget https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86 \
-            -O packwiz
+          wget https://nightly.link/packwiz/packwiz/workflows/go/main/Linux%2064-bit%20x86.zip \
+            -O packwiz.zip
+          unzip packwiz.zip
           chmod +x ./packwiz
 
       - name: Run Packwiz Refresh
