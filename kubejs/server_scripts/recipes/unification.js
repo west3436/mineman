@@ -27,6 +27,10 @@ const UNIFIED_ITEMS = {
     'aluminum_plate': [
         'immersiveengineering:plate_aluminum',
     ],
+    'lead_plate': [
+        'tfmg:lead_sheet',
+        'immersiveengineering:plate_lead',
+    ],
 
     // Dusts
     'iron_dust': [
@@ -41,15 +45,85 @@ const UNIFIED_ITEMS = {
         'mekanism:dust_gold',
         'immersiveengineering:dust_gold',
     ],
+    'lead_dust': [
+        'mekanism:dust_lead',
+        'immersiveengineering:dust_lead',
+    ],
 
     // Ingots
     'steel_ingot': [
         'tfmg:steel_ingot',
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
+        'createnuclear:steel_ingot',
     ],
     'aluminum_ingot': [
         'immersiveengineering:ingot_aluminum',
+    ],
+
+    // Blocks
+    'steel_block': [
+        'tfmg:steel_block',
+        'immersiveengineering:storage_steel',
+        'mekanism:block_steel',
+        'tconstruct:steel_block',
+        'createnuclear:steel_block',
+    ],
+
+    // Nuggets
+    'steel_nugget': [
+        'tfmg:steel_nugget',
+        'immersiveengineering:nugget_steel',
+        'mekanism:nugget_steel',
+        'createnuclear:steel_nugget',
+    ],
+    'lead_ingot': [
+        'tfmg:lead_ingot',
+        'immersiveengineering:ingot_lead',
+        'mekanism:ingot_lead',
+        'createnuclear:lead_ingot',
+    ],
+
+    // Blocks
+    'lead_block': [
+        'tfmg:lead_block',
+        'createnuclear:lead_block',
+    ],
+    'raw_lead_block': [
+        'tfmg:raw_lead_block',
+        'createnuclear:raw_lead_block',
+    ],
+};
+
+// Unified fluid mappings - all variants map to primary (Immersive Petroleum)
+const UNIFIED_FLUIDS = {
+    // Diesel (2 variants + 1 primary = 3 total sources)
+    'diesel': [
+        'pneumaticcraft:diesel',
+        'tfmg:diesel',
+    ],
+    // Gasoline (2 variants + 1 primary = 3 total sources)
+    'gasoline': [
+        'pneumaticcraft:gasoline',
+        'tfmg:gasoline',
+    ],
+    // Kerosene (2 variants + 1 primary = 3 total sources)
+    'kerosene': [
+        'pneumaticcraft:kerosene',
+        'tfmg:kerosene',
+    ],
+    // Lubricant (1 variant + 1 primary = 2 total sources)
+    'lubricant': [
+        'pneumaticcraft:lubricant',
+    ],
+    // Naphtha (1 variant + 1 primary = 2 total sources)
+    'naphtha': [
+        'tfmg:naphtha',
+    ],
+    // Crude Oil (2 variants + 1 primary = 3 total sources)
+    'crude_oil': [
+        'tfmg:crude_oil',
+        'pneumaticcraft:oil',
     ],
 };
 
@@ -75,18 +149,28 @@ const PRIMARY_OUTPUTS = {
     'gold_dust': 'mekanism:dust_gold',
     'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'lead_ingot': 'tfmg:lead_ingot',
+    'lead_plate': 'tfmg:lead_sheet',
+    'lead_dust': 'mekanism:dust_lead',
+    'lead_block': 'tfmg:lead_block',
+    'raw_lead_block': 'tfmg:raw_lead_block',
 };
 
-// Primary fluid for each category
-// TConstruct molten metals are primary for smeltery integration
+// Primary fluid for each category (Immersive Petroleum as primary)
 const PRIMARY_FLUIDS = {
+    'diesel': 'immersivepetroleum:diesel',
+    'gasoline': 'immersivepetroleum:gasoline',
+    'kerosene': 'immersivepetroleum:kerosene',
+    'lubricant': 'immersivepetroleum:lubricant',
+    'naphtha': 'immersivepetroleum:naphtha',
+    'crude_oil': 'immersivepetroleum:crudeoil',
     'molten_steel': 'tconstruct:molten_steel',
 };
 
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
 
-    // Replace all outputs with primary
+    // Replace all item outputs with primary
     Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
         const primary = PRIMARY_OUTPUTS[key];
         if (!primary) {
@@ -102,7 +186,7 @@ ServerEvents.recipes(event => {
         });
     });
 
-    // Replace all fluid outputs with primary
+    // Replace all fluid inputs and outputs with primary
     Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
         const primary = PRIMARY_FLUIDS[key];
         if (!primary) {
@@ -112,7 +196,10 @@ ServerEvents.recipes(event => {
 
         variants.forEach(variant => {
             if (variant !== primary) {
-                event.replaceOutput({}, variant, primary);
+                // Replace fluid inputs in all recipes (KubeJS handles fluids as strings)
+                event.replaceInput({}, Fluid.of(variant, 1), Fluid.of(primary, 1));
+                // Replace fluid outputs in all recipes
+                event.replaceOutput({}, Fluid.of(variant, 1), Fluid.of(primary, 1));
                 console.log(`Unified fluid ${variant} -> ${primary}`);
             }
         });
@@ -127,7 +214,34 @@ ServerEvents.tags('item', event => {
     // Create unified tags for cross-mod compatibility
     // Item tags use forge:type/materials format (e.g., forge:plates/iron)
     Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
-        const tagName = `forge:${key.replace('_', '/')}s`; // e.g., forge:plates/iron
+        let tagName;
+        
+        // Determine the correct tag format based on item type
+        if (key.endsWith('_plate')) {
+            // plates: steel_plate -> forge:plates/steel
+            const material = key.replace('_plate', '');
+            tagName = `forge:plates/${material}`;
+        } else if (key.endsWith('_dust')) {
+            // dusts: iron_dust -> forge:dusts/iron
+            const material = key.replace('_dust', '');
+            tagName = `forge:dusts/${material}`;
+        } else if (key.endsWith('_ingot')) {
+            // ingots: steel_ingot -> forge:ingots/steel
+            const material = key.replace('_ingot', '');
+            tagName = `forge:ingots/${material}`;
+        } else if (key.endsWith('_block')) {
+            // blocks: steel_block -> forge:storage_blocks/steel
+            const material = key.replace('_block', '');
+            tagName = `forge:storage_blocks/${material}`;
+        } else if (key.endsWith('_nugget')) {
+            // nuggets: steel_nugget -> forge:nuggets/steel
+            const material = key.replace('_nugget', '');
+            tagName = `forge:nuggets/${material}`;
+        } else {
+            // fallback: use original logic
+            tagName = `forge:${key.replace('_', '/')}s`;
+        }
+        
         variants.forEach(variant => {
             event.add(tagName, variant);
         });
@@ -140,21 +254,18 @@ ServerEvents.tags('fluid', event => {
     console.log('Applying fluid tag unification...');
 
     // Create unified tags for cross-mod fluid compatibility
-    // Fluid tags use forge:fluid_name format (e.g., forge:molten_steel)
     Object.entries(UNIFIED_FLUIDS).forEach(([key, variants]) => {
         const primary = PRIMARY_FLUIDS[key];
-        if (!primary) {
-            return;
-        }
-
-        // Add both primary and variants to forge tags for compatibility
-        // Use full key as tag name (e.g., forge:molten_steel) - no transformation needed
-        const tagName = `forge:${key}`;
+        if (!primary) return;
+        
+        const tagName = `forge:${key}`; // e.g., forge:diesel
+        
+        // Add primary fluid to tag
         event.add(tagName, primary);
+        
+        // Add all variants to tag for compatibility
         variants.forEach(variant => {
-            if (variant !== primary) {
-                event.add(tagName, variant);
-            }
+            event.add(tagName, variant);
         });
     });
 

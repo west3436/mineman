@@ -27,6 +27,33 @@ JEIEvents.hideItems(event => {
         // Duplicate steel ingots (keeping TFMG as primary)
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
+        'createnuclear:steel_ingot',
+
+        // Duplicate steel blocks (keeping TFMG as primary)
+        'immersiveengineering:storage_steel',
+        'mekanism:block_steel',
+        'tconstruct:steel_block',
+        'createnuclear:steel_block',
+
+        // Duplicate steel nuggets (keeping TFMG as primary)
+        'immersiveengineering:nugget_steel',
+        'mekanism:nugget_steel',
+        'createnuclear:steel_nugget',
+
+        // Duplicate lead ingots (keeping TFMG as primary)
+        'immersiveengineering:ingot_lead',
+        'mekanism:ingot_lead',
+        'createnuclear:lead_ingot',
+
+        // Duplicate lead blocks (keeping TFMG as primary)
+        'createnuclear:lead_block',
+        'createnuclear:raw_lead_block',
+
+        // Duplicate lead plates (keeping TFMG as primary)
+        'immersiveengineering:plate_lead',
+
+        // Duplicate lead dusts (keeping Mekanism as primary)
+        'immersiveengineering:dust_lead',
 
         // Add more duplicates as needed during testing
     ];
@@ -45,14 +72,24 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.hideFluids(event => {
     console.log('Hiding duplicate unified fluids in JEI...');
-
-    // Hide duplicate molten metals (keeping TConstruct as primary for smeltery integration)
+ 
+    // Hide duplicate molten metals
     const HIDDEN_FLUID_DUPLICATES = [
         // TFMG molten steel (TConstruct is primary)
         'tfmg:molten_steel',
-        
-        // Note: Other molten metals (copper, iron, lead, gold, aluminum) only exist in TConstruct
-        // TFMG only provides molten_steel, so no other duplicates to hide
+        // PneumaticCraft fluids (Immersive Petroleum is primary)
+        'pneumaticcraft:diesel',
+        'pneumaticcraft:gasoline',
+        'pneumaticcraft:kerosene',
+        'pneumaticcraft:lubricant',
+        'pneumaticcraft:oil', // crude oil
+
+        // TFMG fluids (Immersive Petroleum is primary)
+        'tfmg:diesel',
+        'tfmg:gasoline',
+        'tfmg:kerosene',
+        'tfmg:naphtha',
+        'tfmg:crude_oil',
     ];
 
     HIDDEN_FLUID_DUPLICATES.forEach(fluid => {
