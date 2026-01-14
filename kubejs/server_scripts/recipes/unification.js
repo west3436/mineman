@@ -26,6 +26,7 @@ const UNIFIED_ITEMS = {
     ],
     'aluminum_plate': [
         'immersiveengineering:plate_aluminum',
+        'tfmg:aluminum_sheet',
     ],
     'lead_plate': [
         'tfmg:lead_sheet',
@@ -58,9 +59,17 @@ const UNIFIED_ITEMS = {
         'createnuclear:steel_ingot',
     ],
     'aluminum_ingot': [
+        'tfmg:aluminum_ingot',
         'immersiveengineering:ingot_aluminum',
     ],
-
+    'constantan_ingot': [
+        'tfmg:constantan_ingot',
+        'immersiveengineering:ingot_constantan',
+    ],
+    'nickel_ingot': [
+        'tfmg:nickel_ingot',
+        'immersiveengineering:ingot_nickel',
+    ],
     // Blocks
     'steel_block': [
         'tfmg:steel_block',
@@ -125,13 +134,6 @@ const UNIFIED_FLUIDS = {
         'tfmg:crude_oil',
         'pneumaticcraft:oil',
     ],
-};
-
-// Unified fluid mappings - all variants map to primary
-// TConstruct is primary for molten metals (smeltery integration)
-// Note: Only molten_steel has duplicates; TFMG doesn't provide other molten metals
-// Structure maintains consistency with UNIFIED_ITEMS pattern for easy expansion
-const UNIFIED_FLUIDS = {
     'molten_steel': [
         'tfmg:molten_steel',
     ],
@@ -147,8 +149,10 @@ const PRIMARY_OUTPUTS = {
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
-    'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
-    'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'aluminum_ingot': 'tfmg:aluminum_ingot',
+    'aluminum_plate': 'tfmg:aluminum_sheet',
+    'constantan_ingot': 'tfmg:constantan_ingot',
+    'nickel_ingot': 'tfmg:nickel_ingot',
     'lead_ingot': 'tfmg:lead_ingot',
     'lead_plate': 'tfmg:lead_sheet',
     'lead_dust': 'mekanism:dust_lead',

@@ -55,6 +55,16 @@ JEIEvents.hideItems(event => {
         // Duplicate lead dusts (keeping Mekanism as primary)
         'immersiveengineering:dust_lead',
 
+        // Duplicate aluminum ingots and related items (keeping TFMG as primary)
+        'immersiveengineering:ingot_aluminum',
+        'immersiveengineering:plate_aluminum',
+
+        // Duplicate constantan ingots (keeping TFMG as primary)
+        'immersiveengineering:ingot_constantan',
+
+        // Duplicate nickel ingots (keeping TFMG as primary)
+        'immersiveengineering:ingot_nickel',
+
         // Add more duplicates as needed during testing
     ];
 
