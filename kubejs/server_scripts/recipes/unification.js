@@ -55,24 +55,10 @@ const UNIFIED_ITEMS = {
 
 // Unified fluid mappings - all variants map to primary
 // TConstruct is primary for molten metals (smeltery integration)
+// Note: Only molten_steel has duplicates; TFMG doesn't provide other molten metals
 const UNIFIED_FLUIDS = {
     'molten_steel': [
         'tfmg:molten_steel',
-    ],
-    'molten_copper': [
-        // TFMG doesn't have molten_copper, only TConstruct does
-    ],
-    'molten_iron': [
-        // TFMG doesn't have molten_iron, only TConstruct does
-    ],
-    'molten_lead': [
-        // TFMG doesn't have molten_lead, only TConstruct does
-    ],
-    'molten_gold': [
-        // TFMG doesn't have molten_gold, only TConstruct does
-    ],
-    'molten_aluminum': [
-        // TFMG doesn't have molten_aluminum, only TConstruct does
     ],
 };
 
@@ -94,11 +80,6 @@ const PRIMARY_OUTPUTS = {
 // TConstruct molten metals are primary for smeltery integration
 const PRIMARY_FLUIDS = {
     'molten_steel': 'tconstruct:molten_steel',
-    'molten_copper': 'tconstruct:molten_copper',
-    'molten_iron': 'tconstruct:molten_iron',
-    'molten_lead': 'tconstruct:molten_lead',
-    'molten_gold': 'tconstruct:molten_gold',
-    'molten_aluminum': 'tconstruct:molten_aluminum',
 };
 
 ServerEvents.recipes(event => {
@@ -164,7 +145,8 @@ ServerEvents.tags('fluid', event => {
         }
 
         // Add both primary and variants to forge tags for compatibility
-        const tagName = `forge:${key}`; // e.g., forge:molten_steel
+        // Use full key as tag name (e.g., forge:molten_steel) - no transformation needed
+        const tagName = `forge:${key}`;
         event.add(tagName, primary);
         variants.forEach(variant => {
             if (variant !== primary) {
