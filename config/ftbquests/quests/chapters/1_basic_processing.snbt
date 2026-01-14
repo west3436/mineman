@@ -200,7 +200,7 @@
 							]
 						}
 					}
-					count: 16L
+					count: 16
 				}
 			]
 			rewards: [
@@ -237,7 +237,7 @@
 					id: "1000000000000021"
 					type: "item"
 					item: "create:mechanical_crafter"
-					count: 3L
+					count: 3
 				}
 				{
 					id: "1000000000000022"
@@ -263,7 +263,7 @@
 							]
 						}
 					}
-					count: 8L
+					count: 8
 				}
 			]
 			rewards: [
@@ -305,9 +305,8 @@
 				{
 					id: "1000000000000027"
 					type: "item"
-					item: "immersiveengineering:blueprint"
 					title: "Any Blueprint"
-					count: 1L
+					item: "immersiveengineering:blueprint"
 				}
 			]
 			rewards: [
@@ -369,7 +368,7 @@
 							]
 						}
 					}
-					count: 16L
+					count: 16
 				}
 			]
 			rewards: [
@@ -406,13 +405,13 @@
 					id: "1000000000000036"
 					type: "item"
 					item: "immersiveengineering:wirecoil_copper"
-					count: 4L
+					count: 4
 				}
 				{
 					id: "1000000000000037"
 					type: "item"
 					item: "immersiveengineering:connector_lv"
-					count: 8L
+					count: 8
 				}
 				{
 					id: "1000000000000038"
