@@ -222,9 +222,11 @@
 # World Generation
 [worldgen]
     # Mekanism ore generation
-    # May overlap with IE ores
-    enableOres = true
+    # DISABLED: IE handles all ore generation to prevent duplicates
+    # Copper, Lead, and Uranium would otherwise spawn twice
+    enableOres = false
     
     # Salt generation (for chlorine/sodium)
+    # This is Mekanism-exclusive and remains enabled
     enableSalt = true
     saltPerChunk = 2

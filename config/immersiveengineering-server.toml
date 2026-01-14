@@ -182,10 +182,13 @@
 # World Generation
 [worldgen]
     # IE ore generation (if enabled)
-    # May be disabled if using external ore mod
+    # Primary ore generation for the pack - Mekanism ores disabled
+    # Generates: Copper, Aluminum, Lead, Silver, Nickel, Uranium
     enableOreGeneration = true
     
     # Mineral veins for excavator
+    # Slightly increased to compensate for Mekanism ores being disabled
+    # Copper, Lead, and Uranium are used by both IE and Mekanism
     enableMineralVeins = true
-    mineralVeinSize = 8
-    mineralVeinChance = 0.6
+    mineralVeinSize = 10
+    mineralVeinChance = 0.7
