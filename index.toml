@@ -117,11 +117,6 @@ file = "docs/README.md"
 hash = "fad190ed92994bd678a9e3c46b35216fe05dadcff6def6182c74898b1ec7086c"
 
 [[files]]
-file = "iki-fps.pw.toml"
-hash = "11102c4201b379c6c9465202726e8770103f275217a44b01c8de58b272c03ca6"
-metafile = true
-
-[[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
 hash = "dbe619d74da11a2205c7d60e4b4e905643d2d998beccca1f7e2882bebbca9fd0"
 
