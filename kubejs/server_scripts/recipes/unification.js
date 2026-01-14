@@ -54,6 +54,7 @@ const UNIFIED_ITEMS = {
 };
 
 // Unified fluid mappings - all variants map to primary
+// Note: Primary fluid is included in the array for tag unification
 const UNIFIED_FLUIDS = {
     'honey': [
         'create:honey',
