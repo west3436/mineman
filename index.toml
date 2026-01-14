@@ -130,7 +130,7 @@ hash = "e829ac285d39d6a386ec94114ce448164fc7f7c105fac9daed1d83827a345af0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "f4ede65b76ce6faadd4777320aa6eaf49c7c02d3769c81990ed8e18d8e0efba2"
+hash = "2ea842346328aaa084682766d56c346a283a8bc1e1eec6b40ba26aa7f6d78a97"
 
 [[files]]
 file = "kubejs/server_scripts/dump_registry.js"
