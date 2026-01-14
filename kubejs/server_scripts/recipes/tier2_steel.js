@@ -107,6 +107,18 @@ ServerEvents.recipes(event => {
         G: '#forge:gears/iron',
         H: 'forestry:hardened_casing'
     });
+    
+    // Rainmaker
+    event.shaped('forestry:rainmaker', [
+        'SCS',
+        'G G',
+        'SHS'
+    ], {
+        S: '#forge:plates/steel',
+        C: 'forestry:sturdy_casing',
+        G: '#forge:gears/iron',
+        H: 'forestry:hardened_casing'
+    });
 
     // === STORAGE DRAWERS GATING ===
     // Require steel or industrial components for Storage Drawers
