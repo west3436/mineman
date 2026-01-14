@@ -72,9 +72,11 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.hideFluids(event => {
     console.log('Hiding duplicate unified fluids in JEI...');
-
-    // Hide duplicate fluids (keeping Immersive Petroleum as primary)
+ 
+    // Hide duplicate molten metals
     const HIDDEN_FLUID_DUPLICATES = [
+        // TFMG molten steel (TConstruct is primary)
+        'tfmg:molten_steel',
         // PneumaticCraft fluids (Immersive Petroleum is primary)
         'pneumaticcraft:diesel',
         'pneumaticcraft:gasoline',

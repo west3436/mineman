@@ -127,6 +127,16 @@ const UNIFIED_FLUIDS = {
     ],
 };
 
+// Unified fluid mappings - all variants map to primary
+// TConstruct is primary for molten metals (smeltery integration)
+// Note: Only molten_steel has duplicates; TFMG doesn't provide other molten metals
+// Structure maintains consistency with UNIFIED_ITEMS pattern for easy expansion
+const UNIFIED_FLUIDS = {
+    'molten_steel': [
+        'tfmg:molten_steel',
+    ],
+};
+
 // Primary item for each category (from _constants.js)
 const PRIMARY_OUTPUTS = {
     'iron_plate': 'create:iron_sheet',
@@ -154,9 +164,8 @@ const PRIMARY_FLUIDS = {
     'lubricant': 'immersivepetroleum:lubricant',
     'naphtha': 'immersivepetroleum:naphtha',
     'crude_oil': 'immersivepetroleum:crudeoil',
+    'molten_steel': 'tconstruct:molten_steel',
 };
-
-// Note: PRIMARY_OUTPUTS is defined in _constants.js and loaded before this file
 
 ServerEvents.recipes(event => {
     console.log('Applying recipe unification...');
@@ -203,6 +212,7 @@ ServerEvents.tags('item', event => {
     console.log('Applying item tag unification...');
 
     // Create unified tags for cross-mod compatibility
+    // Item tags use forge:type/materials format (e.g., forge:plates/iron)
     Object.entries(UNIFIED_ITEMS).forEach(([key, variants]) => {
         let tagName;
         
