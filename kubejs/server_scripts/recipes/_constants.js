@@ -15,6 +15,11 @@ const PRIMARY_OUTPUTS = {
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
 };
 
+// Primary fluid outputs for unification
+const PRIMARY_FLUID_OUTPUTS = {
+    'honey': 'create:honey',
+};
+
 // Unified tag mappings for cross-mod compatibility
 const UNIFIED_TAGS = {
     'iron_plate': 'forge:plates/iron',

@@ -43,6 +43,28 @@ JEIEvents.hideItems(event => {
     console.log('JEI hiding complete!');
 });
 
+JEIEvents.hideFluids(event => {
+    console.log('Hiding duplicate unified fluids in JEI...');
+
+    // Hide duplicate honey fluids (keeping Create as primary)
+    const HIDDEN_FLUID_DUPLICATES = [
+        'forestry:honey',
+        'growthcraft_apiary:honey_fluid_source',
+        'tconstruct:honey',
+    ];
+
+    HIDDEN_FLUID_DUPLICATES.forEach(fluid => {
+        try {
+            event.hide(fluid);
+            console.log(`Hidden fluid: ${fluid}`);
+        } catch (e) {
+            console.warn(`Could not hide fluid ${fluid}: ${e}`);
+        }
+    });
+
+    console.log('Fluid hiding complete!');
+});
+
 JEIEvents.hideCustom(event => {
     // Hide items based on NBT or other criteria if needed
     // Example: event.hide('item', item => item.hasTag('hidden'))
