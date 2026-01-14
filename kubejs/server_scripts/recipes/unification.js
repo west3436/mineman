@@ -107,7 +107,8 @@ const PRIMARY_OUTPUTS = {
     'aluminum_plate': 'immersiveengineering:plate_aluminum',
 };
 
-// Primary fluid for each category (derived from first item in each UNIFIED_FLUIDS array)
+// Primary fluid for each category (derived from first/primary item in each UNIFIED_FLUIDS array)
+// The first item in each array is marked with '// Primary' comment and represents the preferred source
 const PRIMARY_FLUID_OUTPUTS = Object.fromEntries(
     Object.entries(UNIFIED_FLUIDS).map(([key, variants]) => [key, variants[0]])
 );
