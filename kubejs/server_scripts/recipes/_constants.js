@@ -11,8 +11,10 @@ const PRIMARY_OUTPUTS = {
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
-    'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
-    'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'aluminum_ingot': 'tfmg:aluminum_ingot',
+    'aluminum_plate': 'tfmg:aluminum_sheet',
+    'constantan_ingot': 'tfmg:constantan_ingot',
+    'nickel_ingot': 'tfmg:nickel_ingot',
 };
 
 // Unified tag mappings for cross-mod compatibility

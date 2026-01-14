@@ -26,6 +26,7 @@ const UNIFIED_ITEMS = {
     ],
     'aluminum_plate': [
         'immersiveengineering:plate_aluminum',
+        'tfmg:aluminum_sheet',
     ],
 
     // Dusts
@@ -49,7 +50,31 @@ const UNIFIED_ITEMS = {
         'mekanism:ingot_steel',
     ],
     'aluminum_ingot': [
+        'tfmg:aluminum_ingot',
         'immersiveengineering:ingot_aluminum',
+    ],
+    'constantan_ingot': [
+        'tfmg:constantan_ingot',
+        'immersiveengineering:ingot_constantan',
+    ],
+    'nickel_ingot': [
+        'tfmg:nickel_ingot',
+        'immersiveengineering:ingot_nickel',
+    ],
+
+    // Blocks
+    'aluminum_block': [
+        'tfmg:aluminum_block',
+    ],
+
+    // Wires
+    'constantan_wire': [
+        'tfmg:constantan_wire',
+    ],
+
+    // Sheets (additional)
+    'nickel_sheet': [
+        'tfmg:nickel_sheet',
     ],
 };
 
@@ -63,8 +88,13 @@ const PRIMARY_OUTPUTS = {
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
-    'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
-    'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'aluminum_ingot': 'tfmg:aluminum_ingot',
+    'aluminum_plate': 'tfmg:aluminum_sheet',
+    'constantan_ingot': 'tfmg:constantan_ingot',
+    'nickel_ingot': 'tfmg:nickel_ingot',
+    'aluminum_block': 'tfmg:aluminum_block',
+    'constantan_wire': 'tfmg:constantan_wire',
+    'nickel_sheet': 'tfmg:nickel_sheet',
 };
 
 ServerEvents.recipes(event => {
