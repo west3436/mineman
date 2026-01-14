@@ -40,6 +40,46 @@ const UNIFIED_ITEMS = {
         'industrialforegoing:plastic',
     ],
 
+    // Electrum
+    'electrum_ingot': [
+        'createaddition:electrum_ingot',
+        'immersiveengineering:ingot_electrum',
+    ],
+    'electrum_plate': [
+        'createaddition:electrum_sheet',
+        'immersiveengineering:plate_electrum',
+    ],
+    'electrum_nugget': [
+        'createaddition:electrum_nugget',
+    ],
+    'electrum_rod': [
+        'createaddition:electrum_rod',
+    ],
+    'electrum_wire': [
+        'createaddition:electrum_wire',
+        'immersiveengineering:wire_electrum',
+    ],
+
+    // Silver
+    'silver_ingot': [
+        'chemlib:silver_ingot',
+        'immersiveengineering:ingot_silver',
+    ],
+    'silver_plate': [
+        'chemlib:silver_plate',
+        'immersiveengineering:plate_silver',
+    ],
+    'silver_dust': [
+        'chemlib:silver_dust',
+        'immersiveengineering:dust_silver',
+    ],
+    'silver_nugget': [
+        'chemlib:silver_nugget',
+    ],
+    'silver_wire': [
+        'immersiveengineering:wire_silver',
+    ],
+
     // Dusts
     'iron_dust': [
         'mekanism:dust_iron',
@@ -156,9 +196,19 @@ const PRIMARY_OUTPUTS = {
     'iron_dust': 'mekanism:dust_iron',
     'copper_dust': 'mekanism:dust_copper',
     'gold_dust': 'mekanism:dust_gold',
+    'aluminum_ingot': 'immersiveengineering:ingot_aluminum',
+    'aluminum_plate': 'immersiveengineering:plate_aluminum',
+    'electrum_ingot': 'immersiveengineering:ingot_electrum',
+    'electrum_plate': 'immersiveengineering:plate_electrum',
+    'electrum_nugget': 'createaddition:electrum_nugget',
+    'electrum_rod': 'createaddition:electrum_rod',
+    'electrum_wire': 'immersiveengineering:wire_electrum',
+    'silver_ingot': 'immersiveengineering:ingot_silver',
+    'silver_plate': 'immersiveengineering:plate_silver',
+    'silver_dust': 'immersiveengineering:dust_silver',
+    'silver_nugget': 'chemlib:silver_nugget',
+    'silver_wire': 'immersiveengineering:wire_silver',
     'plastic': 'tfmg:plastic_sheet',
-    'aluminum_ingot': 'tfmg:aluminum_ingot',
-    'aluminum_plate': 'tfmg:aluminum_sheet',
     'constantan_ingot': 'tfmg:constantan_ingot',
     'nickel_ingot': 'tfmg:nickel_ingot',
     'lead_ingot': 'tfmg:lead_ingot',

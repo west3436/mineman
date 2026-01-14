@@ -88,6 +88,16 @@ JEIEvents.hideItems(event => {
         'chemlib:uranium_dust',
         // Note: copper, gold, iron, lead, sulfur already listed in the "ChemLib vs IE duplicates" section above
 
+        // Electrum duplicates (keeping IE as primary)
+        'createaddition:electrum_ingot',
+        'createaddition:electrum_sheet',
+        'createaddition:electrum_wire',
+
+        // Silver duplicates (keeping IE as primary)
+        'chemlib:silver_ingot',
+        'chemlib:silver_plate',
+        'chemlib:silver_dust',
+
         // Add more duplicates as needed during testing
     ];
 
