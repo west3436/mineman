@@ -1,0 +1,16 @@
+name = "Tech Progression"
+author = "west3436"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "e5245e949e85c4ca9ac973c127b85fd5afd85cfb551d1a62f231320ed1171348"
+
+[versions]
+forge = "47.4.13"
+minecraft = "1.20.1"
+
+[options]
+acceptable-game-versions = ["1.19.2"]
