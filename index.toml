@@ -130,7 +130,7 @@ hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
-hash = "e829ac285d39d6a386ec94114ce448164fc7f7c105fac9daed1d83827a345af0"
+hash = "f7b42891514eb51f455967f171aa4589bdfe548fe3927f7f87762c12ff12d850"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
@@ -210,7 +210,7 @@ hash = "c201cf7a382b297f35475af1b53bd629a6058cb7bef6e2b158aa8265f6fcd1fb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
-hash = "7b5d22e289b8ffad443ce81643f598a49aab2bc7c838586035ba96f1d2636d51"
+hash = "42c8f78bc01fce96980adf16aa7fa3df97dcb7ef6f258400f8c82e694325e512"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"
@@ -461,6 +461,11 @@ metafile = true
 [[files]]
 file = "mods/cyclops-core.pw.toml"
 hash = "0f0099feea1db673f6dded201550c7ee4aaf96434c1af7b6bbe65eac4b669d3c"
+metafile = true
+
+[[files]]
+file = "mods/destroy.pw.toml"
+hash = "3e09b5aa4d553f904c3cd7669403a1112e4de0f9cd8375d7da756741f9901535"
 metafile = true
 
 [[files]]

@@ -27,6 +27,10 @@ ItemEvents.tooltip(event => {
             'rftoolsbuilder:builder',
             'alchemistry:dissolver',
             'alchemistry:combiner',
+            'destroy:vat_controller',
+            'destroy:centrifuge',
+            'destroy:bubble_cap',
+            'destroy:redox_electrolyzer',
             'modularrouters:modular_router',
             'compactmachines:machine_tiny',
         ],
@@ -72,6 +76,47 @@ ItemEvents.tooltip(event => {
             event.add(item, Text.aqua('✓ Cross-mod compatible'));
         } catch (e) {
             console.warn(`Could not add unification tooltip to ${item}: ${e}`);
+        }
+    });
+
+    // Add tooltips for alternative chemistry paths
+    const ALCHEMISTRY_MACHINES = [
+        'alchemistry:dissolver',
+        'alchemistry:combiner',
+        'alchemistry:atomizer',
+        'alchemistry:liquifier',
+        'alchemistry:evaporator',
+        'alchemistry:fission_controller',
+        'alchemistry:fusion_controller'
+    ];
+
+    const DESTROY_MACHINES = [
+        'destroy:vat_controller',
+        'destroy:centrifuge',
+        'destroy:bubble_cap',
+        'destroy:redox_electrolyzer',
+        'destroy:mechanical_mixer'
+    ];
+
+    ALCHEMISTRY_MACHINES.forEach(item => {
+        try {
+            event.add(item, [
+                Text.yellow('⚗ Alchemistry Path'),
+                Text.gray('Alternative: Create: Destroy machines')
+            ]);
+        } catch (e) {
+            console.warn(`Could not add path tooltip to ${item}: ${e}`);
+        }
+    });
+
+    DESTROY_MACHINES.forEach(item => {
+        try {
+            event.add(item, [
+                Text.yellow('⚙ Create: Destroy Path'),
+                Text.gray('Alternative: Alchemistry machines')
+            ]);
+        } catch (e) {
+            console.warn(`Could not add path tooltip to ${item}: ${e}`);
         }
     });
 
