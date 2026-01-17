@@ -130,7 +130,7 @@ hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
 
 [[files]]
 file = "kubejs/client_scripts/item_tooltips.js"
-hash = "cd7f157e712532db17ac163dc6ec8ca8c490f2c10d8bb01e71b4d80578bb9b23"
+hash = "f7b42891514eb51f455967f171aa4589bdfe548fe3927f7f87762c12ff12d850"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
