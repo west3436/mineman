@@ -230,11 +230,15 @@
 			x: 0.0d
 			y: 5.0d
 			description: [
-				"Convert oil products into plastic using PneumaticCraft!"
+				"Plastic is essential for advanced circuits and components!"
 				""
-				"Build a Thermopneumatic Processing Plant."
+				"You have multiple options for producing plastic:"
 				""
-				"Plastic is essential for advanced circuits and components."
+				"&6TFMG:&r Use the built-in plastic production line"
+				"&cImmersive Engineering:&r Build the Plastic Solidifier multiblock"
+				"&bPneumaticCraft:&r Thermopneumatic Processing Plant"
+				""
+				"Choose any method that fits your setup!"
 			]
 			dependencies: [
 				"3000000000000015"
@@ -246,12 +250,27 @@
 				{
 					id: "3000000000000026"
 					type: "item"
-					item: "pneumaticcraft:thermopneumatic_processing_plant"
-				}
-				{
-					id: "3000000000000027"
-					type: "item"
-					item: "pneumaticcraft:plastic"
+					title: "Any Plastic"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "pneumaticcraft:plastic"
+									Count: 1b
+								}
+								{
+									id: "tfmg:plastic_sheet"
+									Count: 1b
+								}
+								{
+									id: "industrialforegoing:plastic"
+									Count: 1b
+								}
+							]
+						}
+					}
 					count: 64
 				}
 			]
