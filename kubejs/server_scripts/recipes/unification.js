@@ -35,7 +35,6 @@ const UNIFIED_ITEMS = {
         'createnuclear:lead_ingot',
     ],
     'electrum_ingot': [
-        'createaddition:electrum_ingot',
         'immersiveengineering:ingot_electrum',
     ],
     'silver_ingot': [
@@ -75,7 +74,6 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:plate_lead',
     ],
     'electrum_plate': [
-        'createaddition:electrum_sheet',
         'immersiveengineering:plate_electrum',
     ],
     'silver_plate': [
@@ -115,9 +113,6 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:nugget_steel',
         'mekanism:nugget_steel',
         'createnuclear:steel_nugget',
-    ],
-    'electrum_nugget': [
-        'createaddition:electrum_nugget',
     ],
     'silver_nugget': [
         'chemlib:silver_nugget',
@@ -169,18 +164,10 @@ const UNIFIED_ITEMS = {
     // Wires
     // -------------------------------------------------------------------------
     'copper_wire': [
-        'createaddition:copper_wire',
         'immersiveengineering:wire_copper',
         'tfmg:copper_wire',
     ],
-    'gold_wire': [
-        'createaddition:gold_wire',
-    ],
-    'iron_wire': [
-        'createaddition:iron_wire',
-    ],
     'electrum_wire': [
-        'createaddition:electrum_wire',
         'immersiveengineering:wire_electrum',
     ],
     'silver_wire': [
@@ -202,21 +189,6 @@ const UNIFIED_ITEMS = {
     // -------------------------------------------------------------------------
     // Rods
     // -------------------------------------------------------------------------
-    'brass_rod': [
-        'createaddition:brass_rod',
-    ],
-    'copper_rod': [
-        'createaddition:copper_rod',
-    ],
-    'gold_rod': [
-        'createaddition:gold_rod',
-    ],
-    'iron_rod': [
-        'createaddition:iron_rod',
-    ],
-    'electrum_rod': [
-        'createaddition:electrum_rod',
-    ],
     'graphite_rod': [
         'createnuclear:graphite_rod',
     ],
@@ -285,11 +257,10 @@ const UNIFIED_FLUIDS = {
     ],
 
     // -------------------------------------------------------------------------
-    // Biofuels (Primary: Immersive Engineering / Create Additions)
+    // Biofuels (Primary: Immersive Engineering)
     // -------------------------------------------------------------------------
     'ethanol': [
         'immersiveengineering:ethanol',
-        'createaddition:bioethanol',
         'forestry:bio_ethanol',
         'mekanismgenerators:bioethanol',
         'pneumaticcraft:ethanol',
@@ -300,7 +271,6 @@ const UNIFIED_FLUIDS = {
         'pneumaticcraft:biodiesel',
     ],
     'seed_oil': [
-        'createaddition:seed_oil',
         'forestry:seed_oil',
     ],
 
