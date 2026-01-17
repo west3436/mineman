@@ -26,7 +26,7 @@ hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
 [[files]]
 file = "config/create.toml"
-hash = "94c2c2162ce3bfbe2e7f38343b63740a3b46ddbc7784f1bedbdf7cd02d5ad011"
+hash = "f31598479853ded5671996a56071eafed74475c0022317a8f8b77397a789888d"
 
 [[files]]
 file = "config/embeddium.json"
