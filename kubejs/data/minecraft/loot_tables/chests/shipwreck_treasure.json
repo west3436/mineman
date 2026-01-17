@@ -15,10 +15,6 @@
               "components": {
                 "ftbquests:loot_crate": "7A0000000000000A"
               }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 1
             }
           ]
         }
