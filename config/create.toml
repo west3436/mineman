@@ -1,7 +1,7 @@
 # Create mod configuration
 # Balanced for cross-mod compatibility with IE, Mekanism, and PneumaticCraft
 
-# Stress values are balanced to integrate with Create Crafts & Additions power system
+# Stress values are balanced for integration with power systems
 # FE conversion: 256 FE = 1 stress unit base
 
 [server]
@@ -24,12 +24,6 @@
             "create:mechanical_drill" = 4,
             "create:mechanical_harvester" = 2,
             "create:mechanical_plough" = 2,
-            
-            # Create Crafts & Additions machines (FE generators/consumers)
-            "createaddition:rolling_mill" = 8,
-            "createaddition:tesla_coil" = 8,
-            "createaddition:alternator" = 8,
-            "createaddition:electric_motor" = 0,
             
             # Create TFMG machines
             "tfmg:industrial_pipe" = 0,
@@ -78,9 +72,7 @@
         # Display item processing rates
         showProcessingRates = true
 
-# Note: Create Crafts & Additions settings are in config/createaddition-common.toml
 # Note: Create TFMG settings are in config/tfmg-common.toml
-# The values configured in those files are designed to integrate with this config:
-# - FE to stress conversion: 256 FE per stress unit
+# The values configured in that file are designed to integrate with this config:
 # - Steel production balanced with IE arc furnace
 # - Distillation outputs aligned with IE refinery
