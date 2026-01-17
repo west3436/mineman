@@ -424,5 +424,47 @@
 				{ item: "minecraft:powered_rail", count: 32, weight: 0.9f }
 			]
 		}
+		{
+			id: "BA0000000000000A"
+			order_index: 20
+			title: "Artillery Arsenal"
+			icon: "createbigcannons:cast_iron_cannon_barrel"
+			loot_size: 1
+			rewards: [
+				{ item: "createbigcannons:solid_shot", count: 16, weight: 1.0f }
+				{ item: "createbigcannons:ap_autocannon_cartridge", count: 32, weight: 1.0f }
+				{ item: "createbigcannons:he_autocannon_cartridge", count: 24, weight: 0.8f }
+				{ item: "createbigcannons:ap_shell", count: 8, weight: 0.8f }
+				{ item: "createbigcannons:he_shell", count: 8, weight: 0.8f }
+				{ item: "createbigcannons:shrapnel_shell", count: 8, weight: 0.8f }
+				{ item: "create_radars:radar_block", count: 4, weight: 0.9f }
+				{ item: "minecraft:tnt", count: 16, weight: 1.0f }
+				{ item: "minecraft:iron_block", count: 8, weight: 1.0f }
+				{ item: "tfmg:steel_ingot", count: 16, weight: 1.0f }
+				{ item: "createbigcannons:nethersteel_ingot", count: 4, weight: 0.5f }
+				{ item: "minecraft:gunpowder", count: 32, weight: 1.0f }
+			]
+		}
+		{
+			id: "BA0000000000000B"
+			order_index: 21
+			title: "Gunsmith's Cache"
+			icon: "cgs:ram_rod_pistol"
+			loot_size: 1
+			rewards: [
+				{ item: "cgs:pistol_ammo", count: 64, weight: 1.0f }
+				{ item: "cgs:revolver_ammo", count: 48, weight: 1.0f }
+				{ item: "cgs:shotgun_shell", count: 32, weight: 0.9f }
+				{ item: "cgs:nailgun_nail", count: 64, weight: 1.0f }
+				{ item: "cgs:musket_ball", count: 48, weight: 0.9f }
+				{ item: "minecraft:gunpowder", count: 32, weight: 1.0f }
+				{ item: "minecraft:iron_ingot", count: 24, weight: 1.0f }
+				{ item: "tfmg:steel_ingot", count: 16, weight: 0.9f }
+				{ item: "create:brass_ingot", count: 16, weight: 0.9f }
+				{ item: "minecraft:gold_ingot", count: 12, weight: 0.8f }
+				{ item: "minecraft:diamond", count: 4, weight: 0.6f }
+				{ item: "cgs:flint_and_brass", count: 2, weight: 0.7f }
+			]
+		}
 	]
 }
