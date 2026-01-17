@@ -29,6 +29,8 @@ ItemEvents.tooltip(event => {
             'alchemistry:combiner',
             'destroy:vat_controller',
             'destroy:centrifuge',
+            'destroy:bubble_cap',
+            'destroy:redox_electrolyzer',
             'modularrouters:modular_router',
             'compactmachines:machine_tiny',
         ],
