@@ -54,23 +54,23 @@ hash = "2e75fcaee760786fd5d7bb57c55b4366df41e1cf710e02d64ac9d74900c2fb34"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_basic_processing.snbt"
-hash = "66803b40a2e66684ca66a838bac3358f1d274a8f7476f9364c14acb0060eea1d"
+hash = "2f43c564e5909557bd74a32096a0c9e3154fa40a898ddeba7380bd6ad9e2d621"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2_steel_electricity.snbt"
-hash = "cfd086f82e5a9b64d35a57a5fb372f60f6d6e73aaf590003d35fcc3c8c0dcebf"
+hash = "da9d934a9bca89eef3df8673bc5183ec9afda5219b0de16c624ae151b0a7edac"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3_oil_plastic.snbt"
-hash = "55a0ae8a65d7c6e5856beb139b09da0e662abb7091759e113d2835280c2fa2f6"
+hash = "88f288bc02843c4eade8867f8d865e651ce5607498fd30d6d445d4e93fa4378e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4_chemistry.snbt"
-hash = "856fa30865c86a4dec26f6b801b35bf7a6df1b891c16efb72d8a41978824769c"
+hash = "72c7041794b8c21784adbcf92d26c72ae56d35f75248899f1a98df8c78cfd38e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5_electronics.snbt"
-hash = "7fda28c6337e977e0460fe055859607156c3d5d1da21eff89d5bd322a83578f9"
+hash = "3954e939dec0616f4ab7d1a8b6dc2b80b66cbabe2a3095ce91d2eb40e199e574"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_future_tech.snbt"
@@ -90,7 +90,7 @@ hash = "6c8d074b44c71b7786966022eb0ae0316ef7c3ade9e9f6735ed69f3330fa8690"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_railways.snbt"
-hash = "f5930590512c77e7ed64f48cc7ae0e10ac12d7db1d1fdc10a49abbc5385184bc"
+hash = "b48352e89ffc2c0165040cb298dc0edb2d4298acae314b8d40efda7bb46ebca0"
 
 [[files]]
 file = "config/immersiveengineering-server.toml"
