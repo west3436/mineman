@@ -415,7 +415,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
-hash = "92b65027fbe99bbbf59e0d09ef03e49fd597de1d5c858f1b44087448fc10bf5f"
+hash = "b7b1859f59e69b1c1b2242bd229e9d33cca4445089b8724ab25144f5ea4c7f3e"
 metafile = true
 
 [[files]]
@@ -425,7 +425,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-radars.pw.toml"
-hash = "211a95aa32851eee13eca68e2f035a63874401b05227a9aabe5132a68ef07363"
+hash = "36632c572a9a570643b56733a9adc249188f7a10654bd1fcde01e8b87392ccdb"
 metafile = true
 
 [[files]]
