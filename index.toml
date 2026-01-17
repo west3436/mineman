@@ -419,6 +419,11 @@ hash = "b7b1859f59e69b1c1b2242bd229e9d33cca4445089b8724ab25144f5ea4c7f3e"
 metafile = true
 
 [[files]]
+file = "mods/create-gunsmithing.pw.toml"
+hash = "2671428ad2c850fb3978cf9fb90813b80cc6c990ed18ed20969c4d4eb2790274"
+metafile = true
+
+[[files]]
 file = "mods/create-ore-excavation.pw.toml"
 hash = "df547fc51e128ea2cb0af3cbc651cab63feefd5e675444262776dd530d63a1e4"
 metafile = true
@@ -871,6 +876,11 @@ metafile = true
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
 hash = "4c96dddf8b3d5bf5ea331459b13d23d7d37332dea2275c00ef755420a66676c4"
+metafile = true
+
+[[files]]
+file = "mods/nukateams-gun-lib.pw.toml"
+hash = "c967ea71512321f1c29c8d0ae050099e88ffb3a56ac82d0b1e7dabfbfab6666f"
 metafile = true
 
 [[files]]
