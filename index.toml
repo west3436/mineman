@@ -414,8 +414,18 @@ hash = "853df4ab2418f347cbb1e3b4ca6c82b2a517a8e4e8ccabcd42c27e3496707a32"
 metafile = true
 
 [[files]]
+file = "mods/create-big-cannons.pw.toml"
+hash = "92b65027fbe99bbbf59e0d09ef03e49fd597de1d5c858f1b44087448fc10bf5f"
+metafile = true
+
+[[files]]
 file = "mods/create-ore-excavation.pw.toml"
 hash = "df547fc51e128ea2cb0af3cbc651cab63feefd5e675444262776dd530d63a1e4"
+metafile = true
+
+[[files]]
+file = "mods/create-radars.pw.toml"
+hash = "211a95aa32851eee13eca68e2f035a63874401b05227a9aabe5132a68ef07363"
 metafile = true
 
 [[files]]
