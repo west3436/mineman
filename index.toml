@@ -464,6 +464,11 @@ hash = "0f0099feea1db673f6dded201550c7ee4aaf96434c1af7b6bbe65eac4b669d3c"
 metafile = true
 
 [[files]]
+file = "mods/destroy.pw.toml"
+hash = "3e09b5aa4d553f904c3cd7669403a1112e4de0f9cd8375d7da756741f9901535"
+metafile = true
+
+[[files]]
 file = "mods/dragonlib.pw.toml"
 hash = "a7bcd625886fcb580a2f85bb43f3e58362a546c31ec0880b97c138c753313199"
 metafile = true

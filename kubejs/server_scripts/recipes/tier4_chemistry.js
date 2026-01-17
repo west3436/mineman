@@ -366,6 +366,87 @@ ServerEvents.recipes(event => {
         D: 'minecraft:diamond'
     });
 
+    // === DESTROY (CREATE ADDON) GATING ===
+    // Alternative path to Alchemistry - Create-based chemistry
+    // Destroy machines provide similar chemical processing capabilities
+    
+    // Remove original Destroy machine recipes
+    const destroyMachines = [
+        'destroy:vat_controller',
+        'destroy:centrifuge',
+        'destroy:bubble_cap',
+        'destroy:redox_electrolyzer',
+        'destroy:mechanical_mixer'
+    ];
+    
+    destroyMachines.forEach(machine => {
+        event.remove({ output: machine });
+    });
+    
+    // Vat Controller - Chemical reactor (alternative to Dissolver/Combiner)
+    event.shaped('destroy:vat_controller', [
+        'IAI',
+        'PCP',
+        'IBI'
+    ], {
+        I: 'mekanism:alloy_infused',
+        A: '#forge:plates/steel',
+        P: '#forge:plastic',
+        C: 'create:fluid_tank',
+        B: 'minecraft:blast_furnace'
+    });
+    
+    // Centrifuge - Separation (alternative to Dissolver)
+    event.shaped('destroy:centrifuge', [
+        'PAP',
+        'ICI',
+        'PIP'
+    ], {
+        P: '#forge:plastic',
+        A: 'mekanism:alloy_infused',
+        I: '#forge:plates/steel',
+        C: 'create:mechanical_bearing'
+    });
+    
+    // Bubble Cap - Distillation (alternative to Evaporator)
+    event.shaped('destroy:bubble_cap', [
+        'IAI',
+        'PGP',
+        'IBI'
+    ], {
+        I: 'mekanism:alloy_infused',
+        A: '#forge:plates/steel',
+        P: '#forge:plastic',
+        G: '#forge:glass',
+        B: 'create:fluid_pipe'
+    });
+    
+    // Redox Electrolyzer - Electrolysis (alternative to Fission)
+    event.shaped('destroy:redox_electrolyzer', [
+        'AIA',
+        'PCP',
+        'ARA'
+    ], {
+        A: 'mekanism:alloy_infused',
+        I: '#forge:plates/steel',
+        P: '#forge:plastic',
+        C: 'create:fluid_tank',
+        R: 'minecraft:redstone_block'
+    });
+    
+    // Mechanical Mixer (if needed for chemistry)
+    event.shaped('destroy:mechanical_mixer', [
+        'IAI',
+        'PMP',
+        'ICI'
+    ], {
+        I: 'mekanism:alloy_infused',
+        A: '#forge:plates/steel',
+        P: '#forge:plastic',
+        M: 'create:whisk',
+        C: 'create:cogwheel'
+    });
+
     // === MODULAR ROUTERS GATING ===
     // Require chemistry components for modular routing
     
