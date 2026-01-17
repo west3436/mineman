@@ -15,6 +15,12 @@
 				{ item: "minecraft:coal", count: 16, weight: 1.0f }
 				{ item: "immersiveengineering:component_iron", count: 4, weight: 1.0f }
 				{ item: "minecraft:redstone", count: 8, weight: 0.8f }
+				{ item: "minecraft:raw_iron", count: 12, weight: 1.0f }
+				{ item: "minecraft:raw_copper", count: 12, weight: 1.0f }
+				{ item: "create:zinc_ingot", count: 6, weight: 0.9f }
+				{ item: "minecraft:lapis_lazuli", count: 8, weight: 0.8f }
+				{ item: "minecraft:flint", count: 16, weight: 1.0f }
+				{ item: "create:mechanical_saw", count: 1, weight: 0.5f }
 			]
 		}
 		{
@@ -30,6 +36,12 @@
 				{ item: "immersiveengineering:wirecoil_copper", count: 4, weight: 1.0f }
 				{ item: "immersiveengineering:treated_wood_horizontal", count: 16, weight: 1.0f }
 				{ item: "minecraft:gold_ingot", count: 4, weight: 0.8f }
+				{ item: "create:water_wheel", count: 2, weight: 0.7f }
+				{ item: "create:windmill_bearing", count: 1, weight: 0.6f }
+				{ item: "create:mechanical_press", count: 1, weight: 0.7f }
+				{ item: "create:hand_crank", count: 2, weight: 1.0f }
+				{ item: "immersiveengineering:wooden_post", count: 16, weight: 1.0f }
+				{ item: "create:chute", count: 8, weight: 0.9f }
 			]
 		}
 		{
@@ -47,6 +59,12 @@
 				{ item: "immersiveengineering:wirecoil_electrum", count: 2, weight: 0.8f }
 				{ item: "minecraft:diamond", count: 2, weight: 0.6f }
 				{ item: "minecraft:emerald", count: 4, weight: 0.8f }
+				{ item: "create:brass_sheet", count: 6, weight: 1.0f }
+				{ item: "create:precision_mechanism", count: 1, weight: 0.5f }
+				{ item: "immersiveengineering:plate_steel", count: 8, weight: 1.0f }
+				{ item: "create:crushing_wheel", count: 2, weight: 0.7f }
+				{ item: "create:mechanical_mixer", count: 1, weight: 0.6f }
+				{ item: "immersiveengineering:stick_steel", count: 8, weight: 0.9f }
 			]
 		}
 		{
@@ -62,6 +80,12 @@
 				{ item: "createaddition:copper_wire", count: 16, weight: 1.0f }
 				{ item: "minecraft:coal_block", count: 8, weight: 1.0f }
 				{ item: "forestry:apatite", count: 16, weight: 0.8f }
+				{ item: "createaddition:alternator", count: 1, weight: 0.6f }
+				{ item: "createaddition:electric_motor", count: 1, weight: 0.6f }
+				{ item: "immersiveengineering:connector_lv", count: 8, weight: 1.0f }
+				{ item: "immersiveengineering:connector_mv", count: 4, weight: 0.8f }
+				{ item: "create:steam_engine", count: 1, weight: 0.5f }
+				{ item: "tfmg:coal_coke", count: 16, weight: 0.9f }
 			]
 		}
 		{
@@ -78,6 +102,12 @@
 				{ item: "create:fluid_tank", count: 2, weight: 0.8f }
 				{ item: "create:mechanical_pump", count: 2, weight: 0.8f }
 				{ item: "minecraft:diamond", count: 3, weight: 0.7f }
+				{ item: "tfmg:gasoline_bucket", count: 1, weight: 0.6f }
+				{ item: "tfmg:diesel_bucket", count: 1, weight: 0.6f }
+				{ item: "pneumaticcraft:pressure_tube", count: 16, weight: 1.0f }
+				{ item: "sophisticatedstorage:basic_tier_upgrade", count: 2, weight: 0.7f }
+				{ item: "create:smart_chute", count: 4, weight: 0.8f }
+				{ item: "create:item_vault", count: 2, weight: 0.7f }
 			]
 		}
 		{
@@ -92,6 +122,12 @@
 				{ item: "pneumaticcraft:fluid_tank", count: 2, weight: 1.0f }
 				{ item: "sophisticatedstorage:barrel", count: 4, weight: 1.0f }
 				{ item: "immersiveengineering:treated_fence", count: 16, weight: 1.0f }
+				{ item: "create:hose_pulley", count: 1, weight: 0.7f }
+				{ item: "create:spout", count: 2, weight: 0.8f }
+				{ item: "create:item_drain", count: 2, weight: 0.8f }
+				{ item: "pneumaticcraft:liquid_hopper", count: 2, weight: 0.7f }
+				{ item: "sophisticatedstorage:limited_barrel_1", count: 2, weight: 0.8f }
+				{ item: "create:copper_valve_handle", count: 4, weight: 0.9f }
 			]
 		}
 		{
@@ -107,6 +143,12 @@
 				{ item: "pneumaticcraft:compressed_iron_ingot", count: 16, weight: 1.0f }
 				{ item: "pneumaticcraft:plastic", count: 32, weight: 1.0f }
 				{ item: "minecraft:diamond", count: 4, weight: 0.8f }
+				{ item: "mekanism:ingot_osmium", count: 12, weight: 0.9f }
+				{ item: "mekanism:ingot_tin", count: 12, weight: 0.9f }
+				{ item: "pneumaticcraft:compressed_iron_block", count: 2, weight: 0.7f }
+				{ item: "mekanism:enriched_iron", count: 8, weight: 0.8f }
+				{ item: "mekanism:enriched_carbon", count: 8, weight: 0.8f }
+				{ item: "alchemistry:chemical_combiner", count: 1, weight: 0.4f }
 			]
 		}
 		{
@@ -122,6 +164,12 @@
 				{ item: "alchemistry:atomizer", count: 1, weight: 0.5f }
 				{ item: "minecraft:diamond_block", count: 1, weight: 0.5f }
 				{ item: "minecraft:emerald", count: 8, weight: 1.0f }
+				{ item: "mekanism:advanced_chemical_tank", count: 1, weight: 0.6f }
+				{ item: "pneumaticcraft:pressure_chamber_wall", count: 16, weight: 0.8f }
+				{ item: "pneumaticcraft:thermopneumatic_processing_plant", count: 1, weight: 0.5f }
+				{ item: "rftools:dimensional_shard", count: 4, weight: 0.7f }
+				{ item: "alchemistry:chemical_dissolver", count: 1, weight: 0.5f }
+				{ item: "mekanism:enrichment_chamber", count: 1, weight: 0.6f }
 			]
 		}
 		{
@@ -138,6 +186,12 @@
 				{ item: "pneumaticcraft:printed_circuit_board", count: 4, weight: 1.0f }
 				{ item: "pneumaticcraft:transistor", count: 8, weight: 1.0f }
 				{ item: "pneumaticcraft:capacitor", count: 8, weight: 1.0f }
+				{ item: "mekanism:steel_casing", count: 4, weight: 0.9f }
+				{ item: "pneumaticcraft:assembly_controller", count: 1, weight: 0.5f }
+				{ item: "pneumaticcraft:assembly_drill", count: 1, weight: 0.6f }
+				{ item: "pneumaticcraft:assembly_laser", count: 1, weight: 0.6f }
+				{ item: "mekanism:teleportation_core", count: 1, weight: 0.4f }
+				{ item: "pneumaticcraft:unassembled_pcb", count: 8, weight: 0.9f }
 			]
 		}
 		{
@@ -153,6 +207,12 @@
 				{ item: "computercraft:disk", count: 4, weight: 1.0f }
 				{ item: "hostilenetworks:prediction_matrix", count: 4, weight: 0.8f }
 				{ item: "minecraft:nether_star", count: 1, weight: 0.3f }
+				{ item: "computercraft:wireless_modem_advanced", count: 2, weight: 0.7f }
+				{ item: "computercraft:monitor_advanced", count: 4, weight: 0.8f }
+				{ item: "hostilenetworks:blank_data_model", count: 3, weight: 0.8f }
+				{ item: "industrialforegoing:latex_processing_unit", count: 1, weight: 0.6f }
+				{ item: "computercraft:printer", count: 1, weight: 0.7f }
+				{ item: "hostilenetworks:deep_learner", count: 1, weight: 0.5f }
 			]
 		}
 		{
@@ -169,6 +229,12 @@
 				{ item: "ae2:cell_component_1k", count: 4, weight: 1.0f }
 				{ item: "ae2:cell_component_4k", count: 2, weight: 0.8f }
 				{ item: "ae2:storage_monitor", count: 2, weight: 0.6f }
+				{ item: "ae2:cell_component_16k", count: 1, weight: 0.5f }
+				{ item: "ae2:cell_component_64k", count: 1, weight: 0.3f }
+				{ item: "ae2:quartz_glass", count: 16, weight: 1.0f }
+				{ item: "ae2:energy_cell", count: 2, weight: 0.7f }
+				{ item: "ae2:crafting_unit", count: 4, weight: 0.8f }
+				{ item: "ae2:spatial_cell_component_2", count: 1, weight: 0.4f }
 			]
 		}
 		{
@@ -185,6 +251,12 @@
 				{ item: "minecraft:netherite_ingot", count: 2, weight: 0.5f }
 				{ item: "minecraft:beacon", count: 1, weight: 0.2f }
 				{ item: "minecraft:diamond_block", count: 2, weight: 0.6f }
+				{ item: "fluxnetworks:flux_plug", count: 2, weight: 0.7f }
+				{ item: "fluxnetworks:flux_point", count: 2, weight: 0.7f }
+				{ item: "createnuclear:reactor_casing", count: 8, weight: 0.8f }
+				{ item: "minecraft:enchanted_golden_apple", count: 2, weight: 0.4f }
+				{ item: "minecraft:elytra", count: 1, weight: 0.2f }
+				{ item: "createnuclear:fuel_rod", count: 2, weight: 0.6f }
 			]
 		}
 		{
@@ -201,6 +273,12 @@
 				{ item: "minecraft:ender_pearl", count: 8, weight: 1.0f }
 				{ item: "minecraft:totem_of_undying", count: 1, weight: 0.1f }
 				{ item: "minecraft:name_tag", count: 4, weight: 1.0f }
+				{ item: "naturescompass:naturescompass", count: 1, weight: 0.6f }
+				{ item: "minecraft:spyglass", count: 1, weight: 0.8f }
+				{ item: "minecraft:saddle", count: 1, weight: 0.7f }
+				{ item: "minecraft:horse_armor_diamond", count: 1, weight: 0.5f }
+				{ item: "minecraft:trident", count: 1, weight: 0.3f }
+				{ item: "minecraft:heart_of_the_sea", count: 1, weight: 0.4f }
 			]
 		}
 		{
@@ -216,6 +294,12 @@
 				{ item: "minecraft:emerald", count: 8, weight: 0.8f }
 				{ item: "minecraft:netherite_scrap", count: 2, weight: 0.3f }
 				{ item: "minecraft:ancient_debris", count: 1, weight: 0.2f }
+				{ item: "minecraft:enchanted_book", count: 1, weight: 0.7f }
+				{ item: "minecraft:experience_bottle", count: 8, weight: 0.9f }
+				{ item: "minecraft:music_disc_13", count: 1, weight: 0.3f }
+				{ item: "minecraft:chain", count: 8, weight: 0.8f }
+				{ item: "minecraft:iron_horse_armor", count: 1, weight: 0.7f }
+				{ item: "minecraft:golden_horse_armor", count: 1, weight: 0.5f }
 			]
 		}
 		{
@@ -231,6 +315,12 @@
 				{ item: "minecraft:golden_carrot", count: 8, weight: 1.0f }
 				{ item: "minecraft:glistering_melon_slice", count: 8, weight: 1.0f }
 				{ item: "agricraft:crop_sticks", count: 16, weight: 1.0f }
+				{ item: "farmersdelight:roast_chicken", count: 3, weight: 0.9f }
+				{ item: "farmersdelight:stuffed_pumpkin", count: 2, weight: 0.8f }
+				{ item: "farmersdelight:fruit_salad", count: 4, weight: 0.9f }
+				{ item: "minecraft:enchanted_golden_apple", count: 1, weight: 0.2f }
+				{ item: "farmersdelight:rice", count: 16, weight: 1.0f }
+				{ item: "farmersdelight:tomato", count: 16, weight: 1.0f }
 			]
 		}
 		{
@@ -245,6 +335,12 @@
 				{ item: "immersivecooking:watering_can", count: 1, weight: 0.6f }
 				{ item: "minecraft:bone_meal", count: 32, weight: 1.0f }
 				{ item: "minecraft:composter", count: 4, weight: 1.0f }
+				{ item: "agricraft:seed_analyzer", count: 1, weight: 0.5f }
+				{ item: "agricraft:journal", count: 1, weight: 0.7f }
+				{ item: "farmingforblockheads:market", count: 1, weight: 0.6f }
+				{ item: "farmersdelight:organic_compost", count: 16, weight: 0.9f }
+				{ item: "minecraft:bee_nest", count: 2, weight: 0.7f }
+				{ item: "minecraft:honeycomb", count: 8, weight: 0.8f }
 			]
 		}
 		{
@@ -260,6 +356,12 @@
 				{ item: "minecraft:quartz_block", count: 16, weight: 0.8f }
 				{ item: "minecraft:iron_block", count: 4, weight: 0.6f }
 				{ item: "framedblocks:framed_cube", count: 16, weight: 1.0f }
+				{ item: "minecraft:white_concrete", count: 32, weight: 0.9f }
+				{ item: "minecraft:smooth_stone", count: 64, weight: 1.0f }
+				{ item: "minecraft:polished_andesite", count: 64, weight: 0.9f }
+				{ item: "minecraft:bricks", count: 32, weight: 0.9f }
+				{ item: "minecraft:prismarine", count: 32, weight: 0.8f }
+				{ item: "minecraft:sea_lantern", count: 16, weight: 0.7f }
 			]
 		}
 		{
@@ -274,6 +376,12 @@
 				{ item: "handcrafted:cushion", count: 4, weight: 1.0f }
 				{ item: "handcrafted:chair", count: 4, weight: 1.0f }
 				{ item: "minecraft:painting", count: 8, weight: 1.0f }
+				{ item: "supplementaries:pedestal", count: 4, weight: 0.9f }
+				{ item: "handcrafted:table", count: 2, weight: 0.9f }
+				{ item: "supplementaries:flower_box", count: 8, weight: 0.9f }
+				{ item: "minecraft:flower_pot", count: 16, weight: 1.0f }
+				{ item: "supplementaries:chandelier", count: 2, weight: 0.7f }
+				{ item: "minecraft:item_frame", count: 16, weight: 1.0f }
 			]
 		}
 		{
@@ -288,6 +396,12 @@
 				{ item: "create:track_station", count: 4, weight: 1.0f }
 				{ item: "create:track_signal", count: 8, weight: 1.0f }
 				{ item: "railways:conductor_cap", count: 1, weight: 0.5f }
+				{ item: "create:track_observer", count: 4, weight: 0.9f }
+				{ item: "railways:semaphore", count: 4, weight: 0.8f }
+				{ item: "create:schedule", count: 2, weight: 0.7f }
+				{ item: "railways:track_birch", count: 16, weight: 0.8f }
+				{ item: "railways:track_oak", count: 16, weight: 0.8f }
+				{ item: "create:controls", count: 2, weight: 0.8f }
 			]
 		}
 		{
@@ -302,6 +416,12 @@
 				{ item: "railways:semaphore", count: 4, weight: 1.0f }
 				{ item: "railways:sequenced_gearshift", count: 2, weight: 0.6f }
 				{ item: "minecraft:rail", count: 64, weight: 1.0f }
+				{ item: "railways:smokestack_diesel", count: 2, weight: 0.7f }
+				{ item: "railways:smokestack_long", count: 2, weight: 0.7f }
+				{ item: "create:portable_fluid_interface", count: 2, weight: 0.8f }
+				{ item: "railways:track_coupler", count: 4, weight: 0.9f }
+				{ item: "create:steam_whistle", count: 2, weight: 0.8f }
+				{ item: "minecraft:powered_rail", count: 32, weight: 0.9f }
 			]
 		}
 	]
