@@ -205,48 +205,6 @@
 			]
 		}
 		{
-			title: "Advanced Power - Create Addition"
-			icon: "createaddition:alternator"
-			x: -3.0d
-			y: 5.0d
-			description: [
-				"Create Addition allows you to generate electricity from rotation!"
-				""
-				"Build an Alternator to convert kinetic energy into FE power."
-				""
-				"This bridges Create with other tech mods."
-			]
-			dependencies: ["2000000000000015"]
-			id: "2000000000000025"
-			tasks: [
-				{
-					id: "2000000000000026"
-					type: "item"
-					item: "createaddition:alternator"
-				}
-				{
-					id: "2000000000000027"
-					type: "item"
-					item: "createaddition:connector"
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "2000000000000028"
-					type: "item"
-					item: "createaddition:copper_spool"
-					count: 8
-				}
-				{
-					id: "2000000000000029"
-					type: "item"
-					item: "createaddition:gold_spool"
-					count: 4
-				}
-			]
-		}
-		{
 			title: "Advanced Power - IE Generators"
 			icon: "immersiveengineering:generator"
 			x: 3.0d
@@ -315,11 +273,7 @@
 				""
 				"Start your journey into sustainable resource production."
 			]
-			dependencies: [
-				"2000000000000025"
-				"2000000000000030"
-			]
-			dependency_requirement: "one_completed"
+			dependencies: ["2000000000000030"]
 			id: "2000000000000035"
 			tasks: [
 				{
@@ -361,11 +315,7 @@
 				""
 				"Perfect for organizing your growing resource stockpile."
 			]
-			dependencies: [
-				"2000000000000025"
-				"2000000000000030"
-			]
-			dependency_requirement: "one_completed"
+			dependencies: ["2000000000000030"]
 			id: "2000000000000040"
 			tasks: [
 				{
@@ -406,11 +356,7 @@
 				""
 				"Craft powerful, upgradeable equipment for your adventures."
 			]
-			dependencies: [
-				"2000000000000025"
-				"2000000000000030"
-			]
-			dependency_requirement: "one_completed"
+			dependencies: ["2000000000000030"]
 			id: "2000000000000045"
 			tasks: [
 				{

@@ -31,7 +31,6 @@ const PRIMARY_OUTPUTS = {
 
     // Nuggets
     'steel_nugget': 'tfmg:steel_nugget',
-    'electrum_nugget': 'createaddition:electrum_nugget',
     'silver_nugget': 'chemlib:silver_nugget',
 
     // Storage Blocks
@@ -48,9 +47,7 @@ const PRIMARY_OUTPUTS = {
     'tin_gear': 'forestry:gear_tin',
 
     // Wires
-    'copper_wire': 'createaddition:copper_wire',
-    'gold_wire': 'createaddition:gold_wire',
-    'iron_wire': 'createaddition:iron_wire',
+    'copper_wire': 'immersiveengineering:wire_copper',
     'electrum_wire': 'immersiveengineering:wire_electrum',
     'silver_wire': 'immersiveengineering:wire_silver',
     'aluminum_wire': 'immersiveengineering:wire_aluminum',
@@ -59,11 +56,6 @@ const PRIMARY_OUTPUTS = {
     'constantan_wire': 'tfmg:constantan_wire',
 
     // Rods
-    'brass_rod': 'createaddition:brass_rod',
-    'copper_rod': 'createaddition:copper_rod',
-    'gold_rod': 'createaddition:gold_rod',
-    'iron_rod': 'createaddition:iron_rod',
-    'electrum_rod': 'createaddition:electrum_rod',
     'graphite_rod': 'createnuclear:graphite_rod',
     'uranium_rod': 'createnuclear:uranium_rod',
     'hdpe_rod': 'mekanism:hdpe_rod',
@@ -128,7 +120,7 @@ const PRIMARY_FLUIDS = {
     // Biofuels
     'ethanol': 'immersiveengineering:ethanol',
     'biodiesel': 'immersiveengineering:biodiesel',
-    'seed_oil': 'createaddition:seed_oil',
+    'seed_oil': 'forestry:seed_oil',
 
     // Miscellaneous
     'molten_steel': 'tconstruct:molten_steel',

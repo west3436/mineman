@@ -89,21 +89,17 @@ JEIEvents.hideItems(event => {
         // Note: copper, gold, iron, lead, sulfur already listed in the "ChemLib vs IE duplicates" section above
 
         // Electrum duplicates (keeping IE as primary)
-        'createaddition:electrum_ingot',
-        'createaddition:electrum_sheet',
-        'createaddition:electrum_wire',
+        // (Create Crafts & Additions removed)
 
         // Silver duplicates (keeping IE as primary)
         'chemlib:silver_ingot',
         'chemlib:silver_plate',
         'chemlib:silver_dust',
 
-        // Duplicate wires (keeping Create Additions as primary for most)
+        // Duplicate wires (keeping IE as primary)
         'immersiveengineering:wire_copper',
         'tfmg:copper_wire',
-        'immersiveengineering:wire_electrum',
-        // Single-source wires (aluminum, lead, steel, constantan) remain visible as primaries
-        // Create Additions wires (gold, iron, electrum) are kept as primary
+        // (Create Crafts & Additions removed - wires now using IE as primary)
 
         // Gears - Currently no duplicates detected, each mod provides unique materials
         // Industrial Foregoing: iron/gold/diamond gears
@@ -147,7 +143,7 @@ JEIEvents.hideFluids(event => {
     // Hide duplicate fluids (keeping primary variants visible)
     const HIDDEN_FLUID_DUPLICATES = [
         // Ethanol/Bio-ethanol (keeping IE ethanol as primary)
-        'createaddition:bioethanol',
+        // (Create Crafts & Additions bioethanol removed)
         'forestry:bio_ethanol',
         'mekanismgenerators:bioethanol',
         'pneumaticcraft:ethanol',
@@ -156,8 +152,8 @@ JEIEvents.hideFluids(event => {
         // Biodiesel (keeping IE biodiesel as primary)
         'pneumaticcraft:biodiesel',
 
-        // Seed Oil (keeping Create Addition seed_oil as primary)
-        'forestry:seed_oil',
+        // Seed Oil (keeping Forestry seed_oil as primary)
+        // (Create Crafts & Additions removed)
 
         // PneumaticCraft LPG (TFMG is primary)
         'pneumaticcraft:lpg',

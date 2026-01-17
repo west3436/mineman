@@ -26,11 +26,7 @@ hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
 [[files]]
 file = "config/create.toml"
-hash = "94c2c2162ce3bfbe2e7f38343b63740a3b46ddbc7784f1bedbdf7cd02d5ad011"
-
-[[files]]
-file = "config/createaddition-common.toml"
-hash = "69bf252c4c7efc2f9f5fdf35348a4ba36a15b45cb1200560d410dba5eb248983"
+hash = "f31598479853ded5671996a56071eafed74475c0022317a8f8b77397a789888d"
 
 [[files]]
 file = "config/embeddium.json"
@@ -58,7 +54,7 @@ hash = "66803b40a2e66684ca66a838bac3358f1d274a8f7476f9364c14acb0060eea1d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2_steel_electricity.snbt"
-hash = "cfd086f82e5a9b64d35a57a5fb372f60f6d6e73aaf590003d35fcc3c8c0dcebf"
+hash = "8f0197e50de131fbdaa623685fd7daa07c1e8eee7fd5696f4694a34b9cea3ad4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3_oil_plastic.snbt"
@@ -138,7 +134,7 @@ hash = "e829ac285d39d6a386ec94114ce448164fc7f7c105fac9daed1d83827a345af0"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "9db83d85cc438bbedae2192eeb5d046a2a272248bf66590d0d2cc8d73a34aa9f"
+hash = "f83bdf8be40804c5274d63d5bcaab814629dd1eeebc8766cbc3f439854068bdc"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/abandoned_mineshaft.json"
@@ -198,7 +194,7 @@ hash = "c73e96a21322bb43c2ebf314bcfeb97d54b6962adb5968f89f1e8000bf39f657"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
-hash = "4677f23721610cb1ce271523c9710ddcd0e40655b660deedea4b60e4f26c8e73"
+hash = "5311ae5a2afaa2ec462b0897efa52dd80fa34dbad2e0d745acd8f94511639014"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
@@ -226,7 +222,7 @@ hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
-hash = "533c294db60bccb7a2ba855701acad1fe257c2090fcaa0ba9b399955dc562963"
+hash = "8b8d2a0edb5a4a9957d2cb9a0b1c736aac388f7cab1924329ea80d7b2926b3ff"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"
@@ -440,11 +436,6 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
-metafile = true
-
-[[files]]
-file = "mods/createaddition.pw.toml"
-hash = "e6d1f36e9e0193fe410d136e0cda8a7f6dbbc809c0644f06a601bddf5b38a395"
 metafile = true
 
 [[files]]
@@ -683,16 +674,6 @@ hash = "cb2fdd24ac8bc392cfb22757c422ae7e55d7891ef0fa29b2895d0d5718a993b8"
 metafile = true
 
 [[files]]
-file = "mods/inventory-essentials.pw.toml"
-hash = "a3ad7e869e1b5bbb07a1972325a70de2b8a1dac9e6919fd3cc1c037e77fcf4c0"
-metafile = true
-
-[[files]]
-file = "mods/inventory-profiles-next.pw.toml"
-hash = "2514cf5b79023dea4f80446a03bfef5ddfaa4cc3a463abb49fd8a16c891ac620"
-metafile = true
-
-[[files]]
 file = "mods/item-filters.pw.toml"
 hash = "ff92eddb2bf6f1afe9fa7fc73d63ea9419e0cff77fbd4fd2936b51525fe9340c"
 metafile = true
@@ -750,11 +731,6 @@ metafile = true
 [[files]]
 file = "mods/legendary-tooltips.pw.toml"
 hash = "bc4c7d42fd94d57b020a43dbb3aa3caaa8395c77bd872f252a8302a39b2256a9"
-metafile = true
-
-[[files]]
-file = "mods/libipn.pw.toml"
-hash = "5a98133891a72e041e37bc235e86d495e488387f1628fc1377e6b5169dfbb8bd"
 metafile = true
 
 [[files]]
