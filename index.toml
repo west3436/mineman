@@ -81,6 +81,10 @@ file = "config/ftbquests/quests/chapters/side_building.snbt"
 hash = "2d85bc1a2a6841994c4ed75ce1bf217d28daf772322572df721c1238e3fe03dc"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/side_combat.snbt"
+hash = "cac07eb763c79bbf09d523970b9bd3098778bfa7a28a6c74b37f5288125cf366"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/side_exploration.snbt"
 hash = "6c8d074b44c71b7786966022eb0ae0316ef7c3ade9e9f6735ed69f3330fa8690"
 
@@ -90,7 +94,7 @@ hash = "b48352e89ffc2c0165040cb298dc0edb2d4298acae314b8d40efda7bb46ebca0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables.snbt"
-hash = "7c172443e8f51e4f6ef8c7518bf96cce2347b09e1bff976e8d2ca0cb1cc5bf04"
+hash = "1b8e4a63b11035c975f707fe4421011aafbd72bec44df1ab5e995cdd9cb6ff73"
 
 [[files]]
 file = "config/immersiveengineering-server.toml"
@@ -142,7 +146,7 @@ hash = "7f11d810661f32fc8e87f240cebca8b66e7afa4dfdc38cd1045ae0aaecfb6b78"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/bastion_treasure.json"
-hash = "108a9b18e31127244068cf16c0c380ffe6dc0d88a1343d4388347c5cac2089bc"
+hash = "4946dc47afb932d1ace038d43f8552574c02633c1e0b20bbf1f7cbe6cf79caa3"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/buried_treasure.json"
@@ -154,7 +158,7 @@ hash = "dc4f114c14255d22151462867553a0cea17f12342f7556c23d35692dd8915f50"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/end_city_treasure.json"
-hash = "3bbb106ddd4de8e504af38d147deab3c412a47c7c934062a0e114ed687e2a8a3"
+hash = "82009468d78daa29fd6e697b90978ffe7ea6d2f2a82598ced450d3c2673b5217"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/jungle_temple.json"
@@ -162,7 +166,7 @@ hash = "437a146d9a32ab94a6e1b55d9cc2b053ce6d94240090eb50d08967b3dbd7c4ed"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/nether_bridge.json"
-hash = "bee763e78888ffb8d17db199ac0082d67c8583377ac9cf195759c48147437ae4"
+hash = "45dbf1c332af41c6d1f17b04cc80eaada0d853d28bb227f3f391b1cf74c2391a"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/shipwreck_treasure.json"
@@ -174,19 +178,19 @@ hash = "82aa41c73f8f59482572f4d3b8a7b22655c8fb6802a15df89112ec383ce06f00"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/stronghold_library.json"
-hash = "11619849cda92878b4b4dde75574111a0198dfc2b1ce1fb20961e07d8432479e"
+hash = "84c874ae90fd15ce6ed3415062942c6afd0b9df38a16d2adf717dc77e7f3d98d"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/entities/skeleton.json"
-hash = "d79437d4b8e5f0f03fb1f2024f68866c29bda40ccf6b3cfc26ca84f8af7fc8fb"
+hash = "e81f1c14c4b5febcbc5a10bba052040bcb428bfc557badf77dfbd3ee521ae08d"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/entities/wither_skeleton.json"
-hash = "59468471428886184894de5eab8657746c61c696906f80f8a9669136d6119e79"
+hash = "69b7880e603296f438496dd50afae664caba69ce01c98d193f8fe81a841b26a2"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/entities/zombie.json"
-hash = "d79437d4b8e5f0f03fb1f2024f68866c29bda40ccf6b3cfc26ca84f8af7fc8fb"
+hash = "e81f1c14c4b5febcbc5a10bba052040bcb428bfc557badf77dfbd3ee521ae08d"
 
 [[files]]
 file = "kubejs/server_scripts/dump_registry.js"
