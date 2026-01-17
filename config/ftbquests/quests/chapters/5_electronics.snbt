@@ -268,16 +268,17 @@
 			]
 		}
 		{
-			title: "ComputerCraft Basics"
-			icon: "computercraft:computer_advanced"
+			title: "ComputerCraft: Networking"
+			icon: "computercraft:wired_modem_full"
 			x: 0.0d
 			y: 5.0d
+			shape: "circle"
 			description: [
-				"ComputerCraft adds programmable computers and turtles!"
+				"Connect your computers into a network!"
 				""
-				"Write Lua programs to automate complex tasks."
+				"Wired modems allow computers to communicate and share peripherals."
 				""
-				"Computers can control and monitor your entire factory."
+				"Use networking to build a factory control system!"
 			]
 			dependencies: [
 				"5000000000000012"
@@ -289,17 +290,19 @@
 				{
 					id: "5000000000000030"
 					type: "item"
-					item: "computercraft:computer_advanced"
+					item: "computercraft:wired_modem_full"
+					count: 4
 				}
 				{
 					id: "5000000000000031"
 					type: "item"
-					item: "computercraft:disk_drive"
+					item: "computercraft:cable"
+					count: 32
 				}
 				{
 					id: "5000000000000032"
 					type: "item"
-					item: "computercraft:wired_modem"
+					item: "computercraft:monitor_advanced"
 					count: 4
 				}
 			]
@@ -307,13 +310,13 @@
 				{
 					id: "5000000000000033"
 					type: "item"
-					item: "computercraft:disk"
-					count: 8
+					item: "computercraft:wireless_modem_advanced"
+					count: 4
 				}
 				{
 					id: "5000000000000034"
 					type: "item"
-					item: "computercraft:wireless_modem_advanced"
+					item: "computercraft:speaker"
 					count: 2
 				}
 			]

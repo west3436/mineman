@@ -4,13 +4,13 @@
 	order_index: 4
 	filename: "4_chemistry"
 	title: "Tier 4: Chemistry"
-	icon: "mekanism:chemical_tank"
+	icon: "mekanism:basic_chemical_tank"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Welcome to Tier 4"
-			icon: "mekanism:chemical_tank"
+			icon: "mekanism:basic_chemical_tank"
 			x: 0.0d
 			y: 0.0d
 			shape: "hexagon"

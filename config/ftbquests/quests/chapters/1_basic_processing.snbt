@@ -158,22 +158,91 @@
 			]
 		}
 		{
-			title: "Process Your First Ores"
-			icon: "create:crushed_raw_iron"
+			title: "Set Up Item Conveying"
+			icon: "create:belt_connector"
 			x: -3.0d
 			y: 5.5d
 			description: [
-				"Use the Mechanical Press to process raw ores!"
+				"Create's belt system is the backbone of automation!"
 				""
-				"Crushing raw ores gives you crushed ores, which can be smelted for extra output."
+				"Craft belts, depots, and funnels to move items around your factory."
 				""
-				"This is your first step into efficient ore processing."
+				"Belts are simple to craft and don't require any advanced materials."
 			]
 			dependencies: ["1000000000000011"]
 			id: "1000000000000016"
 			tasks: [
 				{
 					id: "1000000000000017"
+					type: "item"
+					title: "Belt Connectors"
+					item: "create:belt_connector"
+					count: 8
+				}
+				{
+					id: "1000000000000060"
+					type: "item"
+					title: "Depot or Funnel"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:depot"
+									Count: 1b
+								}
+								{
+									id: "create:andesite_funnel"
+									Count: 1b
+								}
+								{
+									id: "create:chute"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000018"
+					type: "item"
+					item: "create:belt_connector"
+					count: 16
+				}
+				{
+					id: "1000000000000019"
+					type: "item"
+					item: "create:andesite_funnel"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "Crush Some Ores"
+			icon: "create:millstone"
+			x: -3.0d
+			y: 7.0d
+			description: [
+				"Use a Millstone to process ores more efficiently!"
+				""
+				"The Millstone crushes raw ores into crushed ores, which smelt into more ingots."
+				""
+				"This is your first step into efficient ore processing - no advanced materials needed!"
+			]
+			dependencies: ["1000000000000016"]
+			id: "1000000000000020"
+			tasks: [
+				{
+					id: "1000000000000021"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "1000000000000022"
 					type: "item"
 					title: "Any Crushed Ore"
 					item: {
@@ -205,79 +274,16 @@
 			]
 			rewards: [
 				{
-					id: "1000000000000018"
+					id: "1000000000000023"
 					type: "item"
 					item: "minecraft:raw_iron"
 					count: 32
 				}
 				{
-					id: "1000000000000019"
+					id: "1000000000000024"
 					type: "item"
 					item: "minecraft:raw_copper"
 					count: 32
-				}
-			]
-		}
-		{
-			title: "Automate Basic Crafting"
-			icon: "create:mechanical_crafter"
-			x: -3.0d
-			y: 7.0d
-			description: [
-				"Mechanical Crafters let you automate crafting recipes!"
-				""
-				"Arrange them in the shape of the recipe you want to automate."
-				""
-				"This is the foundation of Create automation."
-			]
-			dependencies: ["1000000000000016"]
-			id: "1000000000000020"
-			tasks: [
-				{
-					id: "1000000000000021"
-					type: "item"
-					item: "create:mechanical_crafter"
-					count: 3
-				}
-				{
-					id: "1000000000000022"
-					type: "item"
-					title: "Automated Item"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "create:andesite_casing"
-									Count: 1b
-								}
-								{
-									id: "create:copper_casing"
-									Count: 1b
-								}
-								{
-									id: "create:brass_casing"
-									Count: 1b
-								}
-							]
-						}
-					}
-					count: 8
-				}
-			]
-			rewards: [
-				{
-					id: "1000000000000023"
-					type: "item"
-					item: "create:brass_ingot"
-					count: 16
-				}
-				{
-					id: "1000000000000024"
-					type: "item"
-					item: "create:electron_tube"
-					count: 4
 				}
 			]
 		}
@@ -451,6 +457,240 @@
 					type: "item"
 					item: "immersiveengineering:connector_mv"
 					count: 4
+				}
+			]
+		}
+		{
+			title: "Storage Drawers"
+			icon: "storagedrawers:oak_full_drawers_4"
+			x: -6.0d
+			y: 2.0d
+			shape: "circle"
+			description: [
+				"Storage Drawers provide efficient, visual item storage!"
+				""
+				"Drawers show what's inside and can hold huge amounts of a single item type."
+				""
+				"Available from the start - no progression required!"
+			]
+			dependencies: ["1000000000000002"]
+			id: "1000000000000046"
+			tasks: [
+				{
+					id: "1000000000000047"
+					type: "item"
+					title: "Any Drawer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "storagedrawers:oak_full_drawers_1"
+									Count: 1b
+								}
+								{
+									id: "storagedrawers:oak_full_drawers_2"
+									Count: 1b
+								}
+								{
+									id: "storagedrawers:oak_full_drawers_4"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000048"
+					type: "item"
+					item: "storagedrawers:upgrade_template"
+					count: 4
+				}
+				{
+					id: "1000000000000049"
+					type: "item"
+					item: "storagedrawers:drawer_key"
+				}
+			]
+		}
+		{
+			title: "Tinker's Construct"
+			icon: "tconstruct:seared_melter"
+			x: -6.0d
+			y: 4.0d
+			shape: "circle"
+			description: [
+				"Tinker's Construct lets you create customizable, upgradeable tools!"
+				""
+				"Start with a Seared Melter to melt metals, then cast tool parts."
+				""
+				"Available from the start - no progression required!"
+			]
+			dependencies: ["1000000000000002"]
+			id: "1000000000000050"
+			tasks: [
+				{
+					id: "1000000000000051"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "1000000000000052"
+					type: "item"
+					title: "Any Cast"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head_cast"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:sword_blade_cast"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:tool_handle_cast"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000053"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 32
+				}
+				{
+					id: "1000000000000054"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "ComputerCraft"
+			icon: "computercraft:computer_normal"
+			x: 6.0d
+			y: 2.0d
+			shape: "circle"
+			description: [
+				"ComputerCraft adds programmable computers and turtles!"
+				""
+				"Write Lua programs to automate tasks and control your base."
+				""
+				"Available from the start - no progression required!"
+			]
+			dependencies: ["1000000000000002"]
+			id: "1000000000000055"
+			tasks: [
+				{
+					id: "1000000000000056"
+					type: "item"
+					title: "Any Computer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "computercraft:computer_normal"
+									Count: 1b
+								}
+								{
+									id: "computercraft:computer_advanced"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000057"
+					type: "item"
+					item: "computercraft:disk"
+					count: 4
+				}
+				{
+					id: "1000000000000058"
+					type: "item"
+					item: "computercraft:cable"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Sophisticated Backpacks"
+			icon: "sophisticatedbackpacks:backpack"
+			x: 6.0d
+			y: 4.0d
+			shape: "circle"
+			description: [
+				"Sophisticated Backpacks adds upgradeable portable storage!"
+				""
+				"Craft a backpack and add upgrades for filtering, auto-pickup, and more."
+				""
+				"Available from the start - no progression required!"
+			]
+			dependencies: ["1000000000000002"]
+			id: "1000000000000061"
+			tasks: [
+				{
+					id: "1000000000000062"
+					type: "item"
+					item: "sophisticatedbackpacks:backpack"
+				}
+				{
+					id: "1000000000000063"
+					type: "item"
+					title: "Any Upgrade"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "sophisticatedbackpacks:pickup_upgrade"
+									Count: 1b
+								}
+								{
+									id: "sophisticatedbackpacks:filter_upgrade"
+									Count: 1b
+								}
+								{
+									id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1000000000000064"
+					type: "item"
+					item: "sophisticatedbackpacks:upgrade_base"
+					count: 4
+				}
+				{
+					id: "1000000000000065"
+					type: "item"
+					item: "leather"
+					count: 8
 				}
 			]
 		}

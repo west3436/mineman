@@ -304,16 +304,17 @@
 			]
 		}
 		{
-			title: "Unlock: Storage Drawers"
-			icon: "storagedrawers:oak_full_drawers_4"
+			title: "Storage Drawers: Controller Network"
+			icon: "storagedrawers:controller"
 			x: 0.0d
 			y: 6.5d
+			shape: "circle"
 			description: [
-				"Storage Drawers provide efficient item storage with visual access!"
+				"Expand your drawer system with a Controller!"
 				""
-				"Build drawer controllers for easy mass storage management."
+				"A Drawer Controller connects to adjacent drawers and allows you to insert/extract from all at once."
 				""
-				"Perfect for organizing your growing resource stockpile."
+				"Add storage upgrades to increase drawer capacity!"
 			]
 			dependencies: ["2000000000000030"]
 			id: "2000000000000040"
@@ -321,40 +322,61 @@
 				{
 					id: "2000000000000041"
 					type: "item"
-					item: "storagedrawers:oak_full_drawers_4"
-					count: 4
+					item: "storagedrawers:controller"
 				}
 				{
 					id: "2000000000000042"
 					type: "item"
-					item: "storagedrawers:controller"
+					title: "Storage Upgrade"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "storagedrawers:obsidian_storage_upgrade"
+									Count: 1b
+								}
+								{
+									id: "storagedrawers:iron_storage_upgrade"
+									Count: 1b
+								}
+								{
+									id: "storagedrawers:gold_storage_upgrade"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 4
 				}
 			]
 			rewards: [
 				{
 					id: "2000000000000043"
 					type: "item"
-					item: "storagedrawers:upgrade_template"
+					item: "storagedrawers:diamond_storage_upgrade"
 					count: 4
 				}
 				{
 					id: "2000000000000044"
 					type: "item"
-					item: "storagedrawers:drawer_key"
+					item: "storagedrawers:compacting_drawers_3"
 				}
 			]
 		}
 		{
-			title: "Unlock: Tinker's Construct"
+			title: "Tinker's Construct: Full Smeltery"
 			icon: "tconstruct:smeltery_controller"
 			x: 5.0d
 			y: 6.5d
+			shape: "circle"
 			description: [
-				"Tinker's Construct allows you to create customizable tools!"
+				"Build a complete Smeltery for large-scale metal processing!"
 				""
-				"Build a Smeltery to melt down metals and cast tools."
+				"The Smeltery can melt multiple metals at once and alloy them together."
 				""
-				"Craft powerful, upgradeable equipment for your adventures."
+				"Craft a complete tool using the smeltery's casting system!"
 			]
 			dependencies: ["2000000000000030"]
 			id: "2000000000000045"
@@ -367,21 +389,41 @@
 				{
 					id: "2000000000000047"
 					type: "item"
-					item: "tconstruct:seared_melter"
+					title: "Any Tinker's Tool"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:mattock"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:sledge_hammer"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
 			rewards: [
 				{
 					id: "2000000000000048"
 					type: "item"
-					item: "tconstruct:seared_brick"
-					count: 32
+					item: "tconstruct:cobalt_ingot"
+					count: 8
 				}
 				{
 					id: "2000000000000049"
 					type: "item"
-					item: "tconstruct:grout"
-					count: 16
+					item: "tconstruct:seared_drain"
+					count: 2
 				}
 			]
 		}
