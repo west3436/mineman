@@ -78,7 +78,7 @@ hash = "cfc3f382de14db187619c5ef696462c1a145334cd5e9d85f2e285b9f12de9b42"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
-hash = "352d4f191d9a8b3bcc25464142dffa50a5cc1feea92da5008bdda8b3b4d90d41"
+hash = "714e01b72cdbb5e158f907232d1eadfbdd32c63e9e2ed77ff44476cef4eb1c06"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_building.snbt"
@@ -115,6 +115,14 @@ hash = "e47fb0ae6ecfae75894917958c1c9133d0fa69e3d84cef8a2fb4902e1b3f3c8f"
 [[files]]
 file = "config/pneumaticcraft-common.toml"
 hash = "8d5b31197e7c96b9a346cd89162a4b50b8f20be5d6caba4b85e3088370e3b182"
+
+[[files]]
+file = "config/territorial-common.toml"
+hash = "3743c86d9a62f45c78fc21d0830d203e32d2cd78986eea448432361483506586"
+
+[[files]]
+file = "config/territorial-rules.toml"
+hash = "58a07b0949cef3a0a07a3d8315ab3f340e650dde7b681795f3f3fba3dd7bdbf5"
 
 [[files]]
 file = "config/tfmg-common.toml"
@@ -1011,6 +1019,11 @@ metafile = true
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "974af7bd8b20941d615aa6d37f522da34f62d81ddee97ccfad3c458b5db8ece5"
+metafile = true
+
+[[files]]
+file = "mods/territorial.pw.toml"
+hash = "49c60c98dd8e60682c3af6c561286f4b455fc6259199d13cf9bf1a5ce21d19e7"
 metafile = true
 
 [[files]]
