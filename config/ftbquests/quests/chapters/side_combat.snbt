@@ -15,7 +15,7 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-&l&cWelcome to Combat & Defense!&r
+				"&l&cWelcome to Combat & Defense!&r"
 				""
 				"Defend your base with powerful artillery and firearms!"
 				""
@@ -23,6 +23,10 @@
 				"• &6Create: Big Cannons&r - Massive multiblock artillery"
 				"• &bCreate: Radars&r - Automated targeting systems"
 				"• &eCreate: Gunsmithing&r - Steampunk firearms"
+				"• &4Ballistix&r - Intercontinental ballistic missiles"
+				"• &dNuclear Science&r - Nuclear weapons and reactors"
+				"• &9Modular Forcefields&r - Advanced base protection"
+				"• &aBlastcraft&r - Reinforced building materials"
 				""
 				"&eNo progression requirements - arm yourself anytime!&r"
 			]
@@ -441,6 +445,451 @@
 					id: "A000000000000041"
 					type: "xp_levels"
 					xp_levels: 25
+				}
+			]
+		}
+		{
+			title: "Electrodynamics Basics"
+			icon: "electrodynamics:wirecopper"
+			x: 8.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"&l&eElectrodynamics&r"
+				""
+				"The foundation for advanced weaponry and defense!"
+				""
+				"• &fWires&r - Conduct electricity"
+				"• &fMachines&r - Process materials"
+				"• &fPower Generation&r - Solar, coal, and more"
+				""
+				"&eRequired for Ballistix and Nuclear Science!&r"
+			]
+			dependencies: ["A000000000000002"]
+			id: "A000000000000042"
+			tasks: [
+				{
+					id: "A000000000000043"
+					type: "item"
+					item: "electrodynamics:wirecopper"
+					count: 16
+				}
+				{
+					id: "A000000000000044"
+					type: "item"
+					item: "electrodynamics:coalgenerator"
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000045"
+					type: "item"
+					item: "electrodynamics:wirecopper"
+					count: 32
+				}
+				{
+					id: "A000000000000046"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Reinforced Blocks"
+			icon: "blastcraft:reinforcedglass"
+			x: 10.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"&l&aBlastcraft - Reinforced Materials&r"
+				""
+				"Build blast-resistant structures!"
+				""
+				"• &fReinforced Glass&r - See through, blast proof"
+				"• &fReinforced Concrete&r - Strong walls"
+				"• &fHardened Steel&r - Ultimate protection"
+				""
+				"&ePerfect for protecting against missiles!&r"
+			]
+			dependencies: ["A000000000000042"]
+			id: "A000000000000047"
+			tasks: [
+				{
+					id: "A000000000000048"
+					type: "item"
+					item: "blastcraft:reinforcedglass"
+					count: 16
+				}
+				{
+					id: "A000000000000049"
+					type: "item"
+					item: "blastcraft:reinforcedconcrete"
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000050"
+					type: "item"
+					item: "blastcraft:hardenedglass"
+					count: 16
+				}
+				{
+					id: "A000000000000051"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Basic Explosives"
+			icon: "ballistix:explosive"
+			x: 8.0d
+			y: 2.0d
+			description: [
+				"&l&4Ballistix - Explosives&r"
+				""
+				"Craft your first explosives!"
+				""
+				"• &fCondensed Explosives&r - More compact TNT"
+				"• &fShrapnel Explosives&r - Anti-personnel"
+				"• &fIncendiary Explosives&r - Fire damage"
+				""
+				"&eThe building blocks for missiles!&r"
+			]
+			dependencies: ["A000000000000042"]
+			id: "A000000000000052"
+			tasks: [
+				{
+					id: "A000000000000053"
+					type: "item"
+					item: "ballistix:explosive"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000054"
+					type: "item"
+					item: "minecraft:tnt"
+					count: 32
+				}
+				{
+					id: "A000000000000055"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			title: "Missile Launcher"
+			icon: "ballistix:missilelauncher"
+			x: 8.0d
+			y: 4.0d
+			description: [
+				"&l&4Missile Platform&r"
+				""
+				"Build your first missile launcher!"
+				""
+				"• &fMissile Launcher&r - Fires guided missiles"
+				"• &fMissile Silo&r - Underground launching"
+				"• &fRadar System&r - Target acquisition"
+				""
+				"&eRain destruction from above!&r"
+			]
+			dependencies: ["A000000000000052"]
+			id: "A000000000000056"
+			tasks: [
+				{
+					id: "A000000000000057"
+					type: "item"
+					item: "ballistix:missilelauncher"
+				}
+				{
+					id: "A000000000000058"
+					type: "item"
+					item: "ballistix:missileconventional"
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000059"
+					type: "item"
+					item: "ballistix:missileconventional"
+					count: 8
+				}
+				{
+					id: "A000000000000060"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Nuclear Science Basics"
+			icon: "nuclearscience:cellelectromagnetic"
+			x: 10.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"&l&dNuclear Science&r"
+				""
+				"Harness the power of the atom!"
+				""
+				"• &fUranium Processing&r - Refine nuclear fuel"
+				"• &fCentrifuges&r - Enrich uranium"
+				"• &fReactor Components&r - Build reactors"
+				""
+				"&ePowerful but dangerous technology!&r"
+			]
+			dependencies: ["A000000000000042"]
+			id: "A000000000000061"
+			tasks: [
+				{
+					id: "A000000000000062"
+					type: "item"
+					item: "nuclearscience:cellelectromagnetic"
+					count: 4
+				}
+				{
+					id: "A000000000000063"
+					type: "item"
+					item: "nuclearscience:centrifuge"
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000064"
+					type: "item"
+					item: "nuclearscience:celluranium"
+					count: 8
+				}
+				{
+					id: "A000000000000065"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Nuclear Reactor"
+			icon: "nuclearscience:fuelreprocessor"
+			x: 10.0d
+			y: 4.0d
+			description: [
+				"&l&dNuclear Power&r"
+				""
+				"Build a nuclear reactor!"
+				""
+				"• &fReactor Core&r - Contains the reaction"
+				"• &fControl Rods&r - Manage reactor output"
+				"• &fCoolant System&r - Prevent meltdown"
+				""
+				"&eMassive power output but requires careful management!&r"
+			]
+			dependencies: ["A000000000000061"]
+			id: "A000000000000066"
+			tasks: [
+				{
+					id: "A000000000000067"
+					type: "item"
+					item: "nuclearscience:fuelreprocessor"
+				}
+				{
+					id: "A000000000000068"
+					type: "item"
+					item: "nuclearscience:reactorcore"
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000069"
+					type: "item"
+					item: "nuclearscience:fuelheuo2"
+					count: 4
+				}
+				{
+					id: "A000000000000070"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Nuclear Warhead"
+			icon: "ballistix:missilenuclear"
+			x: 9.0d
+			y: 6.0d
+			shape: "hexagon"
+			description: [
+				"&l&4&lNUCLEAR MISSILE&r"
+				""
+				"The ultimate weapon!"
+				""
+				"• &fNuclear Warhead&r - Devastating explosion"
+				"• &fICBM Capability&r - Strike anywhere"
+				"• &fMutual Assured Destruction&r"
+				""
+				"&cUse with extreme caution!&r"
+			]
+			dependencies: [
+				"A000000000000056"
+				"A000000000000066"
+			]
+			id: "A000000000000071"
+			tasks: [{
+				id: "A000000000000072"
+				type: "item"
+				item: "ballistix:missilenuclear"
+			}]
+			rewards: [
+				{
+					id: "A000000000000073"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 4
+				}
+				{
+					id: "A000000000000074"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+		}
+		{
+			title: "Forcefield Projector"
+			icon: "modularforcefields:fortronconnector"
+			x: 12.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"&l&9Modular Forcefields&r"
+				""
+				"Create impenetrable energy barriers!"
+				""
+				"• &fFortron Energy&r - Powers forcefields"
+				"• &fProjectors&r - Generate field shapes"
+				"• &fModules&r - Customize field properties"
+				""
+				"&eThe ultimate in base defense!&r"
+			]
+			dependencies: ["A000000000000042"]
+			id: "A000000000000075"
+			tasks: [
+				{
+					id: "A000000000000076"
+					type: "item"
+					item: "modularforcefields:fortronconnector"
+				}
+				{
+					id: "A000000000000077"
+					type: "item"
+					item: "modularforcefields:coercionderiver"
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000078"
+					type: "item"
+					item: "modularforcefields:fortronconnector"
+					count: 4
+				}
+				{
+					id: "A000000000000079"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Active Defense Shield"
+			icon: "modularforcefields:projector"
+			x: 12.0d
+			y: 4.0d
+			description: [
+				"&l&9Force Field Generator&r"
+				""
+				"Deploy defensive forcefields!"
+				""
+				"• &fForce Field Projector&r - Main generator"
+				"• &fShape Modules&r - Cube, sphere, dome"
+				"• &fUpgrade Modules&r - Enhance capabilities"
+				""
+				"&eProtect your base from any attack!&r"
+			]
+			dependencies: ["A000000000000075"]
+			id: "A000000000000080"
+			tasks: [
+				{
+					id: "A000000000000081"
+					type: "item"
+					item: "modularforcefields:projector"
+				}
+			]
+			rewards: [
+				{
+					id: "A000000000000082"
+					type: "item"
+					item: "modularforcefields:modulescale"
+					count: 4
+				}
+				{
+					id: "A000000000000083"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			title: "Ultimate Arsenal"
+			icon: "ballistix:missilethermobaric"
+			x: 10.0d
+			y: 8.0d
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"&l&4&lULTIMATE ARSENAL&r"
+				""
+				"You have mastered all weapons systems!"
+				""
+				"• &fConventional Artillery&r - Create: Big Cannons"
+				"• &fMissile Systems&r - Ballistix ICBMs"
+				"• &fNuclear Technology&r - Nuclear Science"
+				"• &fDefensive Systems&r - Modular Forcefields"
+				"• &fReinforced Structures&r - Blastcraft"
+				""
+				"&eYou are now a true weapons master!&r"
+			]
+			dependencies: [
+				"A000000000000037"
+				"A000000000000047"
+				"A000000000000071"
+				"A000000000000080"
+			]
+			id: "A000000000000084"
+			tasks: [{
+				id: "A000000000000085"
+				type: "checkmark"
+				title: "Master All Weapons"
+			}]
+			rewards: [
+				{
+					id: "A000000000000086"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 8
+				}
+				{
+					id: "A000000000000087"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 8
+				}
+				{
+					id: "A000000000000088"
+					type: "xp_levels"
+					xp_levels: 100
 				}
 			]
 		}
