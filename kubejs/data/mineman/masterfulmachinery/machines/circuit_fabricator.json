@@ -1,0 +1,39 @@
+{
+  "id": "circuit_fabricator",
+  "name": "Circuit Fabricator",
+  "controllerId": "circuit_fabricator",
+  "ports": [
+    {
+      "id": "item_input",
+      "type": "masterfulmachinery:items",
+      "dir": "INPUT",
+      "block": "minecraft:hopper"
+    },
+    {
+      "id": "item_output",
+      "type": "masterfulmachinery:items",
+      "dir": "OUTPUT",
+      "block": "minecraft:dropper"
+    },
+    {
+      "id": "energy_input",
+      "type": "masterfulmachinery:energy",
+      "dir": "INPUT",
+      "block": "mekanism:basic_energy_cube"
+    }
+  ],
+  "layout": [
+    [
+      ["ICI", "CSC", "ICI"],
+      ["CSC", "C@C", "CSC"],
+      ["ICI", "CGC", "ICI"]
+    ]
+  ],
+  "legend": {
+    "I": "minecraft:iron_block",
+    "C": "mekanism:steel_casing",
+    "S": "pneumaticcraft:plastic",
+    "G": "minecraft:glass",
+    "@": "masterfulmachinery:controller"
+  }
+}

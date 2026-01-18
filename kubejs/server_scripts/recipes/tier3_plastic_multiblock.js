@@ -24,15 +24,23 @@ ServerEvents.recipes(event => {
     );
 
     // === STEP 2: PLASTIC SOLIDIFIER MULTIBLOCK - ETHYLENE TO UNPROCESSED PLASTIC ===
-    // Use custom Multiblocked2 multiblock built with IE blocks
+    // Use custom Masterful Machinery multiblock built with IE blocks
     // This creates a semi-solid unprocessed plastic item
-    // Multiblock ID: 'plastic_solidifier' - must be defined in-game using Multiblocked2
-    event.recipes.multiblocked.multiblock('plastic_solidifier')
-        .inputFluids(Fluid.of('tfmg:ethylene', 100))            // Input: ethylene (TFMG fluid)
-        .inputItems('#forge:coal_coke')                        // Input: coal coke (catalyst)
-        .outputItems(UNPROCESSED_PLASTIC)                      // Output: unprocessed plastic
-        .duration(100)                                         // Duration: 100 ticks (5 seconds)
-        .perTick(builder => builder.energy(256));              // Energy: 256 RF/t (1280 RF total)
+    // Multiblock ID: 'plastic_solidifier' - must be defined in-game using Masterful Machinery
+    event.custom({
+        type: 'masterfulmachinery:machine_process',
+        structureId: 'mineman:plastic_solidifier',
+        controllerId: 'mineman:plastic_solidifier',
+        ticks: 100, // Duration: 100 ticks (5 seconds)
+        inputs: [
+            { type: 'masterfulmachinery:fluids', data: { fluid: 'tfmg:ethylene', amount: 100, inputId: 'fluid_input' } },
+            { type: 'masterfulmachinery:items', data: { tag: 'forge:coal_coke', count: 1, inputId: 'item_input' } },
+            { type: 'masterfulmachinery:energy', data: { amount: 12800, inputId: 'energy_input' } } // 256 RF/t * 100 ticks = 25600 RF total
+        ],
+        outputs: [
+            { type: 'masterfulmachinery:items', data: { item: UNPROCESSED_PLASTIC, count: 1, outputId: 'item_output' } }
+        ]
+    });
 
     // === STEP 3: METAL PRESS - STAMP INTO PLASTIC SHEETS ===
     // Use IE Metal Press to stamp unprocessed plastic into plastic sheets
@@ -72,10 +80,10 @@ ServerEvents.recipes(event => {
 //
 // REQUIRED MACHINES:
 // 1. IE Refinery (3x5x3) - Processes oil into ethylene
-// 2. Plastic Solidifier Multiblock (3x3x3 - Multiblocked2) - Creates unprocessed plastic
+// 2. Plastic Solidifier Multiblock (3x3x3 - Masterful Machinery) - Creates unprocessed plastic
 // 3. IE Metal Press (1x1x1) - Stamps unprocessed plastic into sheets
 //
-// PLASTIC SOLIDIFIER MULTIBLOCK (Custom Multiblocked2 Structure)
+// PLASTIC SOLIDIFIER MULTIBLOCK (Custom Masterful Machinery Structure)
 // ID: 'plastic_solidifier'
 // Size: 3x3x3 compact IE-style multiblock
 // 
@@ -84,7 +92,7 @@ ServerEvents.recipes(event => {
 // - 6x Redstone Engineering Block (immersiveengineering:rs_engineering)
 // - 2x Steel Fluid Pipe (immersiveengineering:fluid_pipe)
 // - 1x LV Capacitor (immersiveengineering:capacitor_lv)
-// - 1x Multiblock Controller (multiblocked2:controller)
+// - 1x Multiblock Controller (masterfulmachinery:controller)
 //
 // Structure Layout (IE-themed):
 // Layer 1 (Base):    [Heavy][Heavy][Heavy]
@@ -103,17 +111,17 @@ ServerEvents.recipes(event => {
 // - Input: 100mb Ethylene (from IE Refinery, using TFMG fluid)
 // - Input: 1x Coal Coke (catalyst)
 // - Output: 1x Unprocessed Plastic (solid item)
-// - Energy: 256 RF/t for 5 seconds (1280 RF total)
+// - Energy: 12800 RF total (over 5 seconds)
 //
 // Full Process: 250mb Oil + Coal Coke → Unprocessed Plastic → 2 Plastic Sheets
-// Total Power: 512 RF (refinery) + 1280 RF (solidifier) + 2400 RF (press) = 4192 RF
+// Total Power: 512 RF (refinery) + 12800 RF (solidifier) + 2400 RF (press) = 15712 RF
 // Total Time: ~10s (refinery) + 5s (solidifier) + 4s (press) = ~19 seconds per 2 sheets
 // Tier: 3 (requires steel and IE electricity)
 //
 // TO BUILD IN-GAME:
 // 1. Construct the 3x3x3 structure using IE blocks as shown above
-// 2. Use Multiblocked2's builder tool on the controller
+// 2. Use Masterful Machinery's builder tool on the controller
 // 3. Define the structure pattern and save as 'plastic_solidifier'
 // 4. Configure the recipe: 100mb ethylene + coal coke → unprocessed plastic
-// 5. Set energy requirement: 256 RF/t, duration: 100 ticks
+// 5. Set energy requirement: 12800 RF total, duration: 100 ticks
 // 6. Assign input ports (fluid + item) and output port (item)
