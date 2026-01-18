@@ -3,7 +3,7 @@
 	group: "0000000000000002"
 	order_index: 3
 	filename: "side_combat"
-	title: "Side: Combat & Defense"
+	title: "Side: Combat \& Defense"
 	icon: "createbigcannons:cast_iron_cannon_barrel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -15,7 +15,7 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"&l&cWelcome to Combat & Defense!&r"
+				"&l&cWelcome to Combat \& Defense!&r"
 				""
 				"Defend your base with powerful artillery and firearms!"
 				""
