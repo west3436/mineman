@@ -1,0 +1,13 @@
+name = "Blastcraft"
+filename = "Blastcraft-1.20.1-0.4.0-2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0000000000000000000000000000000000000000"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5022910
+project-id = 405322

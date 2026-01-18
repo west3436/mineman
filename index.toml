@@ -82,7 +82,7 @@ hash = "2d85bc1a2a6841994c4ed75ce1bf217d28daf772322572df721c1238e3fe03dc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_combat.snbt"
-hash = "cac07eb763c79bbf09d523970b9bd3098778bfa7a28a6c74b37f5288125cf366"
+hash = "7a4a1922319f138136edc5122ea81be62a68cad186a847f9d6595319a48bf37c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_exploration.snbt"
@@ -205,6 +205,10 @@ file = "kubejs/server_scripts/recipes/_constants.js"
 hash = "5311ae5a2afaa2ec462b0897efa52dd80fa34dbad2e0d745acd8f94511639014"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/military_defense.js"
+hash = "140bf6044595d095f33af074d91d58b58e23cd0a9e65b47e1ea593783eb09f81"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
 hash = "fb32e5b64383217f2f83a5b33be696193b2db43393924dfc9be9f034c87c94ef"
 
@@ -312,6 +316,11 @@ hash = "258431b158c3adc8e7bf4ac8ea9cec20def2e3c373294488d72c238bcbd7538a"
 metafile = true
 
 [[files]]
+file = "mods/ballistix.pw.toml"
+hash = "322228cea9e09d6d44d33b76d3527c0ef85f86438cbe37318dfb9bf851ecc0e3"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "fec49033058ced91f7668d4e305e599f5527501ef37c1f30f96d8927d6202d32"
 metafile = true
@@ -319,6 +328,11 @@ metafile = true
 [[files]]
 file = "mods/better-fps-render-distance.pw.toml"
 hash = "0651f0e4c8067fbbc25f3efcd1d43278b44d240e4c8e375fb398eaf63e34f58d"
+metafile = true
+
+[[files]]
+file = "mods/blastcraft.pw.toml"
+hash = "094bf068b66db297a2ee936aaebc16eb0c6e978033c91f0ebc6dcea4f959c301"
 metafile = true
 
 [[files]]
@@ -504,6 +518,11 @@ metafile = true
 [[files]]
 file = "mods/dynmap.pw.toml"
 hash = "46d807ee668f3856078422b862b48ceca56a0e80c932f35df3b57e4d832e30e6"
+metafile = true
+
+[[files]]
+file = "mods/electrodynamics.pw.toml"
+hash = "9eec10a9c771fce0ecf18e271eefd38cc0f4e9e25a1e2b92c45ae93baee8dd90"
 metafile = true
 
 [[files]]
@@ -827,6 +846,11 @@ hash = "186909f73870979511db893fca2e2a318b311361f168d425ba0e58fc539188ee"
 metafile = true
 
 [[files]]
+file = "mods/modular-forcefields.pw.toml"
+hash = "a09e90658abdeba7bf99dc54bceabe7c92c6baac4fa39d22fbb823077c28841e"
+metafile = true
+
+[[files]]
 file = "mods/modular-routers.pw.toml"
 hash = "6bcf7a39bad33980cfd720cc78b1e2fe703f7cf0635c00a59948a561c66bf2e0"
 metafile = true
@@ -884,6 +908,11 @@ metafile = true
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
 hash = "4c96dddf8b3d5bf5ea331459b13d23d7d37332dea2275c00ef755420a66676c4"
+metafile = true
+
+[[files]]
+file = "mods/nuclear-science.pw.toml"
+hash = "89fb3e0235c26ec3263000c8b700c1aefdce7d01ae91b9da457c75efa6f4ebb5"
 metafile = true
 
 [[files]]
@@ -1114,6 +1143,11 @@ metafile = true
 [[files]]
 file = "mods/untamedwilds.pw.toml"
 hash = "5f2012f607afe3130627a4298e4db6f8121ecfc11068de231b0f8c92ca8e87de"
+metafile = true
+
+[[files]]
+file = "mods/voltaic.pw.toml"
+hash = "44f0ba18d2a5e2e3671d9ba087464228373c81323c63da89adc7eb3c8abb7342"
 metafile = true
 
 [[files]]
