@@ -214,7 +214,7 @@ hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic_multiblock.js"
-hash = "84cc189a6150915922a47bf8001316a68f648cd8fb5f5fa3f1c947847c3a4522"
+hash = "725e30be058c2f538355b1d1f6d8071728f6c0375d73a32846c4d3abf8357cab"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
@@ -798,7 +798,7 @@ metafile = true
 
 [[files]]
 file = "mods/masterful-machinery-reload.pw.toml"
-hash = "68c0933f6b78dd8c66d8649123528b4d318612ef568f0fdb2375841fd353afa0"
+hash = "603f3245b4430af7c5248d8e6a57e42a5cd4b55573a45ef6a9bef51ac44d31b2"
 metafile = true
 
 [[files]]

@@ -3,6 +3,7 @@ filename = "MasterfulMachineryReload-3-1.20.1-0.1.1.jar"
 side = "both"
 
 [download]
+# Note: Hash will be updated automatically by packwiz refresh workflow
 hash-format = "sha1"
 hash = "0000000000000000000000000000000000000000"
 mode = "metadata:curseforge"

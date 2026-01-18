@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         inputs: [
             { type: 'masterfulmachinery:fluids', data: { fluid: 'tfmg:ethylene', amount: 100, inputId: 'fluid_input' } },
             { type: 'masterfulmachinery:items', data: { tag: 'forge:coal_coke', count: 1, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:energy', data: { amount: 12800, inputId: 'energy_input' } } // 256 RF/t * 100 ticks = 25600 RF total
+            { type: 'masterfulmachinery:energy', data: { amount: 12800, inputId: 'energy_input' } } // 12800 RF total
         ],
         outputs: [
             { type: 'masterfulmachinery:items', data: { item: UNPROCESSED_PLASTIC, count: 1, outputId: 'item_output' } }
