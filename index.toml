@@ -109,10 +109,6 @@ file = "config/modernfix-mixins.properties"
 hash = "38edbd889029c4c95f95387f2be32110aa4b6f74a399dd3a046aab96bd9c4c5e"
 
 [[files]]
-file = "config/multiblocked/definition/circuit_fabricator.json"
-hash = "17e8c1ac0a1a71a8d33528c2669c7c67d22f8079ebb0b12cf46fa215f0ece125"
-
-[[files]]
 file = "config/oculus.properties"
 hash = "e47fb0ae6ecfae75894917958c1c9133d0fa69e3d84cef8a2fb4902e1b3f3c8f"
 
@@ -193,6 +189,14 @@ file = "kubejs/data/minecraft/loot_tables/entities/zombie.json"
 hash = "e81f1c14c4b5febcbc5a10bba052040bcb428bfc557badf77dfbd3ee521ae08d"
 
 [[files]]
+file = "kubejs/data/mineman/masterfulmachinery/machines/circuit_fabricator.json"
+hash = "a0281e4f3106d0c107104ee6978adffdca66488a1b035f51d99837ddc19ef436"
+
+[[files]]
+file = "kubejs/data/mineman/masterfulmachinery/machines/plastic_solidifier.json"
+hash = "0a5dc99a06ef5ffca3199d85862fc2b564dd94a4cde267f4edadff85e4cf7622"
+
+[[files]]
 file = "kubejs/server_scripts/dump_registry.js"
 hash = "c73e96a21322bb43c2ebf314bcfeb97d54b6962adb5968f89f1e8000bf39f657"
 
@@ -210,7 +214,7 @@ hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic_multiblock.js"
-hash = "c201cf7a382b297f35475af1b53bd629a6058cb7bef6e2b158aa8265f6fcd1fb"
+hash = "725e30be058c2f538355b1d1f6d8071728f6c0375d73a32846c4d3abf8357cab"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
@@ -218,7 +222,7 @@ hash = "42c8f78bc01fce96980adf16aa7fa3df97dcb7ef6f258400f8c82e694325e512"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier5_electronics.js"
-hash = "16d2ff3657dc37ca264aca18e0c7ebc374c9f00241a9623579212161b6f4107a"
+hash = "5dc8dcaf02134ae6e7e7ccd5ecde5e3f2ce2e16f62ad33de6c66f16ccd5c5070"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier6_future.js"
@@ -793,6 +797,11 @@ hash = "f5770197f30417cfbe5306ad84aab85cab79bf17958aa4d1d962a55cc659a320"
 metafile = true
 
 [[files]]
+file = "mods/masterful-machinery-reload.pw.toml"
+hash = "603f3245b4430af7c5248d8e6a57e42a5cd4b55573a45ef6a9bef51ac44d31b2"
+metafile = true
+
+[[files]]
 file = "mods/mcjtylib.pw.toml"
 hash = "ff60c101d23ba31406049f45f8a7d77172287e1b9927ad2b5335eb31ff4c2cb2"
 metafile = true
@@ -845,11 +854,6 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "679fa8f3b49b9ed3fbcb29d6ccdb99bce465faa01f9cec000464ac8d4fbe134f"
-metafile = true
-
-[[files]]
-file = "mods/multiblocked2.pw.toml"
-hash = "391e7abca3ef714d339250de76c8a9b7b554272db4002cf1f6c2c277be2392a0"
 metafile = true
 
 [[files]]
