@@ -1,0 +1,13 @@
+name = "Modular Force Field Systems"
+filename = "Modular Forcefields-1.20.1-0.4.0-1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HsXNjsi5/versions/bjLleqwv/Modular%20Forcefields-1.20.1-0.4.0-1.jar"
+hash-format = "sha512"
+hash = "48b4fb464c60a286216af65f87193f0fa4308a10002aca49750220ea9b6eb613799529c425adb81f1c7846cac0f1ca1c525f0dbeaa3e258116f015d87bfda24e"
+
+[update]
+[update.modrinth]
+mod-id = "HsXNjsi5"
+version = "bjLleqwv"

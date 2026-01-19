@@ -1,13 +1,13 @@
 name = "Blastcraft"
-filename = "Blastcraft-1.20.1-0.4.0-2.jar"
+filename = "Blastcraft-1.20.1-0.6.0-1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "0000000000000000000000000000000000000000"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/qzSqkQKb/versions/3Q7epUwo/Blastcraft-1.20.1-0.6.0-1.jar"
+hash-format = "sha512"
+hash = "274bb5d8e1544d59a51811e5d7e63d14e2312aafcd909f685b64189badf89fa67888e60f21b029e00bd542be95211280dbfc80e40b11bc5fec68a353f5509ec2"
 
 [update]
-[update.curseforge]
-file-id = 5022910
-project-id = 405322
+[update.modrinth]
+mod-id = "qzSqkQKb"
+version = "3Q7epUwo"

@@ -317,7 +317,7 @@ metafile = true
 
 [[files]]
 file = "mods/ballistix.pw.toml"
-hash = "322228cea9e09d6d44d33b76d3527c0ef85f86438cbe37318dfb9bf851ecc0e3"
+hash = "56c0a27d440a88995cfa074b13a0ab3a1934da3ad1d651431c805f7a98f1c68a"
 metafile = true
 
 [[files]]
@@ -332,7 +332,7 @@ metafile = true
 
 [[files]]
 file = "mods/blastcraft.pw.toml"
-hash = "094bf068b66db297a2ee936aaebc16eb0c6e978033c91f0ebc6dcea4f959c301"
+hash = "a09f4bc6ed22782b9a11a7d0f7b0ebeababe18346f8d67d325db097ccbf6545e"
 metafile = true
 
 [[files]]
@@ -368,6 +368,11 @@ metafile = true
 [[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "c45dce6b9e52796c0606ff222efa5833fd1d420fa67e7a8f26852196b80f6fa5"
+metafile = true
+
+[[files]]
+file = "mods/cgs.pw.toml"
+hash = "db9dc472982ba3599bb1f12087e5613c3a3c1fe0bb669ad807c1bf458af616b3"
 metafile = true
 
 [[files]]
@@ -437,12 +442,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
-hash = "b7b1859f59e69b1c1b2242bd229e9d33cca4445089b8724ab25144f5ea4c7f3e"
-metafile = true
-
-[[files]]
-file = "mods/create-gunsmithing.pw.toml"
-hash = "d8a7e79b3ac2a283261ff009e6ec6777b7da2fe4887bd6c4c740ae5442babcc7"
+hash = "9eb4f3e7a5a83c588e0caa676d91597c18f2c8004c9e57a10e72859e474fa0e5"
 metafile = true
 
 [[files]]
@@ -452,7 +452,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-radars.pw.toml"
-hash = "36632c572a9a570643b56733a9adc249188f7a10654bd1fcde01e8b87392ccdb"
+hash = "d329779921574e5a4709ee468955af18c84546a2be55d13a0e49ca0fc88b0a6f"
 metafile = true
 
 [[files]]
@@ -497,7 +497,7 @@ metafile = true
 
 [[files]]
 file = "mods/destroy.pw.toml"
-hash = "3e09b5aa4d553f904c3cd7669403a1112e4de0f9cd8375d7da756741f9901535"
+hash = "3ec1b526c89e0cc060827954e50c14dfd8411380f73f733ab160c049fadc3470"
 metafile = true
 
 [[files]]
@@ -517,7 +517,7 @@ metafile = true
 
 [[files]]
 file = "mods/electrodynamics.pw.toml"
-hash = "9eec10a9c771fce0ecf18e271eefd38cc0f4e9e25a1e2b92c45ae93baee8dd90"
+hash = "d9322b6b937afa682420191a4b355e77e3bcd98e4a2f4f8dba309c3fc37dcf23"
 metafile = true
 
 [[files]]
@@ -812,7 +812,7 @@ metafile = true
 
 [[files]]
 file = "mods/masterful-machinery-reload.pw.toml"
-hash = "603f3245b4430af7c5248d8e6a57e42a5cd4b55573a45ef6a9bef51ac44d31b2"
+hash = "00cb25aca4e42d4f0f7eb3d1c347c5c9ddf339f3913e65c0f7a28e5d32435c14"
 metafile = true
 
 [[files]]
@@ -841,8 +841,8 @@ hash = "186909f73870979511db893fca2e2a318b311361f168d425ba0e58fc539188ee"
 metafile = true
 
 [[files]]
-file = "mods/modular-forcefields.pw.toml"
-hash = "a09e90658abdeba7bf99dc54bceabe7c92c6baac4fa39d22fbb823077c28841e"
+file = "mods/modular-force-field-systems.pw.toml"
+hash = "90a52397eaa571fee579e9bf59868a63bca0efbe360853125050c8c9fc914844"
 metafile = true
 
 [[files]]
@@ -907,12 +907,7 @@ metafile = true
 
 [[files]]
 file = "mods/nuclear-science.pw.toml"
-hash = "89fb3e0235c26ec3263000c8b700c1aefdce7d01ae91b9da457c75efa6f4ebb5"
-metafile = true
-
-[[files]]
-file = "mods/nukateams-gun-lib.pw.toml"
-hash = "c967ea71512321f1c29c8d0ae050099e88ffb3a56ac82d0b1e7dabfbfab6666f"
+hash = "54a2eedbbfb0c315944d35b5689033424f5854e3749117f2b9a85d839d4e21d9"
 metafile = true
 
 [[files]]
@@ -948,6 +943,11 @@ metafile = true
 [[files]]
 file = "mods/patchouli.pw.toml"
 hash = "dec2bc011d4ca1d451aaa3eea477f13366bfb13beba0716018f47d9331a50d8e"
+metafile = true
+
+[[files]]
+file = "mods/petrolpark.pw.toml"
+hash = "20b656798b6afb8ed1133cc7cd7ac5c61a8f73e49f321544e4ac554620167fb1"
 metafile = true
 
 [[files]]
@@ -1028,6 +1028,11 @@ metafile = true
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "ca4411ac6d8a9a892948bb63cd0ba52ae5523ca5e257632d6ae8c933b660c5ee"
+metafile = true
+
+[[files]]
+file = "mods/rpl.pw.toml"
+hash = "93128d85ae0b3be9c8248b09f3a63ed88c746568480cc7e9a8e2a9b4bd13477c"
 metafile = true
 
 [[files]]
@@ -1142,7 +1147,7 @@ metafile = true
 
 [[files]]
 file = "mods/voltaic.pw.toml"
-hash = "44f0ba18d2a5e2e3671d9ba087464228373c81323c63da89adc7eb3c8abb7342"
+hash = "147b40366d43bfb6c894bb38a5795b767b6b1981d5c27a56c0f79ab2e6570eaf"
 metafile = true
 
 [[files]]

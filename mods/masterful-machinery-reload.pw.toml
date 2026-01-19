@@ -1,14 +1,13 @@
 name = "Masterful Machinery Reload"
-filename = "MasterfulMachineryReload-3-1.20.1-0.1.1.jar"
+filename = "MasterfulMachineryReload-0.1.1.jar"
 side = "both"
 
 [download]
-# Note: Hash will be updated automatically by packwiz refresh workflow
 hash-format = "sha1"
-hash = "0000000000000000000000000000000000000000"
+hash = "ced7a39b371c001e548b6dc938ed911cbc2e99d3"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
 file-id = 7406333
-project-id = 1079654
+project-id = 1418528
