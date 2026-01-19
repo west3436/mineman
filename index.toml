@@ -241,6 +241,10 @@ file = "kubejs/startup_scripts/custom_items.js"
 hash = "7b5c5c822e474b0618ff5095693a0d72505038214c6d181cafe1d603874b2c6b"
 
 [[files]]
+file = "latest.log"
+hash = "1a747c0f117ba225e1fc90e71c94c0cd2cfd40cce6f3c2f6672e93d2a39da88c"
+
+[[files]]
 file = "mods/acedium.pw.toml"
 hash = "f61f5f74db41ea4cb279bcbe9e2e30b29a9dfad526536bdeffa1c7d46a97a2a0"
 metafile = true
@@ -472,7 +476,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
+hash = "97f7c75ac9bf6ee2a4f15c0f1e3e4cd161f3d2e33f32ebf623811ac90b3c2a83"
 metafile = true
 
 [[files]]
@@ -493,6 +497,11 @@ metafile = true
 [[files]]
 file = "mods/cyclops-core.pw.toml"
 hash = "0f0099feea1db673f6dded201550c7ee4aaf96434c1af7b6bbe65eac4b669d3c"
+metafile = true
+
+[[files]]
+file = "mods/destroy.pw.toml"
+hash = "3ec1b526c89e0cc060827954e50c14dfd8411380f73f733ab160c049fadc3470"
 metafile = true
 
 [[files]]
