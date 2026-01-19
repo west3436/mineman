@@ -3,11 +3,11 @@ filename = "create-gunsmithing-1.20.1-1.4.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/cgs/versions/D1DHeoCq/create-gunsmithing-1.20.1-1.4.2.jar"
+url = "https://cdn.modrinth.com/data/7KCNsGPM/versions/D1DHeoCq/create-gunsmithing-1.20.1-1.4.2.jar"
 hash-format = "sha512"
 hash = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 
 [update]
 [update.modrinth]
-mod-id = "cgs"
+mod-id = "7KCNsGPM"
 version = "D1DHeoCq"
