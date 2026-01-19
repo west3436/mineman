@@ -5,62 +5,9 @@ ServerEvents.recipes(event => {
     console.log('Applying Tier 5 (Electronics) recipe changes...');
 
     // === CIRCUIT FABRICATION MULTIBLOCK ===
-    // Custom multiblock recipes for advanced circuit production
-    
-    // Advanced Circuit Recipe - requires PNC PCBs and Mekanism alloys
-    // Produced in Circuit Fabrication Multiblock (Masterful Machinery)
-    event.custom({
-        type: 'masterfulmachinery:machine_process',
-        structureId: 'mineman:circuit_fabricator',
-        controllerId: 'mineman:circuit_fabricator',
-        ticks: 400, // 20 seconds
-        inputs: [
-            { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:printed_circuit_board', count: 4, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'mekanism:alloy_infused', count: 8, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'mekanism:alloy_reinforced', count: 4, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'minecraft:redstone_block', count: 2, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:energy', data: { amount: 50000, inputId: 'energy_input' } }
-        ],
-        outputs: [
-            { type: 'masterfulmachinery:items', data: { item: 'mineman:advanced_circuit', count: 2, outputId: 'item_output' } }
-        ]
-    });
-
-    // Alternative recipe with more PCBs, less alloys
-    event.custom({
-        type: 'masterfulmachinery:machine_process',
-        structureId: 'mineman:circuit_fabricator',
-        controllerId: 'mineman:circuit_fabricator',
-        ticks: 300, // 15 seconds
-        inputs: [
-            { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:printed_circuit_board', count: 6, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'mekanism:alloy_infused', count: 4, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'mekanism:alloy_reinforced', count: 2, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'minecraft:redstone', count: 4, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:energy', data: { amount: 40000, inputId: 'energy_input' } }
-        ],
-        outputs: [
-            { type: 'masterfulmachinery:items', data: { item: 'mineman:advanced_circuit', count: 2, outputId: 'item_output' } }
-        ]
-    });
-
-    // Cheaper early-game recipe with lower yield
-    event.custom({
-        type: 'masterfulmachinery:machine_process',
-        structureId: 'mineman:circuit_fabricator',
-        controllerId: 'mineman:circuit_fabricator',
-        ticks: 200, // 10 seconds
-        inputs: [
-            { type: 'masterfulmachinery:items', data: { item: 'pneumaticcraft:printed_circuit_board', count: 2, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'mekanism:alloy_infused', count: 4, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'tfmg:steel_sheet', count: 8, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:items', data: { item: 'minecraft:diamond', count: 1, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:energy', data: { amount: 30000, inputId: 'energy_input' } }
-        ],
-        outputs: [
-            { type: 'masterfulmachinery:items', data: { item: 'mineman:advanced_circuit', count: 1, outputId: 'item_output' } }
-        ]
-    });
+    // Advanced circuit production using MBD2 Computer Controlled Assembler
+    // Recipes are defined in kubejs/server_scripts/recipes/mbd2_machines.js
+    // Use the MBD2 in-game preview system to build the assembler structure
 
     // === INDUSTRIAL FOREGOING GATING ===
     // Require advanced circuits/PCBs from PneumaticCraft
