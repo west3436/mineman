@@ -241,10 +241,6 @@ file = "kubejs/startup_scripts/custom_items.js"
 hash = "7b5c5c822e474b0618ff5095693a0d72505038214c6d181cafe1d603874b2c6b"
 
 [[files]]
-file = "minecraft.log"
-hash = "2b47bb6739a1db10ca3d945ed477f5ac46d8e5711e7dd8a118ca10a388a051c5"
-
-[[files]]
 file = "mods/acedium.pw.toml"
 hash = "f61f5f74db41ea4cb279bcbe9e2e30b29a9dfad526536bdeffa1c7d46a97a2a0"
 metafile = true
