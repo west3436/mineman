@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "kubejs:block/fuelrod_mk1_top",
+    "side": "kubejs:block/fuelrod_mk1"
+  }
+}

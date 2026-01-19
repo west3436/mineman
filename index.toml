@@ -141,6 +141,14 @@ file = "kubejs/assets/kubejs/models/block/assembly_machine_idle.json"
 hash = "091c72a5f16a6d4e1c032794b8387bee6354ef37e1f24deb6ca7fc5b9f556aae"
 
 [[files]]
+file = "kubejs/assets/kubejs/models/block/bus_input.json"
+hash = "42b598f49d2b458271824c2b6ed6f2a366b0a15b2229773b1ec71493177daf23"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/bus_output.json"
+hash = "371faca0df087d1ce02784a82657a6ce3457cfeac76d24879e6dc2ff75a9c464"
+
+[[files]]
 file = "kubejs/assets/kubejs/models/block/casing_aluminum_slope_down.json"
 hash = "8cd7b4e21b5ea5af283d1e7e95d5f15ad363e63fb1c098301b3ef729cce93219"
 
@@ -281,12 +289,116 @@ file = "kubejs/assets/kubejs/models/block/compressed_clay6.json"
 hash = "6507fe4a52648c605dcc2405de4a1ff0f995d840dc3953315fe5792e91f1db47"
 
 [[files]]
+file = "kubejs/assets/kubejs/models/block/controller_advanced_idling.json"
+hash = "dffecff6d3d78abf9003333fc834bc0ff7bb0804c8bdc5a4d746d0325812420e"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_advanced_unformed.json"
+hash = "015c7bd2b51cb83427bb1a02ba3ffb4787dba61868113c3816f13a16fff85317"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_advanced_working.json"
+hash = "9df0c07742502fa60be0ca0ef05728b0943a4bad3780035d99d9dbd33dc2c7e7"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_idling.json"
+hash = "e39b390ba97ef6d1100b24ac1eb4515e0cbe62b115406cc8ba24e08f596ec39e"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_mining_idling.json"
+hash = "db6b8de23e573f723580aaba86c72ebdd3538caa3e6fd523376fabe49665be37"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_mining_unformed.json"
+hash = "60fc31e25e3dd56a15382e57e18f5454847581eaf5493bf9efed1110683cb66c"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_mining_working.json"
+hash = "b2f05a8b5dd37da034e694f7c65fe1226814a0c6ae78af320fc88dc3f85b7101"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_super_idling.json"
+hash = "35e75d5bbd79b61376a76656c25c032ef31958293452067b7a064cda46f28ee4"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_super_unformed.json"
+hash = "b0df5b813942696e1ee5662b4fdaeed3a12b3e33b723ec92962fa69438f955cd"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_super_working.json"
+hash = "5dd275d220f79d1c5a88c1cc4432ccdcbeefd32fe7e2fdcac650ba2ac8a10db1"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_unformed.json"
+hash = "ad8c675f641d0d71ecdebfa8439e19f3735509ba55e770f7dfb6789270583230"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/controller_working.json"
+hash = "6948382d730a2a373e1e55d3a0624b993a1537c716b6d4704b150a6135766443"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/copper_coilblock_active.json"
+hash = "f2fa2e26b06c9c69a192ea5ba06c3cf95c0996a113fdf4cb7ce983a2dba60344"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/copper_coilblock_idle.json"
+hash = "3c431e9a59b4bb353c23b67a3385d1338709148ea4e8388450b7d0d6af3baf32"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/fancasing_active.json"
+hash = "298ad0366dd2fa529565c111123e05a343e670b8f708e0ecc37e7fa678441767"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/fancasing_idle.json"
+hash = "c3b43a1f3811dacf28155c259191338b929d0ef03bec74153c07451db233a3e6"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/fieldgenerator_active.json"
+hash = "c3b67cad85200be79b98b9096a855a9f4165f2781c2b6a5f7974ede248d15d94"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/fieldgenerator_idle.json"
+hash = "07260822319573d872c63d94222990993513b97cb7ae9f35da4beca86acb57c8"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/firebox_active.json"
+hash = "148f3cb8cc848a829349f330a5a531bf79711f6ac20a3f96d9540f2fbaf42157"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/firebox_idle.json"
+hash = "155871341c1285e9d69af44d92bddbf5a1d0395e2d1e6b6426740cc8533fabdd"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/fuelrod_holder.json"
+hash = "fa9294aec122b490a3131b048668d300dc886e4c1ee0d228fab879c5e910b1f2"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/fuelrod_mk1.json"
+hash = "c028325fa4cfed98279522c6717019ee47d6e95433319745b6803c1ab8c61e03"
+
+[[files]]
 file = "kubejs/assets/kubejs/models/block/gregportal_active.json"
 hash = "fde776fcd9fa5acff7af575a1f99291fc223cf53669441523fd5865dc431f96a"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/gregportal_idle.json"
 hash = "e6391533775cfc3800b44f4d7d9f27ffae2374efcaf5e7a2b490442c674203e9"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/grindingwheels_active.json"
+hash = "84ac3f572d99e5fe308c33785fba20a8af6a71836406a9879893be4dd5040824"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/grindingwheels_idle.json"
+hash = "b7cecba679303c96470e24ecbe2ac44ec6889df55383e0edffb53f094b526476"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/hatch_input.json"
+hash = "38a42ed7b6697fb10c38e00842332fdac21aba68655349cfd2f241d85060041a"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/hatch_output.json"
+hash = "ca60cb924c97a3eeb329107186f2723fce02675584fa6e0207c41ea3239ff3a0"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/particleaccelerator_diagonal_active.json"
@@ -303,6 +415,34 @@ hash = "751cdfa5f01a3637b50b7d7d47014caaec0702712f88dd301d79d571cc0324bd"
 [[files]]
 file = "kubejs/assets/kubejs/models/block/particleaccelerator_straight_idle.json"
 hash = "0e9e6ea1f301503d7252d01dc9fb0263d82307d1c28f2197189cad8eb7a23631"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/powerhatch_input.json"
+hash = "ffbf006be48dce0e173dcca6a5000d5e35ff6358b464a2e6a2e192d26052b361"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/powerhatch_output.json"
+hash = "7efddf633ccb89bb635bf36b9070a663498e938273f31ad23612b7d286f80b51"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/presspart_active.json"
+hash = "1e9ea540a38610acd487d2f6ffa494516d94ea08ca8ebc8a88c545b739a06e74"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/presspart_idle.json"
+hash = "92bdf87b8e273063242826a8ca2066bb5a680daa808a1c4184b6ec3bd04f5ce2"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/processingunitrack_active.json"
+hash = "cb0952ec3428784daae9bf141b376f609ad2952f9d203086a3b7c6d9951140a1"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/processingunitrack_idling.json"
+hash = "fab0c69f058685766b0b5e4cc749ab2667f98a39bfa46fc2594e911d5f9a5b90"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/processingunitrack_unformed.json"
+hash = "fd5acfb555cff631c756aba56607bdf69cc156a17baa5ef3005936f58666a6ba"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/railing_corner.json"
@@ -383,6 +523,14 @@ hash = "11a5b788b798e20a27e703fa9b3059801ccc16c0f46a4a9ab0c769e1c988adb6"
 [[files]]
 file = "kubejs/assets/kubejs/models/block/solarchannel_idle.json"
 hash = "9630e9e840f6165ac7696afc80518b3af05a72bd89727b7bad5e0d8fb3d032de"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/spacedoor_casing_active.json"
+hash = "a122762551e3dc010ff72f58cc82dc5760032c67356b257edb032a9ba1a35fb4"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/spacedoor_casing_idle.json"
+hash = "9deaa162963e2d40733dc87180007a95319987c8cc14918526e180f77dc437b0"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/treggeck_poster.json"
