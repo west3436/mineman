@@ -906,6 +906,11 @@ hash = "4c96dddf8b3d5bf5ea331459b13d23d7d37332dea2275c00ef755420a66676c4"
 metafile = true
 
 [[files]]
+file = "mods/ntgl.pw.toml"
+hash = "f2a4d2c0ce3ca7a91ec4112e8f7af37f336eebe366f2bdc440942da2548a4595"
+metafile = true
+
+[[files]]
 file = "mods/nuclear-science.pw.toml"
 hash = "54a2eedbbfb0c315944d35b5689033424f5854e3749117f2b9a85d839d4e21d9"
 metafile = true
