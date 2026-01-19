@@ -467,7 +467,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-tfmg.pw.toml"
-hash = "66bf2a2a06e915ebc25324b342fa9702c8cdd31783abb25e0a8322c94d562cbf"
+hash = "2d519117992fc8bf34a5ac854bf68e7d8926b799ebe61e7f33cccd06a5b72201"
 metafile = true
 
 [[files]]
@@ -813,11 +813,6 @@ metafile = true
 [[files]]
 file = "mods/mantle.pw.toml"
 hash = "f5770197f30417cfbe5306ad84aab85cab79bf17958aa4d1d962a55cc659a320"
-metafile = true
-
-[[files]]
-file = "mods/masterful-machinery-reload.pw.toml"
-hash = "00cb25aca4e42d4f0f7eb3d1c347c5c9ddf339f3913e65c0f7a28e5d32435c14"
 metafile = true
 
 [[files]]
