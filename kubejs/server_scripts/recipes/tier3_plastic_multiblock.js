@@ -23,24 +23,11 @@ ServerEvents.recipes(event => {
         512                                        // Energy: 512 RF
     );
 
-    // === STEP 2: PLASTIC SOLIDIFIER MULTIBLOCK - ETHYLENE TO UNPROCESSED PLASTIC ===
-    // Use custom Masterful Machinery multiblock built with IE blocks
+    // === STEP 2: CHEMICAL MIXER MULTIBLOCK - ETHYLENE TO UNPROCESSED PLASTIC ===
+    // Use MBD2 Chemical Plant multiblock built with IE blocks
     // This creates a semi-solid unprocessed plastic item
-    // Multiblock ID: 'plastic_solidifier' - must be defined in-game using Masterful Machinery
-    event.custom({
-        type: 'masterfulmachinery:machine_process',
-        structureId: 'mineman:plastic_solidifier',
-        controllerId: 'mineman:plastic_solidifier',
-        ticks: 100, // Duration: 100 ticks (5 seconds)
-        inputs: [
-            { type: 'masterfulmachinery:fluids', data: { fluid: 'tfmg:ethylene', amount: 100, inputId: 'fluid_input' } },
-            { type: 'masterfulmachinery:items', data: { tag: 'forge:coal_coke', count: 1, inputId: 'item_input' } },
-            { type: 'masterfulmachinery:energy', data: { amount: 12800, inputId: 'energy_input' } } // 12800 RF total
-        ],
-        outputs: [
-            { type: 'masterfulmachinery:items', data: { item: UNPROCESSED_PLASTIC, count: 1, outputId: 'item_output' } }
-        ]
-    });
+    // Multiblock: mbd2:chemical_plant - build using MBD2 preview in-game
+    // Recipe defined in mbd2_machines.js
 
     // === STEP 3: METAL PRESS - STAMP INTO PLASTIC SHEETS ===
     // Use IE Metal Press to stamp unprocessed plastic into plastic sheets
@@ -80,48 +67,18 @@ ServerEvents.recipes(event => {
 //
 // REQUIRED MACHINES:
 // 1. IE Refinery (3x5x3) - Processes oil into ethylene
-// 2. Plastic Solidifier Multiblock (3x3x3 - Masterful Machinery) - Creates unprocessed plastic
+// 2. MBD2 Chemical Plant - Creates unprocessed plastic (use in-game preview to build)
 // 3. IE Metal Press (1x1x1) - Stamps unprocessed plastic into sheets
 //
-// PLASTIC SOLIDIFIER MULTIBLOCK (Custom Masterful Machinery Structure)
-// ID: 'plastic_solidifier'
-// Size: 3x3x3 compact IE-style multiblock
-// 
-// Materials needed (IE blocks only):
-// - 18x Heavy Engineering Block (immersiveengineering:heavy_engineering)
-// - 6x Redstone Engineering Block (immersiveengineering:rs_engineering)
-// - 2x Steel Fluid Pipe (immersiveengineering:fluid_pipe)
-// - 1x LV Capacitor (immersiveengineering:capacitor_lv)
-// - 1x Multiblock Controller (masterfulmachinery:controller)
+// CHEMICAL PLANT MULTIBLOCK (Multiblocked2)
+// Use the MBD2 in-game preview system to build the Chemical Plant structure.
+// Right-click with empty hand on the controller to see the required structure.
 //
-// Structure Layout (IE-themed):
-// Layer 1 (Base):    [Heavy][Heavy][Heavy]
-//                    [Heavy][Redstone][Heavy]
-//                    [Heavy][Heavy][Heavy]
-//
-// Layer 2 (Core):    [Heavy][Redstone][Heavy]
-//                    [Pipe][Controller][Pipe]
-//                    [Heavy][Redstone][Heavy]
-//
-// Layer 3 (Top):     [Heavy][Heavy][Heavy]
-//                    [Heavy][Capacitor][Heavy]
-//                    [Heavy][Heavy][Heavy]
-//
-// Multiblock Recipe:
+// Recipe (defined in mbd2_machines.js):
 // - Input: 100mb Ethylene (from IE Refinery, using TFMG fluid)
 // - Input: 1x Coal Coke (catalyst)
 // - Output: 1x Unprocessed Plastic (solid item)
-// - Energy: 12800 RF total (over 5 seconds)
+// - Energy: 12800 FE total
 //
 // Full Process: 250mb Oil + Coal Coke → Unprocessed Plastic → 2 Plastic Sheets
-// Total Power: 512 RF (refinery) + 12800 RF (solidifier) + 2400 RF (press) = 15712 RF
-// Total Time: ~10s (refinery) + 5s (solidifier) + 4s (press) = ~19 seconds per 2 sheets
 // Tier: 3 (requires steel and IE electricity)
-//
-// TO BUILD IN-GAME:
-// 1. Construct the 3x3x3 structure using IE blocks as shown above
-// 2. Use Masterful Machinery's builder tool on the controller
-// 3. Define the structure pattern and save as 'plastic_solidifier'
-// 4. Configure the recipe: 100mb ethylene + coal coke → unprocessed plastic
-// 5. Set energy requirement: 12800 RF total, duration: 100 ticks
-// 6. Assign input ports (fluid + item) and output port (item)
