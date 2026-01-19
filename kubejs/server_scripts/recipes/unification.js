@@ -14,7 +14,6 @@ const UNIFIED_ITEMS = {
         'tfmg:steel_ingot',
         'immersiveengineering:ingot_steel',
         'mekanism:ingot_steel',
-        'createnuclear:steel_ingot',
     ],
     'aluminum_ingot': [
         'tfmg:aluminum_ingot',
@@ -32,7 +31,6 @@ const UNIFIED_ITEMS = {
         'tfmg:lead_ingot',
         'immersiveengineering:ingot_lead',
         'mekanism:ingot_lead',
-        'createnuclear:lead_ingot',
     ],
     'electrum_ingot': [
         'immersiveengineering:ingot_electrum',
@@ -112,7 +110,6 @@ const UNIFIED_ITEMS = {
         'tfmg:steel_nugget',
         'immersiveengineering:nugget_steel',
         'mekanism:nugget_steel',
-        'createnuclear:steel_nugget',
     ],
     'silver_nugget': [
         'chemlib:silver_nugget',
@@ -126,15 +123,12 @@ const UNIFIED_ITEMS = {
         'immersiveengineering:storage_steel',
         'mekanism:block_steel',
         'tconstruct:steel_block',
-        'createnuclear:steel_block',
     ],
     'lead_block': [
         'tfmg:lead_block',
-        'createnuclear:lead_block',
     ],
     'raw_lead_block': [
         'tfmg:raw_lead_block',
-        'createnuclear:raw_lead_block',
     ],
 
     // -------------------------------------------------------------------------
@@ -189,12 +183,6 @@ const UNIFIED_ITEMS = {
     // -------------------------------------------------------------------------
     // Rods
     // -------------------------------------------------------------------------
-    'graphite_rod': [
-        'createnuclear:graphite_rod',
-    ],
-    'uranium_rod': [
-        'createnuclear:uranium_rod',
-    ],
     'hdpe_rod': [
         'mekanism:hdpe_rod',
     ],

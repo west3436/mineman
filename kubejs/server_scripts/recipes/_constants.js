@@ -56,8 +56,6 @@ const PRIMARY_OUTPUTS = {
     'constantan_wire': 'tfmg:constantan_wire',
 
     // Rods
-    'graphite_rod': 'createnuclear:graphite_rod',
-    'uranium_rod': 'createnuclear:uranium_rod',
     'hdpe_rod': 'mekanism:hdpe_rod',
 
     // Miscellaneous

@@ -249,59 +249,5 @@ ServerEvents.recipes(event => {
         G: 'minecraft:gold_ingot'
     });
 
-    // === CREATE: NUCLEAR GATING ===
-    // Nuclear technology requires endgame components
-    
-    // Remove original Create: Nuclear recipes
-    event.remove({ output: 'createnuclear:reactor_casing' });
-    event.remove({ output: 'createnuclear:control_rod' });
-    event.remove({ output: 'createnuclear:uranium_fuel_rod' });
-    event.remove({ output: 'createnuclear:reactor_glass' });
-    
-    // Reactor Casing - requires advanced circuits and steel
-    event.shaped('4x createnuclear:reactor_casing', [
-        'SAS',
-        'ACA',
-        'SAS'
-    ], {
-        S: '#forge:plates/steel',
-        A: 'mineman:advanced_circuit',
-        C: 'minecraft:iron_block'
-    });
-    
-    // Control Rod - requires advanced circuits and diamond
-    event.shaped('createnuclear:control_rod', [
-        'DAD',
-        'ACA',
-        'DAD'
-    ], {
-        D: 'minecraft:diamond',
-        A: 'mineman:advanced_circuit',
-        C: 'minecraft:redstone_block'
-    });
-    
-    // Uranium Fuel Rod - requires advanced circuits and uranium
-    event.shaped('createnuclear:uranium_fuel_rod', [
-        'IAI',
-        'UCU',
-        'IAI'
-    ], {
-        I: 'minecraft:iron_ingot',
-        A: 'mineman:advanced_circuit',
-        U: 'mekanism:uranium_fuel',
-        C: '#forge:plates/steel'
-    });
-    
-    // Reactor Glass - requires advanced circuits and tempered glass
-    event.shaped('4x createnuclear:reactor_glass', [
-        'GAG',
-        'ACA',
-        'GAG'
-    ], {
-        G: '#forge:glass',
-        A: 'mineman:advanced_circuit',
-        C: 'minecraft:diamond'
-    });
-
     console.log('Tier 6 recipe changes complete!');
 });
