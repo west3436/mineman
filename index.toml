@@ -442,7 +442,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-gunsmithing.pw.toml"
-hash = "18b7b9878dd89da8df431c6ca56d9b90845c17eea82d9232367395b6116b31fa"
+hash = "d8a7e79b3ac2a283261ff009e6ec6777b7da2fe4887bd6c4c740ae5442babcc7"
 metafile = true
 
 [[files]]
