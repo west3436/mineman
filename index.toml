@@ -241,10 +241,6 @@ file = "kubejs/startup_scripts/custom_items.js"
 hash = "7b5c5c822e474b0618ff5095693a0d72505038214c6d181cafe1d603874b2c6b"
 
 [[files]]
-file = "minecraft.log"
-hash = "2b47bb6739a1db10ca3d945ed477f5ac46d8e5711e7dd8a118ca10a388a051c5"
-
-[[files]]
 file = "mods/acedium.pw.toml"
 hash = "f61f5f74db41ea4cb279bcbe9e2e30b29a9dfad526536bdeffa1c7d46a97a2a0"
 metafile = true
@@ -457,11 +453,6 @@ metafile = true
 [[files]]
 file = "mods/create-radars.pw.toml"
 hash = "d329779921574e5a4709ee468955af18c84546a2be55d13a0e49ca0fc88b0a6f"
-metafile = true
-
-[[files]]
-file = "mods/create-railways-navigator.pw.toml"
-hash = "9ce768751565bacd62477d56be77dd7f0e0151e03d8a671ee0de21b6a9070818"
 metafile = true
 
 [[files]]
@@ -961,7 +952,7 @@ metafile = true
 
 [[files]]
 file = "mods/petrolpark.pw.toml"
-hash = "20b656798b6afb8ed1133cc7cd7ac5c61a8f73e49f321544e4ac554620167fb1"
+hash = "08db67f5571e690b026c38becb5c5273fc95b8519124cd046112529104605784"
 metafile = true
 
 [[files]]
