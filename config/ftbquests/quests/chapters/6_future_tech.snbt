@@ -255,143 +255,6 @@
 			]
 		}
 		{
-			title: "Create: Nuclear Basics"
-			icon: "createnuclear:reactor_casing"
-			x: 0.0d
-			y: 2.0d
-			description: [
-				"Create: Nuclear adds nuclear power generation!"
-				""
-				"Start by building reactor components."
-				""
-				"Nuclear power provides massive energy output."
-			]
-			dependencies: ["6000000000000002"]
-			id: "6000000000000030"
-			tasks: [
-				{
-					id: "6000000000000031"
-					type: "item"
-					item: "createnuclear:reactor_casing"
-					count: 16
-				}
-				{
-					id: "6000000000000032"
-					type: "item"
-					item: "createnuclear:reactor_glass"
-					count: 8
-				}
-				{
-					id: "6000000000000033"
-					type: "item"
-					item: "createnuclear:enriched_uranium"
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "6000000000000034"
-					type: "item"
-					item: "createnuclear:enriched_uranium"
-					count: 8
-				}
-				{
-					id: "6000000000000035"
-					type: "item"
-					item: "minecraft:iron_block"
-					count: 32
-				}
-			]
-		}
-		{
-			title: "Nuclear Reactor"
-			icon: "createnuclear:reactor_core"
-			x: 0.0d
-			y: 3.5d
-			description: [
-				"Build your first nuclear reactor!"
-				""
-				"The reactor core generates heat from uranium fuel."
-				""
-				"Use coolant systems to extract energy safely."
-			]
-			dependencies: ["6000000000000030"]
-			id: "6000000000000036"
-			tasks: [
-				{
-					id: "6000000000000037"
-					type: "item"
-					item: "createnuclear:reactor_core"
-				}
-				{
-					id: "6000000000000038"
-					type: "item"
-					item: "createnuclear:fuel_rod"
-					count: 8
-				}
-				{
-					id: "6000000000000039"
-					type: "item"
-					item: "createnuclear:control_rod"
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "6000000000000040"
-					type: "item"
-					item: "createnuclear:fuel_rod"
-					count: 8
-				}
-				{
-					id: "6000000000000041"
-					type: "xp_levels"
-					xp_levels: 20
-				}
-			]
-		}
-		{
-			title: "Power Generation"
-			icon: "createnuclear:steam_turbine"
-			x: 0.0d
-			y: 5.0d
-			description: [
-				"Convert reactor heat into usable power!"
-				""
-				"Use Steam Turbines to generate electricity from superheated steam."
-				""
-				"This is clean, efficient, high-output power."
-			]
-			dependencies: ["6000000000000036"]
-			id: "6000000000000042"
-			tasks: [
-				{
-					id: "6000000000000043"
-					type: "item"
-					item: "createnuclear:steam_turbine"
-				}
-				{
-					id: "6000000000000044"
-					type: "item"
-					item: "createnuclear:heat_exchanger"
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "6000000000000045"
-					type: "item"
-					item: "minecraft:emerald_block"
-					count: 4
-				}
-				{
-					id: "6000000000000046"
-					type: "xp_levels"
-					xp_levels: 25
-				}
-			]
-		}
-		{
 			title: "Flux Networks: Point"
 			icon: "fluxnetworks:flux_point"
 			x: 4.0d
@@ -547,7 +410,7 @@
 				""
 				"You've completed all 6 tiers of technological progression!"
 				""
-				"From basic processing to digital storage, nuclear power, and wireless energy!"
+				"From basic processing to digital storage and wireless energy!"
 				""
 				"You've mastered both Create and Immersive Engineering paths."
 				""
@@ -557,7 +420,6 @@
 			]
 			dependencies: [
 				"6000000000000024"
-				"6000000000000042"
 				"6000000000000057"
 			]
 			id: "6000000000000062"

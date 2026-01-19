@@ -66,11 +66,11 @@ hash = "72c7041794b8c21784adbcf92d26c72ae56d35f75248899f1a98df8c78cfd38e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5_electronics.snbt"
-hash = "3954e939dec0616f4ab7d1a8b6dc2b80b66cbabe2a3095ce91d2eb40e199e574"
+hash = "a22b2d6fa3a5ed59bbafb64f3defdce1984db9ed2b8aced5e0ac320c32a0e02b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_future_tech.snbt"
-hash = "cfc3f382de14db187619c5ef696462c1a145334cd5e9d85f2e285b9f12de9b42"
+hash = "6d016903df436a083e8e84ce32552dd79a43bb5e65c87add66c9cb706610aa17"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
@@ -94,7 +94,7 @@ hash = "b48352e89ffc2c0165040cb298dc0edb2d4298acae314b8d40efda7bb46ebca0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables.snbt"
-hash = "1b8e4a63b11035c975f707fe4421011aafbd72bec44df1ab5e995cdd9cb6ff73"
+hash = "171694a99a57b25174f72dfbd4d698957e4ddfd64ff1a5a5fd26c81bf9b43ef9"
 
 [[files]]
 file = "config/immersiveengineering-server.toml"
@@ -134,7 +134,7 @@ hash = "f7b42891514eb51f455967f171aa4589bdfe548fe3927f7f87762c12ff12d850"
 
 [[files]]
 file = "kubejs/client_scripts/jei_hiding.js"
-hash = "f83bdf8be40804c5274d63d5bcaab814629dd1eeebc8766cbc3f439854068bdc"
+hash = "d9ed36d47293af6e8ed0c75ccdab492286b09fc01c9e16d09609e71d2bacb30e"
 
 [[files]]
 file = "kubejs/data/minecraft/loot_tables/chests/abandoned_mineshaft.json"
@@ -202,7 +202,7 @@ hash = "c73e96a21322bb43c2ebf314bcfeb97d54b6962adb5968f89f1e8000bf39f657"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/_constants.js"
-hash = "5311ae5a2afaa2ec462b0897efa52dd80fa34dbad2e0d745acd8f94511639014"
+hash = "d49919ec28a4d4bdd0a9702079a45a8c646db14eabc89d2bdf731c31d63f7da7"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/military_defense.js"
@@ -230,11 +230,11 @@ hash = "5dc8dcaf02134ae6e7e7ccd5ecde5e3f2ce2e16f62ad33de6c66f16ccd5c5070"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier6_future.js"
-hash = "31172e9a6ae4e26a8b951d89958a5d0b10cfcf22ef1a5967f7b07016cffdd2e1"
+hash = "72a9b3e7319fea73eda17734c6c9616aab2b7c09fad5b3052983a5e2f8857035"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/unification.js"
-hash = "8b8d2a0edb5a4a9957d2cb9a0b1c736aac388f7cab1924329ea80d7b2926b3ff"
+hash = "3daf1eb73fe328752899049b0e41c64d4c0d0b29d04d3fea3e4f5b5b2aa64f6b"
 
 [[files]]
 file = "kubejs/startup_scripts/custom_items.js"
@@ -473,11 +473,6 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
-metafile = true
-
-[[files]]
-file = "mods/createnuclear.pw.toml"
-hash = "eaf87b925d774592d481b9a6660f140350c77a5b09a893a0cee3668d2f5cbbf6"
 metafile = true
 
 [[files]]
