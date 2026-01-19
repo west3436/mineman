@@ -1,13 +1,13 @@
 name = "Territorial"
-filename = "territorial-1.0.0.jar"
+filename = "territorial-1.1.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "81ac7b2d2f46b5ec4ae3471970d4c204391f1a15"
+hash = "5f30c5c9b4430baac72f4fff8fb357d303d2f3a1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7471297
+file-id = 7484913
 project-id = 1432409

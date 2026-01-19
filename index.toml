@@ -3006,7 +3006,7 @@ metafile = true
 
 [[files]]
 file = "mods/territorial.pw.toml"
-hash = "49c60c98dd8e60682c3af6c561286f4b455fc6259199d13cf9bf1a5ce21d19e7"
+hash = "bb3b8ea7b40bf1fe674a8b1f6cba614cf7706e8bef1b117a3e1a4ec7d701d4f9"
 metafile = true
 
 [[files]]
@@ -6265,4 +6265,9 @@ hash = "db4ba9188052b75c67fe536e5e7fc127499611abcb98b3542cf79a450fa13ece"
 [[files]]
 file = "resourcepacks/asyasas-legacy-copper.pw.toml"
 hash = "9995fc0f9650e6edfb2fc94c76a036cdb30a680b356fd36be0b5237984b13ae9"
+metafile = true
+
+[[files]]
+file = "territorial.pw.toml"
+hash = "1838b11b3b14d625a52afc01e399d465cca9ae196501c223161c0c04ed480e51"
 metafile = true
