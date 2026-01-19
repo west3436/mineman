@@ -241,8 +241,8 @@ file = "kubejs/startup_scripts/custom_items.js"
 hash = "7b5c5c822e474b0618ff5095693a0d72505038214c6d181cafe1d603874b2c6b"
 
 [[files]]
-file = "latest.log"
-hash = "1a747c0f117ba225e1fc90e71c94c0cd2cfd40cce6f3c2f6672e93d2a39da88c"
+file = "minecraft.log"
+hash = "2b47bb6739a1db10ca3d945ed477f5ac46d8e5711e7dd8a118ca10a388a051c5"
 
 [[files]]
 file = "mods/acedium.pw.toml"
@@ -441,12 +441,12 @@ metafile = true
 
 [[files]]
 file = "mods/copycats.pw.toml"
-hash = "853df4ab2418f347cbb1e3b4ca6c82b2a517a8e4e8ccabcd42c27e3496707a32"
+hash = "408ce5619020064fc084d150d331edc654bbf1749bbd289e19f050a0df51f1c8"
 metafile = true
 
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
-hash = "9eb4f3e7a5a83c588e0caa676d91597c18f2c8004c9e57a10e72859e474fa0e5"
+hash = "58458b5ea5eba986c14b79bab34f84e7f44dba5edcedff94c0122865ccb4c520"
 metafile = true
 
 [[files]]
@@ -461,12 +461,12 @@ metafile = true
 
 [[files]]
 file = "mods/create-railways-navigator.pw.toml"
-hash = "345cbc7e5b4b2d14a1120720981248be696d28bc6a0bc23c54f1e11299d85594"
+hash = "9ce768751565bacd62477d56be77dd7f0e0151e03d8a671ee0de21b6a9070818"
 metafile = true
 
 [[files]]
 file = "mods/create-steam-n-rails.pw.toml"
-hash = "b13bad02617c5c0b39dede935d46bbf9755e66581087254372a12364b75df2b9"
+hash = "06f5738ac3eb0c178097649ea7471ce0c4e6063d03bbff5386a4d8a301186682"
 metafile = true
 
 [[files]]
@@ -1081,7 +1081,7 @@ metafile = true
 
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
-hash = "f49c7302f7a044aae67740fac3a7558ca2f26b3a89a69a3940d516a40e3b75b7"
+hash = "bdb446f03761f760737b82f9f39f73cee8d5b744efa59f2d9fff7281dbacecdb"
 metafile = true
 
 [[files]]
