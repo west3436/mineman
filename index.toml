@@ -456,6 +456,11 @@ hash = "d329779921574e5a4709ee468955af18c84546a2be55d13a0e49ca0fc88b0a6f"
 metafile = true
 
 [[files]]
+file = "mods/create-railways-navigator.pw.toml"
+hash = "9ce768751565bacd62477d56be77dd7f0e0151e03d8a671ee0de21b6a9070818"
+metafile = true
+
+[[files]]
 file = "mods/create-steam-n-rails.pw.toml"
 hash = "06f5738ac3eb0c178097649ea7471ce0c4e6063d03bbff5386a4d8a301186682"
 metafile = true
@@ -497,7 +502,7 @@ metafile = true
 
 [[files]]
 file = "mods/dragonlib.pw.toml"
-hash = "a7bcd625886fcb580a2f85bb43f3e58362a546c31ec0880b97c138c753313199"
+hash = "5eba00f5acd75c49107c108edd47dfb5aa46632f6026cc3ad5dcb8c280beef11"
 metafile = true
 
 [[files]]
