@@ -56,13 +56,13 @@ global.INGOTS = {
 global.PLATES = {
     copper: ['create:copper_sheet', 'immersiveengineering:plate_copper', 'mekanism:plate_copper'],
     tin: ['mekanism:plate_tin'],
-    bronze: ['mekanism:plate_bronze', 'create:bronze_sheet'],
+    bronze: ['create:bronze_sheet', 'mekanism:plate_bronze'], // Create > Mekanism
     iron: ['create:iron_sheet', 'immersiveengineering:plate_iron'],
     gold: ['create:golden_sheet', 'immersiveengineering:plate_gold'],
-    steel: ['mekanism:plate_steel', 'immersiveengineering:plate_steel', 'create:steel_sheet'],
+    steel: ['create:steel_sheet', 'immersiveengineering:plate_steel', 'mekanism:plate_steel'], // Create > IE > Mekanism
     nickel: ['immersiveengineering:plate_nickel'],
     silver: ['immersiveengineering:plate_silver'],
-    lead: ['mekanism:plate_lead', 'immersiveengineering:plate_lead'],
+    lead: ['immersiveengineering:plate_lead', 'mekanism:plate_lead'], // IE > Mekanism
     electrum: ['immersiveengineering:plate_electrum'],
     constantan: ['immersiveengineering:plate_constantan'],
     aluminum: ['immersiveengineering:plate_aluminum'],
