@@ -215,11 +215,6 @@ hash = "eed03a69cacac3a826fc07806ad069b0ae605fefcedab2b2b8fcfa060eb60ebb"
 metafile = true
 
 [[files]]
-file = "mods/alchemylib.pw.toml"
-hash = "443eeba299b820216c4da449a71138104a57274909e71e9a0f26c4709f47506e"
-metafile = true
-
-[[files]]
 file = "mods/ambient-environment.pw.toml"
 hash = "1047a7b018546f650c04d6999110a3b80b246fd0ab716e8375d3565c3942dcfe"
 metafile = true
