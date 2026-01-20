@@ -1,0 +1,8 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "immersiveengineering:ore_nickel",
+    "immersiveengineering:ore_nickel_deepslate"
+  ]
+}

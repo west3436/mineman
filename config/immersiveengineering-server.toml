@@ -184,6 +184,8 @@
     # IE ore generation (if enabled)
     # Primary ore generation for the pack - Mekanism ores disabled
     # Generates: Copper, Aluminum, Lead, Silver, Nickel, Uranium
+    # NOTE: Overworld ore spawns are further modified by the tech_progression datapack
+    # to encourage dimension travel (see kubejs/data/tech_progression/ORE_CONFIGURATION.md)
     enableOreGeneration = true
     
     # Mineral veins for excavator

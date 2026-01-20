@@ -1,0 +1,9 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "immersiveengineering:ore_uranium",
+    "immersiveengineering:ore_uranium_deepslate",
+    "mekanism:ore_uranium"
+  ]
+}

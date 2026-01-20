@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "tech_progression:ore_silver_rare",
+  "step": "underground_ores"
+}
