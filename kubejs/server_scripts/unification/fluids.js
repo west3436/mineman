@@ -85,7 +85,42 @@ ServerEvents.tags('fluid', event => {
 
     // Molten Brass
     event.add('forge:molten_brass', [
-        'tconstruct:molten_brass'
+        'tconstruct:molten_brass',
+        'create:molten_brass'
+    ]);
+
+    // ============================================
+    // FUEL UNIFICATION
+    // ============================================
+
+    // Diesel
+    event.add('forge:diesel', [
+        'immersivepetroleum:diesel',
+        'pneumaticcraft:diesel',
+        'tfmg:diesel'
+    ]);
+
+    // Biodiesel
+    event.add('forge:biodiesel', [
+        'immersiveengineering:biodiesel'
+    ]);
+
+    // Gasoline
+    event.add('forge:gasoline', [
+        'immersivepetroleum:gasoline',
+        'tfmg:gasoline'
+    ]);
+
+    // Kerosene
+    event.add('forge:kerosene', [
+        'immersivepetroleum:kerosene',
+        'tfmg:kerosene'
+    ]);
+
+    // Ethanol / Bioethanol
+    event.add('forge:ethanol', [
+        'immersiveengineering:ethanol',
+        'createaddition:bioethanol'
     ]);
 
     // Molten Electrum
@@ -104,41 +139,37 @@ ServerEvents.tags('fluid', event => {
     ]);
 
     // ============================================
-    // FUEL UNIFICATION
-    // ============================================
-
-    // Diesel
-    event.add('forge:diesel', [
-        'immersivepetroleum:diesel'
-    ]);
-
-    // Biodiesel
-    event.add('forge:biodiesel', [
-        'immersiveengineering:biodiesel'
-    ]);
-
-    // Gasoline
-    event.add('forge:gasoline', [
-        'immersivepetroleum:gasoline'
-    ]);
-
-    // Ethanol / Bioethanol
-    event.add('forge:ethanol', [
-        'immersiveengineering:ethanol'
-    ]);
-
-    // ============================================
     // OIL UNIFICATION
     // ============================================
 
     // Crude Oil
     event.add('forge:crude_oil', [
-        'immersivepetroleum:crude_oil'
+        'immersivepetroleum:crude_oil',
+        'pneumaticcraft:oil',
+        'tfmg:crude_oil'
+    ]);
+
+    // Heavy Oil
+    event.add('forge:heavy_oil', [
+        'tfmg:heavy_oil'
+    ]);
+
+    // Light Oil
+    event.add('forge:light_oil', [
+        'tfmg:light_oil'
+    ]);
+
+    // Naphtha
+    event.add('forge:naphtha', [
+        'immersivepetroleum:naphtha',
+        'tfmg:naphtha'
     ]);
 
     // Lubricant
     event.add('forge:lubricant', [
-        'immersivepetroleum:lubricant'
+        'immersivepetroleum:lubricant',
+        'pneumaticcraft:lubricant',
+        'tfmg:lubrication_oil'
     ]);
 
     // Plant Oil
@@ -147,11 +178,53 @@ ServerEvents.tags('fluid', event => {
     ]);
 
     // ============================================
+    // CHEMICAL UNIFICATION
+    // ============================================
+
+    // Sulfuric Acid
+    event.add('forge:sulfuric_acid', [
+        'mekanism:sulfuric_acid',
+        'tfmg:sulfuric_acid'
+    ]);
+
+    // Nitric Acid
+    event.add('forge:nitric_acid', [
+        'tfmg:nitric_acid'
+    ]);
+
+    // Hydrochloric Acid
+    event.add('forge:hydrochloric_acid', [
+        'mekanism:hydrogen_chloride',
+        'tfmg:hydrochloric_acid'
+    ]);
+
+    // ============================================
+    // PLASTIC UNIFICATION
+    // ============================================
+
+    // Plastic (Liquid/Molten)
+    event.add('forge:plastic', [
+        'pneumaticcraft:plastic',
+        'tfmg:liquid_plastic'
+    ]);
+
+    // ============================================
+    // CONCRETE UNIFICATION
+    // ============================================
+
+    // Concrete
+    event.add('forge:concrete', [
+        'immersiveengineering:concrete',
+        'create:flowing_concrete'
+    ]);
+
+    // ============================================
     // EXPERIENCE FLUID UNIFICATION
     // ============================================
 
     event.add('forge:experience', [
-        'mob_grinding_utils:fluid_xp'
+        'mob_grinding_utils:fluid_xp',
+        'sophisticatedbackpacks:xp_still'
     ]);
 
     // ============================================
@@ -160,6 +233,34 @@ ServerEvents.tags('fluid', event => {
 
     event.add('forge:creosote', [
         'immersiveengineering:creosote'
+    ]);
+
+    // ============================================
+    // TFMG-SPECIFIC FLUIDS
+    // ============================================
+
+    // Liquid Soap
+    event.add('forge:liquid_soap', [
+        'tfmg:liquid_soap'
+    ]);
+
+    // ============================================
+    // CREATE FLUIDS (NO DUPLICATES)
+    // ============================================
+
+    // Chocolate
+    event.add('forge:chocolate', [
+        'create:chocolate'
+    ]);
+
+    // Honey
+    event.add('forge:honey', [
+        'create:honey'
+    ]);
+
+    // Tea
+    event.add('forge:tea', [
+        'create:tea'
     ]);
 
     console.log('[Tech Progression] Fluid tag unification complete');

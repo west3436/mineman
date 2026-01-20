@@ -118,27 +118,45 @@ global.CHEMICAL_FLUIDS = {
     // Fuels
     diesel: [
         'immersivepetroleum:diesel',
-        'pneumaticcraft:diesel'
+        'pneumaticcraft:diesel',
+        'tfmg:diesel'
     ],
     biodiesel: [
         'immersiveengineering:biodiesel'
     ],
     gasoline: [
-        'immersivepetroleum:gasoline'
+        'immersivepetroleum:gasoline',
+        'tfmg:gasoline'
     ],
     ethanol: [
         'immersiveengineering:ethanol',
         'createaddition:bioethanol'
     ],
+    kerosene: [
+        'immersivepetroleum:kerosene',
+        'tfmg:kerosene'
+    ],
 
     // Oils
     crude_oil: [
         'immersivepetroleum:crude_oil',
-        'pneumaticcraft:oil'
+        'pneumaticcraft:oil',
+        'tfmg:crude_oil'
+    ],
+    heavy_oil: [
+        'tfmg:heavy_oil'
+    ],
+    light_oil: [
+        'tfmg:light_oil'
+    ],
+    naphtha: [
+        'immersivepetroleum:naphtha',
+        'tfmg:naphtha'
     ],
     lubricant: [
         'immersivepetroleum:lubricant',
-        'pneumaticcraft:lubricant'
+        'pneumaticcraft:lubricant',
+        'tfmg:lubrication_oil'
     ],
     plant_oil: [
         'immersiveengineering:plantoil'
@@ -153,10 +171,35 @@ global.CHEMICAL_FLUIDS = {
         'create:flowing_concrete'
     ],
 
+    // Acids
+    sulfuric_acid: [
+        'mekanism:sulfuric_acid',
+        'tfmg:sulfuric_acid'
+    ],
+    nitric_acid: [
+        'tfmg:nitric_acid'
+    ],
+    hydrochloric_acid: [
+        'mekanism:hydrogen_chloride',
+        'tfmg:hydrochloric_acid'
+    ],
+
     // Plastic-related
     plastic: [
         'pneumaticcraft:plastic',
+        'tfmg:liquid_plastic',
         'industrialforegoing:pink_slime'
+    ],
+    
+    // Steam and vapors
+    steam: [
+        'mekanism:steam',
+        'createaddition:seed_oil'
+    ],
+
+    // Other industrial
+    liquid_soap: [
+        'tfmg:liquid_soap'
     ]
 };
 
@@ -205,6 +248,32 @@ global.CREATE_FLUIDS = {
 };
 
 // ============================================
+// TFMG FLUIDS (Create: The Factory Must Grow)
+// ============================================
+global.TFMG_FLUIDS = {
+    // Fuels
+    diesel: 'tfmg:diesel',
+    gasoline: 'tfmg:gasoline',
+    kerosene: 'tfmg:kerosene',
+    
+    // Oils
+    crude_oil: 'tfmg:crude_oil',
+    heavy_oil: 'tfmg:heavy_oil',
+    light_oil: 'tfmg:light_oil',
+    naphtha: 'tfmg:naphtha',
+    lubrication_oil: 'tfmg:lubrication_oil',
+    
+    // Chemicals
+    sulfuric_acid: 'tfmg:sulfuric_acid',
+    nitric_acid: 'tfmg:nitric_acid',
+    hydrochloric_acid: 'tfmg:hydrochloric_acid',
+    
+    // Industrial
+    liquid_plastic: 'tfmg:liquid_plastic',
+    liquid_soap: 'tfmg:liquid_soap'
+};
+
+// ============================================
 // UTILITY FLUIDS
 // ============================================
 global.UTILITY_FLUIDS = {
@@ -236,6 +305,7 @@ global.FLUID_AMOUNTS = {
 // FLUID TAG MAPPINGS
 // ============================================
 global.FLUID_TAGS = {
+    // Molten metals
     'forge:molten_iron': ['tconstruct:molten_iron', 'mekanism:liquid_iron'],
     'forge:molten_gold': ['tconstruct:molten_gold', 'mekanism:liquid_gold'],
     'forge:molten_copper': ['tconstruct:molten_copper', 'mekanism:liquid_copper'],
@@ -246,10 +316,30 @@ global.FLUID_TAGS = {
     'forge:molten_uranium': ['tconstruct:molten_uranium', 'mekanism:liquid_uranium'],
     'forge:molten_steel': ['tconstruct:molten_steel', 'mekanism:liquid_steel'],
     'forge:molten_bronze': ['tconstruct:molten_bronze', 'mekanism:liquid_bronze'],
-    'forge:diesel': ['immersivepetroleum:diesel', 'pneumaticcraft:diesel'],
-    'forge:crude_oil': ['immersivepetroleum:crude_oil', 'pneumaticcraft:oil'],
+    'forge:molten_brass': ['tconstruct:molten_brass', 'create:molten_brass'],
+    
+    // Fuels
+    'forge:diesel': ['immersivepetroleum:diesel', 'pneumaticcraft:diesel', 'tfmg:diesel'],
+    'forge:gasoline': ['immersivepetroleum:gasoline', 'tfmg:gasoline'],
+    'forge:kerosene': ['immersivepetroleum:kerosene', 'tfmg:kerosene'],
     'forge:ethanol': ['immersiveengineering:ethanol', 'createaddition:bioethanol'],
-    'forge:experience': ['mob_grinding_utils:fluid_xp', 'sophisticatedbackpacks:xp_still']
+    'forge:biodiesel': ['immersiveengineering:biodiesel'],
+    
+    // Oils
+    'forge:crude_oil': ['immersivepetroleum:crude_oil', 'pneumaticcraft:oil', 'tfmg:crude_oil'],
+    'forge:naphtha': ['immersivepetroleum:naphtha', 'tfmg:naphtha'],
+    'forge:lubricant': ['immersivepetroleum:lubricant', 'pneumaticcraft:lubricant', 'tfmg:lubrication_oil'],
+    'forge:plant_oil': ['immersiveengineering:plantoil'],
+    
+    // Industrial chemicals
+    'forge:concrete': ['immersiveengineering:concrete', 'create:flowing_concrete'],
+    'forge:plastic': ['pneumaticcraft:plastic', 'tfmg:liquid_plastic'],
+    'forge:sulfuric_acid': ['mekanism:sulfuric_acid', 'tfmg:sulfuric_acid'],
+    'forge:hydrochloric_acid': ['mekanism:hydrogen_chloride', 'tfmg:hydrochloric_acid'],
+    
+    // Utility
+    'forge:experience': ['mob_grinding_utils:fluid_xp', 'sophisticatedbackpacks:xp_still'],
+    'forge:creosote': ['immersiveengineering:creosote']
 };
 
 console.log('[Tech Progression] Fluid definitions loaded');
