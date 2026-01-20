@@ -738,7 +738,9 @@ LootJS.modifiers((event) => {
         // Numismatics currency
         .addLoot(LootEntry.of('numismatics:spur').setCount(2, 8).setWeight(20))
         .addLoot(LootEntry.of('numismatics:bevel').setCount(1, 4).setWeight(15))
-        .addLoot(LootEntry.of('numismatics:sprocket').setCount(1, 2).setWeight(8)); (Automation theme, Tier 2-4) ---
+        .addLoot(LootEntry.of('numismatics:sprocket').setCount(1, 2).setWeight(8));
+
+    // --- Jungle Temple (Automation theme, Tier 2-4) ---
     event.addLootTableModifier('minecraft:chests/jungle_temple')
         .randomChance(0.85)
         .addLoot(LootEntry.of('create:redstone_link').setCount(1, 2).setWeight(25))

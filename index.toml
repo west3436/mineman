@@ -174,7 +174,7 @@ hash = "7106ecfd5b48787e7c559b9870f4515f02cd8d3254ee25ed76f18ab9ff5d2ec7"
 
 [[files]]
 file = "kubejs/server_scripts/loot_tables.js"
-hash = "a249799be9f49945e30e5279aa8d7b0065aa4ce24d16155baad5e876d2fc7d6d"
+hash = "308e95a7d2bc505abb0dcc897ca45bb7457eb81db064b08defab8a7ba602c97f"
 
 [[files]]
 file = "kubejs/server_scripts/loot_tables_quest_rewards.js"
