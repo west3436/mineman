@@ -1119,3 +1119,8 @@ metafile = true
 file = "mods/yungs-better-strongholds.pw.toml"
 hash = "18dfe8ada0af83eb86d4b8ff8e202479b7c2ab1ee1f894d9bb07cda1744e8981"
 metafile = true
+
+[[files]]
+file = "shaderpacks/photon-shader.pw.toml"
+hash = "5f5024cd8b34a2f1b219eab618c9b145d05510e73f6493b000ee5e4dcc95bb1a"
+metafile = true
