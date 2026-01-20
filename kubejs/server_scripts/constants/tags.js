@@ -51,10 +51,12 @@ global.PLATE_TAGS = {
     nickel: 'forge:plates/nickel',
     silver: 'forge:plates/silver',
     lead: 'forge:plates/lead',
+    invar: 'forge:plates/invar',
     electrum: 'forge:plates/electrum',
     constantan: 'forge:plates/constantan',
     aluminum: 'forge:plates/aluminum',
     brass: 'forge:plates/brass',
+    zinc: 'forge:plates/zinc',
     osmium: 'forge:plates/osmium',
     uranium: 'forge:plates/uranium'
 };
@@ -183,11 +185,14 @@ global.RAW_MATERIAL_TAGS = {
 // ITEM TAGS - RODS/STICKS
 // ============================================
 global.ROD_TAGS = {
+    wood: 'forge:rods/wooden',
     copper: 'forge:rods/copper',
+    bronze: 'forge:rods/bronze',
     iron: 'forge:rods/iron',
+    gold: 'forge:rods/gold',
     steel: 'forge:rods/steel',
-    aluminum: 'forge:rods/aluminum',
-    wood: 'forge:rods/wooden'
+    brass: 'forge:rods/brass',
+    aluminum: 'forge:rods/aluminum'
 };
 
 // ============================================
@@ -195,10 +200,11 @@ global.ROD_TAGS = {
 // ============================================
 global.WIRE_TAGS = {
     copper: 'forge:wires/copper',
+    gold: 'forge:wires/gold',
+    silver: 'forge:wires/silver',
     electrum: 'forge:wires/electrum',
     aluminum: 'forge:wires/aluminum',
-    steel: 'forge:wires/steel',
-    gold: 'forge:wires/gold'
+    steel: 'forge:wires/steel'
 };
 
 // ============================================
