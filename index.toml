@@ -149,6 +149,10 @@ file = "kubejs/server_scripts/constants/materials.js"
 hash = "5310ea82df95905746c9ec20a0fa7711484c4acc1ad0bbd3d5f809fcbb1fe9e5"
 
 [[files]]
+file = "kubejs/server_scripts/constants/tags.js"
+hash = "94d2a1ffdeb6bba201d0dcc247187996bef3e357349b30ee52259cc126937ec9"
+
+[[files]]
 file = "kubejs/server_scripts/constants/tiers.js"
 hash = "179ad644e4d47d60817a3c48f94a1e07e6d27258d495a95d83abcd18d59f4585"
 
