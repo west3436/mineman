@@ -1,47 +1,89 @@
 // kubejs/server_scripts/recipes/mbd2_machines.js
-// MBD2 Machine Recipes - Chemical Mixer and Advanced Circuit Fabricator
+// MBD2 Machine Recipes - Chemical Plant, Computer Controlled Assembler, and Basic Mixer
 //
-// NOTE: MBD2 recipes are defined within the multiblock definition files (.mb),
-// not via KubeJS. The recipe type 'mbd2:mbd_recipe' does not exist.
-// These recipes are commented out - MBD2 machines use their internal recipe system.
-// To add/modify MBD2 recipes, use the MBD2 in-game recipe editor.
+// Uses MBD2's KubeJS integration to define recipes for multiblock machines
+// Documentation: https://low-drag-mc.github.io/LowDragMC-Doc/multiblocked2/
 
 ServerEvents.recipes(event => {
-    console.log('MBD2 machine recipes - using internal MBD2 recipe system');
+    console.log('Adding MBD2 machine recipes via KubeJS...');
 
     // ============================================================
-    // MBD2 RECIPE DOCUMENTATION
+    // CHEMICAL PLANT (mbd2:chemical_plant)
     // ============================================================
-    // MBD2 multiblocks have their recipes defined in the .mb files
-    // located in ldlib/assets/mbd2/multiblock/
-    //
-    // To add recipes to MBD2 machines:
-    // 1. Use the MBD2 in-game recipe editor (right-click controller)
-    // 2. Or modify the .mb files directly using MBD2's tools
-    //
-    // The following recipe types are available in the reference pack:
-    // - mixing.rt - For mixing operations
-    // - chemical_processing.rt - For chemical plant
-    // - advanced_assemblying.rt - For computer controlled assembler
+    // Tier 3 multiblock for plastic production
+    // Converts ethylene gas + coal coke into unprocessed plastic
+    // Recipe type: chemical_processing
+
+    event.recipes.mbd2.chemical_processing('mbd2:plastic_production')
+        .duration(200)                                      // 10 seconds (200 ticks)
+        .inputFluids(Fluid.of('tfmg:ethylene', 100))       // 100mb ethylene fluid
+        .inputItems('immersiveengineering:coal_coke')      // 1x coal coke catalyst
+        .outputItems('kubejs:unprocessed_plastic')         // 1x unprocessed plastic
+        .inputFE(12800);                                   // 12800 FE total (64 FE/tick)
+
     // ============================================================
+    // COMPUTER CONTROLLED ASSEMBLER (mbd2:computer_controlled_assembler)
+    // ============================================================
+    // Tier 5 multiblock for advanced circuit fabrication
+    // Multiple recipes with different material combinations
+    // Recipe type: advanced_assemblying
 
-    // Chemical Plant recipes are defined in:
-    // ldlib/assets/mbd2/multiblock/chemical_plant.mb
-    //
-    // Expected recipe:
-    // - Input: 100mb Ethylene + 1x Coal Coke
-    // - Output: 1x Unprocessed Plastic
-    // - Energy: 12800 FE
+    // Recipe 1: Balanced recipe using PCBs and alloys
+    event.recipes.mbd2.advanced_assemblying('mbd2:advanced_circuit_balanced')
+        .duration(400)                                              // 20 seconds
+        .inputItems([
+            '4x pneumaticcraft:printed_circuit_board',
+            '8x mekanism:alloy_infused',
+            '4x mekanism:alloy_reinforced',
+            '2x minecraft:redstone_block'
+        ])
+        .outputItems('2x mineman:advanced_circuit')                // 2x advanced circuits
+        .inputFE(25600);                                           // 25600 FE total (64 FE/tick)
 
-    // Computer Controlled Assembler recipes are defined in:
-    // ldlib/assets/mbd2/multiblock/computer_controlled_assembler.mb
-    //
-    // Expected recipes for Advanced Circuits:
-    // - 4 PCBs + 8 Infused Alloy + 4 Reinforced Alloy + 2 Redstone Blocks → 2 Advanced Circuits
-    // - 6 PCBs + 4 Infused Alloy + 2 Reinforced Alloy + 4 Redstone → 2 Advanced Circuits
-    // - 2 PCBs + 4 Infused Alloy + 8 Steel Sheets + 1 Diamond → 1 Advanced Circuit
+    // Recipe 2: Redstone-heavy recipe (cheaper alloys)
+    event.recipes.mbd2.advanced_assemblying('mbd2:advanced_circuit_redstone')
+        .duration(400)                                              // 20 seconds
+        .inputItems([
+            '6x pneumaticcraft:printed_circuit_board',
+            '4x mekanism:alloy_infused',
+            '2x mekanism:alloy_reinforced',
+            '4x minecraft:redstone'
+        ])
+        .outputItems('2x mineman:advanced_circuit')                // 2x advanced circuits
+        .inputFE(25600);                                           // 25600 FE total
 
-    console.log('MBD2 recipes are handled by internal MBD2 recipe system');
+    // Recipe 3: Steel-based recipe (uses steel sheets instead of reinforced alloy)
+    event.recipes.mbd2.advanced_assemblying('mbd2:advanced_circuit_steel')
+        .duration(400)                                              // 20 seconds
+        .inputItems([
+            '2x pneumaticcraft:printed_circuit_board',
+            '4x mekanism:alloy_infused',
+            '8x tfmg:steel_sheet',
+            'minecraft:diamond'
+        ])
+        .outputItems('mineman:advanced_circuit')                   // 1x advanced circuit
+        .inputFE(25600);                                           // 25600 FE total
+
+    // ============================================================
+    // BASIC MIXER (mbd2:basic_mixer)
+    // ============================================================
+    // Tier 2-3 multiblock for general mixing operations
+    // Example recipes for common mixing tasks
+    // Recipe type: mixing
+
+    // Example: Mix concrete powder (can be customized)
+    event.recipes.mbd2.mixing('mbd2:concrete_mixing')
+        .duration(100)                                              // 5 seconds
+        .inputItems([
+            '4x minecraft:sand',
+            '4x minecraft:gravel',
+            'minecraft:clay_ball'
+        ])
+        .inputFluids(Fluid.of('minecraft:water', 250))             // 250mb water
+        .outputItems('8x minecraft:white_concrete_powder')
+        .inputFE(1600);                                            // 1600 FE total (16 FE/tick)
+
+    console.log('MBD2 machine recipes added successfully!');
 });
 
 // ============================================================

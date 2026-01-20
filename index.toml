@@ -1786,7 +1786,7 @@ hash = "d49919ec28a4d4bdd0a9702079a45a8c646db14eabc89d2bdf731c31d63f7da7"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/mbd2_machines.js"
-hash = "c3c5c22ffc2efcc084b1153a15ea431c7f697b08a39676f9e034be02c61f7fb5"
+hash = "9187abff3d7f946a3f932ba8b82b8b144e12673a12a693cd219a71a406246781"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/military_defense.js"
