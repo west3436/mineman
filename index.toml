@@ -133,18 +133,6 @@ file = "config/tfmg-common.toml"
 hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/mbd2_machines.js"
-hash = "96350d4777aabc18ee5e4694cdb34366e3ba8f5b9987192e02d926f9c23b4dac"
-
-[[files]]
-file = "kubejs/server_scripts/recipes/military_defense.js"
-hash = "140bf6044595d095f33af074d91d58b58e23cd0a9e65b47e1ea593783eb09f81"
-
-[[files]]
-file = "kubejs/server_scripts/recipes/tier3_plastic_multiblock.js"
-hash = "4ee1211a80cedadad61b319b65fbcb3beca8a5ba5e272d03b65fa1c1fa3323f1"
-
-[[files]]
 file = "mods/acedium.pw.toml"
 hash = "f61f5f74db41ea4cb279bcbe9e2e30b29a9dfad526536bdeffa1c7d46a97a2a0"
 metafile = true
