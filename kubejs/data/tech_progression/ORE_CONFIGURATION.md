@@ -15,18 +15,21 @@ These ores spawn at vanilla or mod default rates:
 
 ### Reduced Availability
 These ores have significantly reduced spawn rates to encourage dimension travel:
-- **Gold**: ~33% of vanilla (better in Nether)
-  - Count: 2 per chunk (vanilla: 4-6)
+- **Gold**: Significantly reduced from vanilla
+  - Count: 2 per chunk (vanilla has multiple features totaling ~4-6 veins)
   - Height: -64 to 32 (unchanged)
+  - Vein size: 6 blocks
   
-- **Diamond**: ~40% of vanilla (encourage progression)
-  - Count: 3 per chunk (vanilla: 7)
+- **Diamond**: Significantly reduced from vanilla
+  - Count: 3 per chunk (vanilla has multiple features with varying rates)
   - Height: -64 to -16 (deep only)
-  - Higher air exposure discard chance
+  - Vein size: 4 blocks
+  - 80% air exposure discard chance
   
-- **Lead**: ~40% of IE default (Mining dimension better)
+- **Lead**: Significantly reduced from IE default
   - Count: 2 per chunk
   - Height: -48 to 48
+  - Vein size: 5 blocks
 
 ### Rare Availability
 These ores spawn very rarely, primarily found in other dimensions:
@@ -88,13 +91,14 @@ Located in `kubejs/data/tech_progression/worldgen/placed_feature/`:
 1. **Ore Removal**: To completely remove an ore, only create the `remove_overworld_*.json` file without the corresponding `add_` file.
 
 2. **Adjusting Spawn Rates**: Edit the `count` value in placed features:
-   - Vanilla gold uses 4-6 veins per chunk
+   - Vanilla ores use multiple features with varying spawn rates
    - Our reduced gold uses 2 veins per chunk
    - Our rare ores use 1 vein per chunk
 
 3. **Vein Size**: Edit `size` in configured features:
-   - Vanilla gold veins: 9 blocks
+   - Larger veins = more ore blocks per vein
    - Our reduced gold veins: 6 blocks
+   - Our reduced diamond veins: 4 blocks
    - Our rare ore veins: 3 blocks
 
 4. **Height Distribution**: Use `height_range` in placed features:
