@@ -133,6 +133,54 @@ file = "config/tfmg-common.toml"
 hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
 
 [[files]]
+file = "kubejs/client_scripts/jei_hiding.js"
+hash = "5b426b3b990ebca31c9a88b5e48aab71ffdf8c07fa58c223b3c8c928242e2b89"
+
+[[files]]
+file = "kubejs/server_scripts/constants/fluids.js"
+hash = "c658b9e047f77975287a46b26809dd4fbc4cc9f2249dc9cece0950ed2376a909"
+
+[[files]]
+file = "kubejs/server_scripts/constants/machines.js"
+hash = "e34191407cb3d2cb0d608ea571a5de4bff27ca2b8bcba468db7ffa9697110204"
+
+[[files]]
+file = "kubejs/server_scripts/constants/materials.js"
+hash = "5310ea82df95905746c9ec20a0fa7711484c4acc1ad0bbd3d5f809fcbb1fe9e5"
+
+[[files]]
+file = "kubejs/server_scripts/constants/tiers.js"
+hash = "179ad644e4d47d60817a3c48f94a1e07e6d27258d495a95d83abcd18d59f4585"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tier0/primitive.js"
+hash = "511ac79e45a37517eb5103dc72ef8d0f5851204122d48cd5bc84a86691cf7c7c"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tier1/bronze_age.js"
+hash = "14d09c4de05ac1dc61cba283089c985bb36263b6548930ff0e4a02defc68712e"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tier2/steel_age.js"
+hash = "84813dbfc8f413ff2c778095a46c1796aa0dff37d49f0943067863d05d74d591"
+
+[[files]]
+file = "kubejs/server_scripts/removals/disabled_recipes.js"
+hash = "92a71030b5f7feda02abc8cee214a44839d3450e978f37512807a5103ddcf8cc"
+
+[[files]]
+file = "kubejs/server_scripts/unification/fluids.js"
+hash = "c17b89c03440f7b3a782b7f3c3e5e2af9d7b1bcd31e1be1a50279e383846fd6a"
+
+[[files]]
+file = "kubejs/server_scripts/unification/items.js"
+hash = "99913d51dfca485c1745d174c880b797b9b095dbd55853ab0f27e0e45395de66"
+
+[[files]]
+file = "kubejs/startup_scripts/custom_items.js"
+hash = "e46f5815c76db5f33e1341362c1e82a4f9884735f2010c38e405aa59a7ccfdb8"
+
+[[files]]
 file = "mods/acedium.pw.toml"
 hash = "f61f5f74db41ea4cb279bcbe9e2e30b29a9dfad526536bdeffa1c7d46a97a2a0"
 metafile = true
