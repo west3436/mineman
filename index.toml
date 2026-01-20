@@ -1786,11 +1786,11 @@ hash = "d49919ec28a4d4bdd0a9702079a45a8c646db14eabc89d2bdf731c31d63f7da7"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/mbd2_machines.js"
-hash = "96350d4777aabc18ee5e4694cdb34366e3ba8f5b9987192e02d926f9c23b4dac"
+hash = "c3c5c22ffc2efcc084b1153a15ea431c7f697b08a39676f9e034be02c61f7fb5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/military_defense.js"
-hash = "140bf6044595d095f33af074d91d58b58e23cd0a9e65b47e1ea593783eb09f81"
+hash = "17baead5d448df369995e94eb5023763cebbc289432096a429c83f95b46c8c9e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier2_steel.js"
@@ -1802,7 +1802,7 @@ hash = "8fdb68913474d0441a9f1359b5043ee1221fa5720c1a5f498daceb18f4337f4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier3_plastic_multiblock.js"
-hash = "4ee1211a80cedadad61b319b65fbcb3beca8a5ba5e272d03b65fa1c1fa3323f1"
+hash = "6c9c40ecd95a7ecbb3c6a11c1ed1760e6dc5ca25b05fc24fbfad4a55ad83a1cd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tier4_chemistry.js"
@@ -2785,6 +2785,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs-create.pw.toml"
 hash = "e9ea701c9fc9bb54d1bd3b6998403a229f896449c0d15b5df23dc46e20ac5092"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-immersive-engineering-unofficial.pw.toml"
+hash = "7ae9c42d464cec49e3f4f9da4cea255dcc352e263acd5068f9ece78f55203e6a"
 metafile = true
 
 [[files]]
