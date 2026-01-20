@@ -16,12 +16,12 @@ These ores spawn at vanilla or mod default rates:
 ### Reduced Availability
 These ores have significantly reduced spawn rates to encourage dimension travel:
 - **Gold**: Significantly reduced from vanilla
-  - Count: 2 per chunk (vanilla has multiple features totaling ~4-6 veins)
-  - Height: -64 to 32 (unchanged)
+  - Count: 2 per chunk
+  - Height: -64 to 32
   - Vein size: 6 blocks
   
 - **Diamond**: Significantly reduced from vanilla
-  - Count: 3 per chunk (vanilla has multiple features with varying rates)
+  - Count: 3 per chunk
   - Height: -64 to -16 (deep only)
   - Vein size: 4 blocks
   - 80% air exposure discard chance
