@@ -1,0 +1,13 @@
+mekanism:ace
+mekanism:agender
+mekanism:allay
+mekanism:aro
+mekanism:bi
+mekanism:enby
+mekanism:gay
+mekanism:genderfluid
+mekanism:lesbian
+mekanism:pan
+mekanism:pride
+mekanism:robit
+mekanism:trans

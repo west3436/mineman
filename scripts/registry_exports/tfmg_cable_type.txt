@@ -1,0 +1,4 @@
+tfmg:aluminum
+tfmg:constantan
+tfmg:copper
+tfmg:empty

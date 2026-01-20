@@ -1,0 +1,12 @@
+minecraft:amplified
+minecraft:caves
+minecraft:end
+minecraft:floating_islands
+minecraft:large_biomes
+minecraft:nether
+minecraft:overworld
+rftoolsdim:rftoolsdim_cavern
+rftoolsdim:rftoolsdim_chaotic
+rftoolsdim:rftoolsdim_flat
+rftoolsdim:rftoolsdim_islands
+rftoolsdim:rftoolsdim_overworld

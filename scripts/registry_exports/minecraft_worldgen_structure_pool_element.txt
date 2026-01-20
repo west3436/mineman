@@ -1,0 +1,15 @@
+forestry:apiarist
+minecraft:empty_pool_element
+minecraft:feature_pool_element
+minecraft:legacy_single_pool_element
+minecraft:list_pool_element
+minecraft:single_pool_element
+moogs_structures:legacy_ocean_bottom_single_pool_element
+moogs_structures:mirroring_single_pool_element
+moogs_structures:versioned_single_pool_element
+yungsapi:max_count_feature_element
+yungsapi:max_count_legacy_single_element
+yungsapi:max_count_list_element
+yungsapi:max_count_single_element
+yungsapi:yung_feature_element
+yungsapi:yung_single_element

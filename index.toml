@@ -25,164 +25,144 @@ file = ".github/workflows/packwiz-refresh.yml"
 hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
 [[files]]
-file = "config/create.toml"
-hash = "f31598479853ded5671996a56071eafed74475c0022317a8f8b77397a789888d"
+file = "datapacks/unified_ores/README.md"
+hash = "7b3166f6fe3b02f6110ec93329ad28ac1e193e251230e5944704c2c85df82ec1"
 
 [[files]]
-file = "config/embeddium.json"
-hash = "42f2d1dfb95b25199b3ac4897fdd8f81eeb0842aa55cd84a3c84adee44cba14a"
+file = "datapacks/unified_ores/data/cgs/worldgen/placed_feature/lead_ore_placed.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ferritecore.toml"
-hash = "561756b365a721fcbf5d7481ad92d604e59df87f867b3a8def74141afd7ded6e"
+file = "datapacks/unified_ores/data/cgs/worldgen/placed_feature/sulfur_ore_placed.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests-client.toml"
-hash = "914abbf98ec58bc45c63abcac0ad666c73f23ce38255f99fd180def5677025ee"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_aluminum.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "308b1438a36739b35e70679e16050eac198c96789bb8d2a98954b63e2e864507"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_fluorite.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/0_welcome.snbt"
-hash = "2e75fcaee760786fd5d7bb57c55b4366df41e1cf710e02d64ac9d74900c2fb34"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_lead.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/1_basic_processing.snbt"
-hash = "2f43c564e5909557bd74a32096a0c9e3154fa40a898ddeba7380bd6ad9e2d621"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_lithium.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/2_steel_electricity.snbt"
-hash = "9360a1fa09fa1183421b48d40c1e8e370bc4cf572ee2b720a5962cec271686d8"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_salt.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/3_oil_plastic.snbt"
-hash = "a9604c2abe9151c8d976be938b3f505431092275ed5671c5de973ff626822967"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_silver.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/4_chemistry.snbt"
-hash = "72c7041794b8c21784adbcf92d26c72ae56d35f75248899f1a98df8c78cfd38e"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_tin.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/5_electronics.snbt"
-hash = "a22b2d6fa3a5ed59bbafb64f3defdce1984db9ed2b8aced5e0ac320c32a0e02b"
+file = "datapacks/unified_ores/data/electrodynamics/worldgen/placed_feature/ore_uranium.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/6_future_tech.snbt"
-hash = "6d016903df436a083e8e84ce32552dd79a43bb5e65c87add66c9cb706610aa17"
+file = "datapacks/unified_ores/data/forestry/worldgen/placed_feature/ore_tin.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/side_agriculture.snbt"
-hash = "714e01b72cdbb5e158f907232d1eadfbdd32c63e9e2ed77ff44476cef4eb1c06"
+file = "datapacks/unified_ores/data/growthcraft/worldgen/placed_feature/deepslate_salt_ore_placed.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/side_building.snbt"
-hash = "2d85bc1a2a6841994c4ed75ce1bf217d28daf772322572df721c1238e3fe03dc"
+file = "datapacks/unified_ores/data/growthcraft/worldgen/placed_feature/end_salt_ore_placed.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/side_combat.snbt"
-hash = "7a4a1922319f138136edc5122ea81be62a68cad186a847f9d6595319a48bf37c"
+file = "datapacks/unified_ores/data/growthcraft/worldgen/placed_feature/nether_salt_ore_placed.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/side_exploration.snbt"
-hash = "6c8d074b44c71b7786966022eb0ae0316ef7c3ade9e9f6735ed69f3330fa8690"
+file = "datapacks/unified_ores/data/growthcraft/worldgen/placed_feature/salt_ore_placed.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/side_railways.snbt"
-hash = "b48352e89ffc2c0165040cb298dc0edb2d4298acae314b8d40efda7bb46ebca0"
+file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_lead_normal.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables.snbt"
-hash = "171694a99a57b25174f72dfbd4d698957e4ddfd64ff1a5a5fd26c81bf9b43ef9"
+file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_lead_normal_retrogen.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/immersiveengineering-server.toml"
-hash = "4a928596582a5088e5b9a437ba07abb338b37dfc4032d57633e837290e2d4892"
+file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_uranium_buried.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/mbd2-common.toml"
-hash = "e7faca740e446892c2b651633d7b949042f409a536a6fedfa612ee2d03d3c9f9"
+file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_uranium_buried_retrogen.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/mekanism-server.toml"
-hash = "44a96554d2b49f00215b97579f15f5209f5ff79d9313820887fe59933a953126"
+file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_uranium_small.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/modernfix-mixins.properties"
-hash = "38edbd889029c4c95f95387f2be32110aa4b6f74a399dd3a046aab96bd9c4c5e"
+file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_uranium_small_retrogen.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/oculus.properties"
-hash = "e47fb0ae6ecfae75894917958c1c9133d0fa69e3d84cef8a2fb4902e1b3f3c8f"
+file = "datapacks/unified_ores/data/tfmg/worldgen/placed_feature/lead_ore.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/pneumaticcraft-common.toml"
-hash = "8d5b31197e7c96b9a346cd89162a4b50b8f20be5d6caba4b85e3088370e3b182"
+file = "datapacks/unified_ores/data/tfmg/worldgen/placed_feature/nickel_ore.json"
+hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
-file = "config/territorial-common.toml"
-hash = "3743c86d9a62f45c78fc21d0830d203e32d2cd78986eea448432361483506586"
+file = "datapacks/unified_ores/pack.mcmeta"
+hash = "043b98d7ef271bb33a09d542b62d948d6e986874fd70c538b9ff05a5b24a460c"
 
 [[files]]
-file = "config/territorial-rules.toml"
-hash = "58a07b0949cef3a0a07a3d8315ab3f340e650dde7b681795f3f3fba3dd7bdbf5"
+file = "kubejs/client_scripts/unified_fluids_jei.js"
+hash = "39209a54791148a58ad98b008be42104bd304b827b6bfba304f881bdfc184d5f"
 
 [[files]]
-file = "config/tfmg-common.toml"
-hash = "6c4cf73fbc2873737b57f592a02e659c35aa1eb4cebe300b73c9d5b801897f79"
+file = "kubejs/client_scripts/unified_materials_jei.js"
+hash = "bd4552199843949aead3bd5edf6a26a1e850a08d5890c848a3fa8e6d15e6bab4"
 
 [[files]]
-file = "kubejs/client_scripts/jei_hiding.js"
-hash = "5b426b3b990ebca31c9a88b5e48aab71ffdf8c07fa58c223b3c8c928242e2b89"
+file = "kubejs/server_scripts/unified_fluids_recipes.js"
+hash = "507673e08484cd9e1d54fc627a28d852cc293a920d21d644565e3e3b4f391d41"
 
 [[files]]
-file = "kubejs/server_scripts/constants/fluids.js"
-hash = "c658b9e047f77975287a46b26809dd4fbc4cc9f2249dc9cece0950ed2376a909"
+file = "kubejs/server_scripts/unified_fluids_tags.js"
+hash = "eeefbbb2fe5feb5ab835d6ffaf0323b2aafe866e71f1a005322a67a7590fe242"
 
 [[files]]
-file = "kubejs/server_scripts/constants/machines.js"
-hash = "e34191407cb3d2cb0d608ea571a5de4bff27ca2b8bcba468db7ffa9697110204"
+file = "kubejs/server_scripts/unified_materials_config.js"
+hash = "8a66c9aa3df37efd4a5be5e0d86a794d80a1dfecaae1afac1e397817379dd53a"
 
 [[files]]
-file = "kubejs/server_scripts/constants/materials.js"
-hash = "5310ea82df95905746c9ec20a0fa7711484c4acc1ad0bbd3d5f809fcbb1fe9e5"
+file = "kubejs/server_scripts/unified_materials_processing.js"
+hash = "00623d4f4934cd8af5b290630337fa8fb110f516bf6f6ae55e5cbb3d0dd9b3d3"
 
 [[files]]
-file = "kubejs/server_scripts/constants/tags.js"
-hash = "94d2a1ffdeb6bba201d0dcc247187996bef3e357349b30ee52259cc126937ec9"
+file = "kubejs/server_scripts/unified_materials_recipes.js"
+hash = "3d578bcf22e4edf67d0bdb32824b2be5fda262b53791146183fc3e66b8686aa9"
 
 [[files]]
-file = "kubejs/server_scripts/constants/tiers.js"
-hash = "179ad644e4d47d60817a3c48f94a1e07e6d27258d495a95d83abcd18d59f4585"
+file = "kubejs/server_scripts/unified_materials_storage_blocks.js"
+hash = "134bc095185e3195b5e2cc7e86b6a4c5be85ca6f8210d9fd65473effdfe5a138"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/tier0/primitive.js"
-hash = "511ac79e45a37517eb5103dc72ef8d0f5851204122d48cd5bc84a86691cf7c7c"
+file = "kubejs/server_scripts/unified_materials_tags.js"
+hash = "9a8abd58cc367cb7647f5985f22790be4c5369874e3000d8d98edcbef7884f6d"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/tier1/bronze_age.js"
-hash = "14d09c4de05ac1dc61cba283089c985bb36263b6548930ff0e4a02defc68712e"
-
-[[files]]
-file = "kubejs/server_scripts/recipes/tier2/steel_age.js"
-hash = "84813dbfc8f413ff2c778095a46c1796aa0dff37d49f0943067863d05d74d591"
-
-[[files]]
-file = "kubejs/server_scripts/removals/disabled_recipes.js"
-hash = "92a71030b5f7feda02abc8cee214a44839d3450e978f37512807a5103ddcf8cc"
-
-[[files]]
-file = "kubejs/server_scripts/unification/fluids.js"
-hash = "c17b89c03440f7b3a782b7f3c3e5e2af9d7b1bcd31e1be1a50279e383846fd6a"
-
-[[files]]
-file = "kubejs/server_scripts/unification/items.js"
-hash = "99913d51dfca485c1745d174c880b797b9b095dbd55853ab0f27e0e45395de66"
-
-[[files]]
-file = "kubejs/startup_scripts/custom_items.js"
-hash = "e46f5815c76db5f33e1341362c1e82a4f9884735f2010c38e405aa59a7ccfdb8"
+file = "kubejs/server_scripts/unified_materials_wires_gears.js"
+hash = "10e43ecf80739dc703e08bb6a6435b2cdccdc6c83558b518ecc8dcd791a22f46"
 
 [[files]]
 file = "mods/acedium.pw.toml"

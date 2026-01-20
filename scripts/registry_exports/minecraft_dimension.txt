@@ -1,0 +1,4 @@
+compactmachines:compact_world
+minecraft:overworld
+minecraft:the_end
+minecraft:the_nether

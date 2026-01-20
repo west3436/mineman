@@ -1,0 +1,10 @@
+create:display_board
+create:lectern
+create:nixie_tube
+create:sign
+createrailwaysnavigator:advanced_display
+railways:semaphore
+supplementaries:blackboard_display_target
+supplementaries:notice_board_display_target
+supplementaries:speaker_block_display_target
+supplementaries:text_holder_display_target

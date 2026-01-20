@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "description": "Unifies duplicate ore generation - keeps one ore type per resource based on mod priority"
+    }
+}

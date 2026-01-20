@@ -1,0 +1,4 @@
+create:creative_fluid_tank
+create:fluid_tank
+railways:fuel_tank
+tfmg:tfmg_fluid_tank

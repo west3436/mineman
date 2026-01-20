@@ -1,0 +1,12 @@
+agricraft:gravel
+farmersdelight:rich_farmland
+farmersdelight:rich_soil
+minecraft:clay
+minecraft:crimson_nylium
+minecraft:farmland
+minecraft:mycelium
+minecraft:podzol
+minecraft:sand
+minecraft:soul_sand
+minecraft:soul_soil
+minecraft:warped_nylium

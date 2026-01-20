@@ -1,0 +1,4 @@
+tfmg:copper
+tfmg:graphite
+tfmg:none
+tfmg:zinc

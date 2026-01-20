@@ -1,0 +1,13 @@
+minecraft:binomial
+minecraft:constant
+minecraft:score
+minecraft:uniform
+petrolpark:context_entity_property
+petrolpark:context_team_property
+petrolpark:customer_wait_time
+petrolpark:max
+petrolpark:min
+petrolpark:product
+petrolpark:sigmoid
+petrolpark:sum
+petrolpark:tool_property
