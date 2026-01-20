@@ -25,6 +25,38 @@ file = ".github/workflows/packwiz-refresh.yml"
 hash = "8ece34dc5e50349a84d04031b41a3c10f357551159a7644f5058feed5120ca2d"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
+hash = "33b9b276e8dc4ecc339465fb25a74c69896cb540d0dc88d35af5864a24ecb57b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/antimatter.snbt"
+hash = "96339ad7a5ab84e05e9556076ed64bb00edb973600b01a33c4634ba15abb9d2f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
+hash = "fa434eee4a0c86f2a7bc971cd67ae455c5781d54f318d731f4f9c025e32617e7"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/circuitry.snbt"
+hash = "24161c220413b16bb2a156f54e201edbfe16cf6051f8f1b6037d9da2c7b49054"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_quests.snbt"
+hash = "dd05aaa2cb10262067f7b88114ced4e56b8e984a4dd3e42723fb6bcdbc368e73"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
+hash = "f2bb95242a23e2d1e295e42e14ed4b857908a1eb0201d41524e284cf62768682"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
+
+[[files]]
 file = "datapacks/unified_ores/README.md"
 hash = "7b3166f6fe3b02f6110ec93329ad28ac1e193e251230e5944704c2c85df82ec1"
 

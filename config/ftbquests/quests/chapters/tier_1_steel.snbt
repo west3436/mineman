@@ -1,0 +1,873 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier_1_steel"
+	group: ""
+	icon: "immersiveengineering:ingot_steel"
+	id: "6EE8FC11C8863031"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to the Age of Steel! This is where your industrial journey truly begins."
+				""
+				"You have two paths before you - each with unique strengths:"
+				"• &6Create&r - Rotational power, trains, and kinetic machines"
+				"• &6Immersive Engineering&r - Electricity, multiblocks, and heavy industry"
+				""
+				"&7Materials and items produced by both mods are fully interchangeable, so choose the style that suits you best!&r"
+			]
+			icon: "minecraft:lever"
+			id: "26B00CB3FBFE4163"
+			max_completable_dependents: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05AF2000AA9B65A8"
+				table_id: 1000000000000001L
+				type: "choice"
+			}]
+			shape: "gear"
+			subtitle: "Two paths diverge..."
+			tasks: [{
+				id: "3B061A0D7EC2E913"
+				title: "Choose Your Path"
+				type: "checkmark"
+			}]
+			title: "The Industrial Revolution"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["26B00CB3FBFE4163"]
+			description: [
+				"&6Create&r and &6The Factory Must Grow&r offer a rotational energy-based approach to industry."
+				""
+				"&aAdvantages:&r"
+				"• Beautiful, animated contraptions"
+				"• Powerful train network system"
+				"• Kinetic stress-based power balancing"
+				"• Satisfying mechanical aesthetics"
+				""
+				"&cConsiderations:&r"
+				"• Steel production requires more steps"
+				"• Oil extraction is more complex"
+				"• No native electricity (until later)"
+			]
+			icon: "create:wrench"
+			id: "550206E2DD414D33"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CBD84791204AA5A"
+				table_id: 1000000000000002L
+				type: "choice"
+			}]
+			subtitle: "Gears, cogs, and endless motion"
+			tasks: [{
+				id: "32CF486023D3CF25"
+				title: "I Choose Create!"
+				type: "checkmark"
+			}]
+			title: "The Path of Creation"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["26B00CB3FBFE4163"]
+			description: [
+				"&6Immersive Engineering&r focuses on massive multiblock structures powered by electricity."
+				""
+				"&aAdvantages:&r"
+				"• Quick access to steel and electricity"
+				"• Powerful oil processing capabilities"
+				"• Realistic industrial multiblocks"
+				"• Comprehensive Engineer's Manual"
+				""
+				"&cConsiderations:&r"
+				"• Train systems require more effort"
+				"• Large multiblocks need significant space"
+				"• Higher initial resource investment"
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "69E090C941110A51"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A2F314CDB920D00"
+				table_id: 1000000000000003L
+				type: "choice"
+			}]
+			subtitle: "Heavy industry awaits"
+			tasks: [{
+				id: "5208D82B014435A8"
+				title: "I Choose Immersive Engineering!"
+				type: "checkmark"
+			}]
+			title: "The Engineer's Way"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5E25B91604C57970"
+				"5A95A9EC59868643"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&6Congratulations!&r You've forged your first steel ingot - the backbone of modern industry!"
+				""
+				"Steel unlocks a wealth of new possibilities:"
+				"• &bForestry&r - Automated farms, bees, and butterflies"
+				"• &bImmersive Aircraft&r - Take to the skies!"
+				"• &bIndustrial Renewal&r - Factories and infrastructure"
+				"• &bIntegrated Dynamics&r - Logic-based automation"
+				"• &bModular Routers&r - Smart item transport"
+				""
+				"&eThe Plastic chapter is now available!&r"
+			]
+			id: "5FB53171F0B56681"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "12D36D36997E3D60"
+				table_id: 1000000000000004L
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "The foundation of modern industry"
+			tasks: [{
+				id: "56D05B3D6396679D"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			title: "Steel: The Alloy of Progress"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5FB53171F0B56681"]
+			description: [
+				"&6Forestry&r brings nature and technology together in harmony."
+				""
+				"Features include:"
+				"• Automated multi-farm systems for crops"
+				"• Beekeeping with genetic breeding"
+				"• Butterfly collection and breeding"
+				"• Tree breeding and arboriculture"
+				"• Mail system for item transport"
+				""
+				"&7Start with the Sturdy Machine casing - it's used in most Forestry machines!&r"
+			]
+			id: "5AA59A3DE8955E7B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5AA59A3DE8955E7C"
+				table_id: 1000000000000005L
+				type: "choice"
+			}]
+			subtitle: "Where nature meets machine"
+			tasks: [{
+				id: "5F75F6407B52646C"
+				item: "forestry:sturdy_machine"
+				type: "item"
+			}]
+			title: "Forestry: Natural Automation"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5FB53171F0B56681"]
+			description: [
+				"Take to the skies with &6Immersive Aircraft&r!"
+				""
+				"Available aircraft:"
+				"• &bGyrodyne&r - Simple helicopter for beginners"
+				"• &bBiplane&r - Classic fixed-wing aircraft"
+				"• &bAirship&r - Slow but carries passengers"
+				"• &bCargo Airship&r - Transport goods by air"
+				"• &bQuadrocopter&r - Agile and precise"
+				""
+				"&7Craft an engine to begin your aviation career!&r"
+			]
+			id: "71AC5DA931CD6BB4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71AC5DA931CD6BB5"
+				table_id: 1000000000000006L
+				type: "choice"
+			}]
+			subtitle: "The sky is no longer the limit"
+			tasks: [{
+				id: "5F23F7074A2BFD68"
+				item: "immersive_aircraft:engine"
+				type: "item"
+			}]
+			title: "Taking Flight"
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FB53171F0B56681"]
+			description: [
+				"&6Industrial Renewal&r adds realistic factory infrastructure and decoration."
+				""
+				"Key features:"
+				"• Industrial-style blocks and decorations"
+				"• Catwalks, handrails, and ladders"
+				"• Cargo containers and storage"
+				"• Fluid transport systems"
+				"• Electric fences and hazard signs"
+				""
+				"&7The screwdriver is your primary tool for working with these blocks.&r"
+			]
+			id: "04AE14E7BAFD3CE3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "04AE14E7BAFD3CE4"
+				table_id: 1000000000000007L
+				type: "choice"
+			}]
+			subtitle: "Build like a real factory"
+			tasks: [{
+				id: "7819A12566F8692A"
+				item: "industrialrenewal:screwdriver"
+				type: "item"
+			}]
+			title: "Industrial Infrastructure"
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5FB53171F0B56681"]
+			description: [
+				"&6Integrated Dynamics&r enables logic-based automation networks."
+				""
+				"Core concepts:"
+				"• Variables store data about the world"
+				"• Logic Programmers create complex conditions"
+				"• Readers extract information from blocks"
+				"• Writers perform actions based on logic"
+				""
+				"Start with the Squeezer - it produces Menril, the mod's core material."
+				""
+				"&7Perfect for players who love programming and logic puzzles!&r"
+			]
+			id: "6503D05C1AAE985E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6503D05C1AAE985F"
+				table_id: 1000000000000008L
+				type: "choice"
+			}]
+			subtitle: "Automate with pure logic"
+			tasks: [{
+				id: "52B4C04E9729168A"
+				item: "integrateddynamics:squeezer"
+				type: "item"
+			}]
+			title: "Logic Networks"
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FB53171F0B56681"]
+			description: [
+				"&6Modular Routers&r are incredibly versatile item transport blocks."
+				""
+				"Key capabilities:"
+				"• Insert modules to define behavior"
+				"• Stack modules for increased speed"
+				"• Add augments for special abilities"
+				"• Configure filters for precise control"
+				"• Camouflage to blend with surroundings"
+				""
+				"&7Think of them as smart, directional hoppers on steroids!&r"
+			]
+			id: "6EC46E7485F473B5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EC46E7485F473B6"
+				table_id: 1000000000000009L
+				type: "choice"
+			}]
+			subtitle: "Smart item routing"
+			tasks: [{
+				id: "0031FA49FDA89CC6"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			title: "Modular Routing"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0C08BADBFF45629E"]
+			description: [
+				"The &6Blast Furnace&r is the heart of steel production in Immersive Engineering."
+				""
+				"Building tips:"
+				"• 3x3x4 hollow structure (27 bricks)"
+				"• Add preheaters to speed up smelting"
+				"• Automate with conveyors for efficiency"
+				"• Outputs steel and slag"
+				""
+				"&7Combine iron ingots with coal coke to produce steel!&r"
+			]
+			id: "5A95A9EC59868643"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "696DD2C86BF1870F"
+				table_id: 1000000000000010L
+				type: "choice"
+			}]
+			subtitle: "Forge iron into steel"
+			tasks: [{
+				count: 27L
+				id: "04C26EE58CFB0A73"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			title: "The Blast Furnace"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["69E090C941110A51"]
+			description: [
+				"The &6Coke Oven&r converts coal into coal coke - essential for steel production!"
+				""
+				"Key information:"
+				"• 3x3x3 solid structure (27 bricks)"
+				"• Coal → Coal Coke + Creosote Oil"
+				"• Coal coke burns longer and hotter"
+				"• Creosote is used for treated wood"
+				""
+				"&7This is your first multiblock - place bricks in a 3x3x3 cube and right-click with a hammer!&r"
+			]
+			id: "0C08BADBFF45629E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B559A6DF4295514"
+				table_id: 1000000000000011L
+				type: "choice"
+			}]
+			subtitle: "Coal goes in, coke comes out"
+			tasks: [{
+				count: 27L
+				id: "4E6D70DD58F8855C"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			title: "The Coke Oven"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["550206E2DD414D33"]
+			description: [
+				"The &6TFMG Coke Oven&r uses Create's rotational power to produce coal coke."
+				""
+				"Setup requirements:"
+				"• 9 Coke Oven blocks in a 3x3"
+				"• Requires rotational power input"
+				"• Add an exhaust for byproduct output"
+				"• Outputs coal coke and creosote oil"
+				""
+				"&7Connect to your Create contraptions for automated coke production!&r"
+			]
+			id: "0D041063F34B02F7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F06529D1505DAD3"
+				table_id: 1000000000000012L
+				type: "choice"
+			}]
+			subtitle: "Kinetic coke production"
+			tasks: [{
+				count: 9L
+				id: "265A408F56D61029"
+				item: { Count: 9, id: "tfmg:coke_oven" }
+				type: "item"
+			}]
+			title: "TFMG Coke Oven"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D041063F34B02F7"]
+			description: [
+				"The &6TFMG Blast Furnace&r transforms iron and coal coke into steel using rotational power."
+				""
+				"Building the multiblock:"
+				"• Use fireproof bricks and reinforcements"
+				"• Add hatches for item I/O"
+				"• Requires significant rotational power"
+				"• More efficient with proper automation"
+				""
+				"&7Once built, you'll have steady steel production for all your industrial needs!&r"
+			]
+			id: "5E25B91604C57970"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62646DEF7A1A0098"
+				table_id: 1000000000000013L
+				type: "choice"
+			}]
+			subtitle: "Steel through rotation"
+			tasks: [
+				{
+					id: "7CF5148BCF9E5C8F"
+					item: "tfmg:blast_furnace_output"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4B8C748927E90F5A"
+					item: { Count: 16, id: "tfmg:fireproof_brick_reinforcement" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1BFADF9CD03E1454"
+					item: { Count: 16, id: "tfmg:fireproof_bricks" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3741D9ACAAF39612"
+					item: { Count: 2, id: "tfmg:blast_furnace_hatch" }
+					type: "item"
+				}
+			]
+			title: "TFMG Blast Furnace"
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["69E090C941110A51"]
+			description: [
+				"&6Immersive Technology&r expands upon IE with massive power generation multiblocks."
+				""
+				"New machines include:"
+				"• Steam Turbine - Generate power from steam"
+				"• Solar Tower - Harness the sun's energy"
+				"• Boiler - Create steam from water and fuel"
+				"• Distiller - Process fluids at scale"
+				""
+				"&7Check your Engineer's Manual for detailed building instructions!&r"
+			]
+			id: "49843DDC81475E1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49843DDC81475E1E"
+				table_id: 1000000000000014L
+				type: "choice"
+			}]
+			subtitle: "Industrial power generation"
+			tasks: [{
+				id: "5878AA3DD3307948"
+				item: "immersivetechnology:formation_tool"
+				type: "item"
+			}]
+			title: "Immersive Technology"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["550206E2DD414D33"]
+			description: [
+				"&6Trains&r are the ultimate logistics solution in Create!"
+				""
+				"Train capabilities:"
+				"• Transport players at high speeds"
+				"• Move items between stations automatically"
+				"• Carry fluids in tank carriages"
+				"• Create complex rail networks"
+				"• Schedule routes with the Train Schedule"
+				""
+				"&7The Railway Casing is the foundation of all train components!&r"
+			]
+			id: "75C8565A18DECC15"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75C8565A18DECC16"
+				table_id: 1000000000000015L
+				type: "choice"
+			}]
+			subtitle: "All aboard!"
+			tasks: [{
+				id: "2B5B575484AC04C0"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "The Railway Revolution"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	reward_tables: [
+		{
+			id: 1000000000000001L
+			rewards: [
+				{
+					id: "RT001A"
+					item: "minecraft:cooked_beef"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT001B"
+					item: "numismatics:cog"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "RT001C"
+					item: "minecraft:iron_ingot"
+					count: 8
+					type: "item"
+				}
+			]
+			title: "Starter Rewards"
+		}
+		{
+			id: 1000000000000002L
+			rewards: [
+				{
+					id: "RT002A"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "RT002B"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "RT002C"
+					item: "numismatics:spur"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Create Starter Kit"
+		}
+		{
+			id: 1000000000000003L
+			rewards: [
+				{
+					id: "RT003A"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+				{
+					id: "RT003B"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: { Damage: 0 }
+					}
+					type: "item"
+				}
+				{
+					id: "RT003C"
+					item: "numismatics:spur"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Engineer's Starter Kit"
+		}
+		{
+			id: 1000000000000004L
+			rewards: [
+				{
+					id: "RT004A"
+					item: "immersiveengineering:ingot_steel"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT004B"
+					item: "immersiveengineering:coal_coke"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "RT004C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Steel Age Rewards"
+		}
+		{
+			id: 1000000000000005L
+			rewards: [
+				{
+					id: "RT005A"
+					item: "forestry:scoop"
+					type: "item"
+				}
+				{
+					id: "RT005B"
+					item: "forestry:bee_house"
+					type: "item"
+				}
+				{
+					id: "RT005C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Forestry Starter"
+		}
+		{
+			id: 1000000000000006L
+			rewards: [
+				{
+					id: "RT006A"
+					item: "immersive_aircraft:propeller"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "RT006B"
+					item: "immersive_aircraft:sail"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "RT006C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Aviation Parts"
+		}
+		{
+			id: 1000000000000007L
+			rewards: [
+				{
+					id: "RT007A"
+					item: "industrialrenewal:catwalk"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT007B"
+					item: "industrialrenewal:handrail"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT007C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Infrastructure Kit"
+		}
+		{
+			id: 1000000000000008L
+			rewards: [
+				{
+					id: "RT008A"
+					item: "integrateddynamics:menril_sapling"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "RT008B"
+					item: "integrateddynamics:variable"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT008C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Logic Starter"
+		}
+		{
+			id: 1000000000000009L
+			rewards: [
+				{
+					id: "RT009A"
+					item: "modularrouters:sender_module_1"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "RT009B"
+					item: "modularrouters:puller_module_2"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "RT009C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Router Modules"
+		}
+		{
+			id: 1000000000000010L
+			rewards: [
+				{
+					id: "RT010A"
+					item: "immersiveengineering:blastfurnace_preheater"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "RT010B"
+					item: "immersiveengineering:conveyor_basic"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "RT010C"
+					item: "numismatics:spur"
+					count: 6
+					type: "item"
+				}
+			]
+			title: "Blast Furnace Upgrades"
+		}
+		{
+			id: 1000000000000011L
+			rewards: [
+				{
+					id: "RT011A"
+					item: "immersiveengineering:cokebrick"
+					count: 9
+					type: "item"
+				}
+				{
+					id: "RT011B"
+					item: "immersiveengineering:conveyor_basic"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT011C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Coke Oven Extras"
+		}
+		{
+			id: 1000000000000012L
+			rewards: [
+				{
+					id: "RT012A"
+					item: "tfmg:exhaust"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "RT012B"
+					item: "create:belt_connector"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT012C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "TFMG Components"
+		}
+		{
+			id: 1000000000000013L
+			rewards: [
+				{
+					id: "RT013A"
+					item: "create:fluid_pipe"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "RT013B"
+					item: "create:fluid_tank"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "RT013C"
+					item: "numismatics:spur"
+					count: 8
+					type: "item"
+				}
+			]
+			title: "Fluid Handling"
+		}
+		{
+			id: 1000000000000014L
+			rewards: [
+				{
+					id: "RT014A"
+					item: "immersiveengineering:wirecoil_copper"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "RT014B"
+					item: "immersiveengineering:connector_lv"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "RT014C"
+					item: "numismatics:spur"
+					count: 6
+					type: "item"
+				}
+			]
+			title: "Power Components"
+		}
+		{
+			id: 1000000000000015L
+			rewards: [
+				{
+					id: "RT015A"
+					item: "create:track"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "RT015B"
+					item: "create:train_door"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "RT015C"
+					item: "numismatics:spur"
+					count: 6
+					type: "item"
+				}
+			]
+			title: "Railway Starter Kit"
+		}
+	]
+	title: "Steel"
+}
