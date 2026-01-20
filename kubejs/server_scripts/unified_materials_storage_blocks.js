@@ -119,28 +119,3 @@ ServerEvents.recipes(event => {
 
     console.log('[Unified Materials] Storage block recipe unification complete');
 });
-
-JEIEvents.hideItems(event => {
-    // Hide duplicate storage blocks
-    const hiddenBlocks = [
-        // Lead blocks (non-IE)
-        'mekanism:block_lead',
-        'cgs:lead_block',
-        // Uranium blocks (non-IE)
-        'mekanism:block_uranium',
-        // Steel blocks (non-IE)
-        'mekanism:block_steel',
-        'cgs:steel_block',
-        'industrialrenewal:block_steel',
-    ];
-
-    hiddenBlocks.forEach(item => {
-        try {
-            event.hide(item);
-        } catch (e) {
-            // Item might not exist
-        }
-    });
-
-    console.log('[Unified Materials] Hidden duplicate storage blocks from JEI');
-});

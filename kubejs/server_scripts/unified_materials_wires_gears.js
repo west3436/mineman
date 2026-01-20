@@ -86,21 +86,3 @@ ServerEvents.recipes(event => {
 
     console.log('[Unified Materials] Wire recipe unification complete');
 });
-
-JEIEvents.hideItems(event => {
-    // Hide duplicate wires
-    const hiddenWires = [
-        'tfmg:aluminum_wire',
-        'tfmg:copper_wire',
-    ];
-
-    hiddenWires.forEach(item => {
-        try {
-            event.hide(item);
-        } catch (e) {
-            // Item might not exist
-        }
-    });
-
-    console.log('[Unified Materials] Hidden duplicate wires from JEI');
-});

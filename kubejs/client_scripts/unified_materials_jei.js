@@ -154,6 +154,21 @@ JEIEvents.hideItems(event => {
         'electrodynamics:oresalt',
         'electrodynamics:deepslateoresalt',
         'growthcraft:salt_ore',
+
+        // ==================== WIRES (Primary: IE) ====================
+        'tfmg:aluminum_wire',
+        'tfmg:copper_wire',
+
+        // ==================== STORAGE BLOCKS ====================
+        // Lead blocks (non-IE)
+        'mekanism:block_lead',
+        'cgs:lead_block',
+        // Uranium blocks (non-IE)
+        'mekanism:block_uranium',
+        // Steel blocks (non-IE)
+        'mekanism:block_steel',
+        'cgs:steel_block',
+        'industrialrenewal:block_steel',
     ];
 
     hiddenItems.forEach(item => {
