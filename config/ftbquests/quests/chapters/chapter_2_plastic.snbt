@@ -1,0 +1,948 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2_plastic"
+	group: ""
+	icon: "tfmg:plastic_sheet"
+	id: "6F6E414B4D290165"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["56D05B3D6396679D"]
+			description: [
+				"&6Welcome to the Age of Plastic!&r"
+				""
+				"Plastic is a revolutionary material that enables advanced automation, gadgets, and machinery."
+				""
+				"To produce plastic, you'll need:"
+				"1. &bFind oil deposits&r"
+				"2. &bExtract crude oil&r"
+				"3. &bRefine it into usable products&r"
+				"4. &bProcess into plastic sheets&r"
+				""
+				"&7Choose your path - TFMG or Immersive Petroleum - both lead to the same goal!&r"
+			]
+			icon: "immersivepetroleum:crudeoil_bucket"
+			id: "4CB55D4F56D03805"
+			max_completable_dependents: 1
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16DB57FC18A9B6B5"
+				table_id: 2000000000000001L
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "The oil rush begins"
+			tasks: [{
+				id: "390A0E9A6A90580C"
+				title: "Begin the Plastic Age"
+				type: "checkmark"
+			}]
+			title: "Black Gold"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4CB55D4F56D03805"]
+			description: [
+				"&6Create: The Factory Must Grow&r uses visible oil deposits at bedrock level."
+				""
+				"How to find oil:"
+				"• Look for dark patches on bedrock"
+				"• Oil pools are visible from above"
+				"• Each deposit has limited capacity"
+				""
+				"Extraction process:"
+				"• Build a pumpjack over the deposit"
+				"• Supply rotational power"
+				"• Pipe oil to storage tanks"
+				""
+				"&7Steel pipes are essential for oil transport!&r"
+			]
+			icon: "tfmg:steel_pipe"
+			id: "32F58E5D138FF435"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "472DFC629AC70DDB"
+				table_id: 2000000000000002L
+				type: "choice"
+			}]
+			subtitle: "Kinetic oil extraction"
+			tasks: [{
+				id: "12498F7A075959A6"
+				title: "I Choose TFMG!"
+				type: "checkmark"
+			}]
+			title: "The Factory Must Grow Path"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4CB55D4F56D03805"]
+			description: [
+				"&6Immersive Petroleum&r adds invisible oil reservoirs in chunks."
+				""
+				"Finding oil:"
+				"• Use the Seismic Survey tool"
+				"• Scan chunks to reveal oil deposits"
+				"• Reservoirs vary in size and trace content"
+				""
+				"Extraction setup:"
+				"• Build a Derrick over the reservoir"
+				"• Supply electricity and pipes"
+				"• Oil flows automatically once running"
+				""
+				"&7The derrick requires significant power!&r"
+			]
+			icon: "immersiveengineering:fluid_pipe"
+			id: "4026DB9AFB2BD2D0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D106471C27C878C"
+				table_id: 2000000000000003L
+				type: "choice"
+			}]
+			subtitle: "Electric oil extraction"
+			tasks: [{
+				id: "566F21B55465ECE5"
+				title: "I Choose Immersive Petroleum!"
+				type: "checkmark"
+			}]
+			title: "Immersive Petroleum Path"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["32F58E5D138FF435"]
+			description: [
+				"The &6TFMG Pumpjack&r extracts oil from bedrock deposits."
+				""
+				"Building requirements:"
+				"• Pumpjack Base - place over oil deposit"
+				"• Pumpjack Crank - provides the pumping motion"
+				"• Pumpjack Hammer - extends down to bedrock"
+				""
+				"Operation tips:"
+				"• Requires significant rotational power"
+				"• Output rate depends on deposit richness"
+				"• Connect fluid pipes to collect oil"
+				""
+				"&7Make sure the hammer reaches the bedrock oil pool!&r"
+			]
+			icon: "tfmg:pumpjack_crank"
+			id: "TFMG_PUMPJACK_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "TFMG_PUMPJACK_R01"
+				table_id: 2000000000000004L
+				type: "choice"
+			}]
+			subtitle: "Mechanical oil extraction"
+			tasks: [
+				{
+					id: "TFMG_PUMPJACK_T01"
+					item: "tfmg:pumpjack_base"
+					type: "item"
+				}
+				{
+					id: "TFMG_PUMPJACK_T02"
+					item: "tfmg:pumpjack_crank"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "TFMG_PUMPJACK_T03"
+					item: { Count: 4, id: "tfmg:pumpjack_hammer" }
+					type: "item"
+				}
+			]
+			title: "TFMG Pumpjack"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4026DB9AFB2BD2D0"]
+			description: [
+				"The &6Seismic Survey Tool&r helps you locate underground oil reservoirs."
+				""
+				"How to use:"
+				"• Right-click on the ground"
+				"• Sends seismic waves through the earth"
+				"• Returns data about oil in the chunk"
+				""
+				"Survey results show:"
+				"• Oil presence and amount"
+				"• Trace element percentages"
+				"• Reservoir replenishment rate"
+				""
+				"&7Survey multiple chunks to find the best drilling spots!&r"
+			]
+			id: "0BDBF8E37BEF0002"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5EEB7055F4367319"
+				table_id: 2000000000000005L
+				type: "choice"
+			}]
+			subtitle: "Listen to the earth"
+			tasks: [{
+				id: "4CEBA462EA0F6FB0"
+				item: "immersivepetroleum:seismic_survey"
+				type: "item"
+			}]
+			title: "Geological Survey"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0BDBF8E37BEF0002"]
+			description: [
+				"The &6Oil Derrick&r is a massive multiblock that extracts oil from underground reservoirs."
+				""
+				"Multiblock components:"
+				"• Light Engineering blocks for structure"
+				"• Heavy Engineering blocks for core"
+				"• Redstone Engineering for control"
+				"• Steel scaffolding and fencing"
+				"• Fluid pipes for output"
+				""
+				"&7Check the Engineer's Manual for the exact build pattern!&r"
+			]
+			id: "71A3BB4729DD5FE1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71A3BB4729DD5FE2"
+				table_id: 2000000000000006L
+				type: "choice"
+			}]
+			subtitle: "Industrial oil extraction"
+			tasks: [
+				{
+					count: 8L
+					id: "252278A997D583D1"
+					item: { Count: 8, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "276A0BE186C7903A"
+					item: { Count: 2, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "1F434E708FC1ECD9"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "44BAD2E3330DD033"
+					item: { Count: 19, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "179C8529F834D188"
+					item: { Count: 16, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "432A7C74A1874595"
+					item: { Count: 4, id: "immersiveengineering:slab_steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "09574C3F1760A12D"
+					item: { Count: 9, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+			]
+			title: "The Oil Derrick"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["TFMG_PUMPJACK_001"]
+			description: [
+				"The &6TFMG Distillation Tower&r refines crude oil into usable products."
+				""
+				"Products from distillation:"
+				"• &bNaphtha&r - for plastic production"
+				"• &bDiesel&r - for fuel and power"
+				"• &bHeavy Oil&r - secondary products"
+				""
+				"Building tips:"
+				"• Stack distillation outputs vertically"
+				"• Each output tier collects different products"
+				"• Requires rotational power and heat"
+				""
+				"&7Naphtha is your key ingredient for plastic!&r"
+			]
+			icon: "tfmg:steel_distillation_controller"
+			id: "TFMG_DISTILL_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "TFMG_DISTILL_R01"
+				table_id: 2000000000000007L
+				type: "choice"
+			}]
+			subtitle: "Separate the black gold"
+			tasks: [
+				{
+					id: "TFMG_DISTILL_T01"
+					item: "tfmg:steel_distillation_controller"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "TFMG_DISTILL_T02"
+					item: { Count: 4, id: "tfmg:steel_distillation_output" }
+					type: "item"
+				}
+			]
+			title: "TFMG Distillation"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["71A3BB4729DD5FE1"]
+			description: [
+				"The &6IP Distillation Tower&r is a large multiblock that refines crude oil."
+				""
+				"Outputs include:"
+				"• &bNaphtha&r - plastic precursor"
+				"• &bDiesel&r - fuel for generators"
+				"• &bLubricant&r - for machinery"
+				"• &bBitumen&r - for asphalt roads"
+				""
+				"Requirements:"
+				"• Significant electricity input"
+				"• Crude oil input"
+				"• Multiple fluid outputs"
+				""
+				"&7This is one of the largest multiblocks in Immersive Engineering!&r"
+			]
+			icon: "immersivepetroleum:distillation_tower"
+			id: "IP_DISTILL_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "IP_DISTILL_R01"
+				table_id: 2000000000000008L
+				type: "choice"
+			}]
+			subtitle: "Industrial refining"
+			tasks: [{
+				id: "IP_DISTILL_T01"
+				item: "immersivepetroleum:distillation_tower"
+				type: "item"
+			}]
+			title: "IP Distillation Tower"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"TFMG_DISTILL_001"
+				"IP_DISTILL_001"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&6Naphtha&r is the key intermediate product for plastic production!"
+				""
+				"Naphtha processing:"
+				"• Heat naphtha to produce propylene"
+				"• Propylene polymerizes into plastic"
+				"• Cast molten plastic into sheets"
+				""
+				"Storage tips:"
+				"• Use steel fluid tanks for hot fluids"
+				"• Keep naphtha away from heat sources"
+				"• Automate the pipeline for efficiency"
+				""
+				"&7You're almost there - plastic is within reach!&r"
+			]
+			icon: "tfmg:naphtha_bucket"
+			id: "NAPHTHA_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "NAPHTHA_R01"
+				table_id: 2000000000000009L
+				type: "choice"
+			}]
+			shape: "diamond"
+			subtitle: "The plastic precursor"
+			tasks: [{
+				id: "NAPHTHA_T01"
+				item: "tfmg:naphtha_bucket"
+				type: "item"
+			}]
+			title: "Naphtha Production"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["NAPHTHA_001"]
+			description: [
+				"&6Congratulations!&r You've produced your first plastic sheet!"
+				""
+				"Plastic unlocks incredible new technologies:"
+				"• &bBuilding Gadgets&r - Build and copy structures"
+				"• &bSimply Jetpacks&r - Take to the skies"
+				"• &bAdvanced machinery&r - Better automation"
+				"• &bCircuit boards&r - Electronics foundation"
+				""
+				"&eThe Basic Circuitry chapter is now available!&r"
+				""
+				"&7Plastic is the gateway to the modern age!&r"
+			]
+			id: "45B86923718876B3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45B86923718876B4"
+				table_id: 2000000000000010L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			subtitle: "The foundation of modern technology"
+			tasks: [{
+				id: "6D41477197225D69"
+				item: "tfmg:plastic_sheet"
+				type: "item"
+			}]
+			title: "Plastic: The Modern Material"
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45B86923718876B3"]
+			description: [
+				"&6Simply Jetpacks&r adds tiered jetpacks for personal flight!"
+				""
+				"Jetpack tiers:"
+				"• &7Vanilla Tier 1&r - Basic flight, limited fuel"
+				"• &7Vanilla Tier 2&r - Improved performance"
+				"• &bMekanism Tiers&r - Advanced hydrogen-powered"
+				""
+				"Features:"
+				"• Vertical lift and hover mode"
+				"• Chargeable or fuel-based"
+				"• Upgradeable performance"
+				""
+				"&7The entry-level jetpack uses plastic in its construction!&r"
+			]
+			id: "165ACEDE8C2EB606"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "165ACEDE8C2EB607"
+				table_id: 2000000000000011L
+				type: "choice"
+			}]
+			subtitle: "Personal aviation"
+			tasks: [{
+				id: "201D1D2A7EC535C3"
+				item: {
+					Count: 1
+					id: "simplyjetpacks:jetpack_vanilla1"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Jetpack Dreams"
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["45B86923718876B3"]
+			description: [
+				"&6Building Gadgets 2&r revolutionizes construction in Minecraft!"
+				""
+				"Available gadgets:"
+				"• &bBuilding Gadget&r - Place blocks in lines/walls"
+				"• &bExchanger Gadget&r - Swap blocks instantly"
+				"• &bCopy-Paste Gadget&r - Clone structures"
+				"• &bDestruction Gadget&r - Remove areas quickly"
+				""
+				"Key features:"
+				"• Uses blocks from your inventory"
+				"• Undo function for mistakes"
+				"• Template saving and loading"
+				""
+				"&7Essential for any serious builder!&r"
+			]
+			id: "41DB1E3B2B48D46F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41DB1E3B2B48D46E"
+				table_id: 2000000000000012L
+				type: "choice"
+			}]
+			subtitle: "Build smarter, not harder"
+			tasks: [{
+				id: "070F4C4786AA43DA"
+				item: "buildinggadgets2:gadget_building"
+				type: "item"
+			}]
+			title: "Building Gadgets"
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["45B86923718876B3"]
+			description: [
+				"&6TFMG Circuit Boards&r are the foundation of electronic automation."
+				""
+				"Production process:"
+				"• Craft raw circuit boards"
+				"• Etch patterns using acid"
+				"• Add electronic components"
+				""
+				"Circuit boards enable:"
+				"• Advanced TFMG machines"
+				"• Automation controllers"
+				"• Electronic components"
+				""
+				"&7This is the gateway to the Circuitry chapter!&r"
+			]
+			id: "CIRCUIT_BOARD_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "CIRCUIT_BOARD_R01"
+				table_id: 2000000000000013L
+				type: "choice"
+			}]
+			subtitle: "Electronic foundations"
+			tasks: [{
+				id: "CIRCUIT_BOARD_T01"
+				item: "tfmg:circuit_board"
+				type: "item"
+			}]
+			title: "Circuit Boards"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["45B86923718876B3"]
+			description: [
+				"&6Plastic Pipes&r are lightweight and efficient for fluid transport."
+				""
+				"Advantages over steel:"
+				"• Cheaper to produce"
+				"• Lighter weight"
+				"• Corrosion resistant"
+				"• Good for most fluids"
+				""
+				"&7Use plastic pipes for non-extreme temperature fluids!&r"
+			]
+			id: "PLASTIC_PIPES_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PLASTIC_PIPES_R01"
+				table_id: 2000000000000014L
+				type: "choice"
+			}]
+			subtitle: "Efficient fluid transport"
+			tasks: [{
+				count: 16L
+				id: "PLASTIC_PIPES_T01"
+				item: { Count: 16, id: "tfmg:plastic_pipe" }
+				type: "item"
+			}]
+			title: "Plastic Plumbing"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45B86923718876B3"]
+			description: [
+				"&6Plastic Blocks&r are decorative building materials."
+				""
+				"Features:"
+				"• Available in many colors"
+				"• Clean, modern aesthetic"
+				"• Good for factory decoration"
+				"• Relatively cheap to produce"
+				""
+				"&7Perfect for giving your factory a modern look!&r"
+			]
+			id: "PLASTIC_BLOCK_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PLASTIC_BLOCK_R01"
+				table_id: 2000000000000015L
+				type: "choice"
+			}]
+			subtitle: "Modern aesthetics"
+			tasks: [{
+				count: 16L
+				id: "PLASTIC_BLOCK_T01"
+				item: { Count: 16, id: "tfmg:plastic_block" }
+				type: "item"
+			}]
+			title: "Plastic Decoration"
+			x: 1.0d
+			y: 4.5d
+		}
+	]
+	reward_tables: [
+		{
+			id: 2000000000000001L
+			rewards: [
+				{
+					id: "PRT001A"
+					item: "minecraft:camel_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "PRT001B"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "PRT001C"
+					item: "minecraft:bucket"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Oil Rush Starter"
+		}
+		{
+			id: 2000000000000002L
+			rewards: [
+				{
+					id: "PRT002A"
+					item: "tfmg:steel_pipe"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "PRT002B"
+					item: "tfmg:steel_fluid_tank"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "PRT002C"
+					item: "numismatics:spur"
+					count: 8
+					type: "item"
+				}
+			]
+			title: "TFMG Pipe Kit"
+		}
+		{
+			id: 2000000000000003L
+			rewards: [
+				{
+					id: "PRT003A"
+					item: "immersiveengineering:fluid_pipe"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "PRT003B"
+					item: "immersiveengineering:jerrycan"
+					type: "item"
+				}
+				{
+					id: "PRT003C"
+					item: "numismatics:spur"
+					count: 8
+					type: "item"
+				}
+			]
+			title: "IE Pipe Kit"
+		}
+		{
+			id: 2000000000000004L
+			rewards: [
+				{
+					id: "PRT004A"
+					item: "tfmg:steel_mechanism"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "PRT004B"
+					item: "create:shaft"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "PRT004C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Pumpjack Parts"
+		}
+		{
+			id: 2000000000000005L
+			rewards: [
+				{
+					id: "PRT005A"
+					item: "immersiveengineering:buckshot"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "PRT005B"
+					item: "minecraft:map"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "PRT005C"
+					item: "numismatics:spur"
+					count: 6
+					type: "item"
+				}
+			]
+			title: "Exploration Kit"
+		}
+		{
+			id: 2000000000000006L
+			rewards: [
+				{
+					id: "PRT006A"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "PRT006B"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "PRT006C"
+					item: "numismatics:bevel"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Derrick Materials"
+		}
+		{
+			id: 2000000000000007L
+			rewards: [
+				{
+					id: "PRT007A"
+					item: "tfmg:steel_fluid_tank"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "PRT007B"
+					item: "create:fluid_pipe"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "PRT007C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Distillation Supplies"
+		}
+		{
+			id: 2000000000000008L
+			rewards: [
+				{
+					id: "PRT008A"
+					item: "immersiveengineering:fluid_pipe"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "PRT008B"
+					item: "immersiveengineering:connector_mv"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "PRT008C"
+					item: "numismatics:bevel"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "IP Tower Supplies"
+		}
+		{
+			id: 2000000000000009L
+			rewards: [
+				{
+					id: "PRT009A"
+					item: "tfmg:steel_fluid_tank"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "PRT009B"
+					item: "create:mechanical_pump"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "PRT009C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Fluid Handling"
+		}
+		{
+			id: 2000000000000010L
+			rewards: [
+				{
+					id: "PRT010A"
+					item: "tfmg:plastic_sheet"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "PRT010B"
+					item: "tfmg:circuit_board"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "PRT010C"
+					item: "numismatics:sprocket"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Plastic Age Rewards"
+		}
+		{
+			id: 2000000000000011L
+			rewards: [
+				{
+					id: "PRT011A"
+					item: "minecraft:firework_rocket"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "PRT011B"
+					item: "minecraft:coal"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "PRT011C"
+					item: "numismatics:bevel"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Jetpack Fuel"
+		}
+		{
+			id: 2000000000000012L
+			rewards: [
+				{
+					id: "PRT012A"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "PRT012B"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+				{
+					id: "PRT012C"
+					item: "numismatics:bevel"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Gadget Collection"
+		}
+		{
+			id: 2000000000000013L
+			rewards: [
+				{
+					id: "PRT013A"
+					item: "tfmg:circuit_board"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "PRT013B"
+					item: "tfmg:capacitor_item"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "PRT013C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Electronics Kit"
+		}
+		{
+			id: 2000000000000014L
+			rewards: [
+				{
+					id: "PRT014A"
+					item: "tfmg:plastic_pipe"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "PRT014B"
+					item: "tfmg:plastic_mechanical_pump"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "PRT014C"
+					item: "numismatics:spur"
+					count: 8
+					type: "item"
+				}
+			]
+			title: "Plastic Plumbing Kit"
+		}
+		{
+			id: 2000000000000015L
+			rewards: [
+				{
+					id: "PRT015A"
+					item: "tfmg:plastic_block"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "PRT015B"
+					item: "minecraft:white_dye"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "PRT015C"
+					item: "numismatics:spur"
+					count: 8
+					type: "item"
+				}
+			]
+			title: "Decoration Pack"
+		}
+	]
+	title: "Plastic"
+}

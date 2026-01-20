@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_quests"
+	group: ""
+	icon: "minecraft:map"
+	id: "3FF1F92B8BB4B51E"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Side Quests"
+}
