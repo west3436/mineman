@@ -102,10 +102,11 @@ ServerEvents.tags('item', event => {
         'immersiveengineering:plate_gold'
     ]);
 
-    // Steel Plates
+    // Steel Plates (Priority: Create > IE > Mekanism)
     event.add('forge:plates/steel', [
-        'mekanism:plate_steel',
-        'immersiveengineering:plate_steel'
+        'create:steel_sheet',
+        'immersiveengineering:plate_steel',
+        'mekanism:plate_steel'
     ]);
 
     // Nickel Plates
@@ -149,8 +150,9 @@ ServerEvents.tags('item', event => {
         'mekanism:plate_tin'
     ]);
 
-    // Bronze Plates
+    // Bronze Plates (Priority: Create > Mekanism)
     event.add('forge:plates/bronze', [
+        'create:bronze_sheet',
         'mekanism:plate_bronze'
     ]);
 
@@ -207,8 +209,9 @@ ServerEvents.tags('item', event => {
     // ROD/STICK UNIFICATION
     // ============================================
 
-    // Iron Rods
+    // Iron Rods (Priority: Create > IE)
     event.add('forge:rods/iron', [
+        'create:iron_rod',
         'immersiveengineering:stick_iron'
     ]);
 

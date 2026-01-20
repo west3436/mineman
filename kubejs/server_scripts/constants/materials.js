@@ -3,12 +3,11 @@
 
 /**
  * MATERIAL UNIFICATION PRIORITY:
- * 1. Thermal Foundation (if available)
- * 2. Mekanism
- * 3. Immersive Engineering
- * 4. Create
- * 5. Electrodynamics
- * 6. Other mods
+ * 1. Create
+ * 2. Immersive Engineering
+ * 3. Mekanism
+ * 4. Create: The Factory Must Grow
+ * 5. Other mods
  */
 
 // Canonical ingot items - the "primary" version we use
@@ -76,13 +75,13 @@ global.PLATES = {
 global.PLATE = {
     copper: 'create:copper_sheet',
     tin: 'mekanism:plate_tin',
-    bronze: 'mekanism:plate_bronze',
+    bronze: 'create:bronze_sheet', // Create before Mekanism
     iron: 'create:iron_sheet',
     gold: 'create:golden_sheet',
-    steel: 'mekanism:plate_steel',
+    steel: 'create:steel_sheet', // Prefer Create if available, else Mekanism
     nickel: 'immersiveengineering:plate_nickel',
     silver: 'immersiveengineering:plate_silver',
-    lead: 'mekanism:plate_lead',
+    lead: 'immersiveengineering:plate_lead', // IE before Mekanism
     electrum: 'immersiveengineering:plate_electrum',
     constantan: 'immersiveengineering:plate_constantan',
     aluminum: 'immersiveengineering:plate_aluminum',
@@ -116,30 +115,46 @@ global.GEAR = {
 // Rod/stick variants
 global.RODS = {
     copper: ['immersiveengineering:stick_copper'],
-    iron: ['immersiveengineering:stick_iron', 'create:iron_rod'],
+    iron: ['create:iron_rod', 'immersiveengineering:stick_iron'], // Create before IE
     steel: ['immersiveengineering:stick_steel'],
     aluminum: ['immersiveengineering:stick_aluminum']
 };
 
+// Canonical rods (primary version to use)
+global.ROD = {
+    copper: 'immersiveengineering:stick_copper',
+    iron: 'create:iron_rod', // Create first
+    steel: 'immersiveengineering:stick_steel',
+    aluminum: 'immersiveengineering:stick_aluminum'
+};
+
 // Wire variants
 global.WIRES = {
-    copper: ['immersiveengineering:wire_copper', 'mekanism:wire_copper'],
+    copper: ['immersiveengineering:wire_copper', 'mekanism:wire_copper'], // IE before Mekanism
     electrum: ['immersiveengineering:wire_electrum'],
     aluminum: ['immersiveengineering:wire_aluminum'],
     steel: ['immersiveengineering:wire_steel']
 };
 
+// Canonical wires (primary version to use)
+global.WIRE = {
+    copper: 'immersiveengineering:wire_copper',
+    electrum: 'immersiveengineering:wire_electrum',
+    aluminum: 'immersiveengineering:wire_aluminum',
+    steel: 'immersiveengineering:wire_steel'
+};
+
 // Dust variants (for processing)
 global.DUSTS = {
-    copper: ['mekanism:dust_copper', 'immersiveengineering:dust_copper'],
+    copper: ['immersiveengineering:dust_copper', 'mekanism:dust_copper'], // IE before Mekanism
     tin: ['mekanism:dust_tin'],
     bronze: ['mekanism:dust_bronze'],
-    iron: ['mekanism:dust_iron', 'immersiveengineering:dust_iron'],
-    gold: ['mekanism:dust_gold', 'immersiveengineering:dust_gold'],
+    iron: ['immersiveengineering:dust_iron', 'mekanism:dust_iron'], // IE before Mekanism
+    gold: ['immersiveengineering:dust_gold', 'mekanism:dust_gold'], // IE before Mekanism
     steel: ['mekanism:dust_steel'],
     nickel: ['immersiveengineering:dust_nickel'],
-    silver: ['mekanism:dust_silver', 'immersiveengineering:dust_silver'],
-    lead: ['mekanism:dust_lead', 'immersiveengineering:dust_lead'],
+    silver: ['immersiveengineering:dust_silver', 'mekanism:dust_silver'], // IE before Mekanism
+    lead: ['immersiveengineering:dust_lead', 'mekanism:dust_lead'], // IE before Mekanism
     electrum: ['immersiveengineering:dust_electrum'],
     constantan: ['immersiveengineering:dust_constantan'],
     aluminum: ['immersiveengineering:dust_aluminum'],
@@ -147,17 +162,35 @@ global.DUSTS = {
     uranium: ['mekanism:dust_uranium']
 };
 
+// Canonical dusts (primary version to use)
+global.DUST = {
+    copper: 'immersiveengineering:dust_copper',
+    tin: 'mekanism:dust_tin',
+    bronze: 'mekanism:dust_bronze',
+    iron: 'immersiveengineering:dust_iron',
+    gold: 'immersiveengineering:dust_gold',
+    steel: 'mekanism:dust_steel',
+    nickel: 'immersiveengineering:dust_nickel',
+    silver: 'immersiveengineering:dust_silver',
+    lead: 'immersiveengineering:dust_lead',
+    electrum: 'immersiveengineering:dust_electrum',
+    constantan: 'immersiveengineering:dust_constantan',
+    aluminum: 'immersiveengineering:dust_aluminum',
+    osmium: 'mekanism:dust_osmium',
+    uranium: 'mekanism:dust_uranium'
+};
+
 // Nugget variants
 global.NUGGETS = {
-    copper: ['mekanism:nugget_copper', 'immersiveengineering:nugget_copper', 'create:copper_nugget'],
+    copper: ['create:copper_nugget', 'immersiveengineering:nugget_copper', 'mekanism:nugget_copper'], // Create > IE > Mekanism
     tin: ['mekanism:nugget_tin'],
     bronze: ['mekanism:nugget_bronze'],
     iron: ['minecraft:iron_nugget'],
     gold: ['minecraft:gold_nugget'],
-    steel: ['mekanism:nugget_steel', 'immersiveengineering:nugget_steel'],
+    steel: ['immersiveengineering:nugget_steel', 'mekanism:nugget_steel'], // IE before Mekanism
     nickel: ['immersiveengineering:nugget_nickel'],
     silver: ['immersiveengineering:nugget_silver'],
-    lead: ['mekanism:nugget_lead', 'immersiveengineering:nugget_lead'],
+    lead: ['immersiveengineering:nugget_lead', 'mekanism:nugget_lead'], // IE before Mekanism
     electrum: ['immersiveengineering:nugget_electrum'],
     constantan: ['immersiveengineering:nugget_constantan'],
     aluminum: ['immersiveengineering:nugget_aluminum'],
@@ -167,6 +200,26 @@ global.NUGGETS = {
     zinc: ['create:zinc_nugget']
 };
 
+// Canonical nuggets (primary version to use)
+global.NUGGET = {
+    copper: 'create:copper_nugget', // Create first
+    tin: 'mekanism:nugget_tin',
+    bronze: 'mekanism:nugget_bronze',
+    iron: 'minecraft:iron_nugget',
+    gold: 'minecraft:gold_nugget',
+    steel: 'immersiveengineering:nugget_steel', // IE before Mekanism
+    nickel: 'immersiveengineering:nugget_nickel',
+    silver: 'immersiveengineering:nugget_silver',
+    lead: 'immersiveengineering:nugget_lead', // IE before Mekanism
+    electrum: 'immersiveengineering:nugget_electrum',
+    constantan: 'immersiveengineering:nugget_constantan',
+    aluminum: 'immersiveengineering:nugget_aluminum',
+    osmium: 'mekanism:nugget_osmium',
+    uranium: 'mekanism:nugget_uranium',
+    brass: 'create:brass_nugget',
+    zinc: 'create:zinc_nugget'
+};
+
 // Block variants (storage blocks)
 global.STORAGE_BLOCKS = {
     copper: 'minecraft:copper_block',
@@ -174,10 +227,10 @@ global.STORAGE_BLOCKS = {
     bronze: 'mekanism:block_bronze',
     iron: 'minecraft:iron_block',
     gold: 'minecraft:gold_block',
-    steel: 'mekanism:block_steel',
+    steel: 'immersiveengineering:storage_steel', // IE before Mekanism
     nickel: 'immersiveengineering:storage_nickel',
     silver: 'immersiveengineering:storage_silver',
-    lead: 'mekanism:block_lead',
+    lead: 'immersiveengineering:storage_lead', // IE before Mekanism
     electrum: 'immersiveengineering:storage_electrum',
     constantan: 'immersiveengineering:storage_constantan',
     aluminum: 'immersiveengineering:storage_aluminum',
@@ -195,7 +248,7 @@ global.RAW_ORES = {
     gold: 'minecraft:raw_gold',
     nickel: 'immersiveengineering:raw_nickel',
     silver: 'immersiveengineering:raw_silver',
-    lead: 'mekanism:raw_lead',
+    lead: 'immersiveengineering:raw_lead', // IE before Mekanism
     aluminum: 'immersiveengineering:raw_aluminum',
     osmium: 'mekanism:raw_osmium',
     uranium: 'mekanism:raw_uranium',

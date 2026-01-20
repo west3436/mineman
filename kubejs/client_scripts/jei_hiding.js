@@ -1,29 +1,29 @@
 // Tech Progression - JEI Item Hiding
 // Hides duplicate items and unavailable machines from JEI
+// Priority: Create > Immersive Engineering > Mekanism > Create: TFMG > Others
 
 JEIEvents.hideItems(event => {
     console.log('[Tech Progression] Hiding duplicate items from JEI...');
 
     // ============================================
     // DUPLICATE INGOT HIDING
-    // Keep only the canonical version
+    // Priority: Create > IE > Mekanism
     // ============================================
 
-    // Steel - keep Mekanism, hide IE
-    event.hide('immersiveengineering:ingot_steel');
+    // Steel - keep IE (no Create steel ingot), hide Mekanism
+    event.hide('mekanism:ingot_steel');
 
-    // Lead - keep Mekanism, hide IE
-    event.hide('immersiveengineering:ingot_lead');
-
-    // Silver - keep IE (more items), hide Mekanism
-    // event.hide('mekanism:ingot_silver'); // Uncomment if Mekanism has silver
+    // Lead - keep IE, hide Mekanism
+    event.hide('mekanism:ingot_lead');
 
     // ============================================
     // DUPLICATE PLATE HIDING
+    // Priority: Create > IE > Mekanism
     // ============================================
 
-    // Copper - keep Create, hide IE
+    // Copper - keep Create, hide IE and Mekanism
     event.hide('immersiveengineering:plate_copper');
+    event.hide('mekanism:plate_copper');
 
     // Iron - keep Create, hide IE
     event.hide('immersiveengineering:plate_iron');
@@ -31,64 +31,86 @@ JEIEvents.hideItems(event => {
     // Gold - keep Create, hide IE
     event.hide('immersiveengineering:plate_gold');
 
-    // Steel - keep Mekanism, hide IE
-    event.hide('immersiveengineering:plate_steel');
+    // Steel - keep Create if available, else IE, hide Mekanism
+    event.hide('mekanism:plate_steel');
+    // Note: Only hide IE steel plate if Create steel plate exists
+    // event.hide('immersiveengineering:plate_steel');
 
-    // Lead - keep Mekanism, hide IE
-    event.hide('immersiveengineering:plate_lead');
+    // Bronze - keep Create, hide Mekanism
+    event.hide('mekanism:plate_bronze');
+
+    // Lead - keep IE, hide Mekanism
+    event.hide('mekanism:plate_lead');
 
     // ============================================
     // DUPLICATE DUST HIDING
+    // Priority: IE > Mekanism (IE has better processing)
     // ============================================
 
-    // Copper - keep Mekanism, hide IE
-    event.hide('immersiveengineering:dust_copper');
+    // Copper - keep IE, hide Mekanism
+    event.hide('mekanism:dust_copper');
 
-    // Iron - keep Mekanism, hide IE
-    event.hide('immersiveengineering:dust_iron');
+    // Iron - keep IE, hide Mekanism
+    event.hide('mekanism:dust_iron');
 
-    // Gold - keep Mekanism, hide IE
-    event.hide('immersiveengineering:dust_gold');
+    // Gold - keep IE, hide Mekanism
+    event.hide('mekanism:dust_gold');
 
-    // Silver - keep Mekanism, hide IE
-    event.hide('immersiveengineering:dust_silver');
+    // Silver - keep IE, hide Mekanism
+    event.hide('mekanism:dust_silver');
 
-    // Lead - keep Mekanism, hide IE
-    event.hide('immersiveengineering:dust_lead');
+    // Lead - keep IE, hide Mekanism
+    event.hide('mekanism:dust_lead');
 
     // ============================================
     // DUPLICATE NUGGET HIDING
+    // Priority: Create > IE > Mekanism
     // ============================================
 
-    // Copper - keep Mekanism, hide IE and Create
+    // Copper - keep Create, hide IE and Mekanism
     event.hide('immersiveengineering:nugget_copper');
-    event.hide('create:copper_nugget');
+    event.hide('mekanism:nugget_copper');
 
-    // Steel - keep Mekanism, hide IE
-    event.hide('immersiveengineering:nugget_steel');
+    // Steel - keep IE, hide Mekanism
+    event.hide('mekanism:nugget_steel');
 
-    // Lead - keep Mekanism, hide IE
-    event.hide('immersiveengineering:nugget_lead');
-
-    // Silver - keep IE, hide Mekanism if exists
-    // event.hide('mekanism:nugget_silver');
+    // Lead - keep IE, hide Mekanism
+    event.hide('mekanism:nugget_lead');
 
     // ============================================
     // DUPLICATE STORAGE BLOCK HIDING
+    // Priority: Create > IE > Mekanism
     // ============================================
 
-    // Steel - keep Mekanism, hide IE
-    event.hide('immersiveengineering:storage_steel');
+    // Steel - keep IE, hide Mekanism
+    event.hide('mekanism:block_steel');
 
-    // Lead - keep Mekanism, hide IE
-    event.hide('immersiveengineering:storage_lead');
+    // Lead - keep IE, hide Mekanism
+    event.hide('mekanism:block_lead');
 
     // ============================================
     // DUPLICATE RAW ORE HIDING
+    // Priority: Create > IE > Mekanism
     // ============================================
 
-    // Lead - keep Mekanism, hide IE
-    event.hide('immersiveengineering:raw_lead');
+    // Lead - keep IE, hide Mekanism
+    event.hide('mekanism:raw_lead');
+
+    // ============================================
+    // DUPLICATE ROD/STICK HIDING
+    // Priority: Create > IE
+    // ============================================
+
+    // Iron Rod - keep Create, hide IE
+    event.hide('immersiveengineering:stick_iron');
+
+    // ============================================
+    // DUPLICATE WIRE HIDING
+    // Priority: IE > Mekanism (IE is electrical mod)
+    // ============================================
+
+    // Copper Wire - keep IE, hide Mekanism
+    event.hide('mekanism:wire_copper');
 
     // ============================================
     // TIER-GATED ITEMS (hidden until unlocked)
