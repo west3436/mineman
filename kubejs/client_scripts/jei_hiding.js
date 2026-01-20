@@ -33,8 +33,7 @@ JEIEvents.hideItems(event => {
 
     // Steel - keep Create if available, else IE, hide Mekanism
     event.hide('mekanism:plate_steel');
-    // Note: Only hide IE steel plate if Create steel plate exists
-    // event.hide('immersiveengineering:plate_steel');
+    event.hide('immersiveengineering:plate_steel'); // Hide IE plate since Create steel sheet is canonical
 
     // Bronze - keep Create, hide Mekanism
     event.hide('mekanism:plate_bronze');

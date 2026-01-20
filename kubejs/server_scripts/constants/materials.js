@@ -78,7 +78,7 @@ global.PLATE = {
     bronze: 'create:bronze_sheet', // Create before Mekanism
     iron: 'create:iron_sheet',
     gold: 'create:golden_sheet',
-    steel: 'create:steel_sheet', // Prefer Create if available, else Mekanism
+    steel: 'create:steel_sheet', // Create steel sheet is canonical
     nickel: 'immersiveengineering:plate_nickel',
     silver: 'immersiveengineering:plate_silver',
     lead: 'immersiveengineering:plate_lead', // IE before Mekanism

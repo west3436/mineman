@@ -137,7 +137,7 @@ ServerEvents.tags('block', event => {
     // NETHER ORES
     // ============================================
 
-    // Nether Gold Ore
+    // Nether Gold Ore (added to gold ore tag for processing recipes)
     event.add('forge:ores/gold', [
         'minecraft:nether_gold_ore'
     ]);
