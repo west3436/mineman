@@ -133,6 +133,14 @@ file = "kubejs/client_scripts/unified_materials_jei.js"
 hash = "77ba64f317521aa0deda41aed9710e1ec1417c4988bda271ab94e06ab971c327"
 
 [[files]]
+file = "kubejs/server_scripts/chapter1.js"
+hash = "c71b8c102919788d3632b9010c03e2da55880fa229b8d83a1b78eeb5c0d522cd"
+
+[[files]]
+file = "kubejs/server_scripts/chapter2.js"
+hash = "7106ecfd5b48787e7c559b9870f4515f02cd8d3254ee25ed76f18ab9ff5d2ec7"
+
+[[files]]
 file = "kubejs/server_scripts/loot_tables.js"
 hash = "a249799be9f49945e30e5279aa8d7b0065aa4ce24d16155baad5e876d2fc7d6d"
 

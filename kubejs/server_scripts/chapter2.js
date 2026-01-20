@@ -1,0 +1,60 @@
+// priority: 100
+// Chapter 2 - Recipe Replacements
+// Building Gadgets 2 iron -> plastic substitution
+// Simply Jetpacks leather strap recipe
+
+ServerEvents.recipes(event => {
+    // ==================== BUILDING GADGETS 2: REPLACE IRON WITH PLASTIC ====================
+    // Replace iron inputs with plastic for all buildinggadgets2 recipes
+    
+    const bg2Items = [
+        'buildinggadgets2:gadget_building',
+        'buildinggadgets2:gadget_copy_paste',
+        'buildinggadgets2:gadget_cut_paste',
+        'buildinggadgets2:gadget_destruction',
+        'buildinggadgets2:gadget_exchanging',
+        'buildinggadgets2:redprint',
+        'buildinggadgets2:template',
+        'buildinggadgets2:template_manager'
+    ];
+
+    // Replace iron ingots with plastic in all buildinggadgets2 recipes
+    bg2Items.forEach(item => {
+        event.replaceInput(
+            { output: item },
+            '#forge:ingots/iron',
+            '#forge:plastic'
+        );
+    });
+
+    // Also replace iron nuggets and iron blocks if used
+    bg2Items.forEach(item => {
+        event.replaceInput(
+            { output: item },
+            '#forge:nuggets/iron',
+            '#forge:plastic'
+        );
+        event.replaceInput(
+            { output: item },
+            '#forge:storage_blocks/iron',
+            '#forge:plastic'
+        );
+    });
+
+    // ==================== SIMPLY JETPACKS: LEATHER STRAP ====================
+    // Remove original recipe
+    event.remove({ output: 'simplyjetpacks:leather_strap' });
+    
+    // New recipe:
+    // leather plastic leather
+    // leather plastic leather
+    event.shaped('simplyjetpacks:leather_strap', [
+        'LPL',
+        'LPL'
+    ], {
+        L: 'minecraft:leather',
+        P: '#forge:plastic'
+    }).id('kubejs:chapter2/leather_strap');
+
+    console.log('[Chapter 2] Recipe replacements complete');
+});
