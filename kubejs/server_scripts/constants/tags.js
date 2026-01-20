@@ -339,6 +339,7 @@ global.MINECRAFT_TAGS = {
 
 // Helper function to get all tags for a material
 global.getMaterialTags = (material) => {
+    const moltenKey = `molten_${material}`;
     return {
         ingot: global.INGOT_TAGS[material] || null,
         plate: global.PLATE_TAGS[material] || null,
@@ -348,7 +349,7 @@ global.getMaterialTags = (material) => {
         storage_block: global.STORAGE_BLOCK_TAGS[material] || null,
         ore: global.ORE_TAGS[material] || null,
         raw: global.RAW_MATERIAL_TAGS[material] || null,
-        molten: global.FLUID_TAGS['molten_' + material] || null
+        molten: global.FLUID_TAGS[moltenKey] || null
     };
 };
 
