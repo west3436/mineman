@@ -20,12 +20,12 @@ global.INGOTS = {
     // Tier 2 Materials
     iron: 'minecraft:iron_ingot',
     gold: 'minecraft:gold_ingot',
-    steel: 'mekanism:ingot_steel',
+    steel: 'immersiveengineering:ingot_steel', // IE before Mekanism (matches steel plate priority)
 
     // Tier 3 Materials
     nickel: 'immersiveengineering:ingot_nickel',
     silver: 'immersiveengineering:ingot_silver',
-    lead: 'mekanism:ingot_lead',
+    lead: 'immersiveengineering:ingot_lead', // IE before Mekanism (matches lead plate/nugget/dust priority)
     invar: 'mekanism:alloy_infused', // Placeholder - may need thermal
     electrum: 'immersiveengineering:ingot_electrum',
     constantan: 'immersiveengineering:ingot_constantan',

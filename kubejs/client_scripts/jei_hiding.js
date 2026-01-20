@@ -10,7 +10,7 @@ JEIEvents.hideItems(event => {
     // Priority: Create > IE > Mekanism
     // ============================================
 
-    // Steel - keep IE (no Create steel ingot), hide Mekanism
+    // Steel - keep IE, hide Mekanism
     event.hide('mekanism:ingot_steel');
 
     // Lead - keep IE, hide Mekanism

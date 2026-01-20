@@ -23,10 +23,10 @@ ServerEvents.tags('item', event => {
         'mekanism:ingot_bronze'
     ]);
 
-    // Steel Ingots
+    // Steel Ingots (Priority: IE > Mekanism)
     event.add('forge:ingots/steel', [
-        'mekanism:ingot_steel',
-        'immersiveengineering:ingot_steel'
+        'immersiveengineering:ingot_steel',
+        'mekanism:ingot_steel'
     ]);
 
     // Nickel Ingots
@@ -39,10 +39,10 @@ ServerEvents.tags('item', event => {
         'immersiveengineering:ingot_silver'
     ]);
 
-    // Lead Ingots
+    // Lead Ingots (Priority: IE > Mekanism)
     event.add('forge:ingots/lead', [
-        'mekanism:ingot_lead',
-        'immersiveengineering:ingot_lead'
+        'immersiveengineering:ingot_lead',
+        'mekanism:ingot_lead'
     ]);
 
     // Aluminum Ingots
