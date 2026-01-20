@@ -1,5 +1,22 @@
 // Tech Progression - Fluid Unification
 // Unifies fluids across mods using tags
+//
+// IMPORTANT: This file implements Phase 1.2 of the Tech Progression plan.
+// All fluid tags here must match the definitions in constants/fluids.js
+//
+// Mod Priority Order (per Phase 1.2):
+// 1. Create - Core Create fluids (chocolate, honey, tea)
+// 2. Immersive Engineering - Industrial chemicals and fuels
+// 3. Create: The Factory Must Grow (TFMG) - Industrial fluids
+// 4. Immersive Petroleum - Petroleum products
+// 5. Mekanism - Chemicals and liquid metals
+// 6. Tinkers Construct - Molten metals (canonical)
+// 7. PneumaticCraft - Plastic and industrial fluids
+//
+// Usage in recipes:
+// - Use forge tags (e.g., 'forge:diesel') instead of specific mod fluids
+// - This allows recipes to accept any fluid in the tag
+// - Ensures cross-mod compatibility
 
 ServerEvents.tags('fluid', event => {
     console.log('[Tech Progression] Applying fluid tag unification...');

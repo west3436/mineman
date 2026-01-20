@@ -6,12 +6,21 @@
  * When multiple mods have the same or functionally equivalent fluids,
  * we unify them using tags and recipe conversions.
  *
- * Priority order for canonical fluids:
- * 1. Tinkers Construct (molten metals)
- * 2. Mekanism
- * 3. Immersive Engineering
- * 4. Create
- * 5. Electrodynamics
+ * Priority order for canonical fluids (per Phase 1.2 requirements):
+ * 1. Create (for Create-specific fluids like chocolate, honey)
+ * 2. Immersive Engineering (for industrial chemicals and fuels)
+ * 3. Create: The Factory Must Grow (for TFMG-specific industrial fluids)
+ * 4. Immersive Petroleum (for petroleum products)
+ * 5. Mekanism (for chemicals and liquid metals)
+ * 6. Tinkers Construct (for molten metals - canonical source)
+ * 7. PneumaticCraft (for plastic and some industrial fluids)
+ * 8. Other mods (as needed)
+ * 
+ * This unification ensures:
+ * - Consistent behavior across all mods
+ * - Recipe compatibility
+ * - No duplicate fluids in JEI/NEI
+ * - Easier cross-mod integration
  */
 
 // ============================================
