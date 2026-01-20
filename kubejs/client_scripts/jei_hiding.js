@@ -1,6 +1,6 @@
 // Tech Progression - JEI Item Hiding
 // Hides duplicate items and unavailable machines from JEI
-// Priority: Create > Immersive Engineering > Mekanism > Create: TFMG > Others
+// Priority: Create > Immersive Engineering > Mekanism > Create: The Factory Must Grow > Others
 
 JEIEvents.hideItems(event => {
     console.log('[Tech Progression] Hiding duplicate items from JEI...');

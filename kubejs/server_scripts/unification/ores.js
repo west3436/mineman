@@ -36,10 +36,11 @@ ServerEvents.tags('block', event => {
         'minecraft:deepslate_iron_ore'
     ]);
 
-    // Gold Ores (Vanilla)
+    // Gold Ores (Vanilla - includes nether variant)
     event.add('forge:ores/gold', [
         'minecraft:gold_ore',
-        'minecraft:deepslate_gold_ore'
+        'minecraft:deepslate_gold_ore',
+        'minecraft:nether_gold_ore'
     ]);
 
     // Coal Ores (Vanilla)
@@ -136,11 +137,6 @@ ServerEvents.tags('block', event => {
     // ============================================
     // NETHER ORES
     // ============================================
-
-    // Nether Gold Ore (added to gold ore tag for processing recipes)
-    event.add('forge:ores/gold', [
-        'minecraft:nether_gold_ore'
-    ]);
 
     // Ancient Debris (Netherite source)
     event.add('forge:ores/netherite_scrap', [
