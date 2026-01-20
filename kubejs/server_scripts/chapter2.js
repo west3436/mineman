@@ -56,5 +56,43 @@ ServerEvents.recipes(event => {
         P: '#forge:plastic'
     }).id('kubejs:chapter2/leather_strap');
 
+    // ==================== IE REFINERY: NAPHTHA TO ETHYLENE ====================
+    // Convert Naphtha to Ethylene in the IE Refinery
+    event.custom({
+        type: 'immersiveengineering:refinery',
+        input0: {
+            tag: 'forge:naphtha',
+            amount: 100
+        },
+        input1: {
+            tag: 'forge:naphtha',
+            amount: 100
+        },
+        result: {
+            fluid: 'tfmg:ethylene',
+            amount: 200
+        },
+        energy: 80
+    }).id('kubejs:chapter2/refinery_naphtha_to_ethylene');
+
+    // ==================== IE REFINERY: ETHYLENE TO MOLTEN PLASTIC ====================
+    // Convert Ethylene to Molten Plastic in the IE Refinery
+    event.custom({
+        type: 'immersiveengineering:refinery',
+        input0: {
+            tag: 'forge:ethylene',
+            amount: 100
+        },
+        input1: {
+            tag: 'forge:ethylene',
+            amount: 100
+        },
+        result: {
+            fluid: 'tfmg:molten_plastic',
+            amount: 200
+        },
+        energy: 80
+    }).id('kubejs:chapter2/refinery_ethylene_to_plastic');
+
     console.log('[Chapter 2] Recipe replacements complete');
 });

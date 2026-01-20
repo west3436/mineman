@@ -766,7 +766,9 @@ LootJS.modifiers((event) => {
         // Numismatics currency (high value)
         .addLoot(LootEntry.of('numismatics:sprocket').setCount(2, 8).setWeight(20))
         .addLoot(LootEntry.of('numismatics:sun').setCount(1, 4).setWeight(12))
-        .addLoot(LootEntry.of('numismatics:crown').setCount(1, 2).setWeight(5)); (Fire/Blaze theme, Tier 3-5) ---
+        .addLoot(LootEntry.of('numismatics:crown').setCount(1, 2).setWeight(5));
+
+    // --- Nether Fortress (Fire/Blaze theme, Tier 3-5) ---
     event.addLootTableModifier('minecraft:chests/nether_bridge')
         .randomChance(0.9)
         .addLoot(LootEntry.of('tconstruct:blazing_bone').setCount(1, 4).setWeight(30))

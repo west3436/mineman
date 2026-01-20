@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 2, "max": 4 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:coal_block", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] },
+        { "type": "minecraft:item", "name": "mekanism:heat_generator", "weight": 20 },
+        { "type": "minecraft:item", "name": "mekanism:solar_panel", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "mekanism:advanced_solar_generator", "weight": 10 },
+        { "type": "minecraft:item", "name": "electrodynamics:solarpanel", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] }
+      ]
+    },
+    {
+      "rolls": { "min": 1, "max": 2 },
+      "entries": [
+        { "type": "minecraft:item", "name": "create:water_wheel", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "create:large_water_wheel", "weight": 20 },
+        { "type": "minecraft:item", "name": "create:windmill_bearing", "weight": 25 },
+        { "type": "minecraft:item", "name": "create:steam_engine", "weight": 15 },
+        { "type": "minecraft:item", "name": "immersiveengineering:thermoelectric_generator", "weight": 20 }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "mekanism:energy_cube", "weight": 25 },
+        { "type": "minecraft:item", "name": "mekanism:basic_universal_cable", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 32, "max": 64 } }] },
+        { "type": "minecraft:item", "name": "immersiveengineering:wirecoil_copper", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] },
+        { "type": "minecraft:item", "name": "fluxnetworks:flux_plug", "weight": 20 }
+      ]
+    }
+  ]
+}

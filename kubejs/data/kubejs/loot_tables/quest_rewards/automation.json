@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 3, "max": 5 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:hopper", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "minecraft:observer", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "minecraft:piston", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "minecraft:redstone", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 32, "max": 64 } }] },
+        { "type": "minecraft:item", "name": "minecraft:comparator", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] }
+      ]
+    },
+    {
+      "rolls": { "min": 2, "max": 3 },
+      "entries": [
+        { "type": "minecraft:item", "name": "create:brass_funnel", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "create:andesite_funnel", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "create:chute", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "create:smart_chute", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "immersiveengineering:conveyor_basic", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "create:mechanical_arm", "weight": 20 },
+        { "type": "minecraft:item", "name": "create:deployer", "weight": 25 },
+        { "type": "minecraft:item", "name": "create:portable_storage_interface", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "create:content_observer", "weight": 20 },
+        { "type": "minecraft:item", "name": "create:stockpile_switch", "weight": 20 }
+      ]
+    }
+  ]
+}

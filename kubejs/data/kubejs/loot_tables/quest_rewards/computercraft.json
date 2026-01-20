@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 2, "max": 4 },
+      "entries": [
+        { "type": "minecraft:item", "name": "computercraft:computer_normal", "weight": 25 },
+        { "type": "minecraft:item", "name": "computercraft:turtle_normal", "weight": 20 },
+        { "type": "minecraft:item", "name": "computercraft:disk_drive", "weight": 25 },
+        { "type": "minecraft:item", "name": "computercraft:monitor_normal", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "computercraft:cable", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "computercraft:computer_advanced", "weight": 25 },
+        { "type": "minecraft:item", "name": "computercraft:turtle_advanced", "weight": 20 },
+        { "type": "minecraft:item", "name": "computercraft:pocket_computer_normal", "weight": 30 },
+        { "type": "minecraft:item", "name": "computercraft:wireless_modem_normal", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "advancedperipherals:chat_box", "weight": 25 },
+        { "type": "minecraft:item", "name": "advancedperipherals:player_detector", "weight": 25 },
+        { "type": "minecraft:item", "name": "advancedperipherals:environment_detector", "weight": 25 },
+        { "type": "minecraft:item", "name": "advancedperipherals:redstone_integrator", "weight": 25 }
+      ]
+    }
+  ]
+}

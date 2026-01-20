@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 2, "max": 4 },
+      "entries": [
+        { "type": "minecraft:item", "name": "kubejs:advanced_circuit", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "kubejs:advanced_machine_casing", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "mekanism:elite_control_circuit", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "ae2:64k_cell_component", "weight": 10 },
+        { "type": "minecraft:item", "name": "electrodynamics:circuitadvanced", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "electrodynamics:motordc", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "tconstruct:manyullyn_ingot", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "tconstruct:hepatizon_ingot", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "industrialforegoing:machine_frame_simple", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] }
+      ]
+    }
+  ]
+}

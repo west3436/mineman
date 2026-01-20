@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 2, "max": 3 },
+      "entries": [
+        { "type": "minecraft:item", "name": "compactmachines:wall", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 64, "max": 128 } }] },
+        { "type": "minecraft:item", "name": "compactmachines:machine_tiny", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "compactmachines:machine_small", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "minecraft:item", "name": "compactmachines:machine_normal", "weight": 15 }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "compactmachines:machine_large", "weight": 30 },
+        { "type": "minecraft:item", "name": "compactmachines:machine_giant", "weight": 20 },
+        { "type": "minecraft:item", "name": "compactmachines:machine_maximum", "weight": 10 },
+        { "type": "minecraft:item", "name": "compactmachines:personal_shrinking_device", "weight": 40 }
+      ]
+    }
+  ]
+}

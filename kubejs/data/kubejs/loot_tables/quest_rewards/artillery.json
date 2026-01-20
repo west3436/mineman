@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 2, "max": 3 },
+      "entries": [
+        { "type": "minecraft:item", "name": "createbigcannons:cast_iron_sliding_breech", "weight": 25 },
+        { "type": "minecraft:item", "name": "createbigcannons:cast_iron_cannon_barrel", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "createbigcannons:cannon_mount", "weight": 25 },
+        { "type": "minecraft:item", "name": "createbigcannons:cannon_carriage", "weight": 20 }
+      ]
+    },
+    {
+      "rolls": { "min": 1, "max": 2 },
+      "entries": [
+        { "type": "minecraft:item", "name": "createbigcannons:cast_iron_cannonball", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] },
+        { "type": "minecraft:item", "name": "createbigcannons:he_shell", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "createbigcannons:ap_shell", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "createbigcannons:powder_charge", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "createbigcannons:ram_rod", "weight": 35 },
+        { "type": "minecraft:item", "name": "createbigcannons:worm", "weight": 30 },
+        { "type": "minecraft:item", "name": "create_radars:receiver_block", "weight": 20 },
+        { "type": "minecraft:item", "name": "create_radars:radar_block", "weight": 15 }
+      ]
+    }
+  ]
+}

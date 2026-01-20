@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 2, "max": 4 },
+      "entries": [
+        { "type": "minecraft:item", "name": "electrodynamics:coil_copper", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "electrodynamics:plate_steel", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "electrodynamics:circuit_basic", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "electrodynamics:circuit_advanced", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] },
+        { "type": "minecraft:item", "name": "electrodynamics:motor_ac", "weight": 15, "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 4 } }] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "electrodynamics:electricfurnace", "weight": 25 },
+        { "type": "minecraft:item", "name": "electrodynamics:wiremill", "weight": 25 },
+        { "type": "minecraft:item", "name": "electrodynamics:oxidationfurnace", "weight": 25 },
+        { "type": "minecraft:item", "name": "electrodynamics:mineralcrusher", "weight": 25 }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "nuclearscience:reactor_core", "weight": 20 },
+        { "type": "minecraft:item", "name": "nuclearscience:fuelheuo2", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "nuclearscience:control_rod_assembly", "weight": 25 },
+        { "type": "minecraft:item", "name": "nuclearscience:hazmat_helmet", "weight": 30 }
+      ]
+    }
+  ]
+}

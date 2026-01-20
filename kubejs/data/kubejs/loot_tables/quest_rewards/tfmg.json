@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": { "min": 3, "max": 5 },
+      "entries": [
+        { "type": "minecraft:item", "name": "tfmg:cast_iron_ingot", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] },
+        { "type": "minecraft:item", "name": "tfmg:steel_ingot", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "tfmg:aluminum_ingot", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "tfmg:heavy_plate", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "tfmg:rebar", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 16, "max": 32 } }] }
+      ]
+    },
+    {
+      "rolls": { "min": 1, "max": 2 },
+      "entries": [
+        { "type": "minecraft:item", "name": "tfmg:steel_mechanism", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "tfmg:turbine_engine", "weight": 15 },
+        { "type": "minecraft:item", "name": "tfmg:industrial_pipe", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 8, "max": 16 } }] },
+        { "type": "minecraft:item", "name": "tfmg:heavy_machinery_casing", "weight": 20, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "tfmg:distillation_controller", "weight": 25 },
+        { "type": "minecraft:item", "name": "tfmg:cable", "weight": 30, "functions": [{ "function": "minecraft:set_count", "count": { "min": 32, "max": 64 } }] },
+        { "type": "minecraft:item", "name": "tfmg:screw_clamp", "weight": 25, "functions": [{ "function": "minecraft:set_count", "count": { "min": 4, "max": 8 } }] },
+        { "type": "minecraft:item", "name": "tfmg:voltage_regulator", "weight": 20 }
+      ]
+    }
+  ]
+}
