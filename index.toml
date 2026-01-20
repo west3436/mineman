@@ -130,7 +130,7 @@ hash = "39209a54791148a58ad98b008be42104bd304b827b6bfba304f881bdfc184d5f"
 
 [[files]]
 file = "kubejs/client_scripts/unified_materials_jei.js"
-hash = "e9cf90a830bf94d4392d51631a51e3305dcce29bb950d3554b253da6976a56df"
+hash = "77ba64f317521aa0deda41aed9710e1ec1417c4988bda271ab94e06ab971c327"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
@@ -143,6 +143,10 @@ hash = "eeefbbb2fe5feb5ab835d6ffaf0323b2aafe866e71f1a005322a67a7590fe242"
 [[files]]
 file = "kubejs/server_scripts/unified_materials_config.js"
 hash = "8a66c9aa3df37efd4a5be5e0d86a794d80a1dfecaae1afac1e397817379dd53a"
+
+[[files]]
+file = "kubejs/server_scripts/unified_materials_misc.js"
+hash = "9a46069c0bf92f72493f39d0b3dfdb75b18740fa520cf143c042690f1c9b12d3"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_processing.js"

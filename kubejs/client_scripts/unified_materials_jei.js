@@ -169,6 +169,48 @@ JEIEvents.hideItems(event => {
         'mekanism:block_steel',
         'cgs:steel_block',
         'industrialrenewal:block_steel',
+
+        // ==================== COAL COKE (Primary: IE) ====================
+        'tfmg:coal_coke',
+        'electrodynamics:coalcoke',
+        'tfmg:coal_coke_dust',
+        'tfmg:coal_coke_block',
+
+        // ==================== SAWDUST (Primary: IE) ====================
+        'mekanism:sawdust',
+
+        // ==================== WHEAT FLOUR (Primary: Create) ====================
+        'pneumaticcraft:wheat_flour',
+
+        // ==================== DOUGH (Primary: Create) ====================
+        'farmersdelight:wheat_dough',
+
+        // ==================== SLAG (Primary: IE) ====================
+        'electrodynamics:slag',
+
+        // ==================== CHARCOAL DUST (Primary: Mekanism) ====================
+        'cgs:charcoal_dust',
+
+        // ==================== SILICON (Primary: AE2) ====================
+        'tfmg:silicon_ingot',
+
+        // ==================== OBSIDIAN DUST (Primary: Mekanism) ====================
+        'electrodynamics:dustobsidian',
+
+        // ==================== NETHERITE DUST (Primary: Mekanism) ====================
+        'electrodynamics:dustnetherite',
+
+        // ==================== IRON STICKS (Primary: IE) ====================
+        'industrialrenewal:stick_iron',
+
+        // ==================== STEEL STICKS (Primary: IE) ====================
+        'industrialrenewal:stick_steel',
+
+        // ==================== WOOD PULP (Primary: Create) ====================
+        'forestry:wood_pulp',
+
+        // ==================== GRAPHITE ELECTRODE (Primary: IE) ====================
+        'tfmg:graphite_electrode',
     ];
 
     hiddenItems.forEach(item => {
