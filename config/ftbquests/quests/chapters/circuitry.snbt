@@ -7,6 +7,1060 @@
 	id: "789F786995B7784D"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["45B86923718876B3"]
+			description: [
+				"&6Welcome to the world of Pneumaticcraft!&r"
+				""
+				"This chapter will guide you through creating Printed Circuit Boards (PCBs) - essential components for advanced automation and machinery."
+				""
+				"The journey involves:"
+				"• &bCompressed Air Systems&r - Power everything"
+				"• &bPressure Chambers&r - Transform materials"
+				"• &bUV Light Processing&r - Create circuit patterns"
+				"• &bEtching&r - Finalize your circuits"
+				""
+				"&7Grab a PneumaticCraft manual to get started!&r"
+			]
+			icon: "patchouli:guide_book"
+			id: "PNEU_START_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_START_R01"
+				table_id: 3000000000000001L
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "Air-powered automation"
+			tasks: [{
+				id: "PNEU_START_T01"
+				title: "Begin Circuit Production"
+				type: "checkmark"
+			}]
+			title: "Pneumaticcraft: Basics"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["PNEU_START_001"]
+			description: [
+				"&6Compressed Iron&r is the foundation of all Pneumaticcraft machines."
+				""
+				"Production method:"
+				"• Place iron ingots in a Pressure Chamber"
+				"• Apply at least 2.0 bar of pressure"
+				"• Iron compresses into Compressed Iron"
+				""
+				"Alternatively, you can create it in a manual compressor early game, but a Pressure Chamber is more efficient."
+				""
+				"&7You'll need lots of this material - automate production early!&r"
+			]
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			id: "PNEU_IRON_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_IRON_R01"
+				table_id: 3000000000000002L
+				type: "choice"
+			}]
+			subtitle: "Stronger than steel"
+			tasks: [{
+				count: 16L
+				id: "PNEU_IRON_T01"
+				item: { Count: 16, id: "pneumaticcraft:ingot_iron_compressed" }
+				type: "item"
+			}]
+			title: "Compressed Iron"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["PNEU_IRON_001"]
+			description: [
+				"&6Pressure Tubes&r transport compressed air between machines."
+				""
+				"Key information:"
+				"• Connect compressors to machines"
+				"• Different tiers handle different pressures"
+				"• Tubes can explode if over-pressured!"
+				""
+				"Tube types:"
+				"• &7Basic&r - Up to 5 bar"
+				"• &bReinforced&r - Up to 10 bar"  
+				"• &6Advanced&r - Up to 20 bar"
+				""
+				"&7Use Safety Tube Modules to prevent explosions!&r"
+			]
+			icon: "pneumaticcraft:pressure_tube"
+			id: "PNEU_TUBE_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_TUBE_R01"
+				table_id: 3000000000000003L
+				type: "choice"
+			}]
+			subtitle: "The arteries of your factory"
+			tasks: [{
+				count: 16L
+				id: "PNEU_TUBE_T01"
+				item: { Count: 16, id: "pneumaticcraft:pressure_tube" }
+				type: "item"
+			}]
+			title: "Pressure Tubes"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["PNEU_IRON_001"]
+			description: [
+				"The &6Air Compressor&r is the heart of your pneumatic system."
+				""
+				"Operation:"
+				"• Burns solid fuel to generate compressed air"
+				"• Outputs to connected pressure tubes"
+				"• Builds up to 5 bar of pressure"
+				""
+				"Tips:"
+				"• Use coal or charcoal for fuel"
+				"• Multiple compressors can work together"
+				"• Watch the pressure gauge!"
+				""
+				"&7You'll need consistent air supply for all pneumatic operations!&r"
+			]
+			icon: "pneumaticcraft:air_compressor"
+			id: "PNEU_COMP_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_COMP_R01"
+				table_id: 3000000000000004L
+				type: "choice"
+			}]
+			subtitle: "Generating compressed air"
+			tasks: [{
+				id: "PNEU_COMP_T01"
+				item: "pneumaticcraft:air_compressor"
+				type: "item"
+			}]
+			title: "Air Compressor"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"PNEU_TUBE_001"
+				"PNEU_COMP_001"
+			]
+			description: [
+				"The &6Pressure Chamber&r is a multiblock that uses air pressure to transform items."
+				""
+				"Building the chamber:"
+				"• 3x3x3 to 5x5x5 hollow cube"
+				"• Walls of Pressure Chamber Wall/Glass"
+				"• At least one Valve for air input"
+				"• At least one Interface for items"
+				""
+				"This multiblock can create:"
+				"• Compressed Iron from Iron"
+				"• Empty PCBs from plastic and iron"
+				"• Many other compressed materials"
+				""
+				"&7Bigger chambers are more efficient!&r"
+			]
+			icon: "pneumaticcraft:pressure_chamber_valve"
+			id: "PNEU_CHAMBER_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_CHAMBER_R01"
+				table_id: 3000000000000005L
+				type: "choice"
+			}]
+			shape: "diamond"
+			subtitle: "Multiblock pressure processing"
+			tasks: [
+				{
+					id: "PNEU_CHAMBER_T01"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "PNEU_CHAMBER_T02"
+					item: { Count: 2, id: "pneumaticcraft:pressure_chamber_interface" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "PNEU_CHAMBER_T03"
+					item: { Count: 20, id: "pneumaticcraft:pressure_chamber_wall" }
+					type: "item"
+				}
+			]
+			title: "Pressure Chamber"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["PNEU_CHAMBER_001"]
+			description: [
+				"The &6Empty PCB&r is the blank canvas for your circuit boards."
+				""
+				"Creation process:"
+				"• Place plastic sheets and iron in the Pressure Chamber"
+				"• Apply sufficient pressure"
+				"• Empty PCBs are produced"
+				""
+				"This is just the beginning - the PCB still needs:"
+				"• UV light exposure"
+				"• Acid etching"
+				""
+				"&7Make sure you have a steady supply of plastic!&r"
+			]
+			icon: "pneumaticcraft:empty_pcb"
+			id: "PNEU_EMPTY_PCB_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_EMPTY_PCB_R01"
+				table_id: 3000000000000006L
+				type: "choice"
+			}]
+			subtitle: "The blank circuit"
+			tasks: [{
+				count: 4L
+				id: "PNEU_EMPTY_PCB_T01"
+				item: { Count: 4, id: "pneumaticcraft:empty_pcb" }
+				type: "item"
+			}]
+			title: "Empty PCB"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["PNEU_EMPTY_PCB_001"]
+			description: [
+				"The &6UV Light Box&r exposes PCBs to ultraviolet light to create circuit patterns."
+				""
+				"Operation:"
+				"• Place Empty PCBs inside"
+				"• Supply compressed air"
+				"• Wait for UV exposure (progress bar)"
+				"• Remove when 100% exposed"
+				""
+				"Important notes:"
+				"• Requires continuous air supply"
+				"• Over-exposure can damage PCBs"
+				"• Check progress regularly"
+				""
+				"&7The PCB will change appearance when fully exposed!&r"
+			]
+			icon: "pneumaticcraft:uv_light_box"
+			id: "PNEU_UV_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_UV_R01"
+				table_id: 3000000000000007L
+				type: "choice"
+			}]
+			subtitle: "Light-based patterning"
+			tasks: [{
+				id: "PNEU_UV_T01"
+				item: "pneumaticcraft:uv_light_box"
+				type: "item"
+			}]
+			title: "UV Light Box"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["PNEU_EMPTY_PCB_001"]
+			description: [
+				"&6Etching Acid&r is the chemical solution that develops circuit patterns."
+				""
+				"Production:"
+				"• Combine specific materials in the Pressure Chamber"
+				"• Store in tanks for use"
+				""
+				"Handling:"
+				"• Corrosive - handle with care!"
+				"• Used in the Etching Tank"
+				"• Consumed during PCB processing"
+				""
+				"&7Keep a reserve of etching acid for continuous production!&r"
+			]
+			icon: "pneumaticcraft:etching_acid_bucket"
+			id: "PNEU_ACID_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_ACID_R01"
+				table_id: 3000000000000008L
+				type: "choice"
+			}]
+			subtitle: "Corrosive chemistry"
+			tasks: [{
+				id: "PNEU_ACID_T01"
+				item: "pneumaticcraft:etching_acid_bucket"
+				type: "item"
+			}]
+			title: "Etching Acid"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"PNEU_UV_001"
+				"PNEU_ACID_001"
+			]
+			description: [
+				"The &6Etching Tank&r finalizes UV-exposed PCBs into usable Unassembled PCBs."
+				""
+				"Operation:"
+				"• Fill tank with Etching Acid"
+				"• Insert UV-exposed PCBs"
+				"• Heat the tank for faster processing"
+				"• Remove completed Unassembled PCBs"
+				""
+				"Heating methods:"
+				"• Place on top of a heat source"
+				"• Use a Vortex Tube for precise control"
+				""
+				"&7Failed PCBs mean the UV exposure was insufficient!&r"
+			]
+			icon: "pneumaticcraft:etching_tank"
+			id: "PNEU_ETCH_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_ETCH_R01"
+				table_id: 3000000000000009L
+				type: "choice"
+			}]
+			subtitle: "Chemical development"
+			tasks: [{
+				id: "PNEU_ETCH_T01"
+				item: "pneumaticcraft:etching_tank"
+				type: "item"
+			}]
+			title: "Etching Tank"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["PNEU_ETCH_001"]
+			description: [
+				"The &6Unassembled PCB&r is an etched circuit board ready for final assembly."
+				""
+				"You're almost there! The Unassembled PCB needs:"
+				"• Soldering with electronic components"
+				"• Can be done in the Assembly System"
+				"• Or manually with redstone and capacitors"
+				""
+				"&7This represents the transition from chemistry to electronics!&r"
+			]
+			icon: "pneumaticcraft:unassembled_pcb"
+			id: "PNEU_UNASM_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_UNASM_R01"
+				table_id: 3000000000000010L
+				type: "choice"
+			}]
+			subtitle: "Ready for components"
+			tasks: [{
+				count: 4L
+				id: "PNEU_UNASM_T01"
+				item: { Count: 4, id: "pneumaticcraft:unassembled_pcb" }
+				type: "item"
+			}]
+			title: "Unassembled PCB"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["PNEU_UNASM_001"]
+			description: [
+				"&6Congratulations!&r You've created your first Printed Circuit Board!"
+				""
+				"PCBs are essential components for:"
+				"• &bPneumaticcraft machines&r - Advanced automation"
+				"• &bDrones&r - Programmable flying robots"
+				"• &bAssembly Systems&r - Automated crafting"
+				"• &bAdvanced Compressors&r - Higher pressure"
+				""
+				"&eThe Advanced Circuitry chapter is now available!&r"
+				""
+				"&7This is the gateway to truly automated factories!&r"
+			]
+			icon: "pneumaticcraft:printed_circuit_board"
+			id: "PNEU_PCB_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_PCB_R01"
+				table_id: 3000000000000011L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			subtitle: "The brain of the machine"
+			tasks: [{
+				count: 4L
+				id: "PNEU_PCB_T01"
+				item: { Count: 4, id: "pneumaticcraft:printed_circuit_board" }
+				type: "item"
+			}]
+			title: "Printed Circuit Board"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["PNEU_PCB_001"]
+			description: [
+				"The &6Assembly System&r automates complex crafting using programmable machines."
+				""
+				"Components:"
+				"• &bAssembly Controller&r - The brain"
+				"• &bAssembly Platform&r - Work surface"
+				"• &bAssembly Drill&r - Drilling operations"
+				"• &bAssembly Laser&r - Cutting operations"
+				"• &bIO Units&r - Item input/output"
+				""
+				"Programs define operations:"
+				"• Drill Program - Drilling recipes"
+				"• Laser Program - Cutting recipes"
+				"• Drill \\& Laser - Combined operations"
+				""
+				"&7PCBs can be auto-crafted here!&r"
+			]
+			icon: "pneumaticcraft:assembly_controller"
+			id: "PNEU_ASSEMBLY_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_ASSEMBLY_R01"
+				table_id: 3000000000000012L
+				type: "choice"
+			}]
+			subtitle: "Automated precision crafting"
+			tasks: [
+				{
+					id: "PNEU_ASSEMBLY_T01"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "PNEU_ASSEMBLY_T02"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+				{
+					id: "PNEU_ASSEMBLY_T03"
+					item: "pneumaticcraft:assembly_drill"
+					type: "item"
+				}
+				{
+					id: "PNEU_ASSEMBLY_T04"
+					item: "pneumaticcraft:assembly_laser"
+					type: "item"
+				}
+			]
+			title: "Assembly System"
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["PNEU_PCB_001"]
+			description: [
+				"The &6Programmer&r allows you to create programs for Drones and other devices."
+				""
+				"Features:"
+				"• Visual programming interface"
+				"• Drag-and-drop puzzle pieces"
+				"• Import/export programs"
+				"• Debug and test systems"
+				""
+				"Programmable devices:"
+				"• Drones - Flying automation"
+				"• Network components"
+				"• Advanced machinery"
+				""
+				"&7This opens up incredible automation possibilities!&r"
+			]
+			icon: "pneumaticcraft:programmer"
+			id: "PNEU_PROGRAMMER_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_PROGRAMMER_R01"
+				table_id: 3000000000000013L
+				type: "choice"
+			}]
+			subtitle: "Visual programming"
+			tasks: [{
+				id: "PNEU_PROGRAMMER_T01"
+				item: "pneumaticcraft:programmer"
+				type: "item"
+			}]
+			title: "The Programmer"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["PNEU_CHAMBER_001"]
+			description: [
+				"The &6Refinery&r processes crude oil into various fuel products."
+				""
+				"Products:"
+				"• &bDiesel&r - Fuel for compressors"
+				"• &bKerosene&r - Lighter fuel"
+				"• &bGasoline&r - High-energy fuel"
+				"• &bLPG&r - For plastic production"
+				""
+				"Setup:"
+				"• Stack Refinery blocks vertically"
+				"• More blocks = more output types"
+				"• Requires heat source below"
+				""
+				"&7LPG is essential for Pneumaticcraft's plastic!&r"
+			]
+			icon: "pneumaticcraft:refinery"
+			id: "PNEU_REFINERY_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_REFINERY_R01"
+				table_id: 3000000000000014L
+				type: "choice"
+			}]
+			subtitle: "Oil processing"
+			tasks: [
+				{
+					count: 4L
+					id: "PNEU_REFINERY_T01"
+					item: { Count: 4, id: "pneumaticcraft:refinery" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "PNEU_REFINERY_T02"
+					item: { Count: 4, id: "pneumaticcraft:refinery_output" }
+					type: "item"
+				}
+			]
+			title: "Refinery"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["PNEU_REFINERY_001"]
+			description: [
+				"The &6Thermopneumatic Processing Plant&r combines heat, pressure, and chemistry."
+				""
+				"Capabilities:"
+				"• LPG + Coal → Plastic"
+				"• Fuel processing"
+				"• Chemical reactions"
+				""
+				"Requirements:"
+				"• Compressed air input"
+				"• Heat source"
+				"• Fluid inputs"
+				""
+				"&7This is Pneumaticcraft's native plastic source!&r"
+			]
+			icon: "pneumaticcraft:thermopneumatic_processing_plant"
+			id: "PNEU_THERMO_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_THERMO_R01"
+				table_id: 3000000000000015L
+				type: "choice"
+			}]
+			subtitle: "Heat + Pressure + Chemistry"
+			tasks: [{
+				id: "PNEU_THERMO_T01"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				type: "item"
+			}]
+			title: "Thermopneumatic Processing"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["PNEU_COMP_001"]
+			description: [
+				"The &6Liquid Compressor&r burns liquid fuels for more efficient air production."
+				""
+				"Fuel options:"
+				"• Diesel - Good efficiency"
+				"• Kerosene - Better efficiency"
+				"• Gasoline - Best efficiency"
+				"• LPG - Alternative fuel"
+				""
+				"Advantages over solid fuel:"
+				"• Higher air output"
+				"• Easier to automate"
+				"• Consistent burn rate"
+				""
+				"&7Pair with your refinery for automated fuel supply!&r"
+			]
+			icon: "pneumaticcraft:liquid_compressor"
+			id: "PNEU_LIQCOMP_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_LIQCOMP_R01"
+				table_id: 3000000000000016L
+				type: "choice"
+			}]
+			subtitle: "Liquid-fueled compression"
+			tasks: [{
+				id: "PNEU_LIQCOMP_T01"
+				item: "pneumaticcraft:liquid_compressor"
+				type: "item"
+			}]
+			title: "Liquid Compressor"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["PNEU_TUBE_001"]
+			description: [
+				"&6Tube Modules&r add functionality to pressure tubes."
+				""
+				"Essential modules:"
+				"• &bSafety Module&r - Prevents over-pressure explosions"
+				"• &bPressure Gauge&r - Monitor pressure levels"
+				"• &bRegulator&r - Control output pressure"
+				"• &bAir Grate&r - Push/pull entities and items"
+				""
+				"Usage:"
+				"• Right-click on pressure tubes to attach"
+				"• Configure with pneumatic wrench"
+				""
+				"&7Safety modules should be your first priority!&r"
+			]
+			icon: "pneumaticcraft:safety_tube_module"
+			id: "PNEU_MODULES_001"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "PNEU_MODULES_R01"
+				table_id: 3000000000000017L
+				type: "choice"
+			}]
+			subtitle: "Enhance your tubes"
+			tasks: [
+				{
+					id: "PNEU_MODULES_T01"
+					item: "pneumaticcraft:safety_tube_module"
+					type: "item"
+				}
+				{
+					id: "PNEU_MODULES_T02"
+					item: "pneumaticcraft:pressure_gauge_module"
+					type: "item"
+				}
+			]
+			title: "Tube Modules"
+			x: -3.0d
+			y: -2.5d
+		}
+	]
+	reward_tables: [
+		{
+			id: 3000000000000001L
+			rewards: [
+				{
+					id: "CRT001A"
+					item: "patchouli:guide_book"
+					tag: "{\"patchouli:book\":\"pneumaticcraft:book\"}"
+					type: "item"
+				}
+				{
+					id: "CRT001B"
+					item: "pneumaticcraft:pressure_gauge"
+					type: "item"
+				}
+				{
+					id: "CRT001C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Pneumatic Starter"
+		}
+		{
+			id: 3000000000000002L
+			rewards: [
+				{
+					id: "CRT002A"
+					item: "pneumaticcraft:ingot_iron_compressed"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "CRT002B"
+					item: "minecraft:iron_ingot"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "CRT002C"
+					item: "numismatics:spur"
+					count: 6
+					type: "item"
+				}
+			]
+			title: "Iron Supplies"
+		}
+		{
+			id: 3000000000000003L
+			rewards: [
+				{
+					id: "CRT003A"
+					item: "pneumaticcraft:pressure_tube"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "CRT003B"
+					item: "pneumaticcraft:tube_junction"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "CRT003C"
+					item: "numismatics:spur"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Tube Kit"
+		}
+		{
+			id: 3000000000000004L
+			rewards: [
+				{
+					id: "CRT004A"
+					item: "minecraft:coal"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "CRT004B"
+					item: "pneumaticcraft:pressure_gauge"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "CRT004C"
+					item: "numismatics:spur"
+					count: 6
+					type: "item"
+				}
+			]
+			title: "Compressor Fuel"
+		}
+		{
+			id: 3000000000000005L
+			rewards: [
+				{
+					id: "CRT005A"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "CRT005B"
+					item: "pneumaticcraft:pressure_chamber_glass"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "CRT005C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Chamber Materials"
+		}
+		{
+			id: 3000000000000006L
+			rewards: [
+				{
+					id: "CRT006A"
+					item: "pneumaticcraft:empty_pcb"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "CRT006B"
+					item: "tfmg:plastic_sheet"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "CRT006C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "PCB Materials"
+		}
+		{
+			id: 3000000000000007L
+			rewards: [
+				{
+					id: "CRT007A"
+					item: "minecraft:glowstone_dust"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "CRT007B"
+					item: "pneumaticcraft:pressure_tube"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "CRT007C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "UV Supplies"
+		}
+		{
+			id: 3000000000000008L
+			rewards: [
+				{
+					id: "CRT008A"
+					item: "pneumaticcraft:etching_acid_bucket"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "CRT008B"
+					item: "minecraft:bucket"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "CRT008C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Chemistry Supplies"
+		}
+		{
+			id: 3000000000000009L
+			rewards: [
+				{
+					id: "CRT009A"
+					item: "pneumaticcraft:vortex_tube"
+					type: "item"
+				}
+				{
+					id: "CRT009B"
+					item: "minecraft:lava_bucket"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "CRT009C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Heating Equipment"
+		}
+		{
+			id: 3000000000000010L
+			rewards: [
+				{
+					id: "CRT010A"
+					item: "pneumaticcraft:unassembled_pcb"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "CRT010B"
+					item: "minecraft:redstone"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "CRT010C"
+					item: "numismatics:bevel"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Electronics Materials"
+		}
+		{
+			id: 3000000000000011L
+			rewards: [
+				{
+					id: "CRT011A"
+					item: "pneumaticcraft:printed_circuit_board"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "CRT011B"
+					item: "pneumaticcraft:advanced_pressure_tube"
+					count: 16
+					type: "item"
+				}
+				{
+					id: "CRT011C"
+					item: "numismatics:sprocket"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Circuit Mastery"
+		}
+		{
+			id: 3000000000000012L
+			rewards: [
+				{
+					id: "CRT012A"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "CRT012B"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+				{
+					id: "CRT012C"
+					item: "numismatics:sprocket"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Assembly IO"
+		}
+		{
+			id: 3000000000000013L
+			rewards: [
+				{
+					id: "CRT013A"
+					item: "pneumaticcraft:gps_tool"
+					type: "item"
+				}
+				{
+					id: "CRT013B"
+					item: "pneumaticcraft:gps_area_tool"
+					type: "item"
+				}
+				{
+					id: "CRT013C"
+					item: "numismatics:sprocket"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Programming Tools"
+		}
+		{
+			id: 3000000000000014L
+			rewards: [
+				{
+					id: "CRT014A"
+					item: "pneumaticcraft:refinery_output"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "CRT014B"
+					item: "create:fluid_tank"
+					count: 8
+					type: "item"
+				}
+				{
+					id: "CRT014C"
+					item: "numismatics:bevel"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Refinery Expansion"
+		}
+		{
+			id: 3000000000000015L
+			rewards: [
+				{
+					id: "CRT015A"
+					item: "pneumaticcraft:lpg_bucket"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "CRT015B"
+					item: "minecraft:coal"
+					count: 64
+					type: "item"
+				}
+				{
+					id: "CRT015C"
+					item: "numismatics:bevel"
+					count: 4
+					type: "item"
+				}
+			]
+			title: "Thermopneumatic Materials"
+		}
+		{
+			id: 3000000000000016L
+			rewards: [
+				{
+					id: "CRT016A"
+					item: "pneumaticcraft:small_tank"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "CRT016B"
+					item: "create:fluid_pipe"
+					count: 32
+					type: "item"
+				}
+				{
+					id: "CRT016C"
+					item: "numismatics:bevel"
+					count: 2
+					type: "item"
+				}
+			]
+			title: "Fluid Storage"
+		}
+		{
+			id: 3000000000000017L
+			rewards: [
+				{
+					id: "CRT017A"
+					item: "pneumaticcraft:regulator_tube_module"
+					count: 4
+					type: "item"
+				}
+				{
+					id: "CRT017B"
+					item: "pneumaticcraft:air_grate_module"
+					count: 2
+					type: "item"
+				}
+				{
+					id: "CRT017C"
+					item: "numismatics:spur"
+					count: 8
+					type: "item"
+				}
+			]
+			title: "Module Pack"
+		}
+	]
 	title: "Basic Circuitry"
 }
