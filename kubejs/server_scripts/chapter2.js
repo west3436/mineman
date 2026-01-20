@@ -94,5 +94,36 @@ ServerEvents.recipes(event => {
         energy: 80
     }).id('kubejs:chapter2/refinery_ethylene_to_plastic');
 
+    // ==================== PNEUMATICCRAFT: SMALL TANK ====================
+    // Remove original recipe
+    event.remove({ output: 'pneumaticcraft:small_tank' });
+    
+    // New recipe:
+    // plastic iron_compressed plastic
+    // iron_compressed glass iron_compressed
+    // plastic iron_compressed plastic
+    event.shaped('pneumaticcraft:small_tank', [
+        'PIP',
+        'IGI',
+        'PIP'
+    ], {
+        P: '#forge:plastic',
+        I: 'pneumaticcraft:ingot_iron_compressed',
+        G: '#forge:glass'
+    }).id('kubejs:chapter2/small_tank');
+
+    // ==================== PNEUMATICCRAFT: PRESSURE TUBE ====================
+    // Remove original recipe
+    event.remove({ output: 'pneumaticcraft:pressure_tube' });
+    
+    // New recipe:
+    // iron_compressed plastic iron_compressed
+    event.shaped('pneumaticcraft:pressure_tube', [
+        'IPI'
+    ], {
+        P: '#forge:plastic',
+        I: 'pneumaticcraft:ingot_iron_compressed'
+    }).id('kubejs:chapter2/pressure_tube');
+
     console.log('[Chapter 2] Recipe replacements complete');
 });

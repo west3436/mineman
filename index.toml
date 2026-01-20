@@ -286,7 +286,7 @@ hash = "c71b8c102919788d3632b9010c03e2da55880fa229b8d83a1b78eeb5c0d522cd"
 
 [[files]]
 file = "kubejs/server_scripts/chapter2.js"
-hash = "675b4ee68b7b531496ba4a43dfbbcf68538f563a31d345ba0d286fbe5f4268a1"
+hash = "48d1df287ec1ee9b0c9a724fcfd911926f5c27cd534dd63b62880b115d487e57"
 
 [[files]]
 file = "kubejs/server_scripts/loot_tables.js"
