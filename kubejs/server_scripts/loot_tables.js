@@ -1009,5 +1009,6 @@ LootJS.modifiers((event) => {
         .randomChance(0.15)
         .addLoot(LootEntry.of('tconstruct:cobalt_ore'));
 
+        
     console.log('[LootJS] Comprehensive loot tables loaded successfully!');
 });
