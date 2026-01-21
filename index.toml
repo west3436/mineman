@@ -30,19 +30,19 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "ed23aeda9e67a20d8c3d30bcc0f756d9a59ecc51248cac7b7bcce5a63af63c4a"
+hash = "7f0110af76838d22afb614c03e9ca3c530aa201f46cdeb15ca5b42f13e63b6b3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
-hash = "923227d52e1a9446543ca1c788392c189c33e9584a9d09cba0a770552bbb4d47"
+hash = "c5f2ee22d6f11eddc53b5cad19392e546f7139a297245aeb236dceb909ae25af"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
-hash = "fa434eee4a0c86f2a7bc971cd67ae455c5781d54f318d731f4f9c025e32617e7"
+hash = "7ef8841d945be379865d0b220761797a67b7f939530c483e9e17b9035c00a9c6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/circuitry.snbt"
-hash = "85fccc0e2d369be1d930ad227b38185a8587f4e7054438281e690cf07363eecf"
+hash = "b122ce1eb3567f1ecae8f57d5a23b799eed46c2b92f6198b835430aa54f5d19a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_quests.snbt"
@@ -50,7 +50,7 @@ hash = "dd05aaa2cb10262067f7b88114ced4e56b8e984a4dd3e42723fb6bcdbc368e73"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
-hash = "f2bb95242a23e2d1e295e42e14ed4b857908a1eb0201d41524e284cf62768682"
+hash = "555a1563725e7179b7b5c9add722b446e338600dd67a3e897440a59b11648131"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -119,6 +119,10 @@ hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 [[files]]
 file = "datapacks/unified_ores/data/growthcraft/worldgen/placed_feature/salt_ore_placed.json"
 hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
+
+[[files]]
+file = "datapacks/unified_ores/data/immersiveengineering/recipes/bottling_molten_plastic_to_block.json"
+hash = "95d898de48b9dce8923c07ec29c17596e177c96c3ad4544e8f9c6c7e4a1e232b"
 
 [[files]]
 file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_lead_normal.json"
@@ -290,11 +294,11 @@ hash = "48d1df287ec1ee9b0c9a724fcfd911926f5c27cd534dd63b62880b115d487e57"
 
 [[files]]
 file = "kubejs/server_scripts/loot_tables.js"
-hash = "5240da43b73aa442828fd3eadbc2fcee93700d55b569193c441ac00d60d31e63"
+hash = "672393ae140ae6cb2ba8b9f8961b53437b113d2787f2cad007bc4af6a30568f2"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
-hash = "507673e08484cd9e1d54fc627a28d852cc293a920d21d644565e3e3b4f391d41"
+hash = "21ae6bdaf847822bee56baf30057556ce36e2735eaf0fc5e41dd401b8035e546"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_tags.js"
@@ -314,7 +318,7 @@ hash = "00623d4f4934cd8af5b290630337fa8fb110f516bf6f6ae55e5cbb3d0dd9b3d3"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_recipes.js"
-hash = "3d578bcf22e4edf67d0bdb32824b2be5fda262b53791146183fc3e66b8686aa9"
+hash = "8622dbaf3898513abb7273edaab2d240fb1aa99f408c6202d2a12cabde7c7e41"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_storage_blocks.js"
