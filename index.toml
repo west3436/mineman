@@ -1234,6 +1234,11 @@ hash = "147b40366d43bfb6c894bb38a5795b767b6b1981d5c27a56c0f79ab2e6570eaf"
 metafile = true
 
 [[files]]
+file = "mods/world-preview.pw.toml"
+hash = "54f3ef953e9217b9a7cc8426b7d4c9939a3c994948f077afd8e36e66d53fd1ee"
+metafile = true
+
+[[files]]
 file = "mods/wwoo.pw.toml"
 hash = "a4adbe9faf5b891bfafdb122f7808f7870b6ea915af393deea41406498d109ab"
 metafile = true
