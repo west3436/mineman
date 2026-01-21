@@ -30,7 +30,7 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "dc04d1c60820676069d60d5b3a8e335bd71e7536d5f7b8bb759057089840bcfe"
+hash = "ed23aeda9e67a20d8c3d30bcc0f756d9a59ecc51248cac7b7bcce5a63af63c4a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
@@ -42,7 +42,7 @@ hash = "fa434eee4a0c86f2a7bc971cd67ae455c5781d54f318d731f4f9c025e32617e7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/circuitry.snbt"
-hash = "e290026e1fae18c806c8e9057519892d2ddb5e06960a690342f5f302fa4191c8"
+hash = "85fccc0e2d369be1d930ad227b38185a8587f4e7054438281e690cf07363eecf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_quests.snbt"
@@ -290,7 +290,7 @@ hash = "48d1df287ec1ee9b0c9a724fcfd911926f5c27cd534dd63b62880b115d487e57"
 
 [[files]]
 file = "kubejs/server_scripts/loot_tables.js"
-hash = "5c18a6861496e0c003f95dc7ab885a82f6f293dd8f5664082e209abb60662216"
+hash = "5240da43b73aa442828fd3eadbc2fcee93700d55b569193c441ac00d60d31e63"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
