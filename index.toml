@@ -290,7 +290,7 @@ hash = "48d1df287ec1ee9b0c9a724fcfd911926f5c27cd534dd63b62880b115d487e57"
 
 [[files]]
 file = "kubejs/server_scripts/loot_tables.js"
-hash = "2625fe4b31e2e2b1c58abd5fa4f11c24fcc498ca3bc37e6e8e8379f01226e77c"
+hash = "5c18a6861496e0c003f95dc7ab885a82f6f293dd8f5664082e209abb60662216"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"

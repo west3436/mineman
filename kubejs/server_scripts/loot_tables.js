@@ -667,6 +667,7 @@ LootJS.modifiers((event) => {
         return Item.of(item, count);
     }
 
+    
     // ============================================================================
     // VANILLA CHEST LOOT MODIFICATIONS
     // ============================================================================
@@ -819,7 +820,9 @@ LootJS.modifiers((event) => {
         // Numismatics currency (sailor's pay)
         .addLoot(LootEntry.of('numismatics:cog').setCount(4, 16).setWeight(25))
         .addLoot(LootEntry.of('numismatics:spur').setCount(2, 8).setWeight(20))
-        .addLoot(LootEntry.of('numismatics:bevel').setCount(1, 4).setWeight(10)); (Ocean theme, Tier 1-3) ---
+        .addLoot(LootEntry.of('numismatics:bevel').setCount(1, 4).setWeight(10));
+
+    // --- Underwater Ruins Big (Ocean theme, Tier 1-3) ---
     event.addLootTableModifier('minecraft:chests/underwater_ruin_big')
         .randomChance(0.8)
         .addLoot(LootEntry.of('ae2:sky_stone_block').setCount(1, 4).setWeight(25))
@@ -841,7 +844,9 @@ LootJS.modifiers((event) => {
         .addLoot(LootEntry.of('numismatics:spur').setCount(4, 16).setWeight(30))
         .addLoot(LootEntry.of('numismatics:bevel').setCount(2, 8).setWeight(25))
         .addLoot(LootEntry.of('numismatics:sprocket').setCount(1, 4).setWeight(15))
-        .addLoot(LootEntry.of('numismatics:sun').setCount(1, 2).setWeight(5)); (Illager theme, mix of all tiers) ---
+        .addLoot(LootEntry.of('numismatics:sun').setCount(1, 2).setWeight(5));
+
+    // --- Woodland Mansion (Illager theme, mix of all tiers) ---
     event.addLootTableModifier('minecraft:chests/woodland_mansion')
         .randomChance(0.9)
         .addLoot(LootEntry.of(tier1Decorative[Math.floor(Math.random() * tier1Decorative.length)]).setWeight(25))
