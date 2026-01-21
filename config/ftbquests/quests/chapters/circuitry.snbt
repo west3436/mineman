@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["45B86923718876B3"]
+			dependencies: ["6D41477197225D69"]
 			description: [
 				"&6Welcome to the world of Pneumaticcraft!&r"
 				""

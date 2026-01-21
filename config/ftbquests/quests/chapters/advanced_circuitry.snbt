@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["PNEU_PCB_001"]
+			dependencies: ["PNEU_PCB_T01"]
 			description: [
 				"&6Welcome to Advanced Circuitry!&r"
 				""
