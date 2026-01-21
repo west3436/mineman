@@ -795,7 +795,7 @@ LootJS.modifiers((event) => {
         .addLoot(LootEntry.of('numismatics:bevel').setCount(4, 16).setWeight(25))
         .addLoot(LootEntry.of('numismatics:sprocket').setCount(2, 8).setWeight(20))
         .addLoot(LootEntry.of('numismatics:sun').setCount(1, 3).setWeight(10))
-        .addLoot(LootEntry.of('numismatics:crown').setCount(1, 2).setWeight(3)); (Dimensional theme, Tier 2-4) ---
+        .addLoot(LootEntry.of('numismatics:crown').setCount(1, 2).setWeight(3));
     event.addLootTableModifier('minecraft:chests/ruined_portal')
         .randomChance(0.85)
         .addLoot(LootEntry.of('immersiveengineering:ingot_constantan').setCount(1, 4).setWeight(25))
