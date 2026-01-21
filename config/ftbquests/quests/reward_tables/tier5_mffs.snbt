@@ -1,0 +1,31 @@
+{
+	id: "5A00000000000080"
+	order_index: 48
+	rewards: [
+		{
+			id: "5A00000000000081"
+			item: {
+				Count: 4
+				id: "modularforcefieldsystems:focus_matrix"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000082"
+			item: {
+				Count: 1
+				id: "numismatics:sun"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000083"
+			item: {
+				Count: 4
+				id: "modularforcefieldsystems:battery"
+			}
+			type: "item"
+		}
+	]
+	title: "Force Field Rewards"
+}

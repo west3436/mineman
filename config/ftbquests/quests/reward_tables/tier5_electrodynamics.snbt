@@ -1,0 +1,31 @@
+{
+	id: "5A00000000000001"
+	order_index: 40
+	rewards: [
+		{
+			id: "5A00000000000002"
+			item: {
+				Count: 8
+				id: "electrodynamics:coil_copper"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000003"
+			item: {
+				Count: 1
+				id: "numismatics:sprocket"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000004"
+			item: {
+				Count: 8
+				id: "electrodynamics:circuit_basic"
+			}
+			type: "item"
+		}
+	]
+	title: "Electrodynamics Rewards"
+}

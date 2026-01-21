@@ -24,6 +24,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "05AF2000AA9B65A8"
+				table_id: "1A00000000000001"
 				type: "choice"
 			}]
 			shape: "gear"
@@ -58,6 +59,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4CBD84791204AA5A"
+				table_id: "1A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Gears, cogs, and endless motion"
@@ -97,6 +99,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0A2F314CDB920D00"
+				table_id: "1A00000000000020"
 				type: "choice"
 			}]
 			subtitle: "Heavy industry awaits"
@@ -131,6 +134,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "12D36D36997E3D60"
+				table_id: "1A00000000000030"
 				type: "choice"
 			}]
 			shape: "square"
@@ -162,6 +166,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5AA59A3DE8955E7C"
+				table_id: "1A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Where nature meets machine"
@@ -192,6 +197,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "71AC5DA931CD6BB5"
+				table_id: "1A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "The sky is no longer the limit"
@@ -222,6 +228,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "04AE14E7BAFD3CE4"
+				table_id: "1A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Build like a real factory"
@@ -253,6 +260,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6503D05C1AAE985F"
+				table_id: "1A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Automate with pure logic"
@@ -283,6 +291,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6EC46E7485F473B6"
+				table_id: "1A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Smart item routing"
@@ -312,6 +321,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "696DD2C86BF1870F"
+				table_id: "1A00000000000040"
 				type: "choice"
 			}]
 			subtitle: "Forge iron into steel"
@@ -342,6 +352,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3B559A6DF4295514"
+				table_id: "1A00000000000040"
 				type: "choice"
 			}]
 			subtitle: "Coal goes in, coke comes out"
@@ -372,6 +383,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1F06529D1505DAD3"
+				table_id: "1A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Kinetic coke production"
@@ -402,6 +414,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "62646DEF7A1A0098"
+				table_id: "1A00000000000030"
 				type: "choice"
 			}]
 			subtitle: "Steel through rotation"
@@ -451,6 +464,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "49843DDC81475E1E"
+				table_id: "1A00000000000020"
 				type: "choice"
 			}]
 			subtitle: "Industrial power generation"
@@ -481,6 +495,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "75C8565A18DECC16"
+				table_id: "1A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "All aboard!"

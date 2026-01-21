@@ -1,0 +1,31 @@
+{
+	id: "2A00000000000010"
+	order_index: 11
+	rewards: [
+		{
+			id: "2A00000000000011"
+			item: {
+				Count: 4
+				id: "tfmg:naphtha_bucket"
+			}
+			type: "item"
+		}
+		{
+			id: "2A00000000000012"
+			item: {
+				Count: 4
+				id: "numismatics:spur"
+			}
+			type: "item"
+		}
+		{
+			id: "2A00000000000013"
+			item: {
+				Count: 8
+				id: "tfmg:steel_ingot"
+			}
+			type: "item"
+		}
+	]
+	title: "Refining Rewards"
+}

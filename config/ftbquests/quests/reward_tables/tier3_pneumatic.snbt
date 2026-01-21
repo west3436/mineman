@@ -1,0 +1,31 @@
+{
+	id: "3A00000000000001"
+	order_index: 20
+	rewards: [
+		{
+			id: "3A00000000000002"
+			item: {
+				Count: 8
+				id: "pneumaticcraft:ingot_iron_compressed"
+			}
+			type: "item"
+		}
+		{
+			id: "3A00000000000003"
+			item: {
+				Count: 4
+				id: "numismatics:spur"
+			}
+			type: "item"
+		}
+		{
+			id: "3A00000000000004"
+			item: {
+				Count: 8
+				id: "pneumaticcraft:pressure_tube"
+			}
+			type: "item"
+		}
+	]
+	title: "Pneumatic Rewards"
+}

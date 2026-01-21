@@ -1,0 +1,31 @@
+{
+	id: "1A00000000000040"
+	order_index: 4
+	rewards: [
+		{
+			id: "1A00000000000041"
+			item: {
+				Count: 8
+				id: "immersiveengineering:plate_steel"
+			}
+			type: "item"
+		}
+		{
+			id: "1A00000000000042"
+			item: {
+				Count: 2
+				id: "numismatics:spur"
+			}
+			type: "item"
+		}
+		{
+			id: "1A00000000000043"
+			item: {
+				Count: 8
+				id: "immersiveengineering:component_iron"
+			}
+			type: "item"
+		}
+	]
+	title: "Multiblock Rewards"
+}
