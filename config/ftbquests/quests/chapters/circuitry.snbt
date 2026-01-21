@@ -24,17 +24,16 @@
 				"&7Grab a PneumaticCraft manual to get started!&r"
 			]
 			icon: "patchouli:guide_book"
-			id: "PNEU_START_001"
+			id: "334AE11858E7B59C"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_START_R01"
-				table_id: 3000000000000001L
+				id: "5D5DC45682BA54CF"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Air-powered automation"
 			tasks: [{
-				id: "PNEU_START_T01"
+				id: "4D6046888D06966D"
 				title: "Begin Circuit Production"
 				type: "checkmark"
 			}]
@@ -43,7 +42,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["PNEU_START_001"]
+			dependencies: ["334AE11858E7B59C"]
 			description: [
 				"&6Compressed Iron&r is the foundation of all Pneumaticcraft machines."
 				""
@@ -57,17 +56,16 @@
 				"&7You'll need lots of this material - automate production early!&r"
 			]
 			icon: "pneumaticcraft:ingot_iron_compressed"
-			id: "PNEU_IRON_001"
+			id: "651E1B13C05F65A2"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_IRON_R01"
-				table_id: 3000000000000002L
+				id: "4F0A9061B2316AA3"
 				type: "choice"
 			}]
 			subtitle: "Stronger than steel"
 			tasks: [{
 				count: 16L
-				id: "PNEU_IRON_T01"
+				id: "6C7DCB558E985CBD"
 				item: { Count: 16, id: "pneumaticcraft:ingot_iron_compressed" }
 				type: "item"
 			}]
@@ -76,7 +74,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["PNEU_IRON_001"]
+			dependencies: ["651E1B13C05F65A2"]
 			description: [
 				"&6Pressure Tubes&r transport compressed air between machines."
 				""
@@ -87,23 +85,22 @@
 				""
 				"Tube types:"
 				"• &7Basic&r - Up to 5 bar"
-				"• &bReinforced&r - Up to 10 bar"  
+				"• &bReinforced&r - Up to 10 bar"
 				"• &6Advanced&r - Up to 20 bar"
 				""
 				"&7Use Safety Tube Modules to prevent explosions!&r"
 			]
 			icon: "pneumaticcraft:pressure_tube"
-			id: "PNEU_TUBE_001"
+			id: "623BF8D17E577F06"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_TUBE_R01"
-				table_id: 3000000000000003L
+				id: "41B0B9859540D4B9"
 				type: "choice"
 			}]
 			subtitle: "The arteries of your factory"
 			tasks: [{
 				count: 16L
-				id: "PNEU_TUBE_T01"
+				id: "149EF77A9F55E71A"
 				item: { Count: 16, id: "pneumaticcraft:pressure_tube" }
 				type: "item"
 			}]
@@ -112,7 +109,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["PNEU_IRON_001"]
+			dependencies: ["651E1B13C05F65A2"]
 			description: [
 				"The &6Air Compressor&r is the heart of your pneumatic system."
 				""
@@ -129,16 +126,15 @@
 				"&7You'll need consistent air supply for all pneumatic operations!&r"
 			]
 			icon: "pneumaticcraft:air_compressor"
-			id: "PNEU_COMP_001"
+			id: "41C294424BA12319"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_COMP_R01"
-				table_id: 3000000000000004L
+				id: "5655C877ABB670C7"
 				type: "choice"
 			}]
 			subtitle: "Generating compressed air"
 			tasks: [{
-				id: "PNEU_COMP_T01"
+				id: "546F04B80CD63A28"
 				item: "pneumaticcraft:air_compressor"
 				type: "item"
 			}]
@@ -148,8 +144,8 @@
 		}
 		{
 			dependencies: [
-				"PNEU_TUBE_001"
-				"PNEU_COMP_001"
+				"41C294424BA12319"
+				"623BF8D17E577F06"
 			]
 			description: [
 				"The &6Pressure Chamber&r is a multiblock that uses air pressure to transform items."
@@ -168,30 +164,29 @@
 				"&7Bigger chambers are more efficient!&r"
 			]
 			icon: "pneumaticcraft:pressure_chamber_valve"
-			id: "PNEU_CHAMBER_001"
+			id: "61A9FA21A894BD21"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_CHAMBER_R01"
-				table_id: 3000000000000005L
+				id: "51FF8EE891FF817D"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Multiblock pressure processing"
 			tasks: [
 				{
-					id: "PNEU_CHAMBER_T01"
+					id: "141740743754A732"
 					item: "pneumaticcraft:pressure_chamber_valve"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "PNEU_CHAMBER_T02"
+					id: "592E7EBA29DF7F10"
 					item: { Count: 2, id: "pneumaticcraft:pressure_chamber_interface" }
 					type: "item"
 				}
 				{
 					count: 20L
-					id: "PNEU_CHAMBER_T03"
+					id: "1DFD35C4FF086C57"
 					item: { Count: 20, id: "pneumaticcraft:pressure_chamber_wall" }
 					type: "item"
 				}
@@ -201,7 +196,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["PNEU_CHAMBER_001"]
+			dependencies: ["61A9FA21A894BD21"]
 			description: [
 				"The &6Empty PCB&r is the blank canvas for your circuit boards."
 				""
@@ -217,17 +212,16 @@
 				"&7Make sure you have a steady supply of plastic!&r"
 			]
 			icon: "pneumaticcraft:empty_pcb"
-			id: "PNEU_EMPTY_PCB_001"
+			id: "026042CAF4F25286"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_EMPTY_PCB_R01"
-				table_id: 3000000000000006L
+				id: "792DE9FF85466CE5"
 				type: "choice"
 			}]
 			subtitle: "The blank circuit"
 			tasks: [{
 				count: 4L
-				id: "PNEU_EMPTY_PCB_T01"
+				id: "16A96DC18EDF7D59"
 				item: { Count: 4, id: "pneumaticcraft:empty_pcb" }
 				type: "item"
 			}]
@@ -236,7 +230,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["PNEU_EMPTY_PCB_001"]
+			dependencies: [
+				"5F91C10A6FDC3E68"
+				"026042CAF4F25286"
+			]
 			description: [
 				"The &6UV Light Box&r exposes PCBs to ultraviolet light to create circuit patterns."
 				""
@@ -254,16 +251,15 @@
 				"&7The PCB will change appearance when fully exposed!&r"
 			]
 			icon: "pneumaticcraft:uv_light_box"
-			id: "PNEU_UV_001"
+			id: "203151E589865856"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_UV_R01"
-				table_id: 3000000000000007L
+				id: "3E78A5151E2654A0"
 				type: "choice"
 			}]
 			subtitle: "Light-based patterning"
 			tasks: [{
-				id: "PNEU_UV_T01"
+				id: "3F680A1C3E325C72"
 				item: "pneumaticcraft:uv_light_box"
 				type: "item"
 			}]
@@ -272,7 +268,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["PNEU_EMPTY_PCB_001"]
+			dependencies: ["026042CAF4F25286"]
 			description: [
 				"&6Etching Acid&r is the chemical solution that develops circuit patterns."
 				""
@@ -288,16 +284,15 @@
 				"&7Keep a reserve of etching acid for continuous production!&r"
 			]
 			icon: "pneumaticcraft:etching_acid_bucket"
-			id: "PNEU_ACID_001"
+			id: "5AAFE46858CDE809"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_ACID_R01"
-				table_id: 3000000000000008L
+				id: "595A54C4791A1BDD"
 				type: "choice"
 			}]
 			subtitle: "Corrosive chemistry"
 			tasks: [{
-				id: "PNEU_ACID_T01"
+				id: "3E6637D33A16A008"
 				item: "pneumaticcraft:etching_acid_bucket"
 				type: "item"
 			}]
@@ -307,8 +302,9 @@
 		}
 		{
 			dependencies: [
-				"PNEU_UV_001"
-				"PNEU_ACID_001"
+				"5AAFE46858CDE809"
+				"203151E589865856"
+				"026042CAF4F25286"
 			]
 			description: [
 				"The &6Etching Tank&r finalizes UV-exposed PCBs into usable Unassembled PCBs."
@@ -326,16 +322,15 @@
 				"&7Failed PCBs mean the UV exposure was insufficient!&r"
 			]
 			icon: "pneumaticcraft:etching_tank"
-			id: "PNEU_ETCH_001"
+			id: "0984301FDA46B6BA"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_ETCH_R01"
-				table_id: 3000000000000009L
+				id: "0465324A9BF6F276"
 				type: "choice"
 			}]
 			subtitle: "Chemical development"
 			tasks: [{
-				id: "PNEU_ETCH_T01"
+				id: "74C06A09FFF7208B"
 				item: "pneumaticcraft:etching_tank"
 				type: "item"
 			}]
@@ -344,7 +339,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["PNEU_ETCH_001"]
+			dependencies: ["0984301FDA46B6BA"]
 			description: [
 				"The &6Unassembled PCB&r is an etched circuit board ready for final assembly."
 				""
@@ -356,17 +351,16 @@
 				"&7This represents the transition from chemistry to electronics!&r"
 			]
 			icon: "pneumaticcraft:unassembled_pcb"
-			id: "PNEU_UNASM_001"
+			id: "55B68DD114192336"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_UNASM_R01"
-				table_id: 3000000000000010L
+				id: "767B4B936F3888F5"
 				type: "choice"
 			}]
 			subtitle: "Ready for components"
 			tasks: [{
 				count: 4L
-				id: "PNEU_UNASM_T01"
+				id: "00E0E07C1AD60EC0"
 				item: { Count: 4, id: "pneumaticcraft:unassembled_pcb" }
 				type: "item"
 			}]
@@ -375,7 +369,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["PNEU_UNASM_001"]
+			dependencies: ["55B68DD114192336"]
 			description: [
 				"&6Congratulations!&r You've created your first Printed Circuit Board!"
 				""
@@ -390,18 +384,17 @@
 				"&7This is the gateway to truly automated factories!&r"
 			]
 			icon: "pneumaticcraft:printed_circuit_board"
-			id: "PNEU_PCB_001"
+			id: "0A26FFCB6FF2D334"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_PCB_R01"
-				table_id: 3000000000000011L
+				id: "0D3522AA961AB077"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "The brain of the machine"
 			tasks: [{
 				count: 4L
-				id: "PNEU_PCB_T01"
+				id: "3314888E8DBE81CE"
 				item: { Count: 4, id: "pneumaticcraft:printed_circuit_board" }
 				type: "item"
 			}]
@@ -410,7 +403,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["PNEU_PCB_001"]
+			dependencies: ["0A26FFCB6FF2D334"]
 			description: [
 				"The &6Assembly System&r automates complex crafting using programmable machines."
 				""
@@ -429,32 +422,31 @@
 				"&7PCBs can be auto-crafted here!&r"
 			]
 			icon: "pneumaticcraft:assembly_controller"
-			id: "PNEU_ASSEMBLY_001"
+			id: "7E81F0F556650ACD"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_ASSEMBLY_R01"
-				table_id: 3000000000000012L
+				id: "3E3AB30C0AE9FC6B"
 				type: "choice"
 			}]
 			subtitle: "Automated precision crafting"
 			tasks: [
 				{
-					id: "PNEU_ASSEMBLY_T01"
+					id: "195A32B4FCA58C5C"
 					item: "pneumaticcraft:assembly_controller"
 					type: "item"
 				}
 				{
-					id: "PNEU_ASSEMBLY_T02"
+					id: "5D27D49544203AB9"
 					item: "pneumaticcraft:assembly_platform"
 					type: "item"
 				}
 				{
-					id: "PNEU_ASSEMBLY_T03"
+					id: "5E7C56429178FCBA"
 					item: "pneumaticcraft:assembly_drill"
 					type: "item"
 				}
 				{
-					id: "PNEU_ASSEMBLY_T04"
+					id: "4DC5747196923B94"
 					item: "pneumaticcraft:assembly_laser"
 					type: "item"
 				}
@@ -464,7 +456,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["PNEU_PCB_001"]
+			dependencies: ["0A26FFCB6FF2D334"]
 			description: [
 				"The &6Programmer&r allows you to create programs for Drones and other devices."
 				""
@@ -482,16 +474,15 @@
 				"&7This opens up incredible automation possibilities!&r"
 			]
 			icon: "pneumaticcraft:programmer"
-			id: "PNEU_PROGRAMMER_001"
+			id: "42CB3076EB02F01A"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_PROGRAMMER_R01"
-				table_id: 3000000000000013L
+				id: "27205630667104F2"
 				type: "choice"
 			}]
 			subtitle: "Visual programming"
 			tasks: [{
-				id: "PNEU_PROGRAMMER_T01"
+				id: "25A74493E9256701"
 				item: "pneumaticcraft:programmer"
 				type: "item"
 			}]
@@ -500,7 +491,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["PNEU_CHAMBER_001"]
+			dependencies: ["54686F706134AD95"]
 			description: [
 				"The &6Refinery&r processes crude oil into various fuel products."
 				""
@@ -518,24 +509,23 @@
 				"&7LPG is essential for Pneumaticcraft's plastic!&r"
 			]
 			icon: "pneumaticcraft:refinery"
-			id: "PNEU_REFINERY_001"
+			id: "6CDA6DB206B0EC5C"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_REFINERY_R01"
-				table_id: 3000000000000014L
+				id: "25F1C6695D7761AA"
 				type: "choice"
 			}]
 			subtitle: "Oil processing"
 			tasks: [
 				{
 					count: 4L
-					id: "PNEU_REFINERY_T01"
+					id: "25018A16245F3FEE"
 					item: { Count: 4, id: "pneumaticcraft:refinery" }
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "PNEU_REFINERY_T02"
+					id: "2DE666D76F1EC19A"
 					item: { Count: 4, id: "pneumaticcraft:refinery_output" }
 					type: "item"
 				}
@@ -545,7 +535,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["PNEU_REFINERY_001"]
+			dependencies: ["6CDA6DB206B0EC5C"]
 			description: [
 				"The &6Thermopneumatic Processing Plant&r combines heat, pressure, and chemistry."
 				""
@@ -562,16 +552,15 @@
 				"&7This is Pneumaticcraft's native plastic source!&r"
 			]
 			icon: "pneumaticcraft:thermopneumatic_processing_plant"
-			id: "PNEU_THERMO_001"
+			id: "5F91C10A6FDC3E68"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_THERMO_R01"
-				table_id: 3000000000000015L
+				id: "36022C539C2667CC"
 				type: "choice"
 			}]
 			subtitle: "Heat + Pressure + Chemistry"
 			tasks: [{
-				id: "PNEU_THERMO_T01"
+				id: "6B54DE9E41F944CF"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 				type: "item"
 			}]
@@ -580,7 +569,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["PNEU_COMP_001"]
+			dependencies: ["41C294424BA12319"]
 			description: [
 				"The &6Liquid Compressor&r burns liquid fuels for more efficient air production."
 				""
@@ -598,16 +587,15 @@
 				"&7Pair with your refinery for automated fuel supply!&r"
 			]
 			icon: "pneumaticcraft:liquid_compressor"
-			id: "PNEU_LIQCOMP_001"
+			id: "5EB3A16B30A25F71"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_LIQCOMP_R01"
-				table_id: 3000000000000016L
+				id: "1E59C2908A74C644"
 				type: "choice"
 			}]
 			subtitle: "Liquid-fueled compression"
 			tasks: [{
-				id: "PNEU_LIQCOMP_T01"
+				id: "1356A7FA930312A7"
 				item: "pneumaticcraft:liquid_compressor"
 				type: "item"
 			}]
@@ -616,7 +604,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["PNEU_TUBE_001"]
+			dependencies: ["623BF8D17E577F06"]
 			description: [
 				"&6Tube Modules&r add functionality to pressure tubes."
 				""
@@ -633,22 +621,21 @@
 				"&7Safety modules should be your first priority!&r"
 			]
 			icon: "pneumaticcraft:safety_tube_module"
-			id: "PNEU_MODULES_001"
+			id: "54686F706134AD95"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "PNEU_MODULES_R01"
-				table_id: 3000000000000017L
+				id: "76BB109BD63504C6"
 				type: "choice"
 			}]
 			subtitle: "Enhance your tubes"
 			tasks: [
 				{
-					id: "PNEU_MODULES_T01"
+					id: "3D5A3B8BE0FC8ED3"
 					item: "pneumaticcraft:safety_tube_module"
 					type: "item"
 				}
 				{
-					id: "PNEU_MODULES_T02"
+					id: "139850504DB67D78"
 					item: "pneumaticcraft:pressure_gauge_module"
 					type: "item"
 				}
@@ -656,410 +643,6 @@
 			title: "Tube Modules"
 			x: -3.0d
 			y: -2.5d
-		}
-	]
-	reward_tables: [
-		{
-			id: 3000000000000001L
-			rewards: [
-				{
-					id: "CRT001A"
-					item: "patchouli:guide_book"
-					tag: "{\"patchouli:book\":\"pneumaticcraft:book\"}"
-					type: "item"
-				}
-				{
-					id: "CRT001B"
-					item: "pneumaticcraft:pressure_gauge"
-					type: "item"
-				}
-				{
-					id: "CRT001C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Pneumatic Starter"
-		}
-		{
-			id: 3000000000000002L
-			rewards: [
-				{
-					id: "CRT002A"
-					item: "pneumaticcraft:ingot_iron_compressed"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "CRT002B"
-					item: "minecraft:iron_ingot"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "CRT002C"
-					item: "numismatics:spur"
-					count: 6
-					type: "item"
-				}
-			]
-			title: "Iron Supplies"
-		}
-		{
-			id: 3000000000000003L
-			rewards: [
-				{
-					id: "CRT003A"
-					item: "pneumaticcraft:pressure_tube"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "CRT003B"
-					item: "pneumaticcraft:tube_junction"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "CRT003C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Tube Kit"
-		}
-		{
-			id: 3000000000000004L
-			rewards: [
-				{
-					id: "CRT004A"
-					item: "minecraft:coal"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "CRT004B"
-					item: "pneumaticcraft:pressure_gauge"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "CRT004C"
-					item: "numismatics:spur"
-					count: 6
-					type: "item"
-				}
-			]
-			title: "Compressor Fuel"
-		}
-		{
-			id: 3000000000000005L
-			rewards: [
-				{
-					id: "CRT005A"
-					item: "pneumaticcraft:pressure_chamber_wall"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "CRT005B"
-					item: "pneumaticcraft:pressure_chamber_glass"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "CRT005C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Chamber Materials"
-		}
-		{
-			id: 3000000000000006L
-			rewards: [
-				{
-					id: "CRT006A"
-					item: "pneumaticcraft:empty_pcb"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "CRT006B"
-					item: "tfmg:plastic_sheet"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "CRT006C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "PCB Materials"
-		}
-		{
-			id: 3000000000000007L
-			rewards: [
-				{
-					id: "CRT007A"
-					item: "minecraft:glowstone_dust"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "CRT007B"
-					item: "pneumaticcraft:pressure_tube"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "CRT007C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "UV Supplies"
-		}
-		{
-			id: 3000000000000008L
-			rewards: [
-				{
-					id: "CRT008A"
-					item: "pneumaticcraft:etching_acid_bucket"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "CRT008B"
-					item: "minecraft:bucket"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "CRT008C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Chemistry Supplies"
-		}
-		{
-			id: 3000000000000009L
-			rewards: [
-				{
-					id: "CRT009A"
-					item: "pneumaticcraft:vortex_tube"
-					type: "item"
-				}
-				{
-					id: "CRT009B"
-					item: "minecraft:lava_bucket"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "CRT009C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Heating Equipment"
-		}
-		{
-			id: 3000000000000010L
-			rewards: [
-				{
-					id: "CRT010A"
-					item: "pneumaticcraft:unassembled_pcb"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "CRT010B"
-					item: "minecraft:redstone"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "CRT010C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Electronics Materials"
-		}
-		{
-			id: 3000000000000011L
-			rewards: [
-				{
-					id: "CRT011A"
-					item: "pneumaticcraft:printed_circuit_board"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "CRT011B"
-					item: "pneumaticcraft:advanced_pressure_tube"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "CRT011C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Circuit Mastery"
-		}
-		{
-			id: 3000000000000012L
-			rewards: [
-				{
-					id: "CRT012A"
-					item: "pneumaticcraft:assembly_io_unit_import"
-					type: "item"
-				}
-				{
-					id: "CRT012B"
-					item: "pneumaticcraft:assembly_io_unit_export"
-					type: "item"
-				}
-				{
-					id: "CRT012C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Assembly IO"
-		}
-		{
-			id: 3000000000000013L
-			rewards: [
-				{
-					id: "CRT013A"
-					item: "pneumaticcraft:gps_tool"
-					type: "item"
-				}
-				{
-					id: "CRT013B"
-					item: "pneumaticcraft:gps_area_tool"
-					type: "item"
-				}
-				{
-					id: "CRT013C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Programming Tools"
-		}
-		{
-			id: 3000000000000014L
-			rewards: [
-				{
-					id: "CRT014A"
-					item: "pneumaticcraft:refinery_output"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "CRT014B"
-					item: "create:fluid_tank"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "CRT014C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Refinery Expansion"
-		}
-		{
-			id: 3000000000000015L
-			rewards: [
-				{
-					id: "CRT015A"
-					item: "pneumaticcraft:lpg_bucket"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "CRT015B"
-					item: "minecraft:coal"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "CRT015C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Thermopneumatic Materials"
-		}
-		{
-			id: 3000000000000016L
-			rewards: [
-				{
-					id: "CRT016A"
-					item: "pneumaticcraft:small_tank"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "CRT016B"
-					item: "create:fluid_pipe"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "CRT016C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Fluid Storage"
-		}
-		{
-			id: 3000000000000017L
-			rewards: [
-				{
-					id: "CRT017A"
-					item: "pneumaticcraft:regulator_tube_module"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "CRT017B"
-					item: "pneumaticcraft:air_grate_module"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "CRT017C"
-					item: "numismatics:spur"
-					count: 8
-					type: "item"
-				}
-			]
-			title: "Module Pack"
 		}
 	]
 	title: "Basic Circuitry"

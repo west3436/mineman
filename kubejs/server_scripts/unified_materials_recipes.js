@@ -1,282 +1,440 @@
 // priority: 99
-// Unified Materials - Recipe Output Unification
-// This script modifies recipes to output the primary mod's items
+// Unified Materials - Recipe Input/Output Unification
+// This script modifies recipes to:
+// - Replace OUTPUTS with the primary mod's item
+// - Replace INPUTS with the forge tag (so any unified item works)
 // Priority order: Create > Immersive Engineering > Mekanism > TFMG > Others
 
 /**
- * Primary Item Mapping:
- * These are the "canonical" items that all recipes should output
+ * Item Unification Mapping
+ * Each entry contains:
+ * - tag: The forge tag to use for inputs
+ * - primary: The primary item to use for outputs
+ * - variants: All item variants that should be unified
  */
-const UNIFIED_OUTPUTS = {
-    // Ingots
-    'forge:ingots/lead': 'immersiveengineering:ingot_lead',
-    'forge:ingots/silver': 'immersiveengineering:ingot_silver',
-    'forge:ingots/tin': 'mekanism:ingot_tin',
-    'forge:ingots/uranium': 'immersiveengineering:ingot_uranium',
-    'forge:ingots/nickel': 'immersiveengineering:ingot_nickel',
-    'forge:ingots/aluminum': 'immersiveengineering:ingot_aluminum',
-    'forge:ingots/steel': 'immersiveengineering:ingot_steel',
-    'forge:ingots/bronze': 'mekanism:ingot_bronze',
-    'forge:ingots/lithium': 'tfmg:lithium_ingot',
-    'forge:ingots/constantan': 'immersiveengineering:ingot_constantan',
-    'forge:ingots/electrum': 'immersiveengineering:ingot_electrum',
-    'forge:ingots/zinc': 'create:zinc_ingot',
-    'forge:ingots/brass': 'create:brass_ingot',
-    'forge:ingots/osmium': 'mekanism:ingot_osmium',
+const ITEM_UNIFICATIONS = [
+    // ==================== INGOTS ====================
+    {
+        tag: 'forge:ingots/lead',
+        primary: 'immersiveengineering:ingot_lead',
+        variants: ['immersiveengineering:ingot_lead', 'mekanism:ingot_lead', 'tfmg:lead_ingot', 'electrodynamics:ingotlead', 'cgs:lead_ingot']
+    },
+    {
+        tag: 'forge:ingots/silver',
+        primary: 'immersiveengineering:ingot_silver',
+        variants: ['immersiveengineering:ingot_silver', 'electrodynamics:ingotsilver']
+    },
+    {
+        tag: 'forge:ingots/tin',
+        primary: 'mekanism:ingot_tin',
+        variants: ['mekanism:ingot_tin', 'forestry:ingot_tin', 'electrodynamics:ingottin']
+    },
+    {
+        tag: 'forge:ingots/uranium',
+        primary: 'immersiveengineering:ingot_uranium',
+        variants: ['immersiveengineering:ingot_uranium', 'mekanism:ingot_uranium']
+    },
+    {
+        tag: 'forge:ingots/nickel',
+        primary: 'immersiveengineering:ingot_nickel',
+        variants: ['immersiveengineering:ingot_nickel', 'tfmg:nickel_ingot']
+    },
+    {
+        tag: 'forge:ingots/aluminum',
+        primary: 'immersiveengineering:ingot_aluminum',
+        variants: ['immersiveengineering:ingot_aluminum', 'tfmg:aluminum_ingot', 'electrodynamics:ingotaluminum']
+    },
+    {
+        tag: 'forge:ingots/steel',
+        primary: 'immersiveengineering:ingot_steel',
+        variants: ['immersiveengineering:ingot_steel', 'mekanism:ingot_steel', 'tfmg:steel_ingot', 'electrodynamics:ingotsteel', 'cgs:steel_ingot', 'industrialrenewal:ingot_steel']
+    },
+    {
+        tag: 'forge:ingots/bronze',
+        primary: 'mekanism:ingot_bronze',
+        variants: ['mekanism:ingot_bronze', 'forestry:ingot_bronze', 'electrodynamics:ingotbronze']
+    },
+    {
+        tag: 'forge:ingots/lithium',
+        primary: 'tfmg:lithium_ingot',
+        variants: ['tfmg:lithium_ingot', 'electrodynamics:ingotlithium']
+    },
+    {
+        tag: 'forge:ingots/constantan',
+        primary: 'immersiveengineering:ingot_constantan',
+        variants: ['immersiveengineering:ingot_constantan', 'tfmg:constantan_ingot']
+    },
+    {
+        tag: 'forge:ingots/electrum',
+        primary: 'immersiveengineering:ingot_electrum',
+        variants: ['immersiveengineering:ingot_electrum']
+    },
+    {
+        tag: 'forge:ingots/zinc',
+        primary: 'create:zinc_ingot',
+        variants: ['create:zinc_ingot']
+    },
+    {
+        tag: 'forge:ingots/brass',
+        primary: 'create:brass_ingot',
+        variants: ['create:brass_ingot']
+    },
+    {
+        tag: 'forge:ingots/osmium',
+        primary: 'mekanism:ingot_osmium',
+        variants: ['mekanism:ingot_osmium']
+    },
 
-    // Nuggets
-    'forge:nuggets/lead': 'immersiveengineering:nugget_lead',
-    'forge:nuggets/silver': 'immersiveengineering:nugget_silver',
-    'forge:nuggets/tin': 'mekanism:nugget_tin',
-    'forge:nuggets/uranium': 'immersiveengineering:nugget_uranium',
-    'forge:nuggets/nickel': 'immersiveengineering:nugget_nickel',
-    'forge:nuggets/aluminum': 'immersiveengineering:nugget_aluminum',
-    'forge:nuggets/steel': 'immersiveengineering:nugget_steel',
-    'forge:nuggets/bronze': 'mekanism:nugget_bronze',
-    'forge:nuggets/copper': 'create:copper_nugget',
-    'forge:nuggets/zinc': 'create:zinc_nugget',
-    'forge:nuggets/brass': 'create:brass_nugget',
-    'forge:nuggets/osmium': 'mekanism:nugget_osmium',
-    'forge:nuggets/constantan': 'immersiveengineering:nugget_constantan',
-    'forge:nuggets/electrum': 'immersiveengineering:nugget_electrum',
+    // ==================== NUGGETS ====================
+    {
+        tag: 'forge:nuggets/lead',
+        primary: 'immersiveengineering:nugget_lead',
+        variants: ['immersiveengineering:nugget_lead', 'mekanism:nugget_lead', 'tfmg:lead_nugget', 'cgs:lead_nugget']
+    },
+    {
+        tag: 'forge:nuggets/silver',
+        primary: 'immersiveengineering:nugget_silver',
+        variants: ['immersiveengineering:nugget_silver', 'electrodynamics:nuggetsilver']
+    },
+    {
+        tag: 'forge:nuggets/tin',
+        primary: 'mekanism:nugget_tin',
+        variants: ['mekanism:nugget_tin', 'electrodynamics:nuggettin']
+    },
+    {
+        tag: 'forge:nuggets/uranium',
+        primary: 'immersiveengineering:nugget_uranium',
+        variants: ['immersiveengineering:nugget_uranium', 'mekanism:nugget_uranium']
+    },
+    {
+        tag: 'forge:nuggets/nickel',
+        primary: 'immersiveengineering:nugget_nickel',
+        variants: ['immersiveengineering:nugget_nickel', 'tfmg:nickel_nugget']
+    },
+    {
+        tag: 'forge:nuggets/aluminum',
+        primary: 'immersiveengineering:nugget_aluminum',
+        variants: ['immersiveengineering:nugget_aluminum', 'tfmg:aluminum_nugget']
+    },
+    {
+        tag: 'forge:nuggets/steel',
+        primary: 'immersiveengineering:nugget_steel',
+        variants: ['immersiveengineering:nugget_steel', 'mekanism:nugget_steel', 'tfmg:steel_nugget', 'electrodynamics:nuggetsteel', 'cgs:steel_nugget']
+    },
+    {
+        tag: 'forge:nuggets/bronze',
+        primary: 'mekanism:nugget_bronze',
+        variants: ['mekanism:nugget_bronze']
+    },
+    {
+        tag: 'forge:nuggets/copper',
+        primary: 'create:copper_nugget',
+        variants: ['create:copper_nugget', 'immersiveengineering:nugget_copper', 'agricraft:copper_nugget', 'electrodynamics:nuggetcopper']
+    },
+    {
+        tag: 'forge:nuggets/zinc',
+        primary: 'create:zinc_nugget',
+        variants: ['create:zinc_nugget']
+    },
+    {
+        tag: 'forge:nuggets/brass',
+        primary: 'create:brass_nugget',
+        variants: ['create:brass_nugget']
+    },
+    {
+        tag: 'forge:nuggets/osmium',
+        primary: 'mekanism:nugget_osmium',
+        variants: ['mekanism:nugget_osmium']
+    },
+    {
+        tag: 'forge:nuggets/constantan',
+        primary: 'immersiveengineering:nugget_constantan',
+        variants: ['immersiveengineering:nugget_constantan', 'tfmg:constantan_nugget']
+    },
+    {
+        tag: 'forge:nuggets/electrum',
+        primary: 'immersiveengineering:nugget_electrum',
+        variants: ['immersiveengineering:nugget_electrum']
+    },
 
-    // Raw Materials
-    'forge:raw_materials/lead': 'immersiveengineering:raw_lead',
-    'forge:raw_materials/silver': 'immersiveengineering:raw_silver',
-    'forge:raw_materials/tin': 'mekanism:raw_tin',
-    'forge:raw_materials/uranium': 'immersiveengineering:raw_uranium',
-    'forge:raw_materials/nickel': 'immersiveengineering:raw_nickel',
-    'forge:raw_materials/aluminum': 'immersiveengineering:raw_aluminum',
-    'forge:raw_materials/lithium': 'tfmg:raw_lithium',
-    'forge:raw_materials/zinc': 'create:raw_zinc',
-    'forge:raw_materials/osmium': 'mekanism:raw_osmium',
+    // ==================== RAW MATERIALS ====================
+    {
+        tag: 'forge:raw_materials/lead',
+        primary: 'immersiveengineering:raw_lead',
+        variants: ['immersiveengineering:raw_lead', 'mekanism:raw_lead', 'tfmg:raw_lead', 'cgs:raw_lead']
+    },
+    {
+        tag: 'forge:raw_materials/silver',
+        primary: 'immersiveengineering:raw_silver',
+        variants: ['immersiveengineering:raw_silver', 'electrodynamics:raworesilver']
+    },
+    {
+        tag: 'forge:raw_materials/tin',
+        primary: 'mekanism:raw_tin',
+        variants: ['mekanism:raw_tin', 'forestry:raw_tin', 'electrodynamics:raworetin']
+    },
+    {
+        tag: 'forge:raw_materials/uranium',
+        primary: 'immersiveengineering:raw_uranium',
+        variants: ['immersiveengineering:raw_uranium', 'mekanism:raw_uranium', 'electrodynamics:raworeuranium']
+    },
+    {
+        tag: 'forge:raw_materials/nickel',
+        primary: 'immersiveengineering:raw_nickel',
+        variants: ['immersiveengineering:raw_nickel', 'tfmg:raw_nickel']
+    },
+    {
+        tag: 'forge:raw_materials/aluminum',
+        primary: 'immersiveengineering:raw_aluminum',
+        variants: ['immersiveengineering:raw_aluminum']
+    },
+    {
+        tag: 'forge:raw_materials/lithium',
+        primary: 'tfmg:raw_lithium',
+        variants: ['tfmg:raw_lithium', 'electrodynamics:raworelepidolite']
+    },
+    {
+        tag: 'forge:raw_materials/zinc',
+        primary: 'create:raw_zinc',
+        variants: ['create:raw_zinc']
+    },
+    {
+        tag: 'forge:raw_materials/osmium',
+        primary: 'mekanism:raw_osmium',
+        variants: ['mekanism:raw_osmium']
+    },
 
-    // Dusts
-    'forge:dusts/lead': 'immersiveengineering:dust_lead',
-    'forge:dusts/silver': 'immersiveengineering:dust_silver',
-    'forge:dusts/tin': 'mekanism:dust_tin',
-    'forge:dusts/uranium': 'immersiveengineering:dust_uranium',
-    'forge:dusts/nickel': 'immersiveengineering:dust_nickel',
-    'forge:dusts/aluminum': 'immersiveengineering:dust_aluminum',
-    'forge:dusts/steel': 'immersiveengineering:dust_steel',
-    'forge:dusts/bronze': 'mekanism:dust_bronze',
-    'forge:dusts/copper': 'immersiveengineering:dust_copper',
-    'forge:dusts/iron': 'immersiveengineering:dust_iron',
-    'forge:dusts/gold': 'immersiveengineering:dust_gold',
-    'forge:dusts/sulfur': 'immersiveengineering:dust_sulfur',
-    'forge:dusts/lithium': 'mekanism:dust_lithium',
-    'forge:dusts/osmium': 'mekanism:dust_osmium',
-    'forge:dusts/electrum': 'immersiveengineering:dust_electrum',
-    'forge:dusts/constantan': 'immersiveengineering:dust_constantan',
+    // ==================== DUSTS ====================
+    {
+        tag: 'forge:dusts/lead',
+        primary: 'immersiveengineering:dust_lead',
+        variants: ['immersiveengineering:dust_lead', 'mekanism:dust_lead', 'electrodynamics:dustlead']
+    },
+    {
+        tag: 'forge:dusts/silver',
+        primary: 'immersiveengineering:dust_silver',
+        variants: ['immersiveengineering:dust_silver', 'electrodynamics:dustsilver']
+    },
+    {
+        tag: 'forge:dusts/tin',
+        primary: 'mekanism:dust_tin',
+        variants: ['mekanism:dust_tin', 'electrodynamics:dusttin']
+    },
+    {
+        tag: 'forge:dusts/uranium',
+        primary: 'immersiveengineering:dust_uranium',
+        variants: ['immersiveengineering:dust_uranium', 'mekanism:dust_uranium']
+    },
+    {
+        tag: 'forge:dusts/nickel',
+        primary: 'immersiveengineering:dust_nickel',
+        variants: ['immersiveengineering:dust_nickel']
+    },
+    {
+        tag: 'forge:dusts/aluminum',
+        primary: 'immersiveengineering:dust_aluminum',
+        variants: ['immersiveengineering:dust_aluminum']
+    },
+    {
+        tag: 'forge:dusts/steel',
+        primary: 'immersiveengineering:dust_steel',
+        variants: ['immersiveengineering:dust_steel', 'mekanism:dust_steel', 'electrodynamics:duststeel']
+    },
+    {
+        tag: 'forge:dusts/bronze',
+        primary: 'mekanism:dust_bronze',
+        variants: ['mekanism:dust_bronze', 'electrodynamics:dustbronze']
+    },
+    {
+        tag: 'forge:dusts/copper',
+        primary: 'immersiveengineering:dust_copper',
+        variants: ['immersiveengineering:dust_copper', 'mekanism:dust_copper', 'electrodynamics:dustcopper']
+    },
+    {
+        tag: 'forge:dusts/iron',
+        primary: 'immersiveengineering:dust_iron',
+        variants: ['immersiveengineering:dust_iron', 'mekanism:dust_iron', 'electrodynamics:dustiron']
+    },
+    {
+        tag: 'forge:dusts/gold',
+        primary: 'immersiveengineering:dust_gold',
+        variants: ['immersiveengineering:dust_gold', 'mekanism:dust_gold', 'electrodynamics:dustgold']
+    },
+    {
+        tag: 'forge:dusts/sulfur',
+        primary: 'immersiveengineering:dust_sulfur',
+        variants: ['immersiveengineering:dust_sulfur', 'mekanism:dust_sulfur', 'tfmg:sulfur_dust', 'electrodynamics:dustsulfur']
+    },
+    {
+        tag: 'forge:dusts/lithium',
+        primary: 'mekanism:dust_lithium',
+        variants: ['mekanism:dust_lithium', 'electrodynamics:dustlithium']
+    },
+    {
+        tag: 'forge:dusts/osmium',
+        primary: 'mekanism:dust_osmium',
+        variants: ['mekanism:dust_osmium']
+    },
+    {
+        tag: 'forge:dusts/electrum',
+        primary: 'immersiveengineering:dust_electrum',
+        variants: ['immersiveengineering:dust_electrum']
+    },
+    {
+        tag: 'forge:dusts/constantan',
+        primary: 'immersiveengineering:dust_constantan',
+        variants: ['immersiveengineering:dust_constantan']
+    },
 
-    // Plates
-    'forge:plates/lead': 'immersiveengineering:plate_lead',
-    'forge:plates/silver': 'immersiveengineering:plate_silver',
-    'forge:plates/uranium': 'immersiveengineering:plate_uranium',
-    'forge:plates/nickel': 'immersiveengineering:plate_nickel',
-    'forge:plates/aluminum': 'immersiveengineering:plate_aluminum',
-    'forge:plates/steel': 'immersiveengineering:plate_steel',
-    'forge:plates/copper': 'immersiveengineering:plate_copper',
-    'forge:plates/iron': 'immersiveengineering:plate_iron',
-    'forge:plates/gold': 'immersiveengineering:plate_gold',
-    'forge:plates/electrum': 'immersiveengineering:plate_electrum',
-    'forge:plates/constantan': 'immersiveengineering:plate_constantan',
+    // ==================== PLATES ====================
+    {
+        tag: 'forge:plates/lead',
+        primary: 'immersiveengineering:plate_lead',
+        variants: ['immersiveengineering:plate_lead', 'electrodynamics:platelead']
+    },
+    {
+        tag: 'forge:plates/silver',
+        primary: 'immersiveengineering:plate_silver',
+        variants: ['immersiveengineering:plate_silver']
+    },
+    {
+        tag: 'forge:plates/uranium',
+        primary: 'immersiveengineering:plate_uranium',
+        variants: ['immersiveengineering:plate_uranium']
+    },
+    {
+        tag: 'forge:plates/nickel',
+        primary: 'immersiveengineering:plate_nickel',
+        variants: ['immersiveengineering:plate_nickel']
+    },
+    {
+        tag: 'forge:plates/aluminum',
+        primary: 'immersiveengineering:plate_aluminum',
+        variants: ['immersiveengineering:plate_aluminum', 'electrodynamics:platealuminum']
+    },
+    {
+        tag: 'forge:plates/steel',
+        primary: 'immersiveengineering:plate_steel',
+        variants: ['immersiveengineering:plate_steel', 'electrodynamics:platesteel']
+    },
+    {
+        tag: 'forge:plates/copper',
+        primary: 'immersiveengineering:plate_copper',
+        variants: ['immersiveengineering:plate_copper', 'electrodynamics:platecopper']
+    },
+    {
+        tag: 'forge:plates/iron',
+        primary: 'immersiveengineering:plate_iron',
+        variants: ['immersiveengineering:plate_iron', 'electrodynamics:plateiron']
+    },
+    {
+        tag: 'forge:plates/gold',
+        primary: 'immersiveengineering:plate_gold',
+        variants: ['immersiveengineering:plate_gold']
+    },
+    {
+        tag: 'forge:plates/electrum',
+        primary: 'immersiveengineering:plate_electrum',
+        variants: ['immersiveengineering:plate_electrum']
+    },
+    {
+        tag: 'forge:plates/constantan',
+        primary: 'immersiveengineering:plate_constantan',
+        variants: ['immersiveengineering:plate_constantan']
+    },
 
-    // Storage Blocks (Raw)
-    'forge:storage_blocks/raw_lead': 'immersiveengineering:raw_block_lead',
-    'forge:storage_blocks/raw_silver': 'immersiveengineering:raw_block_silver',
-    'forge:storage_blocks/raw_tin': 'mekanism:block_raw_tin',
-    'forge:storage_blocks/raw_uranium': 'immersiveengineering:raw_block_uranium',
-    'forge:storage_blocks/raw_nickel': 'immersiveengineering:raw_block_nickel',
-    'forge:storage_blocks/raw_aluminum': 'immersiveengineering:raw_block_aluminum',
-    'forge:storage_blocks/raw_lithium': 'tfmg:raw_lithium_block',
-    'forge:storage_blocks/raw_zinc': 'create:raw_zinc_block',
-    'forge:storage_blocks/raw_osmium': 'mekanism:block_raw_osmium',
-};
+    // ==================== RAW STORAGE BLOCKS ====================
+    {
+        tag: 'forge:storage_blocks/raw_lead',
+        primary: 'immersiveengineering:raw_block_lead',
+        variants: ['immersiveengineering:raw_block_lead', 'mekanism:block_raw_lead', 'tfmg:raw_lead_block', 'electrodynamics:raworeblocklead', 'cgs:raw_lead_block']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_silver',
+        primary: 'immersiveengineering:raw_block_silver',
+        variants: ['immersiveengineering:raw_block_silver', 'electrodynamics:raworeblocksilver']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_tin',
+        primary: 'mekanism:block_raw_tin',
+        variants: ['mekanism:block_raw_tin', 'forestry:raw_tin_block', 'electrodynamics:raworeblocktin']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_uranium',
+        primary: 'immersiveengineering:raw_block_uranium',
+        variants: ['immersiveengineering:raw_block_uranium', 'mekanism:block_raw_uranium', 'electrodynamics:raworeblockuranium']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_nickel',
+        primary: 'immersiveengineering:raw_block_nickel',
+        variants: ['immersiveengineering:raw_block_nickel', 'tfmg:raw_nickel_block']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_aluminum',
+        primary: 'immersiveengineering:raw_block_aluminum',
+        variants: ['immersiveengineering:raw_block_aluminum']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_lithium',
+        primary: 'tfmg:raw_lithium_block',
+        variants: ['tfmg:raw_lithium_block']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_zinc',
+        primary: 'create:raw_zinc_block',
+        variants: ['create:raw_zinc_block']
+    },
+    {
+        tag: 'forge:storage_blocks/raw_osmium',
+        primary: 'mekanism:block_raw_osmium',
+        variants: ['mekanism:block_raw_osmium']
+    },
 
-// Items to replace -> canonical item
-const ITEM_REPLACEMENTS = {
-    // Lead Ingots (Primary: IE)
-    'mekanism:ingot_lead': 'immersiveengineering:ingot_lead',
-    'tfmg:lead_ingot': 'immersiveengineering:ingot_lead',
-    'electrodynamics:ingotlead': 'immersiveengineering:ingot_lead',
-    'cgs:lead_ingot': 'immersiveengineering:ingot_lead',
+    // ==================== CAST IRON ====================
+    {
+        tag: 'forge:ingots/cast_iron',
+        primary: 'createbigcannons:cast_iron_ingot',
+        variants: ['createbigcannons:cast_iron_ingot', 'tfmg:cast_iron_ingot']
+    },
+    {
+        tag: 'forge:nuggets/cast_iron',
+        primary: 'createbigcannons:cast_iron_nugget',
+        variants: ['createbigcannons:cast_iron_nugget', 'tfmg:cast_iron_nugget']
+    },
 
-    // Silver Ingots (Primary: IE)
-    'electrodynamics:ingotsilver': 'immersiveengineering:ingot_silver',
-
-    // Tin Ingots (Primary: Mekanism)
-    'forestry:ingot_tin': 'mekanism:ingot_tin',
-    'electrodynamics:ingottin': 'mekanism:ingot_tin',
-
-    // Uranium Ingots (Primary: IE)
-    'mekanism:ingot_uranium': 'immersiveengineering:ingot_uranium',
-
-    // Nickel Ingots (Primary: IE)
-    'tfmg:nickel_ingot': 'immersiveengineering:ingot_nickel',
-
-    // Aluminum Ingots (Primary: IE)
-    'tfmg:aluminum_ingot': 'immersiveengineering:ingot_aluminum',
-    'electrodynamics:ingotaluminum': 'immersiveengineering:ingot_aluminum',
-
-    // Steel Ingots (Primary: IE)
-    'mekanism:ingot_steel': 'immersiveengineering:ingot_steel',
-    'tfmg:steel_ingot': 'immersiveengineering:ingot_steel',
-    'electrodynamics:ingotsteel': 'immersiveengineering:ingot_steel',
-    'cgs:steel_ingot': 'immersiveengineering:ingot_steel',
-    'industrialrenewal:ingot_steel': 'immersiveengineering:ingot_steel',
-
-    // Bronze Ingots (Primary: Mekanism)
-    'forestry:ingot_bronze': 'mekanism:ingot_bronze',
-    'electrodynamics:ingotbronze': 'mekanism:ingot_bronze',
-
-    // Lithium Ingots (Primary: TFMG)
-    'electrodynamics:ingotlithium': 'tfmg:lithium_ingot',
-
-    // Constantan Ingots (Primary: IE)
-    'tfmg:constantan_ingot': 'immersiveengineering:ingot_constantan',
-
-    // Lead Nuggets (Primary: IE)
-    'mekanism:nugget_lead': 'immersiveengineering:nugget_lead',
-    'tfmg:lead_nugget': 'immersiveengineering:nugget_lead',
-    'cgs:lead_nugget': 'immersiveengineering:nugget_lead',
-
-    // Silver Nuggets (Primary: IE)
-    'electrodynamics:nuggetsilver': 'immersiveengineering:nugget_silver',
-
-    // Tin Nuggets (Primary: Mekanism)
-    'electrodynamics:nuggettin': 'mekanism:nugget_tin',
-
-    // Uranium Nuggets (Primary: IE)
-    'mekanism:nugget_uranium': 'immersiveengineering:nugget_uranium',
-
-    // Nickel Nuggets (Primary: IE)
-    'tfmg:nickel_nugget': 'immersiveengineering:nugget_nickel',
-
-    // Aluminum Nuggets (Primary: IE)
-    'tfmg:aluminum_nugget': 'immersiveengineering:nugget_aluminum',
-
-    // Steel Nuggets (Primary: IE)
-    'mekanism:nugget_steel': 'immersiveengineering:nugget_steel',
-    'tfmg:steel_nugget': 'immersiveengineering:nugget_steel',
-    'electrodynamics:nuggetsteel': 'immersiveengineering:nugget_steel',
-    'cgs:steel_nugget': 'immersiveengineering:nugget_steel',
-
-    // Copper Nuggets (Primary: Create)
-    'immersiveengineering:nugget_copper': 'create:copper_nugget',
-    'agricraft:copper_nugget': 'create:copper_nugget',
-    'electrodynamics:nuggetcopper': 'create:copper_nugget',
-
-    // Constantan Nuggets (Primary: IE)
-    'tfmg:constantan_nugget': 'immersiveengineering:nugget_constantan',
-
-    // Raw Lead (Primary: IE)
-    'mekanism:raw_lead': 'immersiveengineering:raw_lead',
-    'tfmg:raw_lead': 'immersiveengineering:raw_lead',
-    'cgs:raw_lead': 'immersiveengineering:raw_lead',
-
-    // Raw Silver (Primary: IE)
-    'electrodynamics:raworesilver': 'immersiveengineering:raw_silver',
-
-    // Raw Tin (Primary: Mekanism)
-    'forestry:raw_tin': 'mekanism:raw_tin',
-    'electrodynamics:raworetin': 'mekanism:raw_tin',
-
-    // Raw Uranium (Primary: IE)
-    'mekanism:raw_uranium': 'immersiveengineering:raw_uranium',
-    'electrodynamics:raworeuranium': 'immersiveengineering:raw_uranium',
-
-    // Raw Nickel (Primary: IE)
-    'tfmg:raw_nickel': 'immersiveengineering:raw_nickel',
-
-    // Raw Lithium (Primary: TFMG)
-    'electrodynamics:raworelepidolite': 'tfmg:raw_lithium',
-
-    // Lead Dust (Primary: IE)
-    'mekanism:dust_lead': 'immersiveengineering:dust_lead',
-    'electrodynamics:dustlead': 'immersiveengineering:dust_lead',
-
-    // Silver Dust (Primary: IE)
-    'electrodynamics:dustsilver': 'immersiveengineering:dust_silver',
-
-    // Tin Dust (Primary: Mekanism)
-    'electrodynamics:dusttin': 'mekanism:dust_tin',
-
-    // Uranium Dust (Primary: IE)
-    'mekanism:dust_uranium': 'immersiveengineering:dust_uranium',
-
-    // Steel Dust (Primary: IE)
-    'mekanism:dust_steel': 'immersiveengineering:dust_steel',
-    'electrodynamics:duststeel': 'immersiveengineering:dust_steel',
-
-    // Bronze Dust (Primary: Mekanism)
-    'electrodynamics:dustbronze': 'mekanism:dust_bronze',
-
-    // Copper Dust (Primary: IE)
-    'mekanism:dust_copper': 'immersiveengineering:dust_copper',
-    'electrodynamics:dustcopper': 'immersiveengineering:dust_copper',
-
-    // Iron Dust (Primary: IE)
-    'mekanism:dust_iron': 'immersiveengineering:dust_iron',
-    'electrodynamics:dustiron': 'immersiveengineering:dust_iron',
-
-    // Gold Dust (Primary: IE)
-    'mekanism:dust_gold': 'immersiveengineering:dust_gold',
-    'electrodynamics:dustgold': 'immersiveengineering:dust_gold',
-
-    // Sulfur Dust (Primary: IE)
-    'mekanism:dust_sulfur': 'immersiveengineering:dust_sulfur',
-    'tfmg:sulfur_dust': 'immersiveengineering:dust_sulfur',
-    'electrodynamics:dustsulfur': 'immersiveengineering:dust_sulfur',
-
-    // Lithium Dust (Primary: Mekanism)
-    'electrodynamics:dustlithium': 'mekanism:dust_lithium',
-
-    // Lead Plate (Primary: IE)
-    'electrodynamics:platelead': 'immersiveengineering:plate_lead',
-
-    // Aluminum Plate (Primary: IE)
-    'electrodynamics:platealuminum': 'immersiveengineering:plate_aluminum',
-
-    // Steel Plate (Primary: IE)
-    'electrodynamics:platesteel': 'immersiveengineering:plate_steel',
-
-    // Copper Plate (Primary: IE)
-    'electrodynamics:platecopper': 'immersiveengineering:plate_copper',
-
-    // Iron Plate (Primary: IE)
-    'electrodynamics:plateiron': 'immersiveengineering:plate_iron',
-
-    // Raw Block Lead (Primary: IE)
-    'mekanism:block_raw_lead': 'immersiveengineering:raw_block_lead',
-    'tfmg:raw_lead_block': 'immersiveengineering:raw_block_lead',
-    'electrodynamics:raworeblocklead': 'immersiveengineering:raw_block_lead',
-    'cgs:raw_lead_block': 'immersiveengineering:raw_block_lead',
-
-    // Raw Block Silver (Primary: IE)
-    'electrodynamics:raworeblocksilver': 'immersiveengineering:raw_block_silver',
-
-    // Raw Block Tin (Primary: Mekanism)
-    'forestry:raw_tin_block': 'mekanism:block_raw_tin',
-    'electrodynamics:raworeblocktin': 'mekanism:block_raw_tin',
-
-    // Raw Block Uranium (Primary: IE)
-    'mekanism:block_raw_uranium': 'immersiveengineering:raw_block_uranium',
-    'electrodynamics:raworeblockuranium': 'immersiveengineering:raw_block_uranium',
-
-    // Raw Block Nickel (Primary: IE)
-    'tfmg:raw_nickel_block': 'immersiveengineering:raw_block_nickel',
-
-    // Cast Iron (Primary: CBC - has same priority as TFMG, prefer CBC)
-    'tfmg:cast_iron_ingot': 'createbigcannons:cast_iron_ingot',
-    'tfmg:cast_iron_nugget': 'createbigcannons:cast_iron_nugget',
-};
+    // ==================== PLASTIC (item form) ====================
+    {
+        tag: 'forge:plastic',
+        primary: 'tfmg:plastic_sheet',
+        variants: ['tfmg:plastic_sheet', 'industrialforegoing:plastic', 'pneumaticcraft:plastic']
+    },
+];
 
 ServerEvents.recipes(event => {
-    // Replace recipe outputs with unified items
-    for (const [oldItem, newItem] of Object.entries(ITEM_REPLACEMENTS)) {
-        event.replaceOutput({}, oldItem, newItem);
-    }
+    ITEM_UNIFICATIONS.forEach(unification => {
+        const { tag, primary, variants } = unification;
 
-    console.log('[Unified Materials] Recipe output replacement complete');
+        // Replace all variant OUTPUTS with the primary item
+        variants.forEach(variant => {
+            if (variant !== primary) {
+                try {
+                    event.replaceOutput({}, variant, primary);
+                } catch (e) {
+                    // Item might not exist, continue
+                }
+            }
+        });
+
+        // Replace all variant INPUTS with the forge tag
+        // This allows any unified item to be used as input
+        variants.forEach(variant => {
+            try {
+                event.replaceInput({}, variant, '#' + tag);
+            } catch (e) {
+                // Item might not exist, continue
+            }
+        });
+    });
+
+    console.log('[Unified Materials] Recipe unification complete - outputs use primary, inputs use tags');
 });

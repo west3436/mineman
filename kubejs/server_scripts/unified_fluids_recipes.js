@@ -1,212 +1,212 @@
 // priority: 89
-// Unified Fluids - Recipe Output Unification
-// This script modifies recipes to output/use the primary mod's fluids
+// Unified Fluids - Recipe Input/Output Unification
+// This script modifies recipes to:
+// - Replace OUTPUTS with the primary mod's fluid
+// - Replace INPUTS with the forge tag (so any unified fluid works)
 // Priority order: Create > IE > Immersive Petroleum > TFMG > Mekanism > Others
 
 /**
- * Primary Fluid Mapping:
- * These are the "canonical" fluids that recipes should prefer
+ * Fluid Unification Mapping
+ * Each entry contains:
+ * - tag: The forge tag to use for inputs
+ * - primary: The primary fluid to use for outputs
+ * - variants: All fluid variants that should be unified
  */
-const UNIFIED_FLUID_OUTPUTS = {
-    // Honey (Primary: Create)
-    'forge:honey': 'create:honey',
-
-    // Ethanol (Primary: IE)
-    'forge:ethanol': 'immersiveengineering:ethanol',
-    'forge:bioethanol': 'immersiveengineering:ethanol',
-
-    // Crude Oil (Primary: IP)
-    'forge:crude_oil': 'immersivepetroleum:crudeoil',
-    'forge:oil': 'immersivepetroleum:crudeoil',
-
-    // Diesel (Primary: IP)
-    'forge:diesel': 'immersivepetroleum:diesel',
-
-    // Gasoline (Primary: IP)
-    'forge:gasoline': 'immersivepetroleum:gasoline',
-
-    // Kerosene (Primary: IP)
-    'forge:kerosene': 'immersivepetroleum:kerosene',
-
-    // Naphtha (Primary: IP)
-    'forge:naphtha': 'immersivepetroleum:naphtha',
-
-    // LPG (Primary: IP)
-    'forge:lpg': 'immersivepetroleum:petroleum_gas',
-
-    // Lubricant (Primary: IP)
-    'forge:lubricant': 'immersivepetroleum:lubricant',
-
-    // Napalm (Primary: IP)
-    'forge:napalm': 'immersivepetroleum:napalm',
-
-    // Biodiesel (Primary: IE)
-    'forge:biodiesel': 'immersiveengineering:biodiesel',
-
-    // Creosote (Primary: IE)
-    'forge:creosote': 'immersiveengineering:creosote',
-
-    // Concrete (Primary: IE)
-    'forge:concrete': 'immersiveengineering:concrete',
-
-    // Steam (Primary: Mekanism)
-    'forge:steam': 'mekanism:steam',
-
-    // Hydrogen (Primary: Mekanism)
-    'forge:hydrogen': 'mekanism:hydrogen',
-
-    // Oxygen (Primary: Mekanism)
-    'forge:oxygen': 'mekanism:oxygen',
-
-    // Sulfuric Acid (Primary: Mekanism)
-    'forge:sulfuric_acid': 'mekanism:sulfuric_acid',
-
-    // Hydrofluoric Acid (Primary: Mekanism)
-    'forge:hydrofluoric_acid': 'mekanism:hydrofluoric_acid',
-
-    // Chlorine (Primary: Mekanism)
-    'forge:chlorine': 'mekanism:chlorine',
-
-    // Ethylene (Primary: TFMG)
-    'forge:ethylene': 'tfmg:ethylene',
-    'forge:ethene': 'tfmg:ethylene',
-
-    // Plant Oil (Primary: IE)
-    'forge:plantoil': 'immersiveengineering:plantoil',
-    'forge:seed_oil': 'immersiveengineering:plantoil',
-    'forge:vegetable_oil': 'immersiveengineering:plantoil',
-};
-
-// Fluid replacements: old -> new
-const FLUID_REPLACEMENTS = {
+const FLUID_UNIFICATIONS = [
     // ==================== HONEY ====================
-    // Primary: Create
-    'forestry:honey': 'create:honey',
-    'tconstruct:honey': 'create:honey',
-    'growthcraft_apiary:honey_fluid_source': 'create:honey',
+    {
+        tag: 'forge:honey',
+        primary: 'create:honey',
+        variants: ['create:honey', 'forestry:honey', 'tconstruct:honey', 'growthcraft_apiary:honey_fluid_source']
+    },
 
     // ==================== ETHANOL ====================
-    // Primary: IE
-    'forestry:bio_ethanol': 'immersiveengineering:ethanol',
-    'pneumaticcraft:ethanol': 'immersiveengineering:ethanol',
-    'mekanismgenerators:bioethanol': 'immersiveengineering:ethanol',
-    'electrodynamics:fluidethanol': 'immersiveengineering:ethanol',
+    {
+        tag: 'forge:ethanol',
+        primary: 'immersiveengineering:ethanol',
+        variants: ['immersiveengineering:ethanol', 'forestry:bio_ethanol', 'pneumaticcraft:ethanol', 'mekanismgenerators:bioethanol', 'electrodynamics:fluidethanol']
+    },
 
     // ==================== CRUDE OIL ====================
-    // Primary: Immersive Petroleum
-    'tfmg:crude_oil': 'immersivepetroleum:crudeoil',
-    'pneumaticcraft:oil': 'immersivepetroleum:crudeoil',
+    {
+        tag: 'forge:crude_oil',
+        primary: 'immersivepetroleum:crudeoil',
+        variants: ['immersivepetroleum:crudeoil', 'tfmg:crude_oil', 'pneumaticcraft:oil']
+    },
 
     // ==================== DIESEL ====================
-    // Primary: Immersive Petroleum
-    'tfmg:diesel': 'immersivepetroleum:diesel',
-    'pneumaticcraft:diesel': 'immersivepetroleum:diesel',
+    {
+        tag: 'forge:diesel',
+        primary: 'immersivepetroleum:diesel',
+        variants: ['immersivepetroleum:diesel', 'tfmg:diesel', 'pneumaticcraft:diesel']
+    },
 
     // ==================== GASOLINE ====================
-    // Primary: Immersive Petroleum
-    'tfmg:gasoline': 'immersivepetroleum:gasoline',
-    'pneumaticcraft:gasoline': 'immersivepetroleum:gasoline',
+    {
+        tag: 'forge:gasoline',
+        primary: 'immersivepetroleum:gasoline',
+        variants: ['immersivepetroleum:gasoline', 'tfmg:gasoline', 'pneumaticcraft:gasoline']
+    },
 
     // ==================== KEROSENE ====================
-    // Primary: Immersive Petroleum
-    'tfmg:kerosene': 'immersivepetroleum:kerosene',
-    'pneumaticcraft:kerosene': 'immersivepetroleum:kerosene',
+    {
+        tag: 'forge:kerosene',
+        primary: 'immersivepetroleum:kerosene',
+        variants: ['immersivepetroleum:kerosene', 'tfmg:kerosene', 'pneumaticcraft:kerosene']
+    },
 
     // ==================== NAPHTHA ====================
-    // Primary: Immersive Petroleum
-    'tfmg:naphtha': 'immersivepetroleum:naphtha',
+    {
+        tag: 'forge:naphtha',
+        primary: 'immersivepetroleum:naphtha',
+        variants: ['immersivepetroleum:naphtha', 'tfmg:naphtha']
+    },
 
-    // ==================== LPG ====================
-    // Primary: Immersive Petroleum (petroleum_gas)
-    'tfmg:lpg': 'immersivepetroleum:petroleum_gas',
-    'pneumaticcraft:lpg': 'immersivepetroleum:petroleum_gas',
+    // ==================== LPG / PETROLEUM GAS ====================
+    {
+        tag: 'forge:lpg',
+        primary: 'immersivepetroleum:petroleum_gas',
+        variants: ['immersivepetroleum:petroleum_gas', 'tfmg:lpg', 'pneumaticcraft:lpg']
+    },
 
     // ==================== LUBRICANT ====================
-    // Primary: Immersive Petroleum
-    'tfmg:lubrication_oil': 'immersivepetroleum:lubricant',
-    'pneumaticcraft:lubricant': 'immersivepetroleum:lubricant',
+    {
+        tag: 'forge:lubricant',
+        primary: 'immersivepetroleum:lubricant',
+        variants: ['immersivepetroleum:lubricant', 'tfmg:lubrication_oil', 'pneumaticcraft:lubricant']
+    },
 
     // ==================== NAPALM ====================
-    // Primary: Immersive Petroleum
-    'tfmg:napalm': 'immersivepetroleum:napalm',
+    {
+        tag: 'forge:napalm',
+        primary: 'immersivepetroleum:napalm',
+        variants: ['immersivepetroleum:napalm', 'tfmg:napalm']
+    },
 
     // ==================== BIODIESEL ====================
-    // Primary: IE
-    'pneumaticcraft:biodiesel': 'immersiveengineering:biodiesel',
+    {
+        tag: 'forge:biodiesel',
+        primary: 'immersiveengineering:biodiesel',
+        variants: ['immersiveengineering:biodiesel', 'pneumaticcraft:biodiesel']
+    },
 
     // ==================== CREOSOTE ====================
-    // Primary: IE
-    'tfmg:creosote': 'immersiveengineering:creosote',
+    {
+        tag: 'forge:creosote',
+        primary: 'immersiveengineering:creosote',
+        variants: ['immersiveengineering:creosote', 'tfmg:creosote']
+    },
 
     // ==================== CONCRETE ====================
-    // Primary: IE
-    'tfmg:liquid_concrete': 'immersiveengineering:concrete',
-    'blastcraft:fluidconcrete': 'immersiveengineering:concrete',
+    {
+        tag: 'forge:concrete',
+        primary: 'immersiveengineering:concrete',
+        variants: ['immersiveengineering:concrete', 'tfmg:liquid_concrete', 'blastcraft:fluidconcrete']
+    },
 
     // ==================== STEAM ====================
-    // Primary: Mekanism
-    'immersivetechnology:steam': 'mekanism:steam',
-    'industrialrenewal:steam_still': 'mekanism:steam',
+    {
+        tag: 'forge:steam',
+        primary: 'mekanism:steam',
+        variants: ['mekanism:steam', 'immersivetechnology:steam', 'industrialrenewal:steam_still']
+    },
 
     // ==================== HYDROGEN ====================
-    // Primary: Mekanism
-    'tfmg:hydrogen': 'mekanism:hydrogen',
-    'electrodynamics:fluidhydrogen': 'mekanism:hydrogen',
+    {
+        tag: 'forge:hydrogen',
+        primary: 'mekanism:hydrogen',
+        variants: ['mekanism:hydrogen', 'tfmg:hydrogen', 'electrodynamics:fluidhydrogen']
+    },
 
     // ==================== OXYGEN ====================
-    // Primary: Mekanism
-    'electrodynamics:fluidoxygen': 'mekanism:oxygen',
+    {
+        tag: 'forge:oxygen',
+        primary: 'mekanism:oxygen',
+        variants: ['mekanism:oxygen', 'electrodynamics:fluidoxygen']
+    },
 
     // ==================== SULFURIC ACID ====================
-    // Primary: Mekanism
-    'tfmg:sulfuric_acid': 'mekanism:sulfuric_acid',
-    'electrodynamics:fluidsulfuricacid': 'mekanism:sulfuric_acid',
+    {
+        tag: 'forge:sulfuric_acid',
+        primary: 'mekanism:sulfuric_acid',
+        variants: ['mekanism:sulfuric_acid', 'tfmg:sulfuric_acid', 'electrodynamics:fluidsulfuricacid']
+    },
 
     // ==================== HYDROFLUORIC ACID ====================
-    // Primary: Mekanism
-    'electrodynamics:fluidhydrofluoricacid': 'mekanism:hydrofluoric_acid',
+    {
+        tag: 'forge:hydrofluoric_acid',
+        primary: 'mekanism:hydrofluoric_acid',
+        variants: ['mekanism:hydrofluoric_acid', 'electrodynamics:fluidhydrofluoricacid']
+    },
 
     // ==================== CHLORINE ====================
-    // Primary: Mekanism
-    'immersivetechnology:chlorine': 'mekanism:chlorine',
+    {
+        tag: 'forge:chlorine',
+        primary: 'mekanism:chlorine',
+        variants: ['mekanism:chlorine', 'immersivetechnology:chlorine']
+    },
 
     // ==================== ETHYLENE ====================
-    // Primary: TFMG
-    'mekanism:ethene': 'tfmg:ethylene',
+    {
+        tag: 'forge:ethylene',
+        primary: 'tfmg:ethylene',
+        variants: ['tfmg:ethylene', 'mekanism:ethene']
+    },
 
     // ==================== PLANT OIL ====================
-    // Primary: IE
-    'forestry:seed_oil': 'immersiveengineering:plantoil',
-    'pneumaticcraft:vegetable_oil': 'immersiveengineering:plantoil',
+    {
+        tag: 'forge:plantoil',
+        primary: 'immersiveengineering:plantoil',
+        variants: ['immersiveengineering:plantoil', 'forestry:seed_oil', 'pneumaticcraft:vegetable_oil']
+    },
 
     // ==================== MOLTEN STEEL ====================
-    // Primary: Tinkers' Construct (most complete molten metal system)
-    'createbigcannons:molten_steel': 'tconstruct:molten_steel',
-    'tfmg:molten_steel': 'tconstruct:molten_steel',
+    {
+        tag: 'forge:molten_steel',
+        primary: 'tconstruct:molten_steel',
+        variants: ['tconstruct:molten_steel', 'createbigcannons:molten_steel', 'tfmg:molten_steel']
+    },
 
     // ==================== MOLTEN BRONZE ====================
-    'createbigcannons:molten_bronze': 'tconstruct:molten_bronze',
+    {
+        tag: 'forge:molten_bronze',
+        primary: 'tconstruct:molten_bronze',
+        variants: ['tconstruct:molten_bronze', 'createbigcannons:molten_bronze']
+    },
 
-    // ==================== PLASTIC ====================
-    // Primary: TFMG
-    'pneumaticcraft:plastic': 'tfmg:molten_plastic',
-    'electrodynamics:fluidpolyethylene': 'tfmg:molten_plastic',
-};
+    // ==================== MOLTEN PLASTIC ====================
+    {
+        tag: 'forge:molten_plastic',
+        primary: 'tfmg:molten_plastic',
+        variants: ['tfmg:molten_plastic', 'pneumaticcraft:plastic', 'electrodynamics:fluidpolyethylene']
+    },
+];
 
 ServerEvents.recipes(event => {
-    // Replace fluid outputs in recipes
-    for (const [oldFluid, newFluid] of Object.entries(FLUID_REPLACEMENTS)) {
-        try {
-            event.replaceOutput({}, Fluid.of(oldFluid), Fluid.of(newFluid));
-        } catch (e) {
-            // Fluid might not exist or replacement might fail, continue
-        }
-        try {
-            event.replaceInput({}, Fluid.of(oldFluid), Fluid.of(newFluid));
-        } catch (e) {
-            // Fluid might not exist or replacement might fail, continue
-        }
-    }
+    FLUID_UNIFICATIONS.forEach(unification => {
+        const { tag, primary, variants } = unification;
 
-    console.log('[Unified Fluids] Recipe fluid replacement complete');
+        // Replace all variant OUTPUTS with the primary fluid
+        variants.forEach(variant => {
+            if (variant !== primary) {
+                try {
+                    event.replaceOutput({}, Fluid.of(variant), Fluid.of(primary));
+                } catch (e) {
+                    // Fluid might not exist, continue
+                }
+            }
+        });
+
+        // Replace all variant INPUTS with the forge tag
+        // This allows any unified fluid to be used as input
+        variants.forEach(variant => {
+            try {
+                event.replaceInput({}, Fluid.of(variant), Fluid.tag(tag));
+            } catch (e) {
+                // Fluid might not exist or tag replacement not supported, continue
+            }
+        });
+    });
+
+    console.log('[Unified Fluids] Recipe fluid unification complete - outputs use primary, inputs use tags');
 });

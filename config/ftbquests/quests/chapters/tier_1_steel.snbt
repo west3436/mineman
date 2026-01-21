@@ -24,7 +24,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "05AF2000AA9B65A8"
-				table_id: 1000000000000001L
 				type: "choice"
 			}]
 			shape: "gear"
@@ -36,7 +35,7 @@
 			}]
 			title: "The Industrial Revolution"
 			x: -0.5d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["26B00CB3FBFE4163"]
@@ -59,7 +58,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4CBD84791204AA5A"
-				table_id: 1000000000000002L
 				type: "choice"
 			}]
 			subtitle: "Gears, cogs, and endless motion"
@@ -69,8 +67,8 @@
 				type: "checkmark"
 			}]
 			title: "The Path of Creation"
-			x: 0.5d
-			y: -2.5d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["26B00CB3FBFE4163"]
@@ -99,7 +97,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0A2F314CDB920D00"
-				table_id: 1000000000000003L
 				type: "choice"
 			}]
 			subtitle: "Heavy industry awaits"
@@ -109,8 +106,8 @@
 				type: "checkmark"
 			}]
 			title: "The Engineer's Way"
-			x: -1.5d
-			y: -2.5d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -134,7 +131,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "12D36D36997E3D60"
-				table_id: 1000000000000004L
 				type: "choice"
 			}]
 			shape: "square"
@@ -146,7 +142,7 @@
 			}]
 			title: "Steel: The Alloy of Progress"
 			x: -0.5d
-			y: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5FB53171F0B56681"]
@@ -166,7 +162,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5AA59A3DE8955E7C"
-				table_id: 1000000000000005L
 				type: "choice"
 			}]
 			subtitle: "Where nature meets machine"
@@ -177,7 +172,7 @@
 			}]
 			title: "Forestry: Natural Automation"
 			x: -2.0d
-			y: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5FB53171F0B56681"]
@@ -197,7 +192,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "71AC5DA931CD6BB5"
-				table_id: 1000000000000006L
 				type: "choice"
 			}]
 			subtitle: "The sky is no longer the limit"
@@ -208,7 +202,7 @@
 			}]
 			title: "Taking Flight"
 			x: -1.5d
-			y: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5FB53171F0B56681"]
@@ -228,7 +222,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "04AE14E7BAFD3CE4"
-				table_id: 1000000000000007L
 				type: "choice"
 			}]
 			subtitle: "Build like a real factory"
@@ -239,7 +232,7 @@
 			}]
 			title: "Industrial Infrastructure"
 			x: -0.5d
-			y: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5FB53171F0B56681"]
@@ -260,7 +253,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6503D05C1AAE985F"
-				table_id: 1000000000000008L
 				type: "choice"
 			}]
 			subtitle: "Automate with pure logic"
@@ -271,7 +263,7 @@
 			}]
 			title: "Logic Networks"
 			x: 0.5d
-			y: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5FB53171F0B56681"]
@@ -291,7 +283,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6EC46E7485F473B6"
-				table_id: 1000000000000009L
 				type: "choice"
 			}]
 			subtitle: "Smart item routing"
@@ -302,7 +293,7 @@
 			}]
 			title: "Modular Routing"
 			x: 1.0d
-			y: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0C08BADBFF45629E"]
@@ -321,7 +312,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "696DD2C86BF1870F"
-				table_id: 1000000000000010L
 				type: "choice"
 			}]
 			subtitle: "Forge iron into steel"
@@ -332,8 +322,8 @@
 				type: "item"
 			}]
 			title: "The Blast Furnace"
-			x: -1.5d
-			y: 2.5d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["69E090C941110A51"]
@@ -352,7 +342,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3B559A6DF4295514"
-				table_id: 1000000000000011L
 				type: "choice"
 			}]
 			subtitle: "Coal goes in, coke comes out"
@@ -363,8 +352,8 @@
 				type: "item"
 			}]
 			title: "The Coke Oven"
-			x: -1.5d
-			y: 0.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["550206E2DD414D33"]
@@ -383,7 +372,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1F06529D1505DAD3"
-				table_id: 1000000000000012L
 				type: "choice"
 			}]
 			subtitle: "Kinetic coke production"
@@ -394,8 +382,8 @@
 				type: "item"
 			}]
 			title: "TFMG Coke Oven"
-			x: 0.5d
-			y: 0.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0D041063F34B02F7"]
@@ -414,7 +402,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "62646DEF7A1A0098"
-				table_id: 1000000000000013L
 				type: "choice"
 			}]
 			subtitle: "Steel through rotation"
@@ -444,8 +431,8 @@
 				}
 			]
 			title: "TFMG Blast Furnace"
-			x: 0.5d
-			y: 2.5d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["69E090C941110A51"]
@@ -464,7 +451,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "49843DDC81475E1E"
-				table_id: 1000000000000014L
 				type: "choice"
 			}]
 			subtitle: "Industrial power generation"
@@ -474,8 +460,8 @@
 				type: "item"
 			}]
 			title: "Immersive Technology"
-			x: -3.0d
-			y: 0.0d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["550206E2DD414D33"]
@@ -495,7 +481,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "75C8565A18DECC16"
-				table_id: 1000000000000015L
 				type: "choice"
 			}]
 			subtitle: "All aboard!"
@@ -505,368 +490,8 @@
 				type: "item"
 			}]
 			title: "The Railway Revolution"
-			x: 2.0d
-			y: 0.0d
-		}
-	]
-	reward_tables: [
-		{
-			id: 1000000000000001L
-			rewards: [
-				{
-					id: "RT001A"
-					item: "minecraft:cooked_beef"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT001B"
-					item: "numismatics:cog"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RT001C"
-					item: "minecraft:iron_ingot"
-					count: 8
-					type: "item"
-				}
-			]
-			title: "Starter Rewards"
-		}
-		{
-			id: 1000000000000002L
-			rewards: [
-				{
-					id: "RT002A"
-					item: "create:goggles"
-					type: "item"
-				}
-				{
-					id: "RT002B"
-					item: "create:wrench"
-					type: "item"
-				}
-				{
-					id: "RT002C"
-					item: "numismatics:spur"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Create Starter Kit"
-		}
-		{
-			id: 1000000000000003L
-			rewards: [
-				{
-					id: "RT003A"
-					item: "immersiveengineering:manual"
-					type: "item"
-				}
-				{
-					id: "RT003B"
-					item: {
-						Count: 1
-						id: "immersiveengineering:hammer"
-						tag: { Damage: 0 }
-					}
-					type: "item"
-				}
-				{
-					id: "RT003C"
-					item: "numismatics:spur"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Engineer's Starter Kit"
-		}
-		{
-			id: 1000000000000004L
-			rewards: [
-				{
-					id: "RT004A"
-					item: "immersiveengineering:ingot_steel"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT004B"
-					item: "immersiveengineering:coal_coke"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "RT004C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Steel Age Rewards"
-		}
-		{
-			id: 1000000000000005L
-			rewards: [
-				{
-					id: "RT005A"
-					item: "forestry:scoop"
-					type: "item"
-				}
-				{
-					id: "RT005B"
-					item: "forestry:bee_house"
-					type: "item"
-				}
-				{
-					id: "RT005C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Forestry Starter"
-		}
-		{
-			id: 1000000000000006L
-			rewards: [
-				{
-					id: "RT006A"
-					item: "immersive_aircraft:propeller"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RT006B"
-					item: "immersive_aircraft:sail"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "RT006C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Aviation Parts"
-		}
-		{
-			id: 1000000000000007L
-			rewards: [
-				{
-					id: "RT007A"
-					item: "industrialrenewal:catwalk"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT007B"
-					item: "industrialrenewal:handrail"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT007C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Infrastructure Kit"
-		}
-		{
-			id: 1000000000000008L
-			rewards: [
-				{
-					id: "RT008A"
-					item: "integrateddynamics:menril_sapling"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RT008B"
-					item: "integrateddynamics:variable"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT008C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Logic Starter"
-		}
-		{
-			id: 1000000000000009L
-			rewards: [
-				{
-					id: "RT009A"
-					item: "modularrouters:sender_module_1"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "RT009B"
-					item: "modularrouters:puller_module_2"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "RT009C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Router Modules"
-		}
-		{
-			id: 1000000000000010L
-			rewards: [
-				{
-					id: "RT010A"
-					item: "immersiveengineering:blastfurnace_preheater"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "RT010B"
-					item: "immersiveengineering:conveyor_basic"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "RT010C"
-					item: "numismatics:spur"
-					count: 6
-					type: "item"
-				}
-			]
-			title: "Blast Furnace Upgrades"
-		}
-		{
-			id: 1000000000000011L
-			rewards: [
-				{
-					id: "RT011A"
-					item: "immersiveengineering:cokebrick"
-					count: 9
-					type: "item"
-				}
-				{
-					id: "RT011B"
-					item: "immersiveengineering:conveyor_basic"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT011C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Coke Oven Extras"
-		}
-		{
-			id: 1000000000000012L
-			rewards: [
-				{
-					id: "RT012A"
-					item: "tfmg:exhaust"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "RT012B"
-					item: "create:belt_connector"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT012C"
-					item: "numismatics:spur"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "TFMG Components"
-		}
-		{
-			id: 1000000000000013L
-			rewards: [
-				{
-					id: "RT013A"
-					item: "create:fluid_pipe"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "RT013B"
-					item: "create:fluid_tank"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "RT013C"
-					item: "numismatics:spur"
-					count: 8
-					type: "item"
-				}
-			]
-			title: "Fluid Handling"
-		}
-		{
-			id: 1000000000000014L
-			rewards: [
-				{
-					id: "RT014A"
-					item: "immersiveengineering:wirecoil_copper"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "RT014B"
-					item: "immersiveengineering:connector_lv"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "RT014C"
-					item: "numismatics:spur"
-					count: 6
-					type: "item"
-				}
-			]
-			title: "Power Components"
-		}
-		{
-			id: 1000000000000015L
-			rewards: [
-				{
-					id: "RT015A"
-					item: "create:track"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "RT015B"
-					item: "create:train_door"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RT015C"
-					item: "numismatics:spur"
-					count: 6
-					type: "item"
-				}
-			]
-			title: "Railway Starter Kit"
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "Steel"

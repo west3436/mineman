@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["PNEU_PCB_T01"]
 			description: [
 				"&6Welcome to Advanced Circuitry!&r"
 				""
@@ -25,17 +24,16 @@
 				"&7Each circuit tier unlocks new mods and possibilities!&r"
 			]
 			icon: "mekanism:configurator"
-			id: "ADV_START_001"
+			id: "075A1E9713841DD5"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_START_R01"
-				table_id: 4000000000000001L
+				id: "081C69E43A71DA8F"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "Enter the age of advanced technology"
 			tasks: [{
-				id: "ADV_START_T01"
+				id: "07275A16CB2B0499"
 				title: "Begin Advanced Circuitry"
 				type: "checkmark"
 			}]
@@ -44,7 +42,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["ADV_START_001"]
+			dependencies: ["075A1E9713841DD5"]
 			description: [
 				"&6Osmium&r is Mekanism's foundational ore, found throughout the world."
 				""
@@ -61,17 +59,16 @@
 				"&7Start stockpiling - you'll need hundreds of ingots!&r"
 			]
 			icon: "mekanism:ingot_osmium"
-			id: "ADV_OSMIUM_001"
+			id: "70D512A20B1EA4A1"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_OSMIUM_R01"
-				table_id: 4000000000000002L
+				id: "47CB3171B9B836A0"
 				type: "choice"
 			}]
 			subtitle: "The foundation of Mekanism"
 			tasks: [{
 				count: 32L
-				id: "ADV_OSMIUM_T01"
+				id: "065A85093591421A"
 				item: { Count: 32, id: "mekanism:ingot_osmium" }
 				type: "item"
 			}]
@@ -80,7 +77,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["ADV_OSMIUM_001"]
+			dependencies: ["70D512A20B1EA4A1"]
 			description: [
 				"The &6Metallurgic Infuser&r combines materials with infusion types to create alloys and circuits."
 				""
@@ -98,17 +95,16 @@
 				"&7This machine is the heart of Mekanism progression!&r"
 			]
 			icon: "mekanism:metallurgic_infuser"
-			id: "ADV_INFUSER_001"
+			id: "5AFE467AE42E2853"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_INFUSER_R01"
-				table_id: 4000000000000003L
+				id: "1D06C1A669BEDBAF"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Infusion-based crafting"
 			tasks: [{
-				id: "ADV_INFUSER_T01"
+				id: "2E6B770D5677B9D7"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
@@ -117,7 +113,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["ADV_INFUSER_001"]
+			dependencies: ["5AFE467AE42E2853"]
 			description: [
 				"The &6Steel Casing&r is the foundation block for most Mekanism machines."
 				""
@@ -133,26 +129,25 @@
 				"&7Automate steel production for a steady supply!&r"
 			]
 			icon: "mekanism:steel_casing"
-			id: "ADV_CASING_001"
+			id: "2DE8F63B6633490A"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_CASING_R01"
-				table_id: 4000000000000004L
+				id: "3EA0D12914D4C01C"
 				type: "choice"
 			}]
 			subtitle: "Machine housing"
 			tasks: [{
 				count: 8L
-				id: "ADV_CASING_T01"
+				id: "1A3DF26A472F946B"
 				item: { Count: 8, id: "mekanism:steel_casing" }
 				type: "item"
 			}]
 			title: "Steel Casings"
-			x: -1.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["ADV_INFUSER_001"]
+			dependencies: ["5AFE467AE42E2853"]
 			description: [
 				"The &6Basic Control Circuit&r is the first tier of Mekanism's circuit system."
 				""
@@ -168,18 +163,17 @@
 				"&7Your first step into serious automation!&r"
 			]
 			icon: "mekanism:basic_control_circuit"
-			id: "ADV_CIRCUIT_BASIC_001"
+			id: "43ACAD557C638A34"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_CIRCUIT_BASIC_R01"
-				table_id: 4000000000000005L
+				id: "39105E785A56E0C6"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "Tier 1 - The gateway"
 			tasks: [{
 				count: 8L
-				id: "ADV_CIRCUIT_BASIC_T01"
+				id: "1907F9602E8F4B40"
 				item: { Count: 8, id: "mekanism:basic_control_circuit" }
 				type: "item"
 			}]
@@ -188,7 +182,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_BASIC_001"]
+			dependencies: ["43ACAD557C638A34"]
 			description: [
 				"&6Infused Alloy&r is an intermediate material needed for advanced circuits."
 				""
@@ -206,17 +200,16 @@
 				"&7Set up automated infusion for efficiency!&r"
 			]
 			icon: "mekanism:alloy_infused"
-			id: "ADV_ALLOY_INFUSED_001"
+			id: "5EE993C0D0E09A79"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_ALLOY_INFUSED_R01"
-				table_id: 4000000000000006L
+				id: "4C78A89CCE74E104"
 				type: "choice"
 			}]
 			subtitle: "Tier 2 alloy"
 			tasks: [{
 				count: 16L
-				id: "ADV_ALLOY_INFUSED_T01"
+				id: "68DEC65D04D8FB43"
 				item: { Count: 16, id: "mekanism:alloy_infused" }
 				type: "item"
 			}]
@@ -225,7 +218,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["ADV_ALLOY_INFUSED_001"]
+			dependencies: ["5EE993C0D0E09A79"]
 			description: [
 				"The &6Advanced Control Circuit&r is the second tier, enabling more sophisticated machines."
 				""
@@ -241,18 +234,17 @@
 				"&7The networking possibilities are endless!&r"
 			]
 			icon: "mekanism:advanced_control_circuit"
-			id: "ADV_CIRCUIT_ADV_001"
+			id: "1D633BC72CC5CE4B"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_CIRCUIT_ADV_R01"
-				table_id: 4000000000000007L
+				id: "485A58E3EFEAF452"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "Tier 2 - Expanding horizons"
 			tasks: [{
 				count: 8L
-				id: "ADV_CIRCUIT_ADV_T01"
+				id: "2500272D850BC556"
 				item: { Count: 8, id: "mekanism:advanced_control_circuit" }
 				type: "item"
 			}]
@@ -261,7 +253,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ADV_001"]
+			dependencies: ["1D633BC72CC5CE4B"]
 			description: [
 				"&6Reinforced Alloy&r requires diamond infusion, making it more precious."
 				""
@@ -274,17 +266,16 @@
 				"&7Diamonds become more valuable than ever!&r"
 			]
 			icon: "mekanism:alloy_reinforced"
-			id: "ADV_ALLOY_REINFORCED_001"
+			id: "72BA02CF3628D20E"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_ALLOY_REINFORCED_R01"
-				table_id: 4000000000000008L
+				id: "7ED0206EF59E5AFA"
 				type: "choice"
 			}]
 			subtitle: "Tier 3 alloy"
 			tasks: [{
 				count: 16L
-				id: "ADV_ALLOY_REINFORCED_T01"
+				id: "4BFE0823345A62C4"
 				item: { Count: 16, id: "mekanism:alloy_reinforced" }
 				type: "item"
 			}]
@@ -293,7 +284,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["ADV_ALLOY_REINFORCED_001"]
+			dependencies: ["72BA02CF3628D20E"]
 			description: [
 				"The &6Elite Control Circuit&r is the third tier, opening the door to digital storage."
 				""
@@ -309,18 +300,17 @@
 				"&7Digital storage awaits!&r"
 			]
 			icon: "mekanism:elite_control_circuit"
-			id: "ADV_CIRCUIT_ELITE_001"
+			id: "69EBE8C5BBE0C632"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_CIRCUIT_ELITE_R01"
-				table_id: 4000000000000009L
+				id: "52C43CB14E2DC1C4"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "Tier 3 - Digital frontiers"
 			tasks: [{
 				count: 8L
-				id: "ADV_CIRCUIT_ELITE_T01"
+				id: "73FEE9AF023D0965"
 				item: { Count: 8, id: "mekanism:elite_control_circuit" }
 				type: "item"
 			}]
@@ -329,7 +319,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ELITE_001"]
+			dependencies: ["69EBE8C5BBE0C632"]
 			description: [
 				"&6Atomic Alloy&r is the pinnacle of Mekanism's alloy system."
 				""
@@ -344,17 +334,16 @@
 				"&7The most advanced alloy requires the most advanced processing!&r"
 			]
 			icon: "mekanism:alloy_atomic"
-			id: "ADV_ALLOY_ATOMIC_001"
+			id: "60D19A34687711B2"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_ALLOY_ATOMIC_R01"
-				table_id: 4000000000000010L
+				id: "1CEEAD04C9C475E8"
 				type: "choice"
 			}]
 			subtitle: "Tier 4 alloy"
 			tasks: [{
 				count: 16L
-				id: "ADV_ALLOY_ATOMIC_T01"
+				id: "0C0C085ACCD9B03D"
 				item: { Count: 16, id: "mekanism:alloy_atomic" }
 				type: "item"
 			}]
@@ -363,7 +352,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["ADV_ALLOY_ATOMIC_001"]
+			dependencies: ["60D19A34687711B2"]
 			description: [
 				"&6Congratulations!&r You've reached the pinnacle of circuit technology!"
 				""
@@ -380,18 +369,17 @@
 				"&eYou now have access to the most powerful machines in Mekanism!&r"
 			]
 			icon: "mekanism:ultimate_control_circuit"
-			id: "ADV_CIRCUIT_ULTIMATE_001"
+			id: "6F16B86C90580EFA"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_CIRCUIT_ULTIMATE_R01"
-				table_id: 4000000000000011L
+				id: "1DF016368E4075A7"
 				type: "choice"
 			}]
 			shape: "gear"
 			subtitle: "Tier 4 - Ultimate power"
 			tasks: [{
 				count: 8L
-				id: "ADV_CIRCUIT_ULTIMATE_T01"
+				id: "06575F70AD695D31"
 				item: { Count: 8, id: "mekanism:ultimate_control_circuit" }
 				type: "item"
 			}]
@@ -400,10 +388,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"ADV_CASING_001"
-				"ADV_CIRCUIT_BASIC_001"
-			]
+			dependencies: ["2DE8F63B6633490A"]
 			description: [
 				"The &6Enrichment Chamber&r is essential for ore doubling and material processing."
 				""
@@ -418,25 +403,24 @@
 				"&7Start with ore doubling, then expand to tripling and beyond!&r"
 			]
 			icon: "mekanism:enrichment_chamber"
-			id: "ADV_ENRICH_001"
+			id: "3FA07E0394CBA553"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_ENRICH_R01"
-				table_id: 4000000000000012L
+				id: "6EC3E1F9B75AC436"
 				type: "choice"
 			}]
 			subtitle: "Ore processing begins"
 			tasks: [{
-				id: "ADV_ENRICH_T01"
+				id: "0C7B293BA108104D"
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
 			title: "Enrichment Chamber"
-			x: -1.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["ADV_ENRICH_001"]
+			dependencies: ["3FA07E0394CBA553"]
 			description: [
 				"The &6Crusher&r pulverizes materials into dust form."
 				""
@@ -451,25 +435,24 @@
 				"&7Essential for advanced ore processing!&r"
 			]
 			icon: "mekanism:crusher"
-			id: "ADV_CRUSHER_001"
+			id: "571E03F81808A470"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_CRUSHER_R01"
-				table_id: 4000000000000013L
+				id: "2EECEE9D220888AC"
 				type: "choice"
 			}]
 			subtitle: "Pulverization"
 			tasks: [{
-				id: "ADV_CRUSHER_T01"
+				id: "644C4144FA0412EB"
 				item: "mekanism:crusher"
 				type: "item"
 			}]
 			title: "Crusher"
-			x: -3.0d
-			y: 0.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["ADV_CRUSHER_001"]
+			dependencies: ["571E03F81808A470"]
 			description: [
 				"The &6Energized Smelter&r is an electric furnace with significant advantages."
 				""
@@ -484,25 +467,27 @@
 				"&7Replace your coal furnaces with electric power!&r"
 			]
 			icon: "mekanism:energized_smelter"
-			id: "ADV_SMELTER_001"
+			id: "250117D02261A6E1"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_SMELTER_R01"
-				table_id: 4000000000000014L
+				id: "5A4C9BBDB3DA35D3"
 				type: "choice"
 			}]
 			subtitle: "Electric smelting"
 			tasks: [{
-				id: "ADV_SMELTER_T01"
+				id: "4E4320DD7C970579"
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
 			title: "Energized Smelter"
-			x: -3.0d
-			y: 1.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ADV_001"]
+			dependencies: [
+				"250117D02261A6E1"
+				"60D19A34687711B2"
+			]
 			description: [
 				"The &6Digital Miner&r is an advanced mining machine that can filter specific ores."
 				""
@@ -521,26 +506,25 @@
 				"&7Targeted mining without destroying the landscape!&r"
 			]
 			icon: "mekanism:digital_miner"
-			id: "ADV_MINER_001"
+			id: "246A83831DD54046"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_MINER_R01"
-				table_id: 4000000000000015L
+				id: "553980DAE5D8CC6D"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Automated targeted mining"
 			tasks: [{
-				id: "ADV_MINER_T01"
+				id: "2ABA012F0E113AA2"
 				item: "mekanism:digital_miner"
 				type: "item"
 			}]
 			title: "Digital Miner"
-			x: -1.5d
-			y: 3.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ELITE_001"]
+			dependencies: ["6F16B86C90580EFA"]
 			description: [
 				"The &6Quantum Entangloporter&r enables instant item, fluid, and energy transfer across any distance."
 				""
@@ -558,26 +542,25 @@
 				"&7Wireless everything, anywhere!&r"
 			]
 			icon: "mekanism:quantum_entangloporter"
-			id: "ADV_ENTANGLE_001"
+			id: "362C1DF12B04C02D"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_ENTANGLE_R01"
-				table_id: 4000000000000016L
+				id: "5EF0205E1D54FDB2"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Quantum transport"
 			tasks: [{
-				id: "ADV_ENTANGLE_T01"
+				id: "4A3F74A52B075DBC"
 				item: "mekanism:quantum_entangloporter"
 				type: "item"
 			}]
 			title: "Quantum Entangloporter"
-			x: -1.5d
-			y: 6.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ULTIMATE_001"]
+			dependencies: ["6F16B86C90580EFA"]
 			description: [
 				"The &6Induction Matrix&r is Mekanism's massive energy storage multiblock."
 				""
@@ -596,11 +579,10 @@
 				"&7Store enough energy to power a city!&r"
 			]
 			icon: "mekanism:ultimate_induction_cell"
-			id: "ADV_INDUCTION_001"
+			id: "26BBEF5EB892B4C2"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_INDUCTION_R01"
-				table_id: 4000000000000017L
+				id: "193BA74A4EDA16E7"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -608,23 +590,23 @@
 			tasks: [
 				{
 					count: 26L
-					id: "ADV_INDUCTION_T01"
+					id: "6EC1B1017A2047F9"
 					item: { Count: 26, id: "mekanism:induction_casing" }
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "ADV_INDUCTION_T02"
+					id: "53FEFE91970BE41D"
 					item: { Count: 2, id: "mekanism:induction_port" }
 					type: "item"
 				}
 			]
 			title: "Induction Matrix"
-			x: -1.5d
-			y: 7.5d
+			x: 0.5d
+			y: 8.5d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_BASIC_001"]
+			dependencies: ["43ACAD557C638A34"]
 			description: [
 				"&6Welcome to Industrial Foregoing!&r"
 				""
@@ -639,27 +621,26 @@
 				"&7Time to industrialize your operations!&r"
 			]
 			icon: "industrialforegoing:machine_frame_pity"
-			id: "IF_START_001"
+			id: "1D5EE2D52125AF38"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "IF_START_R01"
-				table_id: 4000000000000018L
+				id: "42DFDF8289236DAB"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Industrial automation unlocked"
 			tasks: [{
 				count: 4L
-				id: "IF_START_T01"
+				id: "2F7323F88959515E"
 				item: { Count: 4, id: "industrialforegoing:machine_frame_pity" }
 				type: "item"
 			}]
 			title: "Industrial Foregoing"
-			x: 4.5d
-			y: -1.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["IF_START_001"]
+			dependencies: ["1D5EE2D52125AF38"]
 			description: [
 				"The &6Mob Crusher&r automatically kills mobs in its working area."
 				""
@@ -677,25 +658,24 @@
 				"&7The foundation of any mob farm!&r"
 			]
 			icon: "industrialforegoing:mob_crusher"
-			id: "IF_CRUSHER_001"
+			id: "6F888FB6FC5F5173"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "IF_CRUSHER_R01"
-				table_id: 4000000000000019L
+				id: "00195989EB95111C"
 				type: "choice"
 			}]
 			subtitle: "Automated mob killing"
 			tasks: [{
-				id: "IF_CRUSHER_T01"
+				id: "659B9FDD0BD440A3"
 				item: "industrialforegoing:mob_crusher"
 				type: "item"
 			}]
 			title: "Mob Crusher"
-			x: 6.0d
-			y: -1.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["IF_CRUSHER_001"]
+			dependencies: ["6F888FB6FC5F5173"]
 			description: [
 				"The &6Mob Duplicator&r spawns mobs using Essence and captured mob data."
 				""
@@ -712,32 +692,31 @@
 				"&7Create your own mob spawner for any creature!&r"
 			]
 			icon: "industrialforegoing:mob_duplicator"
-			id: "IF_DUPLICATOR_001"
+			id: "44A55AD983F19B67"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "IF_DUPLICATOR_R01"
-				table_id: 4000000000000020L
+				id: "457E201C08343AA8"
 				type: "choice"
 			}]
 			subtitle: "Mob spawning"
 			tasks: [
 				{
-					id: "IF_DUPLICATOR_T01"
+					id: "2668A7C959D45C31"
 					item: "industrialforegoing:mob_duplicator"
 					type: "item"
 				}
 				{
-					id: "IF_DUPLICATOR_T02"
+					id: "42D8CE2C93C3090A"
 					item: "industrialforegoing:mob_imprisonment_tool"
 					type: "item"
 				}
 			]
 			title: "Mob Duplicator"
-			x: 7.5d
-			y: -1.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["IF_START_001"]
+			dependencies: ["1D5EE2D52125AF38"]
 			description: [
 				"The &6Plant Sower&r automatically plants seeds in its working area."
 				""
@@ -754,25 +733,24 @@
 				"&7Pair with Plant Gatherer for full automation!&r"
 			]
 			icon: "industrialforegoing:plant_sower"
-			id: "IF_SOWER_001"
+			id: "3FAE33D9C6958B63"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "IF_SOWER_R01"
-				table_id: 4000000000000021L
+				id: "26D946AF70E2F21C"
 				type: "choice"
 			}]
 			subtitle: "Automated planting"
 			tasks: [{
-				id: "IF_SOWER_T01"
+				id: "7D97F2015910FE13"
 				item: "industrialforegoing:plant_sower"
 				type: "item"
 			}]
 			title: "Plant Sower"
-			x: 4.5d
-			y: 0.0d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["IF_SOWER_001"]
+			dependencies: ["3FAE33D9C6958B63"]
 			description: [
 				"The &6Plant Gatherer&r harvests mature crops in its working area."
 				""
@@ -789,16 +767,15 @@
 				"&7Complete your automated farm!&r"
 			]
 			icon: "industrialforegoing:plant_gatherer"
-			id: "IF_GATHERER_001"
+			id: "1E696F5F1E1ACB7F"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "IF_GATHERER_R01"
-				table_id: 4000000000000022L
+				id: "459864A84C271052"
 				type: "choice"
 			}]
 			subtitle: "Automated harvesting"
 			tasks: [{
-				id: "IF_GATHERER_T01"
+				id: "042C4D1497C5231D"
 				item: "industrialforegoing:plant_gatherer"
 				type: "item"
 			}]
@@ -807,7 +784,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["IF_GATHERER_001"]
+			dependencies: ["1D5EE2D52125AF38"]
 			description: [
 				"The &6Resourceful Furnace&r smelts items and generates Essence."
 				""
@@ -823,32 +800,31 @@
 				"&7Essential for Industrial Foregoing progression!&r"
 			]
 			icon: "industrialforegoing:resourceful_furnace"
-			id: "IF_FURNACE_001"
+			id: "2EF079167157E522"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "IF_FURNACE_R01"
-				table_id: 4000000000000023L
+				id: "2A1B61539E1ADD68"
 				type: "choice"
 			}]
 			subtitle: "Resource processing"
 			tasks: [
 				{
-					id: "IF_FURNACE_T01"
+					id: "3BF3E8F2683F26CF"
 					item: "industrialforegoing:resourceful_furnace"
 					type: "item"
 				}
 				{
-					id: "IF_FURNACE_T02"
+					id: "3748CC3513DEBE8F"
 					item: "industrialforegoing:dissolution_chamber"
 					type: "item"
 				}
 			]
 			title: "Resource Processing"
-			x: 4.5d
-			y: 3.0d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["IF_FURNACE_001"]
+			dependencies: ["2EF079167157E522"]
 			description: [
 				"The &6Latex Processing Unit&r extracts Latex from logs."
 				""
@@ -862,16 +838,15 @@
 				"&7Plastic through a different path!&r"
 			]
 			icon: "industrialforegoing:latex_processing_unit"
-			id: "IF_LATEX_001"
+			id: "4BB718CFD3E8E5B4"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "IF_LATEX_R01"
-				table_id: 4000000000000024L
+				id: "36B343E33910F765"
 				type: "choice"
 			}]
 			subtitle: "Latex extraction"
 			tasks: [{
-				id: "IF_LATEX_T01"
+				id: "4E8346BE792CE6DD"
 				item: "industrialforegoing:latex_processing_unit"
 				type: "item"
 			}]
@@ -880,7 +855,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_BASIC_001"]
+			dependencies: ["43ACAD557C638A34"]
 			description: [
 				"&6Welcome to RFTools!&r"
 				""
@@ -895,27 +870,26 @@
 				"&7Tools for the modern base!&r"
 			]
 			icon: "rftoolsbase:machine_frame"
-			id: "RF_START_001"
+			id: "2152FA11871A7613"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RF_START_R01"
-				table_id: 4000000000000025L
+				id: "4BB3E37C274321F0"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "RF-powered tools unlocked"
 			tasks: [{
 				count: 4L
-				id: "RF_START_T01"
+				id: "0ECF9F2BDF25A590"
 				item: { Count: 4, id: "rftoolsbase:machine_frame" }
 				type: "item"
 			}]
 			title: "RFTools"
-			x: 4.5d
-			y: -3.5d
+			x: 3.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["RF_START_001"]
+			dependencies: ["2152FA11871A7613"]
 			description: [
 				"The &6Crafter&r is a programmable autocrafting machine."
 				""
@@ -933,25 +907,24 @@
 				"&7Perfect for repetitive crafting tasks!&r"
 			]
 			icon: "rftoolsutility:crafter1"
-			id: "RF_CRAFTER_001"
+			id: "193D52C28DE96246"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RF_CRAFTER_R01"
-				table_id: 4000000000000026L
+				id: "1CB8E4463F6998E7"
 				type: "choice"
 			}]
 			subtitle: "Programmable crafting"
 			tasks: [{
-				id: "RF_CRAFTER_T01"
+				id: "2681F42F41D23393"
 				item: "rftoolsutility:crafter1"
 				type: "item"
 			}]
 			title: "RFTools Crafter"
-			x: 6.0d
-			y: -4.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["RF_START_001"]
+			dependencies: ["2152FA11871A7613"]
 			description: [
 				"The &6Builder&r is an incredibly versatile block manipulation machine."
 				""
@@ -967,26 +940,25 @@
 				"&7One machine, endless possibilities!&r"
 			]
 			icon: "rftoolsbuilder:builder"
-			id: "RF_BUILDER_001"
+			id: "26C9A82979EAA823"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RF_BUILDER_R01"
-				table_id: 4000000000000027L
+				id: "49079465E63568A2"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "World manipulation"
 			tasks: [{
-				id: "RF_BUILDER_T01"
+				id: "3E572F8598A9975C"
 				item: "rftoolsbuilder:builder"
 				type: "item"
 			}]
 			title: "RFTools Builder"
-			x: 6.0d
-			y: -3.5d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["RF_BUILDER_001"]
+			dependencies: ["26C9A82979EAA823"]
 			description: [
 				"&6Shape Cards&r define what the Builder does."
 				""
@@ -1004,25 +976,24 @@
 				"&7Customize your Builder for any task!&r"
 			]
 			icon: "rftoolsbuilder:shape_card_quarry"
-			id: "RF_SHAPES_001"
+			id: "08912F709E64223B"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RF_SHAPES_R01"
-				table_id: 4000000000000028L
+				id: "6A0E1382A4E2E24D"
 				type: "choice"
 			}]
 			subtitle: "Builder programming"
 			tasks: [{
-				id: "RF_SHAPES_T01"
+				id: "058C8DC700A2FF59"
 				item: "rftoolsbuilder:shape_card_quarry"
 				type: "item"
 			}]
 			title: "Shape Cards"
-			x: 7.5d
-			y: -3.5d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["RF_START_001"]
+			dependencies: ["2152FA11871A7613"]
 			description: [
 				"The &6Shield System&r creates force fields to protect your base."
 				""
@@ -1040,25 +1011,24 @@
 				"&7Impenetrable defense!&r"
 			]
 			icon: "rftoolsbuilder:shield_block1"
-			id: "RF_SHIELD_001"
+			id: "6BB6C0C7727509C7"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RF_SHIELD_R01"
-				table_id: 4000000000000029L
+				id: "29A9819DC0CD9682"
 				type: "choice"
 			}]
 			subtitle: "Force field protection"
 			tasks: [{
-				id: "RF_SHIELD_T01"
+				id: "1620391B8DEE3658"
 				item: "rftoolsbuilder:shield_block1"
 				type: "item"
 			}]
 			title: "Shield System"
-			x: 4.5d
-			y: -5.0d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ADV_001"]
+			dependencies: ["1D633BC72CC5CE4B"]
 			description: [
 				"&6Welcome to XNet!&r"
 				""
@@ -1076,26 +1046,25 @@
 				"&7One network to rule them all!&r"
 			]
 			icon: "xnet:controller"
-			id: "XNET_START_001"
+			id: "49C639FD0FD1CAAF"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "XNET_START_R01"
-				table_id: 4000000000000030L
+				id: "093049F86DA89E87"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Advanced networking unlocked"
 			tasks: [{
-				id: "XNET_START_T01"
+				id: "62833482D633175F"
 				item: "xnet:controller"
 				type: "item"
 			}]
 			title: "XNet"
-			x: 4.5d
-			y: 1.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["XNET_START_001"]
+			dependencies: ["2552E85F0923B3DB"]
 			description: [
 				"&6Connectors&r attach the XNet network to machines and inventories."
 				""
@@ -1113,34 +1082,33 @@
 				"&7The interface between XNet and your machines!&r"
 			]
 			icon: "xnet:connector_blue"
-			id: "XNET_CONNECTOR_001"
+			id: "06740BF3EC4C2161"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "XNET_CONNECTOR_R01"
-				table_id: 4000000000000031L
+				id: "59CF5C7608E339A2"
 				type: "choice"
 			}]
 			subtitle: "Machine connections"
 			tasks: [
 				{
 					count: 8L
-					id: "XNET_CONNECTOR_T01"
+					id: "5C7415E8156A4741"
 					item: { Count: 8, id: "xnet:connector_blue" }
 					type: "item"
 				}
 				{
 					count: 16L
-					id: "XNET_CONNECTOR_T02"
+					id: "3BDAC1459744C2D8"
 					item: { Count: 16, id: "xnet:netcable_blue" }
 					type: "item"
 				}
 			]
-			title: "Connectors \& Cables"
-			x: 6.0d
-			y: 1.5d
+			title: "Connectors  Cables"
+			x: 4.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["XNET_CONNECTOR_001"]
+			dependencies: ["49C639FD0FD1CAAF"]
 			description: [
 				"&6Channels&r are the core concept of XNet networking."
 				""
@@ -1158,25 +1126,24 @@
 				"&7Master channels to master XNet!&r"
 			]
 			icon: "xnet:connector_upgrade"
-			id: "XNET_CHANNELS_001"
+			id: "4607E66818916A5B"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "XNET_CHANNELS_R01"
-				table_id: 4000000000000032L
+				id: "17168E58126CD90D"
 				type: "choice"
 			}]
 			subtitle: "Network configuration"
 			tasks: [{
-				id: "XNET_CHANNELS_T01"
+				id: "26FDEC199A1E5CE0"
 				title: "Configure an XNet Channel"
 				type: "checkmark"
 			}]
 			title: "Channel Configuration"
-			x: 7.5d
-			y: 1.5d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["XNET_CHANNELS_001"]
+			dependencies: ["49C639FD0FD1CAAF"]
 			description: [
 				"The &6Router&r allows XNet networks to communicate with each other."
 				""
@@ -1190,26 +1157,25 @@
 				"&7Take your logistics to the next level!&r"
 			]
 			icon: "xnet:router"
-			id: "XNET_ROUTER_001"
+			id: "2552E85F0923B3DB"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "XNET_ROUTER_R01"
-				table_id: 4000000000000033L
+				id: "3F12380C606CCC17"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Inter-network communication"
 			tasks: [{
-				id: "XNET_ROUTER_T01"
+				id: "5EE7BA29871ADFB4"
 				item: "xnet:router"
 				type: "item"
 			}]
 			title: "XNet Router"
-			x: 7.5d
+			x: 4.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ELITE_001"]
+			dependencies: ["69EBE8C5BBE0C632"]
 			description: [
 				"&6Welcome to Applied Energistics 2!&r"
 				""
@@ -1225,26 +1191,25 @@
 				"&7Digital storage awaits!&r"
 			]
 			icon: "ae2:controller"
-			id: "AE2_START_001"
+			id: "50624FE288CCBC3D"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_START_R01"
-				table_id: 4000000000000034L
+				id: "290EC0830F386098"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Digital storage unlocked"
 			tasks: [{
-				id: "AE2_START_T01"
+				id: "3C702B3E50073B20"
 				title: "Begin Applied Energistics 2"
 				type: "checkmark"
 			}]
 			title: "Applied Energistics 2"
-			x: 4.5d
-			y: 4.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["AE2_START_001"]
+			dependencies: ["50624FE288CCBC3D"]
 			description: [
 				"&6Certus Quartz&r is the foundation of AE2."
 				""
@@ -1262,34 +1227,33 @@
 				"&7These crystals power your digital empire!&r"
 			]
 			icon: "ae2:certus_quartz_crystal"
-			id: "AE2_QUARTZ_001"
+			id: "290C55CBF59ACF06"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_QUARTZ_R01"
-				table_id: 4000000000000035L
+				id: "796DC63EF0DEFAB5"
 				type: "choice"
 			}]
 			subtitle: "Foundation crystals"
 			tasks: [
 				{
 					count: 32L
-					id: "AE2_QUARTZ_T01"
+					id: "2DF32F944F9B3B2E"
 					item: { Count: 32, id: "ae2:certus_quartz_crystal" }
 					type: "item"
 				}
 				{
 					count: 16L
-					id: "AE2_QUARTZ_T02"
+					id: "7B5AB8FDB1B3F504"
 					item: { Count: 16, id: "ae2:fluix_crystal" }
 					type: "item"
 				}
 			]
 			title: "Crystals"
-			x: 6.0d
-			y: 4.5d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["AE2_QUARTZ_001"]
+			dependencies: ["290C55CBF59ACF06"]
 			description: [
 				"The &6Inscriber&r creates the processors that power AE2 machines."
 				""
@@ -1304,25 +1268,27 @@
 				"&7Hunt meteorites for presses!&r"
 			]
 			icon: "ae2:inscriber"
-			id: "AE2_INSCRIBER_001"
+			id: "7B0BCE9167CF7126"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_INSCRIBER_R01"
-				table_id: 4000000000000036L
+				id: "49898A19992B9FED"
 				type: "choice"
 			}]
 			subtitle: "Processor manufacturing"
 			tasks: [{
-				id: "AE2_INSCRIBER_T01"
+				id: "66AD81D8CEDE276B"
 				item: "ae2:inscriber"
 				type: "item"
 			}]
 			title: "Inscriber"
-			x: 7.5d
-			y: 4.5d
+			x: 4.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["AE2_INSCRIBER_001"]
+			dependencies: [
+				"7B0BCE9167CF7126"
+				"290C55CBF59ACF06"
+			]
 			description: [
 				"&6Processors&r are the brains of AE2 machines."
 				""
@@ -1339,40 +1305,39 @@
 				"&7The thinking parts of your ME network!&r"
 			]
 			icon: "ae2:engineering_processor"
-			id: "AE2_PROCESSORS_001"
+			id: "20CFC4DE5F207D70"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_PROCESSORS_R01"
-				table_id: 4000000000000037L
+				id: "1ED372305D7164D7"
 				type: "choice"
 			}]
 			subtitle: "Digital brains"
 			tasks: [
 				{
 					count: 8L
-					id: "AE2_PROCESSORS_T01"
+					id: "65D5639F6A48FD39"
 					item: { Count: 8, id: "ae2:logic_processor" }
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "AE2_PROCESSORS_T02"
+					id: "71156FA521113206"
 					item: { Count: 8, id: "ae2:calculation_processor" }
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "AE2_PROCESSORS_T03"
+					id: "7E4276B0F8576B76"
 					item: { Count: 8, id: "ae2:engineering_processor" }
 					type: "item"
 				}
 			]
 			title: "Processors"
-			x: 7.5d
-			y: 6.0d
+			x: 4.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["AE2_QUARTZ_001"]
+			dependencies: ["20CFC4DE5F207D70"]
 			description: [
 				"The &6ME Controller&r is the brain of your storage network."
 				""
@@ -1387,26 +1352,25 @@
 				"&7The heart of your digital storage!&r"
 			]
 			icon: "ae2:controller"
-			id: "AE2_CONTROLLER_001"
+			id: "329A219C75DFF215"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_CONTROLLER_R01"
-				table_id: 4000000000000038L
+				id: "37D0D570218149E4"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Network brain"
 			tasks: [{
-				id: "AE2_CONTROLLER_T01"
+				id: "47159334F3A4788C"
 				item: "ae2:controller"
 				type: "item"
 			}]
 			title: "ME Controller"
 			x: 6.0d
-			y: 6.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["AE2_CONTROLLER_001"]
+			dependencies: ["20CFC4DE5F207D70"]
 			description: [
 				"&6ME Drives&r hold storage cells containing your items."
 				""
@@ -1424,33 +1388,32 @@
 				"&7Your digital warehouse!&r"
 			]
 			icon: "ae2:drive"
-			id: "AE2_DRIVE_001"
+			id: "4625ED1878D9E302"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_DRIVE_R01"
-				table_id: 4000000000000039L
+				id: "4D2C88F7DE398FD1"
 				type: "choice"
 			}]
 			subtitle: "Digital storage"
 			tasks: [
 				{
-					id: "AE2_DRIVE_T01"
+					id: "5D53E187F138E92C"
 					item: "ae2:drive"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "AE2_DRIVE_T02"
+					id: "608A5FBB63234898"
 					item: { Count: 2, id: "ae2:item_storage_cell_4k" }
 					type: "item"
 				}
 			]
 			title: "ME Drive"
 			x: 6.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["AE2_DRIVE_001"]
+			dependencies: ["20CFC4DE5F207D70"]
 			description: [
 				"&6Terminals&r provide access to your ME network."
 				""
@@ -1469,27 +1432,26 @@
 				"&7Your window into digital storage!&r"
 			]
 			icon: "ae2:crafting_terminal"
-			id: "AE2_TERMINAL_001"
+			id: "4EFDF894BCC3568C"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_TERMINAL_R01"
-				table_id: 4000000000000040L
+				id: "0D8526FDF2A8D3C1"
 				type: "choice"
 			}]
 			subtitle: "Network access"
 			tasks: [{
-				id: "AE2_TERMINAL_T01"
+				id: "780F90E5486379D1"
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
 			title: "Crafting Terminal"
 			x: 4.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
-				"AE2_PROCESSORS_001"
-				"AE2_TERMINAL_001"
+				"4EFDF894BCC3568C"
+				"329A219C75DFF215"
 			]
 			description: [
 				"&6Autocrafting&r automatically crafts items on demand."
@@ -1509,38 +1471,37 @@
 				"&7The ultimate automation achievement!&r"
 			]
 			icon: "ae2:molecular_assembler"
-			id: "AE2_AUTOCRAFT_001"
+			id: "54B751684B7147A0"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "AE2_AUTOCRAFT_R01"
-				table_id: 4000000000000041L
+				id: "58F47FDB50F69F05"
 				type: "choice"
 			}]
 			shape: "gear"
 			subtitle: "On-demand crafting"
 			tasks: [
 				{
-					id: "AE2_AUTOCRAFT_T01"
+					id: "1EEC24A175124AD7"
 					item: "ae2:molecular_assembler"
 					type: "item"
 				}
 				{
-					id: "AE2_AUTOCRAFT_T02"
+					id: "0B03CFEF75611596"
 					item: "ae2:pattern_provider"
 					type: "item"
 				}
 				{
-					id: "AE2_AUTOCRAFT_T03"
+					id: "0311BAC5CDBAD0A6"
 					item: "ae2:1k_crafting_storage"
 					type: "item"
 				}
 			]
 			title: "Autocrafting"
-			x: 4.5d
+			x: 6.0d
 			y: 9.0d
 		}
 		{
-			dependencies: ["ADV_CIRCUIT_ULTIMATE_001"]
+			dependencies: ["6F16B86C90580EFA"]
 			description: [
 				"The &6Teleporter&r enables instant player transport across any distance."
 				""
@@ -1558,1040 +1519,30 @@
 				"&7Travel anywhere instantly!&r"
 			]
 			icon: "mekanism:teleporter"
-			id: "ADV_TELEPORTER_001"
+			id: "15C01830548F5AA3"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ADV_TELEPORTER_R01"
-				table_id: 4000000000000042L
+				id: "51CC66185BFE7B83"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Instant transport"
 			tasks: [
 				{
-					id: "ADV_TELEPORTER_T01"
+					id: "69FE281BD4C43BFC"
 					item: "mekanism:teleporter"
 					type: "item"
 				}
 				{
 					count: 9L
-					id: "ADV_TELEPORTER_T02"
+					id: "7CBB504B5EDBBCF1"
 					item: { Count: 9, id: "mekanism:teleporter_frame" }
 					type: "item"
 				}
 			]
 			title: "Teleporter"
-			x: -1.5d
+			x: 1.5d
 			y: 9.0d
-		}
-	]
-	reward_tables: [
-		{
-			id: 4000000000000001L
-			rewards: [
-				{
-					id: "ADV001A"
-					item: "mekanism:configurator"
-					type: "item"
-				}
-				{
-					id: "ADV001B"
-					item: "mekanism:ingot_osmium"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV001C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Mekanism Starter"
-		}
-		{
-			id: 4000000000000002L
-			rewards: [
-				{
-					id: "ADV002A"
-					item: "mekanism:ingot_osmium"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "ADV002B"
-					item: "mekanism:dust_osmium"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV002C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Osmium Supplies"
-		}
-		{
-			id: 4000000000000003L
-			rewards: [
-				{
-					id: "ADV003A"
-					item: "minecraft:redstone"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "ADV003B"
-					item: "minecraft:coal"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "ADV003C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Infusion Materials"
-		}
-		{
-			id: 4000000000000004L
-			rewards: [
-				{
-					id: "ADV004A"
-					item: "mekanism:steel_casing"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "ADV004B"
-					item: "immersiveengineering:ingot_steel"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV004C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Steel Supplies"
-		}
-		{
-			id: 4000000000000005L
-			rewards: [
-				{
-					id: "ADV005A"
-					item: "mekanism:basic_control_circuit"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "ADV005B"
-					item: "mekanism:ingot_osmium"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV005C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Basic Circuits"
-		}
-		{
-			id: 4000000000000006L
-			rewards: [
-				{
-					id: "ADV006A"
-					item: "mekanism:alloy_infused"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV006B"
-					item: "minecraft:iron_ingot"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "ADV006C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Infused Alloy Pack"
-		}
-		{
-			id: 4000000000000007L
-			rewards: [
-				{
-					id: "ADV007A"
-					item: "mekanism:advanced_control_circuit"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "ADV007B"
-					item: "mekanism:alloy_infused"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "ADV007C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Advanced Circuits"
-		}
-		{
-			id: 4000000000000008L
-			rewards: [
-				{
-					id: "ADV008A"
-					item: "mekanism:alloy_reinforced"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV008B"
-					item: "minecraft:diamond"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "ADV008C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Reinforced Alloy Pack"
-		}
-		{
-			id: 4000000000000009L
-			rewards: [
-				{
-					id: "ADV009A"
-					item: "mekanism:elite_control_circuit"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "ADV009B"
-					item: "mekanism:alloy_reinforced"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "ADV009C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Elite Circuits"
-		}
-		{
-			id: 4000000000000010L
-			rewards: [
-				{
-					id: "ADV010A"
-					item: "mekanism:alloy_atomic"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV010B"
-					item: "minecraft:obsidian"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV010C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Atomic Alloy Pack"
-		}
-		{
-			id: 4000000000000011L
-			rewards: [
-				{
-					id: "ADV011A"
-					item: "mekanism:ultimate_control_circuit"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "ADV011B"
-					item: "mekanism:alloy_atomic"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "ADV011C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Ultimate Circuits"
-		}
-		{
-			id: 4000000000000012L
-			rewards: [
-				{
-					id: "ADV012A"
-					item: "mekanism:upgrade_speed"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "ADV012B"
-					item: "mekanism:upgrade_energy"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "ADV012C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Machine Upgrades"
-		}
-		{
-			id: 4000000000000013L
-			rewards: [
-				{
-					id: "ADV013A"
-					item: "mekanism:dust_obsidian"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV013B"
-					item: "mekanism:bio_fuel"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "ADV013C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Crusher Output"
-		}
-		{
-			id: 4000000000000014L
-			rewards: [
-				{
-					id: "ADV014A"
-					item: "mekanism:upgrade_speed"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "ADV014B"
-					item: "minecraft:coal"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "ADV014C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Smelter Supplies"
-		}
-		{
-			id: 4000000000000015L
-			rewards: [
-				{
-					id: "ADV015A"
-					item: "mekanism:upgrade_anchor"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "ADV015B"
-					item: "mekanism:basic_bin"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "ADV015C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Miner Supplies"
-		}
-		{
-			id: 4000000000000016L
-			rewards: [
-				{
-					id: "ADV016A"
-					item: "mekanism:basic_universal_cable"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV016B"
-					item: "mekanism:basic_logistical_transporter"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV016C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Transport Pack"
-		}
-		{
-			id: 4000000000000017L
-			rewards: [
-				{
-					id: "ADV017A"
-					item: "mekanism:induction_cell"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "ADV017B"
-					item: "mekanism:induction_provider"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "ADV017C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Induction Components"
-		}
-		{
-			id: 4000000000000018L
-			rewards: [
-				{
-					id: "IF001A"
-					item: "industrialforegoing:machine_frame_pity"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "IF001B"
-					item: "minecraft:iron_ingot"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "IF001C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "IF Starter"
-		}
-		{
-			id: 4000000000000019L
-			rewards: [
-				{
-					id: "IF002A"
-					item: "industrialforegoing:mob_imprisonment_tool"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "IF002B"
-					item: "minecraft:ender_pearl"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "IF002C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Mob Tools"
-		}
-		{
-			id: 4000000000000020L
-			rewards: [
-				{
-					id: "IF003A"
-					item: "industrialforegoing:range_addon1"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "IF003B"
-					item: "minecraft:experience_bottle"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "IF003C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Duplicator Kit"
-		}
-		{
-			id: 4000000000000021L
-			rewards: [
-				{
-					id: "IF004A"
-					item: "minecraft:wheat_seeds"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "IF004B"
-					item: "minecraft:bone_meal"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "IF004C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Farming Seeds"
-		}
-		{
-			id: 4000000000000022L
-			rewards: [
-				{
-					id: "IF005A"
-					item: "industrialforegoing:range_addon1"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "IF005B"
-					item: "minecraft:iron_hoe"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "IF005C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Harvesting Kit"
-		}
-		{
-			id: 4000000000000023L
-			rewards: [
-				{
-					id: "IF006A"
-					item: "minecraft:pink_dye"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "IF006B"
-					item: "minecraft:slime_ball"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "IF006C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Pink Slime Materials"
-		}
-		{
-			id: 4000000000000024L
-			rewards: [
-				{
-					id: "IF007A"
-					item: "industrialforegoing:plastic"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "IF007B"
-					item: "minecraft:oak_log"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "IF007C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Latex Production"
-		}
-		{
-			id: 4000000000000025L
-			rewards: [
-				{
-					id: "RF001A"
-					item: "rftoolsbase:machine_frame"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RF001B"
-					item: "rftoolsbase:smartwrench"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "RF001C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "RFTools Starter"
-		}
-		{
-			id: 4000000000000026L
-			rewards: [
-				{
-					id: "RF002A"
-					item: "minecraft:crafting_table"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RF002B"
-					item: "minecraft:chest"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RF002C"
-					item: "numismatics:bevel"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Crafting Supplies"
-		}
-		{
-			id: 4000000000000027L
-			rewards: [
-				{
-					id: "RF003A"
-					item: "rftoolsbuilder:shape_card_def"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RF003B"
-					item: "minecraft:chest"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "RF003C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Builder Supplies"
-		}
-		{
-			id: 4000000000000028L
-			rewards: [
-				{
-					id: "RF004A"
-					item: "rftoolsbuilder:shape_card_void"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "RF004B"
-					item: "rftoolsbuilder:shape_card_pump"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "RF004C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Shape Card Pack"
-		}
-		{
-			id: 4000000000000029L
-			rewards: [
-				{
-					id: "RF005A"
-					item: "rftoolsbuilder:shield_block2"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "RF005B"
-					item: "minecraft:ender_pearl"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "RF005C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Shield Upgrade"
-		}
-		{
-			id: 4000000000000030L
-			rewards: [
-				{
-					id: "XNET001A"
-					item: "xnet:connector_blue"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "XNET001B"
-					item: "xnet:netcable_blue"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "XNET001C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "XNet Starter"
-		}
-		{
-			id: 4000000000000031L
-			rewards: [
-				{
-					id: "XNET002A"
-					item: "xnet:advanced_connector_blue"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "XNET002B"
-					item: "xnet:netcable_blue"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "XNET002C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Advanced Connectors"
-		}
-		{
-			id: 4000000000000032L
-			rewards: [
-				{
-					id: "XNET003A"
-					item: "xnet:connector_upgrade"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "XNET003B"
-					item: "minecraft:redstone"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "XNET003C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Channel Upgrades"
-		}
-		{
-			id: 4000000000000033L
-			rewards: [
-				{
-					id: "XNET004A"
-					item: "xnet:advanced_connector_blue"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "XNET004B"
-					item: "xnet:netcable_blue"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "XNET004C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Router Expansion"
-		}
-		{
-			id: 4000000000000034L
-			rewards: [
-				{
-					id: "AE001A"
-					item: "ae2:certus_quartz_crystal"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "AE001B"
-					item: "ae2:charged_certus_quartz_crystal"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "AE001C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "AE2 Starter"
-		}
-		{
-			id: 4000000000000035L
-			rewards: [
-				{
-					id: "AE002A"
-					item: "ae2:fluix_crystal"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "AE002B"
-					item: "minecraft:quartz"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "AE002C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Crystal Supplies"
-		}
-		{
-			id: 4000000000000036L
-			rewards: [
-				{
-					id: "AE003A"
-					item: "ae2:silicon"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "AE003B"
-					item: "minecraft:redstone"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "AE003C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Inscriber Materials"
-		}
-		{
-			id: 4000000000000037L
-			rewards: [
-				{
-					id: "AE004A"
-					item: "ae2:logic_processor"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "AE004B"
-					item: "ae2:calculation_processor"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "AE004C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Processor Pack"
-		}
-		{
-			id: 4000000000000038L
-			rewards: [
-				{
-					id: "AE005A"
-					item: "ae2:energy_acceptor"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "AE005B"
-					item: "ae2:fluix_glass_cable"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "AE005C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Controller Setup"
-		}
-		{
-			id: 4000000000000039L
-			rewards: [
-				{
-					id: "AE006A"
-					item: "ae2:item_storage_cell_4k"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "AE006B"
-					item: "ae2:item_storage_cell_16k"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "AE006C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Storage Cells"
-		}
-		{
-			id: 4000000000000040L
-			rewards: [
-				{
-					id: "AE007A"
-					item: "ae2:fluix_glass_cable"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "AE007B"
-					item: "ae2:terminal"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "AE007C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Terminal Supplies"
-		}
-		{
-			id: 4000000000000041L
-			rewards: [
-				{
-					id: "AE008A"
-					item: "ae2:blank_pattern"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "AE008B"
-					item: "ae2:molecular_assembler"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "AE008C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Autocrafting Kit"
-		}
-		{
-			id: 4000000000000042L
-			rewards: [
-				{
-					id: "ADV042A"
-					item: "mekanism:teleporter_frame"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "ADV042B"
-					item: "mekanism:basic_universal_cable"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "ADV042C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Teleporter Kit"
 		}
 	]
 	title: "Advanced Circuitry"

@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["ADV_CIRCUIT_ULTIMATE_001"]
 			description: [
 				"&6Welcome to the Nuclear Age!&r"
 				""
@@ -19,24 +18,23 @@
 				"• &bElectrodynamics&r - Advanced electrical components"
 				"• &bNuclear Reactors&r - Massive power generation"
 				"• &bParticle Acceleration&r - Creating exotic matter"
-				"• &bAntimatter \& Dark Matter&r - The ultimate materials"
+				"• &bAntimatter  Dark Matter&r - The ultimate materials"
 				""
 				"&cWarning: Nuclear materials are dangerous! Always wear hazmat gear when handling radioactive materials.&r"
 				""
 				"&7The path to the stars begins here!&r"
 			]
 			icon: "electrodynamics:transformer_upgrade_tripleoutput"
-			id: "NUC_START_001"
+			id: "711D0E39865BE2B4"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_START_R01"
-				table_id: 5000000000000001L
+				id: "1CE42A8CEDEAED4C"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "Enter the age of nuclear power"
 			tasks: [{
-				id: "NUC_START_T01"
+				id: "2F09E482599DE395"
 				title: "Begin Nuclear Science"
 				type: "checkmark"
 			}]
@@ -45,7 +43,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["NUC_START_001"]
+			dependencies: ["711D0E39865BE2B4"]
 			description: [
 				"The &6Mineral Crusher&r is Electrodynamics' ore processing machine."
 				""
@@ -59,16 +57,15 @@
 				"&7Start your Electrodynamics journey with efficient ore processing.&r"
 			]
 			icon: "electrodynamics:mineralcrusher"
-			id: "ELEC_CRUSHER_001"
+			id: "656412DD4B598B30"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ELEC_CRUSHER_R01"
-				table_id: 5000000000000002L
+				id: "39D87DCE4FACCD1A"
 				type: "choice"
 			}]
 			subtitle: "Ore multiplication begins"
 			tasks: [{
-				id: "ELEC_CRUSHER_T01"
+				id: "47702F7FF8084104"
 				item: "electrodynamics:mineralcrusher"
 				type: "item"
 			}]
@@ -77,7 +74,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["NUC_START_001"]
+			dependencies: ["711D0E39865BE2B4"]
 			description: [
 				"The &6Wire Mill&r creates wires from ingots - essential for electrical components."
 				""
@@ -94,16 +91,15 @@
 				"&7Wires connect your electrical empire!&r"
 			]
 			icon: "electrodynamics:wiremill"
-			id: "ELEC_WIREMILL_001"
+			id: "1CF591C93E381094"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ELEC_WIREMILL_R01"
-				table_id: 5000000000000003L
+				id: "63AB20282ED71A8F"
 				type: "choice"
 			}]
 			subtitle: "Wire production"
 			tasks: [{
-				id: "ELEC_WIREMILL_T01"
+				id: "01C71298CAC57894"
 				item: "electrodynamics:wiremill"
 				type: "item"
 			}]
@@ -112,7 +108,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["ELEC_WIREMILL_001"]
+			dependencies: ["1CF591C93E381094"]
 			description: [
 				"&6Copper Coils&r are fundamental electrical components."
 				""
@@ -130,18 +126,20 @@
 				"&7The building block of electrical machinery.&r"
 			]
 			icon: "electrodynamics:coil_copper"
-			id: "ELEC_COIL_001"
+			id: "53E42D1D003AFEE1"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ELEC_COIL_R01"
-				table_id: 5000000000000004L
+				id: "03279DAAAC34AE55"
 				type: "choice"
 			}]
 			subtitle: "Electrical components"
 			tasks: [{
 				count: 16L
-				id: "ELEC_COIL_T01"
-				item: { Count: 16, id: "electrodynamics:coil_copper" }
+				id: "07238E31A6AE7E05"
+				item: {
+					Count: 16
+					id: "electrodynamics:coil_copper"
+				}
 				type: "item"
 			}]
 			title: "Copper Coils"
@@ -149,7 +147,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["ELEC_COIL_001"]
+			dependencies: ["53E42D1D003AFEE1"]
 			description: [
 				"&6Motors&r convert electrical energy into mechanical motion."
 				""
@@ -165,34 +163,39 @@
 				"&7Power your machines with rotational force!&r"
 			]
 			icon: "electrodynamics:motor_ac"
-			id: "ELEC_MOTOR_001"
+			id: "6B4A56FCDD961C24"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ELEC_MOTOR_R01"
-				table_id: 5000000000000005L
+				id: "37BF56DFF75AD8C1"
 				type: "choice"
 			}]
 			subtitle: "Rotational power"
 			tasks: [
 				{
 					count: 4L
-					id: "ELEC_MOTOR_T01"
-					item: { Count: 4, id: "electrodynamics:motor_ac" }
+					id: "1ED7459B406E823D"
+					item: {
+						Count: 4
+						id: "electrodynamics:motor_ac"
+					}
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "ELEC_MOTOR_T02"
-					item: { Count: 4, id: "electrodynamics:motor_dc" }
+					id: "6270D01576EFB853"
+					item: {
+						Count: 4
+						id: "electrodynamics:motor_dc"
+					}
 					type: "item"
 				}
 			]
 			title: "Electric Motors"
-			x: 1.5d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["ELEC_COIL_001"]
+			dependencies: ["53E42D1D003AFEE1"]
 			description: [
 				"&6Electrodynamics Circuits&r are tiered components for machines."
 				""
@@ -206,11 +209,10 @@
 				"&7The brains of your electrical devices!&r"
 			]
 			icon: "electrodynamics:circuit_basic"
-			id: "ELEC_CIRCUIT_001"
+			id: "49C8B21442805F19"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "ELEC_CIRCUIT_R01"
-				table_id: 5000000000000006L
+				id: "1412E0BB75B48AD1"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -218,14 +220,20 @@
 			tasks: [
 				{
 					count: 8L
-					id: "ELEC_CIRCUIT_T01"
-					item: { Count: 8, id: "electrodynamics:circuit_basic" }
+					id: "3CB8860A974E8A95"
+					item: {
+						Count: 8
+						id: "electrodynamics:circuit_basic"
+					}
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "ELEC_CIRCUIT_T02"
-					item: { Count: 4, id: "electrodynamics:circuit_advanced" }
+					id: "74643D312459D89B"
+					item: {
+						Count: 4
+						id: "electrodynamics:circuit_advanced"
+					}
 					type: "item"
 				}
 			]
@@ -234,10 +242,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"ELEC_CRUSHER_001"
-				"ELEC_CIRCUIT_001"
-			]
+			dependencies: ["711D0E39865BE2B4"]
 			description: [
 				"&6Welcome to Nuclear Science!&r"
 				""
@@ -254,27 +259,29 @@
 				"&cAlways wear hazmat gear around radioactive materials!&r"
 			]
 			icon: "nuclearscience:uranium_235"
-			id: "NUC_URANIUM_001"
+			id: "219042873A3AA8CF"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_URANIUM_R01"
-				table_id: 5000000000000007L
+				id: "732504F295E97B0A"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "The nuclear fuel"
 			tasks: [{
 				count: 32L
-				id: "NUC_URANIUM_T01"
-				item: { Count: 32, id: "nuclearscience:ore_uranium" }
+				id: "50A49E023D8A7158"
+				item: {
+					Count: 32
+					id: "nuclearscience:ore_uranium"
+				}
 				type: "item"
 			}]
 			title: "Uranium Mining"
 			x: 0.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["NUC_URANIUM_001"]
+			dependencies: ["219042873A3AA8CF"]
 			description: [
 				"&6Hazmat Protection&r is essential when working with radioactive materials."
 				""
@@ -292,43 +299,42 @@
 				"&cNEVER handle radioactive materials without protection!&r"
 			]
 			icon: "nuclearscience:hazmat_helmet"
-			id: "NUC_HAZMAT_001"
+			id: "0E4C561B688DB960"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_HAZMAT_R01"
-				table_id: 5000000000000008L
+				id: "7FB39FC00C3B8EED"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Radiation protection"
 			tasks: [
 				{
-					id: "NUC_HAZMAT_T01"
+					id: "6188797B478CE0D7"
 					item: "nuclearscience:hazmat_helmet"
 					type: "item"
 				}
 				{
-					id: "NUC_HAZMAT_T02"
+					id: "698AEC8EC891C040"
 					item: "nuclearscience:hazmat_chestplate"
 					type: "item"
 				}
 				{
-					id: "NUC_HAZMAT_T03"
+					id: "75145B9F287C90C6"
 					item: "nuclearscience:hazmat_leggings"
 					type: "item"
 				}
 				{
-					id: "NUC_HAZMAT_T04"
+					id: "6ADCB6A76D12C5C2"
 					item: "nuclearscience:hazmat_boots"
 					type: "item"
 				}
 			]
 			title: "Hazmat Suit"
 			x: -1.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["NUC_URANIUM_001"]
+			dependencies: ["6B4A56FCDD961C24"]
 			description: [
 				"The &6Chemical Extractor&r processes uranium ore into usable isotopes."
 				""
@@ -342,25 +348,24 @@
 				"&7Begin the enrichment process!&r"
 			]
 			icon: "nuclearscience:chemical_extractor"
-			id: "NUC_EXTRACTOR_001"
+			id: "23B3EE84F4FA86EA"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_EXTRACTOR_R01"
-				table_id: 5000000000000009L
+				id: "733E668E4064008A"
 				type: "choice"
 			}]
 			subtitle: "Uranium processing"
 			tasks: [{
-				id: "NUC_EXTRACTOR_T01"
+				id: "7AEB7DA0718739B2"
 				item: "nuclearscience:chemical_extractor"
 				type: "item"
 			}]
 			title: "Chemical Extractor"
-			x: 1.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["NUC_EXTRACTOR_001"]
+			dependencies: ["23B3EE84F4FA86EA"]
 			description: [
 				"The &6Gas Centrifuge&r separates uranium isotopes by mass."
 				""
@@ -376,25 +381,24 @@
 				"&7Isotope separation through physics!&r"
 			]
 			icon: "nuclearscience:gas_centrifuge"
-			id: "NUC_CENTRIFUGE_001"
+			id: "281084CAF20F8BFE"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_CENTRIFUGE_R01"
-				table_id: 5000000000000010L
+				id: "4A07DF6EE8A04565"
 				type: "choice"
 			}]
 			subtitle: "Isotope enrichment"
 			tasks: [{
-				id: "NUC_CENTRIFUGE_T01"
+				id: "07BD3736BDCD74D4"
 				item: "nuclearscience:gas_centrifuge"
 				type: "item"
 			}]
 			title: "Gas Centrifuge"
 			x: 1.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["NUC_CENTRIFUGE_001"]
+			dependencies: ["219042873A3AA8CF"]
 			description: [
 				"&6Fuel Cells&r contain enriched uranium for reactor use."
 				""
@@ -408,30 +412,42 @@
 				""
 				"&7The heart of nuclear power!&r"
 			]
-			icon: "nuclearscience:fuelheuo2"
-			id: "NUC_FUEL_001"
+			icon: {
+				Count: 1
+				id: "nuclearscience:fuelheuo2"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4E383308BD491153"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_FUEL_R01"
-				table_id: 5000000000000011L
+				id: "794349C482AA871D"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Reactor fuel"
 			tasks: [{
 				count: 8L
-				id: "NUC_FUEL_T01"
-				item: { Count: 8, id: "nuclearscience:fuelheuo2" }
+				id: "7BF4E8886E9C9C3C"
+				item: {
+					Count: 8
+					id: "nuclearscience:fuelheuo2"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "Nuclear Fuel Cells"
-			x: 1.5d
-			y: 3.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
-				"NUC_HAZMAT_001"
-				"NUC_FUEL_001"
+				"4E383308BD491153"
+				"0E4C561B688DB960"
+				"281084CAF20F8BFE"
 			]
 			description: [
 				"The &6Fission Reactor&r generates massive amounts of power through nuclear fission."
@@ -449,34 +465,36 @@
 				"&7Harness the power of the atom!&r"
 			]
 			icon: "nuclearscience:reactor_core"
-			id: "NUC_REACTOR_001"
+			id: "68AD835533043AD0"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_REACTOR_R01"
-				table_id: 5000000000000012L
+				id: "297120CE5C9D2D24"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "Nuclear power generation"
 			tasks: [
 				{
-					id: "NUC_REACTOR_T01"
+					id: "140D907C10AF6E65"
 					item: "nuclearscience:reactor_core"
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "NUC_REACTOR_T02"
-					item: { Count: 4, id: "nuclearscience:control_rod_assembly" }
+					id: "481A50837FF07CA1"
+					item: {
+						Count: 4
+						id: "nuclearscience:control_rod_assembly"
+					}
 					type: "item"
 				}
 			]
 			title: "Fission Reactor"
 			x: 0.0d
-			y: 4.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["NUC_REACTOR_001"]
+			dependencies: ["68AD835533043AD0"]
 			description: [
 				"&6Steam Turbines&r convert reactor heat into usable electricity."
 				""
@@ -492,26 +510,25 @@
 				"&7Turn nuclear heat into electrical power!&r"
 			]
 			icon: "nuclearscience:turbine"
-			id: "NUC_TURBINE_001"
+			id: "4C1153CC3EC9455E"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_TURBINE_R01"
-				table_id: 5000000000000013L
+				id: "010D120055574128"
 				type: "choice"
 			}]
 			subtitle: "Power conversion"
 			tasks: [{
 				count: 4L
-				id: "NUC_TURBINE_T01"
+				id: "41D85C1D3C905B98"
 				item: { Count: 4, id: "nuclearscience:turbine" }
 				type: "item"
 			}]
 			title: "Steam Turbines"
 			x: -1.5d
-			y: 6.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["NUC_REACTOR_001"]
+			dependencies: ["68AD835533043AD0"]
 			description: [
 				"The &6Particle Accelerator&r uses electromagnetic fields to accelerate particles to near light speed."
 				""
@@ -530,26 +547,25 @@
 				"&7Push the boundaries of physics!&r"
 			]
 			icon: "nuclearscience:particle_injector"
-			id: "NUC_ACCELERATOR_001"
+			id: "203C61C6315CFF17"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_ACCELERATOR_R01"
-				table_id: 5000000000000014L
+				id: "167360D3AD327E51"
 				type: "choice"
 			}]
 			shape: "hexagon"
 			subtitle: "Particle physics"
 			tasks: [{
-				id: "NUC_ACCELERATOR_T01"
+				id: "2ECA066464ABED26"
 				item: "nuclearscience:particle_injector"
 				type: "item"
 			}]
 			title: "Particle Accelerator"
 			x: 1.5d
-			y: 6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["NUC_ACCELERATOR_001"]
+			dependencies: ["203C61C6315CFF17"]
 			description: [
 				"&6Electromagnetic Containment&r uses powerful magnets to contain particles."
 				""
@@ -566,37 +582,33 @@
 				"&cAntimatter release causes massive explosions!&r"
 			]
 			icon: "nuclearscience:electromagnet"
-			id: "NUC_MAGNET_001"
+			id: "68BC891DAE0D066D"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_MAGNET_R01"
-				table_id: 5000000000000015L
+				id: "6036171088C8093A"
 				type: "choice"
 			}]
 			subtitle: "Magnetic containment"
 			tasks: [
 				{
 					count: 16L
-					id: "NUC_MAGNET_T01"
+					id: "199F518AAC320F4D"
 					item: { Count: 16, id: "nuclearscience:electromagnet" }
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "NUC_MAGNET_T02"
+					id: "0890A0A4FF827029"
 					item: { Count: 4, id: "nuclearscience:electromagneticbooster" }
 					type: "item"
 				}
 			]
 			title: "Electromagnetic Containment"
-			x: 1.5d
-			y: 7.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"NUC_MAGNET_001"
-				"NUC_TURBINE_001"
-			]
+			dependencies: ["68BC891DAE0D066D"]
 			description: [
 				"&d&lANTIMATTER&r"
 				""
@@ -617,26 +629,25 @@
 				"&7You've mastered the fundamental forces!&r"
 			]
 			icon: "nuclearscience:cellantimatterverylarge"
-			id: "NUC_ANTIMATTER_001"
+			id: "310D6D899C40AAB4"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_ANTIMATTER_R01"
-				table_id: 5000000000000016L
+				id: "48682F26F2545009"
 				type: "choice"
 			}]
 			shape: "gear"
 			subtitle: "Matter's opposite"
 			tasks: [{
-				id: "NUC_ANTIMATTER_T01"
+				id: "377DB8D17828FDED"
 				item: "nuclearscience:cellantimatterverylarge"
 				type: "item"
 			}]
 			title: "Antimatter"
 			x: 0.0d
-			y: 9.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["NUC_ANTIMATTER_001"]
+			dependencies: ["310D6D899C40AAB4"]
 			description: [
 				"&5&lDARK MATTER&r"
 				""
@@ -655,27 +666,38 @@
 				""
 				"&7You've achieved the impossible!&r"
 			]
-			icon: "nuclearscience:celldarkmatter"
-			id: "NUC_DARKMATTER_001"
+			icon: {
+				Count: 1
+				id: "nuclearscience:celldarkmatter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "796137AC991E055F"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_DARKMATTER_R01"
-				table_id: 5000000000000017L
+				id: "2A15B0A9BD9B26DC"
 				type: "choice"
 			}]
 			shape: "gear"
 			subtitle: "The invisible universe"
 			tasks: [{
-				id: "NUC_DARKMATTER_T01"
-				item: "nuclearscience:celldarkmatter"
+				id: "12509FE6B7D5A467"
+				item: {
+					Count: 1
+					id: "nuclearscience:celldarkmatter"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "Dark Matter"
 			x: 0.0d
-			y: 10.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["NUC_ANTIMATTER_001"]
+			dependencies: ["310D6D899C40AAB4"]
 			description: [
 				"&6Welcome to Flux Networks!&r"
 				""
@@ -695,26 +717,25 @@
 				"&7No more cables cluttering your base!&r"
 			]
 			icon: "fluxnetworks:flux_controller"
-			id: "FLUX_START_001"
+			id: "543F7115B151F277"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "FLUX_START_R01"
-				table_id: 5000000000000018L
+				id: "5047A1BA11C7C124"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Wireless energy unlocked"
 			tasks: [{
-				id: "FLUX_START_T01"
+				id: "1D89422544E4FB70"
 				item: "fluxnetworks:flux_controller"
 				type: "item"
 			}]
 			title: "Flux Networks"
-			x: -3.0d
-			y: 9.0d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["FLUX_START_001"]
+			dependencies: ["543F7115B151F277"]
 			description: [
 				"&6Flux Plugs&r insert energy into the Flux network."
 				""
@@ -733,34 +754,33 @@
 				"&7Input and output - the flow of energy!&r"
 			]
 			icon: "fluxnetworks:flux_plug"
-			id: "FLUX_PLUGPOINT_001"
+			id: "44610A9088747E0C"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "FLUX_PLUGPOINT_R01"
-				table_id: 5000000000000019L
+				id: "300C7150C4DEA96F"
 				type: "choice"
 			}]
 			subtitle: "Energy I/O"
 			tasks: [
 				{
 					count: 4L
-					id: "FLUX_PLUGPOINT_T01"
+					id: "1C58CC259118953A"
 					item: { Count: 4, id: "fluxnetworks:flux_plug" }
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "FLUX_PLUGPOINT_T02"
+					id: "400552EFFDF7AE08"
 					item: { Count: 4, id: "fluxnetworks:flux_point" }
 					type: "item"
 				}
 			]
-			title: "Plugs \& Points"
-			x: -4.5d
-			y: 9.0d
+			title: "Plugs  Points"
+			x: -3.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["FLUX_PLUGPOINT_001"]
+			dependencies: ["47B83E6B6602C862"]
 			description: [
 				"The &6Flux Storage&r block stores energy within the network."
 				""
@@ -777,25 +797,24 @@
 				"&7Centralized energy storage!&r"
 			]
 			icon: "fluxnetworks:basic_flux_storage"
-			id: "FLUX_STORAGE_001"
+			id: "0F4574C6C9055281"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "FLUX_STORAGE_R01"
-				table_id: 5000000000000020L
+				id: "2DB3DFC02DA070AE"
 				type: "choice"
 			}]
 			subtitle: "Network energy storage"
 			tasks: [{
-				id: "FLUX_STORAGE_T01"
+				id: "6D93FEB64E542400"
 				item: "fluxnetworks:basic_flux_storage"
 				type: "item"
 			}]
 			title: "Flux Storage"
-			x: -4.5d
-			y: 10.5d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["NUC_ANTIMATTER_001"]
+			dependencies: ["310D6D899C40AAB4"]
 			description: [
 				"&6Welcome to Hostile Neural Networks!&r"
 				""
@@ -812,26 +831,25 @@
 				"&7Farm mobs without spawning them!&r"
 			]
 			icon: "hostilenetworks:sim_chamber"
-			id: "HNN_START_001"
+			id: "47B83E6B6602C862"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "HNN_START_R01"
-				table_id: 5000000000000021L
+				id: "203518F516F90976"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Mob simulation unlocked"
 			tasks: [{
-				id: "HNN_START_T01"
+				id: "2B7D8D98783E3740"
 				item: "hostilenetworks:sim_chamber"
 				type: "item"
 			}]
 			title: "Hostile Neural Networks"
-			x: -3.0d
-			y: 10.5d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["HNN_START_001"]
+			dependencies: ["30587236E7C43002"]
 			description: [
 				"&6Data Models&r store information about mob types."
 				""
@@ -850,34 +868,33 @@
 				"&7Train your models for maximum efficiency!&r"
 			]
 			icon: "hostilenetworks:blank_data_model"
-			id: "HNN_MODEL_001"
+			id: "71CBAD65ED2CE63C"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "HNN_MODEL_R01"
-				table_id: 5000000000000022L
+				id: "3927E43438A440D2"
 				type: "choice"
 			}]
 			subtitle: "Mob data storage"
 			tasks: [
 				{
 					count: 4L
-					id: "HNN_MODEL_T01"
+					id: "69C27EA01FD3EFC0"
 					item: { Count: 4, id: "hostilenetworks:blank_data_model" }
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "HNN_MODEL_T02"
+					id: "1E2B6C1FF2FE1E6A"
 					item: { Count: 4, id: "hostilenetworks:prediction_matrix" }
 					type: "item"
 				}
 			]
 			title: "Data Models"
-			x: -4.5d
-			y: 12.0d
+			x: -3.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["HNN_MODEL_001"]
+			dependencies: ["47B83E6B6602C862"]
 			description: [
 				"The &6Loot Fabricator&r converts prediction results into actual items."
 				""
@@ -893,26 +910,25 @@
 				"&7Turn data into loot!&r"
 			]
 			icon: "hostilenetworks:loot_fabricator"
-			id: "HNN_FABRICATOR_001"
+			id: "30587236E7C43002"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "HNN_FABRICATOR_R01"
-				table_id: 5000000000000023L
+				id: "15953138ADA860D9"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Prediction materialization"
 			tasks: [{
-				id: "HNN_FABRICATOR_T01"
+				id: "7AF94CE6FD37017A"
 				item: "hostilenetworks:loot_fabricator"
 				type: "item"
 			}]
 			title: "Loot Fabricator"
-			x: -3.0d
-			y: 12.0d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["NUC_ANTIMATTER_001"]
+			dependencies: ["310D6D899C40AAB4"]
 			description: [
 				"&6Welcome to Modular Force Field Systems!&r"
 				""
@@ -932,26 +948,25 @@
 				"&7Ultimate base protection!&r"
 			]
 			icon: "modularforcefieldsystems:projector"
-			id: "MFFS_START_001"
+			id: "1857EB7971A936AB"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "MFFS_START_R01"
-				table_id: 5000000000000024L
+				id: "67A9C6EF7EA0B6D4"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Force fields unlocked"
 			tasks: [{
-				id: "MFFS_START_T01"
+				id: "39F150137CC8A36D"
 				item: "modularforcefieldsystems:projector"
 				type: "item"
 			}]
 			title: "Modular Force Fields"
-			x: 3.0d
-			y: 9.0d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["MFFS_START_001"]
+			dependencies: ["1857EB7971A936AB"]
 			description: [
 				"&6Fortron&r is the energy that powers force fields."
 				""
@@ -966,32 +981,31 @@
 				"&7The fuel of force fields!&r"
 			]
 			icon: "modularforcefieldsystems:coercion_deriver"
-			id: "MFFS_FORTRON_001"
+			id: "17126A8886AC2C12"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "MFFS_FORTRON_R01"
-				table_id: 5000000000000025L
+				id: "5E3278B280E67A62"
 				type: "choice"
 			}]
 			subtitle: "Field energy"
 			tasks: [
 				{
-					id: "MFFS_FORTRON_T01"
+					id: "2DE91DD650FF7802"
 					item: "modularforcefieldsystems:coercion_deriver"
 					type: "item"
 				}
 				{
-					id: "MFFS_FORTRON_T02"
+					id: "029945BC1BE881CC"
 					item: "modularforcefieldsystems:fortron_capacitor"
 					type: "item"
 				}
 			]
 			title: "Fortron Generation"
-			x: 4.5d
-			y: 9.0d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["MFFS_FORTRON_001"]
+			dependencies: ["17126A8886AC2C12"]
 			description: [
 				"&6Field Modules&r customize how your force fields behave."
 				""
@@ -1008,33 +1022,32 @@
 				"&7Customize your protection!&r"
 			]
 			icon: "modularforcefieldsystems:module_cube"
-			id: "MFFS_MODULES_001"
+			id: "6B947DD3ABE9B13D"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "MFFS_MODULES_R01"
-				table_id: 5000000000000026L
+				id: "7B0A205AAC215DBB"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Field customization"
 			tasks: [
 				{
-					id: "MFFS_MODULES_T01"
+					id: "569C778A1FE3743A"
 					item: "modularforcefieldsystems:module_cube"
 					type: "item"
 				}
 				{
-					id: "MFFS_MODULES_T02"
+					id: "3D1B737E5D06ED60"
 					item: "modularforcefieldsystems:module_sphere"
 					type: "item"
 				}
 			]
 			title: "Field Modules"
-			x: 4.5d
-			y: 10.5d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["NUC_DARKMATTER_001"]
+			dependencies: ["796137AC991E055F"]
 			description: [
 				"&6Welcome to Compact Machines!&r"
 				""
@@ -1053,26 +1066,25 @@
 				"&7Bigger on the inside!&r"
 			]
 			icon: "compactmachines:machine_normal"
-			id: "COMPACT_START_001"
+			id: "629E46246CDEEFD4"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "COMPACT_START_R01"
-				table_id: 5000000000000027L
+				id: "03EBE71FA2FFA4BA"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Pocket dimensions unlocked"
 			tasks: [{
-				id: "COMPACT_START_T01"
+				id: "52F67E20E408C452"
 				item: "compactmachines:machine_normal"
 				type: "item"
 			}]
 			title: "Compact Machines"
-			x: -3.0d
-			y: 13.5d
+			x: -1.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["COMPACT_START_001"]
+			dependencies: ["629E46246CDEEFD4"]
 			description: [
 				"&6Tunnels&r connect your compact machine to the outside world."
 				""
@@ -1086,27 +1098,32 @@
 				""
 				"&7Bridge two dimensions!&r"
 			]
-			icon: "compactmachines:tunnel"
-			id: "COMPACT_TUNNEL_001"
+			icon: {
+				Count: 1
+				id: "compactmachines:tunnel"
+				tag: {
+					definition: { }
+				}
+			}
+			id: "1FD992818A0BDF3F"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "COMPACT_TUNNEL_R01"
-				table_id: 5000000000000028L
+				id: "78292EB9F6ACC0EC"
 				type: "choice"
 			}]
 			subtitle: "Dimensional connections"
 			tasks: [{
 				count: 6L
-				id: "COMPACT_TUNNEL_T01"
+				id: "6B535717A31BDA58"
 				item: { Count: 6, id: "compactmachines:tunnel" }
 				type: "item"
 			}]
 			title: "Tunnels"
-			x: -4.5d
-			y: 13.5d
+			x: -3.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["NUC_DARKMATTER_001"]
+			dependencies: ["796137AC991E055F"]
 			description: [
 				"&6Welcome to RFTools Dimensions!&r"
 				""
@@ -1127,26 +1144,25 @@
 				"&7Create your own worlds!&r"
 			]
 			icon: "rftoolsdim:dimension_builder"
-			id: "RFDIM_START_001"
+			id: "08F4E0CC88824BB7"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RFDIM_START_R01"
-				table_id: 5000000000000029L
+				id: "7F9339C33EFEDBAE"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Custom dimensions unlocked"
 			tasks: [{
-				id: "RFDIM_START_T01"
+				id: "339690E6585FCDA1"
 				item: "rftoolsdim:dimension_builder"
 				type: "item"
 			}]
 			title: "RFTools Dimensions"
-			x: 3.0d
-			y: 13.5d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["RFDIM_START_001"]
+			dependencies: ["08F4E0CC88824BB7"]
 			description: [
 				"&6Dimlets&r are items that define dimension properties."
 				""
@@ -1164,25 +1180,24 @@
 				"&7Customize your reality!&r"
 			]
 			icon: "rftoolsdim:dimlet_workbench"
-			id: "RFDIM_DIMLET_001"
+			id: "7DC9513DDB4260BA"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RFDIM_DIMLET_R01"
-				table_id: 5000000000000030L
+				id: "359ECAE8E3C87E69"
 				type: "choice"
 			}]
 			subtitle: "Dimension building blocks"
 			tasks: [{
-				id: "RFDIM_DIMLET_T01"
+				id: "1C841F43D4A8D27F"
 				item: "rftoolsdim:dimlet_workbench"
 				type: "item"
 			}]
 			title: "Dimlet Crafting"
-			x: 4.5d
-			y: 13.5d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["RFDIM_DIMLET_001"]
+			dependencies: ["7DC9513DDB4260BA"]
 			description: [
 				"The &6Dimension Enscriber&r programs dimension tabs with your dimlet configuration."
 				""
@@ -1197,33 +1212,25 @@
 				"&7Define your dimension's properties!&r"
 			]
 			icon: "rftoolsdim:dimension_enscriber"
-			id: "RFDIM_ENSCRIBER_001"
+			id: "7C4BD9A3863C8AF3"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "RFDIM_ENSCRIBER_R01"
-				table_id: 5000000000000031L
+				id: "63E2D26433000033"
 				type: "choice"
 			}]
 			shape: "diamond"
 			subtitle: "Program dimension tabs"
 			tasks: [{
-				id: "RFDIM_ENSCRIBER_T01"
+				id: "16136ED3A36DDCFF"
 				item: "rftoolsdim:dimension_enscriber"
 				type: "item"
 			}]
 			title: "Dimension Enscriber"
-			x: 4.5d
-			y: 15.0d
+			x: 3.0d
+			y: 8.0d
 		}
 		{
-			dependencies: [
-				"FLUX_STORAGE_001"
-				"HNN_FABRICATOR_001"
-				"MFFS_MODULES_001"
-				"COMPACT_TUNNEL_001"
-				"RFDIM_ENSCRIBER_001"
-			]
-			dependency_requirement: "all_completed"
+			dependencies: ["796137AC991E055F"]
 			description: [
 				"&6&lCONGRATULATIONS!&r"
 				""
@@ -1242,785 +1249,22 @@
 				"&eYou are now a master of all technology!&r"
 			]
 			icon: "minecraft:nether_star"
-			id: "NUC_COMPLETE_001"
+			id: "0C026E1191755472"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "NUC_COMPLETE_R01"
-				table_id: 5000000000000032L
+				id: "5FDA23292FC8E921"
 				type: "choice"
 			}]
 			shape: "gear"
 			subtitle: "You've mastered everything!"
 			tasks: [{
-				id: "NUC_COMPLETE_T01"
+				id: "2913F9D9D36E3934"
 				title: "Claim Your Victory"
 				type: "checkmark"
 			}]
 			title: "Tech Master"
 			x: 0.0d
-			y: 16.5d
-		}
-	]
-	reward_tables: [
-		{
-			id: 5000000000000001L
-			rewards: [
-				{
-					id: "NUC001A"
-					item: "electrodynamics:coil_copper"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "NUC001B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC001C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Nuclear Age Starter"
-		}
-		{
-			id: 5000000000000002L
-			rewards: [
-				{
-					id: "NUC002A"
-					item: "electrodynamics:plate_steel"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "NUC002B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC002C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Crusher Supplies"
-		}
-		{
-			id: 5000000000000003L
-			rewards: [
-				{
-					id: "NUC003A"
-					item: "electrodynamics:wire_copper"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "NUC003B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC003C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Wire Mill Supplies"
-		}
-		{
-			id: 5000000000000004L
-			rewards: [
-				{
-					id: "NUC004A"
-					item: "electrodynamics:coil_copper"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "NUC004B"
-					item: "minecraft:iron_ingot"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "NUC004C"
-					item: "numismatics:bevel"
-					count: 4
-					type: "item"
-				}
-			]
-			title: "Coil Materials"
-		}
-		{
-			id: 5000000000000005L
-			rewards: [
-				{
-					id: "NUC005A"
-					item: "electrodynamics:motor_ac"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "NUC005B"
-					item: "electrodynamics:motor_dc"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "NUC005C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Motor Pack"
-		}
-		{
-			id: 5000000000000006L
-			rewards: [
-				{
-					id: "NUC006A"
-					item: "electrodynamics:circuit_basic"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "NUC006B"
-					item: "electrodynamics:circuit_advanced"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "NUC006C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Circuit Pack"
-		}
-		{
-			id: 5000000000000007L
-			rewards: [
-				{
-					id: "NUC007A"
-					item: "nuclearscience:ore_uranium"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "NUC007B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC007C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Uranium Supplies"
-		}
-		{
-			id: 5000000000000008L
-			rewards: [
-				{
-					id: "NUC008A"
-					item: "nuclearscience:hazmat_helmet"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "NUC008B"
-					item: "nuclearscience:hazmat_chestplate"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "NUC008C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Hazmat Extras"
-		}
-		{
-			id: 5000000000000009L
-			rewards: [
-				{
-					id: "NUC009A"
-					item: "nuclearscience:yellowcake"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "NUC009B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC009C"
-					item: "numismatics:sprocket"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Extraction Materials"
-		}
-		{
-			id: 5000000000000010L
-			rewards: [
-				{
-					id: "NUC010A"
-					item: "nuclearscience:uranium_235"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "NUC010B"
-					item: "nuclearscience:uranium_238"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "NUC010C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Enriched Uranium"
-		}
-		{
-			id: 5000000000000011L
-			rewards: [
-				{
-					id: "NUC011A"
-					item: "nuclearscience:fuelheuo2"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "NUC011B"
-					item: "nuclearscience:fuelleuo2"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "NUC011C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Fuel Cell Pack"
-		}
-		{
-			id: 5000000000000012L
-			rewards: [
-				{
-					id: "NUC012A"
-					item: "nuclearscience:control_rod_assembly"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "NUC012B"
-					item: "nuclearscience:reactor_core"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "NUC012C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Reactor Components"
-		}
-		{
-			id: 5000000000000013L
-			rewards: [
-				{
-					id: "NUC013A"
-					item: "nuclearscience:turbine"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "NUC013B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC013C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Turbine Pack"
-		}
-		{
-			id: 5000000000000014L
-			rewards: [
-				{
-					id: "NUC014A"
-					item: "nuclearscience:electromagnet"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "NUC014B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC014C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Accelerator Pack"
-		}
-		{
-			id: 5000000000000015L
-			rewards: [
-				{
-					id: "NUC015A"
-					item: "nuclearscience:electromagneticbooster"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "NUC015B"
-					item: "nuclearscience:electromagnet"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "NUC015C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Magnet Pack"
-		}
-		{
-			id: 5000000000000016L
-			rewards: [
-				{
-					id: "NUC016A"
-					item: "nuclearscience:cellantimattersmall"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "NUC016B"
-					item: { Count: 1, id: "kubejs:quest_loot_bag", tag: { loot_table: "kubejs:quest_rewards/electrodynamics" } }
-					type: "item"
-				}
-				{
-					id: "NUC016C"
-					item: "numismatics:sun"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Antimatter Achievement"
-		}
-		{
-			id: 5000000000000017L
-			rewards: [
-				{
-					id: "NUC017A"
-					item: "nuclearscience:celldarkmatter"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "NUC017B"
-					item: "nuclearscience:cellantimatterverylarge"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "NUC017C"
-					item: "numismatics:sun"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Dark Matter Achievement"
-		}
-		{
-			id: 5000000000000018L
-			rewards: [
-				{
-					id: "FLUX001A"
-					item: "fluxnetworks:flux_dust"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "FLUX001B"
-					item: "fluxnetworks:flux_block"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "FLUX001C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Flux Networks Starter"
-		}
-		{
-			id: 5000000000000019L
-			rewards: [
-				{
-					id: "FLUX002A"
-					item: "fluxnetworks:flux_plug"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "FLUX002B"
-					item: "fluxnetworks:flux_point"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "FLUX002C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Flux I/O Pack"
-		}
-		{
-			id: 5000000000000020L
-			rewards: [
-				{
-					id: "FLUX003A"
-					item: "fluxnetworks:herculean_flux_storage"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "FLUX003B"
-					item: "fluxnetworks:flux_dust"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "FLUX003C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Flux Storage Upgrade"
-		}
-		{
-			id: 5000000000000021L
-			rewards: [
-				{
-					id: "HNN001A"
-					item: "hostilenetworks:blank_data_model"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "HNN001B"
-					item: "hostilenetworks:prediction_matrix"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "HNN001C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "HNN Starter"
-		}
-		{
-			id: 5000000000000022L
-			rewards: [
-				{
-					id: "HNN002A"
-					item: "hostilenetworks:prediction_matrix"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "HNN002B"
-					item: "hostilenetworks:blank_data_model"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "HNN002C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Model Materials"
-		}
-		{
-			id: 5000000000000023L
-			rewards: [
-				{
-					id: "HNN003A"
-					item: "hostilenetworks:sim_chamber"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "HNN003B"
-					item: "hostilenetworks:prediction_matrix"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "HNN003C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Fabricator Kit"
-		}
-		{
-			id: 5000000000000024L
-			rewards: [
-				{
-					id: "MFFS001A"
-					item: "modularforcefieldsystems:blank_card"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "MFFS001B"
-					item: "modularforcefieldsystems:focus_matrix"
-					count: 8
-					type: "item"
-				}
-				{
-					id: "MFFS001C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "MFFS Starter"
-		}
-		{
-			id: 5000000000000025L
-			rewards: [
-				{
-					id: "MFFS002A"
-					item: "modularforcefieldsystems:fortron_capacitor"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "MFFS002B"
-					item: "modularforcefieldsystems:focus_matrix"
-					count: 16
-					type: "item"
-				}
-				{
-					id: "MFFS002C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Fortron Kit"
-		}
-		{
-			id: 5000000000000026L
-			rewards: [
-				{
-					id: "MFFS003A"
-					item: "modularforcefieldsystems:module_scale"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "MFFS003B"
-					item: "modularforcefieldsystems:module_camouflage"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "MFFS003C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Module Pack"
-		}
-		{
-			id: 5000000000000027L
-			rewards: [
-				{
-					id: "COMPACT001A"
-					item: "compactmachines:machine_large"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "COMPACT001B"
-					item: "compactmachines:personal_shrinking_device"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "COMPACT001C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Compact Machines Starter"
-		}
-		{
-			id: 5000000000000028L
-			rewards: [
-				{
-					id: "COMPACT002A"
-					item: "compactmachines:tunnel"
-					count: 12
-					type: "item"
-				}
-				{
-					id: "COMPACT002B"
-					item: "compactmachines:machine_normal"
-					count: 2
-					type: "item"
-				}
-				{
-					id: "COMPACT002C"
-					item: "numismatics:cog"
-					count: 2
-					type: "item"
-				}
-			]
-			title: "Tunnel Pack"
-		}
-		{
-			id: 5000000000000029L
-			rewards: [
-				{
-					id: "RFDIM001A"
-					item: "rftoolsdim:empty_dimension_tab"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RFDIM001B"
-					item: "rftoolsdim:dimensional_shard"
-					count: 32
-					type: "item"
-				}
-				{
-					id: "RFDIM001C"
-					item: "numismatics:sun"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Dimensions Starter"
-		}
-		{
-			id: 5000000000000030L
-			rewards: [
-				{
-					id: "RFDIM002A"
-					item: "rftoolsdim:dimensional_shard"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "RFDIM002B"
-					item: "rftoolsdim:empty_dimension_tab"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "RFDIM002C"
-					item: "numismatics:crown"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Dimlet Materials"
-		}
-		{
-			id: 5000000000000031L
-			rewards: [
-				{
-					id: "RFDIM003A"
-					item: "rftoolsdim:dimensional_shard"
-					count: 64
-					type: "item"
-				}
-				{
-					id: "RFDIM003B"
-					item: "rftoolsdim:activity_probe"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "RFDIM003C"
-					item: "numismatics:sun"
-					count: 1
-					type: "item"
-				}
-			]
-			title: "Enscriber Kit"
-		}
-		{
-			id: 5000000000000032L
-			rewards: [
-				{
-					id: "COMPLETE001A"
-					item: "minecraft:nether_star"
-					count: 4
-					type: "item"
-				}
-				{
-					id: "COMPLETE001B"
-					item: "minecraft:elytra"
-					count: 1
-					type: "item"
-				}
-				{
-					id: "COMPLETE001C"
-					item: "numismatics:sun"
-					count: 8
-					type: "item"
-				}
-			]
-			title: "Completion Rewards"
+			y: 8.0d
 		}
 	]
 	title: "Antimatter"
