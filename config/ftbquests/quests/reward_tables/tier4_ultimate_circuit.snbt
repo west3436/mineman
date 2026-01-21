@@ -1,0 +1,31 @@
+{
+	id: "4A00000000000040"
+	order_index: 34
+	rewards: [
+		{
+			id: "4A00000000000041"
+			item: {
+				Count: 4
+				id: "mekanism:ultimate_control_circuit"
+			}
+			type: "item"
+		}
+		{
+			id: "4A00000000000042"
+			item: {
+				Count: 1
+				id: "numismatics:sun"
+			}
+			type: "item"
+		}
+		{
+			id: "4A00000000000043"
+			item: {
+				Count: 8
+				id: "mekanism:alloy_atomic"
+			}
+			type: "item"
+		}
+	]
+	title: "Ultimate Circuit Rewards"
+}

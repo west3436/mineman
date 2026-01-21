@@ -1,0 +1,28 @@
+{
+	id: "5A00000000000050"
+	order_index: 45
+	rewards: [
+		{
+			id: "5A00000000000051"
+			item: "mekanism:antimatter_pellet"
+			type: "item"
+		}
+		{
+			id: "5A00000000000052"
+			item: {
+				Count: 2
+				id: "numismatics:crown"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000053"
+			item: {
+				Count: 4
+				id: "mekanism:ultimate_control_circuit"
+			}
+			type: "item"
+		}
+	]
+	title: "Dark Matter Rewards"
+}

@@ -1,0 +1,31 @@
+{
+	id: "4A00000000000070"
+	order_index: 37
+	rewards: [
+		{
+			id: "4A00000000000071"
+			item: {
+				Count: 2
+				id: "rftoolsbase:machine_frame"
+			}
+			type: "item"
+		}
+		{
+			id: "4A00000000000072"
+			item: {
+				Count: 1
+				id: "numismatics:bevel"
+			}
+			type: "item"
+		}
+		{
+			id: "4A00000000000073"
+			item: {
+				Count: 8
+				id: "minecraft:redstone"
+			}
+			type: "item"
+		}
+	]
+	title: "RFTools Rewards"
+}

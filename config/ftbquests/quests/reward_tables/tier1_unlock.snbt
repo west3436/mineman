@@ -1,0 +1,31 @@
+{
+	id: "1A00000000000050"
+	order_index: 5
+	rewards: [
+		{
+			id: "1A00000000000051"
+			item: {
+				Count: 8
+				id: "immersiveengineering:ingot_steel"
+			}
+			type: "item"
+		}
+		{
+			id: "1A00000000000052"
+			item: {
+				Count: 1
+				id: "numismatics:spur"
+			}
+			type: "item"
+		}
+		{
+			id: "1A00000000000053"
+			item: {
+				Count: 16
+				id: "minecraft:iron_ingot"
+			}
+			type: "item"
+		}
+	]
+	title: "Mod Unlock Rewards"
+}

@@ -1,0 +1,31 @@
+{
+	id: "4A00000000000001"
+	order_index: 30
+	rewards: [
+		{
+			id: "4A00000000000002"
+			item: {
+				Count: 8
+				id: "mekanism:ingot_osmium"
+			}
+			type: "item"
+		}
+		{
+			id: "4A00000000000003"
+			item: {
+				Count: 1
+				id: "numismatics:bevel"
+			}
+			type: "item"
+		}
+		{
+			id: "4A00000000000004"
+			item: {
+				Count: 4
+				id: "mekanism:steel_casing"
+			}
+			type: "item"
+		}
+	]
+	title: "Mekanism Basic Rewards"
+}
