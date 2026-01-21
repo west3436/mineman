@@ -1,0 +1,25 @@
+{
+	id: "5A000000000000B0"
+	order_index: 51
+	rewards: [
+		{
+			id: "5A000000000000B1"
+			item: "minecraft:nether_star"
+			type: "item"
+		}
+		{
+			id: "5A000000000000B2"
+			item: {
+				Count: 4
+				id: "numismatics:crown"
+			}
+			type: "item"
+		}
+		{
+			id: "5A000000000000B3"
+			item: "minecraft:elytra"
+			type: "item"
+		}
+	]
+	title: "Tech Master Rewards"
+}

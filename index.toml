@@ -30,19 +30,19 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "ed23aeda9e67a20d8c3d30bcc0f756d9a59ecc51248cac7b7bcce5a63af63c4a"
+hash = "091b5a26be96f89826c5522cb95920938ae7b56b58e5a5dbcf11b6b66bfb38c9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
-hash = "923227d52e1a9446543ca1c788392c189c33e9584a9d09cba0a770552bbb4d47"
+hash = "41bc3b4bc17fe61feb8b61fc8570fa5fee5da1039f9eeceb7065ba26a1f7bf60"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
-hash = "fa434eee4a0c86f2a7bc971cd67ae455c5781d54f318d731f4f9c025e32617e7"
+hash = "9e9ac24e719c8d1eaee96ae1022c29ac3826d0ef063d4f0ec2cd2ef847bad2ef"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/circuitry.snbt"
-hash = "85fccc0e2d369be1d930ad227b38185a8587f4e7054438281e690cf07363eecf"
+hash = "031c57b0d1cdb5ad7cd8289c7b42800468be21897edf03a0a75e124df7c9be75"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_quests.snbt"
@@ -50,11 +50,151 @@ hash = "dd05aaa2cb10262067f7b88114ced4e56b8e984a4dd3e42723fb6bcdbc368e73"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
-hash = "f2bb95242a23e2d1e295e42e14ed4b857908a1eb0201d41524e284cf62768682"
+hash = "a4d3257ec3eb86a96a5103dc0f42838cadccad37cd20f8ed4676b80d92367db9"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier1_basic.snbt"
+hash = "6cbef1cc976c4e57030271241e510c0ded56ad9364f4c2463d24fd89cfba7496"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier1_create.snbt"
+hash = "2e20666dbc93e81feb30e358c154e376fba8b7fa4606ff5cdb585df4e0252f15"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier1_ie.snbt"
+hash = "3b7495ac2920be23d9bbe2302350ca24b39ba0c15bf4352ea951ac0783f49e78"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier1_multiblock.snbt"
+hash = "2ff98431e57d6d3fab1d81b99b7dcad8c96a5e97f9d2add0bbdf2d8f9dd53386"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier1_steel.snbt"
+hash = "1c27ebe1dbd6d46472547a7be8c796cda0883910936af852945277c8e911796c"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier1_unlock.snbt"
+hash = "8ced8e70484c2ebdc8b2bbe9df4c79b205d5cbe53eb269468ebc1bb87df59c6e"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier2_oil.snbt"
+hash = "20ac05864533c57fbac5ab9eb3181d0a06304f3cc0c6cd000fb67ff43513f02f"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier2_plastic.snbt"
+hash = "59a61411b08ae47ba9665d52ff51dcc425a9757773b16a0e3a8e4cf0fcf3dec0"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier2_refining.snbt"
+hash = "c7b422ec877d4b454d90dd244879bf0e4a7a29390596b414a0feeac2947ac13d"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier2_unlock.snbt"
+hash = "0da21136c86149ced0ae5104354280a89211b05c1902e7210a3d090748b97243"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier3_circuit.snbt"
+hash = "4f663f8683730a95da5b082ddaec712e8dabf5577787feca07df8f3a8850f5f5"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier3_pcb.snbt"
+hash = "80a158488c8bf029c6f6b89b435f841a507649f57d7a2901812fa93fe27bae7d"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier3_pneumatic.snbt"
+hash = "01aad2fd6de147319722dbc7122169002d1b47d54da7f7490218917c3d151834"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_advanced_circuit.snbt"
+hash = "511a89414599229a21a4f5d3fbd33a64b11f1652b47bd363de034f79981bea3c"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_ae2.snbt"
+hash = "357ebbb448a8e029fc6bfd4754724ea96af65aaa557ee11bd799331d5e202391"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_basic_circuit.snbt"
+hash = "9574c77d813ced959f0f640b692aa80d3fc1f5c0d158dcd213f3cf31c9345cc0"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_elite_circuit.snbt"
+hash = "38887754a664b1661a720299c353e7a4d7a99a35614c4fff599c88745cdec2d0"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_if.snbt"
+hash = "1399b4c34393b26a32be4eff74f648f62eb99e4832cbf6184ac3a8b839919120"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_machine.snbt"
+hash = "5081a3a35ea4776053a040e39d3ecdf12b887f0370fdcaec26482a80674ae2a8"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_mekanism.snbt"
+hash = "4bfda6a4c694416fde8e865b91500072a6b9bdf9fd218294011b6161e96ea59e"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_rftools.snbt"
+hash = "97cb522737bf37421aa52a75da3636fbf1b94450f8d44be6a715f292a36a5375"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_ultimate_circuit.snbt"
+hash = "d5914074f592adc943bfb01c7348b9c7462e7981852511485fe17f5817ca5d65"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier4_xnet.snbt"
+hash = "5e771ffc2d5c3f460885321efc3afc5d843d4907f20f55af5c9a09ab7a521c5c"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_antimatter.snbt"
+hash = "165d410a6e5b3e49f1188d63b551b7660e99bd534c924166ba87777a0c8e943c"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_compact.snbt"
+hash = "d343d07801132328258c7684d57bbc8e2d98b4b19a577e062a6dec45c6b301fb"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_completion.snbt"
+hash = "007cc151844815ff8b17987a8b2f516106fe9483661d09d6601d1c9a7079defd"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_darkmatter.snbt"
+hash = "d002cdee3d96a3ea7dca372e055ff74e602910ea7825ad333b8387b805bb007f"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_dimensions.snbt"
+hash = "8ea5120e51b4ba386a7cd9804459f9c7fa31a66b752af95b70a7e45e090511fa"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_electrodynamics.snbt"
+hash = "42afe24cc8ffc306393aff23970aa703ad977e62504fa6afa3d382ce3da877d8"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_flux.snbt"
+hash = "f6f4c587b6530095bee0d7a273505017626ca9c1e020624381bb0d24a55e08d1"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_hnn.snbt"
+hash = "3bfe3af4e24685b58b50933849e6265d82e4cc67f9c9a1138792dcf1d7aa8b44"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_mffs.snbt"
+hash = "124cf0b25e827f20efd04b5872017bd74c1c2456dd051349b28715e3c8a928c0"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_nuclear.snbt"
+hash = "515cb538a98c3bb61d60dad2096d97bfdabe32ff8517335940f9a7bf5abf2bf2"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_particle.snbt"
+hash = "30012b3de77ef503f210d8b72d9c58b0266870f0f8a90cc81ef9e73ce3cf7f3b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/tier5_reactor.snbt"
+hash = "5ffea0066f42dd939d6bbdcf67717fee32a7ad7921d4d03d6885b6ffd43b2078"
 
 [[files]]
 file = "datapacks/unified_ores/README.md"
@@ -119,6 +259,10 @@ hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 [[files]]
 file = "datapacks/unified_ores/data/growthcraft/worldgen/placed_feature/salt_ore_placed.json"
 hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
+
+[[files]]
+file = "datapacks/unified_ores/data/immersiveengineering/recipes/bottling_molten_plastic_to_block.json"
+hash = "95d898de48b9dce8923c07ec29c17596e177c96c3ad4544e8f9c6c7e4a1e232b"
 
 [[files]]
 file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_lead_normal.json"
@@ -294,7 +438,7 @@ hash = "5240da43b73aa442828fd3eadbc2fcee93700d55b569193c441ac00d60d31e63"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
-hash = "507673e08484cd9e1d54fc627a28d852cc293a920d21d644565e3e3b4f391d41"
+hash = "21ae6bdaf847822bee56baf30057556ce36e2735eaf0fc5e41dd401b8035e546"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_tags.js"
@@ -314,7 +458,7 @@ hash = "00623d4f4934cd8af5b290630337fa8fb110f516bf6f6ae55e5cbb3d0dd9b3d3"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_recipes.js"
-hash = "3d578bcf22e4edf67d0bdb32824b2be5fda262b53791146183fc3e66b8686aa9"
+hash = "8622dbaf3898513abb7273edaab2d240fb1aa99f408c6202d2a12cabde7c7e41"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_storage_blocks.js"

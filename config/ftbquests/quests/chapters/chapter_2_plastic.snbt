@@ -29,6 +29,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "16DB57FC18A9B6B5"
+				table_id: "2A00000000000001"
 				type: "choice"
 			}]
 			shape: "square"
@@ -64,6 +65,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "472DFC629AC70DDB"
+				table_id: "2A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Kinetic oil extraction"
@@ -98,6 +100,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0D106471C27C878C"
+				table_id: "2A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Electric oil extraction"
@@ -132,6 +135,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3750F6E5EB34B61C"
+				table_id: "2A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Mechanical oil extraction"
@@ -178,6 +182,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5EEB7055F4367319"
+				table_id: "2A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Listen to the earth"
@@ -208,6 +213,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "71A3BB4729DD5FE2"
+				table_id: "2A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Industrial oil extraction"
@@ -280,6 +286,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "39F4A54A70A2BE9F"
+				table_id: "2A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Separate the black gold"
@@ -323,6 +330,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "59715B265404765E"
+				table_id: "2A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Industrial refining"
@@ -361,6 +369,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0827A1C6D7D94B58"
+				table_id: "2A00000000000010"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -397,6 +406,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "45B86923718876B4"
+				table_id: "2A00000000000020"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -431,6 +441,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "165ACEDE8C2EB607"
+				table_id: "2A00000000000030"
 				type: "choice"
 			}]
 			subtitle: "Personal aviation"
@@ -469,6 +480,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "41DB1E3B2B48D46E"
+				table_id: "2A00000000000030"
 				type: "choice"
 			}]
 			subtitle: "Build smarter, not harder"
@@ -502,6 +514,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4ECE805796DA296C"
+				table_id: "2A00000000000020"
 				type: "choice"
 			}]
 			subtitle: "Electronic foundations"
@@ -531,6 +544,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2ED0AB9EDAC2E6FF"
+				table_id: "2A00000000000020"
 				type: "choice"
 			}]
 			subtitle: "Efficient fluid transport"
@@ -561,6 +575,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "14558F70CEAEB66B"
+				table_id: "2A00000000000020"
 				type: "choice"
 			}]
 			subtitle: "Modern aesthetics"

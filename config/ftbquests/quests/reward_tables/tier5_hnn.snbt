@@ -1,0 +1,31 @@
+{
+	id: "5A00000000000070"
+	order_index: 47
+	rewards: [
+		{
+			id: "5A00000000000071"
+			item: {
+				Count: 4
+				id: "hostilenetworks:blank_data_model"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000072"
+			item: {
+				Count: 1
+				id: "numismatics:sun"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000073"
+			item: {
+				Count: 8
+				id: "hostilenetworks:prediction_matrix"
+			}
+			type: "item"
+		}
+	]
+	title: "Neural Network Rewards"
+}

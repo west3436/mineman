@@ -28,6 +28,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5D5DC45682BA54CF"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			shape: "square"
@@ -60,6 +61,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4F0A9061B2316AA3"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Stronger than steel"
@@ -95,6 +97,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "41B0B9859540D4B9"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "The arteries of your factory"
@@ -130,6 +133,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5655C877ABB670C7"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Generating compressed air"
@@ -168,6 +172,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "51FF8EE891FF817D"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -216,6 +221,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "792DE9FF85466CE5"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "The blank circuit"
@@ -255,6 +261,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3E78A5151E2654A0"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Light-based patterning"
@@ -288,6 +295,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "595A54C4791A1BDD"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Corrosive chemistry"
@@ -326,6 +334,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0465324A9BF6F276"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Chemical development"
@@ -355,6 +364,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "767B4B936F3888F5"
+				table_id: "3A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Ready for components"
@@ -388,6 +398,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0D3522AA961AB077"
+				table_id: "3A00000000000010"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -426,6 +437,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3E3AB30C0AE9FC6B"
+				table_id: "3A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Automated precision crafting"
@@ -478,6 +490,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "27205630667104F2"
+				table_id: "3A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Visual programming"
@@ -513,6 +526,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "25F1C6695D7761AA"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Oil processing"
@@ -556,6 +570,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "36022C539C2667CC"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Heat + Pressure + Chemistry"
@@ -591,6 +606,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1E59C2908A74C644"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Liquid-fueled compression"
@@ -625,6 +641,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "76BB109BD63504C6"
+				table_id: "3A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Enhance your tubes"

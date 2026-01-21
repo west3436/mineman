@@ -1,0 +1,31 @@
+{
+	id: "5A00000000000060"
+	order_index: 46
+	rewards: [
+		{
+			id: "5A00000000000061"
+			item: {
+				Count: 4
+				id: "fluxnetworks:flux_dust"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000062"
+			item: {
+				Count: 1
+				id: "numismatics:sun"
+			}
+			type: "item"
+		}
+		{
+			id: "5A00000000000063"
+			item: {
+				Count: 4
+				id: "fluxnetworks:flux_block"
+			}
+			type: "item"
+		}
+	]
+	title: "Flux Network Rewards"
+}
