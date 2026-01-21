@@ -30,19 +30,19 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "7f0110af76838d22afb614c03e9ca3c530aa201f46cdeb15ca5b42f13e63b6b3"
+hash = "091b5a26be96f89826c5522cb95920938ae7b56b58e5a5dbcf11b6b66bfb38c9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
-hash = "c5f2ee22d6f11eddc53b5cad19392e546f7139a297245aeb236dceb909ae25af"
+hash = "41bc3b4bc17fe61feb8b61fc8570fa5fee5da1039f9eeceb7065ba26a1f7bf60"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
-hash = "7ef8841d945be379865d0b220761797a67b7f939530c483e9e17b9035c00a9c6"
+hash = "9e9ac24e719c8d1eaee96ae1022c29ac3826d0ef063d4f0ec2cd2ef847bad2ef"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/circuitry.snbt"
-hash = "b122ce1eb3567f1ecae8f57d5a23b799eed46c2b92f6198b835430aa54f5d19a"
+hash = "031c57b0d1cdb5ad7cd8289c7b42800468be21897edf03a0a75e124df7c9be75"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_quests.snbt"
@@ -50,7 +50,7 @@ hash = "dd05aaa2cb10262067f7b88114ced4e56b8e984a4dd3e42723fb6bcdbc368e73"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
-hash = "555a1563725e7179b7b5c9add722b446e338600dd67a3e897440a59b11648131"
+hash = "a4d3257ec3eb86a96a5103dc0f42838cadccad37cd20f8ed4676b80d92367db9"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
