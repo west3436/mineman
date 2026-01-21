@@ -675,176 +675,176 @@ LootJS.modifiers((event) => {
     // --- Simple Dungeon Chests (Tier 1-2 loot) ---
     event.addLootTableModifier('minecraft:chests/simple_dungeon')
         .randomChance(0.8)
-        .addLoot(LootEntry.of(tier1Materials[Math.floor(Math.random() * tier1Materials.length)]).setCount([1, 4]).weight(40))
-        .addLoot(LootEntry.of(tier1Tools[Math.floor(Math.random() * tier1Tools.length)]).weight(15))
-        .addLoot(LootEntry.of(tier1Food[Math.floor(Math.random() * tier1Food.length)]).setCount([1, 3]).weight(25))
-        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)]).setCount([1, 2]).weight(10))
-        .addLoot(LootEntry.of(tier2Components[Math.floor(Math.random() * tier2Components.length)]).weight(10))
+        .addLoot(LootEntry.of(tier1Materials[Math.floor(Math.random() * tier1Materials.length)], 3).setWeight(40))
+        .addLoot(LootEntry.of(tier1Tools[Math.floor(Math.random() * tier1Tools.length)]).setWeight(15))
+        .addLoot(LootEntry.of(tier1Food[Math.floor(Math.random() * tier1Food.length)], 2).setWeight(25))
+        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)], 2).setWeight(10))
+        .addLoot(LootEntry.of(tier2Components[Math.floor(Math.random() * tier2Components.length)]).setWeight(10))
         // Numismatics currency
-        .addLoot(LootEntry.of('numismatics:cog').setCount([1, 8]).weight(20))
-        .addLoot(LootEntry.of('numismatics:spur').setCount([1, 4]).weight(10));
+        .addLoot(LootEntry.of('numismatics:cog', 5).setWeight(20))
+        .addLoot(LootEntry.of('numismatics:spur', 3).setWeight(10));
 
     // --- Abandoned Mineshaft Chests (Mining theme, Tier 1-3) ---
     event.addLootTableModifier('minecraft:chests/abandoned_mineshaft')
         .randomChance(0.85)
-        .addLoot(LootEntry.of('create:crushed_raw_iron').setCount([2, 6]).weight(30))
-        .addLoot(LootEntry.of('create:crushed_raw_copper').setCount([2, 6]).weight(30))
-        .addLoot(LootEntry.of('create:crushed_raw_gold').setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of('create:crushed_raw_zinc').setCount([1, 4]).weight(25))
-        .addLoot(LootEntry.of('tconstruct:raw_cobalt').setCount([1, 3]).weight(10))
-        .addLoot(LootEntry.of('immersiveengineering:dust_wood').setCount([4, 16]).weight(20))
-        .addLoot(LootEntry.of('mekanism:dust_iron').setCount([2, 6]).weight(25))
-        .addLoot(LootEntry.of('mekanism:dust_gold').setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of('electrodynamics:dustiron').setCount([2, 6]).weight(20))
-        .addLoot(LootEntry.of('tfmg:raw_lead').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('tfmg:raw_nickel').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('immersiveengineering:drill').weight(3))
-        .addLoot(LootEntry.of('create:mechanical_drill').weight(5))
+        .addLoot(LootEntry.of('create:crushed_raw_iron', 4).setWeight(30))
+        .addLoot(LootEntry.of('create:crushed_raw_copper', 4).setWeight(30))
+        .addLoot(LootEntry.of('create:crushed_raw_gold', 3).setWeight(20))
+        .addLoot(LootEntry.of('create:crushed_raw_zinc', 3).setWeight(25))
+        .addLoot(LootEntry.of('tconstruct:raw_cobalt', 2).setWeight(10))
+        .addLoot(LootEntry.of('immersiveengineering:dust_wood', 10).setWeight(20))
+        .addLoot(LootEntry.of('mekanism:dust_iron', 4).setWeight(25))
+        .addLoot(LootEntry.of('mekanism:dust_gold', 3).setWeight(20))
+        .addLoot(LootEntry.of('electrodynamics:dustiron', 4).setWeight(20))
+        .addLoot(LootEntry.of('tfmg:raw_lead', 3).setWeight(15))
+        .addLoot(LootEntry.of('tfmg:raw_nickel', 3).setWeight(15))
+        .addLoot(LootEntry.of('immersiveengineering:drill').setWeight(3))
+        .addLoot(LootEntry.of('create:mechanical_drill').setWeight(5))
         // Numismatics currency
-        .addLoot(LootEntry.of('numismatics:cog').setCount([2, 12]).weight(20))
-        .addLoot(LootEntry.of('numismatics:spur').setCount([1, 6]).weight(15));
+        .addLoot(LootEntry.of('numismatics:cog', 7).setWeight(20))
+        .addLoot(LootEntry.of('numismatics:spur', 4).setWeight(15));
 
     // --- Stronghold Libraries (Tech/Knowledge theme, Tier 2-4) ---
     event.addLootTableModifier('minecraft:chests/stronghold_library')
         .randomChance(0.9)
-        .addLoot(LootEntry.of('tconstruct:materials_and_you').weight(20))
-        .addLoot(LootEntry.of('tconstruct:puny_smelting').weight(15))
-        .addLoot(LootEntry.of('tconstruct:mighty_smelting').weight(10))
-        .addLoot(LootEntry.of('tconstruct:encyclopedia').weight(8))
-        .addLoot(LootEntry.of('tconstruct:fantastic_foundry').weight(5))
-        .addLoot(LootEntry.of('patchouli:guide_book').weight(15))
-        .addLoot(LootEntry.of('ae2:certus_quartz_crystal').setCount([2, 8]).weight(25))
-        .addLoot(LootEntry.of('ae2:fluix_crystal').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of(tier3Components[Math.floor(Math.random() * tier3Components.length)]).weight(20))
-        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)]).weight(10));
+        .addLoot(LootEntry.of('tconstruct:materials_and_you').setWeight(20))
+        .addLoot(LootEntry.of('tconstruct:puny_smelting').setWeight(15))
+        .addLoot(LootEntry.of('tconstruct:mighty_smelting').setWeight(10))
+        .addLoot(LootEntry.of('tconstruct:encyclopedia').setWeight(8))
+        .addLoot(LootEntry.of('tconstruct:fantastic_foundry').setWeight(5))
+        .addLoot(LootEntry.of('patchouli:guide_book').setWeight(15))
+        .addLoot(LootEntry.of('ae2:certus_quartz_crystal', 5).setWeight(25))
+        .addLoot(LootEntry.of('ae2:fluix_crystal', 3).setWeight(15))
+        .addLoot(LootEntry.of(tier3Components[Math.floor(Math.random() * tier3Components.length)]).setWeight(20))
+        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)]).setWeight(10));
 
     // --- Stronghold Corridor (Combat theme, Tier 2-4) ---
     event.addLootTableModifier('minecraft:chests/stronghold_corridor')
         .randomChance(0.85)
-        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)]).setCount([2, 6]).weight(30))
-        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)]).setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of(tier3Tools[Math.floor(Math.random() * tier3Tools.length)]).weight(15))
-        .addLoot(LootEntry.of(militaryItems[Math.floor(Math.random() * militaryItems.length)]).weight(10));
+        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)], 4).setWeight(30))
+        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)], 3).setWeight(20))
+        .addLoot(LootEntry.of(tier3Tools[Math.floor(Math.random() * tier3Tools.length)]).setWeight(15))
+        .addLoot(LootEntry.of(militaryItems[Math.floor(Math.random() * militaryItems.length)]).setWeight(10));
 
     // --- Desert Pyramid (Ancient tech theme, Tier 2-4) ---
     event.addLootTableModifier('minecraft:chests/desert_pyramid')
         .randomChance(0.9)
-        .addLoot(LootEntry.of('immersiveengineering:ingot_electrum').setCount([2, 8]).weight(25))
-        .addLoot(LootEntry.of('immersiveengineering:ingot_constantan').setCount([2, 6]).weight(25))
-        .addLoot(LootEntry.of('create:precision_mechanism').setCount([1, 3]).weight(15))
-        .addLoot(LootEntry.of('tfmg:circuit_board').setCount([1, 2]).weight(10))
-        .addLoot(LootEntry.of(explorationItems[Math.floor(Math.random() * explorationItems.length)]).weight(20))
-        .addLoot(LootEntry.of(tier3Components[Math.floor(Math.random() * tier3Components.length)]).weight(20))
-        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)]).setCount([1, 2]).weight(10))
+        .addLoot(LootEntry.of('immersiveengineering:ingot_electrum', 5).setWeight(25))
+        .addLoot(LootEntry.of('immersiveengineering:ingot_constantan', 4).setWeight(25))
+        .addLoot(LootEntry.of('create:precision_mechanism', 2).setWeight(15))
+        .addLoot(LootEntry.of('tfmg:circuit_board', 2).setWeight(10))
+        .addLoot(LootEntry.of(explorationItems[Math.floor(Math.random() * explorationItems.length)]).setWeight(20))
+        .addLoot(LootEntry.of(tier3Components[Math.floor(Math.random() * tier3Components.length)]).setWeight(20))
+        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)], 2).setWeight(10))
         // Numismatics currency
-        .addLoot(LootEntry.of('numismatics:spur').setCount([2, 8]).weight(20))
-        .addLoot(LootEntry.of('numismatics:bevel').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('numismatics:sprocket').setCount([1, 2]).weight(8));
+        .addLoot(LootEntry.of('numismatics:spur', 5).setWeight(20))
+        .addLoot(LootEntry.of('numismatics:bevel', 3).setWeight(15))
+        .addLoot(LootEntry.of('numismatics:sprocket', 2).setWeight(8));
 
     // --- Jungle Temple (Automation theme, Tier 2-4) ---
     event.addLootTableModifier('minecraft:chests/jungle_temple')
         .randomChance(0.85)
-        .addLoot(LootEntry.of('create:redstone_link').setCount([1, 2]).weight(25))
-        .addLoot(LootEntry.of('create:rotation_speed_controller').weight(15))
-        .addLoot(LootEntry.of('create:sequenced_gearshift').weight(15))
-        .addLoot(LootEntry.of('create:content_observer').weight(20))
-        .addLoot(LootEntry.of('immersiveengineering:logic_unit').setCount([1, 2]).weight(15))
-        .addLoot(LootEntry.of(automationItems[Math.floor(Math.random() * automationItems.length)]).weight(15))
-        .addLoot(LootEntry.of(tier3Machines[Math.floor(Math.random() * tier3Machines.length)]).weight(8));
+        .addLoot(LootEntry.of('create:redstone_link', 2).setWeight(25))
+        .addLoot(LootEntry.of('create:rotation_speed_controller').setWeight(15))
+        .addLoot(LootEntry.of('create:sequenced_gearshift').setWeight(15))
+        .addLoot(LootEntry.of('create:content_observer').setWeight(20))
+        .addLoot(LootEntry.of('immersiveengineering:logic_unit', 2).setWeight(15))
+        .addLoot(LootEntry.of(automationItems[Math.floor(Math.random() * automationItems.length)]).setWeight(15))
+        .addLoot(LootEntry.of(tier3Machines[Math.floor(Math.random() * tier3Machines.length)]).setWeight(8));
 
     // --- End City Treasure (Endgame, Tier 4-6) ---
     event.addLootTableModifier('minecraft:chests/end_city_treasure')
         .randomChance(0.95)
-        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)]).setCount([2, 6]).weight(25))
-        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)]).setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)]).weight(10))
-        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)]).weight(15))
-        .addLoot(LootEntry.of(tier6Machines[Math.floor(Math.random() * tier6Machines.length)]).weight(8))
-        .addLoot(LootEntry.of(tier6Armor[Math.floor(Math.random() * tier6Armor.length)]).weight(5))
-        .addLoot(LootEntry.of('ae2:64k_cell_component').weight(10))
-        .addLoot(LootEntry.of('ae2:singularity').weight(5))
-        .addLoot(LootEntry.of('mekanism:teleporter').weight(8))
+        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)], 4).setWeight(25))
+        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)], 3).setWeight(20))
+        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)]).setWeight(10))
+        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)]).setWeight(15))
+        .addLoot(LootEntry.of(tier6Machines[Math.floor(Math.random() * tier6Machines.length)]).setWeight(8))
+        .addLoot(LootEntry.of(tier6Armor[Math.floor(Math.random() * tier6Armor.length)]).setWeight(5))
+        .addLoot(LootEntry.of('ae2:64k_cell_component').setWeight(10))
+        .addLoot(LootEntry.of('ae2:singularity').setWeight(5))
+        .addLoot(LootEntry.of('mekanism:teleporter').setWeight(8))
         // Numismatics currency (high value)
-        .addLoot(LootEntry.of('numismatics:sprocket').setCount([2, 8]).weight(20))
-        .addLoot(LootEntry.of('numismatics:sun').setCount([1, 4]).weight(12))
-        .addLoot(LootEntry.of('numismatics:crown').setCount([1, 2]).weight(5));
+        .addLoot(LootEntry.of('numismatics:sprocket', 5).setWeight(20))
+        .addLoot(LootEntry.of('numismatics:sun', 3).setWeight(12))
+        .addLoot(LootEntry.of('numismatics:crown', 2).setWeight(5));
 
     // --- Nether Fortress (Fire/Blaze theme, Tier 3-5) ---
     event.addLootTableModifier('minecraft:chests/nether_bridge')
         .randomChance(0.9)
-        .addLoot(LootEntry.of('tconstruct:blazing_bone').setCount([1, 4]).weight(30))
-        .addLoot(LootEntry.of('tconstruct:blazewood').setCount([2, 8]).weight(25))
-        .addLoot(LootEntry.of('tconstruct:scorched_brick').setCount([4, 16]).weight(20))
-        .addLoot(LootEntry.of('tconstruct:nether_grout').setCount([2, 8]).weight(25))
-        .addLoot(LootEntry.of('tconstruct:cobalt_ingot').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('tfmg:fireproof_brick').setCount([4, 12]).weight(20))
-        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)]).setCount([2, 6]).weight(20))
-        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)]).setCount([1, 3]).weight(15));
+        .addLoot(LootEntry.of('tconstruct:blazing_bone', 3).setWeight(30))
+        .addLoot(LootEntry.of('tconstruct:blazewood', 5).setWeight(25))
+        .addLoot(LootEntry.of('tconstruct:scorched_brick', 10).setWeight(20))
+        .addLoot(LootEntry.of('tconstruct:nether_grout', 5).setWeight(25))
+        .addLoot(LootEntry.of('tconstruct:cobalt_ingot', 3).setWeight(15))
+        .addLoot(LootEntry.of('tfmg:fireproof_brick', 8).setWeight(20))
+        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)], 4).setWeight(20))
+        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)], 2).setWeight(15));
 
     // --- Bastion Treasure (High value, Tier 4-6) ---
     event.addLootTableModifier('minecraft:chests/bastion_treasure')
         .randomChance(0.95)
-        .addLoot(LootEntry.of('tconstruct:manyullyn_ingot').setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of('tconstruct:hepatizon_ingot').setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of('tconstruct:queens_slime_ingot').setCount([1, 3]).weight(15))
-        .addLoot(LootEntry.of('tconstruct:knightslime_ingot').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)]).setCount([1, 3]).weight(20))
-        .addLoot(LootEntry.of(tier5Generators[Math.floor(Math.random() * tier5Generators.length)]).weight(10))
-        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)]).weight(10))
-        .addLoot(LootEntry.of(rareTreasures[Math.floor(Math.random() * rareTreasures.length)]).weight(3))
+        .addLoot(LootEntry.of('tconstruct:manyullyn_ingot', 3).setWeight(20))
+        .addLoot(LootEntry.of('tconstruct:hepatizon_ingot', 3).setWeight(20))
+        .addLoot(LootEntry.of('tconstruct:queens_slime_ingot', 2).setWeight(15))
+        .addLoot(LootEntry.of('tconstruct:knightslime_ingot', 3).setWeight(15))
+        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)], 2).setWeight(20))
+        .addLoot(LootEntry.of(tier5Generators[Math.floor(Math.random() * tier5Generators.length)]).setWeight(10))
+        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)]).setWeight(10))
+        .addLoot(LootEntry.of(rareTreasures[Math.floor(Math.random() * rareTreasures.length)]).setWeight(3))
         // Numismatics currency (high value - piglin treasure hoard)
-        .addLoot(LootEntry.of('numismatics:bevel').setCount([4, 16]).weight(25))
-        .addLoot(LootEntry.of('numismatics:sprocket').setCount([2, 8]).weight(20))
-        .addLoot(LootEntry.of('numismatics:sun').setCount([1, 3]).weight(10))
-        .addLoot(LootEntry.of('numismatics:crown').setCount([1, 2]).weight(3));
+        .addLoot(LootEntry.of('numismatics:bevel', 10).setWeight(25))
+        .addLoot(LootEntry.of('numismatics:sprocket', 5).setWeight(20))
+        .addLoot(LootEntry.of('numismatics:sun', 2).setWeight(10))
+        .addLoot(LootEntry.of('numismatics:crown', 2).setWeight(3));
     event.addLootTableModifier('minecraft:chests/ruined_portal')
         .randomChance(0.85)
-        .addLoot(LootEntry.of('immersiveengineering:ingot_constantan').setCount([1, 4]).weight(25))
-        .addLoot(LootEntry.of('create:brass_ingot').setCount([2, 6]).weight(25))
-        .addLoot(LootEntry.of('mekanism:enriched_obsidian').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('ae2:sky_stone_block').setCount([2, 8]).weight(20))
-        .addLoot(LootEntry.of('fluxnetworks:flux_dust').setCount([4, 16]).weight(15))
-        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)]).setCount([1, 4]).weight(20));
+        .addLoot(LootEntry.of('immersiveengineering:ingot_constantan', 3).setWeight(25))
+        .addLoot(LootEntry.of('create:brass_ingot', 4).setWeight(25))
+        .addLoot(LootEntry.of('mekanism:enriched_obsidian', 3).setWeight(15))
+        .addLoot(LootEntry.of('ae2:sky_stone_block', 5).setWeight(20))
+        .addLoot(LootEntry.of('fluxnetworks:flux_dust', 10).setWeight(15))
+        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)], 3).setWeight(20));
 
     // --- Shipwreck Treasure (Naval/Exploration theme, Tier 1-3) ---
     event.addLootTableModifier('minecraft:chests/shipwreck_treasure')
         .randomChance(0.85)
-        .addLoot(LootEntry.of(explorationItems[Math.floor(Math.random() * explorationItems.length)]).weight(30))
-        .addLoot(LootEntry.of('create:diving_helmet').weight(15))
-        .addLoot(LootEntry.of('create:diving_boots').weight(15))
-        .addLoot(LootEntry.of('create:copper_diving_helmet').weight(10))
-        .addLoot(LootEntry.of('create:copper_diving_boots').weight(10))
-        .addLoot(LootEntry.of('supplementaries:rope').setCount([8, 32]).weight(25))
-        .addLoot(LootEntry.of('immersive_aircraft:sail').weight(10))
-        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)]).setCount([2, 6]).weight(20))
+        .addLoot(LootEntry.of(explorationItems[Math.floor(Math.random() * explorationItems.length)]).setWeight(30))
+        .addLoot(LootEntry.of('create:diving_helmet').setWeight(15))
+        .addLoot(LootEntry.of('create:diving_boots').setWeight(15))
+        .addLoot(LootEntry.of('create:copper_diving_helmet').setWeight(10))
+        .addLoot(LootEntry.of('create:copper_diving_boots').setWeight(10))
+        .addLoot(LootEntry.of('supplementaries:rope', 20).setWeight(25))
+        .addLoot(LootEntry.of('immersive_aircraft:sail').setWeight(10))
+        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)], 4).setWeight(20))
         // Numismatics currency (sailor's pay)
-        .addLoot(LootEntry.of('numismatics:cog').setCount([4, 16]).weight(25))
-        .addLoot(LootEntry.of('numismatics:spur').setCount([2, 8]).weight(20))
-        .addLoot(LootEntry.of('numismatics:bevel').setCount([1, 4]).weight(10));
+        .addLoot(LootEntry.of('numismatics:cog', 10).setWeight(25))
+        .addLoot(LootEntry.of('numismatics:spur', 5).setWeight(20))
+        .addLoot(LootEntry.of('numismatics:bevel', 3).setWeight(10));
 
     // --- Underwater Ruins Big (Ocean theme, Tier 1-3) ---
     event.addLootTableModifier('minecraft:chests/underwater_ruin_big')
         .randomChance(0.8)
-        .addLoot(LootEntry.of('ae2:sky_stone_block').setCount([1, 4]).weight(25))
-        .addLoot(LootEntry.of('ae2:certus_quartz_crystal').setCount([1, 6]).weight(20))
-        .addLoot(LootEntry.of('tconstruct:ender_slime_crystal').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('minecraft:heart_of_the_sea').weight(5))
-        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)]).setCount([2, 6]).weight(25));
+        .addLoot(LootEntry.of('ae2:sky_stone_block', 3).setWeight(25))
+        .addLoot(LootEntry.of('ae2:certus_quartz_crystal', 4).setWeight(20))
+        .addLoot(LootEntry.of('tconstruct:ender_slime_crystal', 3).setWeight(15))
+        .addLoot(LootEntry.of('minecraft:heart_of_the_sea').setWeight(5))
+        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)], 4).setWeight(25));
 
     // --- Buried Treasure (High value, Tier 2-4) ---
     event.addLootTableModifier('minecraft:chests/buried_treasure')
         .randomChance(0.9)
-        .addLoot(LootEntry.of('ae2:fluix_crystal').setCount([2, 8]).weight(20))
-        .addLoot(LootEntry.of('create:precision_mechanism').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('tconstruct:manyullyn_nugget').setCount([4, 12]).weight(15))
-        .addLoot(LootEntry.of('mekanism:ingot_osmium').setCount([2, 8]).weight(20))
-        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)]).setCount([2, 8]).weight(25))
-        .addLoot(LootEntry.of(tier4Storage[Math.floor(Math.random() * tier4Storage.length)]).weight(10))
+        .addLoot(LootEntry.of('ae2:fluix_crystal', 5).setWeight(20))
+        .addLoot(LootEntry.of('create:precision_mechanism', 3).setWeight(15))
+        .addLoot(LootEntry.of('tconstruct:manyullyn_nugget', 8).setWeight(15))
+        .addLoot(LootEntry.of('mekanism:ingot_osmium', 5).setWeight(20))
+        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)], 5).setWeight(25))
+        .addLoot(LootEntry.of(tier4Storage[Math.floor(Math.random() * tier4Storage.length)]).setWeight(10))
         // Numismatics currency (buried pirate treasure!)
-        .addLoot(LootEntry.of('numismatics:spur').setCount([4, 16]).weight(30))
-        .addLoot(LootEntry.of('numismatics:bevel').setCount([2, 8]).weight(25))
-        .addLoot(LootEntry.of('numismatics:sprocket').setCount([1, 4]).weight(15))
-        .addLoot(LootEntry.of('numismatics:sun').setCount([1, 2]).weight(5));
+        .addLoot(LootEntry.of('numismatics:spur', 10).setWeight(30))
+        .addLoot(LootEntry.of('numismatics:bevel', 5).setWeight(25))
+        .addLoot(LootEntry.of('numismatics:sprocket', 3).setWeight(15))
+        .addLoot(LootEntry.of('numismatics:sun', 2).setWeight(5));
 
     // --- Woodland Mansion (Illager theme, mix of all tiers) ---
     event.addLootTableModifier('minecraft:chests/woodland_mansion')
@@ -859,24 +859,24 @@ LootJS.modifiers((event) => {
     // --- Pillager Outpost (Military theme, Tier 2-4) ---
     event.addLootTableModifier('minecraft:chests/pillager_outpost')
         .randomChance(0.85)
-        .addLoot(LootEntry.of(militaryItems[Math.floor(Math.random() * militaryItems.length)]).weight(40))
-        .addLoot(LootEntry.of('immersiveengineering:revolver').weight(10))
-        .addLoot(LootEntry.of('immersiveengineering:shield').weight(8))
-        .addLoot(LootEntry.of('cgs:iron_round').setCount([8, 32]).weight(25))
-        .addLoot(LootEntry.of('cgs:shotgun_shell').setCount([4, 16]).weight(20))
-        .addLoot(LootEntry.of(tier3Tools[Math.floor(Math.random() * tier3Tools.length)]).weight(15));
+        .addLoot(LootEntry.of(militaryItems[Math.floor(Math.random() * militaryItems.length)]).setWeight(40))
+        .addLoot(LootEntry.of('immersiveengineering:revolver').setWeight(10))
+        .addLoot(LootEntry.of('immersiveengineering:shield').setWeight(8))
+        .addLoot(LootEntry.of('cgs:iron_round', 20).setWeight(25))
+        .addLoot(LootEntry.of('cgs:shotgun_shell', 10).setWeight(20))
+        .addLoot(LootEntry.of(tier3Tools[Math.floor(Math.random() * tier3Tools.length)]).setWeight(15));
 
     // --- Ancient City (Deep Dark theme, Tier 4-6) ---
     event.addLootTableModifier('minecraft:chests/ancient_city')
         .randomChance(0.95)
-        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)]).setCount([2, 6]).weight(25))
-        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)]).setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)]).weight(15))
-        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)]).weight(8))
-        .addLoot(LootEntry.of(hostileNetworksItems[Math.floor(Math.random() * hostileNetworksItems.length)]).weight(15))
-        .addLoot(LootEntry.of('ae2:quantum_ring').weight(5))
-        .addLoot(LootEntry.of('mekanism:digital_miner').weight(5))
-        .addLoot(LootEntry.of(rareTreasures[Math.floor(Math.random() * rareTreasures.length)]).weight(5));
+        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)], 4).setWeight(25))
+        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)], 3).setWeight(20))
+        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)]).setWeight(15))
+        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)]).setWeight(8))
+        .addLoot(LootEntry.of(hostileNetworksItems[Math.floor(Math.random() * hostileNetworksItems.length)]).setWeight(15))
+        .addLoot(LootEntry.of('ae2:quantum_ring').setWeight(5))
+        .addLoot(LootEntry.of('mekanism:digital_miner').setWeight(5))
+        .addLoot(LootEntry.of(rareTreasures[Math.floor(Math.random() * rareTreasures.length)]).setWeight(5));
 
     // --- Village Chests (Early game help, Tier 1-2) ---
     const villageTypes = [
@@ -896,14 +896,14 @@ LootJS.modifiers((event) => {
     villageTypes.forEach(villageChest => {
         event.addLootTableModifier(villageChest)
             .randomChance(0.7)
-            .addLoot(LootEntry.of(tier1Materials[Math.floor(Math.random() * tier1Materials.length)]).setCount([1, 4]).weight(35))
-            .addLoot(LootEntry.of(tier1Tools[Math.floor(Math.random() * tier1Tools.length)]).weight(15))
-            .addLoot(LootEntry.of(tier1Food[Math.floor(Math.random() * tier1Food.length)]).setCount([1, 4]).weight(25))
-            .addLoot(LootEntry.of(tier1Decorative[Math.floor(Math.random() * tier1Decorative.length)]).weight(15))
-            .addLoot(LootEntry.of(tier2Components[Math.floor(Math.random() * tier2Components.length)]).weight(10))
+            .addLoot(LootEntry.of(tier1Materials[Math.floor(Math.random() * tier1Materials.length)], 3).setWeight(35))
+            .addLoot(LootEntry.of(tier1Tools[Math.floor(Math.random() * tier1Tools.length)]).setWeight(15))
+            .addLoot(LootEntry.of(tier1Food[Math.floor(Math.random() * tier1Food.length)], 3).setWeight(25))
+            .addLoot(LootEntry.of(tier1Decorative[Math.floor(Math.random() * tier1Decorative.length)]).setWeight(15))
+            .addLoot(LootEntry.of(tier2Components[Math.floor(Math.random() * tier2Components.length)]).setWeight(10))
             // Numismatics currency (villager savings)
-            .addLoot(LootEntry.of('numismatics:cog').setCount([1, 6]).weight(20))
-            .addLoot(LootEntry.of('numismatics:spur').setCount([1, 3]).weight(10));
+            .addLoot(LootEntry.of('numismatics:cog', 4).setWeight(20))
+            .addLoot(LootEntry.of('numismatics:spur', 2).setWeight(10));
     });
 
     // ============================================================================
@@ -913,11 +913,11 @@ LootJS.modifiers((event) => {
     // Generic dungeon loot for dungeon mods
     event.addLootTableModifier(/dungeons.*:chests/)
         .randomChance(0.8)
-        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)]).setCount([2, 6]).weight(30))
-        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)]).setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of(tier2Machines[Math.floor(Math.random() * tier2Machines.length)]).weight(10))
-        .addLoot(LootEntry.of(tier3Tools[Math.floor(Math.random() * tier3Tools.length)]).weight(15))
-        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)]).setCount([1, 2]).weight(8));
+        .addLoot(LootEntry.of(tier2Materials[Math.floor(Math.random() * tier2Materials.length)], 4).setWeight(30))
+        .addLoot(LootEntry.of(tier3Materials[Math.floor(Math.random() * tier3Materials.length)], 3).setWeight(20))
+        .addLoot(LootEntry.of(tier2Machines[Math.floor(Math.random() * tier2Machines.length)]).setWeight(10))
+        .addLoot(LootEntry.of(tier3Tools[Math.floor(Math.random() * tier3Tools.length)]).setWeight(15))
+        .addLoot(LootEntry.of(tier4Materials[Math.floor(Math.random() * tier4Materials.length)], 2).setWeight(8));
 
     // ============================================================================
     // FISHING LOOT (Added treasures to fishing)
@@ -925,12 +925,12 @@ LootJS.modifiers((event) => {
 
     event.addLootTableModifier('minecraft:gameplay/fishing/treasure')
         .randomChance(0.6)
-        .addLoot(LootEntry.of('ae2:certus_quartz_crystal').setCount([1, 3]).weight(25))
-        .addLoot(LootEntry.of('create:brass_nugget').setCount([2, 6]).weight(30))
-        .addLoot(LootEntry.of('tconstruct:earth_slime_ball').setCount([1, 4]).weight(20))
-        .addLoot(LootEntry.of('tconstruct:sky_slime_ball').setCount([1, 3]).weight(15))
-        .addLoot(LootEntry.of('supplementaries:antique_ink').weight(10))
-        .addLoot(LootEntry.of(tier1Decorative[Math.floor(Math.random() * tier1Decorative.length)]).weight(15));
+        .addLoot(LootEntry.of('ae2:certus_quartz_crystal', 2).setWeight(25))
+        .addLoot(LootEntry.of('create:brass_nugget', 4).setWeight(30))
+        .addLoot(LootEntry.of('tconstruct:earth_slime_ball', 3).setWeight(20))
+        .addLoot(LootEntry.of('tconstruct:sky_slime_ball', 2).setWeight(15))
+        .addLoot(LootEntry.of('supplementaries:antique_ink').setWeight(10))
+        .addLoot(LootEntry.of(tier1Decorative[Math.floor(Math.random() * tier1Decorative.length)]).setWeight(15));
 
     // ============================================================================
     // MOB DROPS ADDITIONS
@@ -939,61 +939,61 @@ LootJS.modifiers((event) => {
     // Enderman drops
     event.addEntityLootModifier('minecraft:enderman')
         .randomChance(0.15)
-        .addLoot(LootEntry.of('ae2:sky_dust').setCount([1, 3]).weight(50))
-        .addLoot(LootEntry.of('tconstruct:ender_slime_ball').weight(30))
-        .addLoot(LootEntry.of('ae2:certus_quartz_crystal').weight(20));
+        .addLoot(LootEntry.of('ae2:sky_dust', 2).setWeight(50))
+        .addLoot(LootEntry.of('tconstruct:ender_slime_ball').setWeight(30))
+        .addLoot(LootEntry.of('ae2:certus_quartz_crystal').setWeight(20));
 
     // Blaze drops
     event.addEntityLootModifier('minecraft:blaze')
         .randomChance(0.2)
-        .addLoot(LootEntry.of('tconstruct:blazing_bone').weight(30))
-        .addLoot(LootEntry.of('tfmg:sulfur').setCount([1, 3]).weight(40))
-        .addLoot(LootEntry.of('electrodynamics:dustite').setCount([1, 2]).weight(30));
+        .addLoot(LootEntry.of('tconstruct:blazing_bone').setWeight(30))
+        .addLoot(LootEntry.of('tfmg:sulfur', 2).setWeight(40))
+        .addLoot(LootEntry.of('electrodynamics:dustite', 2).setWeight(30));
 
     // Wither Skeleton drops
     event.addEntityLootModifier('minecraft:wither_skeleton')
         .randomChance(0.15)
-        .addLoot(LootEntry.of('tconstruct:necrotic_bone').weight(60))
-        .addLoot(LootEntry.of('tconstruct:necronium_bone').weight(20))
-        .addLoot(LootEntry.of('mekanism:dust_coal').setCount([1, 3]).weight(40));
+        .addLoot(LootEntry.of('tconstruct:necrotic_bone').setWeight(60))
+        .addLoot(LootEntry.of('tconstruct:necronium_bone').setWeight(20))
+        .addLoot(LootEntry.of('mekanism:dust_coal', 2).setWeight(40));
 
     // Ghast drops
     event.addEntityLootModifier('minecraft:ghast')
         .randomChance(0.25)
-        .addLoot(LootEntry.of('tconstruct:ichor_slime_ball').setCount([1, 3]).weight(50))
-        .addLoot(LootEntry.of('tconstruct:scorched_brick').setCount([2, 6]).weight(40));
+        .addLoot(LootEntry.of('tconstruct:ichor_slime_ball', 2).setWeight(50))
+        .addLoot(LootEntry.of('tconstruct:scorched_brick', 4).setWeight(40));
 
     // Elder Guardian drops
     event.addEntityLootModifier('minecraft:elder_guardian')
         .randomChance(0.5)
-        .addLoot(LootEntry.of('ae2:fluix_crystal').setCount([4, 12]).weight(40))
-        .addLoot(LootEntry.of('ae2:singularity').weight(10))
-        .addLoot(LootEntry.of(tier4Storage[Math.floor(Math.random() * tier4Storage.length)]).weight(30));
+        .addLoot(LootEntry.of('ae2:fluix_crystal', 8).setWeight(40))
+        .addLoot(LootEntry.of('ae2:singularity').setWeight(10))
+        .addLoot(LootEntry.of(tier4Storage[Math.floor(Math.random() * tier4Storage.length)]).setWeight(30));
 
     // Warden drops
     event.addEntityLootModifier('minecraft:warden')
         .randomChance(0.8)
-        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)]).setCount([2, 6]).weight(30))
-        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)]).weight(20))
-        .addLoot(LootEntry.of(tier6Machines[Math.floor(Math.random() * tier6Machines.length)]).weight(15))
-        .addLoot(LootEntry.of('mekanism:module_base').setCount([1, 2]).weight(15))
-        .addLoot(LootEntry.of(rareTreasures[Math.floor(Math.random() * rareTreasures.length)]).weight(10));
+        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)], 4).setWeight(30))
+        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)]).setWeight(20))
+        .addLoot(LootEntry.of(tier6Machines[Math.floor(Math.random() * tier6Machines.length)]).setWeight(15))
+        .addLoot(LootEntry.of('mekanism:module_base', 2).setWeight(15))
+        .addLoot(LootEntry.of(rareTreasures[Math.floor(Math.random() * rareTreasures.length)]).setWeight(10));
 
     // Ender Dragon drops
     event.addEntityLootModifier('minecraft:ender_dragon')
-        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)]).setCount([4, 8]))
-        .addLoot(LootEntry.of(tier6Machines[Math.floor(Math.random() * tier6Machines.length)]).setCount([1, 2]))
-        .addLoot(LootEntry.of('ae2:quantum_entangled_singularity').setCount([2, 4]))
-        .addLoot(LootEntry.of('mekanism:antimatter_pellet').setCount([1, 3]))
-        .addLoot(LootEntry.of('kubejs:quantum_circuit').setCount([1, 2]));
+        .addLoot(LootEntry.of(tier6Materials[Math.floor(Math.random() * tier6Materials.length)], 6))
+        .addLoot(LootEntry.of(tier6Machines[Math.floor(Math.random() * tier6Machines.length)], 2))
+        .addLoot(LootEntry.of('ae2:quantum_entangled_singularity', 3))
+        .addLoot(LootEntry.of('mekanism:antimatter_pellet', 2))
+        .addLoot(LootEntry.of('kubejs:quantum_circuit', 2));
 
     // Wither drops
     event.addEntityLootModifier('minecraft:wither')
-        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)]).setCount([4, 8]))
-        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)]).setCount([1, 2]))
-        .addLoot(LootEntry.of('mekanism:polonium_pellet').setCount([2, 4]))
-        .addLoot(LootEntry.of('mekanism:plutonium_pellet').setCount([1, 3]))
-        .addLoot(LootEntry.of('kubejs:industrial_circuit').setCount([2, 4]));
+        .addLoot(LootEntry.of(tier5Materials[Math.floor(Math.random() * tier5Materials.length)], 6))
+        .addLoot(LootEntry.of(tier5Machines[Math.floor(Math.random() * tier5Machines.length)], 2))
+        .addLoot(LootEntry.of('mekanism:polonium_pellet', 3))
+        .addLoot(LootEntry.of('mekanism:plutonium_pellet', 2))
+        .addLoot(LootEntry.of('kubejs:industrial_circuit', 3));
 
     // ============================================================================
     // BLOCK DROPS (Bonus drops from ores and special blocks)
@@ -1002,7 +1002,7 @@ LootJS.modifiers((event) => {
     // Coal ore bonus
     event.addBlockLootModifier('minecraft:coal_ore')
         .randomChance(0.05)
-        .addLoot(LootEntry.of('tfmg:coal_coke').setCount([1, 2]));
+        .addLoot(LootEntry.of('tfmg:coal_coke', 2));
 
     // Diamond ore bonus
     event.addBlockLootModifier('minecraft:diamond_ore')
