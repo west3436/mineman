@@ -1,0 +1,26 @@
+{
+	id: "338D5F4BD35DCD7D"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "numismatics:spur", weight: 96.0f }
+		{ count: 5, item: "numismatics:spur", weight: 64.0f }
+		{ count: 10, item: "numismatics:spur", weight: 32.0f }
+		{ item: "numismatics:bevel", weight: 48.0f }
+		{ count: 5, item: "numismatics:bevel", weight: 32.0f }
+		{ count: 10, item: "numismatics:bevel", weight: 16.0f }
+		{ item: "numismatics:sprocket", weight: 24.0f }
+		{ count: 5, item: "numismatics:sprocket", weight: 16.0f }
+		{ count: 10, item: "numismatics:sprocket", weight: 8.0f }
+		{ item: "numismatics:cog", weight: 12.0f }
+		{ count: 5, item: "numismatics:cog", weight: 8.0f }
+		{ count: 10, item: "numismatics:cog", weight: 4.0f }
+		{ item: "numismatics:crown", weight: 6.0f }
+		{ count: 5, item: "numismatics:crown", weight: 4.0f }
+		{ count: 10, item: "numismatics:crown", weight: 2.0f }
+		{ item: "numismatics:sun", weight: 3.0f }
+		{ count: 5, item: "numismatics:sun", weight: 2.0f }
+		{ count: 10, item: "numismatics:sun" }
+	]
+	title: "Money"
+}

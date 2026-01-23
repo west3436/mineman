@@ -57,6 +57,18 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
 
 [[files]]
+file = "config/ftbquests/quests/reward_tables/money.snbt"
+hash = "51eb3222d17f9a368bfc5b043377f6c142ac2f244d25a017257ec9ec82b58425"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t1c.snbt"
+hash = "024259ef112587457f51dd510877ce4c3994266998b2606be8c80de0a24a3fee"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t1ie.snbt"
+hash = "c619845fd6020528cac197f9d7b92ac1bb1a4686ca6c5a5fb043044328353f5e"
+
+[[files]]
 file = "datapacks/unified_ores/README.md"
 hash = "7b3166f6fe3b02f6110ec93329ad28ac1e193e251230e5944704c2c85df82ec1"
 

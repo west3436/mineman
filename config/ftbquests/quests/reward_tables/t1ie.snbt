@@ -1,0 +1,25 @@
+{
+	id: "3F06B64DE8BFE4B6"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 32, item: "minecraft:coal" }
+		{ count: 16, item: "minecraft:iron_ingot" }
+		{ count: 16, item: "immersiveengineering:light_engineering" }
+		{ count: 4, item: "immersiveengineering:heavy_engineering" }
+		{ count: 4, item: "immersiveengineering:rs_engineering" }
+		{ count: 16, item: "immersiveengineering:hemp_fabric" }
+		{ count: 32, item: "immersiveengineering:treated_wood_horizontal" }
+		{ count: 16, item: "immersiveengineering:component_iron" }
+		{ count: 8, item: "immersiveengineering:component_steel" }
+		{ count: 8, item: "immersiveengineering:wirecoil_copper" }
+		{ count: 4, item: "immersiveengineering:wirecoil_electrum" }
+		{ count: 4, item: "immersiveengineering:connector_lv" }
+		{ count: 4, item: "immersiveengineering:connector_mv" }
+		{ count: 8, item: "immersiveengineering:connector_lv_relay" }
+		{ count: 8, item: "immersiveengineering:connector_mv_relay" }
+		{ count: 4, item: "immersiveengineering:coil_lv" }
+		{ count: 32, item: "immersiveengineering:conveyor_basic" }
+	]
+	title: "T1-IE"
+}
