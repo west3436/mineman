@@ -1,0 +1,23 @@
+{
+	id: "5A00000000000003"
+	loot_size: 1
+	order_index: 32
+	rewards: [
+		{ count: 4, item: "farmersdelight:cooking_pot" }
+		{ count: 8, item: "farmersdelight:cutting_board" }
+		{ count: 4, item: "farmersdelight:stove" }
+		{ count: 8, item: "farmersdelight:skillet" }
+		{ count: 16, item: "farmersdelight:canvas" }
+		{ count: 8, item: "farmersdelight:rope" }
+		{ count: 16, item: "farmersdelight:rice_bag" }
+		{ count: 8, item: "farmersdelight:cabbage" }
+		{ count: 8, item: "farmersdelight:tomato" }
+		{ count: 8, item: "farmersdelight:onion" }
+		{ count: 16, item: "farmersdelight:wheat_dough" }
+		{ count: 4, item: "farmersdelight:iron_knife" }
+		{ count: 4, item: "farmersdelight:diamond_knife" }
+		{ count: 8, item: "farmersdelight:basket" }
+		{ count: 32, item: "farmersdelight:rich_soil" }
+	]
+	title: "SQ-FarmersDelight"
+}

@@ -1,0 +1,22 @@
+{
+	id: "5A00000000000001"
+	loot_size: 1
+	order_index: 30
+	rewards: [
+		{ count: 16, item: "agricraft:seed_analyzer" }
+		{ count: 32, item: "agricraft:crop_sticks" }
+		{ count: 16, item: "agricraft:clipper" }
+		{ count: 8, item: "agricraft:magnifying_glass" }
+		{ count: 4, item: "agricraft:journal" }
+		{ count: 16, item: "agricraft:irrigation_tank" }
+		{ count: 32, item: "agricraft:irrigation_channel" }
+		{ count: 8, item: "agricraft:sprinkler" }
+		{ count: 16, item: "agricraft:grate" }
+		{ count: 32, item: "minecraft:bone_meal" }
+		{ count: 16, item: "minecraft:wheat_seeds" }
+		{ count: 16, item: "minecraft:carrot" }
+		{ count: 16, item: "minecraft:potato" }
+		{ count: 16, item: "minecraft:beetroot_seeds" }
+	]
+	title: "SQ-AgriCraft"
+}

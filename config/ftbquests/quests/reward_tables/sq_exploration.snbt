@@ -1,0 +1,22 @@
+{
+	id: "5A00000000000005"
+	loot_size: 1
+	order_index: 34
+	rewards: [
+		{ count: 4, item: "explorerscompass:explorerscompass" }
+		{ count: 4, item: "naturescompass:naturescompass" }
+		{ count: 16, item: "minecraft:map" }
+		{ count: 8, item: "minecraft:compass" }
+		{ count: 4, item: "minecraft:spyglass" }
+		{ count: 16, item: "minecraft:ender_pearl" }
+		{ count: 8, item: "minecraft:golden_apple" }
+		{ count: 16, item: "minecraft:cooked_beef" }
+		{ count: 32, item: "minecraft:torch" }
+		{ count: 4, item: "minecraft:iron_pickaxe" }
+		{ count: 4, item: "minecraft:iron_sword" }
+		{ count: 4, item: "minecraft:shield" }
+		{ count: 4, item: "minecraft:lead" }
+		{ count: 8, item: "minecraft:saddle" }
+	]
+	title: "SQ-Exploration"
+}
