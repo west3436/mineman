@@ -1,0 +1,13 @@
+name = "create colonial"
+filename = "create_colonial-0.8-create6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d7d18f626ada30c75dd476fa454968571ed700de"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7384684
+project-id = 1361391

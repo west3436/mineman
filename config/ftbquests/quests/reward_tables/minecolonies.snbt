@@ -1,0 +1,24 @@
+{
+	id: "5A00000000000001"
+	loot_size: 1
+	order_index: 30
+	rewards: [
+		{ count: 16, item: "minecolonies:supply_camp" }
+		{ count: 8, item: "minecolonies:supplychestdeployer" }
+		{ count: 32, item: "minecolonies:blockhutbuilder" }
+		{ count: 16, item: "minecolonies:blockhuttownhall" }
+		{ count: 32, item: "minecolonies:blockhutminer" }
+		{ count: 32, item: "minecolonies:blockhutlumberjack" }
+		{ count: 32, item: "minecolonies:blockhutfisherman" }
+		{ count: 32, item: "minecolonies:blockhutfarmer" }
+		{ count: 16, item: "minecolonies:blockhutwarehouse" }
+		{ count: 8, item: "minecolonies:blockhutdeliveryman" }
+		{ count: 32, item: "domum_ornamentum:oak_framed_bricks" }
+		{ count: 32, item: "domum_ornamentum:oak_framed_stone" }
+		{ count: 64, item: "structurize:sceptergold" }
+		{ count: 16, item: "minecolonies:blockhutcook" }
+		{ count: 16, item: "minecolonies:blockhutbaker" }
+		{ count: 8, item: "minecolonies:blockhutguardtower" }
+	]
+	title: "Minecolonies"
+}

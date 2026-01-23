@@ -1,0 +1,13 @@
+name = "ChristmasColonies"
+filename = "christmascolonies-1.20.1-1.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d34e562aaa88ddb4642d629d6372497fa1f8e354"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7290836
+project-id = 945525

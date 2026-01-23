@@ -1,0 +1,13 @@
+name = "Minecolonies: War 'N Taxes "
+filename = "minecolonytax-4.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2514b4cb0bbd6e69fa105e1c9e89b50eb5defd5e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7451381
+project-id = 1129258
