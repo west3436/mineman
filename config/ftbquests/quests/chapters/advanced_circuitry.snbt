@@ -28,7 +28,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "081C69E43A71DA8F"
-				table_id: "4A00000000000001"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -64,7 +63,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "47CB3171B9B836A0"
-				table_id: "4A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "The foundation of Mekanism"
@@ -101,7 +99,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1D06C1A669BEDBAF"
-				table_id: "4A00000000000001"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -136,7 +133,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3EA0D12914D4C01C"
-				table_id: "4A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Machine housing"
@@ -171,7 +167,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "39105E785A56E0C6"
-				table_id: "4A00000000000010"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -209,7 +204,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4C78A89CCE74E104"
-				table_id: "4A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Tier 2 alloy"
@@ -244,7 +238,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "485A58E3EFEAF452"
-				table_id: "4A00000000000020"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -277,7 +270,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "7ED0206EF59E5AFA"
-				table_id: "4A00000000000020"
 				type: "choice"
 			}]
 			subtitle: "Tier 3 alloy"
@@ -312,7 +304,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "52C43CB14E2DC1C4"
-				table_id: "4A00000000000030"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -347,7 +338,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1CEEAD04C9C475E8"
-				table_id: "4A00000000000030"
 				type: "choice"
 			}]
 			subtitle: "Tier 4 alloy"
@@ -383,7 +373,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1DF016368E4075A7"
-				table_id: "4A00000000000040"
 				type: "choice"
 			}]
 			shape: "gear"
@@ -418,7 +407,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6EC3E1F9B75AC436"
-				table_id: "4A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Ore processing begins"
@@ -451,7 +439,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2EECEE9D220888AC"
-				table_id: "4A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Pulverization"
@@ -484,7 +471,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A4C9BBDB3DA35D3"
-				table_id: "4A00000000000050"
 				type: "choice"
 			}]
 			subtitle: "Electric smelting"
@@ -524,7 +510,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "553980DAE5D8CC6D"
-				table_id: "4A00000000000040"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -561,7 +546,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5EF0205E1D54FDB2"
-				table_id: "4A00000000000040"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -599,7 +583,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "193BA74A4EDA16E7"
-				table_id: "4A00000000000040"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -642,7 +625,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "42DFDF8289236DAB"
-				table_id: "4A00000000000060"
 				type: "choice"
 			}]
 			shape: "square"
@@ -680,7 +662,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "00195989EB95111C"
-				table_id: "4A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Automated mob killing"
@@ -715,7 +696,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "457E201C08343AA8"
-				table_id: "4A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Mob spawning"
@@ -757,7 +737,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "26D946AF70E2F21C"
-				table_id: "4A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Automated planting"
@@ -792,7 +771,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "459864A84C271052"
-				table_id: "4A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Automated harvesting"
@@ -826,7 +804,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2A1B61539E1ADD68"
-				table_id: "4A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Resource processing"
@@ -865,7 +842,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "36B343E33910F765"
-				table_id: "4A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Latex extraction"
@@ -898,7 +874,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4BB3E37C274321F0"
-				table_id: "4A00000000000070"
 				type: "choice"
 			}]
 			shape: "square"
@@ -936,7 +911,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1CB8E4463F6998E7"
-				table_id: "4A00000000000070"
 				type: "choice"
 			}]
 			subtitle: "Programmable crafting"
@@ -970,7 +944,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "49079465E63568A2"
-				table_id: "4A00000000000070"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -1007,7 +980,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6A0E1382A4E2E24D"
-				table_id: "4A00000000000070"
 				type: "choice"
 			}]
 			subtitle: "Builder programming"
@@ -1043,7 +1015,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "29A9819DC0CD9682"
-				table_id: "4A00000000000070"
 				type: "choice"
 			}]
 			subtitle: "Force field protection"
@@ -1079,7 +1050,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "093049F86DA89E87"
-				table_id: "4A00000000000080"
 				type: "choice"
 			}]
 			shape: "square"
@@ -1116,7 +1086,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "59CF5C7608E339A2"
-				table_id: "4A00000000000080"
 				type: "choice"
 			}]
 			subtitle: "Machine connections"
@@ -1161,7 +1130,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "17168E58126CD90D"
-				table_id: "4A00000000000080"
 				type: "choice"
 			}]
 			subtitle: "Network configuration"
@@ -1193,7 +1161,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3F12380C606CCC17"
-				table_id: "4A00000000000080"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -1228,7 +1195,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "290EC0830F386098"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			shape: "square"
@@ -1265,7 +1231,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "796DC63EF0DEFAB5"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			subtitle: "Foundation crystals"
@@ -1307,7 +1272,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "49898A19992B9FED"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			subtitle: "Processor manufacturing"
@@ -1345,7 +1309,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1ED372305D7164D7"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			subtitle: "Digital brains"
@@ -1393,7 +1356,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "37D0D570218149E4"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -1430,7 +1392,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4D2C88F7DE398FD1"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			subtitle: "Digital storage"
@@ -1475,7 +1436,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0D8526FDF2A8D3C1"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			subtitle: "Network access"
@@ -1515,7 +1475,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "58F47FDB50F69F05"
-				table_id: "4A00000000000090"
 				type: "choice"
 			}]
 			shape: "gear"
@@ -1564,7 +1523,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "51CC66185BFE7B83"
-				table_id: "4A00000000000040"
 				type: "choice"
 			}]
 			shape: "diamond"

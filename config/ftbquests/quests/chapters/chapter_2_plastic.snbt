@@ -28,9 +28,9 @@
 			max_completable_dependents: 1
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "16DB57FC18A9B6B5"
-				table_id: "2A00000000000001"
-				type: "choice"
+				id: "37CFBD7279123654"
+				table_id: 3714730046923853181L
+				type: "random"
 			}]
 			shape: "square"
 			subtitle: "The oil rush begins"
@@ -62,12 +62,20 @@
 			]
 			icon: "tfmg:steel_pipe"
 			id: "32F58E5D138FF435"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "472DFC629AC70DDB"
-				table_id: "2A00000000000001"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3798AF0C171B7F21"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16DC0D41FF3C81AE"
+					table_id: 3026418949592973328L
+					type: "random"
+				}
+			]
 			subtitle: "Kinetic oil extraction"
 			tasks: [{
 				id: "12498F7A075959A6"
@@ -97,12 +105,20 @@
 			]
 			icon: "immersiveengineering:fluid_pipe"
 			id: "4026DB9AFB2BD2D0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0D106471C27C878C"
-				table_id: "2A00000000000001"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "378DD8F7362E9834"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "053B169F8207DFA8"
+					table_id: 3026418949592973344L
+					type: "random"
+				}
+			]
 			subtitle: "Electric oil extraction"
 			tasks: [{
 				id: "566F21B55465ECE5"
@@ -132,12 +148,20 @@
 			]
 			icon: "tfmg:pumpjack_crank"
 			id: "5350A18F0EEB6CA4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3750F6E5EB34B61C"
-				table_id: "2A00000000000001"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6DDC1039E904137E"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "45A7D075C6EFD593"
+					table_id: 3026418949592973328L
+					type: "random"
+				}
+			]
 			subtitle: "Mechanical oil extraction"
 			tasks: [
 				{
@@ -179,12 +203,20 @@
 				"&7Survey multiple chunks to find the best drilling spots!&r"
 			]
 			id: "0BDBF8E37BEF0002"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5EEB7055F4367319"
-				table_id: "2A00000000000001"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "20BFF5F489F1D075"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F2146A0D3B8429D"
+					table_id: 3026418949592973344L
+					type: "random"
+				}
+			]
 			subtitle: "Listen to the earth"
 			tasks: [{
 				id: "4CEBA462EA0F6FB0"
@@ -210,12 +242,20 @@
 				"&7Check the Engineer's Manual for the exact build pattern!&r"
 			]
 			id: "71A3BB4729DD5FE1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "71A3BB4729DD5FE2"
-				table_id: "2A00000000000001"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3D2DDD5F4BED001A"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2923855229E03856"
+					table_id: 3026418949592973344L
+					type: "random"
+				}
+			]
 			subtitle: "Industrial oil extraction"
 			tasks: [
 				{
@@ -283,12 +323,20 @@
 			]
 			icon: "tfmg:steel_distillation_controller"
 			id: "29EDE1F26155780C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "39F4A54A70A2BE9F"
-				table_id: "2A00000000000010"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "35A10F5AD4586CA0"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0735F838D8DB630D"
+					table_id: 3026418949592973328L
+					type: "random"
+				}
+			]
 			subtitle: "Separate the black gold"
 			tasks: [
 				{
@@ -327,12 +375,20 @@
 			]
 			icon: "immersivepetroleum:distillation_tower"
 			id: "60C9299750191E1D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "59715B265404765E"
-				table_id: "2A00000000000010"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B1B0EE1AF740299"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1567BD6A8CC417F7"
+					table_id: 3026418949592973344L
+					type: "random"
+				}
+			]
 			subtitle: "Industrial refining"
 			tasks: [{
 				id: "551D48FD272F2DCE"
@@ -366,12 +422,26 @@
 			]
 			icon: "tfmg:naphtha_bucket"
 			id: "063F6EC37C7309F5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0827A1C6D7D94B58"
-				table_id: "2A00000000000010"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "13D1654D68951A08"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "293E61FD829B37FF"
+					table_id: 3026418949592973328L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F694642B67CAFAE"
+					table_id: 3026418949592973344L
+					type: "choice"
+				}
+			]
 			shape: "diamond"
 			subtitle: "The plastic precursor"
 			tasks: [{
@@ -403,12 +473,25 @@
 				"&7Plastic is the gateway to the modern age!&r"
 			]
 			id: "45B86923718876B3"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "45B86923718876B4"
-				table_id: "2A00000000000020"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "522E36CDCCADA8A9"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D3558E83034E13B"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					id: "28931057FA2FBA20"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "hexagon"
 			subtitle: "The foundation of modern technology"
 			tasks: [{
@@ -438,12 +521,20 @@
 				"&7The entry-level jetpack uses plastic in its construction!&r"
 			]
 			id: "165ACEDE8C2EB606"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "165ACEDE8C2EB607"
-				table_id: "2A00000000000030"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "66F7348D840DEC24"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "582DFC3AE0D5CB91"
+					table_id: 3026418949592973360L
+					type: "random"
+				}
+			]
 			subtitle: "Personal aviation"
 			tasks: [{
 				id: "201D1D2A7EC535C3"
@@ -477,12 +568,20 @@
 				"&7Essential for any serious builder!&r"
 			]
 			id: "41DB1E3B2B48D46F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "41DB1E3B2B48D46E"
-				table_id: "2A00000000000030"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7977E1E31B052E56"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "711DDAD532CD1C5C"
+					table_id: 3026418949592973360L
+					type: "random"
+				}
+			]
 			subtitle: "Build smarter, not harder"
 			tasks: [{
 				id: "070F4C4786AA43DA"
@@ -511,12 +610,20 @@
 				"&7This is the gateway to the Circuitry chapter!&r"
 			]
 			id: "5E4CB38139BEC3BB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4ECE805796DA296C"
-				table_id: "2A00000000000020"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "37269FB265730B32"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2DA6DAD11565FF13"
+					table_id: 3026418949592973360L
+					type: "random"
+				}
+			]
 			subtitle: "Electronic foundations"
 			tasks: [{
 				id: "7517631B6FCC505B"
@@ -541,12 +648,20 @@
 				"&7Use plastic pipes for non-extreme temperature fluids!&r"
 			]
 			id: "2177FB24C9A7E820"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2ED0AB9EDAC2E6FF"
-				table_id: "2A00000000000020"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "419395D77CC3C803"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E0050D44CAA767C"
+					table_id: 3026418949592973360L
+					type: "random"
+				}
+			]
 			subtitle: "Efficient fluid transport"
 			tasks: [{
 				count: 16L
@@ -572,12 +687,20 @@
 				"&7Perfect for giving your factory a modern look!&r"
 			]
 			id: "3041F335FC8D4130"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "14558F70CEAEB66B"
-				table_id: "2A00000000000020"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "09C177BEE6451EE7"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "506E09FDC6E80C4F"
+					table_id: 3026418949592973360L
+					type: "random"
+				}
+			]
 			subtitle: "Modern aesthetics"
 			tasks: [{
 				count: 16L
@@ -592,6 +715,20 @@
 		{
 			dependencies: ["32F58E5D138FF435"]
 			id: "7CCC42AA3CBF49AB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "77B649B7EFF074A1"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B33919AA96FF379"
+					table_id: 3026418949592973328L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "4F1F8B264153AD9C"
 				item: "tfmg:surface_scanner"
@@ -607,6 +744,20 @@
 			]
 			description: ["Mix Naphtha in a heated Chemical Vat to produce Propylene and Ethylene. Either chemical can then be processed in another heated Chemical Vat to produce Molten Plastic."]
 			id: "029A0307E8D20442"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "396F55EB3E146E75"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00336CFCA97A9B13"
+					table_id: 3026418949592973328L
+					type: "random"
+				}
+			]
 			tasks: [
 				{
 					count: 18L
@@ -643,6 +794,20 @@
 			]
 			description: ["The High Pressure Refinery processes Naphtha with water to create Petroleum Gas. Run this gas through another High Pressure Refinery to produce Molten Plastic. "]
 			id: "7F3F507C00B2996B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0669312EF16792BC"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34112430DBE8CD66"
+					table_id: 3026418949592973344L
+					type: "random"
+				}
+			]
 			tasks: [
 				{
 					count: 4L
@@ -682,6 +847,20 @@
 			dependencies: ["029A0307E8D20442"]
 			description: ["Molten Plastic can then be poured into a Casting Basin and extracted as solidifed ingots after it has cooled."]
 			id: "14C683C7890A88DB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F7A624587D207CC"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "256F61A2C9368340"
+					table_id: 3026418949592973328L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "392F76E9EB0667F0"
 				item: "tfmg:casting_basin"
@@ -695,6 +874,20 @@
 			dependencies: ["7F3F507C00B2996B"]
 			description: ["The Bottling Machine accepts plate presses; use a 9x9 press and feed Molten Plastic to the machine to rapidly produce plastic blocks. These blocks can then be processed into ingots in an Assembling Machine."]
 			id: "1ECA2EF2A80CE296"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F4E789C9C041918"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3DF996E5D82B28CC"
+					table_id: 3026418949592973344L
+					type: "random"
+				}
+			]
 			tasks: [
 				{
 					count: 2L
