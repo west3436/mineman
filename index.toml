@@ -992,11 +992,6 @@ hash = "0a869d874f172ec0ee7bafe6240922e0dea6944388079c58d1e15f76d1a42140"
 metafile = true
 
 [[files]]
-file = "mods/minecolonies-transit-networks.pw.toml"
-hash = "474eb4e898b1cc90c2aa19683cd011ec17885085f57467dbd4e7d331965c432e"
-metafile = true
-
-[[files]]
 file = "mods/minecolonies-tweaks.pw.toml"
 hash = "56ef65a4f81fce7845cdae9caa453850d7ef9c8cbcee90f26dc6d6f23414f7e2"
 metafile = true
