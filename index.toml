@@ -61,12 +61,112 @@ file = "config/ftbquests/quests/reward_tables/money.snbt"
 hash = "51eb3222d17f9a368bfc5b043377f6c142ac2f244d25a017257ec9ec82b58425"
 
 [[files]]
+file = "config/ftbquests/quests/reward_tables/t1_bonus.snbt"
+hash = "ee2f71efee222191ea884c0f2ba3e6b7ae897331a9451ad0b09cd1185cf11f1f"
+
+[[files]]
 file = "config/ftbquests/quests/reward_tables/t1c.snbt"
 hash = "024259ef112587457f51dd510877ce4c3994266998b2606be8c80de0a24a3fee"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t1ie.snbt"
 hash = "c619845fd6020528cac197f9d7b92ac1bb1a4686ca6c5a5fb043044328353f5e"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t2_bonus.snbt"
+hash = "508a3056c91dd6e966ab7793dfad34464ed6fb9fa06d88e7c66093be019c5ccb"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t2c.snbt"
+hash = "c011ea537b3a650ef78dcc88ea6819f5a22dfa79dbfdfbef25ce7f3d5c925f9c"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t2ie.snbt"
+hash = "e341673903079fc0963e8284d3d76d6ff4b52d0d17659d98f8cb6fab99c68a06"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t3.snbt"
+hash = "601e116b3a6198513065f0060cb38bb650aee430573a145da80dc3e00c330d0e"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_advanced.snbt"
+hash = "af13e472678977c7f81c227f14a0f03208b29e4fd6c710523e6407deb9bfba05"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_ae2.snbt"
+hash = "1faf6b9e820666571454f8aa6d144cab02e354c1195721fb50e441f2ece128dd"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_basic.snbt"
+hash = "97da3acb1d355cd1c5019e2486804538c13ab4e87eefd0fd66a1257a363c8a65"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_elite.snbt"
+hash = "2bec72b3895540b013eade512ec44135132134c30973bf121a146bfc07d29667"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_industrialforegoing.snbt"
+hash = "8bf5625a33c3f9b6547c41f5af595d157ca00260e5081c0ef9a9ff3f55ff1d24"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_mekanism.snbt"
+hash = "e156a356332a6fad591571f12d87ef1ac2663b99d18d407f0475c2f10935ab04"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_rftools.snbt"
+hash = "0b75e783e9aecf00a321066875a277460c47ea1c6715f9bc58569b7328b35600"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_ultimate.snbt"
+hash = "39dac5036affa53cb586e603e1743778fb3fff47d687c8c82d67593cab577d9d"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t4_xnet.snbt"
+hash = "a073f087c8d0a95de05fee3bcdac1193c76bb4efe0346b5d421c6b0965d9229e"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_antimatter.snbt"
+hash = "1adc0613f255019c62c2efa6581d20c798afa7e6f7b1701699f8db046a03d4b9"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_compactmachines.snbt"
+hash = "07a5861077b82eb93f9efc5dbd689e6fd7cf645c2d26d28841a8bfd6824023e0"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_completion.snbt"
+hash = "a315920b54e537e98a0eeeb7359e98e8171ab821dec28b7bb6e26428a3eb18ef"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_darkmatter.snbt"
+hash = "3433f2180c253429c581a330835ad490a7736c9c6bda5cde7570264c1b12c883"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_electrodynamics.snbt"
+hash = "44abfe8fde2c4735d3d763164bc92ae6646bb8631b7ad27bf61e97dcbd1b5d28"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_fluxnetworks.snbt"
+hash = "985032e37d22dd14a7827194282ea03168d851ecadf759971a5716514bc5332a"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_hostileneuralnetworks.snbt"
+hash = "13ad4bcc48cd13b7376ad0c6c2f600f446559451568b078732b14abc4b6c4169"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_mffs.snbt"
+hash = "9122a1ff895c607a178ece2f6cf7c95051ae477e921843467f2af9fc861cc860"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_nuclear.snbt"
+hash = "6851bf3a88c1aca788af99d50d7d605066460aa26f55de97cbe597466c0efcf2"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_particlephysics.snbt"
+hash = "f045a92dea7bb01d45bc470362af06e62e509f81ecd6323c262434557352454b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t5_rftoolsdim.snbt"
+hash = "19a103a0bceba1e70a437c80500e3ac955097cc44acf99d5effb5a6bb656f830"
 
 [[files]]
 file = "datapacks/unified_ores/README.md"

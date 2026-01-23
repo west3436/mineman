@@ -1,0 +1,18 @@
+{
+	id: "5A00000000000080"
+	loot_size: 1
+	order_index: 24
+	rewards: [
+		{ count: 2, item: "modularforcefieldsystems:projector" }
+		{ count: 4, item: "modularforcefieldsystems:coercion_deriver" }
+		{ count: 4, item: "modularforcefieldsystems:fortron_capacitor" }
+		{ count: 8, item: "modularforcefieldsystems:module_cube" }
+		{ count: 8, item: "modularforcefieldsystems:module_sphere" }
+		{ count: 4, item: "modularforcefieldsystems:module_tube" }
+		{ count: 4, item: "modularforcefieldsystems:module_disintegration" }
+		{ count: 4, item: "modularforcefieldsystems:module_camouflage" }
+		{ count: 4, item: "modularforcefieldsystems:module_shock" }
+		{ count: 32, item: "modularforcefieldsystems:fortron" }
+	]
+	title: "T5-MFFS"
+}

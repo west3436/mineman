@@ -1,0 +1,14 @@
+{
+	id: "4A00000000000040"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ count: 4, item: "mekanism:ultimate_control_circuit" }
+		{ count: 8, item: "mekanism:ultimate_induction_cell" }
+		{ count: 8, item: "mekanism:ultimate_induction_provider" }
+		{ count: 2, item: "mekanism:teleporter" }
+		{ count: 2, item: "mekanism:quantum_entangloporter" }
+		{ count: 1, item: "mekanism:digital_miner" }
+	]
+	title: "T4-Ultimate"
+}

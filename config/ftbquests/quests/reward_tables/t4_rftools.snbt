@@ -1,0 +1,18 @@
+{
+	id: "4A00000000000070"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ count: 16, item: "rftoolsbase:machine_frame" }
+		{ count: 8, item: "rftoolsbase:infused_diamond" }
+		{ count: 32, item: "rftoolsbase:dimensionalshard" }
+		{ count: 4, item: "rftoolsutility:crafter1" }
+		{ count: 2, item: "rftoolsutility:crafter2" }
+		{ count: 1, item: "rftoolsutility:crafter3" }
+		{ count: 2, item: "rftoolsbuilder:builder" }
+		{ count: 8, item: "rftoolsbuilder:shape_card_quarry" }
+		{ count: 16, item: "rftoolsbuilder:shield_block1" }
+		{ count: 8, item: "rftoolsutility:screen" }
+	]
+	title: "T4-RFTools"
+}

@@ -1,0 +1,20 @@
+{
+	id: "5A00000000000010"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{ count: 32, item: "electrodynamics:coil_copper" }
+		{ count: 16, item: "electrodynamics:coil_gold" }
+		{ count: 8, item: "electrodynamics:coil_silver" }
+		{ count: 16, item: "electrodynamics:circuit_basic" }
+		{ count: 8, item: "electrodynamics:circuit_advanced" }
+		{ count: 4, item: "electrodynamics:circuit_elite" }
+		{ count: 8, item: "electrodynamics:motor_ac" }
+		{ count: 8, item: "electrodynamics:motor_dc" }
+		{ count: 16, item: "electrodynamics:wire_copper" }
+		{ count: 8, item: "electrodynamics:wire_gold" }
+		{ count: 4, item: "electrodynamics:mineralcrusher" }
+		{ count: 4, item: "electrodynamics:wiremill" }
+	]
+	title: "T5-Electrodynamics"
+}

@@ -1,0 +1,18 @@
+{
+	id: "5A000000000000B0"
+	loot_size: 1
+	order_index: 27
+	rewards: [
+		{ count: 64, item: "minecraft:nether_star" }
+		{ count: 64, item: "minecraft:diamond_block" }
+		{ count: 64, item: "minecraft:emerald_block" }
+		{ count: 64, item: "minecraft:netherite_ingot" }
+		{ item: "numismatics:sun", count: 64 }
+		{ count: 1, item: "nuclearscience:celldarkmatter", tag: { Damage: 0 } }
+		{ count: 4, item: "nuclearscience:cellantimatterverylarge" }
+		{ count: 1, item: "rftoolsdim:dimension_builder" }
+		{ count: 1, item: "compactmachines:machine_giant" }
+		{ count: 1, item: "mekanism:teleporter" }
+	]
+	title: "T5-Completion"
+}

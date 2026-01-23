@@ -1,0 +1,17 @@
+{
+	id: "5A00000000000060"
+	loot_size: 1
+	order_index: 22
+	rewards: [
+		{ count: 2, item: "fluxnetworks:flux_controller" }
+		{ count: 8, item: "fluxnetworks:flux_plug" }
+		{ count: 8, item: "fluxnetworks:flux_point" }
+		{ count: 4, item: "fluxnetworks:basic_flux_storage" }
+		{ count: 2, item: "fluxnetworks:herculean_flux_storage" }
+		{ count: 1, item: "fluxnetworks:gargantuan_flux_storage" }
+		{ count: 32, item: "fluxnetworks:flux_dust" }
+		{ count: 16, item: "fluxnetworks:flux_core" }
+		{ count: 8, item: "fluxnetworks:flux_block" }
+	]
+	title: "T5-FluxNetworks"
+}

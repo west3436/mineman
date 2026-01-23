@@ -1,0 +1,22 @@
+{
+	id: "3A00000000000010"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ count: 32, item: "pneumaticcraft:ingot_iron_compressed" }
+		{ count: 16, item: "pneumaticcraft:printed_circuit_board" }
+		{ count: 32, item: "pneumaticcraft:pressure_tube" }
+		{ count: 8, item: "pneumaticcraft:air_compressor" }
+		{ count: 16, item: "pneumaticcraft:empty_pcb" }
+		{ count: 32, item: "pneumaticcraft:plastic" }
+		{ count: 8, item: "pneumaticcraft:assembly_controller" }
+		{ count: 4, item: "pneumaticcraft:assembly_platform" }
+		{ count: 8, item: "pneumaticcraft:uv_light_box" }
+		{ count: 16, item: "pneumaticcraft:etching_acid_bucket" }
+		{ count: 32, item: "pneumaticcraft:lpg_bucket" }
+		{ count: 16, item: "pneumaticcraft:diesel_bucket" }
+		{ count: 8, item: "pneumaticcraft:refinery" }
+		{ count: 4, item: "pneumaticcraft:thermopneumatic_processing_plant" }
+	]
+	title: "T3"
+}

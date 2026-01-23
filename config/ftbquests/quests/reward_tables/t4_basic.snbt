@@ -1,0 +1,15 @@
+{
+	id: "4A00000000000010"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ count: 32, item: "mekanism:basic_control_circuit" }
+		{ count: 64, item: "mekanism:ingot_osmium" }
+		{ count: 32, item: "mekanism:alloy_infused" }
+		{ count: 16, item: "mekanism:steel_casing" }
+		{ count: 8, item: "mekanism:metallurgic_infuser" }
+		{ count: 16, item: "mekanism:enriched_iron" }
+		{ count: 32, item: "mekanism:dust_iron" }
+	]
+	title: "T4-Basic"
+}

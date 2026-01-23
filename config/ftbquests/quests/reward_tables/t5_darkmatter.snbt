@@ -1,0 +1,26 @@
+{
+	id: "5A00000000000050"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "nuclearscience:celldarkmatter"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 2
+				id: "nuclearscience:cellstrangematter"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "T5-DarkMatter"
+}

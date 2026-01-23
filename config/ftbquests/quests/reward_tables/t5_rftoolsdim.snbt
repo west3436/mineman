@@ -1,0 +1,17 @@
+{
+	id: "5A000000000000A0"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{ count: 1, item: "rftoolsdim:dimension_builder" }
+		{ count: 1, item: "rftoolsdim:dimension_editor" }
+		{ count: 4, item: "rftoolsdim:dimension_enscriber" }
+		{ count: 4, item: "rftoolsdim:dimlet_workbench" }
+		{ count: 8, item: "rftoolsdim:empty_dimension_tab" }
+		{ count: 32, item: "rftoolsdim:dimensional_shard" }
+		{ count: 16, item: "rftoolsdim:dimensionalshard_overworld" }
+		{ count: 8, item: "rftoolsdim:dimensionalshard_nether" }
+		{ count: 8, item: "rftoolsdim:dimensionalshard_end" }
+	]
+	title: "T5-RFToolsDimensions"
+}

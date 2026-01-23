@@ -1,0 +1,14 @@
+{
+	id: "4A00000000000030"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ count: 8, item: "mekanism:elite_control_circuit" }
+		{ count: 16, item: "mekanism:alloy_atomic" }
+		{ count: 16, item: "mekanism:dust_refined_obsidian" }
+		{ count: 8, item: "mekanism:teleporter_frame" }
+		{ count: 4, item: "mekanism:induction_casing" }
+		{ count: 2, item: "mekanism:induction_port" }
+	]
+	title: "T4-Elite"
+}
