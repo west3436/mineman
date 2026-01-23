@@ -24,12 +24,11 @@
 				""
 				"&7The path to the stars begins here!&r"
 			]
-			icon: "electrodynamics:transformer_upgrade_tripleoutput"
+			icon: "voltaic:upgradebasiccapacity"
 			id: "711D0E39865BE2B4"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1CE42A8CEDEAED4C"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -62,7 +61,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "39D87DCE4FACCD1A"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Ore multiplication begins"
@@ -97,7 +95,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "63AB20282ED71A8F"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Wire production"
@@ -128,12 +125,11 @@
 				""
 				"&7The building block of electrical machinery.&r"
 			]
-			icon: "electrodynamics:coil_copper"
+			icon: "electrodynamics:coil"
 			id: "53E42D1D003AFEE1"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "03279DAAAC34AE55"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Electrical components"
@@ -166,12 +162,11 @@
 				""
 				"&7Power your machines with rotational force!&r"
 			]
-			icon: "electrodynamics:motor_ac"
+			icon: "electrodynamics:motor"
 			id: "6B4A56FCDD961C24"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "37BF56DFF75AD8C1"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Rotational power"
@@ -213,12 +208,11 @@
 				""
 				"&7The brains of your electrical devices!&r"
 			]
-			icon: "electrodynamics:circuit_basic"
+			icon: "electrodynamics:circuitbasic"
 			id: "49C8B21442805F19"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1412E0BB75B48AD1"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -264,12 +258,11 @@
 				""
 				"&cAlways wear hazmat gear around radioactive materials!&r"
 			]
-			icon: "nuclearscience:uranium_235"
+			icon: "immersiveengineering:raw_uranium"
 			id: "219042873A3AA8CF"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "732504F295E97B0A"
-				table_id: "5A00000000000010"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -305,12 +298,17 @@
 				""
 				"&cNEVER handle radioactive materials without protection!&r"
 			]
-			icon: "nuclearscience:hazmat_helmet"
+			icon: {
+				Count: 1
+				id: "nuclearscience:hazmathelmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "0E4C561B688DB960"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "7FB39FC00C3B8EED"
-				table_id: "5A00000000000010"
 				type: "choice"
 			}]
 			shape: "square"
@@ -355,12 +353,11 @@
 				""
 				"&7Begin the enrichment process!&r"
 			]
-			icon: "nuclearscience:chemical_extractor"
+			icon: "nuclearscience:chemicalextractor"
 			id: "23B3EE84F4FA86EA"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "733E668E4064008A"
-				table_id: "5A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Uranium processing"
@@ -389,12 +386,11 @@
 				""
 				"&7Isotope separation through physics!&r"
 			]
-			icon: "nuclearscience:gas_centrifuge"
+			icon: "nuclearscience:gascentrifuge"
 			id: "281084CAF20F8BFE"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4A07DF6EE8A04565"
-				table_id: "5A00000000000010"
 				type: "choice"
 			}]
 			subtitle: "Isotope enrichment"
@@ -433,7 +429,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "794349C482AA871D"
-				table_id: "5A00000000000010"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -475,12 +470,11 @@
 				""
 				"&7Harness the power of the atom!&r"
 			]
-			icon: "nuclearscience:reactor_core"
+			icon: "nuclearscience:fissionreactorcore"
 			id: "68AD835533043AD0"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "297120CE5C9D2D24"
-				table_id: "5A00000000000020"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -526,7 +520,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "010D120055574128"
-				table_id: "5A00000000000020"
 				type: "choice"
 			}]
 			subtitle: "Power conversion"
@@ -559,12 +552,11 @@
 				""
 				"&7Push the boundaries of physics!&r"
 			]
-			icon: "nuclearscience:particle_injector"
+			icon: "nuclearscience:particleinjector"
 			id: "203C61C6315CFF17"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "167360D3AD327E51"
-				table_id: "5A00000000000030"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -600,7 +592,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6036171088C8093A"
-				table_id: "5A00000000000030"
 				type: "choice"
 			}]
 			subtitle: "Magnetic containment"
@@ -648,7 +639,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "48682F26F2545009"
-				table_id: "5A00000000000040"
 				type: "choice"
 			}]
 			shape: "gear"
@@ -693,7 +683,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2A15B0A9BD9B26DC"
-				table_id: "5A00000000000050"
 				type: "choice"
 			}]
 			shape: "gear"
@@ -738,7 +727,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5047A1BA11C7C124"
-				table_id: "5A00000000000060"
 				type: "choice"
 			}]
 			shape: "square"
@@ -776,7 +764,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "300C7150C4DEA96F"
-				table_id: "5A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Energy I/O"
@@ -820,7 +807,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2DB3DFC02DA070AE"
-				table_id: "5A00000000000060"
 				type: "choice"
 			}]
 			subtitle: "Network energy storage"
@@ -855,7 +841,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "203518F516F90976"
-				table_id: "5A00000000000070"
 				type: "choice"
 			}]
 			shape: "square"
@@ -893,7 +878,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3927E43438A440D2"
-				table_id: "5A00000000000070"
 				type: "choice"
 			}]
 			subtitle: "Mob data storage"
@@ -936,7 +920,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "15953138ADA860D9"
-				table_id: "5A00000000000070"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -970,12 +953,11 @@
 				""
 				"&7Ultimate base protection!&r"
 			]
-			icon: "modularforcefieldsystems:projector"
+			icon: "modularforcefields:fortronfieldprojector"
 			id: "1857EB7971A936AB"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "67A9C6EF7EA0B6D4"
-				table_id: "5A00000000000080"
 				type: "choice"
 			}]
 			shape: "square"
@@ -1004,12 +986,11 @@
 				""
 				"&7The fuel of force fields!&r"
 			]
-			icon: "modularforcefieldsystems:coercion_deriver"
+			icon: "modularforcefields:interdictionmatrix"
 			id: "17126A8886AC2C12"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5E3278B280E67A62"
-				table_id: "5A00000000000080"
 				type: "choice"
 			}]
 			subtitle: "Field energy"
@@ -1046,12 +1027,11 @@
 				""
 				"&7Customize your protection!&r"
 			]
-			icon: "modularforcefieldsystems:module_cube"
+			icon: "modularforcefields:coercionderiver"
 			id: "6B947DD3ABE9B13D"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "7B0A205AAC215DBB"
-				table_id: "5A00000000000080"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -1096,7 +1076,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "03EBE71FA2FFA4BA"
-				table_id: "5A00000000000090"
 				type: "choice"
 			}]
 			shape: "square"
@@ -1136,7 +1115,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "78292EB9F6ACC0EC"
-				table_id: "5A00000000000090"
 				type: "choice"
 			}]
 			subtitle: "Dimensional connections"
@@ -1176,7 +1154,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "7F9339C33EFEDBAE"
-				table_id: "5A000000000000A0"
 				type: "choice"
 			}]
 			shape: "square"
@@ -1213,7 +1190,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "359ECAE8E3C87E69"
-				table_id: "5A000000000000A0"
 				type: "choice"
 			}]
 			subtitle: "Dimension building blocks"
@@ -1241,12 +1217,11 @@
 				""
 				"&7Define your dimension's properties!&r"
 			]
-			icon: "rftoolsdim:dimension_enscriber"
+			icon: "rftoolsdim:enscriber"
 			id: "7C4BD9A3863C8AF3"
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "63E2D26433000033"
-				table_id: "5A000000000000A0"
 				type: "choice"
 			}]
 			shape: "diamond"
@@ -1284,7 +1259,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5FDA23292FC8E921"
-				table_id: "5A000000000000B0"
 				type: "choice"
 			}]
 			shape: "gear"

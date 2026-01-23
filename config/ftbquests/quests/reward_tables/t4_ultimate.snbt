@@ -8,7 +8,7 @@
 		{ count: 8, item: "mekanism:ultimate_induction_provider" }
 		{ count: 2, item: "mekanism:teleporter" }
 		{ count: 2, item: "mekanism:quantum_entangloporter" }
-		{ count: 1, item: "mekanism:digital_miner" }
+		{ item: "mekanism:digital_miner" }
 	]
 	title: "T4-Ultimate"
 }

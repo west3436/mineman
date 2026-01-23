@@ -8,7 +8,7 @@
 		{ count: 8, item: "fluxnetworks:flux_point" }
 		{ count: 4, item: "fluxnetworks:basic_flux_storage" }
 		{ count: 2, item: "fluxnetworks:herculean_flux_storage" }
-		{ count: 1, item: "fluxnetworks:gargantuan_flux_storage" }
+		{ item: "fluxnetworks:gargantuan_flux_storage" }
 		{ count: 32, item: "fluxnetworks:flux_dust" }
 		{ count: 16, item: "fluxnetworks:flux_core" }
 		{ count: 8, item: "fluxnetworks:flux_block" }

@@ -9,12 +9,13 @@
 				id: "simplyjetpacks:jetpack_vanilla1"
 				tag: { }
 			}
+			only_one: true
 		}
-		{ count: 32, item: "buildinggadgets2:gadget_building" }
-		{ count: 16, item: "buildinggadgets2:gadget_exchanging" }
-		{ count: 8, item: "buildinggadgets2:gadget_copy_paste" }
-		{ count: 4, item: "buildinggadgets2:gadget_destruction" }
-		{ count: 64, item: "tfmg:circuit_board" }
+		{ item: "buildinggadgets2:gadget_building", only_one: true }
+		{ item: "buildinggadgets2:gadget_exchanging", only_one: true }
+		{ item: "buildinggadgets2:gadget_copy_paste", only_one: true }
+		{ item: "buildinggadgets2:gadget_destruction", only_one: true }
+		{ count: 8, item: "tfmg:circuit_board" }
 	]
 	title: "T2-Bonus"
 }
