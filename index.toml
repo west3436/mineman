@@ -373,7 +373,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "a966c425617e0583ccadc2fe7f521a53833c93f4aacd9c89c24ad7cc76eca97a"
+hash = "420f60e542e731334fc62fc16a9945a60dfa8f6c5a647c71b2cf9217d50ea7f5"
 metafile = true
 
 [[files]]
@@ -409,6 +409,11 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "fec49033058ced91f7668d4e305e599f5527501ef37c1f30f96d8927d6202d32"
+metafile = true
+
+[[files]]
+file = "mods/beautify-decorate.pw.toml"
+hash = "18e6f7ed5bd54b7daf15e5ece630d5a52ee3aabc79482297bbfbaacfc3048d47"
 metafile = true
 
 [[files]]
@@ -622,11 +627,6 @@ hash = "a6af059766ea70358690d048898d19e493108e2e06a97542fac696fd5e03589a"
 metafile = true
 
 [[files]]
-file = "mods/dynmap-for-minecolonies.pw.toml"
-hash = "1556132d6847cae119edc7a812602d391c88219ffd2e116d5b01fd714fac8b42"
-metafile = true
-
-[[files]]
 file = "mods/dynmap.pw.toml"
 hash = "46d807ee668f3856078422b862b48ceca56a0e80c932f35df3b57e4d832e30e6"
 metafile = true
@@ -783,7 +783,7 @@ metafile = true
 
 [[files]]
 file = "mods/handcrafted.pw.toml"
-hash = "db495b3ac268709a2ba673bfe220b10257fb7dae549f94bfbd539617d571f131"
+hash = "b9a7e71472f5f88229bf2f9e214b223b3900052bdc56075906d7a22acf74568c"
 metafile = true
 
 [[files]]
@@ -992,6 +992,11 @@ hash = "0a869d874f172ec0ee7bafe6240922e0dea6944388079c58d1e15f76d1a42140"
 metafile = true
 
 [[files]]
+file = "mods/minecolonies-transit-networks.pw.toml"
+hash = "474eb4e898b1cc90c2aa19683cd011ec17885085f57467dbd4e7d331965c432e"
+metafile = true
+
+[[files]]
 file = "mods/minecolonies-tweaks.pw.toml"
 hash = "56ef65a4f81fce7845cdae9caa453850d7ef9c8cbcee90f26dc6d6f23414f7e2"
 metafile = true
@@ -1173,7 +1178,7 @@ metafile = true
 
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
-hash = "5c07edd0c8fe82e85efd6c027476ba54cf98291526803b74614c3436292e4ab6"
+hash = "ef0264b7d819848f72ab2f34643306187e712965a8246e1f733e1bd39d8fd681"
 metafile = true
 
 [[files]]
@@ -1233,7 +1238,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "8779ca727e111512e0ecbf620f85590213fe4c005a6f9daf6dee2cbab80bdd8f"
+hash = "0db6d8d14e1a94dc32492e28bd9c369713c5b58c8dfa64175e4e8ebf09dd6faf"
 metafile = true
 
 [[files]]
@@ -1254,6 +1259,11 @@ metafile = true
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
 hash = "f49c7302f7a044aae67740fac3a7558ca2f26b3a89a69a3940d516a40e3b75b7"
+metafile = true
+
+[[files]]
+file = "mods/smallcolonies-me.pw.toml"
+hash = "c7cee233247618d4ecf11b12dd1171b381dcbedda5e3ee0cd47d471e80545bf5"
 metafile = true
 
 [[files]]

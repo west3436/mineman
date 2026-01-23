@@ -1,0 +1,13 @@
+name = "MineColonies: Transit Networks"
+filename = "minecoloniestransitnetworks-0.2.0-1.20.1-alpha.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c2b9048b2df09931814a7e20be100f25011d9597"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7420165
+project-id = 1404782
