@@ -102,6 +102,15 @@ JEIEvents.hideItems(event => {
         'mekanism:dust_steel',
         'electrodynamics:duststeel',
         'electrodynamics:platesteel',
+        // Tinkers Construct steel (removed and hidden)
+        'tconstruct:steel_ingot',
+        'tconstruct:steel_nugget',
+        'tconstruct:steel_block',
+        'tconstruct:steel_cluster',
+        'tconstruct:steel_shard',
+        'tconstruct:molten_steel_bucket',
+        // CGS steel sheet
+        'cgs:steel_sheet',
 
         // ==================== BRONZE (Primary: Mekanism) ====================
         'forestry:ingot_bronze',

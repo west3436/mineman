@@ -77,9 +77,10 @@ JEIEvents.hideItems(event => {
         'forestry:seed_oil_bucket',
         'pneumaticcraft:vegetable_oil_bucket',
 
-        // ==================== MOLTEN STEEL (Primary: Tinkers) ====================
-        'createbigcannons:molten_steel_bucket',
+        // ==================== MOLTEN STEEL (Primary: CBC) ====================
+        // Tinkers steel is removed, CBC is now primary
         'tfmg:molten_steel_bucket',
+        'tconstruct:molten_steel_bucket',
 
         // ==================== MOLTEN BRONZE (Primary: Tinkers) ====================
         'createbigcannons:molten_bronze_bucket',
@@ -181,9 +182,10 @@ JEIEvents.hideFluids(event => {
         'forestry:seed_oil',
         'pneumaticcraft:vegetable_oil',
 
-        // ==================== MOLTEN STEEL (non-Tinkers) ====================
-        'createbigcannons:molten_steel',
+        // ==================== MOLTEN STEEL (Primary: CBC) ====================
+        // Tinkers steel is removed, CBC is now primary
         'tfmg:molten_steel',
+        'tconstruct:molten_steel',
 
         // ==================== MOLTEN BRONZE (non-Tinkers) ====================
         'createbigcannons:molten_bronze',
