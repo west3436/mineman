@@ -7,6 +7,870 @@
 	id: "3FF1F92B8BB4B51E"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to &6Side Quests&r! These optional questlines introduce you to various mods that enhance your Minecraft experience."
+				""
+				"Available questlines:"
+				"• &aAgriCraft&r - Advanced crop breeding and genetics"
+				"• &aGrowthCraft&r - Brewing, dairy, and specialty crops"
+				"• &aFarmer's Delight&r - Expanded cooking and farming"
+				"• &aDecorations&r - Beautify your builds"
+				"• &aExploration&r - Discover the world"
+				"• &aUntamed Wilds&r - Wildlife and nature"
+				""
+				"&7Complete these quests for bonus rewards and unique items!&r"
+			]
+			icon: "minecraft:map"
+			id: "5A00000000000010"
+			shape: "hexagon"
+			subtitle: "Optional adventures await!"
+			tasks: [{
+				id: "5A00000000000011"
+				title: "Begin Your Side Quests"
+				type: "checkmark"
+			}]
+			title: "Side Quests Introduction"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5A00000000000010"]
+			description: [
+				"&6AgriCraft&r revolutionizes farming with a plant genetics system!"
+				""
+				"Key features:"
+				"• &bCrop Sticks&r - Plant crops in a grid for crossbreeding"
+				"• &bSeed Analyzer&r - Examine seed genetics"
+				"• &bClippers&r - Take cuttings from plants"
+				"• &bIrrigation&r - Automated watering systems"
+				""
+				"&7Start by crafting a Seed Analyzer to examine your seeds!&r"
+			]
+			icon: "agricraft:seed_analyzer"
+			id: "5A00000000000020"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000021"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Master the art of crop genetics"
+			tasks: [{
+				id: "5A00000000000022"
+				item: "agricraft:seed_analyzer"
+				type: "item"
+			}]
+			title: "AgriCraft: Getting Started"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A00000000000020"]
+			description: [
+				"&6Crop Sticks&r are the foundation of AgriCraft's breeding system."
+				""
+				"How to use:"
+				"• Place crop sticks on farmland"
+				"• Right-click with seeds to plant"
+				"• Add a second set of sticks for crossbreeding"
+				"• Adjacent crops may spread to empty double-sticks"
+				""
+				"&7Experiment with different crop combinations!&r"
+			]
+			id: "5A00000000000030"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000031"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "The breeding begins"
+			tasks: [{
+				count: 16L
+				id: "5A00000000000032"
+				item: { Count: 16, id: "agricraft:crop_sticks" }
+				type: "item"
+			}]
+			title: "Crop Sticks"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A00000000000030"]
+			description: [
+				"Use &6Clippers&r to take cuttings from mature plants."
+				""
+				"Benefits:"
+				"• Preserve high-stat seeds"
+				"• Create exact clones of plants"
+				"• Share genetics with friends"
+				""
+				"&7Clippings can be planted in crop sticks just like seeds!&r"
+			]
+			id: "5A00000000000040"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000041"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Clone your best crops"
+			tasks: [{
+				id: "5A00000000000042"
+				item: "agricraft:clipper"
+				type: "item"
+			}]
+			title: "Clipping and Cloning"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A00000000000040"]
+			description: [
+				"Set up an &6Irrigation System&r to automate watering!"
+				""
+				"Components:"
+				"• &bIrrigation Tank&r - Stores water"
+				"• &bIrrigation Channel&r - Transports water"
+				"• &bSprinkler&r - Waters nearby crops"
+				""
+				"&7An efficient irrigation system greatly speeds up crop growth!&r"
+			]
+			id: "5A00000000000050"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000051"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "Automated hydration"
+			tasks: [
+				{
+					id: "5A00000000000052"
+					item: "agricraft:irrigation_tank"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5A00000000000053"
+					item: { Count: 8, id: "agricraft:irrigation_channel" }
+					type: "item"
+				}
+				{
+					id: "5A00000000000054"
+					item: "agricraft:sprinkler"
+					type: "item"
+				}
+			]
+			title: "Irrigation Mastery"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A00000000000010"]
+			description: [
+				"&6GrowthCraft&r adds brewing, dairy products, and specialty crops!"
+				""
+				"Key features:"
+				"• &bBrewing&r - Create ales, wines, and spirits"
+				"• &bDairy&r - Butter, cheese, and more"
+				"• &bCrops&r - Hops, grapes, rice, and bamboo"
+				""
+				"&7Start your brewing journey with a Brew Kettle!&r"
+			]
+			icon: "growthcraft_cellar:brew_kettle"
+			id: "5A00000000000060"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000061"
+				table_id: "5A00000000000002"
+				type: "choice"
+			}]
+			subtitle: "Brew, ferment, and cook"
+			tasks: [{
+				id: "5A00000000000062"
+				item: "growthcraft_cellar:brew_kettle"
+				type: "item"
+			}]
+			title: "GrowthCraft: Getting Started"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A00000000000060"]
+			description: [
+				"The &6Fermentation Barrel&r is essential for brewing alcoholic beverages."
+				""
+				"How to brew:"
+				"• Heat water in the Brew Kettle"
+				"• Add ingredients like hops or grapes"
+				"• Transfer to Fermentation Barrel"
+				"• Wait for fermentation to complete"
+				""
+				"&7Different ingredients create different beverages!&r"
+			]
+			id: "5A00000000000070"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000071"
+				table_id: "5A00000000000002"
+				type: "choice"
+			}]
+			subtitle: "Patience makes perfect"
+			tasks: [{
+				id: "5A00000000000072"
+				item: "growthcraft_cellar:fermentation_barrel"
+				type: "item"
+			}]
+			title: "Fermentation"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000070"]
+			description: [
+				"Explore GrowthCraft's &6specialty crops&r!"
+				""
+				"Available crops:"
+				"• &bHops&r - Essential for brewing ales"
+				"• &bGrapes&r - Make wines and grape juice"
+				"• &bRice&r - A staple grain with many uses"
+				""
+				"&7Each crop unlocks new brewing recipes!&r"
+			]
+			id: "5A00000000000080"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000081"
+				table_id: "5A00000000000002"
+				type: "choice"
+			}]
+			subtitle: "Grow the ingredients"
+			tasks: [
+				{
+					id: "5A00000000000082"
+					item: "growthcraft_hops:hops_seed"
+					type: "item"
+				}
+				{
+					id: "5A00000000000083"
+					item: "growthcraft_grapes:grape_seeds"
+					type: "item"
+				}
+				{
+					id: "5A00000000000084"
+					item: "growthcraft_rice:rice"
+					type: "item"
+				}
+			]
+			title: "Specialty Crops"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000080"]
+			description: [
+				"Create delicious &6dairy products&r with GrowthCraft Milk!"
+				""
+				"Products:"
+				"• &bButter&r - Churned from milk"
+				"• &bCheese&r - Aged for best flavor"
+				"• &bYogurt&r - Cultured dairy treat"
+				""
+				"&7Dairy products are great cooking ingredients!&r"
+			]
+			id: "5A00000000000090"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000091"
+				table_id: "5A00000000000002"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "From farm to table"
+			tasks: [
+				{
+					id: "5A00000000000092"
+					item: "growthcraft_milk:butter"
+					type: "item"
+				}
+				{
+					id: "5A00000000000093"
+					item: "growthcraft_milk:cheese_wheel"
+					type: "item"
+				}
+			]
+			title: "Dairy Mastery"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A00000000000010"]
+			description: [
+				"&6Farmer's Delight&r expands Minecraft's cooking and farming!"
+				""
+				"Key features:"
+				"• &bCooking Pot&r - Create complex meals"
+				"• &bCutting Board&r - Prepare ingredients"
+				"• &bNew Crops&r - Tomatoes, onions, cabbage, and more"
+				"• &bKnives&r - Essential cooking tools"
+				""
+				"&7Begin with a Cutting Board to prepare your ingredients!&r"
+			]
+			icon: "farmersdelight:cutting_board"
+			id: "5A00000000000100"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000101"
+				table_id: "5A00000000000003"
+				type: "choice"
+			}]
+			subtitle: "Cooking taken to the next level"
+			tasks: [{
+				id: "5A00000000000102"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			title: "Farmer's Delight: Getting Started"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A00000000000100"]
+			description: [
+				"The &6Cooking Pot&r is the heart of Farmer's Delight!"
+				""
+				"How to use:"
+				"• Place over a heat source (stove, fire, etc.)"
+				"• Add ingredients and water"
+				"• Wait for cooking to complete"
+				"• Collect your meal with a bowl"
+				""
+				"&7Meals restore more hunger and provide buffs!&r"
+			]
+			id: "5A00000000000110"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000111"
+				table_id: "5A00000000000003"
+				type: "choice"
+			}]
+			subtitle: "Cook up a storm"
+			tasks: [
+				{
+					id: "5A00000000000112"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "5A00000000000113"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+			]
+			title: "The Cooking Pot"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000110"]
+			description: [
+				"Grow Farmer's Delight's &6specialty crops&r!"
+				""
+				"Available crops:"
+				"• &bTomato&r - Versatile in many dishes"
+				"• &bOnion&r - Adds flavor to meals"
+				"• &bCabbage&r - Great for salads and wraps"
+				"• &bRice&r - A staple grain"
+				""
+				"&7These crops are essential for many recipes!&r"
+			]
+			id: "5A00000000000120"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000121"
+				table_id: "5A00000000000003"
+				type: "choice"
+			}]
+			subtitle: "Garden variety goodness"
+			tasks: [
+				{
+					id: "5A00000000000122"
+					item: "farmersdelight:tomato"
+					type: "item"
+				}
+				{
+					id: "5A00000000000123"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "5A00000000000124"
+					item: "farmersdelight:cabbage"
+					type: "item"
+				}
+			]
+			title: "Farmer's Crops"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000120"]
+			description: [
+				"Create some of Farmer's Delight's &6signature dishes&r!"
+				""
+				"Try making:"
+				"• &bVegetable Soup&r - Hearty and warming"
+				"• &bSteak and Potatoes&r - A filling meal"
+				"• &bPasta with Meatballs&r - Italian classic"
+				""
+				"&7Each dish provides unique buffs and excellent saturation!&r"
+			]
+			id: "5A00000000000130"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000131"
+				table_id: "5A00000000000003"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "Become a master chef"
+			tasks: [
+				{
+					id: "5A00000000000132"
+					item: "farmersdelight:vegetable_soup"
+					type: "item"
+				}
+				{
+					id: "5A00000000000133"
+					item: "farmersdelight:steak_and_potatoes"
+					type: "item"
+				}
+				{
+					id: "5A00000000000134"
+					item: "farmersdelight:pasta_with_meatballs"
+					type: "item"
+				}
+			]
+			title: "Culinary Mastery"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A00000000000010"]
+			description: [
+				"&6Decorations&r introduces a world of building and aesthetic options!"
+				""
+				"Mods included:"
+				"• &bChipped&r - Thousands of block variants"
+				"• &bFramed Blocks&r - Customizable shapes"
+				"• &bHandcrafted&r - Furniture and decor"
+				"• &bMacaw's Mods&r - Windows, doors, bridges, and more"
+				""
+				"&7Start with Chipped's workbenches to unlock new block variants!&r"
+			]
+			icon: "chipped:botanist_workbench"
+			id: "5A00000000000140"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000141"
+				table_id: "5A00000000000004"
+				type: "choice"
+			}]
+			subtitle: "Beautify your world"
+			tasks: [{
+				id: "5A00000000000142"
+				item: "chipped:botanist_workbench"
+				type: "item"
+			}]
+			title: "Decorations: Getting Started"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A00000000000140"]
+			description: [
+				"&6Chipped&r adds specialized workbenches for different materials."
+				""
+				"Workbenches:"
+				"• &bBotanist Workbench&r - Organic materials"
+				"• &bGlassblower&r - Glass variants"
+				"• &bCarpenter's Table&r - Wood processing"
+				"• &bMason Table&r - Stone variants"
+				"• &bLoom Table&r - Wool and fabric"
+				""
+				"&7Each workbench unlocks dozens of new block variants!&r"
+			]
+			id: "5A00000000000150"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000151"
+				table_id: "5A00000000000004"
+				type: "choice"
+			}]
+			subtitle: "Workbenches for everything"
+			tasks: [
+				{
+					id: "5A00000000000152"
+					item: "chipped:glassblower"
+					type: "item"
+				}
+				{
+					id: "5A00000000000153"
+					item: "chipped:carpenters_table"
+					type: "item"
+				}
+				{
+					id: "5A00000000000154"
+					item: "chipped:mason_table"
+					type: "item"
+				}
+			]
+			title: "Chipped Workbenches"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000150"]
+			description: [
+				"&6Framed Blocks&r lets you create custom-textured blocks!"
+				""
+				"Features:"
+				"• Apply any block texture to frames"
+				"• Create slopes, stairs, panels, and more"
+				"• Perfect for seamless building transitions"
+				"• Use the Framing Hammer to apply textures"
+				""
+				"&7Great for architectural details and hidden doors!&r"
+			]
+			id: "5A00000000000160"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000161"
+				table_id: "5A00000000000004"
+				type: "choice"
+			}]
+			subtitle: "Shape your imagination"
+			tasks: [
+				{
+					id: "5A00000000000162"
+					item: "framedblocks:framing_hammer"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5A00000000000163"
+					item: { Count: 8, id: "framedblocks:framed_cube" }
+					type: "item"
+				}
+			]
+			title: "Framed Blocks"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000160"]
+			description: [
+				"&6Handcrafted&r and &6Macaw's Mods&r add beautiful furniture!"
+				""
+				"Available items:"
+				"• &bChairs, tables, and benches&r"
+				"• &bDecorative windows and doors&r"
+				"• &bBridges and pathways&r"
+				"• &bFences and walls&r"
+				""
+				"&7Create a cozy home or grand castle!&r"
+			]
+			id: "5A00000000000170"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000171"
+				table_id: "5A00000000000004"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "Furnish your builds"
+			tasks: [
+				{
+					id: "5A00000000000172"
+					item: "handcrafted:hammer"
+					type: "item"
+				}
+				{
+					id: "5A00000000000173"
+					item: "mcwfurnitures:oak_chair"
+					type: "item"
+				}
+				{
+					id: "5A00000000000174"
+					item: "mcwwindows:oak_window"
+					type: "item"
+				}
+			]
+			title: "Furniture Mastery"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A00000000000010"]
+			description: [
+				"&6Exploration&r is all about discovering the world around you!"
+				""
+				"Helpful tools:"
+				"• &bExplorer's Compass&r - Locate structures"
+				"• &bNature's Compass&r - Find specific biomes"
+				"• &bMaps&r - Chart your discoveries"
+				""
+				"&7Adventure awaits in dungeons, villages, and beyond!&r"
+			]
+			icon: "explorerscompass:explorerscompass"
+			id: "5A00000000000180"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000181"
+				table_id: "5A00000000000005"
+				type: "choice"
+			}]
+			subtitle: "Discover the unknown"
+			tasks: [{
+				id: "5A00000000000182"
+				item: "explorerscompass:explorerscompass"
+				type: "item"
+			}]
+			title: "Exploration: Getting Started"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A00000000000180"]
+			description: [
+				"Use &6Nature's Compass&r to find specific biomes!"
+				""
+				"How to use:"
+				"• Right-click to open the biome search"
+				"• Select your target biome"
+				"• Follow the compass needle"
+				"• Great for finding rare biomes"
+				""
+				"&7Perfect for locating that elusive mushroom island!&r"
+			]
+			id: "5A00000000000190"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000191"
+				table_id: "5A00000000000005"
+				type: "choice"
+			}]
+			subtitle: "Find any biome"
+			tasks: [{
+				id: "5A00000000000192"
+				item: "naturescompass:naturescompass"
+				type: "item"
+			}]
+			title: "Biome Navigation"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000190"]
+			description: [
+				"Discover the enhanced &6dungeons and structures&r in the world!"
+				""
+				"What to find:"
+				"• &bYUNG's Better Dungeons&r - Improved dungeon layouts"
+				"• &bYUNG's Better Mineshafts&r - Redesigned mines"
+				"• &bYUNG's Better Strongholds&r - Epic strongholds"
+				"• &bDungeons and Taverns&r - New adventures"
+				""
+				"&7Use your Explorer's Compass to locate these structures!&r"
+			]
+			id: "5A00000000000200"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000201"
+				table_id: "5A00000000000005"
+				type: "choice"
+			}]
+			subtitle: "Brave the darkness"
+			tasks: [{
+				id: "5A00000000000202"
+				item: "minecraft:mossy_cobblestone"
+				type: "item"
+			}]
+			title: "Dungeon Delving"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000200"]
+			description: [
+				"You've conquered dungeons and discovered new lands!"
+				""
+				"Continue exploring:"
+				"• Mark important locations on your map"
+				"• Set up outposts in remote areas"
+				"• Collect rare items from structures"
+				"• Document your adventures"
+				""
+				"&7The world is vast - keep exploring!&r"
+			]
+			id: "5A00000000000210"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000211"
+				table_id: "5A00000000000005"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "The journey continues"
+			tasks: [{
+				id: "5A00000000000212"
+				item: "minecraft:filled_map"
+				type: "item"
+			}]
+			title: "Explorer Extraordinaire"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A00000000000010"]
+			description: [
+				"&6Untamed Wilds&r adds realistic wildlife to your world!"
+				""
+				"Features:"
+				"• &bNew animals&r - Bears, big cats, and more"
+				"• &bMarine life&r - Whales, seals, and fish"
+				"• &bReptiles&r - Snakes, turtles, and crocs"
+				"• &bMaterial drops&r - Hides, furs, and more"
+				""
+				"&7Explore the wilderness to encounter these creatures!&r"
+			]
+			icon: "untamedwilds:material_fur"
+			id: "5A00000000000220"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000221"
+				table_id: "5A00000000000006"
+				type: "choice"
+			}]
+			subtitle: "Nature's finest"
+			tasks: [{
+				id: "5A00000000000222"
+				item: "untamedwilds:material_fur"
+				type: "item"
+			}]
+			title: "Untamed Wilds: Getting Started"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A00000000000220"]
+			description: [
+				"Collect various &6animal materials&r from Untamed Wilds creatures!"
+				""
+				"Materials include:"
+				"• &bHides&r - From large mammals"
+				"• &bFur&r - From furry creatures"
+				"• &bAntlers&r - From deer and elk"
+				"• &bTusks&r - From boars and walruses"
+				""
+				"&7These materials can be used for crafting!&r"
+			]
+			id: "5A00000000000230"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000231"
+				table_id: "5A00000000000006"
+				type: "choice"
+			}]
+			subtitle: "Harvest nature's bounty"
+			tasks: [
+				{
+					id: "5A00000000000232"
+					item: "untamedwilds:material_hide"
+					type: "item"
+				}
+				{
+					id: "5A00000000000233"
+					item: "untamedwilds:material_antler"
+					type: "item"
+				}
+			]
+			title: "Animal Materials"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000230"]
+			description: [
+				"Discover &6aquatic creatures&r in oceans, rivers, and lakes!"
+				""
+				"Marine life includes:"
+				"• &bSeals&r - Coastal creatures"
+				"• &bWhales&r - Ocean giants"
+				"• &bTurtles&r - Beach dwellers"
+				"• &bShells&r - Collectible drops"
+				""
+				"&7Explore waterways for unique encounters!&r"
+			]
+			id: "5A00000000000240"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000241"
+				table_id: "5A00000000000006"
+				type: "choice"
+			}]
+			subtitle: "Dive into nature"
+			tasks: [{
+				id: "5A00000000000242"
+				item: "untamedwilds:material_shell"
+				type: "item"
+			}]
+			title: "Marine Life"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000240"]
+			description: [
+				"You've explored the wild side of Minecraft!"
+				""
+				"Continue your wildlife journey:"
+				"• Photograph rare animals (use F2)"
+				"• Create a nature preserve"
+				"• Collect all material types"
+				"• Observe animal behaviors"
+				""
+				"&7Respect and protect the wild creatures!&r"
+			]
+			id: "5A00000000000250"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000251"
+				table_id: "5A00000000000006"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "Master naturalist"
+			tasks: [
+				{
+					id: "5A00000000000252"
+					item: "untamedwilds:material_blubber"
+					type: "item"
+				}
+				{
+					id: "5A00000000000253"
+					item: "untamedwilds:material_tusk"
+					type: "item"
+				}
+			]
+			title: "Wildlife Mastery"
+			x: 6.0d
+			y: 0.5d
+		}
+	]
 	title: "Side Quests"
 }
