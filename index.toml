@@ -1127,11 +1127,6 @@ hash = "dec2bc011d4ca1d451aaa3eea477f13366bfb13beba0716018f47d9331a50d8e"
 metafile = true
 
 [[files]]
-file = "mods/pathfinding-edition-for-minecolonies.pw.toml"
-hash = "69393976bf89f56f3940249f907a740df46bf11b2273302225e624b2d0884e2d"
-metafile = true
-
-[[files]]
 file = "mods/petrolpark.pw.toml"
 hash = "20b656798b6afb8ed1133cc7cd7ac5c61a8f73e49f321544e4ac554620167fb1"
 metafile = true
