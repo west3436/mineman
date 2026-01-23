@@ -1,0 +1,43 @@
+{
+	id: "24038FCFC62ECD36"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 64, item: "minecraft:andesite" }
+		{ count: 32, item: "create:andesite_alloy" }
+		{ count: 32, item: "create:shaft" }
+		{ count: 16, item: "create:cogwheel" }
+		{ count: 8, item: "create:large_cogwheel" }
+		{ count: 4, item: "create:gearbox" }
+		{ count: 16, item: "create:belt_connector" }
+		{ count: 16, item: "create:fluid_pipe" }
+		{
+			item: {
+				Count: 1
+				id: "create:super_glue"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 32, item: "create:zinc_ingot" }
+		{ count: 128, item: "create:track" }
+		{ count: 64, item: "create:andesite_casing" }
+		{ count: 32, item: "create:iron_sheet" }
+		{ count: 32, item: "create:golden_sheet" }
+		{
+			item: {
+				Count: 1
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 8, item: "create:polished_rose_quartz" }
+		{ count: 16, item: "minecraft:chain" }
+		{ count: 32, item: "minecraft:coal" }
+		{ count: 16, item: "minecraft:raw_iron" }
+	]
+	title: "T1-C"
+}
