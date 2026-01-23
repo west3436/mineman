@@ -78,7 +78,7 @@ JEIEvents.hideItems(event => {
         'pneumaticcraft:vegetable_oil_bucket',
 
         // ==================== MOLTEN STEEL (Primary: CBC) ====================
-        // Tinkers steel is removed, CBC is now primary
+        // Tinkers steel recipes are removed, items still exist but hidden from JEI
         'tfmg:molten_steel_bucket',
         'tconstruct:molten_steel_bucket',
 
@@ -183,7 +183,7 @@ JEIEvents.hideFluids(event => {
         'pneumaticcraft:vegetable_oil',
 
         // ==================== MOLTEN STEEL (Primary: CBC) ====================
-        // Tinkers steel is removed, CBC is now primary
+        // Tinkers steel recipes are removed, items still exist but hidden from JEI
         'tfmg:molten_steel',
         'tconstruct:molten_steel',
 
