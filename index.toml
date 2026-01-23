@@ -50,7 +50,7 @@ hash = "c1486b196fa9309b219faf5ff9805d4ce5b822f2c4f9627f3f0248ef277fc94d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_quests.snbt"
-hash = "dd05aaa2cb10262067f7b88114ced4e56b8e984a4dd3e42723fb6bcdbc368e73"
+hash = "d94ae0ca71fe249bae1679631092a928019a9dd05394158beadb4d0f50d8923a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
@@ -67,6 +67,30 @@ hash = "fbb8a77d577c8a834c1336fe003b4a892e0786ec8249d2586abcf3b1200a9b4e"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/money.snbt"
 hash = "51eb3222d17f9a368bfc5b043377f6c142ac2f244d25a017257ec9ec82b58425"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_agricraft.snbt"
+hash = "4b6aa2e8af2dcee44d0d0769795cff444c2db792226b30accd5875f086fdb267"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_decorations.snbt"
+hash = "c5a70ee9dfcb9154cd8ded2b4236e3078298174107e8b3cb35e88db1e4054b3b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_exploration.snbt"
+hash = "9d36a03301a2aa852871226588b961f9244dfb39bca6dcd96a23a809c264821b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_farmersdelight.snbt"
+hash = "0bd5f4057f85c24bcd0d2d5b1ef182ee77bcb5b05ded5823f8d717fc2710e926"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_growthcraft.snbt"
+hash = "18ab3004f9093f598dadc88787c6bec9de0961abc40afb07db3dc85d3b0df897"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_untamedwilds.snbt"
+hash = "b2fd3193a2a238890d6dca5e51eb55cb85aa19d5c52223e65b37f618cb7a51c5"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t1_bonus.snbt"
