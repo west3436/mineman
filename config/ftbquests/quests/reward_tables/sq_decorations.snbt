@@ -1,0 +1,23 @@
+{
+	id: "5A00000000000004"
+	loot_size: 1
+	order_index: 33
+	rewards: [
+		{ count: 16, item: "chipped:botanist_workbench" }
+		{ count: 16, item: "chipped:glassblower" }
+		{ count: 16, item: "chipped:carpenters_table" }
+		{ count: 16, item: "chipped:loom_table" }
+		{ count: 16, item: "chipped:mason_table" }
+		{ count: 32, item: "framedblocks:framed_cube" }
+		{ count: 16, item: "framedblocks:framing_hammer" }
+		{ count: 8, item: "handcrafted:hammer" }
+		{ count: 16, item: "handcrafted:oak_chair" }
+		{ count: 8, item: "handcrafted:oak_table" }
+		{ count: 16, item: "mcwfurnitures:oak_classic_chair" }
+		{ count: 8, item: "mcwfurnitures:oak_table" }
+		{ count: 16, item: "mcwwindows:oak_window" }
+		{ count: 8, item: "mcwdoors:oak_japanese_door" }
+		{ count: 16, item: "mcwbridges:oak_log_bridge_middle" }
+	]
+	title: "SQ-Decorations"
+}
