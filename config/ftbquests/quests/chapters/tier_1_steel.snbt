@@ -23,9 +23,9 @@
 			max_completable_dependents: 1
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "05AF2000AA9B65A8"
-				table_id: "1A00000000000001"
-				type: "choice"
+				id: "24A9E09A57AE315F"
+				table_id: 3714730046923853181L
+				type: "random"
 			}]
 			shape: "gear"
 			subtitle: "Two paths diverge..."
@@ -56,12 +56,24 @@
 			]
 			icon: "create:wrench"
 			id: "550206E2DD414D33"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4CBD84791204AA5A"
-				table_id: "1A00000000000010"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F73A97970C88725"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					id: "2C9698DCC8AF33BA"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "601155C2F3037D4B"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
 			subtitle: "Gears, cogs, and endless motion"
 			tasks: [{
 				id: "32CF486023D3CF25"
@@ -96,12 +108,41 @@
 				}
 			}
 			id: "69E090C941110A51"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0A2F314CDB920D00"
-				table_id: "1A00000000000020"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "416B4BB2EE545A67"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					id: "58953BEE4B045C73"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "150E7364A2D2C03A"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09339503A28A99E5"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
 			subtitle: "Heavy industry awaits"
 			tasks: [{
 				id: "5208D82B014435A8"
@@ -131,12 +172,20 @@
 				"&eThe Plastic chapter is now available!&r"
 			]
 			id: "5FB53171F0B56681"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "12D36D36997E3D60"
-				table_id: "1A00000000000030"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "41BA498CA634EE99"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F42026719B16568"
+					table_id: 1873497444986126416L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "The foundation of modern industry"
 			tasks: [{
@@ -163,12 +212,20 @@
 				"&7Start with the Sturdy Machine casing - it's used in most Forestry machines!&r"
 			]
 			id: "5AA59A3DE8955E7B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5AA59A3DE8955E7C"
-				table_id: "1A00000000000050"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59EF2E77A0363B79"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0BACA92F573950CF"
+					table_id: 1873497444986126416L
+					type: "random"
+				}
+			]
 			subtitle: "Where nature meets machine"
 			tasks: [{
 				id: "5F75F6407B52646C"
@@ -194,12 +251,20 @@
 				"&7Craft an engine to begin your aviation career!&r"
 			]
 			id: "71AC5DA931CD6BB4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "71AC5DA931CD6BB5"
-				table_id: "1A00000000000050"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "416423C61BA6768D"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5494863FA752F575"
+					table_id: 1873497444986126416L
+					type: "random"
+				}
+			]
 			subtitle: "The sky is no longer the limit"
 			tasks: [{
 				id: "5F23F7074A2BFD68"
@@ -225,12 +290,20 @@
 				"&7The screwdriver is your primary tool for working with these blocks.&r"
 			]
 			id: "04AE14E7BAFD3CE3"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "04AE14E7BAFD3CE4"
-				table_id: "1A00000000000050"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F94261049CF571F"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04DEFF27917ED805"
+					table_id: 1873497444986126416L
+					type: "random"
+				}
+			]
 			subtitle: "Build like a real factory"
 			tasks: [{
 				id: "7819A12566F8692A"
@@ -257,12 +330,20 @@
 				"&7Perfect for players who love programming and logic puzzles!&r"
 			]
 			id: "6503D05C1AAE985E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6503D05C1AAE985F"
-				table_id: "1A00000000000050"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3C823413C15CB322"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "520928198DF8BD04"
+					table_id: 1873497444986126416L
+					type: "random"
+				}
+			]
 			subtitle: "Automate with pure logic"
 			tasks: [{
 				id: "52B4C04E9729168A"
@@ -288,12 +369,20 @@
 				"&7Think of them as smart, directional hoppers on steroids!&r"
 			]
 			id: "6EC46E7485F473B5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6EC46E7485F473B6"
-				table_id: "1A00000000000050"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07CE5D35DC3B7481"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D3924FAF6F22BA7"
+					table_id: 1873497444986126416L
+					type: "random"
+				}
+			]
 			subtitle: "Smart item routing"
 			tasks: [{
 				id: "0031FA49FDA89CC6"
@@ -318,12 +407,20 @@
 				"&7Combine iron ingots with coal coke to produce steel!&r"
 			]
 			id: "5A95A9EC59868643"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "696DD2C86BF1870F"
-				table_id: "1A00000000000040"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3105F3E6269A49A2"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "057F85CFFA6A6FF5"
+					table_id: 4541517719983350966L
+					type: "random"
+				}
+			]
 			subtitle: "Forge iron into steel"
 			tasks: [{
 				count: 27L
@@ -349,12 +446,20 @@
 				"&7This is your first multiblock - place bricks in a 3x3x3 cube and right-click with a hammer!&r"
 			]
 			id: "0C08BADBFF45629E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3B559A6DF4295514"
-				table_id: "1A00000000000040"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "704D5781C5CA7225"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "426A535DCBC20325"
+					table_id: 4541517719983350966L
+					type: "random"
+				}
+			]
 			subtitle: "Coal goes in, coke comes out"
 			tasks: [{
 				count: 27L
@@ -380,12 +485,20 @@
 				"&7Connect to your Create contraptions for automated coke production!&r"
 			]
 			id: "0D041063F34B02F7"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1F06529D1505DAD3"
-				table_id: "1A00000000000010"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3CDA3CCC6C3DCF0F"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F77A6538B574AF6"
+					table_id: 2595075932841495862L
+					type: "random"
+				}
+			]
 			subtitle: "Kinetic coke production"
 			tasks: [{
 				count: 9L
@@ -411,12 +524,20 @@
 				"&7Once built, you'll have steady steel production for all your industrial needs!&r"
 			]
 			id: "5E25B91604C57970"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "62646DEF7A1A0098"
-				table_id: "1A00000000000030"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "216CC325F664D73B"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B04D4A303FFF31F"
+					table_id: 2595075932841495862L
+					type: "random"
+				}
+			]
 			subtitle: "Steel through rotation"
 			tasks: [
 				{
@@ -461,12 +582,20 @@
 				"&7Check your Engineer's Manual for detailed building instructions!&r"
 			]
 			id: "49843DDC81475E1D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "49843DDC81475E1E"
-				table_id: "1A00000000000020"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6767F62938B198B4"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B5E75F2492E06F0"
+					table_id: 4541517719983350966L
+					type: "random"
+				}
+			]
 			subtitle: "Industrial power generation"
 			tasks: [{
 				id: "5878AA3DD3307948"
@@ -492,12 +621,20 @@
 				"&7The Railway Casing is the foundation of all train components!&r"
 			]
 			id: "75C8565A18DECC15"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "75C8565A18DECC16"
-				table_id: "1A00000000000010"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2E13809FDFD43095"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03CFE13189A09B61"
+					table_id: 2595075932841495862L
+					type: "random"
+				}
+			]
 			subtitle: "All aboard!"
 			tasks: [{
 				id: "2B5B575484AC04C0"

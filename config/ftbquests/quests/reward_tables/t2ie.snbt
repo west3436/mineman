@@ -3,18 +3,16 @@
 	loot_size: 1
 	order_index: 4
 	rewards: [
-		{ count: 64, item: "tfmg:plastic_sheet" }
+		{ count: 8, item: "tfmg:plastic_sheet" }
 		{ count: 32, item: "immersiveengineering:fluid_pipe" }
-		{ count: 16, item: "immersivepetroleum:distillation_tower" }
 		{ count: 32, item: "immersiveengineering:steel_scaffolding_standard" }
 		{ count: 16, item: "immersiveengineering:heavy_engineering" }
 		{ count: 8, item: "immersiveengineering:rs_engineering" }
 		{ count: 32, item: "immersiveengineering:sheetmetal_steel" }
 		{ count: 16, item: "immersiveengineering:conveyor_basic" }
 		{ count: 8, item: "immersiveengineering:fluid_pump" }
-		{ count: 32, item: "immersivepetroleum:naphtha_bucket" }
-		{ count: 16, item: "immersivepetroleum:diesel_bucket" }
 		{ count: 32, item: "immersiveengineering:ingot_steel" }
+		{ count: 64, item: "immersiveengineering:light_engineering" }
 	]
 	title: "T2-IE"
 }

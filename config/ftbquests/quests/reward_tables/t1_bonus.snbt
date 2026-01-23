@@ -3,20 +3,29 @@
 	loot_size: 1
 	order_index: 6
 	rewards: [
-		{ count: 32, item: "forestry:sturdy_machine" }
-		{ count: 16, item: "forestry:bronze_pickaxe" }
-		{ count: 32, item: "forestry:copper_gear" }
-		{ count: 16, item: "forestry:bronze_gear" }
-		{ count: 64, item: "forestry:oak_stick" }
-		{ count: 32, item: "immersive_aircraft:engine" }
-		{ count: 16, item: "immersive_aircraft:boiler" }
+		{ count: 8, item: "forestry:sturdy_machine" }
+		{
+			count: 4
+			item: {
+				Count: 1
+				id: "forestry:bronze_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 32, item: "forestry:gear_copper" }
+		{ count: 16, item: "forestry:gear_bronze" }
+		{ count: 64, item: "forestry:impregnated_stick" }
+		{ count: 4, item: "immersive_aircraft:engine" }
+		{ count: 8, item: "immersive_aircraft:boiler" }
 		{ count: 8, item: "immersive_aircraft:sail" }
-		{ count: 32, item: "industrialrenewal:screwdriver" }
+		{ item: "industrialrenewal:screwdriver" }
 		{ count: 16, item: "industrialrenewal:catwalk" }
-		{ count: 32, item: "integrateddynamics:squeezer" }
+		{ item: "integrateddynamics:squeezer" }
 		{ count: 16, item: "integrateddynamics:cable" }
-		{ count: 32, item: "modularrouters:modular_router" }
-		{ count: 16, item: "modularrouters:sender_module_1" }
+		{ count: 16, item: "modularrouters:modular_router" }
+		{ count: 8, item: "modularrouters:sender_module_1" }
 	]
 	title: "T1-Bonus"
 }
