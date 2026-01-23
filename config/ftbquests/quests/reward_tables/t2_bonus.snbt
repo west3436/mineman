@@ -1,0 +1,20 @@
+{
+	id: "2A00000000000030"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "simplyjetpacks:jetpack_vanilla1"
+				tag: { }
+			}
+		}
+		{ count: 32, item: "buildinggadgets2:gadget_building" }
+		{ count: 16, item: "buildinggadgets2:gadget_exchanging" }
+		{ count: 8, item: "buildinggadgets2:gadget_copy_paste" }
+		{ count: 4, item: "buildinggadgets2:gadget_destruction" }
+		{ count: 64, item: "tfmg:circuit_board" }
+	]
+	title: "T2-Bonus"
+}

@@ -1,0 +1,29 @@
+{
+	id: "5A00000000000020"
+	loot_size: 1
+	order_index: 18
+	rewards: [
+		{ count: 32, item: "nuclearscience:ore_uranium" }
+		{ count: 16, item: "nuclearscience:uranium_235" }
+		{ count: 8, item: "nuclearscience:uranium_238" }
+		{
+			item: {
+				Count: 4
+				id: "nuclearscience:fuelheuo2"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 2, item: "nuclearscience:reactor_core" }
+		{ count: 4, item: "nuclearscience:control_rod_assembly" }
+		{ count: 8, item: "nuclearscience:turbine" }
+		{ count: 4, item: "nuclearscience:chemical_extractor" }
+		{ count: 4, item: "nuclearscience:gas_centrifuge" }
+		{ count: 1, item: "nuclearscience:hazmat_helmet" }
+		{ count: 1, item: "nuclearscience:hazmat_chestplate" }
+		{ count: 1, item: "nuclearscience:hazmat_leggings" }
+		{ count: 1, item: "nuclearscience:hazmat_boots" }
+	]
+	title: "T5-Nuclear"
+}

@@ -1,0 +1,16 @@
+{
+	id: "5A00000000000090"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{ count: 2, item: "compactmachines:machine_tiny" }
+		{ count: 2, item: "compactmachines:machine_small" }
+		{ count: 2, item: "compactmachines:machine_normal" }
+		{ count: 1, item: "compactmachines:machine_large" }
+		{ count: 1, item: "compactmachines:machine_giant" }
+		{ count: 16, item: "compactmachines:tunnel" }
+		{ count: 32, item: "compactmachines:wall" }
+		{ count: 1, item: "compactmachines:personal_shrinking_device" }
+	]
+	title: "T5-CompactMachines"
+}

@@ -1,0 +1,19 @@
+{
+	id: "4A00000000000060"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{ count: 16, item: "industrialforegoing:machine_frame_pity" }
+		{ count: 8, item: "industrialforegoing:plastic" }
+		{ count: 16, item: "industrialforegoing:pink_slime" }
+		{ count: 32, item: "industrialforegoing:dryrubber" }
+		{ count: 8, item: "industrialforegoing:mob_crusher" }
+		{ count: 4, item: "industrialforegoing:mob_duplicator" }
+		{ count: 8, item: "industrialforegoing:plant_gatherer" }
+		{ count: 8, item: "industrialforegoing:plant_sower" }
+		{ count: 16, item: "industrialforegoing:range_addon0" }
+		{ count: 8, item: "industrialforegoing:range_addon1" }
+		{ count: 4, item: "industrialforegoing:mob_imprisonment_tool" }
+	]
+	title: "T4-IndustrialForegoing"
+}
