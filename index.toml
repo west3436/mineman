@@ -274,11 +274,11 @@ hash = "043b98d7ef271bb33a09d542b62d948d6e986874fd70c538b9ff05a5b24a460c"
 
 [[files]]
 file = "kubejs/client_scripts/unified_fluids_jei.js"
-hash = "39209a54791148a58ad98b008be42104bd304b827b6bfba304f881bdfc184d5f"
+hash = "a7f20dc5df9e7e9a7dda1764633d9e92586bb48836fa9cbb15f7baec68a6933a"
 
 [[files]]
 file = "kubejs/client_scripts/unified_materials_jei.js"
-hash = "77ba64f317521aa0deda41aed9710e1ec1417c4988bda271ab94e06ab971c327"
+hash = "71681b4ebe789316b0639b5b0f5a90509d374f00a16a200a509a823e620fd37c"
 
 [[files]]
 file = "kubejs/server_scripts/chapter1.js"
@@ -290,11 +290,11 @@ hash = "48d1df287ec1ee9b0c9a724fcfd911926f5c27cd534dd63b62880b115d487e57"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
-hash = "21ae6bdaf847822bee56baf30057556ce36e2735eaf0fc5e41dd401b8035e546"
+hash = "f456b72c72fe94b6d5b33552e4eda0e8ff830ee597c208fdd1873602584fb151"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_tags.js"
-hash = "eeefbbb2fe5feb5ab835d6ffaf0323b2aafe866e71f1a005322a67a7590fe242"
+hash = "e74ae2c415df9cc041e2583424519c8a8ef246a82353de7ee7abba6209f5fe39"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_config.js"
@@ -323,6 +323,10 @@ hash = "9a8abd58cc367cb7647f5985f22790be4c5369874e3000d8d98edcbef7884f6d"
 [[files]]
 file = "kubejs/server_scripts/unified_materials_wires_gears.js"
 hash = "2df748c91720deef91c117d3da8757887bb28b1a6271a6a07b2bca515007e38e"
+
+[[files]]
+file = "kubejs/server_scripts/unified_steel_removal.js"
+hash = "32f704a4cb1b9d782b8296b2cdf31aa5481724cc623fc33f9c858adf16b8b707"
 
 [[files]]
 file = "mods/acedium.pw.toml"

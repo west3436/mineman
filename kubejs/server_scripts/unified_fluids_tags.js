@@ -216,11 +216,10 @@ ServerEvents.tags('fluid', event => {
     ]);
 
     // ==================== MOLTEN METALS ====================
-    // These are primarily for Tinkers' Construct but we'll tag them for compatibility
+    // Tag compatibility for molten metals across mods
 
-    // Molten Steel
+    // Molten Steel (Primary: CBC - Tinkers steel is removed)
     event.add('forge:molten_steel', [
-        'tconstruct:molten_steel',
         'createbigcannons:molten_steel',
         'tfmg:molten_steel'
     ]);

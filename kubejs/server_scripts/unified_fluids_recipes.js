@@ -161,10 +161,11 @@ const FLUID_UNIFICATIONS = [
     },
 
     // ==================== MOLTEN STEEL ====================
+    // Primary: CBC (Tinkers steel is removed)
     {
         tag: 'forge:molten_steel',
-        primary: 'tconstruct:molten_steel',
-        variants: ['tconstruct:molten_steel', 'createbigcannons:molten_steel', 'tfmg:molten_steel']
+        primary: 'createbigcannons:molten_steel',
+        variants: ['createbigcannons:molten_steel', 'tfmg:molten_steel']
     },
 
     // ==================== MOLTEN BRONZE ====================
