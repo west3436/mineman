@@ -45,8 +45,12 @@ file = "config/ftbquests/quests/chapters/circuitry.snbt"
 hash = "d2b68c679fb0f9b98120869409805d3d7e6c16643a1eb0cab4e02731ed2c4020"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/minecolonies.snbt"
+hash = "c1486b196fa9309b219faf5ff9805d4ce5b822f2c4f9627f3f0248ef277fc94d"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/side_quests.snbt"
-hash = "dd05aaa2cb10262067f7b88114ced4e56b8e984a4dd3e42723fb6bcdbc368e73"
+hash = "d94ae0ca71fe249bae1679631092a928019a9dd05394158beadb4d0f50d8923a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
@@ -57,8 +61,36 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
 
 [[files]]
+file = "config/ftbquests/quests/reward_tables/minecolonies.snbt"
+hash = "fbb8a77d577c8a834c1336fe003b4a892e0786ec8249d2586abcf3b1200a9b4e"
+
+[[files]]
 file = "config/ftbquests/quests/reward_tables/money.snbt"
 hash = "51eb3222d17f9a368bfc5b043377f6c142ac2f244d25a017257ec9ec82b58425"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_agricraft.snbt"
+hash = "4b6aa2e8af2dcee44d0d0769795cff444c2db792226b30accd5875f086fdb267"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_decorations.snbt"
+hash = "c5a70ee9dfcb9154cd8ded2b4236e3078298174107e8b3cb35e88db1e4054b3b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_exploration.snbt"
+hash = "9d36a03301a2aa852871226588b961f9244dfb39bca6dcd96a23a809c264821b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_farmersdelight.snbt"
+hash = "0bd5f4057f85c24bcd0d2d5b1ef182ee77bcb5b05ded5823f8d717fc2710e926"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_growthcraft.snbt"
+hash = "18ab3004f9093f598dadc88787c6bec9de0961abc40afb07db3dc85d3b0df897"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/sq_untamedwilds.snbt"
+hash = "b2fd3193a2a238890d6dca5e51eb55cb85aa19d5c52223e65b37f618cb7a51c5"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t1_bonus.snbt"
@@ -365,7 +397,7 @@ metafile = true
 
 [[files]]
 file = "mods/amendments.pw.toml"
-hash = "a966c425617e0583ccadc2fe7f521a53833c93f4aacd9c89c24ad7cc76eca97a"
+hash = "420f60e542e731334fc62fc16a9945a60dfa8f6c5a647c71b2cf9217d50ea7f5"
 metafile = true
 
 [[files]]
@@ -404,6 +436,11 @@ hash = "fec49033058ced91f7668d4e305e599f5527501ef37c1f30f96d8927d6202d32"
 metafile = true
 
 [[files]]
+file = "mods/beautify-decorate.pw.toml"
+hash = "18e6f7ed5bd54b7daf15e5ece630d5a52ee3aabc79482297bbfbaacfc3048d47"
+metafile = true
+
+[[files]]
 file = "mods/better-fps-render-distance.pw.toml"
 hash = "0651f0e4c8067fbbc25f3efcd1d43278b44d240e4c8e375fb398eaf63e34f58d"
 metafile = true
@@ -411,6 +448,11 @@ metafile = true
 [[files]]
 file = "mods/blastcraft.pw.toml"
 hash = "a09f4bc6ed22782b9a11a7d0f7b0ebeababe18346f8d67d325db097ccbf6545e"
+metafile = true
+
+[[files]]
+file = "mods/blockui.pw.toml"
+hash = "fd959551b1350715af0d706dfeef77d2e3677f0bb5b8345e4d256fe2381810a5"
 metafile = true
 
 [[files]]
@@ -426,6 +468,11 @@ metafile = true
 [[files]]
 file = "mods/building-gadgets.pw.toml"
 hash = "528a5c2d50126e1b2906b47449b40a996fce3b4a50b9a0460533f2b7b74f5c99"
+metafile = true
+
+[[files]]
+file = "mods/byzantine-styles-pack-for-minecolonies.pw.toml"
+hash = "7f6cfd92035c373f97fad4e0f2057e2cebba9008a12b61431c862601ee99e77b"
 metafile = true
 
 [[files]]
@@ -459,6 +506,11 @@ hash = "b0732421ae2999d558a7b70a11fa86a93738ca33f6f3ec343017796df9c47d9c"
 metafile = true
 
 [[files]]
+file = "mods/christmascolonies.pw.toml"
+hash = "74d834fa24067ea6f5c363d0ecbc1530d438ccaef4ba4790703e255a0c6385fa"
+metafile = true
+
+[[files]]
 file = "mods/chunkpregenerator.pw.toml"
 hash = "ce1ff49ed9507338b8b32d431c6f7832391a6f65c07aa8ad07b02dfec8cb7860"
 metafile = true
@@ -481,6 +533,11 @@ metafile = true
 [[files]]
 file = "mods/clumps.pw.toml"
 hash = "903352ffbd84d4b95fed905893f4715d9c3f88ec9fff6fb06f6e359e0b839dc3"
+metafile = true
+
+[[files]]
+file = "mods/colony-curios.pw.toml"
+hash = "11f18df024d7e3a1f208d69d4addc1f1191e6f0e0dbc4ef52cd1c780ac02905e"
 metafile = true
 
 [[files]]
@@ -521,6 +578,11 @@ metafile = true
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
 hash = "9eb4f3e7a5a83c588e0caa676d91597c18f2c8004c9e57a10e72859e474fa0e5"
+metafile = true
+
+[[files]]
+file = "mods/create-colonial.pw.toml"
+hash = "2318577d88d19ac52f2edc01cac67d1d8cc2219a7967c1bdfe74e6e823ba581a"
 metafile = true
 
 [[files]]
@@ -571,6 +633,11 @@ metafile = true
 [[files]]
 file = "mods/cyclops-core.pw.toml"
 hash = "0f0099feea1db673f6dded201550c7ee4aaf96434c1af7b6bbe65eac4b669d3c"
+metafile = true
+
+[[files]]
+file = "mods/domum-ornamentum.pw.toml"
+hash = "fe7e5053dd02672c84f99569381551cac9708e940cc93626448c6d74b87eeb12"
 metafile = true
 
 [[files]]
@@ -740,7 +807,7 @@ metafile = true
 
 [[files]]
 file = "mods/handcrafted.pw.toml"
-hash = "db495b3ac268709a2ba673bfe220b10257fb7dae549f94bfbd539617d571f131"
+hash = "b9a7e71472f5f88229bf2f9e214b223b3900052bdc56075906d7a22acf74568c"
 metafile = true
 
 [[files]]
@@ -879,6 +946,11 @@ hash = "e8ffbf5788712fac841e1bb0bff8969697f99be47d6f1c3f41ebe9ac965016d3"
 metafile = true
 
 [[files]]
+file = "mods/lunara-colonies-style-pack.pw.toml"
+hash = "ff6e1c5b437c83ebf115acbb373184cf6ed4505b1b023f36f5f5d832b2926547"
+metafile = true
+
+[[files]]
 file = "mods/macaws-bridges.pw.toml"
 hash = "ee387ba74c2c7e999d48071408abbd1ca322e70f36e79c590a150c9572d3a9cb"
 metafile = true
@@ -934,6 +1006,31 @@ hash = "7c411a566d022680769ddb8323984fff292ddeb35e7d8fcfe2cc41b9885d9557"
 metafile = true
 
 [[files]]
+file = "mods/minecolonies-compatibility.pw.toml"
+hash = "d720f5617eae32b5b460cb3c8cd0b236d3d39e46afd9c1759051e21e2189d85b"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies-for-computercraft.pw.toml"
+hash = "0a869d874f172ec0ee7bafe6240922e0dea6944388079c58d1e15f76d1a42140"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies-tweaks.pw.toml"
+hash = "56ef65a4f81fce7845cdae9caa453850d7ef9c8cbcee90f26dc6d6f23414f7e2"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies-war-n-taxes.pw.toml"
+hash = "4a7171325a32512bbdb6a93c6a1656c888aaee4d868d0864e7d5f0590dbef101"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies.pw.toml"
+hash = "5c2ae1280b998774e2e881e6aaf47a86228530be89163e8825f9570ae7c9e5d0"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "186909f73870979511db893fca2e2a318b311361f168d425ba0e58fc539188ee"
 metafile = true
@@ -971,6 +1068,11 @@ metafile = true
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "679fa8f3b49b9ed3fbcb29d6ccdb99bce465faa01f9cec000464ac8d4fbe134f"
+metafile = true
+
+[[files]]
+file = "mods/multi-piston.pw.toml"
+hash = "9895bf13e14fbb0b5284f7ad800b1fb3c7d4c373306231d5c6f95a282079fcbe"
 metafile = true
 
 [[files]]
@@ -1090,7 +1192,7 @@ metafile = true
 
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
-hash = "5c07edd0c8fe82e85efd6c027476ba54cf98291526803b74614c3436292e4ab6"
+hash = "ef0264b7d819848f72ab2f34643306187e712965a8246e1f733e1bd39d8fd681"
 metafile = true
 
 [[files]]
@@ -1150,7 +1252,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "8779ca727e111512e0ecbf620f85590213fe4c005a6f9daf6dee2cbab80bdd8f"
+hash = "0db6d8d14e1a94dc32492e28bd9c369713c5b58c8dfa64175e4e8ebf09dd6faf"
 metafile = true
 
 [[files]]
@@ -1171,6 +1273,16 @@ metafile = true
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
 hash = "f49c7302f7a044aae67740fac3a7558ca2f26b3a89a69a3940d516a40e3b75b7"
+metafile = true
+
+[[files]]
+file = "mods/smallcolonies-me.pw.toml"
+hash = "c7cee233247618d4ecf11b12dd1171b381dcbedda5e3ee0cd47d471e80545bf5"
+metafile = true
+
+[[files]]
+file = "mods/smallcolonies.pw.toml"
+hash = "6a0ce23d5216c6511da212df4bd2d8524b941f2e17a2cf5bc91741a38c8b1fb1"
 metafile = true
 
 [[files]]
@@ -1201,6 +1313,16 @@ metafile = true
 [[files]]
 file = "mods/storage-drawers.pw.toml"
 hash = "371b68e257eaca322ca4e95f4aa8d95441d84110b69243dda818f743a0111ba5"
+metafile = true
+
+[[files]]
+file = "mods/structurize.pw.toml"
+hash = "d22cf7d7efd56c13887f62ed6c7608d6d6e329526f63a92bf54946707f342335"
+metafile = true
+
+[[files]]
+file = "mods/stylecolonies.pw.toml"
+hash = "c09792c617265ab1e951bf934a0f51c6ab07df55272788e29214d060a7fbc59d"
 metafile = true
 
 [[files]]
@@ -1236,6 +1358,11 @@ metafile = true
 [[files]]
 file = "mods/titanium.pw.toml"
 hash = "5e41fd8f565e09e83868e4c4776154befd3203b01ed5f09b6f7cd27687ec0041"
+metafile = true
+
+[[files]]
+file = "mods/towntalk.pw.toml"
+hash = "32e0f6bce7adc5b09ba3350110ac4be7ee04e556db35ba1db97bacfabd31e4dc"
 metafile = true
 
 [[files]]

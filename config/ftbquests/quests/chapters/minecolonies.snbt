@@ -1,0 +1,659 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "minecolonies"
+	group: ""
+	icon: "minecolonies:blockhuttownhall"
+	id: "5A00000000000010"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6Welcome to Minecolonies!&r"
+				""
+				"Minecolonies is a town-building mod that lets you create thriving colonies with AI-powered citizens."
+				""
+				"Your colonists will:"
+				"• &bBuild structures&r - Builders construct buildings from schematics"
+				"• &bGather resources&r - Miners, lumberjacks, and fishermen collect materials"
+				"• &bCraft items&r - Crafters and bakers produce goods"
+				"• &bDefend the colony&r - Guards protect from hostile mobs"
+				""
+				"&7This side questline will guide you through establishing your first colony!&r"
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "5A00000000000100"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000101"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			shape: "gear"
+			subtitle: "Build your own thriving colony"
+			tasks: [{
+				id: "5A00000000000102"
+				title: "Begin Your Colony"
+				type: "checkmark"
+			}]
+			title: "Minecolonies: Colony Building"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5A00000000000100"]
+			description: [
+				"The &6Supply Camp&r or &6Supply Ship&r is your starting point!"
+				""
+				"How to begin:"
+				"• Craft a Supply Camp (for land) or Supply Ship (for water)"
+				"• Place it in a suitable location"
+				"• It contains a Town Hall and starter resources"
+				"• You can only place ONE supply structure per player"
+				""
+				"Contents include:"
+				"• Town Hall block"
+				"• Building tool"
+				"• Basic supplies to get started"
+				""
+				"&7Choose your location wisely - this is where your colony begins!&r"
+			]
+			id: "5A00000000000110"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000111"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Your colony's humble beginning"
+			tasks: [{
+				id: "5A00000000000112"
+				item: "minecolonies:supply_camp"
+				type: "item"
+			}]
+			title: "The Supply Camp"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5A00000000000110"]
+			description: [
+				"The &6Town Hall&r is the heart of your colony!"
+				""
+				"Town Hall features:"
+				"• View and manage all colonists"
+				"• See building status and queued work"
+				"• Adjust colony settings and permissions"
+				"• Track happiness and colony statistics"
+				"• Manage research and upgrades"
+				""
+				"Important notes:"
+				"• Must be placed first before other buildings"
+				"• Defines your colony's territory"
+				"• Upgrade to increase colony size limits"
+				""
+				"&7Check your Town Hall regularly to manage your growing colony!&r"
+			]
+			id: "5A00000000000120"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000121"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "The heart of your colony"
+			tasks: [{
+				id: "5A00000000000122"
+				item: "minecolonies:blockhuttownhall"
+				type: "item"
+			}]
+			title: "Establishing the Town Hall"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A00000000000120"]
+			description: [
+				"The &6Builder's Hut&r is essential - nothing gets built without a builder!"
+				""
+				"Builder capabilities:"
+				"• Constructs all colony buildings"
+				"• Upgrades existing structures"
+				"• Repairs damaged buildings"
+				"• Follows schematic blueprints exactly"
+				""
+				"Tips for builders:"
+				"• Provide required materials in the hut"
+				"• Higher level builders work faster"
+				"• Multiple builders can work in parallel"
+				"• Use the build tool to queue construction"
+				""
+				"&7Your builder is the backbone of colony expansion!&r"
+			]
+			id: "5A00000000000130"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000131"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "Essential for all construction"
+			tasks: [{
+				id: "5A00000000000132"
+				item: "minecolonies:blockhutbuilder"
+				type: "item"
+			}]
+			title: "The Builder's Hut"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000130"]
+			description: [
+				"The &6Mine&r provides a steady supply of raw materials."
+				""
+				"Miner features:"
+				"• Digs vertical shafts underground"
+				"• Branches out horizontally at each level"
+				"• Collects ores, stone, and other materials"
+				"• Higher levels mine deeper and faster"
+				""
+				"Resource management:"
+				"• Provide pickaxes and torches"
+				"• Mined items go to the Warehouse"
+				"• Upgrade for access to deeper ores"
+				""
+				"&7A well-upgraded mine is crucial for industry!&r"
+			]
+			id: "5A00000000000140"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000141"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Dig deep for resources"
+			tasks: [{
+				id: "5A00000000000142"
+				item: "minecolonies:blockhutminer"
+				type: "item"
+			}]
+			title: "The Mine"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A00000000000130"]
+			description: [
+				"The &6Forester's Hut&r ensures a sustainable wood supply."
+				""
+				"Forester duties:"
+				"• Plants saplings in designated areas"
+				"• Chops down mature trees"
+				"• Collects all wood and saplings"
+				"• Replants automatically"
+				""
+				"Optimization tips:"
+				"• Define work areas with the build tool"
+				"• Provide axes for the forester"
+				"• Plant different tree types for variety"
+				""
+				"&7Sustainable forestry keeps your colony well-supplied!&r"
+			]
+			id: "5A00000000000150"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000151"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Sustainable lumber production"
+			tasks: [{
+				id: "5A00000000000152"
+				item: "minecolonies:blockhutlumberjack"
+				type: "item"
+			}]
+			title: "The Forester's Hut"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A00000000000130"]
+			description: [
+				"The &6Fisherman's Hut&r provides food from nearby water."
+				""
+				"Fisherman features:"
+				"• Catches fish from water sources"
+				"• Provides food for the colony"
+				"• Works automatically once assigned"
+				"• Higher levels catch more efficiently"
+				""
+				"Requirements:"
+				"• Needs a body of water nearby"
+				"• Provide fishing rods"
+				"• Fish go to the Restaurant or Warehouse"
+				""
+				"&7A great early-game food source!&r"
+			]
+			id: "5A00000000000160"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000161"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Food from the waters"
+			tasks: [{
+				id: "5A00000000000162"
+				item: "minecolonies:blockhutfisherman"
+				type: "item"
+			}]
+			title: "The Fisherman's Hut"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A00000000000140"]
+			description: [
+				"The &6Warehouse&r is your colony's central storage hub."
+				""
+				"Warehouse features:"
+				"• Stores all colony resources centrally"
+				"• Couriers deliver items from here"
+				"• Link multiple warehouses together"
+				"• Sort and organize materials"
+				""
+				"Capacity upgrades:"
+				"• Higher levels hold more items"
+				"• Add racks for additional storage"
+				"• Essential for larger colonies"
+				""
+				"&7A well-stocked warehouse keeps your colony running smoothly!&r"
+			]
+			id: "5A00000000000170"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000171"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			shape: "square"
+			subtitle: "Central storage for your colony"
+			tasks: [{
+				id: "5A00000000000172"
+				item: "minecolonies:blockhutwarehouse"
+				type: "item"
+			}]
+			title: "The Warehouse"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A00000000000170"]
+			description: [
+				"The &6Courier's Hut&r keeps resources flowing through your colony."
+				""
+				"Courier duties:"
+				"• Delivers items from Warehouse to huts"
+				"• Picks up products from workers"
+				"• Keeps buildings supplied"
+				"• Works based on priority requests"
+				""
+				"Efficiency tips:"
+				"• Multiple couriers handle more deliveries"
+				"• Place couriers near busy areas"
+				"• Higher levels move faster"
+				""
+				"&7Couriers are the lifeline of your colony logistics!&r"
+			]
+			id: "5A00000000000180"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000181"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Keep resources flowing"
+			tasks: [{
+				id: "5A00000000000182"
+				item: "minecolonies:blockhutdeliveryman"
+				type: "item"
+			}]
+			title: "The Courier's Hut"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5A00000000000150"
+				"5A00000000000160"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The &6Farm&r produces crops to feed your colonists."
+				""
+				"Farmer features:"
+				"• Plants and harvests crops automatically"
+				"• Multiple field types available"
+				"• Produces food for the colony"
+				"• Can grow various crop types"
+				""
+				"Farm setup:"
+				"• Define fields with scarecrows"
+				"• Assign crop types to each field"
+				"• Farmer harvests when ready"
+				""
+				"&7A productive farm is essential for colony growth!&r"
+			]
+			id: "5A00000000000190"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000191"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Grow food for your people"
+			tasks: [{
+				id: "5A00000000000192"
+				item: "minecolonies:blockhutfarmer"
+				type: "item"
+			}]
+			title: "The Farm"
+			x: 0.75d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A00000000000190"]
+			description: [
+				"The &6Restaurant&r keeps your colonists well-fed and happy."
+				""
+				"Restaurant features:"
+				"• Cook prepares meals for colonists"
+				"• Better meals provide happiness bonuses"
+				"• Uses farm produce and other ingredients"
+				"• Higher levels unlock better recipes"
+				""
+				"Food quality matters:"
+				"• Variety in diet increases happiness"
+				"• Colonists visit to eat regularly"
+				"• Well-fed colonists work better"
+				""
+				"&7Happy colonists are productive colonists!&r"
+			]
+			id: "5A00000000000200"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000201"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Keep colonists well-fed"
+			tasks: [{
+				id: "5A00000000000202"
+				item: "minecolonies:blockhutcook"
+				type: "item"
+			}]
+			title: "The Restaurant"
+			x: 0.75d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A00000000000200"]
+			description: [
+				"The &6Bakery&r produces bread and baked goods."
+				""
+				"Baker products:"
+				"• Bread from wheat"
+				"• Cookies and cakes"
+				"• Various baked treats"
+				"• Supplies the Restaurant"
+				""
+				"Production chain:"
+				"• Farmer grows wheat"
+				"• Baker processes into baked goods"
+				"• Cook uses in meal preparation"
+				""
+				"&7Baked goods add variety to your colonists' diet!&r"
+			]
+			id: "5A00000000000210"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000211"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Fresh bread and pastries"
+			tasks: [{
+				id: "5A00000000000212"
+				item: "minecolonies:blockhutbaker"
+				type: "item"
+			}]
+			title: "The Bakery"
+			x: 0.75d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5A00000000000130"]
+			description: [
+				"The &6Guard Tower&r protects your colony from hostile mobs."
+				""
+				"Guard types:"
+				"• &bKnight&r - Melee combat specialist"
+				"• &bRanger&r - Ranged bow attacks"
+				"• &bDruid&r - Magic-based defense"
+				""
+				"Defense strategy:"
+				"• Place towers at colony borders"
+				"• Set patrol routes for guards"
+				"• Upgrade for better equipment"
+				"• Multiple guards provide overlapping coverage"
+				""
+				"&7A well-defended colony is a safe colony!&r"
+			]
+			id: "5A00000000000220"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000221"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Protect your people"
+			tasks: [{
+				id: "5A00000000000222"
+				item: "minecolonies:blockhutguardtower"
+				type: "item"
+			}]
+			title: "The Guard Tower"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A00000000000170"]
+			description: [
+				"&6Domum Ornamentum&r adds beautiful decorative blocks for your colony."
+				""
+				"Decoration options:"
+				"• Framed blocks with various materials"
+				"• Pillars, arches, and trim pieces"
+				"• Mix and match textures"
+				"• Custom patterns and designs"
+				""
+				"Building aesthetics:"
+				"• Make each building unique"
+				"• Blend with existing architecture"
+				"• Create themed districts"
+				""
+				"&7Beautiful colonies are happy colonies!&r"
+			]
+			id: "5A00000000000230"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000231"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Decorate your colony"
+			tasks: [{
+				id: "5A00000000000232"
+				item: "domum_ornamentum:architectscutter"
+				type: "item"
+			}]
+			title: "Decorative Building"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A00000000000230"]
+			description: [
+				"&6Structurize&r provides powerful building tools for colony planning."
+				""
+				"Key tools:"
+				"• &bBuild Tool&r - Place and preview structures"
+				"• &bScan Tool&r - Save structures as schematics"
+				"• &bShape Tool&r - Create geometric shapes"
+				""
+				"Features:"
+				"• Preview buildings before placement"
+				"• Rotate and mirror structures"
+				"• Replace blocks in schematics"
+				"• Create custom building designs"
+				""
+				"&7Master these tools to become a master builder!&r"
+			]
+			id: "5A00000000000240"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000241"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Plan and design structures"
+			tasks: [{
+				id: "5A00000000000242"
+				item: "structurize:sceptergold"
+				type: "item"
+			}]
+			title: "Structurize Tools"
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5A00000000000180"
+				"5A00000000000210"
+				"5A00000000000220"
+			]
+			dependency_requirement: "all_completed"
+			description: [
+				"&6Congratulations!&r You've established a thriving colony!"
+				""
+				"Your colony now has:"
+				"• Resource gathering (Mine, Forester, Fisherman)"
+				"• Food production (Farm, Restaurant, Bakery)"
+				"• Logistics (Warehouse, Courier)"
+				"• Defense (Guard Tower)"
+				"• Construction (Builder)"
+				""
+				"What's next:"
+				"• Expand with more specialized buildings"
+				"• Research new technologies at the University"
+				"• Train soldiers at the Barracks"
+				"• Create specialized crafters"
+				""
+				"&7Your colony is just getting started!&r"
+			]
+			id: "5A00000000000250"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000251"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			shape: "hexagon"
+			subtitle: "Your colony is thriving!"
+			tasks: [{
+				id: "5A00000000000252"
+				title: "Colony Established!"
+				type: "checkmark"
+			}]
+			title: "A Thriving Colony"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5A00000000000220"]
+			description: [
+				"The &6Barracks&r trains professional soldiers for your colony."
+				""
+				"Barracks features:"
+				"• Train multiple guards at once"
+				"• Higher level = more guard towers"
+				"• Specialized training for each guard type"
+				"• Coordinate colony defense"
+				""
+				"Military expansion:"
+				"• Add Barracks Towers for more guards"
+				"• Train knights, rangers, and druids"
+				"• Defend against raids and invasions"
+				""
+				"&7A strong military keeps your colony safe!&r"
+			]
+			id: "5A00000000000260"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000261"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			subtitle: "Train your army"
+			tasks: [{
+				id: "5A00000000000262"
+				item: "minecolonies:blockhutbarracks"
+				type: "item"
+			}]
+			title: "The Barracks"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A00000000000250"]
+			description: [
+				"The &6University&r unlocks colony research and upgrades."
+				""
+				"Research benefits:"
+				"• Unlock new buildings and workers"
+				"• Improve worker efficiency"
+				"• Access advanced technologies"
+				"• Enhance colony capabilities"
+				""
+				"Research branches:"
+				"• Combat - Better guards and equipment"
+				"• Civilian - Worker improvements"
+				"• Technology - Advanced buildings"
+				""
+				"&7Research is the key to colony advancement!&r"
+			]
+			id: "5A00000000000270"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A00000000000271"
+				table_id: "5A00000000000001"
+				type: "choice"
+			}]
+			shape: "diamond"
+			subtitle: "Unlock new technologies"
+			tasks: [{
+				id: "5A00000000000272"
+				item: "minecolonies:blockhutuniversity"
+				type: "item"
+			}]
+			title: "The University"
+			x: 0.0d
+			y: 8.5d
+		}
+	]
+	title: "Minecolonies"
+}

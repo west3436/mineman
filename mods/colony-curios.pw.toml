@@ -1,0 +1,13 @@
+name = "Minecolonies Curios Compat"
+filename = "colony_curios-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "be07ba28cfa6746a928fbf365065abe82baba7e5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5590757
+project-id = 1076446
