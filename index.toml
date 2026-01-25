@@ -30,7 +30,7 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "7f0110af76838d22afb614c03e9ca3c530aa201f46cdeb15ca5b42f13e63b6b3"
+hash = "304aaccf49efebc52a7710080039821cdd7f3fc1f72dbf153c1e96e1f0d0e114"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
@@ -39,10 +39,6 @@ hash = "020e7c4440b93aaca9456f2ee7be33eace3253710152482ffdde09a9126e83b8"
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
 hash = "927df79a1389e89c6c0233d2939e742da84a463c3aef329e15ba77bf3e092178"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/circuitry.snbt"
-hash = "d2b68c679fb0f9b98120869409805d3d7e6c16643a1eb0cab4e02731ed2c4020"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/minecolonies.snbt"
@@ -118,7 +114,7 @@ hash = "8a5a2efe212df81494c6d766293222e528aae2131b52254335b0b45f51188595"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t3.snbt"
-hash = "3a2168e6b87ee63aa2c31d0b51641f60825a475b9898d993e60c83856098e3a0"
+hash = "73132ca8522118f64fbc0bbcc2f7b839180a198ab2501de663b58c940e79b35a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t4_advanced.snbt"
@@ -306,11 +302,11 @@ hash = "043b98d7ef271bb33a09d542b62d948d6e986874fd70c538b9ff05a5b24a460c"
 
 [[files]]
 file = "kubejs/client_scripts/unified_fluids_jei.js"
-hash = "a7f20dc5df9e7e9a7dda1764633d9e92586bb48836fa9cbb15f7baec68a6933a"
+hash = "a4f172d6f9d1d0a6feb3b8d411084a0a6484f5c5af25f4328b2a6f6d7e5e4158"
 
 [[files]]
 file = "kubejs/client_scripts/unified_materials_jei.js"
-hash = "71681b4ebe789316b0639b5b0f5a90509d374f00a16a200a509a823e620fd37c"
+hash = "88816e52c9b9afdfdfe3cde3483daf37b4d53e03976153576ddfc3abccbaf606"
 
 [[files]]
 file = "kubejs/server_scripts/chapter1.js"
@@ -318,15 +314,15 @@ hash = "c71b8c102919788d3632b9010c03e2da55880fa229b8d83a1b78eeb5c0d522cd"
 
 [[files]]
 file = "kubejs/server_scripts/chapter2.js"
-hash = "48d1df287ec1ee9b0c9a724fcfd911926f5c27cd534dd63b62880b115d487e57"
+hash = "675b4ee68b7b531496ba4a43dfbbcf68538f563a31d345ba0d286fbe5f4268a1"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
-hash = "f456b72c72fe94b6d5b33552e4eda0e8ff830ee597c208fdd1873602584fb151"
+hash = "d5d70e9f0b0d96529ffdee4ab87ef5dc0ea4247970e78b1564c0e2b03ef2f8a5"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_tags.js"
-hash = "e74ae2c415df9cc041e2583424519c8a8ef246a82353de7ee7abba6209f5fe39"
+hash = "c081a13ebad202e6e98f840c7583dc1be5f834ce17592cdaea1a553da9234d0a"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_config.js"
@@ -334,7 +330,7 @@ hash = "8a66c9aa3df37efd4a5be5e0d86a794d80a1dfecaae1afac1e397817379dd53a"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_misc.js"
-hash = "9a46069c0bf92f72493f39d0b3dfdb75b18740fa520cf143c042690f1c9b12d3"
+hash = "c6c3982bd8f32da270db8b5f13080e80eed3e043989a5c632270d06a7d36b990"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_processing.js"
@@ -342,7 +338,7 @@ hash = "00623d4f4934cd8af5b290630337fa8fb110f516bf6f6ae55e5cbb3d0dd9b3d3"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_recipes.js"
-hash = "8622dbaf3898513abb7273edaab2d240fb1aa99f408c6202d2a12cabde7c7e41"
+hash = "b590302d0514d892a5474941e3ee5967c38224db58a98bad500a6b99f743b0b9"
 
 [[files]]
 file = "kubejs/server_scripts/unified_materials_storage_blocks.js"
@@ -1153,11 +1149,6 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "045d582e2c534c5bb96d7336b4ae2cd12692c6de29b19ae5f1dbfd8759c03b03"
-metafile = true
-
-[[files]]
-file = "mods/pneumaticcraft-repressurized.pw.toml"
-hash = "62f429f37e8e20637dd5ca5479045fd6831d5b65bcfe3c49cc5a4c6eaf9eb540"
 metafile = true
 
 [[files]]

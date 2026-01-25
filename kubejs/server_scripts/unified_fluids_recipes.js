@@ -24,35 +24,35 @@ const FLUID_UNIFICATIONS = [
     {
         tag: 'forge:ethanol',
         primary: 'immersiveengineering:ethanol',
-        variants: ['immersiveengineering:ethanol', 'forestry:bio_ethanol', 'pneumaticcraft:ethanol', 'mekanismgenerators:bioethanol', 'electrodynamics:fluidethanol']
+        variants: ['immersiveengineering:ethanol', 'forestry:bio_ethanol', 'mekanismgenerators:bioethanol', 'electrodynamics:fluidethanol']
     },
 
     // ==================== CRUDE OIL ====================
     {
         tag: 'forge:crude_oil',
         primary: 'immersivepetroleum:crudeoil',
-        variants: ['immersivepetroleum:crudeoil', 'tfmg:crude_oil', 'pneumaticcraft:oil']
+        variants: ['immersivepetroleum:crudeoil', 'tfmg:crude_oil']
     },
 
     // ==================== DIESEL ====================
     {
         tag: 'forge:diesel',
         primary: 'immersivepetroleum:diesel',
-        variants: ['immersivepetroleum:diesel', 'tfmg:diesel', 'pneumaticcraft:diesel']
+        variants: ['immersivepetroleum:diesel', 'tfmg:diesel']
     },
 
     // ==================== GASOLINE ====================
     {
         tag: 'forge:gasoline',
         primary: 'immersivepetroleum:gasoline',
-        variants: ['immersivepetroleum:gasoline', 'tfmg:gasoline', 'pneumaticcraft:gasoline']
+        variants: ['immersivepetroleum:gasoline', 'tfmg:gasoline']
     },
 
     // ==================== KEROSENE ====================
     {
         tag: 'forge:kerosene',
         primary: 'immersivepetroleum:kerosene',
-        variants: ['immersivepetroleum:kerosene', 'tfmg:kerosene', 'pneumaticcraft:kerosene']
+        variants: ['immersivepetroleum:kerosene', 'tfmg:kerosene']
     },
 
     // ==================== NAPHTHA ====================
@@ -66,14 +66,14 @@ const FLUID_UNIFICATIONS = [
     {
         tag: 'forge:lpg',
         primary: 'immersivepetroleum:petroleum_gas',
-        variants: ['immersivepetroleum:petroleum_gas', 'tfmg:lpg', 'pneumaticcraft:lpg']
+        variants: ['immersivepetroleum:petroleum_gas', 'tfmg:lpg']
     },
 
     // ==================== LUBRICANT ====================
     {
         tag: 'forge:lubricant',
         primary: 'immersivepetroleum:lubricant',
-        variants: ['immersivepetroleum:lubricant', 'tfmg:lubrication_oil', 'pneumaticcraft:lubricant']
+        variants: ['immersivepetroleum:lubricant', 'tfmg:lubrication_oil']
     },
 
     // ==================== NAPALM ====================
@@ -87,7 +87,7 @@ const FLUID_UNIFICATIONS = [
     {
         tag: 'forge:biodiesel',
         primary: 'immersiveengineering:biodiesel',
-        variants: ['immersiveengineering:biodiesel', 'pneumaticcraft:biodiesel']
+        variants: ['immersiveengineering:biodiesel']
     },
 
     // ==================== CREOSOTE ====================
@@ -157,7 +157,7 @@ const FLUID_UNIFICATIONS = [
     {
         tag: 'forge:plantoil',
         primary: 'immersiveengineering:plantoil',
-        variants: ['immersiveengineering:plantoil', 'forestry:seed_oil', 'pneumaticcraft:vegetable_oil']
+        variants: ['immersiveengineering:plantoil', 'forestry:seed_oil']
     },
 
     // ==================== MOLTEN STEEL ====================
@@ -179,7 +179,7 @@ const FLUID_UNIFICATIONS = [
     {
         tag: 'forge:molten_plastic',
         primary: 'tfmg:molten_plastic',
-        variants: ['tfmg:molten_plastic', 'pneumaticcraft:plastic', 'electrodynamics:fluidpolyethylene']
+        variants: ['tfmg:molten_plastic', 'electrodynamics:fluidpolyethylene']
     },
 ];
 

@@ -406,7 +406,7 @@ const ITEM_UNIFICATIONS = [
     {
         tag: 'forge:plastic',
         primary: 'tfmg:plastic_sheet',
-        variants: ['tfmg:plastic_sheet', 'industrialforegoing:plastic', 'pneumaticcraft:plastic']
+        variants: ['tfmg:plastic_sheet', 'industrialforegoing:plastic']
     },
 ];
 

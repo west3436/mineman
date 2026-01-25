@@ -189,7 +189,7 @@ JEIEvents.hideItems(event => {
         'mekanism:sawdust',
 
         // ==================== WHEAT FLOUR (Primary: Create) ====================
-        'pneumaticcraft:wheat_flour',
+        // (no non-primary items to hide)
 
         // ==================== DOUGH (Primary: Create) ====================
         'farmersdelight:wheat_dough',
