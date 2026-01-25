@@ -28,7 +28,6 @@ ServerEvents.tags('fluid', event => {
     event.add('forge:ethanol', [
         'immersiveengineering:ethanol',        // Primary
         'forestry:bio_ethanol',
-        'pneumaticcraft:ethanol',
         'mekanismgenerators:bioethanol',
         'electrodynamics:fluidethanol'
     ]);
@@ -36,7 +35,6 @@ ServerEvents.tags('fluid', event => {
     event.add('forge:bioethanol', [
         'immersiveengineering:ethanol',        // Primary
         'forestry:bio_ethanol',
-        'pneumaticcraft:ethanol',
         'mekanismgenerators:bioethanol'
     ]);
 
@@ -44,38 +42,33 @@ ServerEvents.tags('fluid', event => {
     // Primary: Immersive Petroleum
     event.add('forge:crude_oil', [
         'immersivepetroleum:crudeoil',         // Primary
-        'tfmg:crude_oil',
-        'pneumaticcraft:oil'
+        'tfmg:crude_oil'
     ]);
     // Alias tag
     event.add('forge:oil', [
         'immersivepetroleum:crudeoil',         // Primary
-        'tfmg:crude_oil',
-        'pneumaticcraft:oil'
+        'tfmg:crude_oil'
     ]);
 
     // ==================== DIESEL ====================
     // Primary: Immersive Petroleum
     event.add('forge:diesel', [
         'immersivepetroleum:diesel',           // Primary
-        'tfmg:diesel',
-        'pneumaticcraft:diesel'
+        'tfmg:diesel'
     ]);
 
     // ==================== GASOLINE ====================
     // Primary: Immersive Petroleum
     event.add('forge:gasoline', [
         'immersivepetroleum:gasoline',         // Primary
-        'tfmg:gasoline',
-        'pneumaticcraft:gasoline'
+        'tfmg:gasoline'
     ]);
 
     // ==================== KEROSENE ====================
     // Primary: Immersive Petroleum
     event.add('forge:kerosene', [
         'immersivepetroleum:kerosene',         // Primary
-        'tfmg:kerosene',
-        'pneumaticcraft:kerosene'
+        'tfmg:kerosene'
     ]);
 
     // ==================== NAPHTHA ====================
@@ -89,16 +82,14 @@ ServerEvents.tags('fluid', event => {
     // Primary: Immersive Petroleum (as petroleum_gas)
     event.add('forge:lpg', [
         'immersivepetroleum:petroleum_gas',    // Primary
-        'tfmg:lpg',
-        'pneumaticcraft:lpg'
+        'tfmg:lpg'
     ]);
 
     // ==================== LUBRICANT ====================
     // Primary: Immersive Petroleum
     event.add('forge:lubricant', [
         'immersivepetroleum:lubricant',        // Primary
-        'tfmg:lubrication_oil',
-        'pneumaticcraft:lubricant'
+        'tfmg:lubrication_oil'
     ]);
 
     // ==================== NAPALM ====================
@@ -111,8 +102,7 @@ ServerEvents.tags('fluid', event => {
     // ==================== BIODIESEL ====================
     // Primary: IE
     event.add('forge:biodiesel', [
-        'immersiveengineering:biodiesel',      // Primary
-        'pneumaticcraft:biodiesel'
+        'immersiveengineering:biodiesel'       // Primary
     ]);
 
     // ==================== CREOSOTE ====================
@@ -191,19 +181,16 @@ ServerEvents.tags('fluid', event => {
     // Primary: IE
     event.add('forge:plantoil', [
         'immersiveengineering:plantoil',       // Primary
-        'forestry:seed_oil',
-        'pneumaticcraft:vegetable_oil'
+        'forestry:seed_oil'
     ]);
     // Alias tags
     event.add('forge:seed_oil', [
         'immersiveengineering:plantoil',       // Primary
-        'forestry:seed_oil',
-        'pneumaticcraft:vegetable_oil'
+        'forestry:seed_oil'
     ]);
     event.add('forge:vegetable_oil', [
         'immersiveengineering:plantoil',       // Primary
-        'forestry:seed_oil',
-        'pneumaticcraft:vegetable_oil'
+        'forestry:seed_oil'
     ]);
 
     // ==================== BIOFUEL / BIOMASS ====================
@@ -312,12 +299,10 @@ ServerEvents.tags('fluid', event => {
 
     // ==================== LIQUID PLASTIC ====================
     event.add('forge:molten_plastic', [
-        'tfmg:molten_plastic',
-        'pneumaticcraft:plastic'
+        'tfmg:molten_plastic'
     ]);
     event.add('forge:plastic', [
         'tfmg:molten_plastic',
-        'pneumaticcraft:plastic',
         'electrodynamics:fluidpolyethylene'
     ]);
 

@@ -13,42 +13,35 @@ JEIEvents.hideItems(event => {
 
         // ==================== ETHANOL (Primary: IE) ====================
         'forestry:bio_ethanol_bucket',
-        'pneumaticcraft:ethanol_bucket',
         'mekanismgenerators:bioethanol_bucket',
         // electrodynamics uses different bucket naming
 
         // ==================== CRUDE OIL (Primary: IP) ====================
         'tfmg:crude_oil_bucket',
-        'pneumaticcraft:oil_bucket',
 
         // ==================== DIESEL (Primary: IP) ====================
         'tfmg:diesel_bucket',
-        'pneumaticcraft:diesel_bucket',
 
         // ==================== GASOLINE (Primary: IP) ====================
         'tfmg:gasoline_bucket',
-        'pneumaticcraft:gasoline_bucket',
 
         // ==================== KEROSENE (Primary: IP) ====================
         'tfmg:kerosene_bucket',
-        'pneumaticcraft:kerosene_bucket',
 
         // ==================== NAPHTHA (Primary: IP) ====================
         'tfmg:naphtha_bucket',
 
         // ==================== LPG (Primary: IP) ====================
         'tfmg:lpg_bucket',
-        'pneumaticcraft:lpg_bucket',
 
         // ==================== LUBRICANT (Primary: IP) ====================
         'tfmg:lubrication_oil_bucket',
-        'pneumaticcraft:lubricant_bucket',
 
         // ==================== NAPALM (Primary: IP) ====================
         'tfmg:napalm_bucket',
 
         // ==================== BIODIESEL (Primary: IE) ====================
-        'pneumaticcraft:biodiesel_bucket',
+        // (no non-primary buckets to hide)
 
         // ==================== CREOSOTE (Primary: IE) ====================
         'tfmg:creosote_bucket',
@@ -75,7 +68,6 @@ JEIEvents.hideItems(event => {
 
         // ==================== PLANT OIL (Primary: IE) ====================
         'forestry:seed_oil_bucket',
-        'pneumaticcraft:vegetable_oil_bucket',
 
         // ==================== MOLTEN STEEL (Primary: CBC) ====================
         // Tinkers steel recipes are removed, items still exist but hidden from JEI
@@ -86,7 +78,7 @@ JEIEvents.hideItems(event => {
         'createbigcannons:molten_bronze_bucket',
 
         // ==================== PLASTIC (Primary: TFMG) ====================
-        'pneumaticcraft:plastic_bucket',
+        // (no non-primary buckets to hide)
     ];
 
     hiddenBuckets.forEach(item => {
@@ -110,42 +102,35 @@ JEIEvents.hideFluids(event => {
 
         // ==================== ETHANOL (Primary: IE) ====================
         'forestry:bio_ethanol',
-        'pneumaticcraft:ethanol',
         'mekanismgenerators:bioethanol',
         'electrodynamics:fluidethanol',
 
         // ==================== CRUDE OIL (Primary: IP) ====================
         'tfmg:crude_oil',
-        'pneumaticcraft:oil',
 
         // ==================== DIESEL (Primary: IP) ====================
         'tfmg:diesel',
-        'pneumaticcraft:diesel',
 
         // ==================== GASOLINE (Primary: IP) ====================
         'tfmg:gasoline',
-        'pneumaticcraft:gasoline',
 
         // ==================== KEROSENE (Primary: IP) ====================
         'tfmg:kerosene',
-        'pneumaticcraft:kerosene',
 
         // ==================== NAPHTHA (Primary: IP) ====================
         'tfmg:naphtha',
 
         // ==================== LPG (Primary: IP) ====================
         'tfmg:lpg',
-        'pneumaticcraft:lpg',
 
         // ==================== LUBRICANT (Primary: IP) ====================
         'tfmg:lubrication_oil',
-        'pneumaticcraft:lubricant',
 
         // ==================== NAPALM (Primary: IP) ====================
         'tfmg:napalm',
 
         // ==================== BIODIESEL (Primary: IE) ====================
-        'pneumaticcraft:biodiesel',
+        // (no non-primary fluids to hide)
 
         // ==================== CREOSOTE (Primary: IE) ====================
         'tfmg:creosote',
@@ -180,7 +165,6 @@ JEIEvents.hideFluids(event => {
 
         // ==================== PLANT OIL (Primary: IE) ====================
         'forestry:seed_oil',
-        'pneumaticcraft:vegetable_oil',
 
         // ==================== MOLTEN STEEL (Primary: CBC) ====================
         // Tinkers steel recipes are removed, items still exist but hidden from JEI
@@ -191,7 +175,6 @@ JEIEvents.hideFluids(event => {
         'createbigcannons:molten_bronze',
 
         // ==================== PLASTIC (Primary: TFMG) ====================
-        'pneumaticcraft:plastic',
         'electrodynamics:fluidpolyethylene',
     ];
 

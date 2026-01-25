@@ -21,7 +21,6 @@
 
 // ==================== WHEAT FLOUR ====================
 // Primary: create:wheat_flour
-// Duplicates: pneumaticcraft:wheat_flour
 
 // ==================== DOUGH ====================
 // Primary: create:dough
@@ -61,7 +60,7 @@
 
 // ==================== PLASTIC (sheet/ingot form) ====================
 // Primary: tfmg:plastic_sheet (TFMG has comprehensive plastic processing)
-// Similar items: industrialforegoing:plastic, pneumaticcraft:plastic
+// Similar items: industrialforegoing:plastic
 
 // ==================== FERTILIZER ====================
 // Primary: immersiveengineering:fertilizer
@@ -102,12 +101,10 @@ ServerEvents.tags('item', event => {
 
     // Wheat Flour tag
     event.add('forge:flour/wheat', [
-        'create:wheat_flour',
-        'pneumaticcraft:wheat_flour'
+        'create:wheat_flour'
     ]);
     event.add('forge:flour', [
-        'create:wheat_flour',
-        'pneumaticcraft:wheat_flour'
+        'create:wheat_flour'
     ]);
 
     // Dough tag
@@ -179,8 +176,7 @@ ServerEvents.tags('item', event => {
     // Plastic sheets/items tag
     event.add('forge:plastic', [
         'tfmg:plastic_sheet',
-        'industrialforegoing:plastic',
-        'pneumaticcraft:plastic'
+        'industrialforegoing:plastic'
     ]);
 
     // Wood Pulp tag
@@ -236,8 +232,6 @@ ServerEvents.recipes(event => {
         // Sawdust -> IE
         'mekanism:sawdust': 'immersiveengineering:sawdust',
         
-        // Wheat Flour -> Create
-        'pneumaticcraft:wheat_flour': 'create:wheat_flour',
         
         // Dough -> Create
         'farmersdelight:wheat_dough': 'create:dough',
@@ -295,10 +289,6 @@ ServerEvents.recipes(event => {
     // Sawdust conversions
     event.shapeless('immersiveengineering:sawdust', ['mekanism:sawdust'])
         .id('kubejs:unified/sawdust_from_mekanism');
-    
-    // Wheat Flour conversions
-    event.shapeless('create:wheat_flour', ['pneumaticcraft:wheat_flour'])
-        .id('kubejs:unified/wheat_flour_from_pneumaticcraft');
     
     // Dough conversions
     event.shapeless('create:dough', ['farmersdelight:wheat_dough'])
