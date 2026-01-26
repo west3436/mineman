@@ -415,11 +415,6 @@ hash = "74d834fa24067ea6f5c363d0ecbc1530d438ccaef4ba4790703e255a0c6385fa"
 metafile = true
 
 [[files]]
-file = "mods/chunky.pw.toml"
-hash = "0e17f9758f6f67ef87aa6f8d5afc47901521a05904cd8470ef65063b48e69d73"
-metafile = true
-
-[[files]]
 file = "mods/citadel.pw.toml"
 hash = "0c8838dba7d2090968ca9ec633260d42ca16f1df186a780bd5965994541d9f74"
 metafile = true
