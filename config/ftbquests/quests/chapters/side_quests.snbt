@@ -5,7 +5,7 @@
 	group: ""
 	icon: "minecraft:map"
 	id: "3FF1F92B8BB4B51E"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -23,7 +23,7 @@
 				"&7Complete these quests for bonus rewards and unique items!&r"
 			]
 			icon: "minecraft:map"
-			id: "5A00000000000010"
+			id: "73BD7E47B72A3369"
 			shape: "hexagon"
 			subtitle: "Optional adventures await!"
 			tasks: [{
@@ -53,7 +53,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000021"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Master the art of crop genetics"
@@ -83,14 +82,16 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000031"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "The breeding begins"
 			tasks: [{
 				count: 16L
 				id: "5A00000000000032"
-				item: { Count: 16, id: "agricraft:crop_sticks" }
+				item: {
+					Count: 16
+					id: "agricraft:crop_sticks"
+				}
 				type: "item"
 			}]
 			title: "Crop Sticks"
@@ -113,7 +114,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000041"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Clone your best crops"
@@ -142,7 +142,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000051"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "square"
@@ -156,7 +155,10 @@
 				{
 					count: 8L
 					id: "5A00000000000053"
-					item: { Count: 8, id: "agricraft:irrigation_channel" }
+					item: {
+						Count: 8
+						id: "agricraft:irrigation_channel"
+					}
 					type: "item"
 				}
 				{
@@ -186,7 +188,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000061"
-				table_id: "5A00000000000002"
 				type: "choice"
 			}]
 			subtitle: "Brew, ferment, and cook"
@@ -216,7 +217,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000071"
-				table_id: "5A00000000000002"
 				type: "choice"
 			}]
 			subtitle: "Patience makes perfect"
@@ -245,7 +245,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000081"
-				table_id: "5A00000000000002"
 				type: "choice"
 			}]
 			subtitle: "Grow the ingredients"
@@ -286,7 +285,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000091"
-				table_id: "5A00000000000002"
 				type: "choice"
 			}]
 			shape: "square"
@@ -321,16 +319,15 @@
 				"&7Begin with a Cutting Board to prepare your ingredients!&r"
 			]
 			icon: "farmersdelight:cutting_board"
-			id: "5A00000000000100"
+			id: "665BDC9EEC41A300"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000101"
-				table_id: "5A00000000000003"
+				id: "08596B8075E779D0"
 				type: "choice"
 			}]
 			subtitle: "Cooking taken to the next level"
 			tasks: [{
-				id: "5A00000000000102"
+				id: "69331A6C03EBE52D"
 				item: "farmersdelight:cutting_board"
 				type: "item"
 			}]
@@ -351,17 +348,16 @@
 				""
 				"&7Meals restore more hunger and provide buffs!&r"
 			]
-			id: "5A00000000000110"
+			id: "265CC5B2C5DA3658"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000111"
-				table_id: "5A00000000000003"
+				id: "35BE3AAB01D2ABC8"
 				type: "choice"
 			}]
 			subtitle: "Cook up a storm"
 			tasks: [
 				{
-					id: "5A00000000000112"
+					id: "09E2FBC606FA01BF"
 					item: "farmersdelight:cooking_pot"
 					type: "item"
 				}
@@ -388,17 +384,16 @@
 				""
 				"&7These crops are essential for many recipes!&r"
 			]
-			id: "5A00000000000120"
+			id: "1DF258B1D144D58F"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000121"
-				table_id: "5A00000000000003"
+				id: "4C8A4A23F8821C07"
 				type: "choice"
 			}]
 			subtitle: "Garden variety goodness"
 			tasks: [
 				{
-					id: "5A00000000000122"
+					id: "2CAA294F47BD33F1"
 					item: "farmersdelight:tomato"
 					type: "item"
 				}
@@ -429,18 +424,17 @@
 				""
 				"&7Each dish provides unique buffs and excellent saturation!&r"
 			]
-			id: "5A00000000000130"
+			id: "1227C5863F2AA532"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000131"
-				table_id: "5A00000000000003"
+				id: "1AF4C6291D6D1E6F"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Become a master chef"
 			tasks: [
 				{
-					id: "5A00000000000132"
+					id: "469D972B1E8C3B88"
 					item: "farmersdelight:vegetable_soup"
 					type: "item"
 				}
@@ -473,16 +467,15 @@
 				"&7Start with Chipped's workbenches to unlock new block variants!&r"
 			]
 			icon: "chipped:botanist_workbench"
-			id: "5A00000000000140"
+			id: "2994F3BC284AFB16"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000141"
-				table_id: "5A00000000000004"
+				id: "2A1AE4A0726EBA9A"
 				type: "choice"
 			}]
 			subtitle: "Beautify your world"
 			tasks: [{
-				id: "5A00000000000142"
+				id: "667DAF4ED8804FDD"
 				item: "chipped:botanist_workbench"
 				type: "item"
 			}]
@@ -504,17 +497,16 @@
 				""
 				"&7Each workbench unlocks dozens of new block variants!&r"
 			]
-			id: "5A00000000000150"
+			id: "7101476593C99F18"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000151"
-				table_id: "5A00000000000004"
+				id: "4DDF3C220D5E41C8"
 				type: "choice"
 			}]
 			subtitle: "Workbenches for everything"
 			tasks: [
 				{
-					id: "5A00000000000152"
+					id: "2B323166B5D3E292"
 					item: "chipped:glassblower"
 					type: "item"
 				}
@@ -546,17 +538,16 @@
 				""
 				"&7Great for architectural details and hidden doors!&r"
 			]
-			id: "5A00000000000160"
+			id: "3020C75B2B4F7EAE"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000161"
-				table_id: "5A00000000000004"
+				id: "5168E1BCFD7D8E3D"
 				type: "choice"
 			}]
 			subtitle: "Shape your imagination"
 			tasks: [
 				{
-					id: "5A00000000000162"
+					id: "459EC4C98788D200"
 					item: "framedblocks:framing_hammer"
 					type: "item"
 				}
@@ -584,18 +575,17 @@
 				""
 				"&7Create a cozy home or grand castle!&r"
 			]
-			id: "5A00000000000170"
+			id: "69A3C20FE5514CEA"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000171"
-				table_id: "5A00000000000004"
+				id: "1BE3B24E5E046567"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Furnish your builds"
 			tasks: [
 				{
-					id: "5A00000000000172"
+					id: "517BA22EDAE8B2D7"
 					item: "handcrafted:hammer"
 					type: "item"
 				}
@@ -627,16 +617,15 @@
 				"&7Adventure awaits in dungeons, villages, and beyond!&r"
 			]
 			icon: "explorerscompass:explorerscompass"
-			id: "5A00000000000180"
+			id: "0387CF59C2616F3D"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000181"
-				table_id: "5A00000000000005"
+				id: "439B88EF6A3E7753"
 				type: "choice"
 			}]
 			subtitle: "Discover the unknown"
 			tasks: [{
-				id: "5A00000000000182"
+				id: "6076883B10883481"
 				item: "explorerscompass:explorerscompass"
 				type: "item"
 			}]
@@ -657,16 +646,15 @@
 				""
 				"&7Perfect for locating that elusive mushroom island!&r"
 			]
-			id: "5A00000000000190"
+			id: "62A7588FD4CA56A8"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000191"
-				table_id: "5A00000000000005"
+				id: "43D13188DA107779"
 				type: "choice"
 			}]
 			subtitle: "Find any biome"
 			tasks: [{
-				id: "5A00000000000192"
+				id: "7E810EB62073A978"
 				item: "naturescompass:naturescompass"
 				type: "item"
 			}]
@@ -687,16 +675,15 @@
 				""
 				"&7Use your Explorer's Compass to locate these structures!&r"
 			]
-			id: "5A00000000000200"
+			id: "0E0CB5DB993A18D1"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000201"
-				table_id: "5A00000000000005"
+				id: "768380D1DCF7641A"
 				type: "choice"
 			}]
 			subtitle: "Brave the darkness"
 			tasks: [{
-				id: "5A00000000000202"
+				id: "79314B1B85B15BE6"
 				item: "minecraft:mossy_cobblestone"
 				type: "item"
 			}]
@@ -717,17 +704,16 @@
 				""
 				"&7The world is vast - keep exploring!&r"
 			]
-			id: "5A00000000000210"
+			id: "078C6FE08AB4309F"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000211"
-				table_id: "5A00000000000005"
+				id: "3C5C9ED0DA448280"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "The journey continues"
 			tasks: [{
-				id: "5A00000000000212"
+				id: "1D4D1C71CE8D2BCC"
 				item: "minecraft:filled_map"
 				type: "item"
 			}]
@@ -749,16 +735,15 @@
 				"&7Explore the wilderness to encounter these creatures!&r"
 			]
 			icon: "untamedwilds:material_fur"
-			id: "5A00000000000220"
+			id: "1488C3806B71AF17"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000221"
-				table_id: "5A00000000000006"
+				id: "419A9AC8F857BAA0"
 				type: "choice"
 			}]
 			subtitle: "Nature's finest"
 			tasks: [{
-				id: "5A00000000000222"
+				id: "2D6F7AAEBB7735B6"
 				item: "untamedwilds:material_fur"
 				type: "item"
 			}]
@@ -779,17 +764,16 @@
 				""
 				"&7These materials can be used for crafting!&r"
 			]
-			id: "5A00000000000230"
+			id: "463A156F73A97F95"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000231"
-				table_id: "5A00000000000006"
+				id: "636643961ABE18FB"
 				type: "choice"
 			}]
 			subtitle: "Harvest nature's bounty"
 			tasks: [
 				{
-					id: "5A00000000000232"
+					id: "0242CA5367F573AA"
 					item: "untamedwilds:material_hide"
 					type: "item"
 				}
@@ -816,16 +800,15 @@
 				""
 				"&7Explore waterways for unique encounters!&r"
 			]
-			id: "5A00000000000240"
+			id: "22D41C534D6BE12F"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000241"
-				table_id: "5A00000000000006"
+				id: "6EB5E6AD6D3D10D7"
 				type: "choice"
 			}]
 			subtitle: "Dive into nature"
 			tasks: [{
-				id: "5A00000000000242"
+				id: "6F3802890BACF044"
 				item: "untamedwilds:material_shell"
 				type: "item"
 			}]
@@ -846,18 +829,17 @@
 				""
 				"&7Respect and protect the wild creatures!&r"
 			]
-			id: "5A00000000000250"
+			id: "311774C22A64B40F"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A00000000000251"
-				table_id: "5A00000000000006"
+				id: "126586B22106F17B"
 				type: "choice"
 			}]
 			shape: "square"
 			subtitle: "Master naturalist"
 			tasks: [
 				{
-					id: "5A00000000000252"
+					id: "03356F96200F48D2"
 					item: "untamedwilds:material_blubber"
 					type: "item"
 				}

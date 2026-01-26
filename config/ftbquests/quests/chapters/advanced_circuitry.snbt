@@ -24,13 +24,22 @@
 				""
 				"&7Each circuit tier unlocks new mods and possibilities!&r"
 			]
-			icon: "mekanism:configurator"
+			icon: "tfmg:plastic_sheet"
 			id: "075A1E9713841DD5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "081C69E43A71DA8F"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5386F79E9F1FFD9A"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "78EF0356B2742269"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Enter the age of advanced technology"
 			tasks: [{
@@ -39,46 +48,11 @@
 				type: "checkmark"
 			}]
 			title: "The Next Generation"
-			x: 0.0d
-			y: -6.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["075A1E9713841DD5"]
-			description: [
-				"&6Osmium&r is Mekanism's foundational ore, found throughout the world."
-				""
-				"Mining tips:"
-				"• Spawns at similar levels to iron"
-				"• Can be processed through Mekanism's ore multiplication"
-				"• Essential for nearly all Mekanism machines"
-				""
-				"Uses:"
-				"• &bControl Circuits&r - Machine components"
-				"• &bMachine Casings&r - Structure blocks"
-				"• &bTools and Armor&r - Mid-tier equipment"
-				""
-				"&7Start stockpiling - you'll need hundreds of ingots!&r"
-			]
-			icon: "mekanism:ingot_osmium"
-			id: "70D512A20B1EA4A1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "47CB3171B9B836A0"
-				type: "choice"
-			}]
-			subtitle: "The foundation of Mekanism"
-			tasks: [{
-				count: 32L
-				id: "065A85093591421A"
-				item: { Count: 32, id: "mekanism:ingot_osmium" }
-				type: "item"
-			}]
-			title: "Osmium Processing"
-			x: 0.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["70D512A20B1EA4A1"]
 			description: [
 				"The &6Metallurgic Infuser&r combines materials with infusion types to create alloys and circuits."
 				""
@@ -97,11 +71,20 @@
 			]
 			icon: "mekanism:metallurgic_infuser"
 			id: "5AFE467AE42E2853"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1D06C1A669BEDBAF"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5276CDD4875E5923"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C0E6E6D4D6BF9B2"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Infusion-based crafting"
 			tasks: [{
@@ -110,8 +93,8 @@
 				type: "item"
 			}]
 			title: "Metallurgic Infuser"
-			x: 0.0d
-			y: -3.0d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5AFE467AE42E2853"]
@@ -131,11 +114,20 @@
 			]
 			icon: "mekanism:steel_casing"
 			id: "2DE8F63B6633490A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3EA0D12914D4C01C"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7AFCB95BDF89C75B"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "78693CDCA5FBC911"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			subtitle: "Machine housing"
 			tasks: [{
 				count: 8L
@@ -144,11 +136,11 @@
 				type: "item"
 			}]
 			title: "Steel Casings"
-			x: 0.0d
-			y: -1.5d
+			x: 1.5d
+			y: -7.0d
 		}
 		{
-			dependencies: ["5AFE467AE42E2853"]
+			dependencies: ["3A9AC16F275D7408"]
 			description: [
 				"The &6Basic Control Circuit&r is the first tier of Mekanism's circuit system."
 				""
@@ -165,11 +157,20 @@
 			]
 			icon: "mekanism:basic_control_circuit"
 			id: "43ACAD557C638A34"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "39105E785A56E0C6"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3E00AEBE605464DF"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B6827674B6306DE"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Tier 1 - The gateway"
 			tasks: [{
@@ -184,42 +185,6 @@
 		}
 		{
 			dependencies: ["43ACAD557C638A34"]
-			description: [
-				"&6Infused Alloy&r is an intermediate material needed for advanced circuits."
-				""
-				"Production chain:"
-				"1. Iron Ingot + Carbon → Enriched Iron"
-				"2. Enriched Iron + Redstone → &bInfused Alloy&r"
-				""
-				"Both steps use the Metallurgic Infuser."
-				""
-				"Uses:"
-				"• Advanced Control Circuits"
-				"• Various machine upgrades"
-				"• Tier 2 components"
-				""
-				"&7Set up automated infusion for efficiency!&r"
-			]
-			icon: "mekanism:alloy_infused"
-			id: "5EE993C0D0E09A79"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4C78A89CCE74E104"
-				type: "choice"
-			}]
-			subtitle: "Tier 2 alloy"
-			tasks: [{
-				count: 16L
-				id: "68DEC65D04D8FB43"
-				item: { Count: 16, id: "mekanism:alloy_infused" }
-				type: "item"
-			}]
-			title: "Infused Alloy"
-			x: 1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5EE993C0D0E09A79"]
 			description: [
 				"The &6Advanced Control Circuit&r is the second tier, enabling more sophisticated machines."
 				""
@@ -236,11 +201,20 @@
 			]
 			icon: "mekanism:advanced_control_circuit"
 			id: "1D633BC72CC5CE4B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "485A58E3EFEAF452"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "763DFB181DF45570"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17A15C7F5428EB23"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Tier 2 - Expanding horizons"
 			tasks: [{
@@ -255,37 +229,6 @@
 		}
 		{
 			dependencies: ["1D633BC72CC5CE4B"]
-			description: [
-				"&6Reinforced Alloy&r requires diamond infusion, making it more precious."
-				""
-				"Production:"
-				"• Metallurgic Infuser"
-				"• Infused Alloy + Diamond infusion"
-				""
-				"This alloy is a stepping stone to Elite circuits and represents a significant resource investment."
-				""
-				"&7Diamonds become more valuable than ever!&r"
-			]
-			icon: "mekanism:alloy_reinforced"
-			id: "72BA02CF3628D20E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7ED0206EF59E5AFA"
-				type: "choice"
-			}]
-			subtitle: "Tier 3 alloy"
-			tasks: [{
-				count: 16L
-				id: "4BFE0823345A62C4"
-				item: { Count: 16, id: "mekanism:alloy_reinforced" }
-				type: "item"
-			}]
-			title: "Reinforced Alloy"
-			x: 1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["72BA02CF3628D20E"]
 			description: [
 				"The &6Elite Control Circuit&r is the third tier, opening the door to digital storage."
 				""
@@ -302,11 +245,20 @@
 			]
 			icon: "mekanism:elite_control_circuit"
 			id: "69EBE8C5BBE0C632"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "52C43CB14E2DC1C4"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "719E20722FA54113"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "590A6547FD40E198"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Tier 3 - Digital frontiers"
 			tasks: [{
@@ -321,39 +273,6 @@
 		}
 		{
 			dependencies: ["69EBE8C5BBE0C632"]
-			description: [
-				"&6Atomic Alloy&r is the pinnacle of Mekanism's alloy system."
-				""
-				"Production:"
-				"• Metallurgic Infuser"
-				"• Reinforced Alloy + Refined Obsidian Dust infusion"
-				""
-				"Refined Obsidian Dust is created by:"
-				"• Processing Obsidian in a Crusher → Obsidian Dust"
-				"• Processing in an Enrichment Chamber → Refined Obsidian Dust"
-				""
-				"&7The most advanced alloy requires the most advanced processing!&r"
-			]
-			icon: "mekanism:alloy_atomic"
-			id: "60D19A34687711B2"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1CEEAD04C9C475E8"
-				type: "choice"
-			}]
-			subtitle: "Tier 4 alloy"
-			tasks: [{
-				count: 16L
-				id: "0C0C085ACCD9B03D"
-				item: { Count: 16, id: "mekanism:alloy_atomic" }
-				type: "item"
-			}]
-			title: "Atomic Alloy"
-			x: 1.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["60D19A34687711B2"]
 			description: [
 				"&6Congratulations!&r You've reached the pinnacle of circuit technology!"
 				""
@@ -371,11 +290,20 @@
 			]
 			icon: "mekanism:ultimate_control_circuit"
 			id: "6F16B86C90580EFA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1DF016368E4075A7"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "73DC9489B09BC623"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12CABD6A74E98559"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			subtitle: "Tier 4 - Ultimate power"
 			tasks: [{
@@ -405,11 +333,20 @@
 			]
 			icon: "mekanism:enrichment_chamber"
 			id: "3FA07E0394CBA553"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6EC3E1F9B75AC436"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5AD4784C66A86309"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F2A4D393A2D295E"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+			]
 			subtitle: "Ore processing begins"
 			tasks: [{
 				id: "0C7B293BA108104D"
@@ -417,8 +354,8 @@
 				type: "item"
 			}]
 			title: "Enrichment Chamber"
-			x: 0.0d
-			y: 0.0d
+			x: 1.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3FA07E0394CBA553"]
@@ -437,11 +374,20 @@
 			]
 			icon: "mekanism:crusher"
 			id: "571E03F81808A470"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2EECEE9D220888AC"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23DA874881B2D35D"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3015E64E40652B0B"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			subtitle: "Pulverization"
 			tasks: [{
 				id: "644C4144FA0412EB"
@@ -449,8 +395,8 @@
 				type: "item"
 			}]
 			title: "Crusher"
-			x: 0.0d
-			y: 1.5d
+			x: 1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["571E03F81808A470"]
@@ -469,11 +415,20 @@
 			]
 			icon: "mekanism:energized_smelter"
 			id: "250117D02261A6E1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5A4C9BBDB3DA35D3"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5F3AF844A8D5DB43"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20149A46AE3A8472"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			subtitle: "Electric smelting"
 			tasks: [{
 				id: "4E4320DD7C970579"
@@ -481,14 +436,11 @@
 				type: "item"
 			}]
 			title: "Energized Smelter"
-			x: 0.0d
-			y: 3.0d
+			x: 1.5d
+			y: -10.0d
 		}
 		{
-			dependencies: [
-				"250117D02261A6E1"
-				"60D19A34687711B2"
-			]
+			dependencies: ["250117D02261A6E1"]
 			description: [
 				"The &6Digital Miner&r is an advanced mining machine that can filter specific ores."
 				""
@@ -508,11 +460,20 @@
 			]
 			icon: "mekanism:digital_miner"
 			id: "246A83831DD54046"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "553980DAE5D8CC6D"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7E62BD30A2DB30B8"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "628E4D333E1DD787"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Automated targeted mining"
 			tasks: [{
@@ -521,8 +482,8 @@
 				type: "item"
 			}]
 			title: "Digital Miner"
-			x: 0.0d
-			y: 4.5d
+			x: 1.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["6F16B86C90580EFA"]
@@ -544,11 +505,20 @@
 			]
 			icon: "mekanism:quantum_entangloporter"
 			id: "362C1DF12B04C02D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5EF0205E1D54FDB2"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7E63064A66BA5298"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E3540BF31FE00EE"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Quantum transport"
 			tasks: [{
@@ -581,11 +551,20 @@
 			]
 			icon: "mekanism:ultimate_induction_cell"
 			id: "26BBEF5EB892B4C2"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "193BA74A4EDA16E7"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "00BE0616F3F19EFF"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6F4CD7FDED9B7454"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Massive energy storage"
 			tasks: [
@@ -603,8 +582,8 @@
 				}
 			]
 			title: "Induction Matrix"
-			x: 0.5d
-			y: 8.5d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["43ACAD557C638A34"]
@@ -637,8 +616,8 @@
 				type: "item"
 			}]
 			title: "Industrial Foregoing"
-			x: 3.0d
-			y: 0.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1D5EE2D52125AF38"]
@@ -672,8 +651,8 @@
 				type: "item"
 			}]
 			title: "Mob Crusher"
-			x: 4.5d
-			y: 0.0d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6F888FB6FC5F5173"]
@@ -713,8 +692,8 @@
 				}
 			]
 			title: "Mob Duplicator"
-			x: 6.0d
-			y: 0.0d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1D5EE2D52125AF38"]
@@ -747,8 +726,8 @@
 				type: "item"
 			}]
 			title: "Plant Sower"
-			x: 3.0d
-			y: 1.5d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3FAE33D9C6958B63"]
@@ -781,8 +760,8 @@
 				type: "item"
 			}]
 			title: "Plant Gatherer"
-			x: 4.5d
-			y: 1.5d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1D5EE2D52125AF38"]
@@ -821,8 +800,8 @@
 				}
 			]
 			title: "Resource Processing"
-			x: 6.0d
-			y: 1.5d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2EF079167157E522"]
@@ -852,8 +831,8 @@
 				type: "item"
 			}]
 			title: "Latex Processing"
-			x: 6.0d
-			y: 3.0d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["43ACAD557C638A34"]
@@ -872,11 +851,20 @@
 			]
 			icon: "rftoolsbase:machine_frame"
 			id: "2152FA11871A7613"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4BB3E37C274321F0"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "10EE2DBC7B6A22DB"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5EE2844747580038"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "RF-powered tools unlocked"
 			tasks: [{
@@ -887,7 +875,7 @@
 			}]
 			title: "RFTools"
 			x: 3.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2152FA11871A7613"]
@@ -921,8 +909,8 @@
 				type: "item"
 			}]
 			title: "RFTools Crafter"
-			x: 4.5d
-			y: -3.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2152FA11871A7613"]
@@ -942,11 +930,20 @@
 			]
 			icon: "rftoolsbuilder:builder"
 			id: "26C9A82979EAA823"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "49079465E63568A2"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1D968B91B446CF7C"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "65FBA0EA02D82179"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "World manipulation"
 			tasks: [{
@@ -956,7 +953,7 @@
 			}]
 			title: "RFTools Builder"
 			x: 4.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["26C9A82979EAA823"]
@@ -991,7 +988,7 @@
 			}]
 			title: "Shape Cards"
 			x: 6.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2152FA11871A7613"]
@@ -1025,8 +1022,8 @@
 				type: "item"
 			}]
 			title: "Shield System"
-			x: 3.0d
-			y: -3.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1D633BC72CC5CE4B"]
@@ -1061,8 +1058,8 @@
 				type: "item"
 			}]
 			title: "XNet"
-			x: 3.0d
-			y: 3.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2552E85F0923B3DB"]
@@ -1105,43 +1102,8 @@
 				}
 			]
 			title: "Connectors  Cables"
-			x: 4.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["49C639FD0FD1CAAF"]
-			description: [
-				"&6Channels&r are the core concept of XNet networking."
-				""
-				"Channel types:"
-				"• &bItem Channel&r - Move items between inventories"
-				"• &bFluid Channel&r - Transfer fluids"
-				"• &bEnergy Channel&r - Distribute power"
-				"• &bLogic Channel&r - Sensors and redstone"
-				""
-				"Each channel has:"
-				"• Connectors set as &6Extract&r or &6Insert&r"
-				"• Filters and conditions"
-				"• Priority settings"
-				""
-				"&7Master channels to master XNet!&r"
-			]
-			icon: "xnet:connector_upgrade"
-			id: "4607E66818916A5B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "17168E58126CD90D"
-				type: "choice"
-			}]
-			subtitle: "Network configuration"
-			tasks: [{
-				id: "26FDEC199A1E5CE0"
-				title: "Configure an XNet Channel"
-				type: "checkmark"
-			}]
-			title: "Channel Configuration"
-			x: 3.0d
-			y: 4.5d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["49C639FD0FD1CAAF"]
@@ -1172,8 +1134,8 @@
 				type: "item"
 			}]
 			title: "XNet Router"
-			x: 4.5d
-			y: 3.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["69EBE8C5BBE0C632"]
@@ -1206,8 +1168,8 @@
 				type: "checkmark"
 			}]
 			title: "Applied Energistics 2"
-			x: 3.0d
-			y: 6.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["50624FE288CCBC3D"]
@@ -1250,8 +1212,8 @@
 				}
 			]
 			title: "Crystals"
-			x: 3.0d
-			y: 7.5d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["290C55CBF59ACF06"]
@@ -1282,8 +1244,8 @@
 				type: "item"
 			}]
 			title: "Inscriber"
-			x: 4.5d
-			y: 6.0d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1334,8 +1296,8 @@
 				}
 			]
 			title: "Processors"
-			x: 4.5d
-			y: 7.5d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["20CFC4DE5F207D70"]
@@ -1367,8 +1329,8 @@
 				type: "item"
 			}]
 			title: "ME Controller"
-			x: 6.0d
-			y: 7.5d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["20CFC4DE5F207D70"]
@@ -1410,8 +1372,8 @@
 				}
 			]
 			title: "ME Drive"
-			x: 6.0d
-			y: 6.0d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["20CFC4DE5F207D70"]
@@ -1446,8 +1408,8 @@
 				type: "item"
 			}]
 			title: "Crafting Terminal"
-			x: 4.5d
-			y: 9.0d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1498,8 +1460,8 @@
 				}
 			]
 			title: "Autocrafting"
-			x: 6.0d
-			y: 9.0d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6F16B86C90580EFA"]
@@ -1521,11 +1483,20 @@
 			]
 			icon: "mekanism:teleporter"
 			id: "15C01830548F5AA3"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "51CC66185BFE7B83"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3776F8EA790AF29D"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "495CC1C134C1ADFC"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Instant transport"
 			tasks: [
@@ -1544,6 +1515,116 @@
 			title: "Teleporter"
 			x: 1.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["075A1E9713841DD5"]
+			id: "5E2AA552CB114511"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "064895B5B0C772A5"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4051E54CFF4CCE02"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "273DE93C397D2125"
+					item: "immersiveengineering:component_electronic_adv"
+					type: "item"
+				}
+				{
+					id: "08088B68033B1E63"
+					item: "immersiveengineering:component_electronic"
+					type: "item"
+				}
+				{
+					id: "1C9D58FCDC075454"
+					item: "immersiveengineering:circuit_board"
+					type: "item"
+				}
+			]
+			title: "Circuits - IE Route"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["075A1E9713841DD5"]
+			id: "2DAE5817BE9E7964"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7445AF48992A21C0"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "64A4E4AA1910375D"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "497B35F842E89955"
+					item: "tfmg:transistor_item"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "482587D2B1276F55"
+					item: {
+						Count: 2
+						id: "tfmg:resistor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "141AD45743062E4E"
+					item: "tfmg:capacitor_item"
+					type: "item"
+				}
+			]
+			title: "Circuits - TFMG Route"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2DAE5817BE9E7964"
+				"5E2AA552CB114511"
+			]
+			dependency_requirement: "one_completed"
+			id: "3A9AC16F275D7408"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5EC8A1B4FDD050F8"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "62533D07343CC724"
+					table_id: 4179340454199820304L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6D73F79B1A8BE98D"
+				item: "tfmg:circuit_board"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
 		}
 	]
 	title: "Circuitry"

@@ -1,21 +1,22 @@
 {
 	id: "5A00000000000002"
 	loot_size: 1
-	order_index: 31
+	order_index: 10
 	rewards: [
-		{ count: 16, item: "growthcraft_apples:apple_sapling" }
-		{ count: 8, item: "growthcraft_bamboo:bamboo_planter" }
-		{ count: 16, item: "growthcraft_cellar:brew_kettle" }
-		{ count: 8, item: "growthcraft_cellar:fermentation_barrel" }
-		{ count: 4, item: "growthcraft_cellar:cork" }
+		{ item: "growthcraft_cellar:brew_kettle" }
 		{ count: 16, item: "growthcraft_rice:rice" }
-		{ count: 16, item: "growthcraft_hops:hops_seed" }
-		{ count: 16, item: "growthcraft_grapes:grape_seeds" }
 		{ count: 8, item: "growthcraft_milk:butter" }
-		{ count: 8, item: "growthcraft_milk:cheese_wheel" }
 		{ count: 32, item: "minecraft:glass_bottle" }
 		{ count: 16, item: "minecraft:sugar" }
 		{ count: 16, item: "minecraft:honey_bottle" }
+		{ item: "growthcraft_rice:yeast_seishu" }
+		{ item: "growthcraft_cellar:yeast_bayanus" }
+		{ item: "growthcraft_cellar:yeast_bayanus_ethereal" }
+		{ item: "growthcraft_cellar:yeast_brewers" }
+		{ item: "growthcraft_cellar:yeast_brewers_ethereal" }
+		{ item: "growthcraft_cellar:yeast_ethereal" }
+		{ item: "growthcraft_cellar:yeast_lager" }
+		{ item: "growthcraft_cellar:yeast_lager_ethereal" }
 	]
 	title: "SQ-GrowthCraft"
 }

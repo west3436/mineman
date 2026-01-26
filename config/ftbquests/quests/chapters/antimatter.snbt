@@ -5,7 +5,7 @@
 	group: ""
 	icon: "nuclearscience:cellantimatterverylarge"
 	id: "343A48F9A6FBECD9"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -24,7 +24,7 @@
 				""
 				"&7The path to the stars begins here!&r"
 			]
-			icon: "voltaic:upgradebasiccapacity"
+			icon: "mekanism:ultimate_control_circuit"
 			id: "711D0E39865BE2B4"
 			rewards: [{
 				exclude_from_claim_all: true

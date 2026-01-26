@@ -8,11 +8,83 @@
 		{ count: 4, item: "mekanism:alloy_infused" }
 		{ count: 32, item: "tfmg:plastic_sheet" }
 		{ count: 8, item: "mekanism:steel_casing" }
-		{ count: 16, item: "mekanism:enriched_iron" }
-		{ count: 4, item: "mekanism:enrichment_chamber" }
-		{ count: 4, item: "mekanism:metallurgic_infuser" }
-		{ count: 8, item: "industrialforegoing:machine_frame_pity" }
-		{ count: 4, item: "rftoolsbase:machine_frame" }
+		{
+			item: {
+				Count: 1
+				id: "mekanism:basic_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "4000000"
+						}]
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "mekanism:advanced_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "mekanism:elite_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "64000000"
+						}]
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "mekanism:ultimate_energy_cube"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "256000000"
+						}]
+					}
+				}
+			}
+		}
+		{ count: 32, item: "mekanism:basic_universal_cable" }
+		{ count: 32, item: "mekanism:advanced_universal_cable" }
+		{ count: 32, item: "mekanism:elite_universal_cable" }
+		{ count: 32, item: "mekanism:ultimate_universal_cable" }
+		{ count: 8, item: "mekanism:upgrade_speed" }
+		{ count: 8, item: "mekanism:upgrade_energy" }
+		{ item: "mekanism:upgrade_stone_generator" }
+		{
+			item: {
+				Count: 1
+				id: "mekanism:robit"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "100000"
+						}]
+					}
+				}
+			}
+		}
 	]
 	title: "T3"
 }
