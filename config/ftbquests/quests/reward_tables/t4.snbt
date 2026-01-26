@@ -1,0 +1,25 @@
+{
+	id: "680F28DBCB239C71"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{ count: 8, item: "electrodynamics:geariron" }
+		{ count: 8, item: "electrodynamics:gearcopper" }
+		{ count: 8, item: "electrodynamics:geartin" }
+		{ count: 8, item: "electrodynamics:gearsteel" }
+		{ count: 8, item: "electrodynamics:gearbronze" }
+		{ count: 16, item: "electrodynamics:coil" }
+		{ count: 4, item: "electrodynamics:motor" }
+		{ count: 16, item: "electrodynamics:wireinsulatedtinblack" }
+		{ count: 8, item: "electrodynamics:circuitbasic" }
+		{ count: 4, item: "electrodynamics:circuitadvanced" }
+		{ count: 2, item: "electrodynamics:circuitelite" }
+		{ item: "electrodynamics:circuitultimate" }
+		{ count: 4, item: "voltaic:upgradebasiccapacity" }
+		{ count: 4, item: "voltaic:upgradebasicspeed" }
+		{ count: 4, item: "voltaic:upgradeadvancedcapacity" }
+		{ count: 4, item: "voltaic:upgradeadvancedspeed" }
+		{ count: 8, item: "ballistix:grenadeincendiary" }
+	]
+	title: "T4"
+}

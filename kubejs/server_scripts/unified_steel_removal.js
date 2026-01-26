@@ -5,12 +5,15 @@
 
 ServerEvents.recipes(event => {
     // ==================== ELECTRODYNAMICS STEEL ====================
-    // Remove the Electrodynamics iron blasting recipe that produces steel
-    // This is typically a blasting recipe that converts iron to steel
+    // Remove all Electrodynamics steel production recipes
+    // Including the vanilla blast furnace recipe that converts iron to steel
     event.remove({ type: 'electrodynamics:mineral_crusher_recipe', output: 'electrodynamics:ingotsteel' });
     event.remove({ type: 'electrodynamics:mineral_grinder_recipe', output: 'electrodynamics:ingotsteel' });
     event.remove({ type: 'minecraft:blasting', output: 'electrodynamics:ingotsteel' });
     event.remove({ type: 'minecraft:smelting', output: 'electrodynamics:ingotsteel' });
+    // Also target the unified output in case output unification ran first
+    event.remove({ type: 'minecraft:blasting', id: /electrodynamics:.*steel.*/ });
+    event.remove({ type: 'minecraft:smelting', id: /electrodynamics:.*steel.*/ });
     // Remove any other Electrodynamics steel recipes
     event.remove({ mod: 'electrodynamics', output: 'electrodynamics:ingotsteel' });
     event.remove({ mod: 'electrodynamics', output: 'electrodynamics:nuggetsteel' });
@@ -20,6 +23,8 @@ ServerEvents.recipes(event => {
     // ==================== CREATE: GUNSMITHING (CGS) STEEL ====================
     // Remove the CGS superheated mixer recipe that produces steel from iron and coal dust
     event.remove({ type: 'create:mixing', output: 'cgs:steel_ingot' });
+    // Also target by recipe ID in case output unification ran first
+    event.remove({ type: 'create:mixing', id: /cgs:.*steel.*/ });
     // Remove any other CGS steel recipes
     event.remove({ mod: 'cgs', output: 'cgs:steel_ingot' });
     event.remove({ mod: 'cgs', output: 'cgs:steel_nugget' });

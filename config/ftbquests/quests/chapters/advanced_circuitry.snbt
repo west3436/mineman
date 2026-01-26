@@ -602,11 +602,20 @@
 			]
 			icon: "industrialforegoing:machine_frame_pity"
 			id: "1D5EE2D52125AF38"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "42DFDF8289236DAB"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4C9C053F837E1F3C"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6940EF78475C14EB"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Industrial automation unlocked"
 			tasks: [{
@@ -639,11 +648,20 @@
 			]
 			icon: "industrialforegoing:mob_crusher"
 			id: "6F888FB6FC5F5173"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "00195989EB95111C"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12F2BAF3AD8A44D5"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1681AEEC62D3E220"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Automated mob killing"
 			tasks: [{
 				id: "659B9FDD0BD440A3"
@@ -673,11 +691,20 @@
 			]
 			icon: "industrialforegoing:mob_duplicator"
 			id: "44A55AD983F19B67"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "457E201C08343AA8"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5FECEFC386B9B2B7"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3461F55F6F8512EC"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Mob spawning"
 			tasks: [
 				{
@@ -714,11 +741,20 @@
 			]
 			icon: "industrialforegoing:plant_sower"
 			id: "3FAE33D9C6958B63"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "26D946AF70E2F21C"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "307943F2574AEF77"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F94BA36E071ED4B"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Automated planting"
 			tasks: [{
 				id: "7D97F2015910FE13"
@@ -748,11 +784,20 @@
 			]
 			icon: "industrialforegoing:plant_gatherer"
 			id: "1E696F5F1E1ACB7F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "459864A84C271052"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "57B807FDCAA801BB"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "580902708CBCAB3E"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Automated harvesting"
 			tasks: [{
 				id: "042C4D1497C5231D"
@@ -781,11 +826,20 @@
 			]
 			icon: "industrialforegoing:resourceful_furnace"
 			id: "2EF079167157E522"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2A1B61539E1ADD68"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A71DDEF5EA9E9A7"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "35B21819E89FCF0B"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Resource processing"
 			tasks: [
 				{
@@ -819,11 +873,20 @@
 			]
 			icon: "industrialforegoing:latex_processing_unit"
 			id: "4BB718CFD3E8E5B4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "36B343E33910F765"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59E3C95F8ECA8B7A"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "792D69893221E730"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Latex extraction"
 			tasks: [{
 				id: "4E8346BE792CE6DD"
@@ -897,11 +960,20 @@
 			]
 			icon: "rftoolsutility:crafter1"
 			id: "193D52C28DE96246"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1CB8E4463F6998E7"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "161435521C151D81"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FB358DD8C2D921A"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Programmable crafting"
 			tasks: [{
 				id: "2681F42F41D23393"
@@ -975,11 +1047,20 @@
 			]
 			icon: "rftoolsbuilder:shape_card_quarry"
 			id: "08912F709E64223B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6A0E1382A4E2E24D"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A2612B96E8D7CF0"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "67841F3899AD7000"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Builder programming"
 			tasks: [{
 				id: "058C8DC700A2FF59"
@@ -1010,11 +1091,20 @@
 			]
 			icon: "rftoolsbuilder:shield_block1"
 			id: "6BB6C0C7727509C7"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "29A9819DC0CD9682"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "252796F8E0771886"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "748DCC088A39E631"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Force field protection"
 			tasks: [{
 				id: "1620391B8DEE3658"
@@ -1045,11 +1135,20 @@
 			]
 			icon: "xnet:controller"
 			id: "49C639FD0FD1CAAF"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "093049F86DA89E87"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B919944350A9C9C"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0520D155B792047B"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Advanced networking unlocked"
 			tasks: [{
@@ -1081,11 +1180,20 @@
 			]
 			icon: "xnet:connector_blue"
 			id: "06740BF3EC4C2161"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "59CF5C7608E339A2"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23A66F6C8CA4F3BF"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "139BAB7DD0ED28A8"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Machine connections"
 			tasks: [
 				{
@@ -1121,11 +1229,20 @@
 			]
 			icon: "xnet:router"
 			id: "2552E85F0923B3DB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3F12380C606CCC17"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33CBB1589E3DD569"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "628A78B0813D4E05"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Inter-network communication"
 			tasks: [{
@@ -1155,11 +1272,20 @@
 			]
 			icon: "ae2:controller"
 			id: "50624FE288CCBC3D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "290EC0830F386098"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F4928530F29DA49"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "01B3D0AD2C268753"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Digital storage unlocked"
 			tasks: [{
@@ -1191,11 +1317,20 @@
 			]
 			icon: "ae2:certus_quartz_crystal"
 			id: "290C55CBF59ACF06"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "796DC63EF0DEFAB5"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "57A1875C2EF52776"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79EC9E71B1AD0933"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Foundation crystals"
 			tasks: [
 				{
@@ -1232,11 +1367,20 @@
 			]
 			icon: "ae2:inscriber"
 			id: "7B0BCE9167CF7126"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "49898A19992B9FED"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "51CF6535EA06E7A9"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C07FC057EECED93"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Processor manufacturing"
 			tasks: [{
 				id: "66AD81D8CEDE276B"
@@ -1269,11 +1413,20 @@
 			]
 			icon: "ae2:engineering_processor"
 			id: "20CFC4DE5F207D70"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1ED372305D7164D7"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E9F4B998D8D5DD6"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F97F9BD57FD7115"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Digital brains"
 			tasks: [
 				{
@@ -1316,11 +1469,20 @@
 			]
 			icon: "ae2:controller"
 			id: "329A219C75DFF215"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "37D0D570218149E4"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A8DE71B2ECF8FBA"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B430D498DA42644"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Network brain"
 			tasks: [{
@@ -1352,11 +1514,20 @@
 			]
 			icon: "ae2:drive"
 			id: "4625ED1878D9E302"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4D2C88F7DE398FD1"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1730DB22ACDEB0A5"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1260B3CA0443582C"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Digital storage"
 			tasks: [
 				{
@@ -1396,11 +1567,20 @@
 			]
 			icon: "ae2:crafting_terminal"
 			id: "4EFDF894BCC3568C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0D8526FDF2A8D3C1"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "698E875D62ED67FE"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32D040E50290AB60"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			subtitle: "Network access"
 			tasks: [{
 				id: "780F90E5486379D1"
@@ -1435,11 +1615,20 @@
 			]
 			icon: "ae2:molecular_assembler"
 			id: "54B751684B7147A0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "58F47FDB50F69F05"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5508484ED846B2E3"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72EEB6FDCFD01289"
+					table_id: 2752173294576792022L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			subtitle: "On-demand crafting"
 			tasks: [

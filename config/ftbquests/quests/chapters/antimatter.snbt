@@ -28,8 +28,9 @@
 			id: "711D0E39865BE2B4"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "1CE42A8CEDEAED4C"
-				type: "choice"
+				id: "4A47EF169A822E50"
+				table_id: 3714730046923853181L
+				type: "random"
 			}]
 			shape: "hexagon"
 			subtitle: "Enter the age of nuclear power"
@@ -43,38 +44,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["711D0E39865BE2B4"]
-			description: [
-				"The &6Mineral Crusher&r is Electrodynamics' ore processing machine."
-				""
-				"Features:"
-				"• Crushes ores into dusts (2x output)"
-				"• Works with all standard ores"
-				"• First step in ore multiplication"
-				""
-				"This machine is essential for processing uranium ore later!"
-				""
-				"&7Start your Electrodynamics journey with efficient ore processing.&r"
-			]
-			icon: "electrodynamics:mineralcrusher"
-			id: "656412DD4B598B30"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "39D87DCE4FACCD1A"
-				type: "choice"
-			}]
-			subtitle: "Ore multiplication begins"
-			tasks: [{
-				id: "47702F7FF8084104"
-				item: "electrodynamics:mineralcrusher"
-				type: "item"
-			}]
-			title: "Mineral Crusher"
-			x: -1.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["711D0E39865BE2B4"]
+			dependencies: ["1DDCF82DEF7EE12E"]
 			description: [
 				"The &6Wire Mill&r creates wires from ingots - essential for electrical components."
 				""
@@ -92,11 +62,20 @@
 			]
 			icon: "electrodynamics:wiremill"
 			id: "1CF591C93E381094"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "63AB20282ED71A8F"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "44A6E8B943836FDB"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "707AF33B1DEF3E22"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			subtitle: "Wire production"
 			tasks: [{
 				id: "01C71298CAC57894"
@@ -106,140 +85,6 @@
 			title: "Wire Mill"
 			x: 1.5d
 			y: -4.5d
-		}
-		{
-			dependencies: ["1CF591C93E381094"]
-			description: [
-				"&6Copper Coils&r are fundamental electrical components."
-				""
-				"Uses:"
-				"• Motors and generators"
-				"• Transformers"
-				"• Electromagnetic devices"
-				""
-				"Creation:"
-				"• Wire Mill produces copper wire"
-				"• Craft wire around an iron ingot"
-				""
-				"Stock up - you'll need many coils for advanced machines!"
-				""
-				"&7The building block of electrical machinery.&r"
-			]
-			icon: "electrodynamics:coil"
-			id: "53E42D1D003AFEE1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "03279DAAAC34AE55"
-				type: "choice"
-			}]
-			subtitle: "Electrical components"
-			tasks: [{
-				count: 16L
-				id: "07238E31A6AE7E05"
-				item: {
-					Count: 16
-					id: "electrodynamics:coil_copper"
-				}
-				type: "item"
-			}]
-			title: "Copper Coils"
-			x: 1.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["53E42D1D003AFEE1"]
-			description: [
-				"&6Motors&r convert electrical energy into mechanical motion."
-				""
-				"Motor types:"
-				"• &bAC Motor&r - Standard machines"
-				"• &bDC Motor&r - Variable speed control"
-				""
-				"Motors are required for:"
-				"• Conveyor systems"
-				"• Centrifuges"
-				"• Most Electrodynamics machines"
-				""
-				"&7Power your machines with rotational force!&r"
-			]
-			icon: "electrodynamics:motor"
-			id: "6B4A56FCDD961C24"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "37BF56DFF75AD8C1"
-				type: "choice"
-			}]
-			subtitle: "Rotational power"
-			tasks: [
-				{
-					count: 4L
-					id: "1ED7459B406E823D"
-					item: {
-						Count: 4
-						id: "electrodynamics:motor_ac"
-					}
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6270D01576EFB853"
-					item: {
-						Count: 4
-						id: "electrodynamics:motor_dc"
-					}
-					type: "item"
-				}
-			]
-			title: "Electric Motors"
-			x: 3.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["53E42D1D003AFEE1"]
-			description: [
-				"&6Electrodynamics Circuits&r are tiered components for machines."
-				""
-				"Circuit tiers:"
-				"• &bBasic Circuit&r - Entry-level machines"
-				"• &bAdvanced Circuit&r - Mid-tier machines"
-				"• &bElite Circuit&r - High-end machines"
-				""
-				"Each tier requires the previous tier plus additional materials."
-				""
-				"&7The brains of your electrical devices!&r"
-			]
-			icon: "electrodynamics:circuitbasic"
-			id: "49C8B21442805F19"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1412E0BB75B48AD1"
-				type: "choice"
-			}]
-			shape: "diamond"
-			subtitle: "Machine intelligence"
-			tasks: [
-				{
-					count: 8L
-					id: "3CB8860A974E8A95"
-					item: {
-						Count: 8
-						id: "electrodynamics:circuit_basic"
-					}
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "74643D312459D89B"
-					item: {
-						Count: 4
-						id: "electrodynamics:circuit_advanced"
-					}
-					type: "item"
-				}
-			]
-			title: "Electrodynamics Circuits"
-			x: 3.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["711D0E39865BE2B4"]
@@ -260,24 +105,29 @@
 			]
 			icon: "immersiveengineering:raw_uranium"
 			id: "219042873A3AA8CF"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "732504F295E97B0A"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1797582A5493CABE"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00BC86BA24BD2210"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "The nuclear fuel"
 			tasks: [{
-				count: 32L
-				id: "50A49E023D8A7158"
-				item: {
-					Count: 32
-					id: "nuclearscience:ore_uranium"
-				}
+				id: "4D88FFDC01486E9D"
+				item: "immersiveengineering:raw_uranium"
 				type: "item"
 			}]
 			title: "Uranium Mining"
-			x: 0.0d
+			x: -2.5d
 			y: -4.5d
 		}
 		{
@@ -306,41 +156,77 @@
 				}
 			}
 			id: "0E4C561B688DB960"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7FB39FC00C3B8EED"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2E03E900604AA588"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "48BD114A53A4F957"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Radiation protection"
 			tasks: [
 				{
-					id: "6188797B478CE0D7"
-					item: "nuclearscience:hazmat_helmet"
+					id: "134B9D133E229DB8"
+					item: {
+						Count: 1
+						id: "nuclearscience:hazmathelmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "698AEC8EC891C040"
-					item: "nuclearscience:hazmat_chestplate"
+					id: "7519554F321EC39B"
+					item: {
+						Count: 1
+						id: "nuclearscience:hazmatplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "75145B9F287C90C6"
-					item: "nuclearscience:hazmat_leggings"
+					id: "4123B05B6F6CCC66"
+					item: {
+						Count: 1
+						id: "nuclearscience:hazmatlegs"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "6ADCB6A76D12C5C2"
-					item: "nuclearscience:hazmat_boots"
+					id: "52F3DE9F939C3021"
+					item: {
+						Count: 1
+						id: "nuclearscience:hazmatboots"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
 			title: "Hazmat Suit"
-			x: -1.5d
-			y: -3.0d
+			x: -3.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["6B4A56FCDD961C24"]
+			dependencies: [
+				"6C77E32B34A8F8F6"
+				"1CF591C93E381094"
+			]
 			description: [
 				"The &6Chemical Extractor&r processes uranium ore into usable isotopes."
 				""
@@ -355,23 +241,35 @@
 			]
 			icon: "nuclearscience:chemicalextractor"
 			id: "23B3EE84F4FA86EA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "733E668E4064008A"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "11AB3207E205C6A9"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A54D4D4269EFD09"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			subtitle: "Uranium processing"
 			tasks: [{
-				id: "7AEB7DA0718739B2"
-				item: "nuclearscience:chemical_extractor"
+				id: "152DF9811006D74F"
+				item: "nuclearscience:chemicalextractor"
 				type: "item"
 			}]
 			title: "Chemical Extractor"
-			x: 3.0d
-			y: 0.0d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["23B3EE84F4FA86EA"]
+			dependencies: [
+				"23B3EE84F4FA86EA"
+				"51D05B4E412FEB23"
+			]
 			description: [
 				"The &6Gas Centrifuge&r separates uranium isotopes by mass."
 				""
@@ -388,15 +286,24 @@
 			]
 			icon: "nuclearscience:gascentrifuge"
 			id: "281084CAF20F8BFE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4A07DF6EE8A04565"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7C17DDE202247D07"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55EA9C49E35A7405"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			subtitle: "Isotope enrichment"
 			tasks: [{
-				id: "07BD3736BDCD74D4"
-				item: "nuclearscience:gas_centrifuge"
+				id: "593282DAEA2EC5B5"
+				item: "nuclearscience:gascentrifuge"
 				type: "item"
 			}]
 			title: "Gas Centrifuge"
@@ -426,11 +333,20 @@
 				}
 			}
 			id: "4E383308BD491153"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "794349C482AA871D"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F48AC525B86BA13"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "322B2BF6F42D9D2B"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Reactor fuel"
 			tasks: [{
@@ -446,15 +362,11 @@
 				type: "item"
 			}]
 			title: "Nuclear Fuel Cells"
-			x: 0.0d
+			x: -2.5d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"4E383308BD491153"
-				"0E4C561B688DB960"
-				"281084CAF20F8BFE"
-			]
+			dependencies: ["281084CAF20F8BFE"]
 			description: [
 				"The &6Fission Reactor&r generates massive amounts of power through nuclear fission."
 				""
@@ -472,69 +384,41 @@
 			]
 			icon: "nuclearscience:fissionreactorcore"
 			id: "68AD835533043AD0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "297120CE5C9D2D24"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "127D968A7725E59E"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16F441D41232EA98"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Nuclear power generation"
 			tasks: [
 				{
-					id: "140D907C10AF6E65"
-					item: "nuclearscience:reactor_core"
+					id: "312A3B9F3C019B7D"
+					item: "nuclearscience:fissionreactorcore"
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "481A50837FF07CA1"
-					item: {
-						Count: 4
-						id: "nuclearscience:control_rod_assembly"
-					}
+					id: "38CF27600D5C107E"
+					item: { Count: 4, id: "nuclearscience:fissioncontrolrod" }
 					type: "item"
 				}
 			]
 			title: "Fission Reactor"
-			x: 0.0d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["68AD835533043AD0"]
-			description: [
-				"&6Steam Turbines&r convert reactor heat into usable electricity."
-				""
-				"Setup:"
-				"• Reactor heats water → steam"
-				"• Steam drives turbines"
-				"• Turbines generate massive RF/FE"
-				""
-				"A properly configured reactor with turbines produces more power than almost any other source."
-				""
-				"Consider multiple turbine stages for maximum efficiency."
-				""
-				"&7Turn nuclear heat into electrical power!&r"
-			]
-			icon: "nuclearscience:turbine"
-			id: "4C1153CC3EC9455E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "010D120055574128"
-				type: "choice"
-			}]
-			subtitle: "Power conversion"
-			tasks: [{
-				count: 4L
-				id: "41D85C1D3C905B98"
-				item: { Count: 4, id: "nuclearscience:turbine" }
-				type: "item"
-			}]
-			title: "Steam Turbines"
-			x: -1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["68AD835533043AD0"]
+			dependencies: ["238A3F052D40F9FA"]
 			description: [
 				"The &6Particle Accelerator&r uses electromagnetic fields to accelerate particles to near light speed."
 				""
@@ -554,67 +438,37 @@
 			]
 			icon: "nuclearscience:particleinjector"
 			id: "203C61C6315CFF17"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "167360D3AD327E51"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53CE45C0C2F31489"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D365E4E5C609DF1"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "Particle physics"
 			tasks: [{
-				id: "2ECA066464ABED26"
-				item: "nuclearscience:particle_injector"
+				id: "6801A9FB73515711"
+				item: "nuclearscience:particleinjector"
 				type: "item"
 			}]
 			title: "Particle Accelerator"
-			x: 1.5d
-			y: 0.0d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["203C61C6315CFF17"]
-			description: [
-				"&6Electromagnetic Containment&r uses powerful magnets to contain particles."
-				""
-				"Components:"
-				"• &bElectromagnets&r - Create containment field"
-				"• &bElectromagnetic Booster&r - Increase field strength"
-				"• &bElectromagnetic Switch&r - Control particle flow"
-				""
-				"Proper containment is essential for:"
-				"• Particle acceleration"
-				"• Antimatter storage"
-				"• Preventing catastrophic release"
-				""
-				"&cAntimatter release causes massive explosions!&r"
+			dependencies: [
+				"01600141BF46B2EF"
+				"5B43C2B7F7886645"
+				"203C61C6315CFF17"
 			]
-			icon: "nuclearscience:electromagnet"
-			id: "68BC891DAE0D066D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6036171088C8093A"
-				type: "choice"
-			}]
-			subtitle: "Magnetic containment"
-			tasks: [
-				{
-					count: 16L
-					id: "199F518AAC320F4D"
-					item: { Count: 16, id: "nuclearscience:electromagnet" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "0890A0A4FF827029"
-					item: { Count: 4, id: "nuclearscience:electromagneticbooster" }
-					type: "item"
-				}
-			]
-			title: "Electromagnetic Containment"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["68BC891DAE0D066D"]
 			description: [
 				"&d&lANTIMATTER&r"
 				""
@@ -636,11 +490,20 @@
 			]
 			icon: "nuclearscience:cellantimatterverylarge"
 			id: "310D6D899C40AAB4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "48682F26F2545009"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "11B070DD5639DE16"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6200D59B87AC36F9"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			subtitle: "Matter's opposite"
 			tasks: [{
@@ -650,7 +513,7 @@
 			}]
 			title: "Antimatter"
 			x: 0.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["310D6D899C40AAB4"]
@@ -700,7 +563,7 @@
 			}]
 			title: "Dark Matter"
 			x: 0.0d
-			y: 6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["310D6D899C40AAB4"]
@@ -724,11 +587,20 @@
 			]
 			icon: "fluxnetworks:flux_controller"
 			id: "543F7115B151F277"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5047A1BA11C7C124"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2541DED73A138EF2"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6990815749336176"
+					table_id: 6836742599149914741L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Wireless energy unlocked"
 			tasks: [{
@@ -737,87 +609,8 @@
 				type: "item"
 			}]
 			title: "Flux Networks"
-			x: -1.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["543F7115B151F277"]
-			description: [
-				"&6Flux Plugs&r insert energy into the Flux network."
-				""
-				"Setup:"
-				"• Place next to energy source"
-				"• Connect to network via GUI"
-				"• Configure priority and limits"
-				""
-				"&6Flux Points&r extract energy from the network."
-				""
-				"Setup:"
-				"• Place next to machine needing power"
-				"• Connect to same network"
-				"• Configure priority and limits"
-				""
-				"&7Input and output - the flow of energy!&r"
-			]
-			icon: "fluxnetworks:flux_plug"
-			id: "44610A9088747E0C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "300C7150C4DEA96F"
-				type: "choice"
-			}]
-			subtitle: "Energy I/O"
-			tasks: [
-				{
-					count: 4L
-					id: "1C58CC259118953A"
-					item: { Count: 4, id: "fluxnetworks:flux_plug" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "400552EFFDF7AE08"
-					item: { Count: 4, id: "fluxnetworks:flux_point" }
-					type: "item"
-				}
-			]
-			title: "Plugs  Points"
-			x: -3.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["47B83E6B6602C862"]
-			description: [
-				"The &6Flux Storage&r block stores energy within the network."
-				""
-				"Tiers:"
-				"• Basic - 2M FE"
-				"• Herculean - 8M FE"
-				"• Gargantuan - 32M FE"
-				""
-				"Features:"
-				"• Accessible from any network point"
-				"• Buffer for production/consumption"
-				"• Surge protection"
-				""
-				"&7Centralized energy storage!&r"
-			]
-			icon: "fluxnetworks:basic_flux_storage"
-			id: "0F4574C6C9055281"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2DB3DFC02DA070AE"
-				type: "choice"
-			}]
-			subtitle: "Network energy storage"
-			tasks: [{
-				id: "6D93FEB64E542400"
-				item: "fluxnetworks:basic_flux_storage"
-				type: "item"
-			}]
-			title: "Flux Storage"
-			x: -3.0d
-			y: 3.5d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["310D6D899C40AAB4"]
@@ -838,11 +631,20 @@
 			]
 			icon: "hostilenetworks:sim_chamber"
 			id: "47B83E6B6602C862"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "203518F516F90976"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "48D375550BE09900"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6097433A081D3DB6"
+					table_id: 6836742599149914741L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Mob simulation unlocked"
 			tasks: [{
@@ -853,85 +655,6 @@
 			title: "Hostile Neural Networks"
 			x: -1.5d
 			y: 3.5d
-		}
-		{
-			dependencies: ["30587236E7C43002"]
-			description: [
-				"&6Data Models&r store information about mob types."
-				""
-				"Creation:"
-				"• Craft blank Data Model"
-				"• Combine with mob drop to create typed model"
-				"• Kill mobs with model in inventory to train"
-				""
-				"Tiers:"
-				"• Faulty → Basic → Advanced → Superior → Self-Aware"
-				""
-				"Higher tiers provide:"
-				"• Better simulation success rate"
-				"• More drops per simulation"
-				""
-				"&7Train your models for maximum efficiency!&r"
-			]
-			icon: "hostilenetworks:blank_data_model"
-			id: "71CBAD65ED2CE63C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "3927E43438A440D2"
-				type: "choice"
-			}]
-			subtitle: "Mob data storage"
-			tasks: [
-				{
-					count: 4L
-					id: "69C27EA01FD3EFC0"
-					item: { Count: 4, id: "hostilenetworks:blank_data_model" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "1E2B6C1FF2FE1E6A"
-					item: { Count: 4, id: "hostilenetworks:prediction_matrix" }
-					type: "item"
-				}
-			]
-			title: "Data Models"
-			x: -3.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["47B83E6B6602C862"]
-			description: [
-				"The &6Loot Fabricator&r converts prediction results into actual items."
-				""
-				"Process:"
-				"• Simulation Chamber produces Predictions"
-				"• Predictions contain mob drop data"
-				"• Loot Fabricator materializes the drops"
-				""
-				"Select which drops to fabricate from the GUI."
-				""
-				"Combine with automation for passive mob farms!"
-				""
-				"&7Turn data into loot!&r"
-			]
-			icon: "hostilenetworks:loot_fabricator"
-			id: "30587236E7C43002"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "15953138ADA860D9"
-				type: "choice"
-			}]
-			shape: "diamond"
-			subtitle: "Prediction materialization"
-			tasks: [{
-				id: "7AF94CE6FD37017A"
-				item: "hostilenetworks:loot_fabricator"
-				type: "item"
-			}]
-			title: "Loot Fabricator"
-			x: -1.5d
-			y: 5.0d
 		}
 		{
 			dependencies: ["310D6D899C40AAB4"]
@@ -955,11 +678,20 @@
 			]
 			icon: "modularforcefields:fortronfieldprojector"
 			id: "1857EB7971A936AB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "67A9C6EF7EA0B6D4"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "74ACB7554BB37029"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72AED02754DFB58A"
+					table_id: 6836742599149914741L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Force fields unlocked"
 			tasks: [{
@@ -969,87 +701,6 @@
 			}]
 			title: "Modular Force Fields"
 			x: 1.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1857EB7971A936AB"]
-			description: [
-				"&6Fortron&r is the energy that powers force fields."
-				""
-				"Generation:"
-				"• &bCoercion Deriver&r converts FE to Fortron"
-				"• Requires Fortron Capacitor for storage"
-				""
-				"The more Fortron available, the larger and stronger your fields can be."
-				""
-				"Consider multiple derivers for large installations."
-				""
-				"&7The fuel of force fields!&r"
-			]
-			icon: "modularforcefields:interdictionmatrix"
-			id: "17126A8886AC2C12"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5E3278B280E67A62"
-				type: "choice"
-			}]
-			subtitle: "Field energy"
-			tasks: [
-				{
-					id: "2DE91DD650FF7802"
-					item: "modularforcefieldsystems:coercion_deriver"
-					type: "item"
-				}
-				{
-					id: "029945BC1BE881CC"
-					item: "modularforcefieldsystems:fortron_capacitor"
-					type: "item"
-				}
-			]
-			title: "Fortron Generation"
-			x: 3.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["17126A8886AC2C12"]
-			description: [
-				"&6Field Modules&r customize how your force fields behave."
-				""
-				"Shape modules:"
-				"• Cube, Sphere, Tube, Pyramid"
-				"• Custom shapes possible"
-				""
-				"Effect modules:"
-				"• &bDisintegration&r - Destroy blocks/items"
-				"• &bCamouflage&r - Appear as other blocks"
-				"• &bShock&r - Damage entities"
-				"• &bSponge&r - Remove water"
-				""
-				"&7Customize your protection!&r"
-			]
-			icon: "modularforcefields:coercionderiver"
-			id: "6B947DD3ABE9B13D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7B0A205AAC215DBB"
-				type: "choice"
-			}]
-			shape: "diamond"
-			subtitle: "Field customization"
-			tasks: [
-				{
-					id: "569C778A1FE3743A"
-					item: "modularforcefieldsystems:module_cube"
-					type: "item"
-				}
-				{
-					id: "3D1B737E5D06ED60"
-					item: "modularforcefieldsystems:module_sphere"
-					type: "item"
-				}
-			]
-			title: "Field Modules"
-			x: 3.0d
 			y: 3.5d
 		}
 		{
@@ -1073,11 +724,20 @@
 			]
 			icon: "compactmachines:machine_normal"
 			id: "629E46246CDEEFD4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "03EBE71FA2FFA4BA"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "367B00D868163995"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1CFD2213072B6C71"
+					table_id: 6836742599149914741L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Pocket dimensions unlocked"
 			tasks: [{
@@ -1087,46 +747,7 @@
 			}]
 			title: "Compact Machines"
 			x: -1.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["629E46246CDEEFD4"]
-			description: [
-				"&6Tunnels&r connect your compact machine to the outside world."
-				""
-				"Tunnel types:"
-				"• &bItem Tunnel&r - Move items"
-				"• &bFluid Tunnel&r - Transfer fluids"
-				"• &bEnergy Tunnel&r - Power transfer"
-				"• &bRedstone Tunnel&r - Signal transfer"
-				""
-				"Place tunnels on the inner walls to connect to the corresponding side of the outer block."
-				""
-				"&7Bridge two dimensions!&r"
-			]
-			icon: {
-				Count: 1
-				id: "compactmachines:tunnel"
-				tag: {
-					definition: { }
-				}
-			}
-			id: "1FD992818A0BDF3F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "78292EB9F6ACC0EC"
-				type: "choice"
-			}]
-			subtitle: "Dimensional connections"
-			tasks: [{
-				count: 6L
-				id: "6B535717A31BDA58"
-				item: { Count: 6, id: "compactmachines:tunnel" }
-				type: "item"
-			}]
-			title: "Tunnels"
-			x: -3.0d
-			y: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["796137AC991E055F"]
@@ -1151,11 +772,20 @@
 			]
 			icon: "rftoolsdim:dimension_builder"
 			id: "08F4E0CC88824BB7"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7F9339C33EFEDBAE"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E9625D2D5A7FE68"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "42183E4E8217E530"
+					table_id: 6836742599149914741L
+					type: "random"
+				}
+			]
 			shape: "square"
 			subtitle: "Custom dimensions unlocked"
 			tasks: [{
@@ -1165,75 +795,7 @@
 			}]
 			title: "RFTools Dimensions"
 			x: 1.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["08F4E0CC88824BB7"]
-			description: [
-				"&6Dimlets&r are items that define dimension properties."
-				""
-				"Dimlet types:"
-				"• &bTerrain&r - World shape (flat, normal, etc)"
-				"• &bBiome&r - What biomes generate"
-				"• &bMaterial&r - Block composition"
-				"• &bFeature&r - Special traits"
-				"• &bTime&r - Day/night cycle"
-				""
-				"Combine dimlets in the Dimension Builder to create unique worlds."
-				""
-				"Rare dimlets can create ore-rich dimensions!"
-				""
-				"&7Customize your reality!&r"
-			]
-			icon: "rftoolsdim:dimlet_workbench"
-			id: "7DC9513DDB4260BA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "359ECAE8E3C87E69"
-				type: "choice"
-			}]
-			subtitle: "Dimension building blocks"
-			tasks: [{
-				id: "1C841F43D4A8D27F"
-				item: "rftoolsdim:dimlet_workbench"
-				type: "item"
-			}]
-			title: "Dimlet Crafting"
-			x: 3.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["7DC9513DDB4260BA"]
-			description: [
-				"The &6Dimension Enscriber&r programs dimension tabs with your dimlet configuration."
-				""
-				"Process:"
-				"1. Insert Empty Dimension Tab"
-				"2. Add desired dimlets"
-				"3. Inscribe to create programmed tab"
-				"4. Use tab in Dimension Builder"
-				""
-				"Dimension tabs can be reused if dimension is disassembled."
-				""
-				"&7Define your dimension's properties!&r"
-			]
-			icon: "rftoolsdim:enscriber"
-			id: "7C4BD9A3863C8AF3"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "63E2D26433000033"
-				type: "choice"
-			}]
-			shape: "diamond"
-			subtitle: "Program dimension tabs"
-			tasks: [{
-				id: "16136ED3A36DDCFF"
-				item: "rftoolsdim:dimension_enscriber"
-				type: "item"
-			}]
-			title: "Dimension Enscriber"
-			x: 3.0d
-			y: 8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["796137AC991E055F"]
@@ -1256,11 +818,73 @@
 			]
 			icon: "minecraft:nether_star"
 			id: "0C026E1191755472"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5FDA23292FC8E921"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					id: "5CA3CDB08680EEAA"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CEDC676DD4255AD"
+					table_id: 1873497444986126416L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7EE354A6EAA14FE4"
+					table_id: 2595075932841495862L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47EE0BDBA09A18BC"
+					table_id: 4541517719983350966L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "25C414340D539FDA"
+					table_id: 3026418949592973360L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E01FE7CFA203AEF"
+					table_id: 3026418949592973328L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A7EC3F541C3487D"
+					table_id: 3026418949592973344L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F1EACF82A12CBB0"
+					table_id: 4179340454199820304L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6F9DF8DE10299AF0"
+					table_id: 2752173294576792022L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "215C50F4F92D680E"
+					table_id: 7498256829066222705L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40CD457BDBAFAE02"
+					table_id: 6836742599149914741L
+					type: "choice"
+				}
+			]
 			shape: "gear"
 			subtitle: "You've mastered everything!"
 			tasks: [{
@@ -1270,7 +894,224 @@
 			}]
 			title: "Tech Master"
 			x: 0.0d
-			y: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["711D0E39865BE2B4"]
+			id: "1DDCF82DEF7EE12E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "40F62C547D0727A3"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3A1FE3B4DD39DBA8"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "65355B61F9C93C78"
+				item: "electrodynamics:circuitbasic"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1DDCF82DEF7EE12E"]
+			id: "6C77E32B34A8F8F6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2B13CC81500841EB"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4346E1441FC49013"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "06291412C017A0EC"
+				item: "electrodynamics:circuitadvanced"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C77E32B34A8F8F6"]
+			id: "51D05B4E412FEB23"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F3E47A355E60474"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58EC5188FCE9FEB1"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "47A4497212197727"
+				item: "electrodynamics:circuitelite"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51D05B4E412FEB23"]
+			id: "01600141BF46B2EF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6403285A8F67AC0E"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "069AD7E2B1331FBD"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "40204A063CEA6A48"
+				item: "electrodynamics:circuitultimate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"01600141BF46B2EF"
+				"68AD835533043AD0"
+			]
+			id: "238A3F052D40F9FA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6C92FF117FE962BB"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5FCDC5578E15F276"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6828F8F3BD0475D6"
+				item: "nuclearscience:fusionreactorcore"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1090EB5478198DE0"]
+			id: "4EB5C4252D154BA2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B93B9F9D4928828"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0EF5659604E81A03"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0A29A7574FD78BED"
+				item: "nuclearscience:celldeuterium"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1090EB5478198DE0"]
+			id: "60FAC77C4C0E39AE"
+			tasks: [{
+				id: "6EFB4A0CDE76365B"
+				item: "nuclearscience:celltritium"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E383308BD491153"]
+			id: "1090EB5478198DE0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2AFA049E9CBB5A49"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B2CEE2E86B04F64"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4E5F068F6A23E342"
+				item: "nuclearscience:cellheavywater"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"60FAC77C4C0E39AE"
+				"4EB5C4252D154BA2"
+			]
+			id: "5B43C2B7F7886645"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "17921A627F350E1D"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "012F248C5277D64A"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "1134ADCBC8C23F9F"
+				item: "nuclearscience:cellelectromagnetic"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
 		}
 	]
 	title: "Antimatter"

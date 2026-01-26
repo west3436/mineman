@@ -220,6 +220,9 @@ JEIEvents.hideItems(event => {
 
         // ==================== GRAPHITE ELECTRODE (Primary: IE) ====================
         'tfmg:graphite_electrode',
+
+        // ==================== SPONGE IRON (Removed) ====================
+        'industrialrenewal:sponge_iron',
     ];
 
     hiddenItems.forEach(item => {

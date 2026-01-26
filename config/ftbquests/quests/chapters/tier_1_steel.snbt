@@ -21,12 +21,20 @@
 			icon: "minecraft:lever"
 			id: "26B00CB3FBFE4163"
 			max_completable_dependents: 1
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "24A9E09A57AE315F"
-				table_id: 3714730046923853181L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "24A9E09A57AE315F"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57A2CB686103D908"
+					table_id: 3592955410469975537L
+					type: "all_table"
+				}
+			]
 			shape: "gear"
 			subtitle: "Two paths diverge..."
 			tasks: [{

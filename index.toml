@@ -30,63 +30,31 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "a609b82881a37f23a54350e1cd88f9e5ecfe7405cc0850399cab71698e30fe3e"
+hash = "13cc1010e63aba34661abd3a029f7bcdc224bce61472b64f5fef9ce103a3d4d4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
-hash = "fc47518976d73d5253ea9a7543bd7fbab50ed5f7f17b56cf0ae1400023109a04"
+hash = "4aec00ff0c3c69a9c08f0d9406df0c2b1f8b6a5f66b5c0be7345c47991ed0817"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
 hash = "4f7e10db47ec86263cfebd7c138eddee8fad17c5e15bb0a8874f4402e584f7bd"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/minecolonies.snbt"
-hash = "c11cacf8a6b979a9d21294291bf82af376a74524b25dc849a04be042801c02be"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/side_quests.snbt"
-hash = "d03a42113d1616a63a903a72d7400bf381585441da6acf72a825028023a0a3cc"
-
-[[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
-hash = "be6a5d455d0f76825d365d87992cc39410383b439d189d333ca73d55947e4d7b"
+hash = "78976fead3ea39481c8bdf86b277f6a44a4b4c69cecbc8b7acbfd8a620c173c7"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/minecolonies.snbt"
-hash = "d6db5b37153c651f76761e8b975dc631b5f220b156766518c9df9d12961b4c33"
-
-[[files]]
 file = "config/ftbquests/quests/reward_tables/money.snbt"
 hash = "51eb3222d17f9a368bfc5b043377f6c142ac2f244d25a017257ec9ec82b58425"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/sq_agricraft.snbt"
-hash = "84f7bd251caa37bf697a6e514f7958e1a556a0be974372d4d371de7750cfef74"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/sq_decorations.snbt"
-hash = "9d0f81ff7fab8037fafd12813059c57f71eb303a95fc3e9f0bc654dfe8b330f3"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/sq_exploration.snbt"
-hash = "5fc511857bd19025db6e9eab896e288a191aa957937ca964591d9b4369a4a957"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/sq_farmersdelight.snbt"
-hash = "2643e31b6cd958f5b10bb26af65d18e14a514b96b81cf8f96a7594f7acfcb3fb"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/sq_growthcraft.snbt"
-hash = "376c8d879c9604686747e4f4167c2771db200ab71403b17a148cfe0aa54950d6"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/sq_untamedwilds.snbt"
-hash = "b2fd3193a2a238890d6dca5e51eb55cb85aa19d5c52223e65b37f618cb7a51c5"
+file = "config/ftbquests/quests/reward_tables/start.snbt"
+hash = "340c38ab23e68b44338d6efcb110d17a3e29cc3378be88cd76fd305173f8efb2"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t1_bonus.snbt"
@@ -118,87 +86,15 @@ hash = "ea67d1107e2530dc679167fac49330fe3a71af19aaf14685c950e397d7601c22"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t3bonus.snbt"
-hash = "45b79d4f27725a40d39035663c80ba26571b938c62318f2a6f9c17e53986c028"
+hash = "d74ec88fb2ff43cad51c4008002ae1255ebb508c6e7a7cd76cf0cece36662098"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/t4_advanced.snbt"
-hash = "af13e472678977c7f81c227f14a0f03208b29e4fd6c710523e6407deb9bfba05"
+file = "config/ftbquests/quests/reward_tables/t4.snbt"
+hash = "952bbd2053459a93edf5145f58531f67af4d8cad62794ffd873515807804b26d"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/t4_ae2.snbt"
-hash = "1faf6b9e820666571454f8aa6d144cab02e354c1195721fb50e441f2ece128dd"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t4_basic.snbt"
-hash = "97da3acb1d355cd1c5019e2486804538c13ab4e87eefd0fd66a1257a363c8a65"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t4_elite.snbt"
-hash = "2bec72b3895540b013eade512ec44135132134c30973bf121a146bfc07d29667"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t4_industrialforegoing.snbt"
-hash = "8bf5625a33c3f9b6547c41f5af595d157ca00260e5081c0ef9a9ff3f55ff1d24"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t4_mekanism.snbt"
-hash = "e156a356332a6fad591571f12d87ef1ac2663b99d18d407f0475c2f10935ab04"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t4_rftools.snbt"
-hash = "94d0e3c49e59ffe5fc3392e95f63ca51c4b999b61dcf0261ce64d137976ea396"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t4_ultimate.snbt"
-hash = "9ecbf97621c79b58f32d344f9ebb53faeebd2d580bec008c742d059a9b91cef8"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t4_xnet.snbt"
-hash = "a073f087c8d0a95de05fee3bcdac1193c76bb4efe0346b5d421c6b0965d9229e"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_antimatter.snbt"
-hash = "1adc0613f255019c62c2efa6581d20c798afa7e6f7b1701699f8db046a03d4b9"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_compactmachines.snbt"
-hash = "89d832498bc5e40e9aa9d3cc8774ae1b3a1d11007a9548db0a7e498cb2a914c2"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_completion.snbt"
-hash = "8ea499403713721e37d5e40d1ef1baabaf49a8f5787bcd5cf7afa6cbf5e91706"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_darkmatter.snbt"
-hash = "3433f2180c253429c581a330835ad490a7736c9c6bda5cde7570264c1b12c883"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_electrodynamics.snbt"
-hash = "44abfe8fde2c4735d3d763164bc92ae6646bb8631b7ad27bf61e97dcbd1b5d28"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_fluxnetworks.snbt"
-hash = "6499392238f3140576cfcae485d054ccbf1930985d25ab7f70f38557f9cd22c3"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_hostileneuralnetworks.snbt"
-hash = "13ad4bcc48cd13b7376ad0c6c2f600f446559451568b078732b14abc4b6c4169"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_mffs.snbt"
-hash = "9122a1ff895c607a178ece2f6cf7c95051ae477e921843467f2af9fc861cc860"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_nuclear.snbt"
-hash = "ff2f5165d0b1fe85925c887abd85083683d1242d3ec8ae8a5f8deffef001fe59"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_particlephysics.snbt"
-hash = "f045a92dea7bb01d45bc470362af06e62e509f81ecd6323c262434557352454b"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/t5_rftoolsdim.snbt"
-hash = "eedaa11aecbf24c37e1659c3c92df8957a4823352811bedc49a4d83f2c23bf93"
+file = "config/ftbquests/quests/reward_tables/t4bonus.snbt"
+hash = "f06f1d4e2b521afc4f117a5c4fa88aec1a9d3807806386068d095c80f659cdc4"
 
 [[files]]
 file = "datapacks/unified_ores/README.md"
@@ -310,7 +206,7 @@ hash = "a4f172d6f9d1d0a6feb3b8d411084a0a6484f5c5af25f4328b2a6f6d7e5e4158"
 
 [[files]]
 file = "kubejs/client_scripts/unified_materials_jei.js"
-hash = "88816e52c9b9afdfdfe3cde3483daf37b4d53e03976153576ddfc3abccbaf606"
+hash = "88a3638d7d62b80d7731eeae7f652a97bf92e4fe51f45f09f41cfcc2010c05bd"
 
 [[files]]
 file = "kubejs/server_scripts/chapter1.js"
@@ -323,6 +219,10 @@ hash = "675b4ee68b7b531496ba4a43dfbbcf68538f563a31d345ba0d286fbe5f4268a1"
 [[files]]
 file = "kubejs/server_scripts/chapter3.js"
 hash = "34f5caed14d33641458c9f3287a785763ab12c64ccf478a558918e184ce68746"
+
+[[files]]
+file = "kubejs/server_scripts/chapter5.js"
+hash = "7f2872810dd568e1533414b02a61775b51aceb56d1d44729bc7d0d6c3f37ad05"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
@@ -362,7 +262,7 @@ hash = "2df748c91720deef91c117d3da8757887bb28b1a6271a6a07b2bca515007e38e"
 
 [[files]]
 file = "kubejs/server_scripts/unified_steel_removal.js"
-hash = "32f704a4cb1b9d782b8296b2cdf31aa5481724cc623fc33f9c858adf16b8b707"
+hash = "c1e0de7b386647be9ebb0e503320bec4dcfc9050dc4efb482e5deb864b1b2c6f"
 
 [[files]]
 file = "mods/acedium.pw.toml"
