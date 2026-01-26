@@ -802,7 +802,7 @@
 			description: [
 				"&6&lCONGRATULATIONS!&r"
 				""
-				"You have completed the &bTech Progression&r modpack!"
+				"You have completed &bGrugtech&r!"
 				""
 				"Your journey:"
 				"• Started with basic steel production"
@@ -898,6 +898,9 @@
 		}
 		{
 			dependencies: ["711D0E39865BE2B4"]
+			description: [
+				"Craft a &6Basic Circuit&r from Electrodynamics to begin electrical component manufacturing."
+			]
 			id: "1DDCF82DEF7EE12E"
 			rewards: [
 				{
@@ -918,11 +921,15 @@
 				item: "electrodynamics:circuitbasic"
 				type: "item"
 			}]
+			title: "Basic Circuit"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["1DDCF82DEF7EE12E"]
+			description: [
+				"Upgrade to an &6Advanced Circuit&r for higher-tier Electrodynamics machines."
+			]
 			id: "6C77E32B34A8F8F6"
 			rewards: [
 				{
@@ -943,11 +950,15 @@
 				item: "electrodynamics:circuitadvanced"
 				type: "item"
 			}]
+			title: "Advanced Circuit"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6C77E32B34A8F8F6"]
+			description: [
+				"Craft an &6Elite Circuit&r, needed for uranium enrichment equipment."
+			]
 			id: "51D05B4E412FEB23"
 			rewards: [
 				{
@@ -968,11 +979,15 @@
 				item: "electrodynamics:circuitelite"
 				type: "item"
 			}]
+			title: "Elite Circuit"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["51D05B4E412FEB23"]
+			description: [
+				"The &6Ultimate Circuit&r is the highest tier. Required for particle physics research."
+			]
 			id: "01600141BF46B2EF"
 			rewards: [
 				{
@@ -993,6 +1008,7 @@
 				item: "electrodynamics:circuitultimate"
 				type: "item"
 			}]
+			title: "Ultimate Circuit"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -1000,6 +1016,11 @@
 			dependencies: [
 				"01600141BF46B2EF"
 				"68AD835533043AD0"
+			]
+			description: [
+				"Build a &6Fusion Reactor&r combining ultimate circuits with fission technology."
+				""
+				"Fusion produces far more energy than fission but requires deuterium and tritium fuel."
 			]
 			id: "238A3F052D40F9FA"
 			rewards: [
@@ -1021,11 +1042,15 @@
 				item: "nuclearscience:fusionreactorcore"
 				type: "item"
 			}]
+			title: "Fusion Reactor"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1090EB5478198DE0"]
+			description: [
+				"Process heavy water to isolate &6Deuterium&r, one of two hydrogen isotopes needed for fusion."
+			]
 			id: "4EB5C4252D154BA2"
 			rewards: [
 				{
@@ -1046,22 +1071,44 @@
 				item: "nuclearscience:celldeuterium"
 				type: "item"
 			}]
+			title: "Deuterium"
 			x: -3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1090EB5478198DE0"]
+			description: [
+				"Process heavy water to isolate &6Tritium&r, the second hydrogen isotope needed for fusion."
+			]
 			id: "60FAC77C4C0E39AE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "60FAC77C4C0E39AF"
+					table_id: 3714730046923853181L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60FAC77C4C0E39B0"
+					table_id: 7498256829066222705L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "6EFB4A0CDE76365B"
 				item: "nuclearscience:celltritium"
 				type: "item"
 			}]
+			title: "Tritium"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4E383308BD491153"]
+			description: [
+				"Extract &6Heavy Water&r from regular water. It contains deuterium, essential for fusion fuel."
+			]
 			id: "1090EB5478198DE0"
 			rewards: [
 				{
@@ -1082,6 +1129,7 @@
 				item: "nuclearscience:cellheavywater"
 				type: "item"
 			}]
+			title: "Heavy Water"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -1089,6 +1137,9 @@
 			dependencies: [
 				"60FAC77C4C0E39AE"
 				"4EB5C4252D154BA2"
+			]
+			description: [
+				"Combine deuterium and tritium into an &6Electromagnetic Cell&r for particle acceleration."
 			]
 			id: "5B43C2B7F7886645"
 			rewards: [
@@ -1110,6 +1161,7 @@
 				item: "nuclearscience:cellelectromagnetic"
 				type: "item"
 			}]
+			title: "Electromagnetic Cell"
 			x: -2.5d
 			y: 1.5d
 		}

@@ -594,6 +594,11 @@
 		}
 		{
 			dependencies: ["32F58E5D138FF435"]
+			description: [
+				"The &6Surface Scanner&r detects oil deposits visible at bedrock level."
+				""
+				"Scan the ground to locate dark oil patches, then set up extraction."
+			]
 			id: "7CCC42AA3CBF49AB"
 			rewards: [
 				{
@@ -609,11 +614,13 @@
 					type: "random"
 				}
 			]
+			subtitle: "Find oil beneath your feet"
 			tasks: [{
 				id: "4F1F8B264153AD9C"
 				item: "tfmg:surface_scanner"
 				type: "item"
 			}]
+			title: "Surface Scanner"
 			x: -1.5d
 			y: -2.5d
 		}
@@ -622,7 +629,11 @@
 				"29EDE1F26155780C"
 				"063F6EC37C7309F5"
 			]
-			description: ["Mix Naphtha in a heated Chemical Vat to produce Propylene and Ethylene. Either chemical can then be processed in another heated Chemical Vat to produce Molten Plastic."]
+			description: [
+				"Heat Naphtha in a &6Chemical Vat&r to produce Propylene or Ethylene."
+				""
+				"Process either chemical in a second heated vat to produce Molten Plastic."
+			]
 			id: "029A0307E8D20442"
 			rewards: [
 				{
@@ -663,6 +674,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "Naphtha to plastic"
 			title: "Chemical Vat"
 			x: -2.0d
 			y: 1.5d
@@ -672,7 +684,11 @@
 				"60C9299750191E1D"
 				"063F6EC37C7309F5"
 			]
-			description: ["The High Pressure Refinery processes Naphtha with water to create Petroleum Gas. Run this gas through another High Pressure Refinery to produce Molten Plastic. "]
+			description: [
+				"The &6High Pressure Refinery&r processes Naphtha with water to create Petroleum Gas."
+				""
+				"Run this gas through a second refinery to produce Molten Plastic."
+			]
 			id: "7F3F507C00B2996B"
 			rewards: [
 				{
@@ -719,13 +735,16 @@
 					type: "item"
 				}
 			]
+			subtitle: "Pressure refining"
 			title: "High Pressure Refinery"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["029A0307E8D20442"]
-			description: ["Molten Plastic can then be poured into a Casting Basin and extracted as solidifed ingots after it has cooled."]
+			description: [
+				"Pour Molten Plastic into a &6Casting Basin&r and extract solidified ingots once cooled."
+			]
 			id: "14C683C7890A88DB"
 			rewards: [
 				{
@@ -746,13 +765,18 @@
 				item: "tfmg:casting_basin"
 				type: "item"
 			}]
+			subtitle: "Solidify molten plastic"
 			title: "Casting Basin"
 			x: -1.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7F3F507C00B2996B"]
-			description: ["The Bottling Machine accepts plate presses; use a 9x9 press and feed Molten Plastic to the machine to rapidly produce plastic blocks. These blocks can then be processed into ingots in an Assembling Machine."]
+			description: [
+				"Feed Molten Plastic into a &6Bottling Machine&r with a plate press to produce plastic blocks."
+				""
+				"Process the blocks in an Assembling Machine to get plastic ingots."
+			]
 			id: "1ECA2EF2A80CE296"
 			rewards: [
 				{
@@ -804,6 +828,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "Press out plastic"
 			title: "Bottling Machine"
 			x: -0.5d
 			y: 2.5d
