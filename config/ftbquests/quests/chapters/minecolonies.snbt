@@ -5,7 +5,7 @@
 	group: ""
 	icon: "minecolonies:blockhuttownhall"
 	id: "5A00000000000010"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -27,7 +27,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000101"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "gear"
@@ -63,7 +62,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000111"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Your colony's humble beginning"
@@ -99,7 +97,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000121"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "square"
@@ -136,7 +133,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000131"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "square"
@@ -172,7 +168,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000141"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Dig deep for resources"
@@ -207,7 +202,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000151"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Sustainable lumber production"
@@ -242,7 +236,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000161"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Food from the waters"
@@ -277,7 +270,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000171"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "square"
@@ -313,7 +305,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000181"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Keep resources flowing"
@@ -352,7 +343,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000191"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Grow food for your people"
@@ -387,7 +377,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000201"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Keep colonists well-fed"
@@ -422,7 +411,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000211"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Fresh bread and pastries"
@@ -457,7 +445,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000221"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Protect your people"
@@ -492,7 +479,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000231"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Decorate your colony"
@@ -527,7 +513,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000241"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Plan and design structures"
@@ -546,7 +531,6 @@
 				"5A00000000000210"
 				"5A00000000000220"
 			]
-			dependency_requirement: "all_completed"
 			description: [
 				"&6Congratulations!&r You've established a thriving colony!"
 				""
@@ -569,7 +553,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000251"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "hexagon"
@@ -605,7 +588,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000261"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			subtitle: "Train your army"
@@ -640,7 +622,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5A00000000000271"
-				table_id: "5A00000000000001"
 				type: "choice"
 			}]
 			shape: "diamond"

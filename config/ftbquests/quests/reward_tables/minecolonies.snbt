@@ -1,7 +1,7 @@
 {
 	id: "5A00000000000001"
 	loot_size: 1
-	order_index: 30
+	order_index: 8
 	rewards: [
 		{ count: 16, item: "minecolonies:supply_camp" }
 		{ count: 8, item: "minecolonies:supplychestdeployer" }

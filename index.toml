@@ -30,23 +30,23 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "304aaccf49efebc52a7710080039821cdd7f3fc1f72dbf153c1e96e1f0d0e114"
+hash = "a609b82881a37f23a54350e1cd88f9e5ecfe7405cc0850399cab71698e30fe3e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
-hash = "020e7c4440b93aaca9456f2ee7be33eace3253710152482ffdde09a9126e83b8"
+hash = "fc47518976d73d5253ea9a7543bd7fbab50ed5f7f17b56cf0ae1400023109a04"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
-hash = "927df79a1389e89c6c0233d2939e742da84a463c3aef329e15ba77bf3e092178"
+hash = "4f7e10db47ec86263cfebd7c138eddee8fad17c5e15bb0a8874f4402e584f7bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/minecolonies.snbt"
-hash = "c1486b196fa9309b219faf5ff9805d4ce5b822f2c4f9627f3f0248ef277fc94d"
+hash = "c11cacf8a6b979a9d21294291bf82af376a74524b25dc849a04be042801c02be"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_quests.snbt"
-hash = "d94ae0ca71fe249bae1679631092a928019a9dd05394158beadb4d0f50d8923a"
+hash = "d03a42113d1616a63a903a72d7400bf381585441da6acf72a825028023a0a3cc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
@@ -58,7 +58,7 @@ hash = "ed7875116d2c86b1e8c58e9a714c1566043be46ff1c927f8ab31b2a806c50acc"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/minecolonies.snbt"
-hash = "fbb8a77d577c8a834c1336fe003b4a892e0786ec8249d2586abcf3b1200a9b4e"
+hash = "d6db5b37153c651f76761e8b975dc631b5f220b156766518c9df9d12961b4c33"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/money.snbt"
@@ -66,23 +66,23 @@ hash = "51eb3222d17f9a368bfc5b043377f6c142ac2f244d25a017257ec9ec82b58425"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/sq_agricraft.snbt"
-hash = "4b6aa2e8af2dcee44d0d0769795cff444c2db792226b30accd5875f086fdb267"
+hash = "84f7bd251caa37bf697a6e514f7958e1a556a0be974372d4d371de7750cfef74"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/sq_decorations.snbt"
-hash = "c5a70ee9dfcb9154cd8ded2b4236e3078298174107e8b3cb35e88db1e4054b3b"
+hash = "9d0f81ff7fab8037fafd12813059c57f71eb303a95fc3e9f0bc654dfe8b330f3"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/sq_exploration.snbt"
-hash = "9d36a03301a2aa852871226588b961f9244dfb39bca6dcd96a23a809c264821b"
+hash = "5fc511857bd19025db6e9eab896e288a191aa957937ca964591d9b4369a4a957"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/sq_farmersdelight.snbt"
-hash = "0bd5f4057f85c24bcd0d2d5b1ef182ee77bcb5b05ded5823f8d717fc2710e926"
+hash = "2643e31b6cd958f5b10bb26af65d18e14a514b96b81cf8f96a7594f7acfcb3fb"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/sq_growthcraft.snbt"
-hash = "18ab3004f9093f598dadc88787c6bec9de0961abc40afb07db3dc85d3b0df897"
+hash = "376c8d879c9604686747e4f4167c2771db200ab71403b17a148cfe0aa54950d6"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/sq_untamedwilds.snbt"
@@ -106,15 +106,19 @@ hash = "902dc5932b9538084d8da392b8a76aec4ca40cc59ff9da40653d7b8d2738c958"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t2c.snbt"
-hash = "9b23a1f7ffa83248a853a87ba4311d261cbd9c54f9a3bd3f7b9f1372add68f14"
+hash = "a55aa27b3fbf828b3faa73b9a67da5bde6f60d1ac1380ac06af0157f3761eac5"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t2ie.snbt"
-hash = "8a5a2efe212df81494c6d766293222e528aae2131b52254335b0b45f51188595"
+hash = "8a99fc68a1cb175ee7155b3e9fe1af531a379ea1c5a2e11b6ce9ea9c27b8153a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t3.snbt"
-hash = "73132ca8522118f64fbc0bbcc2f7b839180a198ab2501de663b58c940e79b35a"
+hash = "ea67d1107e2530dc679167fac49330fe3a71af19aaf14685c950e397d7601c22"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t3bonus.snbt"
+hash = "45b79d4f27725a40d39035663c80ba26571b938c62318f2a6f9c17e53986c028"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t4_advanced.snbt"
@@ -315,6 +319,10 @@ hash = "c71b8c102919788d3632b9010c03e2da55880fa229b8d83a1b78eeb5c0d522cd"
 [[files]]
 file = "kubejs/server_scripts/chapter2.js"
 hash = "675b4ee68b7b531496ba4a43dfbbcf68538f563a31d345ba0d286fbe5f4268a1"
+
+[[files]]
+file = "kubejs/server_scripts/chapter3.js"
+hash = "c897ba6a544add38dc7d53d8e4ec0a5644435006364743d8b0c9d80046e3fde9"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
@@ -904,6 +912,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs-create.pw.toml"
 hash = "e9ea701c9fc9bb54d1bd3b6998403a229f896449c0d15b5df23dc46e20ac5092"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-immersive-engineering-unofficial.pw.toml"
+hash = "7ae9c42d464cec49e3f4f9da4cea255dcc352e263acd5068f9ece78f55203e6a"
 metafile = true
 
 [[files]]

@@ -1,0 +1,147 @@
+{
+	id: "2631AF079F90F1D6"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon0"
+				tag: {
+					TitaniumAugment: {
+						Range: 0.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon1"
+				tag: {
+					TitaniumAugment: {
+						Range: 1.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon2"
+				tag: {
+					TitaniumAugment: {
+						Range: 2.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon3"
+				tag: {
+					TitaniumAugment: {
+						Range: 3.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon4"
+				tag: {
+					TitaniumAugment: {
+						Range: 4.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon5"
+				tag: {
+					TitaniumAugment: {
+						Range: 5.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon6"
+				tag: {
+					TitaniumAugment: {
+						Range: 6.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon7"
+				tag: {
+					TitaniumAugment: {
+						Range: 7.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon8"
+				tag: {
+					TitaniumAugment: {
+						Range: 8.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon9"
+				tag: {
+					TitaniumAugment: {
+						Range: 9.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon10"
+				tag: {
+					TitaniumAugment: {
+						Range: 10.0f
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "industrialforegoing:range_addon11"
+				tag: {
+					TitaniumAugment: {
+						Range: 11.0f
+					}
+				}
+			}
+		}
+		{ count: 4, item: "industrialforegoing:machine_frame_pity" }
+		{ count: 4, item: "industrialforegoing:machine_frame_simple" }
+		{ count: 4, item: "industrialforegoing:machine_frame_advanced" }
+		{ count: 4, item: "industrialforegoing:machine_frame_supreme" }
+		{ count: 8, item: "industrialforegoing:iron_gear" }
+		{ count: 8, item: "industrialforegoing:gold_gear" }
+		{ count: 8, item: "industrialforegoing:diamond_gear" }
+	]
+	title: "T3-Bonus"
+}

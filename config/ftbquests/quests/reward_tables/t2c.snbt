@@ -3,7 +3,6 @@
 	loot_size: 1
 	order_index: 3
 	rewards: [
-		{ count: 8, item: "tfmg:plastic_sheet" }
 		{ count: 32, item: "tfmg:steel_pipe" }
 		{ count: 16, item: "tfmg:plastic_pipe" }
 		{ count: 32, item: "create:fluid_tank" }
