@@ -1209,7 +1209,7 @@
 					type: "item"
 				}
 			]
-			title: "Connectors  Cables"
+			title: "Connectors and Cables"
 			x: -3.0d
 			y: 1.5d
 		}
@@ -1707,6 +1707,11 @@
 		}
 		{
 			dependencies: ["075A1E9713841DD5"]
+			description: [
+				"Craft &6Immersive Engineering&r circuit components to progress toward the Basic Control Circuit."
+				""
+				"You'll need a Circuit Board, Electronic Component, and Advanced Electronic Component."
+			]
 			id: "5E2AA552CB114511"
 			rewards: [
 				{
@@ -1739,12 +1744,18 @@
 					type: "item"
 				}
 			]
+			subtitle: "Heavy industry electronics"
 			title: "Circuits - IE Route"
 			x: 2.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["075A1E9713841DD5"]
+			description: [
+				"Craft &6TFMG&r electronic components to progress toward the Basic Control Circuit."
+				""
+				"You'll need a Transistor, Resistors, and a Capacitor."
+			]
 			id: "2DAE5817BE9E7964"
 			rewards: [
 				{
@@ -1782,6 +1793,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "Rotational electronics"
 			title: "Circuits - TFMG Route"
 			x: 0.5d
 			y: -4.0d
@@ -1792,6 +1804,11 @@
 				"5E2AA552CB114511"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"Combine your electronic components into a &6Circuit Board&r."
+				""
+				"This board is the key ingredient for Mekanism's Basic Control Circuit."
+			]
 			id: "3A9AC16F275D7408"
 			rewards: [
 				{
@@ -1807,11 +1824,13 @@
 					type: "random"
 				}
 			]
+			subtitle: "Components assembled"
 			tasks: [{
 				id: "6D73F79B1A8BE98D"
 				item: "tfmg:circuit_board"
 				type: "item"
 			}]
+			title: "Circuit Board"
 			x: 1.5d
 			y: -3.0d
 		}

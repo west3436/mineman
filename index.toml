@@ -30,15 +30,15 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "13cc1010e63aba34661abd3a029f7bcdc224bce61472b64f5fef9ce103a3d4d4"
+hash = "372612a0a221902c3e4828aba8d25743dabcca73eb31c192f365a92f3035f31a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
-hash = "4aec00ff0c3c69a9c08f0d9406df0c2b1f8b6a5f66b5c0be7345c47991ed0817"
+hash = "dd0138291968bf3610eb5361f0bf3854b222f16307c9bac507ccc7fe87204363"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
-hash = "4f7e10db47ec86263cfebd7c138eddee8fad17c5e15bb0a8874f4402e584f7bd"
+hash = "49934aed34a950b5e9e597fcc0d6c5898c1bcf12bd6e245bf09588a1817394d6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1_steel.snbt"
@@ -412,11 +412,6 @@ metafile = true
 [[files]]
 file = "mods/christmascolonies.pw.toml"
 hash = "74d834fa24067ea6f5c363d0ecbc1530d438ccaef4ba4790703e255a0c6385fa"
-metafile = true
-
-[[files]]
-file = "mods/chunkpregenerator.pw.toml"
-hash = "ce1ff49ed9507338b8b32d431c6f7832391a6f65c07aa8ad07b02dfec8cb7860"
 metafile = true
 
 [[files]]
@@ -1072,11 +1067,6 @@ metafile = true
 [[files]]
 file = "mods/prism-lib.pw.toml"
 hash = "f79cb80b6ea599fe4ca9404465277ff7edf25118976170c28827590febfcee7a"
-metafile = true
-
-[[files]]
-file = "mods/probejs.pw.toml"
-hash = "2a3a4d1558f48a49746b266248676f7d28b7b8b9d45f36645e41a8806028dce5"
 metafile = true
 
 [[files]]

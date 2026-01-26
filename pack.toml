@@ -1,4 +1,4 @@
-name = "Tech Progression"
+name = "Grugtech"
 author = "west3436"
 version = "1.0.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "25bd383e30fafa8632612b3d16b89c8eca16507f151570616c3028ddffb1cbd1"
+hash = "3a72cc429ce005f9c82d0d0db664d850fd617c2c30d06045389f6cb432f31645"
 
 [versions]
 forge = "47.4.13"
