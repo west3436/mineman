@@ -98,7 +98,7 @@ hash = "f06f1d4e2b521afc4f117a5c4fa88aec1a9d3807806386068d095c80f659cdc4"
 
 [[files]]
 file = "datapacks/unified_ores/README.md"
-hash = "7b3166f6fe3b02f6110ec93329ad28ac1e193e251230e5944704c2c85df82ec1"
+hash = "4a7a79b4ed6c18324a13cce6af17402c202a1c3f2e7939fd58bc18431048e0dd"
 
 [[files]]
 file = "datapacks/unified_ores/data/cgs/worldgen/placed_feature/lead_ore_placed.json"
