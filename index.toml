@@ -30,7 +30,7 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/advanced_circuitry.snbt"
-hash = "304aaccf49efebc52a7710080039821cdd7f3fc1f72dbf153c1e96e1f0d0e114"
+hash = "a609b82881a37f23a54350e1cd88f9e5ecfe7405cc0850399cab71698e30fe3e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/antimatter.snbt"
@@ -38,7 +38,7 @@ hash = "fc47518976d73d5253ea9a7543bd7fbab50ed5f7f17b56cf0ae1400023109a04"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2_plastic.snbt"
-hash = "927df79a1389e89c6c0233d2939e742da84a463c3aef329e15ba77bf3e092178"
+hash = "4f7e10db47ec86263cfebd7c138eddee8fad17c5e15bb0a8874f4402e584f7bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/minecolonies.snbt"
@@ -114,7 +114,11 @@ hash = "8a99fc68a1cb175ee7155b3e9fe1af531a379ea1c5a2e11b6ce9ea9c27b8153a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t3.snbt"
-hash = "73132ca8522118f64fbc0bbcc2f7b839180a198ab2501de663b58c940e79b35a"
+hash = "ea67d1107e2530dc679167fac49330fe3a71af19aaf14685c950e397d7601c22"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/t3bonus.snbt"
+hash = "45b79d4f27725a40d39035663c80ba26571b938c62318f2a6f9c17e53986c028"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/t4_advanced.snbt"
@@ -315,6 +319,10 @@ hash = "c71b8c102919788d3632b9010c03e2da55880fa229b8d83a1b78eeb5c0d522cd"
 [[files]]
 file = "kubejs/server_scripts/chapter2.js"
 hash = "675b4ee68b7b531496ba4a43dfbbcf68538f563a31d345ba0d286fbe5f4268a1"
+
+[[files]]
+file = "kubejs/server_scripts/chapter3.js"
+hash = "c897ba6a544add38dc7d53d8e4ec0a5644435006364743d8b0c9d80046e3fde9"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"
