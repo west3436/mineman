@@ -415,11 +415,6 @@ hash = "74d834fa24067ea6f5c363d0ecbc1530d438ccaef4ba4790703e255a0c6385fa"
 metafile = true
 
 [[files]]
-file = "mods/chunkpregenerator.pw.toml"
-hash = "ce1ff49ed9507338b8b32d431c6f7832391a6f65c07aa8ad07b02dfec8cb7860"
-metafile = true
-
-[[files]]
 file = "mods/chunky.pw.toml"
 hash = "0e17f9758f6f67ef87aa6f8d5afc47901521a05904cd8470ef65063b48e69d73"
 metafile = true
@@ -1072,11 +1067,6 @@ metafile = true
 [[files]]
 file = "mods/prism-lib.pw.toml"
 hash = "f79cb80b6ea599fe4ca9404465277ff7edf25118976170c28827590febfcee7a"
-metafile = true
-
-[[files]]
-file = "mods/probejs.pw.toml"
-hash = "2a3a4d1558f48a49746b266248676f7d28b7b8b9d45f36645e41a8806028dce5"
 metafile = true
 
 [[files]]
