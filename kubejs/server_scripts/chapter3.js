@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'mekanism:metallurgic_infusing',
         itemInput: { ingredient: { item: 'tfmg:circuit_board' } },
-        infusionInput: { infuse_type: 'mekanism:redstone', amount: 20 },
+        chemicalInput: { infuse_type: 'mekanism:redstone', amount: 20 },
         output: { item: 'mekanism:basic_control_circuit', count: 1 }
     }).id('kubejs:chapter3/basic_control_circuit_from_tfmg');
 
