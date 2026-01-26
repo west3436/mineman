@@ -322,7 +322,7 @@ hash = "675b4ee68b7b531496ba4a43dfbbcf68538f563a31d345ba0d286fbe5f4268a1"
 
 [[files]]
 file = "kubejs/server_scripts/chapter3.js"
-hash = "c897ba6a544add38dc7d53d8e4ec0a5644435006364743d8b0c9d80046e3fde9"
+hash = "28c6ddd04b06a6ad1fcfd1295c0afb3c2e9826e10b1bdf820f0b6eda73829f26"
 
 [[files]]
 file = "kubejs/server_scripts/unified_fluids_recipes.js"

@@ -29,12 +29,12 @@ ServerEvents.recipes(event => {
 
     // ==================== ADD: BASIC CONTROL CIRCUIT FROM TFMG CIRCUIT BOARD ====================
     // 20mB redstone + TFMG circuit board -> basic control circuit
-    event.recipes.mekanism.metallurgic_infusing(
-        'mekanism:basic_control_circuit',
-        'tfmg:circuit_board',
-        'mekanism:redstone',
-        20
-    ).id('kubejs:chapter3/basic_control_circuit_from_tfmg');
+    event.custom({
+        type: 'mekanism:metallurgic_infusing',
+        itemInput: { ingredient: { item: 'tfmg:circuit_board' } },
+        infusionInput: { infuse_type: 'mekanism:redstone', amount: 20 },
+        output: { item: 'mekanism:basic_control_circuit', count: 1 }
+    }).id('kubejs:chapter3/basic_control_circuit_from_tfmg');
 
     // ==================== ADD: TFMG CIRCUIT BOARD FROM IE WORKBENCH ====================
     // IE Engineer's Workbench: circuit board + advanced electronic + electronic -> TFMG circuit board
