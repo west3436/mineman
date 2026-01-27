@@ -189,6 +189,14 @@ file = "datapacks/unified_ores/data/mekanism/worldgen/placed_feature/ore_uranium
 hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
 [[files]]
+file = "datapacks/unified_ores/data/tconstruct/worldgen/structure_set/overworld_ocean_island.json"
+hash = "eee1806ad2855de8ceaf7f73c2ee8e690e4e8a1a860bdb2c67e1921229744166"
+
+[[files]]
+file = "datapacks/unified_ores/data/tconstruct/worldgen/structure_set/overworld_sky_island.json"
+hash = "dd510826e9b1c9264fdac1fc873d313bbd1ce00c559e5ce00cbf79326b20c10f"
+
+[[files]]
 file = "datapacks/unified_ores/data/tfmg/worldgen/placed_feature/lead_ore.json"
 hash = "174b47189e2250f870547e30a664bf1db926a9acc92ee209fb7e219c6bf053c7"
 
